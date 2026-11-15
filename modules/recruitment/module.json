@@ -1,6 +1,6 @@
 {
   "id": "recruitment",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "استخدام",
     "en": "Recruitment"
@@ -24,7 +24,11 @@
     "recruitment.requisition.filled"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "recruitment.record.view",
+    "recruitment.record.create",
+    "recruitment.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -33,5 +37,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "recruitment",
+      "title": {
+        "fa": "استخدام",
+        "en": "Recruitment"
+      },
+      "icon": "box",
+      "route": "/recruitment",
+      "permission": "recruitment.record.view"
+    }
+  ]
 }
