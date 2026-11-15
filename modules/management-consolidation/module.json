@@ -15,9 +15,13 @@
   "optional": [
     "accounting-gl"
   ],
-  "provides": [],
+  "provides": [
+    "ManagementConsolidationServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "management-consolidation.pack.published"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

@@ -16,9 +16,14 @@
   "optional": [
     "hse"
   ],
-  "provides": [],
+  "provides": [
+    "ContractorMgmtServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "contractor-mgmt.statement.approved",
+    "contractor-mgmt.contractor.suspended"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

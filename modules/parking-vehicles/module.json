@@ -15,9 +15,14 @@
   "optional": [
     "hr-core"
   ],
-  "provides": [],
+  "provides": [
+    "ParkingVehiclesServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "parking-vehicles.document.expiring",
+    "parking-vehicles.trip.completed"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

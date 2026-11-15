@@ -1,0 +1,9 @@
+# condition-monitoring-iot — Sensors & condition monitoring (L5; requires asset-registry, api-webhooks; optional cmms, python)
+
+**Entities** Sensor{code,asset_id,type[temperature|vibration|pressure|current|flow|level|counter|custom],unit,tag,sampling_sec,scale,offset,status}; Reading{sensor_id,ts,value} stored in partitioned/rotated tables with **retention policy** (raw N days) and Rollup{sensor,bucket[1m|1h|1d],min,max,avg,count}; AlarmRule{sensor|asset class,type[threshold|rate_of_change|stuck|missing_data|deviation_from_baseline],params,severity,debounce}; Alarm{rule,sensor,state[active|acked|cleared],raised,acked_by}; Baseline{sensor,model(params)}; GatewayDevice{name,token,last_seen}.
+**Rules** ingestion via api-webhooks key-authenticated endpoint accepting batched readings (idempotent by sensor+ts), validation and unit scaling; writes optimized (batch insert, no per-row events); rollups computed by scheduled jobs; alarm evaluation on ingest or scheduled; alarm → notification + optional CMMS work request (setting) with dedup; raw data retention/purge job to protect shared-hosting DB size (budget guard setting); local gateway agent protocol documented (Modbus/OPC-UA/MQTT bridges are OUT of scope — a small generic HTTP forwarder example only).
+**Events out** condition-monitoring-iot.alarm.raised|cleared. **In** asset-registry.asset.status_changed.
+**Service contract** MonitoringService: latest(sensor), series(sensor,range,resolution), activeAlarms(asset?), health(asset).
+**Permissions** condition-monitoring-iot.sensor|rule.view|manage, condition-monitoring-iot.alarm.view|ack, condition-monitoring-iot.data.view.
+**Screens** sensor registry & mapping, live tiles, trend charts (downsampled), alarm console, rule editor, asset health overview, gateway status.
+**AI** anomaly/failure-prediction hooks (python), summarize asset condition. **Datasets** sensor_rollups, alarms.

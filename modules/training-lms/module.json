@@ -15,9 +15,14 @@
   "optional": [
     "hr-core"
   ],
-  "provides": [],
+  "provides": [
+    "TrainingLmsServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "training-lms.completion.recorded",
+    "training-lms.certificate.expiring"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

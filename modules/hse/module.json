@@ -13,9 +13,15 @@
     "hr-core",
     "asset-registry"
   ],
-  "provides": [],
+  "provides": [
+    "HseServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "hse.incident.reported",
+    "hse.permit.issued",
+    "hse.action.overdue"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

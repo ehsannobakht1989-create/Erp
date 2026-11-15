@@ -12,9 +12,13 @@
   "optional": [
     "party-master"
   ],
-  "provides": [],
+  "provides": [
+    "TicketingServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "ticketing.ticket.created"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

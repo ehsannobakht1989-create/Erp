@@ -15,9 +15,15 @@
   "optional": [
     "purchase-order"
   ],
-  "provides": [],
+  "provides": [
+    "ImportCustomsServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "import-customs.file.cleared",
+    "import-customs.landed_cost.ready",
+    "import-customs.demurrage.alert"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

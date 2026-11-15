@@ -15,9 +15,14 @@
   "optional": [
     "inventory"
   ],
-  "provides": [],
+  "provides": [
+    "WeighbridgeServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "weighbridge.ticket.completed",
+    "weighbridge.ticket.voided"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

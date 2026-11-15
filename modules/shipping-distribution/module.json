@@ -16,9 +16,14 @@
     "sales",
     "inventory"
   ],
-  "provides": [],
+  "provides": [
+    "ShippingDistributionServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "shipping-distribution.shipment.dispatched",
+    "shipping-distribution.freight.cost_posted"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

@@ -16,9 +16,14 @@
   "optional": [
     "party-master"
   ],
-  "provides": [],
+  "provides": [
+    "ContractsServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "contracts.contract.activated",
+    "contracts.milestone.due"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

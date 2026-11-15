@@ -15,9 +15,15 @@
   "optional": [
     "hr-core"
   ],
-  "provides": [],
+  "provides": [
+    "CompetencyAppraisalServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "competency-appraisal.cycle.closed",
+    "competency-appraisal.gap.identified",
+    "competency-appraisal.score.finalized"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

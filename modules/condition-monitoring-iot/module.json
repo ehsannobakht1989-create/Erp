@@ -13,9 +13,13 @@
     "mes"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "ConditionMonitoringIotServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "condition-monitoring-iot.alarm.raised"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

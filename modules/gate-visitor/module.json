@@ -13,9 +13,15 @@
     "workflow-engine"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "GateVisitorServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "gate-visitor.pass.entered",
+    "gate-visitor.vehicle.entered",
+    "gate-visitor.materialpass.used"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

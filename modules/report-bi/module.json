@@ -10,9 +10,14 @@
   "level": 0,
   "requires": [],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "ReportBiServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "report-bi.report.published",
+    "report-bi.kpi.breached"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

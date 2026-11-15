@@ -14,9 +14,14 @@
   "optional": [
     "sales"
   ],
-  "provides": [],
+  "provides": [
+    "CrmServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "crm.lead.created",
+    "crm.opportunity.won"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

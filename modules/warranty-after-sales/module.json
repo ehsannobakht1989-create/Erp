@@ -16,9 +16,14 @@
     "sales",
     "ticketing"
   ],
-  "provides": [],
+  "provides": [
+    "WarrantyAfterSalesServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "warranty-after-sales.claim.approved",
+    "warranty-after-sales.credit.requested"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

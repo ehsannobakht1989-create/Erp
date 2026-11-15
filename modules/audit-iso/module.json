@@ -14,9 +14,14 @@
     "document-mgmt"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "AuditIsoServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "audit-iso.audit.completed",
+    "audit-iso.finding.raised"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

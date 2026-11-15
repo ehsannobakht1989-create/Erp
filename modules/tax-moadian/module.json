@@ -13,9 +13,13 @@
     "accounting-gl"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "TaxMoadianServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "tax-moadian.invoice.queued"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

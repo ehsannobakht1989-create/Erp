@@ -15,9 +15,14 @@
   "optional": [
     "hse"
   ],
-  "provides": [],
+  "provides": [
+    "WasteEnvironmentServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "waste-environment.exceedance.raised",
+    "waste-environment.license.expiring"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

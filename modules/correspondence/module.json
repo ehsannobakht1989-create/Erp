@@ -16,9 +16,13 @@
   "optional": [
     "org-structure"
   ],
-  "provides": [],
+  "provides": [
+    "CorrespondenceServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "correspondence.letter.registered"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

@@ -12,9 +12,13 @@
   "optional": [
     "org-structure"
   ],
-  "provides": [],
+  "provides": [
+    "ProjectMgmtServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "project-mgmt.project.created"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

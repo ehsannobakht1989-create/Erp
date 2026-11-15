@@ -16,9 +16,15 @@
     "purchase-order",
     "treasury"
   ],
-  "provides": [],
+  "provides": [
+    "ForexLcServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "forex-lc.lc.status_changed",
+    "forex-lc.guarantee.expiring",
+    "forex-lc.fx.settled"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

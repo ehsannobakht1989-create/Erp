@@ -15,9 +15,14 @@
   "optional": [
     "asset-registry"
   ],
-  "provides": [],
+  "provides": [
+    "EnergyUtilitiesServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "energy-utilities.period.allocated",
+    "energy-utilities.target.breached"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [
