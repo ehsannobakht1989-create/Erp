@@ -26,10 +26,12 @@ final class Autoloader
                 require_once $file;
                 return;
             }
-            $contractFile = $this->root . '/core/contracts/' . str_replace('\\', '/', $rel) . '.php';
-            if (is_file($contractFile)) {
-                require_once $contractFile;
-                return;
+            if (str_starts_with($rel, 'Contracts\\')) {
+                $contractFile = $this->root . '/core/contracts/' . str_replace('\\', '/', substr($rel, 10)) . '.php';
+                if (is_file($contractFile)) {
+                    require_once $contractFile;
+                    return;
+                }
             }
         }
 

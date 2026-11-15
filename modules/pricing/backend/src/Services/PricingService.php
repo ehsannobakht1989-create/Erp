@@ -24,7 +24,11 @@ final class PricingService implements PricingServiceInterface
              ORDER BY l.priority ASC, ln.min_qty DESC LIMIT 1',
             [$companyId, $itemId, 'active', $qty]
         );
-        return $row ?? ['list_code' => null, 'price' => '0.0000', 'discount_pct' => '0.0000'];
+        if ($row === null) {
+            return ['list_code' => null, 'price' => '0.0000', 'discount_pct' => '0.0000'];
+        }
+        $row['price'] = number_format((float) $row['price'], 4, '.', '');
+        return $row;
     }
 
     public function resolveBulk(int $companyId, array $params = []): mixed { return []; }

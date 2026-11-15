@@ -25,7 +25,7 @@ final class InventoryService implements InventoryServiceInterface
             'SELECT COALESCE(SUM(qty), 0) AS total FROM inventory__balances WHERE company_id = ? AND item_id = ? AND warehouse_id = ?',
             [$companyId, $itemId, $whId]
         );
-        return Money::normalize((string) ($row['total'] ?? '0'));
+        return number_format((float) ($row['total'] ?? 0), 4, '.', '');
     }
 
     public function getAvailable(int $companyId, array $params = []): mixed { return $this->getBalance($companyId, $params); }
