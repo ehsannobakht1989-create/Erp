@@ -48,6 +48,11 @@ foreach ($manifestFiles as $file) {
         $errors[] = "[$dirName] 'level' must be an integer between 0 and 6";
     }
 
+    $status = $data['status'] ?? 'stub';
+    if (!is_string($status) || !in_array($status, ['stub', 'partial', 'done'], true)) {
+        $errors[] = "[$dirName] Invalid status '$status' (expected stub|partial|done)";
+    }
+
     foreach (['emits', 'listens'] as $evField) {
         if (isset($data[$evField]) && is_array($data[$evField])) {
             foreach ($data[$evField] as $ev) {

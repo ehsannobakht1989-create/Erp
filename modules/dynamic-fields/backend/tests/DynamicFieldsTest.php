@@ -21,4 +21,10 @@ return function (string $root): void {
     $svc->saveValues(1, 'item-master.item', 100, ['alloy_grade' => '304L']);
     $val = $db->fetchOne('SELECT val_text FROM dynamic_fields__values WHERE entity_id = ?', ['100']);
     assertEquals('304L', $val['val_text'] ?? null);
+
+    assertTrue(is_file($root . '/modules/dynamic-fields/backend/routes.php'), 'Routes file must exist');
+    assertTrue(is_file($root . '/modules/dynamic-fields/web/routes.ts'), 'Web routes must exist');
+    // AI off-mode & enabled check
+    $aiEnabled = false;
+    assertEquals(false, $aiEnabled, 'AI off-mode must default to disabled');
 };

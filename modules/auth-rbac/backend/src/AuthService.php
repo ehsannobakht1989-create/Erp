@@ -108,4 +108,10 @@ final class AuthService implements AuthContract
             }
         }
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['auth-rbac.user.logged_in', 'auth-rbac.user.locked', 'auth-rbac.role.updated'];
+    }
 }

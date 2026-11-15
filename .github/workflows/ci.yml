@@ -42,3 +42,14 @@ jobs:
         run: |
           php builder/bin/build.php --profile profiles/minimal.yaml
           ls -lh dist/minimal-1.0.0.zip
+
+  depth-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+      - name: Run depth gate
+        run: php tools/depth-check.php --all --gate

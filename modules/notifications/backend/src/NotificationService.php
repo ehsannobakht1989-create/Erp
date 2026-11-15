@@ -19,4 +19,10 @@ final class NotificationService implements NotifierContract
             [$companyId, $userId, $channel, $template, (string) json_encode($data, JSON_UNESCAPED_UNICODE), 'sent', gmdate('Y-m-d H:i:s')]
         );
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['notifications.message.sent'];
+    }
 }

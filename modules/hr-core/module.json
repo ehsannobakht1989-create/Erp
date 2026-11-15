@@ -1,22 +1,63 @@
 {
   "id": "hr-core",
-  "status": "done",
-  "name": { "fa": "منابع انسانی", "en": "HR Core" },
+  "status": "partial",
+  "name": {
+    "fa": "منابع انسانی",
+    "en": "HR Core"
+  },
   "version": "1.0.0",
   "category": "hr",
   "level": 2,
-  "requires": ["org-structure"],
+  "requires": [
+    "org-structure"
+  ],
   "optional": [],
-  "provides": ["HrCoreServiceInterface"],
-  "consumes": ["OrgStructureServiceInterface"],
-  "emits": ["hr-core.employee.hired", "hr-core.employee.transferred", "hr-core.employee.terminated"],
+  "provides": [
+    "HrCoreServiceInterface"
+  ],
+  "consumes": [
+    "OrgStructureServiceInterface"
+  ],
+  "emits": [
+    "hr-core.employee.hired",
+    "hr-core.employee.transferred",
+    "hr-core.employee.terminated"
+  ],
   "listens": [],
-  "permissions": ["hr-core.employee.view", "hr-core.employee.create", "hr-core.employee.update", "hr-core.employee.terminate", "hr-core.sensitive.view"],
-  "menu": [{ "id": "hr-core", "title": {"fa": "پرونده پرسنلی", "en": "HR Core"}, "icon": "id-card", "route": "/hr-core", "permission": "hr-core.employee.view" }],
-  "entities": ["employee", "employment", "employment_event"],
+  "permissions": [
+    "hr-core.employee.view",
+    "hr-core.employee.create",
+    "hr-core.employee.update",
+    "hr-core.employee.terminate",
+    "hr-core.sensitive.view"
+  ],
+  "menu": [
+    {
+      "id": "hr-core",
+      "title": {
+        "fa": "پرونده پرسنلی",
+        "en": "HR Core"
+      },
+      "icon": "id-card",
+      "route": "/hr-core",
+      "permission": "hr-core.employee.view"
+    }
+  ],
+  "entities": [
+    "employee",
+    "employment",
+    "employment_event"
+  ],
   "settings": [],
-  "industry_tags": ["all"],
-  "regional": ["ir"],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [
+    "ir"
+  ],
   "python": false,
-  "ai": {"enabled_default": false, "capabilities": []}
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
 }

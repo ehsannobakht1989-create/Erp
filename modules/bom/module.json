@@ -1,22 +1,64 @@
 {
   "id": "bom",
-  "status": "done",
-  "name": { "fa": "ساختار محصول", "en": "Bill of Materials" },
+  "status": "partial",
+  "name": {
+    "fa": "ساختار محصول",
+    "en": "Bill of Materials"
+  },
   "version": "1.0.0",
   "category": "engineering",
   "level": 3,
-  "requires": ["item-master"],
-  "optional": ["routing", "costing", "eco-plm"],
-  "provides": ["BomServiceInterface"],
-  "consumes": ["ItemMasterServiceInterface"],
-  "emits": ["bom.bom.approved", "bom.bom.obsoleted", "bom.bom.revised"],
+  "requires": [
+    "item-master"
+  ],
+  "optional": [
+    "routing",
+    "costing",
+    "eco-plm"
+  ],
+  "provides": [
+    "BomServiceInterface"
+  ],
+  "consumes": [
+    "ItemMasterServiceInterface"
+  ],
+  "emits": [
+    "bom.bom.approved",
+    "bom.bom.obsoleted",
+    "bom.bom.revised"
+  ],
   "listens": [],
-  "permissions": ["bom.bom.view", "bom.bom.create", "bom.bom.update", "bom.bom.approve", "bom.bom.delete"],
-  "menu": [{ "id": "bom", "title": {"fa": "ساختار محصول (BOM)", "en": "BOM"}, "icon": "layers", "route": "/bom", "permission": "bom.bom.view" }],
-  "entities": ["bom", "bom_line"],
+  "permissions": [
+    "bom.bom.view",
+    "bom.bom.create",
+    "bom.bom.update",
+    "bom.bom.approve",
+    "bom.bom.delete"
+  ],
+  "menu": [
+    {
+      "id": "bom",
+      "title": {
+        "fa": "ساختار محصول (BOM)",
+        "en": "BOM"
+      },
+      "icon": "layers",
+      "route": "/bom",
+      "permission": "bom.bom.view"
+    }
+  ],
+  "entities": [
+    "bom",
+    "bom_line"
+  ],
   "settings": [],
-  "industry_tags": ["all"],
+  "industry_tags": [
+    "all"
+  ],
   "regional": [],
   "python": false,
-  "ai": {"enabled_default": false, "capabilities": []}
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
 }

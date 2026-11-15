@@ -10,23 +10,41 @@
   "level": 0,
   "requires": [],
   "optional": [],
-  "provides": ["FormBuilderService"],
+  "provides": [
+    "FormBuilderService"
+  ],
   "consumes": [],
-  "emits": ["form-builder.form.published", "form-builder.submission.created"],
+  "emits": [
+    "form-builder.form.published",
+    "form-builder.submission.created"
+  ],
   "listens": [],
-  "permissions": ["form-builder.form.view", "form-builder.form.manage", "form-builder.submission.create", "form-builder.ai.use"],
+  "permissions": [
+    "form-builder.form.view",
+    "form-builder.form.manage",
+    "form-builder.submission.create",
+    "form-builder.ai.use"
+  ],
   "menu": [
     {
       "id": "form-builder",
-      "title": {"fa": "فرم‌ساز", "en": "Form Builder"},
+      "title": {
+        "fa": "فرم‌ساز",
+        "en": "Form Builder"
+      },
       "icon": "layout",
       "route": "/form-builder",
       "permission": "form-builder.form.view"
     }
   ],
-  "entities": ["form_definition", "form_instance"],
+  "entities": [
+    "form_definition",
+    "form_instance"
+  ],
   "settings": [],
-  "industry_tags": ["all"],
+  "industry_tags": [
+    "all"
+  ],
   "regional": [],
   "python": false,
   "ai": {
@@ -35,8 +53,12 @@
       {
         "id": "autofill",
         "provider": "avalai",
-        "tools": ["form-builder.list_forms"],
-        "proposals": ["form-builder.propose_form_schema"],
+        "tools": [
+          "form-builder.list_forms"
+        ],
+        "proposals": [
+          "form-builder.propose_form_schema"
+        ],
         "redact": [],
         "max_tokens_per_call": 2000
       }

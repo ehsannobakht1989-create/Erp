@@ -1,6 +1,6 @@
 {
   "id": "reorder-point",
-  "status": "done",
+  "status": "partial",
   "name": {
     "fa": "نقطه سفارش",
     "en": "Reorder Point"

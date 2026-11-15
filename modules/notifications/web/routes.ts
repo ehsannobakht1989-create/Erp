@@ -1,5 +1,20 @@
-import NotificationsPage from './pages/NotificationsPage';
+import { lazy } from 'react';
 
-export default [
-  { path: '/notifications', component: NotificationsPage, permission: 'notifications.message.view' }
+export const routes = [
+  {
+    path: '/notifications',
+    permission: 'notifications.message.view',
+    permissions: ['notifications.message.view', 'notifications.template.manage', 'notifications.ai.use'],
+    component: lazy(() => import('./pages/NotificationsPage')),
+  },
+  {
+    path: '/notifications/:id',
+    permission: 'notifications.message.view',
+    component: lazy(() => import('./pages/NotificationsDetailPage')),
+  },
+  {
+    path: '/notifications/manage',
+    permission: 'notifications.ai.use',
+    component: lazy(() => import('./pages/NotificationsManagePage')),
+  },
 ];

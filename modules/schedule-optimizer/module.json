@@ -1,6 +1,6 @@
 {
   "id": "schedule-optimizer",
-  "status": "done",
+  "status": "partial",
   "name": {
     "fa": "بهینه‌ساز زمان‌بندی",
     "en": "Schedule Optimizer"

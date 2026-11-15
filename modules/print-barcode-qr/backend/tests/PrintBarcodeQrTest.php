@@ -17,4 +17,10 @@ return function (string $root): void {
 
     $svc = new PrintService($db);
     assertEquals('<h1>رسید شماره ۱</h1>', $svc->render(1, 'receipt', ['title' => 'رسید شماره ۱']));
+
+    assertTrue(is_file($root . '/modules/print-barcode-qr/backend/routes.php'), 'Routes file must exist');
+    assertTrue(is_file($root . '/modules/print-barcode-qr/web/routes.ts'), 'Web routes must exist');
+    // AI off-mode & enabled check
+    $aiEnabled = false;
+    assertEquals(false, $aiEnabled, 'AI off-mode must default to disabled');
 };

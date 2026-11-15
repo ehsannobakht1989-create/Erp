@@ -1,22 +1,63 @@
 {
   "id": "asset-registry",
-  "status": "done",
-  "name": { "fa": "ثبت دارایی‌ها و تجهیزات", "en": "Asset Registry" },
+  "status": "partial",
+  "name": {
+    "fa": "ثبت دارایی‌ها و تجهیزات",
+    "en": "Asset Registry"
+  },
   "version": "1.0.0",
   "category": "maintenance",
   "level": 2,
-  "requires": ["org-structure"],
-  "optional": ["fixed-assets"],
-  "provides": ["AssetRegistryServiceInterface"],
-  "consumes": ["OrgStructureServiceInterface"],
-  "emits": ["asset-registry.asset.created", "asset-registry.asset.status_changed", "asset-registry.meter.updated", "asset-registry.asset.decommissioned"],
+  "requires": [
+    "org-structure"
+  ],
+  "optional": [
+    "fixed-assets"
+  ],
+  "provides": [
+    "AssetRegistryServiceInterface"
+  ],
+  "consumes": [
+    "OrgStructureServiceInterface"
+  ],
+  "emits": [
+    "asset-registry.asset.created",
+    "asset-registry.asset.status_changed",
+    "asset-registry.meter.updated",
+    "asset-registry.asset.decommissioned"
+  ],
   "listens": [],
-  "permissions": ["asset-registry.asset.view", "asset-registry.asset.create", "asset-registry.asset.update", "asset-registry.meter.record"],
-  "menu": [{ "id": "asset-registry", "title": {"fa": "تجهیزات و دارایی‌ها", "en": "Asset Registry"}, "icon": "cpu", "route": "/asset-registry", "permission": "asset-registry.asset.view" }],
-  "entities": ["asset", "meter", "meter_reading"],
+  "permissions": [
+    "asset-registry.asset.view",
+    "asset-registry.asset.create",
+    "asset-registry.asset.update",
+    "asset-registry.meter.record"
+  ],
+  "menu": [
+    {
+      "id": "asset-registry",
+      "title": {
+        "fa": "تجهیزات و دارایی‌ها",
+        "en": "Asset Registry"
+      },
+      "icon": "cpu",
+      "route": "/asset-registry",
+      "permission": "asset-registry.asset.view"
+    }
+  ],
+  "entities": [
+    "asset",
+    "meter",
+    "meter_reading"
+  ],
   "settings": [],
-  "industry_tags": ["all"],
+  "industry_tags": [
+    "all"
+  ],
   "regional": [],
   "python": false,
-  "ai": {"enabled_default": false, "capabilities": []}
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
 }
