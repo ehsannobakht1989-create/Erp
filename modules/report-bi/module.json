@@ -1,6 +1,6 @@
 {
   "id": "report-bi",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "گزارش‌ساز و هوش تجاری",
     "en": "Report & BI"
@@ -19,7 +19,11 @@
     "report-bi.kpi.breached"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "report-bi.record.view",
+    "report-bi.record.create",
+    "report-bi.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -28,5 +32,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "report-bi",
+      "title": {
+        "fa": "گزارش‌ساز و هوش تجاری",
+        "en": "Report & BI"
+      },
+      "icon": "box",
+      "route": "/report-bi",
+      "permission": "report-bi.record.view"
+    }
+  ]
 }
