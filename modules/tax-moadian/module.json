@@ -1,6 +1,6 @@
 {
   "id": "tax-moadian",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "مالیات و سامانه مودیان",
     "en": "Tax & Moadian"
@@ -21,7 +21,11 @@
     "tax-moadian.invoice.queued"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "tax-moadian.record.view",
+    "tax-moadian.record.create",
+    "tax-moadian.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -32,5 +36,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "tax-moadian",
+      "title": {
+        "fa": "مالیات و سامانه مودیان",
+        "en": "Tax & Moadian"
+      },
+      "icon": "box",
+      "route": "/tax-moadian",
+      "permission": "tax-moadian.record.view"
+    }
+  ]
 }
