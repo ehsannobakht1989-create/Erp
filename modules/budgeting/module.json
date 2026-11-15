@@ -1,6 +1,6 @@
 {
   "id": "budgeting",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "بودجه‌بندی",
     "en": "Budgeting"
@@ -21,7 +21,11 @@
     "budgeting.check.exceeded"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "budgeting.record.view",
+    "budgeting.record.create",
+    "budgeting.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -30,5 +34,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "budgeting",
+      "title": {
+        "fa": "بودجه‌بندی",
+        "en": "Budgeting"
+      },
+      "icon": "box",
+      "route": "/budgeting",
+      "permission": "budgeting.record.view"
+    }
+  ]
 }
