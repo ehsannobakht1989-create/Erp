@@ -1,0 +1,7 @@
+factory: { name: "کارخانه نمونه کوچک", slug: "minimal", locale: "fa", timezone: "Asia/Tehran", currency: "IRR" }
+industry: "generic"
+modules: [auth-rbac, multi-company, audit-log, dynamic-fields, form-builder, workflow-engine, notifications, document-mgmt, print-barcode-qr, api-webhooks, report-bi, item-master, party-master, org-structure, inventory, purchase-order, sales, accounting-gl]
+exclude_regional: []
+ai: { enabled: false, provider: "off" }
+python_service: "auto"
+deploy: { target: "cpanel" }

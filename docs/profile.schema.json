@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Factory Profile",
+  "type": "object",
+  "required": ["factory", "modules"],
+  "properties": {
+    "factory": {
+      "type": "object",
+      "required": ["name", "slug"],
+      "properties": {
+        "name": { "type": "string" },
+        "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "locale": { "type": "string", "default": "fa" },
+        "timezone": { "type": "string", "default": "Asia/Tehran" },
+        "currency": { "type": "string", "default": "IRR" }
+      }
+    },
+    "industry": { "type": "string", "default": "generic" },
+    "modules": { "type": "array", "items": { "type": "string" } },
+    "exclude_regional": { "type": "array", "items": { "type": "string" } },
+    "ai": {
+      "type": "object",
+      "properties": {
+        "enabled": { "type": "boolean", "default": false },
+        "provider": { "type": "string", "enum": ["avalai", "python", "off"], "default": "off" }
+      }
+    },
+    "python_service": { "type": "string", "enum": ["auto", "always", "never"], "default": "auto" },
+    "deploy": {
+      "type": "object",
+      "properties": {
+        "target": { "type": "string", "enum": ["cpanel", "docker"], "default": "cpanel" }
+      }
+    }
+  }
+}

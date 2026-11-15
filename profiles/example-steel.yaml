@@ -1,0 +1,6 @@
+factory: { name: "فولاد نمونه", slug: "example-steel", locale: "fa", timezone: "Asia/Tehran", currency: "IRR" }
+industry: "generic"
+modules: [auth-rbac, multi-company, item-master, party-master, inventory, weighbridge, bom, routing, work-order, quality-inspection, lot-traceability, scrap-byproduct, costing]
+ai: { enabled: false, provider: "off" }
+python_service: "auto"
+deploy: { target: "cpanel" }

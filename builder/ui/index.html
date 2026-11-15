@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <title>ERP Builder — انتخاب ماژول‌ها</title>
+  <style>
+    body { font-family: Tahoma, sans-serif; margin: 24px; background: #f8fafc; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+    .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; }
+    button { padding: 8px 14px; border-radius: 6px; border: 0; background: #2563eb; color: #fff; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>سازنده بسته ERP</h1>
+  <p>ماژول‌های مورد نیاز کارخانه را انتخاب کنید:</p>
+  <div style="margin-bottom: 16px;">
+    <button onclick="loadModules()">بارگذاری ماژول‌ها</button>
+    <span id="counter" style="margin-right: 12px;"></span>
+  </div>
+  <div id="list" class="grid"></div>
+  <script>
+    async function loadModules() {
+      const res = await fetch('/api.php');
+      const data = await res.json();
+      document.getElementById('counter').textContent = 'تعداد کل: ' + data.modules.length;
+      document.getElementById('list').innerHTML = data.modules.map(m =>
+        `<label class="card"><input type="checkbox" value="${m.id}" /> <b>${m.name.fa}</b> <small>(L${m.level})</small></label>`
+      ).join('');
+    }
+    loadModules();
+  </script>
+</body>
+</html>

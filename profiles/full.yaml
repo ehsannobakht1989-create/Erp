@@ -1,0 +1,7 @@
+factory: { name: "کارخانه کامل", slug: "full", locale: "fa", timezone: "Asia/Tehran", currency: "IRR" }
+industry: "generic"
+modules: ["*"]
+exclude_regional: []
+ai: { enabled: true, provider: "avalai" }
+python_service: "auto"
+deploy: { target: "cpanel" }

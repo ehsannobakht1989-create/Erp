@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "react": ["./node_modules/@types/react"],
+      "react/jsx-runtime": ["./node_modules/@types/react/jsx-runtime"],
+      "@erp/ui": ["src/ui/index.tsx"],
+      "@erp/i18n": ["src/i18n/index.ts"],
+      "@erp/hooks": ["src/hooks/index.ts"]
+    }
+  },
+  "include": ["src", "../../modules/*/web/**/*"]
+}

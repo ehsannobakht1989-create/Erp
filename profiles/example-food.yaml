@@ -1,0 +1,6 @@
+factory: { name: "صنایع غذایی نمونه", slug: "example-food", locale: "fa", timezone: "Asia/Tehran", currency: "IRR" }
+industry: "generic"
+modules: [auth-rbac, multi-company, item-master, party-master, inventory, bom, batch-formulation, quality-inspection, lims, lot-traceability, work-order, costing]
+ai: { enabled: false, provider: "off" }
+python_service: "auto"
+deploy: { target: "cpanel" }
