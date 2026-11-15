@@ -1,6 +1,6 @@
 {
   "id": "correspondence",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "دبیرخانه و مکاتبات",
     "en": "Correspondence"
@@ -24,7 +24,11 @@
     "correspondence.letter.registered"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "correspondence.record.view",
+    "correspondence.record.create",
+    "correspondence.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -35,5 +39,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "correspondence",
+      "title": {
+        "fa": "دبیرخانه و مکاتبات",
+        "en": "Correspondence"
+      },
+      "icon": "box",
+      "route": "/correspondence",
+      "permission": "correspondence.record.view"
+    }
+  ]
 }
