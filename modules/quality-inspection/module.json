@@ -1,6 +1,6 @@
 {
   "id": "quality-inspection",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "کنترل کیفیت",
     "en": "Quality Inspection"
@@ -9,7 +9,7 @@
   "category": "quality",
   "level": 3,
   "requires": [
-    "inventory"
+    "item-master"
   ],
   "optional": [
     "item-master"
@@ -22,7 +22,11 @@
     "quality-inspection.lot.created"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "quality-inspection.record.view",
+    "quality-inspection.record.create",
+    "quality-inspection.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -31,5 +35,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "quality-inspection",
+      "title": {
+        "fa": "کنترل کیفیت",
+        "en": "Quality Inspection"
+      },
+      "icon": "file",
+      "route": "/quality-inspection",
+      "permission": "quality-inspection.record.view"
+    }
+  ]
 }
