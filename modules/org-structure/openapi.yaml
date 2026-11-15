@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Organization Structure API
+  version: 1.0.0
+paths:
+  /api/org-structure/units:
+    get:
+      summary: List org units
+      responses:
+        '200': { description: Units list }
