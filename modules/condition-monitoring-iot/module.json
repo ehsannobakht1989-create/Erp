@@ -1,6 +1,6 @@
 {
   "id": "condition-monitoring-iot",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "پایش وضعیت و IoT",
     "en": "Condition Monitoring IoT"
@@ -21,7 +21,11 @@
     "condition-monitoring-iot.alarm.raised"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "condition-monitoring-iot.record.view",
+    "condition-monitoring-iot.record.create",
+    "condition-monitoring-iot.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -30,5 +34,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "condition-monitoring-iot",
+      "title": {
+        "fa": "پایش وضعیت و IoT",
+        "en": "Condition Monitoring IoT"
+      },
+      "icon": "box",
+      "route": "/condition-monitoring-iot",
+      "permission": "condition-monitoring-iot.record.view"
+    }
+  ]
 }
