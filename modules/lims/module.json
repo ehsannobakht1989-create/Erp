@@ -1,6 +1,6 @@
 {
   "id": "lims",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "مدیریت آزمایشگاه",
     "en": "LIMS"
@@ -22,7 +22,11 @@
     "lims.coa.issued"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "lims.record.view",
+    "lims.record.create",
+    "lims.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -31,5 +35,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "lims",
+      "title": {
+        "fa": "مدیریت آزمایشگاه",
+        "en": "LIMS"
+      },
+      "icon": "activity",
+      "route": "/lims",
+      "permission": "lims.record.view"
+    }
+  ]
 }
