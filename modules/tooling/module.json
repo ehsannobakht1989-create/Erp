@@ -1,6 +1,6 @@
 {
   "id": "tooling",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "ابزار و قالب",
     "en": "Tooling"
@@ -9,8 +9,7 @@
   "category": "manufacturing",
   "level": 4,
   "requires": [
-    "asset-registry",
-    "inventory"
+    "item-master"
   ],
   "optional": [],
   "provides": [
@@ -21,7 +20,11 @@
     "tooling.tool.checked_out"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "tooling.record.view",
+    "tooling.record.create",
+    "tooling.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -30,5 +33,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "tooling",
+      "title": {
+        "fa": "ابزار و قالب",
+        "en": "Tooling"
+      },
+      "icon": "settings",
+      "route": "/tooling",
+      "permission": "tooling.record.view"
+    }
+  ]
 }
