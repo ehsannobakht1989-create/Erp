@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Notifications API
+  version: 1.0.0
+paths:
+  /api/notifications/messages:
+    get:
+      summary: List user notifications
+      responses:
+        '200': { description: Notifications list }

@@ -1,0 +1,15 @@
+openapi: 3.0.3
+info:
+  title: Multi-Company API
+  version: 1.0.0
+paths:
+  /api/multi-company/companies:
+    get:
+      summary: List companies
+      responses:
+        '200': { description: Companies list }
+  /api/multi-company/sequences/next:
+    post:
+      summary: Generate next sequence number
+      responses:
+        '200': { description: Next number }

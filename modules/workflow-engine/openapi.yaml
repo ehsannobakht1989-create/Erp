@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Workflow Engine API
+  version: 1.0.0
+paths:
+  /api/workflow-engine/tasks:
+    get:
+      summary: My pending workflow tasks
+      responses:
+        '200': { description: Tasks list }

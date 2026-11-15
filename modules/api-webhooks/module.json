@@ -1,6 +1,6 @@
 {
   "id": "api-webhooks",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "وب‌هوک و API",
     "en": "API & Webhooks"
@@ -10,18 +10,44 @@
   "level": 0,
   "requires": [],
   "optional": [],
-  "provides": [],
+  "provides": ["WebhookService"],
   "consumes": [],
-  "emits": [],
+  "emits": ["api-webhooks.webhook.dispatched"],
   "listens": [],
-  "permissions": [],
-  "industry_tags": [
-    "all"
+  "permissions": ["api-webhooks.key.view", "api-webhooks.key.manage", "api-webhooks.webhook.manage", "api-webhooks.ai.use"],
+  "menu": [
+    {
+      "id": "api-webhooks",
+      "title": {"fa": "کلیدهای API و وب‌هوک", "en": "API & Webhooks"},
+      "icon": "webhook",
+      "route": "/api-webhooks",
+      "permission": "api-webhooks.key.view"
+    }
   ],
+  "entities": ["api_key", "webhook", "delivery_log"],
+  "settings": [],
+  "industry_tags": ["all"],
   "regional": [],
   "python": false,
   "ai": {
     "enabled_default": false,
-    "capabilities": []
+    "capabilities": [
+      {
+        "id": "anomaly",
+        "provider": "avalai",
+        "tools": ["api-webhooks.failed_deliveries"],
+        "proposals": [],
+        "redact": ["key_hash", "secret"],
+        "max_tokens_per_call": 1500
+      },
+      {
+        "id": "summarize",
+        "provider": "avalai",
+        "tools": ["api-webhooks.delivery_health"],
+        "proposals": [],
+        "redact": [],
+        "max_tokens_per_call": 1500
+      }
+    ]
   }
 }

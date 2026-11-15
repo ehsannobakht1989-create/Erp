@@ -1,6 +1,6 @@
 {
   "id": "notifications",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "اعلان‌ها",
     "en": "Notifications"
@@ -10,18 +10,46 @@
   "level": 0,
   "requires": [],
   "optional": [],
-  "provides": [],
+  "provides": ["NotifierContract"],
   "consumes": [],
-  "emits": [],
+  "emits": ["notifications.message.sent"],
   "listens": [],
-  "permissions": [],
-  "industry_tags": [
-    "all"
+  "permissions": ["notifications.message.view", "notifications.template.manage", "notifications.ai.use"],
+  "menu": [
+    {
+      "id": "notifications",
+      "title": {"fa": "اعلان‌ها", "en": "Notifications"},
+      "icon": "bell",
+      "route": "/notifications",
+      "permission": "notifications.message.view"
+    }
   ],
-  "regional": [],
+  "entities": ["message", "template", "rule"],
+  "settings": [
+    {"key": "sms_provider", "type": "string", "default": "kavenegar"}
+  ],
+  "industry_tags": ["all"],
+  "regional": ["ir"],
   "python": false,
   "ai": {
     "enabled_default": false,
-    "capabilities": []
+    "capabilities": [
+      {
+        "id": "autofill",
+        "provider": "avalai",
+        "tools": ["notifications.list_templates"],
+        "proposals": ["notifications.propose_template"],
+        "redact": [],
+        "max_tokens_per_call": 1000
+      },
+      {
+        "id": "summarize",
+        "provider": "avalai",
+        "tools": ["notifications.unread_messages"],
+        "proposals": [],
+        "redact": [],
+        "max_tokens_per_call": 1000
+      }
+    ]
   }
 }

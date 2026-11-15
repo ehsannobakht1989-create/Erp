@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Print & Barcode API
+  version: 1.0.0
+paths:
+  /api/print-barcode-qr/templates:
+    get:
+      summary: List print templates
+      responses:
+        '200': { description: Templates list }

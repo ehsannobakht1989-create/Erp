@@ -1,0 +1,20 @@
+openapi: 3.0.3
+info:
+  title: Auth & RBAC API
+  version: 1.0.0
+paths:
+  /api/auth-rbac/login:
+    post:
+      summary: Login with username/email and password
+      responses:
+        '200': { description: Authenticated }
+  /api/auth-rbac/users:
+    get:
+      summary: List users
+      responses:
+        '200': { description: Users list }
+  /api/auth-rbac/roles:
+    get:
+      summary: List roles and permission matrix
+      responses:
+        '200': { description: Roles list }

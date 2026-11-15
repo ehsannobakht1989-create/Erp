@@ -1,6 +1,6 @@
 {
   "id": "form-builder",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "فرم‌ساز",
     "en": "Form Builder"
@@ -10,18 +10,36 @@
   "level": 0,
   "requires": [],
   "optional": [],
-  "provides": [],
+  "provides": ["FormBuilderService"],
   "consumes": [],
-  "emits": [],
+  "emits": ["form-builder.form.published", "form-builder.submission.created"],
   "listens": [],
-  "permissions": [],
-  "industry_tags": [
-    "all"
+  "permissions": ["form-builder.form.view", "form-builder.form.manage", "form-builder.submission.create", "form-builder.ai.use"],
+  "menu": [
+    {
+      "id": "form-builder",
+      "title": {"fa": "فرم‌ساز", "en": "Form Builder"},
+      "icon": "layout",
+      "route": "/form-builder",
+      "permission": "form-builder.form.view"
+    }
   ],
+  "entities": ["form_definition", "form_instance"],
+  "settings": [],
+  "industry_tags": ["all"],
   "regional": [],
   "python": false,
   "ai": {
     "enabled_default": false,
-    "capabilities": []
+    "capabilities": [
+      {
+        "id": "autofill",
+        "provider": "avalai",
+        "tools": ["form-builder.list_forms"],
+        "proposals": ["form-builder.propose_form_schema"],
+        "redact": [],
+        "max_tokens_per_call": 2000
+      }
+    ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "id": "auth-rbac",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "احراز هویت و دسترسی",
     "en": "Auth & RBAC"
@@ -9,19 +9,55 @@
   "category": "platform",
   "level": 0,
   "requires": [],
-  "optional": [],
-  "provides": [],
-  "consumes": [],
-  "emits": [],
+  "optional": ["notifications"],
+  "provides": ["AuthContract", "PermissionContract", "ScopeContract"],
+  "consumes": ["NotifierContract"],
+  "emits": ["auth-rbac.user.logged_in", "auth-rbac.user.locked", "auth-rbac.role.updated"],
   "listens": [],
-  "permissions": [],
-  "industry_tags": [
-    "all"
+  "permissions": [
+    "auth-rbac.user.view",
+    "auth-rbac.user.create",
+    "auth-rbac.user.update",
+    "auth-rbac.role.view",
+    "auth-rbac.role.manage",
+    "auth-rbac.ai.use"
   ],
+  "menu": [
+    {
+      "id": "auth-rbac",
+      "title": {"fa": "کاربران و دسترسی‌ها", "en": "Users & RBAC"},
+      "icon": "shield",
+      "route": "/auth-rbac",
+      "permission": "auth-rbac.user.view"
+    }
+  ],
+  "entities": ["user", "role", "session"],
+  "settings": [
+    {"key": "max_failed_logins", "type": "int", "default": 5},
+    {"key": "lockout_minutes", "type": "int", "default": 15}
+  ],
+  "industry_tags": ["all"],
   "regional": [],
   "python": false,
   "ai": {
     "enabled_default": false,
-    "capabilities": []
+    "capabilities": [
+      {
+        "id": "assistant",
+        "provider": "avalai",
+        "tools": ["auth-rbac.explain_permission"],
+        "proposals": [],
+        "redact": ["password_hash", "totp_secret"],
+        "max_tokens_per_call": 1500
+      },
+      {
+        "id": "anomaly",
+        "provider": "avalai",
+        "tools": ["auth-rbac.recent_failed_logins"],
+        "proposals": ["auth-rbac.propose_lockout"],
+        "redact": ["password_hash"],
+        "max_tokens_per_call": 1500
+      }
+    ]
   }
 }

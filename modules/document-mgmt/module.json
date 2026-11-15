@@ -1,6 +1,6 @@
 {
   "id": "document-mgmt",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "مدیریت اسناد",
     "en": "Document Management"
@@ -9,19 +9,47 @@
   "category": "platform",
   "level": 0,
   "requires": [],
-  "optional": [],
-  "provides": [],
+  "optional": ["doc-ocr"],
+  "provides": ["DocumentService"],
   "consumes": [],
-  "emits": [],
+  "emits": ["document-mgmt.document.attached"],
   "listens": [],
-  "permissions": [],
-  "industry_tags": [
-    "all"
+  "permissions": ["document-mgmt.document.view", "document-mgmt.document.upload", "document-mgmt.ai.use"],
+  "menu": [
+    {
+      "id": "document-mgmt",
+      "title": {"fa": "مدیریت اسناد", "en": "Documents"},
+      "icon": "file-text",
+      "route": "/document-mgmt",
+      "permission": "document-mgmt.document.view"
+    }
   ],
+  "entities": ["document", "version"],
+  "settings": [
+    {"key": "max_file_size_mb", "type": "int", "default": 10}
+  ],
+  "industry_tags": ["all"],
   "regional": [],
   "python": false,
   "ai": {
     "enabled_default": false,
-    "capabilities": []
+    "capabilities": [
+      {
+        "id": "assistant",
+        "provider": "avalai",
+        "tools": ["document-mgmt.search_metadata"],
+        "proposals": [],
+        "redact": [],
+        "max_tokens_per_call": 1500
+      },
+      {
+        "id": "autofill",
+        "provider": "avalai",
+        "tools": ["document-mgmt.list_tags"],
+        "proposals": ["document-mgmt.propose_tags"],
+        "redact": [],
+        "max_tokens_per_call": 1000
+      }
+    ]
   }
 }
