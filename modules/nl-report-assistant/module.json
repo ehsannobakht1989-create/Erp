@@ -1,6 +1,6 @@
 {
   "id": "nl-report-assistant",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "دستیار گزارش‌گیری",
     "en": "NL Report Assistant"
@@ -20,7 +20,11 @@
     "nl-report-assistant.question.saved"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "nl-report-assistant.record.view",
+    "nl-report-assistant.record.create",
+    "nl-report-assistant.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -29,5 +33,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "nl-report-assistant",
+      "title": {
+        "fa": "دستیار گزارش‌گیری",
+        "en": "NL Report Assistant"
+      },
+      "icon": "box",
+      "route": "/nl-report-assistant",
+      "permission": "nl-report-assistant.record.view"
+    }
+  ]
 }
