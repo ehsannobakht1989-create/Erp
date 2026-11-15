@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: BOM API
+  version: 1.0.0
+paths:
+  /api/bom/boms:
+    get:
+      summary: List BOMs
+      responses:
+        '200': { description: BOMs list }
