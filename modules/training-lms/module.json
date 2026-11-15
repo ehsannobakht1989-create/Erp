@@ -1,6 +1,6 @@
 {
   "id": "training-lms",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "آموزش",
     "en": "Training & LMS"
@@ -24,7 +24,11 @@
     "training-lms.certificate.expiring"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "training-lms.record.view",
+    "training-lms.record.create",
+    "training-lms.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -33,5 +37,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "training-lms",
+      "title": {
+        "fa": "آموزش",
+        "en": "Training & LMS"
+      },
+      "icon": "box",
+      "route": "/training-lms",
+      "permission": "training-lms.record.view"
+    }
+  ]
 }
