@@ -1,6 +1,6 @@
 {
   "id": "demand-forecast",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "پیش‌بینی تقاضا",
     "en": "Demand Forecast"
@@ -22,7 +22,11 @@
     "demand-forecast.forecast.adopted"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "demand-forecast.record.view",
+    "demand-forecast.record.create",
+    "demand-forecast.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -31,5 +35,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "demand-forecast",
+      "title": {
+        "fa": "پیش‌بینی تقاضا",
+        "en": "Demand Forecast"
+      },
+      "icon": "box",
+      "route": "/demand-forecast",
+      "permission": "demand-forecast.record.view"
+    }
+  ]
 }
