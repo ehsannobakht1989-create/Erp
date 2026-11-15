@@ -1,6 +1,6 @@
 {
   "id": "parking-vehicles",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "پارکینگ و خودروها",
     "en": "Parking & Vehicles"
@@ -24,7 +24,11 @@
     "parking-vehicles.trip.completed"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "parking-vehicles.record.view",
+    "parking-vehicles.record.create",
+    "parking-vehicles.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -33,5 +37,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "parking-vehicles",
+      "title": {
+        "fa": "پارکینگ و خودروها",
+        "en": "Parking & Vehicles"
+      },
+      "icon": "box",
+      "route": "/parking-vehicles",
+      "permission": "parking-vehicles.record.view"
+    }
+  ]
 }
