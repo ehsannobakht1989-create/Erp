@@ -1,6 +1,6 @@
 {
   "id": "anomaly-detection",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "تشخیص ناهنجاری",
     "en": "Anomaly Detection"
@@ -21,7 +21,11 @@
     "anomaly-detection.detection.created"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "anomaly-detection.record.view",
+    "anomaly-detection.record.create",
+    "anomaly-detection.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -30,5 +34,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "anomaly-detection",
+      "title": {
+        "fa": "تشخیص ناهنجاری",
+        "en": "Anomaly Detection"
+      },
+      "icon": "box",
+      "route": "/anomaly-detection",
+      "permission": "anomaly-detection.record.view"
+    }
+  ]
 }
