@@ -1,6 +1,6 @@
 {
   "id": "competency-appraisal",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "ارزیابی شایستگی",
     "en": "Competency Appraisal"
@@ -25,7 +25,11 @@
     "competency-appraisal.score.finalized"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "competency-appraisal.record.view",
+    "competency-appraisal.record.create",
+    "competency-appraisal.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -34,5 +38,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "competency-appraisal",
+      "title": {
+        "fa": "ارزیابی شایستگی",
+        "en": "Competency Appraisal"
+      },
+      "icon": "box",
+      "route": "/competency-appraisal",
+      "permission": "competency-appraisal.record.view"
+    }
+  ]
 }
