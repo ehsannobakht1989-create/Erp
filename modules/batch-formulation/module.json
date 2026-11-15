@@ -1,6 +1,6 @@
 {
   "id": "batch-formulation",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "فرمولاسیون و بچ",
     "en": "Batch Formulation"
@@ -9,8 +9,9 @@
   "category": "manufacturing",
   "level": 4,
   "requires": [
-    "bom",
-    "inventory"
+    "item-master",
+    "inventory",
+    "work-order"
   ],
   "optional": [],
   "provides": [
@@ -22,7 +23,11 @@
     "batch-formulation.deviation.raised"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "batch-formulation.record.view",
+    "batch-formulation.record.create",
+    "batch-formulation.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -31,5 +36,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "batch-formulation",
+      "title": {
+        "fa": "فرمولاسیون و بچ",
+        "en": "Batch Formulation"
+      },
+      "icon": "settings",
+      "route": "/batch-formulation",
+      "permission": "batch-formulation.record.view"
+    }
+  ]
 }
