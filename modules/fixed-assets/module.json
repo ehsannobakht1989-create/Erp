@@ -13,9 +13,13 @@
     "accounting-gl"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "FixedAssetsServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "fixed-assets.asset.capitalized"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

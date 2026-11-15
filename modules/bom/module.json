@@ -12,9 +12,13 @@
     "item-master"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "BomServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "bom.bom.approved"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

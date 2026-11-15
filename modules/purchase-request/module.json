@@ -14,9 +14,13 @@
   "optional": [
     "org-structure"
   ],
-  "provides": [],
+  "provides": [
+    "PurchaseRequestServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "purchase-request.pr.submitted"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

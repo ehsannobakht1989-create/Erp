@@ -17,9 +17,13 @@
     "rfq",
     "accounting-gl"
   ],
-  "provides": [],
+  "provides": [
+    "PurchaseOrderServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "purchase-order.po.approved"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

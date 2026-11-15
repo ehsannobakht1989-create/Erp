@@ -57,6 +57,12 @@ final class Packager
         $this->addDirToZip($zip, $this->root . '/core/contracts', 'core/contracts');
         $this->addDirToZip($zip, $this->root . '/public', 'public');
 
+        // Always include every module's backend/src/Contracts/ so type-hints never fail
+        foreach (glob($this->root . '/modules/*/backend/src/Contracts', GLOB_ONLYDIR) ?: [] as $contractsDir) {
+            $modId = basename(dirname($contractsDir, 3));
+            $this->addDirToZip($zip, $contractsDir, "modules/$modId/backend/src/Contracts");
+        }
+
         foreach ($resolved['modules'] as $id) {
             $modRoot = $this->root . "/modules/$id";
             if (is_file("$modRoot/module.json")) {

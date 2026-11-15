@@ -10,9 +10,13 @@
   "level": 1,
   "requires": [],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "OrgStructureServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "org-structure.unit.changed"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

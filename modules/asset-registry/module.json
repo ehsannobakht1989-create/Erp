@@ -12,9 +12,13 @@
   "optional": [
     "org-structure"
   ],
-  "provides": [],
+  "provides": [
+    "AssetRegistryServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "asset-registry.asset.created"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

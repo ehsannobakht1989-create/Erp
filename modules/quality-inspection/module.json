@@ -14,9 +14,13 @@
   "optional": [
     "item-master"
   ],
-  "provides": [],
+  "provides": [
+    "QualityInspectionServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "quality-inspection.lot.created"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

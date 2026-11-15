@@ -12,9 +12,13 @@
     "org-structure"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "HrCoreServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "hr-core.employee.hired"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

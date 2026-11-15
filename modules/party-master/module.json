@@ -10,9 +10,13 @@
   "level": 1,
   "requires": [],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "PartyMasterServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "party-master.party.created"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

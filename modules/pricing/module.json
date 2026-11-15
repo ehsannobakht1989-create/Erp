@@ -13,9 +13,14 @@
     "party-master"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "PricingServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "pricing.pricelist.activated",
+    "pricing.price.changed"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

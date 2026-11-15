@@ -13,9 +13,13 @@
     "inventory"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "CmmsServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "cmms.workorder.created"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

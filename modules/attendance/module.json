@@ -14,9 +14,13 @@
   "optional": [
     "hr-core"
   ],
-  "provides": [],
+  "provides": [
+    "AttendanceServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "attendance.period.closed"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

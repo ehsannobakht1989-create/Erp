@@ -17,9 +17,16 @@
     "pricing",
     "accounting-gl"
   ],
-  "provides": [],
+  "provides": [
+    "SalesServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "sales.order.confirmed",
+    "sales.delivery.requested",
+    "sales.invoice.issued",
+    "sales.return.posted"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

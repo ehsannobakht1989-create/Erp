@@ -1,0 +1,11 @@
+# purchase-order — Purchase orders (L2; requires item-master, party-master; optional purchase-request, rfq, inventory, accounting-gl)
+
+**Entities** PO{number,supplier_id,date,currency,rate,payment_terms,incoterm,delivery_address,buyer_id,status[draft|pending_approval|approved|sent|partially_received|received|closed|cancelled],revision,contract_ref}; POLine{item_id,desc,qty,uom,price,discount,tax_code,delivery_date,warehouse_id,cost_center_id,received_qty,invoiced_qty,over_tolerance_pct,status}; POSchedule{line_id,date,qty}; POCharge{type[freight|insurance|customs|other],amount,allocate_to_cost}; POAmendment log; BlanketOrder{supplier,item,total_qty,valid_to,released_qty}.
+**Workflow** approval thresholds by amount/category (workflow-engine); approved POs lock; changes after approval create revision requiring re-approval when value/qty/price delta beyond setting.
+**Rules** price defaults from rfq award/pricing(purchase)/last PO; tax from settings (VAT rate per company, exemptions per item category); receipt qty tolerance; closing with open qty requires reason; blanket releases decrement; supplier must be active & not blacklisted; currency rate from multi-company; landed-cost charges exposed to costing.
+**Events out** purchase-order.po.approved|sent|revised|cancelled|closed, line.created. **In** inventory.receipt.posted (update received_qty), ar-ap.invoice.posted (update invoiced_qty), rfq.awarded (draft PO suggestion), purchase-request.line.converted (feedback).
+**Service contract** PurchaseOrderService: find(id), openLines(supplier?,item?), expectedReceipts(warehouse,dateRange), receivedSummary(poId), markInvoiced(lineId,qty).
+**Permissions** purchase-order.po.view|create|update|approve|send|revise|cancel|close, purchase-order.blanket.manage.
+**Screens** PO list/board, form (lines grid, charges, schedule, terms), approval view, amendment compare, supplier PO history, open-PO report, expected receipts calendar, print (سفارش خرید with terms) + email via notifications.
+**AI** autofill (create PO from PR/RFQ/free text, proposal), anomaly (price jump vs history, split-order to bypass thresholds), summarize supplier performance (OTIF) for buyer.
+**Iran** foreign purchase flags (import/LC link to import-customs/forex-lc modules when enabled), Persian print form, tax/VAT & duty fields configurable.

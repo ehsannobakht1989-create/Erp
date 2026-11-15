@@ -12,9 +12,13 @@
   "optional": [
     "multi-company"
   ],
-  "provides": [],
+  "provides": [
+    "AccountingGlServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "accounting-gl.journal.posted"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

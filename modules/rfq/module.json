@@ -15,9 +15,13 @@
   "optional": [
     "purchase-request"
   ],
-  "provides": [],
+  "provides": [
+    "RfqServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "rfq.rfq.sent"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

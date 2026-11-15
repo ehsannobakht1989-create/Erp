@@ -14,9 +14,13 @@
   "optional": [
     "asset-registry"
   ],
-  "provides": [],
+  "provides": [
+    "RoutingServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "routing.routing.approved"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

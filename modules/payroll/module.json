@@ -14,9 +14,14 @@
     "accounting-gl"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "PayrollServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "payroll.run.approved",
+    "payroll.run.paid"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

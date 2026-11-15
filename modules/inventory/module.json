@@ -14,9 +14,13 @@
   "optional": [
     "accounting-gl"
   ],
-  "provides": [],
+  "provides": [
+    "InventoryServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "inventory.receipt.posted"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

@@ -14,9 +14,13 @@
   "optional": [
     "ar-ap"
   ],
-  "provides": [],
+  "provides": [
+    "TreasuryServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "treasury.cheque.status_changed"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [
