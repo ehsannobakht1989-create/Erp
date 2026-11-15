@@ -1,6 +1,6 @@
 {
   "id": "purchase-order",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "سفارش خرید",
     "en": "Purchase Order"
@@ -10,8 +10,7 @@
   "level": 2,
   "requires": [
     "item-master",
-    "party-master",
-    "inventory"
+    "party-master"
   ],
   "optional": [
     "rfq",
@@ -25,7 +24,11 @@
     "purchase-order.po.approved"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "purchase-order.record.view",
+    "purchase-order.record.create",
+    "purchase-order.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -34,5 +37,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "purchase-order",
+      "title": {
+        "fa": "سفارش خرید",
+        "en": "Purchase Order"
+      },
+      "icon": "file",
+      "route": "/purchase-order",
+      "permission": "purchase-order.record.view"
+    }
+  ]
 }
