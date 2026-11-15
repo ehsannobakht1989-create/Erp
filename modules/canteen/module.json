@@ -1,6 +1,6 @@
 {
   "id": "canteen",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "رستوران و تغذیه",
     "en": "Canteen"
@@ -24,7 +24,11 @@
     "canteen.meal.served"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "canteen.record.view",
+    "canteen.record.create",
+    "canteen.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -33,5 +37,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "canteen",
+      "title": {
+        "fa": "رستوران و تغذیه",
+        "en": "Canteen"
+      },
+      "icon": "box",
+      "route": "/canteen",
+      "permission": "canteen.record.view"
+    }
+  ]
 }
