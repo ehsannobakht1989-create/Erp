@@ -1,6 +1,6 @@
 {
   "id": "gate-visitor",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "نگهبانی و مراجعین",
     "en": "Gate & Visitor"
@@ -23,7 +23,11 @@
     "gate-visitor.materialpass.used"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "gate-visitor.record.view",
+    "gate-visitor.record.create",
+    "gate-visitor.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -32,5 +36,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "gate-visitor",
+      "title": {
+        "fa": "نگهبانی و مراجعین",
+        "en": "Gate & Visitor"
+      },
+      "icon": "box",
+      "route": "/gate-visitor",
+      "permission": "gate-visitor.record.view"
+    }
+  ]
 }
