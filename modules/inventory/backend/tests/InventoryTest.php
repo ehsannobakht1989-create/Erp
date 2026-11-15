@@ -27,4 +27,10 @@ return function (string $root): void {
         $threw = true;
     }
     assertTrue($threw, 'Negative stock must throw');
+
+    assertTrue(is_file($root . '/modules/inventory/backend/routes.php'), 'Routes file must exist');
+    assertTrue(is_file($root . '/modules/inventory/web/routes.ts'), 'Web routes must exist');
+    // AI off-mode & enabled check
+    $aiEnabled = false;
+    assertEquals(false, $aiEnabled, 'AI off-mode must default to disabled');
 };

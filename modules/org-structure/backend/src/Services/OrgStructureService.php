@@ -46,4 +46,10 @@ final class OrgStructureService implements OrgStructureServiceInterface
     public function workingMinutes(int $companyId, array $params = []): mixed { return 480; }
     public function shift(int $companyId, array $params = []): mixed { return null; }
     public function shiftsFor(int $companyId, array $params = []): mixed { return []; }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['org-structure.unit.changed', 'org-structure.position.assigned', 'org-structure.position.vacated', 'org-structure.cost_center.created', 'org-structure.cost_center.updated'];
+    }
 }

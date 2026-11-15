@@ -63,4 +63,10 @@ final class AccountingGlService implements AccountingGlServiceInterface
     }
     public function isPeriodOpen(int $companyId, array $params = []): mixed { return true; }
     public function resolveAccount(int $companyId, array $params = []): mixed { return null; }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['accounting-gl.journal.reversed', 'accounting-gl.period.closed'];
+    }
 }

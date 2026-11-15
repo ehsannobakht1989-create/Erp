@@ -91,4 +91,10 @@ final class InventoryService implements InventoryServiceInterface
     public function getLot(int $companyId, array $params = []): mixed { return null; }
     public function expiringLots(int $companyId, array $params = []): mixed { return []; }
     public function valuationFeed(int $companyId, array $params = []): mixed { return []; }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['inventory.issue.posted', 'inventory.transfer.shipped', 'inventory.transfer.received', 'inventory.adjustment.posted', 'inventory.stock.first_posted'];
+    }
 }

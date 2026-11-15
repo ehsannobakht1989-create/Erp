@@ -36,4 +36,10 @@ final class TreasuryService implements TreasuryServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['treasury.cheque.status_changed'];
+    }
 }

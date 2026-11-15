@@ -37,4 +37,10 @@ final class PricingService implements PricingServiceInterface
     {
         return $this->db->fetchAll('SELECT * FROM pricing__lists WHERE company_id = ? AND status = ?', [$companyId, 'active']);
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['pricing.pricelist.activated', 'pricing.price.changed'];
+    }
 }

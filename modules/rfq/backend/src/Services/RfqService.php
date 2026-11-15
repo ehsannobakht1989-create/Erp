@@ -31,4 +31,10 @@ final class RfqService implements RfqServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['rfq.rfq.sent'];
+    }
 }

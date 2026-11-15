@@ -7,4 +7,7 @@ use Core\Http\Router;
 
 return function (Router $router, Container $container): void {
     $router->get('/records', fn(): Response => Response::ok([]), 'mrp.record.view');
+
+    $router->post('/actions/create-0', fn(): Response => Response::ok(['permission' => 'mrp.record.create']), 'mrp.record.create');
+    $router->post('/actions/approve-1', fn(): Response => Response::ok(['permission' => 'mrp.record.approve']), 'mrp.record.approve');
 };

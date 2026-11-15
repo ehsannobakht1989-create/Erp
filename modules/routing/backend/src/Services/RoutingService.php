@@ -36,4 +36,10 @@ final class RoutingService implements RoutingServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['routing.routing.approved'];
+    }
 }

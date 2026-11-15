@@ -42,3 +42,37 @@ CREATE TABLE IF NOT EXISTS party_master__parties (
     deleted_at VARCHAR(32) NULL,
     UNIQUE(company_id, code)
 );
+
+
+CREATE TABLE IF NOT EXISTS party_master__addresss (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    company_id INTEGER NOT NULL DEFAULT 1,
+    code VARCHAR(64) NOT NULL DEFAULT '',
+    name VARCHAR(255) NOT NULL DEFAULT '',
+    status VARCHAR(32) NOT NULL DEFAULT 'active',
+    payload TEXT NULL,
+    created_at VARCHAR(32) NOT NULL DEFAULT '',
+    updated_at VARCHAR(32) NOT NULL DEFAULT ''
+);
+
+CREATE TABLE IF NOT EXISTS party_master__contacts (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    company_id INTEGER NOT NULL DEFAULT 1,
+    code VARCHAR(64) NOT NULL DEFAULT '',
+    name VARCHAR(255) NOT NULL DEFAULT '',
+    status VARCHAR(32) NOT NULL DEFAULT 'active',
+    payload TEXT NULL,
+    created_at VARCHAR(32) NOT NULL DEFAULT '',
+    updated_at VARCHAR(32) NOT NULL DEFAULT ''
+);
+
+CREATE TABLE IF NOT EXISTS party_master__bank_accounts (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    company_id INTEGER NOT NULL DEFAULT 1,
+    code VARCHAR(64) NOT NULL DEFAULT '',
+    name VARCHAR(255) NOT NULL DEFAULT '',
+    status VARCHAR(32) NOT NULL DEFAULT 'active',
+    payload TEXT NULL,
+    created_at VARCHAR(32) NOT NULL DEFAULT '',
+    updated_at VARCHAR(32) NOT NULL DEFAULT ''
+);

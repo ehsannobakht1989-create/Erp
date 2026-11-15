@@ -156,4 +156,10 @@ final class ItemMasterService implements ItemMasterServiceInterface
     {
         $this->repo->updateById($companyId, null, $id, ['is_used' => 1]);
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['item-master.item.put_on_hold', 'item-master.item.obsoleted', 'item-master.item.merged', 'item-master.item.category_changed'];
+    }
 }

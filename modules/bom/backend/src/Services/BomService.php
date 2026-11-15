@@ -47,4 +47,10 @@ final class BomService implements BomServiceInterface
     public function compare(int $companyId, array $params = []): mixed { return []; }
     public function costRollupInputs(int $companyId, array $params = []): mixed { return []; }
     public function validate(int $companyId, array $params = []): mixed { return true; }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['bom.bom.approved', 'bom.bom.obsoleted', 'bom.bom.revised'];
+    }
 }
