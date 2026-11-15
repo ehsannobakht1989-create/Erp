@@ -16,8 +16,8 @@
     "org-structure.unit.changed",
     "org-structure.position.assigned",
     "org-structure.position.vacated",
-    "org-structure.cost-center.created",
-    "org-structure.cost-center.updated"
+    "org-structure.cost_center.created",
+    "org-structure.cost_center.updated"
   ],
   "listens": [],
   "permissions": [
