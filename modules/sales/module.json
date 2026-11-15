@@ -1,6 +1,6 @@
 {
   "id": "sales",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "فروش",
     "en": "Sales"
@@ -11,7 +11,7 @@
   "requires": [
     "item-master",
     "party-master",
-    "inventory"
+    "pricing"
   ],
   "optional": [
     "pricing",
@@ -28,7 +28,11 @@
     "sales.return.posted"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "sales.record.view",
+    "sales.record.create",
+    "sales.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -37,5 +41,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "sales",
+      "title": {
+        "fa": "فروش",
+        "en": "Sales"
+      },
+      "icon": "file",
+      "route": "/sales",
+      "permission": "sales.record.view"
+    }
+  ]
 }
