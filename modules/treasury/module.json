@@ -1,6 +1,6 @@
 {
   "id": "treasury",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "خزانه‌داری",
     "en": "Treasury"
@@ -9,7 +9,8 @@
   "category": "finance",
   "level": 3,
   "requires": [
-    "accounting-gl"
+    "accounting-gl",
+    "party-master"
   ],
   "optional": [
     "ar-ap"
@@ -22,7 +23,11 @@
     "treasury.cheque.status_changed"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "treasury.record.view",
+    "treasury.record.create",
+    "treasury.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -33,5 +38,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "treasury",
+      "title": {
+        "fa": "خزانه‌داری",
+        "en": "Treasury"
+      },
+      "icon": "file",
+      "route": "/treasury",
+      "permission": "treasury.record.view"
+    }
+  ]
 }
