@@ -1,6 +1,6 @@
 {
   "id": "warranty-after-sales",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "گارانتی و خدمات پس از فروش",
     "en": "Warranty & After-Sales"
@@ -25,7 +25,11 @@
     "warranty-after-sales.credit.requested"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "warranty-after-sales.record.view",
+    "warranty-after-sales.record.create",
+    "warranty-after-sales.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -34,5 +38,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "warranty-after-sales",
+      "title": {
+        "fa": "گارانتی و خدمات پس از فروش",
+        "en": "Warranty & After-Sales"
+      },
+      "icon": "box",
+      "route": "/warranty-after-sales",
+      "permission": "warranty-after-sales.record.view"
+    }
+  ]
 }
