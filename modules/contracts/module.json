@@ -1,6 +1,6 @@
 {
   "id": "contracts",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "مدیریت قراردادها",
     "en": "Contracts"
@@ -25,7 +25,11 @@
     "contracts.milestone.due"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "contracts.record.view",
+    "contracts.record.create",
+    "contracts.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -34,5 +38,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "contracts",
+      "title": {
+        "fa": "مدیریت قراردادها",
+        "en": "Contracts"
+      },
+      "icon": "box",
+      "route": "/contracts",
+      "permission": "contracts.record.view"
+    }
+  ]
 }
