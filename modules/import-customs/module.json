@@ -1,6 +1,6 @@
 {
   "id": "import-customs",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "واردات و گمرک",
     "en": "Import & Customs"
@@ -25,7 +25,11 @@
     "import-customs.demurrage.alert"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "import-customs.record.view",
+    "import-customs.record.create",
+    "import-customs.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -36,5 +40,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "import-customs",
+      "title": {
+        "fa": "واردات و گمرک",
+        "en": "Import & Customs"
+      },
+      "icon": "box",
+      "route": "/import-customs",
+      "permission": "import-customs.record.view"
+    }
+  ]
 }
