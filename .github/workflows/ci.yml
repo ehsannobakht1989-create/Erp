@@ -26,6 +26,9 @@ jobs:
         run: |
           find . -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -r -n1 php -l
 
+      - name: Run core tests
+        run: php tools/test.php
+
       - name: Build web shell (if present)
         if: hashFiles('web/shell/package.json') != ''
         run: |
