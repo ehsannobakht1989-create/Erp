@@ -1,6 +1,6 @@
 {
   "id": "forex-lc",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "ارز و اعتبار اسنادی",
     "en": "Forex & LC"
@@ -26,7 +26,11 @@
     "forex-lc.fx.settled"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "forex-lc.record.view",
+    "forex-lc.record.create",
+    "forex-lc.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -37,5 +41,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "forex-lc",
+      "title": {
+        "fa": "ارز و اعتبار اسنادی",
+        "en": "Forex & LC"
+      },
+      "icon": "box",
+      "route": "/forex-lc",
+      "permission": "forex-lc.record.view"
+    }
+  ]
 }
