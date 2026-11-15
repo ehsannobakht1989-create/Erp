@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: CRM API
+  version: 1.0.0
+paths:
+  /api/crm/records:
+    get:
+      summary: List records
+      responses:
+        '200': { description: OK }

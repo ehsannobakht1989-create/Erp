@@ -1,6 +1,6 @@
 {
   "id": "crm",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "مدیریت ارتباط با مشتری",
     "en": "CRM"
@@ -23,7 +23,11 @@
     "crm.opportunity.won"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "crm.record.view",
+    "crm.record.create",
+    "crm.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -32,5 +36,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "crm",
+      "title": {
+        "fa": "مدیریت ارتباط با مشتری",
+        "en": "CRM"
+      },
+      "icon": "box",
+      "route": "/crm",
+      "permission": "crm.record.view"
+    }
+  ]
 }
