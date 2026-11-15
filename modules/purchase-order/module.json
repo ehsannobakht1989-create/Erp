@@ -1,0 +1,53 @@
+{
+  "id": "purchase-order",
+  "status": "done",
+  "name": {
+    "fa": "سفارش خرید",
+    "en": "Purchase Order"
+  },
+  "version": "1.0.0",
+  "category": "supply",
+  "level": 2,
+  "requires": [
+    "item-master",
+    "party-master"
+  ],
+  "optional": [
+    "rfq",
+    "accounting-gl"
+  ],
+  "provides": [
+    "PurchaseOrderServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "purchase-order.po.approved"
+  ],
+  "listens": [],
+  "permissions": [
+    "purchase-order.record.view",
+    "purchase-order.record.create",
+    "purchase-order.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "purchase-order",
+      "title": {
+        "fa": "سفارش خرید",
+        "en": "Purchase Order"
+      },
+      "icon": "file",
+      "route": "/purchase-order",
+      "permission": "purchase-order.record.view"
+    }
+  ]
+}

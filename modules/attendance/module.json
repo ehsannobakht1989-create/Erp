@@ -1,0 +1,52 @@
+{
+  "id": "attendance",
+  "status": "done",
+  "name": {
+    "fa": "حضور و غیاب",
+    "en": "Attendance"
+  },
+  "version": "1.0.0",
+  "category": "hr",
+  "level": 2,
+  "requires": [
+    "hr-core",
+    "org-structure"
+  ],
+  "optional": [
+    "hr-core"
+  ],
+  "provides": [
+    "AttendanceServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "attendance.period.closed"
+  ],
+  "listens": [],
+  "permissions": [
+    "attendance.record.view",
+    "attendance.record.create",
+    "attendance.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "attendance",
+      "title": {
+        "fa": "حضور و غیاب",
+        "en": "Attendance"
+      },
+      "icon": "file",
+      "route": "/attendance",
+      "permission": "attendance.record.view"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "crm",
+  "status": "done",
+  "name": {
+    "fa": "مدیریت ارتباط با مشتری",
+    "en": "CRM"
+  },
+  "version": "1.0.0",
+  "category": "commercial",
+  "level": 2,
+  "requires": [
+    "party-master"
+  ],
+  "optional": [
+    "sales"
+  ],
+  "provides": [
+    "CrmServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "crm.lead.created",
+    "crm.opportunity.won"
+  ],
+  "listens": [],
+  "permissions": [
+    "crm.record.view",
+    "crm.record.create",
+    "crm.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "crm",
+      "title": {
+        "fa": "مدیریت ارتباط با مشتری",
+        "en": "CRM"
+      },
+      "icon": "box",
+      "route": "/crm",
+      "permission": "crm.record.view"
+    }
+  ]
+}

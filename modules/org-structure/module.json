@@ -1,0 +1,50 @@
+{
+  "id": "org-structure",
+  "status": "done",
+  "name": {
+    "fa": "ساختار سازمانی",
+    "en": "Organization Structure"
+  },
+  "version": "1.0.0",
+  "category": "master-data",
+  "level": 1,
+  "requires": ["auth-rbac", "multi-company"],
+  "optional": ["hr-core"],
+  "provides": ["OrgStructureServiceInterface"],
+  "consumes": ["AuditContract"],
+  "emits": [
+    "org-structure.unit.changed",
+    "org-structure.position.assigned",
+    "org-structure.position.vacated",
+    "org-structure.cost_center.created",
+    "org-structure.cost_center.updated"
+  ],
+  "listens": [],
+  "permissions": [
+    "org-structure.unit.view",
+    "org-structure.unit.manage",
+    "org-structure.cost-center.view",
+    "org-structure.cost-center.manage",
+    "org-structure.calendar.manage"
+  ],
+  "menu": [
+    {
+      "id": "org-structure",
+      "title": {"fa": "ساختار سازمانی", "en": "Org Structure"},
+      "icon": "sitemap",
+      "route": "/org-structure",
+      "permission": "org-structure.unit.view"
+    }
+  ],
+  "entities": ["unit", "position", "cost_center", "calendar", "shift"],
+  "settings": [
+    {"key": "week_start", "type": "string", "default": "Saturday"}
+  ],
+  "industry_tags": ["all"],
+  "regional": ["ir"],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

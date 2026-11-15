@@ -1,0 +1,54 @@
+{
+  "id": "treasury",
+  "status": "done",
+  "name": {
+    "fa": "خزانه‌داری",
+    "en": "Treasury"
+  },
+  "version": "1.0.0",
+  "category": "finance",
+  "level": 3,
+  "requires": [
+    "accounting-gl",
+    "party-master"
+  ],
+  "optional": [
+    "ar-ap"
+  ],
+  "provides": [
+    "TreasuryServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "treasury.cheque.status_changed"
+  ],
+  "listens": [],
+  "permissions": [
+    "treasury.record.view",
+    "treasury.record.create",
+    "treasury.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [
+    "ir"
+  ],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "treasury",
+      "title": {
+        "fa": "خزانه‌داری",
+        "en": "Treasury"
+      },
+      "icon": "file",
+      "route": "/treasury",
+      "permission": "treasury.record.view"
+    }
+  ]
+}

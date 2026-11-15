@@ -1,0 +1,52 @@
+{
+  "id": "scheduling",
+  "status": "done",
+  "name": {
+    "fa": "زمان‌بندی تولید",
+    "en": "Scheduling"
+  },
+  "version": "1.0.0",
+  "category": "manufacturing",
+  "level": 4,
+  "requires": [
+    "work-order",
+    "routing",
+    "org-structure"
+  ],
+  "optional": [],
+  "provides": [
+    "SchedulingServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "scheduling.schedule.published",
+    "scheduling.conflict.detected"
+  ],
+  "listens": [],
+  "permissions": [
+    "scheduling.record.view",
+    "scheduling.record.create",
+    "scheduling.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "scheduling",
+      "title": {
+        "fa": "زمان‌بندی تولید",
+        "en": "Scheduling"
+      },
+      "icon": "activity",
+      "route": "/scheduling",
+      "permission": "scheduling.record.view"
+    }
+  ]
+}

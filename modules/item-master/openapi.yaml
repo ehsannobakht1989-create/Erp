@@ -1,0 +1,24 @@
+openapi: 3.0.3
+info:
+  title: Item Master API
+  version: 1.0.0
+paths:
+  /api/item-master/items:
+    get:
+      summary: List/search items
+      responses:
+        '200': { description: Items list }
+    post:
+      summary: Create item
+      responses:
+        '201': { description: Created }
+  /api/item-master/items/{id}/activate:
+    post:
+      summary: Activate item via workflow
+      responses:
+        '200': { description: Activated }
+  /api/item-master/items/import:
+    post:
+      summary: Bulk import CSV (dry-run or commit)
+      responses:
+        '200': { description: Import report }

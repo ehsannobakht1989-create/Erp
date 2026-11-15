@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          tools: none
+
+      - name: Check repository budget
+        run: bash tools/budget.sh
+
+      - name: Validate module manifests
+        run: php tools/validate-manifests.php
+
+      - name: PHP syntax lint
+        run: |
+          find . -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -r -n1 php -l
+
+      - name: Run core tests
+        run: php tools/test.php
+
+      - name: Build web shell (if present)
+        if: hashFiles('web/shell/package.json') != ''
+        run: |
+          cd web/shell
+          npm ci
+          npm run typecheck
+          npm run test
+          npm run build
+
+      - name: Build minimal profile package
+        run: |
+          php builder/bin/build.php --profile profiles/minimal.yaml
+          ls -lh dist/minimal-1.0.0.zip

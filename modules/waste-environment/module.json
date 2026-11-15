@@ -1,0 +1,53 @@
+{
+  "id": "waste-environment",
+  "status": "done",
+  "name": {
+    "fa": "پسماند و محیط زیست",
+    "en": "Waste & Environment"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine"
+  ],
+  "optional": [
+    "hse"
+  ],
+  "provides": [
+    "WasteEnvironmentServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "waste-environment.exceedance.raised",
+    "waste-environment.license.expiring"
+  ],
+  "listens": [],
+  "permissions": [
+    "waste-environment.record.view",
+    "waste-environment.record.create",
+    "waste-environment.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "waste-environment",
+      "title": {
+        "fa": "پسماند و محیط زیست",
+        "en": "Waste & Environment"
+      },
+      "icon": "box",
+      "route": "/waste-environment",
+      "permission": "waste-environment.record.view"
+    }
+  ]
+}

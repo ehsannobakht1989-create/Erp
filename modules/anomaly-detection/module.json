@@ -1,0 +1,50 @@
+{
+  "id": "anomaly-detection",
+  "status": "done",
+  "name": {
+    "fa": "تشخیص ناهنجاری",
+    "en": "Anomaly Detection"
+  },
+  "version": "1.0.0",
+  "category": "ai",
+  "level": 6,
+  "requires": [
+    "accounting-gl",
+    "inventory"
+  ],
+  "optional": [],
+  "provides": [
+    "AnomalyDetectionServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "anomaly-detection.detection.created"
+  ],
+  "listens": [],
+  "permissions": [
+    "anomaly-detection.record.view",
+    "anomaly-detection.record.create",
+    "anomaly-detection.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": true,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "anomaly-detection",
+      "title": {
+        "fa": "تشخیص ناهنجاری",
+        "en": "Anomaly Detection"
+      },
+      "icon": "box",
+      "route": "/anomaly-detection",
+      "permission": "anomaly-detection.record.view"
+    }
+  ]
+}

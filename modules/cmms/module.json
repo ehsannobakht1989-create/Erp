@@ -1,0 +1,49 @@
+{
+  "id": "cmms",
+  "status": "done",
+  "name": {
+    "fa": "نگهداری و تعمیرات",
+    "en": "CMMS"
+  },
+  "version": "1.0.0",
+  "category": "maintenance",
+  "level": 3,
+  "requires": [
+    "asset-registry"
+  ],
+  "optional": [],
+  "provides": [
+    "CmmsServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "cmms.workorder.created"
+  ],
+  "listens": [],
+  "permissions": [
+    "cmms.record.view",
+    "cmms.record.create",
+    "cmms.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "cmms",
+      "title": {
+        "fa": "نگهداری و تعمیرات",
+        "en": "CMMS"
+      },
+      "icon": "file",
+      "route": "/cmms",
+      "permission": "cmms.record.view"
+    }
+  ]
+}

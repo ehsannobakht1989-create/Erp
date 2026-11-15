@@ -1,0 +1,71 @@
+{
+  "id": "work-order",
+  "status": "done",
+  "name": {
+    "fa": "دستور کار تولید",
+    "en": "Work Order"
+  },
+  "version": "1.0.0",
+  "category": "manufacturing",
+  "level": 4,
+  "requires": [
+    "bom",
+    "routing",
+    "inventory"
+  ],
+  "optional": [],
+  "provides": [
+    "WorkOrderServiceInterface"
+  ],
+  "consumes": [
+    "BomServiceInterface",
+    "RoutingServiceInterface",
+    "InventoryServiceInterface"
+  ],
+  "emits": [
+    "work-order.wo.created",
+    "work-order.wo.released",
+    "work-order.wo.started",
+    "work-order.wo.completed",
+    "work-order.wo.closed",
+    "work-order.wo.cancelled",
+    "work-order.material.issued",
+    "work-order.material.returned",
+    "work-order.operation.completed",
+    "work-order.output.received",
+    "work-order.shortage.detected"
+  ],
+  "listens": [
+    "mrp.planned_order.firmed",
+    "sales.order.confirmed",
+    "mes.operation.reported",
+    "quality-inspection.lot.decided",
+    "eco-plm.change.released"
+  ],
+  "permissions": [
+    "work-order.record.view",
+    "work-order.record.create",
+    "work-order.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "work-order",
+      "title": {
+        "fa": "دستور کار تولید",
+        "en": "Work Order"
+      },
+      "icon": "settings",
+      "route": "/work-order",
+      "permission": "work-order.record.view"
+    }
+  ]
+}

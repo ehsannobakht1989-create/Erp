@@ -1,0 +1,49 @@
+{
+  "id": "fixed-assets",
+  "status": "done",
+  "name": {
+    "fa": "دارایی‌های ثابت",
+    "en": "Fixed Assets"
+  },
+  "version": "1.0.0",
+  "category": "finance",
+  "level": 3,
+  "requires": [
+    "accounting-gl"
+  ],
+  "optional": [],
+  "provides": [
+    "FixedAssetsServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "fixed-assets.asset.capitalized"
+  ],
+  "listens": [],
+  "permissions": [
+    "fixed-assets.record.view",
+    "fixed-assets.record.create",
+    "fixed-assets.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "fixed-assets",
+      "title": {
+        "fa": "دارایی‌های ثابت",
+        "en": "Fixed Assets"
+      },
+      "icon": "file",
+      "route": "/fixed-assets",
+      "permission": "fixed-assets.record.view"
+    }
+  ]
+}

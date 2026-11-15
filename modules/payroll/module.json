@@ -1,0 +1,54 @@
+{
+  "id": "payroll",
+  "status": "done",
+  "name": {
+    "fa": "حقوق و دستمزد",
+    "en": "Payroll"
+  },
+  "version": "1.0.0",
+  "category": "hr",
+  "level": 3,
+  "requires": [
+    "hr-core",
+    "attendance",
+    "accounting-gl"
+  ],
+  "optional": [],
+  "provides": [
+    "PayrollServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "payroll.run.approved",
+    "payroll.run.paid"
+  ],
+  "listens": [],
+  "permissions": [
+    "payroll.record.view",
+    "payroll.record.create",
+    "payroll.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [
+    "ir"
+  ],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "payroll",
+      "title": {
+        "fa": "حقوق و دستمزد",
+        "en": "Payroll"
+      },
+      "icon": "file",
+      "route": "/payroll",
+      "permission": "payroll.record.view"
+    }
+  ]
+}

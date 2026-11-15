@@ -1,0 +1,54 @@
+{
+  "id": "warranty-after-sales",
+  "status": "done",
+  "name": {
+    "fa": "گارانتی و خدمات پس از فروش",
+    "en": "Warranty & After-Sales"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine"
+  ],
+  "optional": [
+    "sales",
+    "ticketing"
+  ],
+  "provides": [
+    "WarrantyAfterSalesServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "warranty-after-sales.claim.approved",
+    "warranty-after-sales.credit.requested"
+  ],
+  "listens": [],
+  "permissions": [
+    "warranty-after-sales.record.view",
+    "warranty-after-sales.record.create",
+    "warranty-after-sales.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "warranty-after-sales",
+      "title": {
+        "fa": "گارانتی و خدمات پس از فروش",
+        "en": "Warranty & After-Sales"
+      },
+      "icon": "box",
+      "route": "/warranty-after-sales",
+      "permission": "warranty-after-sales.record.view"
+    }
+  ]
+}

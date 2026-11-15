@@ -1,0 +1,11 @@
+node_modules/
+vendor/
+dist/
+build/
+*.zip
+.env
+storage/
+uploads/
+*.log
+__pycache__/
+.venv/

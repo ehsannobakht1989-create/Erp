@@ -1,0 +1,50 @@
+{
+  "id": "eco-plm",
+  "status": "done",
+  "name": {
+    "fa": "تغییرات مهندسی",
+    "en": "ECO / PLM"
+  },
+  "version": "1.0.0",
+  "category": "engineering",
+  "level": 5,
+  "requires": [
+    "bom",
+    "routing"
+  ],
+  "optional": [],
+  "provides": [
+    "EcoPlmServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "eco-plm.change.requested"
+  ],
+  "listens": [],
+  "permissions": [
+    "eco-plm.record.view",
+    "eco-plm.record.create",
+    "eco-plm.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "eco-plm",
+      "title": {
+        "fa": "تغییرات مهندسی",
+        "en": "ECO / PLM"
+      },
+      "icon": "settings",
+      "route": "/eco-plm",
+      "permission": "eco-plm.record.view"
+    }
+  ]
+}

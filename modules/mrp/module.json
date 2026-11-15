@@ -1,0 +1,53 @@
+{
+  "id": "mrp",
+  "status": "done",
+  "name": {
+    "fa": "برنامه‌ریزی نیازمندی مواد",
+    "en": "MRP"
+  },
+  "version": "1.0.0",
+  "category": "manufacturing",
+  "level": 4,
+  "requires": [
+    "bom",
+    "inventory"
+  ],
+  "optional": [],
+  "provides": [
+    "MrpServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "mrp.run.completed",
+    "mrp.planned_order.firmed",
+    "mrp.requisition.suggested",
+    "mrp.message.created"
+  ],
+  "listens": [],
+  "permissions": [
+    "mrp.record.view",
+    "mrp.record.create",
+    "mrp.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "mrp",
+      "title": {
+        "fa": "برنامه‌ریزی نیازمندی مواد",
+        "en": "MRP"
+      },
+      "icon": "settings",
+      "route": "/mrp",
+      "permission": "mrp.record.view"
+    }
+  ]
+}

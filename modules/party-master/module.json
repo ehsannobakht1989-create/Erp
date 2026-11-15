@@ -1,0 +1,74 @@
+{
+  "id": "party-master",
+  "status": "done",
+  "name": {
+    "fa": "اشخاص و طرف‌حساب‌ها",
+    "en": "Party Master"
+  },
+  "version": "1.0.0",
+  "category": "master-data",
+  "level": 1,
+  "requires": ["auth-rbac", "multi-company", "audit-log", "workflow-engine"],
+  "optional": ["item-master", "document-mgmt"],
+  "provides": ["PartyMasterServiceInterface"],
+  "consumes": ["AuditContract", "WorkflowContract"],
+  "emits": [
+    "party-master.party.created",
+    "party-master.party.updated",
+    "party-master.party.activated",
+    "party-master.party.blacklisted",
+    "party-master.party.merged"
+  ],
+  "listens": [],
+  "permissions": [
+    "party-master.party.view",
+    "party-master.party.create",
+    "party-master.party.update",
+    "party-master.party.approve",
+    "party-master.party.delete",
+    "party-master.party.merge",
+    "party-master.party.import",
+    "party-master.party.export",
+    "party-master.group.manage",
+    "party-master.payment-term.manage",
+    "party-master.ai.use"
+  ],
+  "menu": [
+    {
+      "id": "party-master",
+      "title": {"fa": "اشخاص و طرف‌حساب‌ها", "en": "Party Master"},
+      "icon": "users",
+      "route": "/party-master",
+      "permission": "party-master.party.view"
+    }
+  ],
+  "entities": ["party", "address", "contact", "bank_account", "group", "payment_term"],
+  "workflows": ["supplier_activation"],
+  "settings": [
+    {"key": "direct_activate_customer", "type": "bool", "default": true}
+  ],
+  "industry_tags": ["all"],
+  "regional": ["ir"],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": [
+      {
+        "id": "autofill",
+        "provider": "avalai",
+        "tools": ["party-master.list_groups"],
+        "proposals": ["party-master.propose_party"],
+        "redact": ["bank_accounts", "credit_limit"],
+        "max_tokens_per_call": 1500
+      },
+      {
+        "id": "summarize",
+        "provider": "avalai",
+        "tools": ["party-master.get_history"],
+        "proposals": [],
+        "redact": ["bank_accounts", "credit_limit"],
+        "max_tokens_per_call": 1500
+      }
+    ]
+  }
+}

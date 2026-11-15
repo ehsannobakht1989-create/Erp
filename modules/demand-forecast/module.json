@@ -1,0 +1,51 @@
+{
+  "id": "demand-forecast",
+  "status": "done",
+  "name": {
+    "fa": "پیش‌بینی تقاضا",
+    "en": "Demand Forecast"
+  },
+  "version": "1.0.0",
+  "category": "ai",
+  "level": 6,
+  "requires": [
+    "sales",
+    "inventory"
+  ],
+  "optional": [],
+  "provides": [
+    "DemandForecastServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "demand-forecast.forecast.published",
+    "demand-forecast.forecast.adopted"
+  ],
+  "listens": [],
+  "permissions": [
+    "demand-forecast.record.view",
+    "demand-forecast.record.create",
+    "demand-forecast.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": true,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "demand-forecast",
+      "title": {
+        "fa": "پیش‌بینی تقاضا",
+        "en": "Demand Forecast"
+      },
+      "icon": "box",
+      "route": "/demand-forecast",
+      "permission": "demand-forecast.record.view"
+    }
+  ]
+}

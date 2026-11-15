@@ -1,0 +1,11 @@
+# treasury — Bank, cash & cheques (L3; requires accounting-gl, party-master)
+
+**Entities** BankAccount{bank,branch,account_no,iban,currency,gl_account_key,opening}; CashBox{name,custodian,limit}; PettyCash(تنخواه){custodian,imprest_amount,settlements[]}; Cheque{direction[received|issued],sayad_id(16d),number,serial,bank,branch,account_owner,amount,due_date,status,party_id,holder_history[]}; ChequeBook{bank_account,series,from,to,used}; PromissoryNote; BankTransaction{date,amount,ref,description,matched_to}; BankStatementImport; Transfer; PaymentOrder{payee,amount,method,approvals,status}; CashFlowForecastLine.
+**Cheque lifecycle** received: registered→in_hand→deposited→collected | bounced(برگشتی)→returned/legal; or in_hand→endorsed(خرج‌شده to party)→(collected|bounced back); issued: from book→issued→presented→passed | bounced/cancelled(باطل). Each transition requires data + emits journal request.
+**Rules** sayad id format validation; due-date alerts; cheque amount/party consistency; double-spend guard (endorse once); petty cash settlement needs approval & documents; bank reconciliation matches imported statement lines to transactions (rules + manual); payment orders follow approval limits; balance checks per setting.
+**Events out** treasury.cheque.status_changed, payment.executed, cashbox.closed, reconciliation.completed. **In** ar-ap.payment.requested, sales.* (cash sale receipts optional), payroll.run.approved (payment file).
+**Service contract** TreasuryService: bankBalance(account,asOf), chequesDue(range,direction), createPayment(dto), cashPosition(date), cashFlowForecast(days).
+**Permissions** treasury.bank|cash|petty|cheque|note|order|reconcile.view|manage|approve, treasury.chequebook.manage.
+**Screens** cheque portfolio (received/issued tabs, calendar by due date, status actions), chequebook manager, bank accounts & statements import (CSV mapper), reconciliation workbench, cashbox/petty-cash, payment orders & approvals, position dashboard, cheque print/layout designer (print-barcode-qr), forecast chart.
+**AI** forecast (cash position with AR/AP + cheque due dates through python), anomaly (unusual transfers/duplicate payments), nl_report, extract bank statement lines from PDF text (doc-ocr).
+**Iran** صیاد, چک برگشتی, خرج چک, تنخواه, bank names list seed, Jalali due dates, cheque layouts per bank.

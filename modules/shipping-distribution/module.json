@@ -1,0 +1,54 @@
+{
+  "id": "shipping-distribution",
+  "status": "done",
+  "name": {
+    "fa": "حمل و توزیع",
+    "en": "Shipping & Distribution"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine"
+  ],
+  "optional": [
+    "sales",
+    "inventory"
+  ],
+  "provides": [
+    "ShippingDistributionServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "shipping-distribution.shipment.dispatched",
+    "shipping-distribution.freight.cost_posted"
+  ],
+  "listens": [],
+  "permissions": [
+    "shipping-distribution.record.view",
+    "shipping-distribution.record.create",
+    "shipping-distribution.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "shipping-distribution",
+      "title": {
+        "fa": "حمل و توزیع",
+        "en": "Shipping & Distribution"
+      },
+      "icon": "box",
+      "route": "/shipping-distribution",
+      "permission": "shipping-distribution.record.view"
+    }
+  ]
+}

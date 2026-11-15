@@ -1,0 +1,54 @@
+{
+  "id": "supplier-evaluation",
+  "status": "done",
+  "name": {
+    "fa": "ارزیابی تامین‌کنندگان",
+    "en": "Supplier Evaluation"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine",
+    "party-master"
+  ],
+  "optional": [
+    "purchase-order"
+  ],
+  "provides": [
+    "SupplierEvaluationServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "supplier-evaluation.evaluation.approved",
+    "supplier-evaluation.status.changed"
+  ],
+  "listens": [],
+  "permissions": [
+    "supplier-evaluation.record.view",
+    "supplier-evaluation.record.create",
+    "supplier-evaluation.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "supplier-evaluation",
+      "title": {
+        "fa": "ارزیابی تامین‌کنندگان",
+        "en": "Supplier Evaluation"
+      },
+      "icon": "box",
+      "route": "/supplier-evaluation",
+      "permission": "supplier-evaluation.record.view"
+    }
+  ]
+}

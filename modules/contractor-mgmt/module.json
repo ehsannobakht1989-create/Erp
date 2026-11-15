@@ -1,0 +1,54 @@
+{
+  "id": "contractor-mgmt",
+  "status": "done",
+  "name": {
+    "fa": "مدیریت پیمانکاران",
+    "en": "Contractor Management"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine",
+    "party-master"
+  ],
+  "optional": [
+    "hse"
+  ],
+  "provides": [
+    "ContractorMgmtServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "contractor-mgmt.statement.approved",
+    "contractor-mgmt.contractor.suspended"
+  ],
+  "listens": [],
+  "permissions": [
+    "contractor-mgmt.record.view",
+    "contractor-mgmt.record.create",
+    "contractor-mgmt.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "contractor-mgmt",
+      "title": {
+        "fa": "مدیریت پیمانکاران",
+        "en": "Contractor Management"
+      },
+      "icon": "box",
+      "route": "/contractor-mgmt",
+      "permission": "contractor-mgmt.record.view"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "oee",
+  "status": "done",
+  "name": {
+    "fa": "اثربخشی کلی تجهیزات",
+    "en": "OEE"
+  },
+  "version": "1.0.0",
+  "category": "manufacturing",
+  "level": 4,
+  "requires": [
+    "mes",
+    "org-structure"
+  ],
+  "optional": [],
+  "provides": [
+    "OeeServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "oee-downtime.snapshot.computed",
+    "oee-downtime.alert.raised"
+  ],
+  "listens": [],
+  "permissions": [
+    "oee.record.view",
+    "oee.record.create",
+    "oee.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "oee",
+      "title": {
+        "fa": "اثربخشی کلی تجهیزات",
+        "en": "OEE"
+      },
+      "icon": "activity",
+      "route": "/oee",
+      "permission": "oee.record.view"
+    }
+  ]
+}

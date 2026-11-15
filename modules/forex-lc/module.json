@@ -1,0 +1,57 @@
+{
+  "id": "forex-lc",
+  "status": "done",
+  "name": {
+    "fa": "ارز و اعتبار اسنادی",
+    "en": "Forex & LC"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine"
+  ],
+  "optional": [
+    "purchase-order",
+    "treasury"
+  ],
+  "provides": [
+    "ForexLcServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "forex-lc.lc.status_changed",
+    "forex-lc.guarantee.expiring",
+    "forex-lc.fx.settled"
+  ],
+  "listens": [],
+  "permissions": [
+    "forex-lc.record.view",
+    "forex-lc.record.create",
+    "forex-lc.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [
+    "ir"
+  ],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "forex-lc",
+      "title": {
+        "fa": "ارز و اعتبار اسنادی",
+        "en": "Forex & LC"
+      },
+      "icon": "box",
+      "route": "/forex-lc",
+      "permission": "forex-lc.record.view"
+    }
+  ]
+}

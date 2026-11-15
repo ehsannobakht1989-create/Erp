@@ -1,0 +1,10 @@
+# attendance — Time, shifts & leave (L2; requires hr-core, org-structure)
+
+**Entities** ShiftAssignment{employee,pattern,from,to} + rotating patterns; TimeLog{employee,timestamp,source[device|mobile|manual|import],direction,device_id}; DailyRecord{employee,date,shift,first_in,last_out,worked_min,late_min,early_leave_min,absence,overtime_min by type,status[auto|reviewed|locked]}; LeaveType{code,paid,balance_rule,requires_doc,hourly_allowed}; LeaveBalance; LeaveRequest{type,from,to,hours?,status}; MissionRequest(ماموریت); CorrectionRequest; OvertimeRequest/approval; TimesheetPeriod{from,to,status[open|closed]}; Device{type,endpoint,token}.
+**Rules** daily calculation engine configurable per company (grace minutes, rounding, overtime categories: regular/holiday/night/Friday with coefficients as settings), uses org calendar & shifts; overlapping leave blocked; balance accrual rules (monthly, yearly, carry-over limits); approvals via workflow (manager→HR); period close locks edits and emits summarized data; device ingestion endpoint authenticated by api-webhooks key with idempotent log import; duplicate punches merged within window.
+**Events out** attendance.period.closed{employee summaries}, leave.approved, overtime.approved. **In** hr-core.employee.hired|terminated, org-structure.calendar.changed.
+**Service contract** AttendanceService: summary(employee,period), balance(employee,leaveType), isOnLeave(employee,date), presentNow(unit), workedMinutes(employee,from,to).
+**Permissions** attendance.log|record|leave|mission|overtime|period.view|create|approve|close, attendance.device.manage, attendance.rule.manage.
+**Screens** daily board (who's in/late/absent), employee timesheet (Jalali month grid, color-coded), leave calendar, request forms & approvals, correction workflow, devices & imports (CSV/API log), rules settings, period close wizard, reports (absence, overtime, lateness).
+**AI** anomaly (buddy punching, pattern abuse), forecast absenteeism, summarize month for HR; redact personal ids.
+**Iran** Saturday–Thursday work week patterns, Friday/holiday overtime, ماموریت and مرخصی ساعتی, hourly leave.

@@ -1,0 +1,47 @@
+{
+  "id": "print-barcode-qr",
+  "status": "done",
+  "name": {
+    "fa": "چاپ و بارکد",
+    "en": "Print & Barcode/QR"
+  },
+  "version": "1.0.0",
+  "category": "platform",
+  "level": 0,
+  "requires": [],
+  "optional": [],
+  "provides": ["PrintContract"],
+  "consumes": [],
+  "emits": ["print-barcode-qr.document.printed"],
+  "listens": [],
+  "permissions": ["print-barcode-qr.template.view", "print-barcode-qr.template.manage", "print-barcode-qr.ai.use"],
+  "menu": [
+    {
+      "id": "print-barcode-qr",
+      "title": {"fa": "قالب‌های چاپ و بارکد", "en": "Print & Barcode"},
+      "icon": "printer",
+      "route": "/print-barcode-qr",
+      "permission": "print-barcode-qr.template.view"
+    }
+  ],
+  "entities": ["template", "print_log"],
+  "settings": [
+    {"key": "default_page_size", "type": "string", "default": "A4"}
+  ],
+  "industry_tags": ["all"],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": [
+      {
+        "id": "autofill",
+        "provider": "avalai",
+        "tools": ["print-barcode-qr.list_templates"],
+        "proposals": ["print-barcode-qr.propose_template"],
+        "redact": [],
+        "max_tokens_per_call": 1500
+      }
+    ]
+  }
+}

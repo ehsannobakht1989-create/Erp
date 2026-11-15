@@ -1,0 +1,10 @@
+# hse — Health, safety & environment (L2; optional training-lms, inventory, ncr-capa, org-structure)
+
+**Entities** Incident{type[injury|near_miss|property|environmental|fire],date,location,description,severity,persons_involved(refs only; NO medical details),immediate_actions,status,investigation_ref}; Investigation{method,findings,root_cause,actions[]}; RiskAssessment{area|task,hazards[{hazard,likelihood,severity,controls,residual}],review_date,status}; Inspection{template,area,date,findings[],score}; InspectionTemplate checklist; PermitToWork{type[hot_work|confined_space|height|electrical|excavation|custom],area,work_desc,contractor_ref,checklist,approvals,valid_from/to,status}; PPEIssue{employee_ref,item,issued,expiry}; EmergencyDrill; LegalRequirement register; SafetyKpi (LTIFR, TRIR, severity rate computed from incident+hours worked from attendance/dataset).
+**Rules** incident reporting mobile-quick; investigation mandatory by severity; actions tracked to closure with notifications; permit workflow with multi-approver, simultaneous-operations conflict warning on same area, auto-expiry; PPE expiry alerts; occupational health: only store "fit/not-fit/due date" flags if enabled, never diagnoses.
+**Events out** hse.incident.reported|closed, hse.permit.issued|closed, hse.action.overdue. **In** training-lms.completion.recorded, attendance.period.closed (hours worked).
+**Service contract** HseService: openPermits(area), incidentStats(range), ppeValid(employee), overdueActions().
+**Permissions** hse.incident|investigation|risk|inspection|permit|ppe.view|create|update|approve|close, hse.kpi.view.
+**Screens** quick incident form, incident board, investigation workspace, risk matrix, inspection runner (mobile checklist+photos), permit board with printable permit, PPE register, KPI dashboard, legal register.
+**AI** anomaly (repeat locations/shifts), summarize incidents, next_action, autofill (risk assessment draft, proposal). redact: persons. **Datasets** incidents, inspections, permits.
+**Iran** ISO 45001-style forms, Persian permit forms, Jalali dates.

@@ -1,0 +1,53 @@
+{
+  "id": "parking-vehicles",
+  "status": "done",
+  "name": {
+    "fa": "پارکینگ و خودروها",
+    "en": "Parking & Vehicles"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine"
+  ],
+  "optional": [
+    "hr-core"
+  ],
+  "provides": [
+    "ParkingVehiclesServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "parking-vehicles.document.expiring",
+    "parking-vehicles.trip.completed"
+  ],
+  "listens": [],
+  "permissions": [
+    "parking-vehicles.record.view",
+    "parking-vehicles.record.create",
+    "parking-vehicles.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "parking-vehicles",
+      "title": {
+        "fa": "پارکینگ و خودروها",
+        "en": "Parking & Vehicles"
+      },
+      "icon": "box",
+      "route": "/parking-vehicles",
+      "permission": "parking-vehicles.record.view"
+    }
+  ]
+}

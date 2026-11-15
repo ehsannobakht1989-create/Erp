@@ -1,0 +1,112 @@
+#!/usr/bin/env php
+<?php
+declare(strict_types=1);
+
+use Core\Autoloader;
+use Core\Database\Connection;
+use Core\Database\Migrator;
+use Core\Env;
+use Core\Event\EventBus;
+use Core\Module\ModuleScanner;
+use Core\Support\FileCache;
+
+$root = dirname(__DIR__);
+require_once $root . '/core/src/Autoloader.php';
+(new Autoloader($root))->register();
+
+Env::load($root . '/.env');
+$cmd = $argv[1] ?? 'help';
+$args = array_slice($argv, 2);
+
+$makeDb = function (): Connection {
+    $driver = Env::get('DB_CONNECTION', 'mysql');
+    if ($driver === 'sqlite') {
+        $db = Env::get('DB_DATABASE', ':memory:');
+        return Connection::fromDsn("sqlite:$db");
+    }
+    $host = Env::get('DB_HOST', '127.0.0.1');
+    $port = Env::get('DB_PORT', '3306');
+    $name = Env::get('DB_DATABASE', 'erp');
+    $user = Env::get('DB_USERNAME', 'root');
+    $pass = Env::get('DB_PASSWORD', '');
+    return Connection::fromDsn("mysql:host=$host;port=$port;dbname=$name;charset=utf8mb4", $user, $pass);
+};
+
+switch ($cmd) {
+    case 'module:list':
+        $scanner = new ModuleScanner($root);
+        $all = $scanner->scan();
+        $cfg = is_file($root . '/config/modules.php') ? (array) require $root . '/config/modules.php' : [];
+        $enabled = (array) ($cfg['enabled'] ?? []);
+        foreach ($all as $id => $m) {
+            $flag = in_array($id, $enabled, true) ? 'enabled' : 'disabled';
+            echo sprintf("%-28s L%d  %-10s (%s)\n", $id, $m['level'], $flag, $m['status'] ?? 'stub');
+        }
+        break;
+
+    case 'module:graph':
+        $scanner = new ModuleScanner($root);
+        foreach ($scanner->scan() as $id => $m) {
+            $req = implode(', ', $m['requires'] ?? []);
+            echo "$id -> [" . ($req ?: 'none') . "]\n";
+        }
+        break;
+
+    case 'module:enable':
+    case 'module:disable':
+        $id = $args[0] ?? '';
+        if ($id === '') {
+            fwrite(STDERR, "Usage: php bin/erp $cmd <module-id>\n");
+            exit(1);
+        }
+        $cfgFile = $root . '/config/modules.php';
+        $cfg = is_file($cfgFile) ? (array) require $cfgFile : ['enabled' => []];
+        $enabled = (array) ($cfg['enabled'] ?? []);
+        if ($cmd === 'module:enable') {
+            $enabled = array_values(array_unique(array_merge($enabled, [$id])));
+        } else {
+            $enabled = array_values(array_diff($enabled, [$id]));
+        }
+        file_put_contents($cfgFile, "<?php\ndeclare(strict_types=1);\n\nreturn " . var_export(['enabled' => $enabled], true) . ";\n");
+        echo "$cmd: $id\n";
+        break;
+
+    case 'migrate':
+        $dryRun = in_array('--dry-run', $args, true);
+        $cfg = is_file($root . '/config/modules.php') ? (array) require $root . '/config/modules.php' : [];
+        $migrator = new Migrator($makeDb(), $root);
+        foreach ($migrator->migrate((array) ($cfg['enabled'] ?? []), $dryRun) as $res) {
+            echo "[{$res['status']}] {$res['module']}/{$res['file']}\n";
+        }
+        break;
+
+    case 'migrate:status':
+        $migrator = new Migrator($makeDb(), $root);
+        foreach ($migrator->status() as $row) {
+            echo "{$row['module']}/{$row['file']} ({$row['applied_at']})\n";
+        }
+        break;
+
+    case 'events:work':
+        $bus = new EventBus($makeDb());
+        $stats = $bus->processOutbox();
+        echo json_encode($stats) . "\n";
+        break;
+
+    case 'cache:clear':
+        (new FileCache($root . '/storage/cache'))->clear();
+        echo "Cache cleared.\n";
+        break;
+
+    case 'key:generate':
+        $key = 'base64:' . base64_encode(random_bytes(32));
+        echo "APP_KEY=$key\n";
+        break;
+
+    case 'test':
+        passthru('php ' . escapeshellarg($root . '/tools/test.php'), $code);
+        exit($code);
+
+    default:
+        echo "ERP CLI — Commands: migrate, migrate:status, module:list, module:enable <id>, module:disable <id>, module:graph, events:work, cache:clear, key:generate, test\n";
+}

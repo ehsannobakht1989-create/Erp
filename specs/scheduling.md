@@ -1,0 +1,10 @@
+# scheduling — Finite-capacity scheduling (L4; requires work-order, routing, org-structure; optional asset-registry, cmms, mes, python)
+
+**Entities** ScheduleVersion{name,status[draft|published],horizon,strategy,created_by}; ScheduledOp{wo_operation_ref,work_center_id,start,end,setup_start,locked,reason_moved}; SetupMatrix{work_center,from_family,to_family,minutes}; PriorityRule{name,expression}; Constraint{type[maintenance_window|shutdown|tool_availability|material_availability|labor],work_center|resource,from,to}; Conflict{op,type,details}.
+**Rules** forward/backward scheduling honoring work-center calendars/shifts (OrgService), setup/run times (RoutingService), sequence-dependent setups, operation overlap/transfer batches, alternate work centers by efficiency, unavailability from cmms PM windows & asset down status, tool availability (tooling), material readiness flag (WO shortages); dispatch rules (EDD, SPT, critical ratio, custom); manual drag-lock operations; optimizer: built-in heuristic in PHP, optional Python OR-Tools (schedule-optimizer) with time limit — both produce proposals, user publishes; publishing updates WO planned dates and MES dispatch.
+**Events out** scheduling.schedule.published, scheduling.conflict.detected. **In** work-order.wo.released|cancelled, mes.operation.reported (reschedule remainder), cmms.workorder.planned (maintenance windows), asset-registry.asset.status_changed.
+**Service contract** SchedulingService: dispatchList(workCenter,range), loadByWorkCenter(range), promiseDate(item,qty) (for sales), reschedule(scope), conflicts().
+**Permissions** scheduling.schedule.view|edit|publish, scheduling.rule.manage, scheduling.constraint.manage.
+**Screens** Gantt by work center (drag/drop, lock, conflict highlight), load chart (capacity vs load), order-centric view, what-if compare, rules & setup matrix editors, late orders board.
+**AI** schedule-optimizer integration (python), anomaly (chronic bottlenecks), next_action (suggest overtime/alternate WC), summarize.
+**Iran** Friday/holiday calendar, Ramadan shift patterns via calendar data.

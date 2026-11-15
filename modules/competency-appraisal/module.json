@@ -1,0 +1,54 @@
+{
+  "id": "competency-appraisal",
+  "status": "done",
+  "name": {
+    "fa": "ارزیابی شایستگی",
+    "en": "Competency Appraisal"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine"
+  ],
+  "optional": [
+    "hr-core"
+  ],
+  "provides": [
+    "CompetencyAppraisalServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "competency-appraisal.cycle.closed",
+    "competency-appraisal.gap.identified",
+    "competency-appraisal.score.finalized"
+  ],
+  "listens": [],
+  "permissions": [
+    "competency-appraisal.record.view",
+    "competency-appraisal.record.create",
+    "competency-appraisal.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "competency-appraisal",
+      "title": {
+        "fa": "ارزیابی شایستگی",
+        "en": "Competency Appraisal"
+      },
+      "icon": "box",
+      "route": "/competency-appraisal",
+      "permission": "competency-appraisal.record.view"
+    }
+  ]
+}

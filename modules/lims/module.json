@@ -1,0 +1,51 @@
+{
+  "id": "lims",
+  "status": "done",
+  "name": {
+    "fa": "مدیریت آزمایشگاه",
+    "en": "LIMS"
+  },
+  "version": "1.0.0",
+  "category": "quality",
+  "level": 4,
+  "requires": [
+    "quality-inspection"
+  ],
+  "optional": [],
+  "provides": [
+    "LimsServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "lims.sample.registered",
+    "lims.result.approved",
+    "lims.coa.issued"
+  ],
+  "listens": [],
+  "permissions": [
+    "lims.record.view",
+    "lims.record.create",
+    "lims.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "lims",
+      "title": {
+        "fa": "مدیریت آزمایشگاه",
+        "en": "LIMS"
+      },
+      "icon": "activity",
+      "route": "/lims",
+      "permission": "lims.record.view"
+    }
+  ]
+}

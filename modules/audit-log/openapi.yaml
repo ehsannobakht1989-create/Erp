@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Audit Log API
+  version: 1.0.0
+paths:
+  /api/audit-log/entries:
+    get:
+      summary: Search audit entries
+      responses:
+        '200': { description: Audit entries }

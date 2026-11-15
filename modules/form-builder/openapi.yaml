@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Form Builder API
+  version: 1.0.0
+paths:
+  /api/form-builder/forms:
+    get:
+      summary: List form definitions
+      responses:
+        '200': { description: Forms list }

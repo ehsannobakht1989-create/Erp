@@ -1,0 +1,54 @@
+{
+  "id": "contracts",
+  "status": "done",
+  "name": {
+    "fa": "مدیریت قراردادها",
+    "en": "Contracts"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine",
+    "document-mgmt"
+  ],
+  "optional": [
+    "party-master"
+  ],
+  "provides": [
+    "ContractsServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "contracts.contract.activated",
+    "contracts.milestone.due"
+  ],
+  "listens": [],
+  "permissions": [
+    "contracts.record.view",
+    "contracts.record.create",
+    "contracts.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "contracts",
+      "title": {
+        "fa": "مدیریت قراردادها",
+        "en": "Contracts"
+      },
+      "icon": "box",
+      "route": "/contracts",
+      "permission": "contracts.record.view"
+    }
+  ]
+}

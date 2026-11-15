@@ -1,0 +1,53 @@
+{
+  "id": "energy-utilities",
+  "status": "done",
+  "name": {
+    "fa": "انرژی و تاسیسات",
+    "en": "Energy & Utilities"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine"
+  ],
+  "optional": [
+    "asset-registry"
+  ],
+  "provides": [
+    "EnergyUtilitiesServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "energy-utilities.period.allocated",
+    "energy-utilities.target.breached"
+  ],
+  "listens": [],
+  "permissions": [
+    "energy-utilities.record.view",
+    "energy-utilities.record.create",
+    "energy-utilities.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "energy-utilities",
+      "title": {
+        "fa": "انرژی و تاسیسات",
+        "en": "Energy & Utilities"
+      },
+      "icon": "box",
+      "route": "/energy-utilities",
+      "permission": "energy-utilities.record.view"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+factory: { name: "کارخانه استاندارد", slug: "standard", locale: "fa", timezone: "Asia/Tehran", currency: "IRR" }
+industry: "generic"
+modules: [auth-rbac, multi-company, audit-log, dynamic-fields, form-builder, workflow-engine, notifications, document-mgmt, print-barcode-qr, api-webhooks, report-bi, item-master, party-master, org-structure, inventory, purchase-request, rfq, purchase-order, sales, pricing, hr-core, attendance, asset-registry, hse, crm, project-mgmt, bom, routing, accounting-gl, ar-ap, treasury, fixed-assets, payroll, cmms, quality-inspection, work-order, mrp, costing]
+exclude_regional: []
+ai: { enabled: false, provider: "off" }
+python_service: "auto"
+deploy: { target: "cpanel" }

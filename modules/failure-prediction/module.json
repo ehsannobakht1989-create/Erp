@@ -1,0 +1,51 @@
+{
+  "id": "failure-prediction",
+  "status": "done",
+  "name": {
+    "fa": "پیش‌بینی خرابی",
+    "en": "Failure Prediction"
+  },
+  "version": "1.0.0",
+  "category": "ai",
+  "level": 6,
+  "requires": [
+    "cmms",
+    "asset-registry"
+  ],
+  "optional": [],
+  "provides": [
+    "FailurePredictionServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "failure-prediction.risk.high",
+    "failure-prediction.insight.created"
+  ],
+  "listens": [],
+  "permissions": [
+    "failure-prediction.record.view",
+    "failure-prediction.record.create",
+    "failure-prediction.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": true,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "failure-prediction",
+      "title": {
+        "fa": "پیش‌بینی خرابی",
+        "en": "Failure Prediction"
+      },
+      "icon": "box",
+      "route": "/failure-prediction",
+      "permission": "failure-prediction.record.view"
+    }
+  ]
+}

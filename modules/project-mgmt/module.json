@@ -1,0 +1,49 @@
+{
+  "id": "project-mgmt",
+  "status": "done",
+  "name": {
+    "fa": "مدیریت پروژه",
+    "en": "Project Management"
+  },
+  "version": "1.0.0",
+  "category": "operations",
+  "level": 2,
+  "requires": [],
+  "optional": [
+    "org-structure"
+  ],
+  "provides": [
+    "ProjectMgmtServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "project-mgmt.project.created"
+  ],
+  "listens": [],
+  "permissions": [
+    "project-mgmt.record.view",
+    "project-mgmt.record.create",
+    "project-mgmt.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "project-mgmt",
+      "title": {
+        "fa": "مدیریت پروژه",
+        "en": "Project Management"
+      },
+      "icon": "box",
+      "route": "/project-mgmt",
+      "permission": "project-mgmt.record.view"
+    }
+  ]
+}

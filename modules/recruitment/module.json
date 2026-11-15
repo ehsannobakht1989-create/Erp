@@ -1,0 +1,53 @@
+{
+  "id": "recruitment",
+  "status": "done",
+  "name": {
+    "fa": "استخدام",
+    "en": "Recruitment"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine"
+  ],
+  "optional": [
+    "hr-core"
+  ],
+  "provides": [
+    "RecruitmentServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "recruitment.application.hired",
+    "recruitment.requisition.filled"
+  ],
+  "listens": [],
+  "permissions": [
+    "recruitment.record.view",
+    "recruitment.record.create",
+    "recruitment.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "recruitment",
+      "title": {
+        "fa": "استخدام",
+        "en": "Recruitment"
+      },
+      "icon": "box",
+      "route": "/recruitment",
+      "permission": "recruitment.record.view"
+    }
+  ]
+}

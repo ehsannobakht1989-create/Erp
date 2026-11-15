@@ -1,0 +1,54 @@
+{
+  "id": "mes",
+  "status": "done",
+  "name": {
+    "fa": "اجرای تولید",
+    "en": "MES"
+  },
+  "version": "1.0.0",
+  "category": "manufacturing",
+  "level": 4,
+  "requires": [
+    "work-order",
+    "routing",
+    "asset-registry"
+  ],
+  "optional": [],
+  "provides": [
+    "MesServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "mes.operation.started",
+    "mes.production.reported",
+    "mes.downtime.started",
+    "mes.andon.raised"
+  ],
+  "listens": [],
+  "permissions": [
+    "mes.record.view",
+    "mes.record.create",
+    "mes.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "mes",
+      "title": {
+        "fa": "اجرای تولید",
+        "en": "MES"
+      },
+      "icon": "activity",
+      "route": "/mes",
+      "permission": "mes.record.view"
+    }
+  ]
+}

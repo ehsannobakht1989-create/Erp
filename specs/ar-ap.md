@@ -1,0 +1,10 @@
+# ar-ap — Receivables & payables (L3; requires accounting-gl, party-master; optional purchase-order, sales, treasury)
+
+**Entities** SupplierInvoice{supplier,number(external),date,due_date,currency,lines(po_line ref|expense account),taxes,withholdings,status[draft|matched|approved|posted|paid|cancelled]}; CustomerInvoice mirror (created from sales.invoice.issued); Payment/Receipt{party,method[cash|bank|cheque|card|offset],amount,allocations[],status}; Allocation{payment_id,invoice_id,amount}; Advance (پیش‌پرداخت/پیش‌دریافت); CreditDebitNote; Statement; PaymentProposal{due_date range, suppliers, lines}; DunningNotice.
+**Rules** 3-way match supplier invoice vs PO vs receipts with tolerances (price, qty) and exception queue; posting creates journal request (AP control, expense/inventory, VAT, withholding); allocation FIFO/manual; aging buckets configurable; party balance = sum of open items; foreign currency gain/loss on settlement; advance application; duplicate supplier invoice number check per supplier.
+**Events out** ar-ap.invoice.posted, payment.allocated, payment.requested (to treasury), invoice.overdue. **In** sales.invoice.issued, purchase-order.po.* (match data), treasury.payment.executed|cheque.cleared, inventory.receipt.posted (GRNI data optional).
+**Service contract** ArApService: balance(party,asOf), openItems(party), overdue(party), creditExposure(party) (used by sales), proposePayments(filter).
+**Permissions** ar-ap.invoice|payment|note|advance.view|create|approve|post|cancel, ar-ap.proposal.manage, ar-ap.report.view.
+**Screens** supplier invoice entry with match panel, customer open items, payment/receipt entry with allocation grid, aging reports (AR/AP), party statement (صورت‌حساب), payment proposal wizard, dunning list, dashboards (overdue, due this week).
+**AI** extract supplier invoice from text/PDF (doc-ocr, proposal), match suggestions, forecast collections/payments (cash flow feed), anomaly (duplicate invoices, unusual payment terms), next_action (which customers to chase).
+**Iran** VAT & withholding lines configurable, check-based payments hand off to treasury cheques, Jalali due dates.

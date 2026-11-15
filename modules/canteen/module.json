@@ -1,0 +1,53 @@
+{
+  "id": "canteen",
+  "status": "done",
+  "name": {
+    "fa": "رستوران و تغذیه",
+    "en": "Canteen"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine"
+  ],
+  "optional": [
+    "hr-core"
+  ],
+  "provides": [
+    "CanteenServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "canteen.period.charges_ready",
+    "canteen.meal.served"
+  ],
+  "listens": [],
+  "permissions": [
+    "canteen.record.view",
+    "canteen.record.create",
+    "canteen.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "canteen",
+      "title": {
+        "fa": "رستوران و تغذیه",
+        "en": "Canteen"
+      },
+      "icon": "box",
+      "route": "/canteen",
+      "permission": "canteen.record.view"
+    }
+  ]
+}

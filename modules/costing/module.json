@@ -1,0 +1,54 @@
+{
+  "id": "costing",
+  "status": "done",
+  "name": {
+    "fa": "بهای تمام‌شده",
+    "en": "Costing"
+  },
+  "version": "1.0.0",
+  "category": "finance",
+  "level": 5,
+  "requires": [
+    "work-order",
+    "inventory",
+    "accounting-gl"
+  ],
+  "optional": [],
+  "provides": [
+    "CostingServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "costing.cost.updated",
+    "costing.wo.costed",
+    "costing.run.completed",
+    "costing.variance.recorded"
+  ],
+  "listens": [],
+  "permissions": [
+    "costing.record.view",
+    "costing.record.create",
+    "costing.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "costing",
+      "title": {
+        "fa": "بهای تمام‌شده",
+        "en": "Costing"
+      },
+      "icon": "activity",
+      "route": "/costing",
+      "permission": "costing.record.view"
+    }
+  ]
+}

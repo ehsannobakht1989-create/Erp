@@ -1,0 +1,50 @@
+{
+  "id": "ar-ap",
+  "status": "done",
+  "name": {
+    "fa": "حساب‌های دریافتنی و پرداختنی",
+    "en": "AR / AP"
+  },
+  "version": "1.0.0",
+  "category": "finance",
+  "level": 3,
+  "requires": [
+    "accounting-gl",
+    "party-master"
+  ],
+  "optional": [],
+  "provides": [
+    "ArApServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "ar-ap.invoice.posted"
+  ],
+  "listens": [],
+  "permissions": [
+    "ar-ap.record.view",
+    "ar-ap.record.create",
+    "ar-ap.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "ar-ap",
+      "title": {
+        "fa": "حساب‌های دریافتنی و پرداختنی",
+        "en": "AR / AP"
+      },
+      "icon": "file",
+      "route": "/ar-ap",
+      "permission": "ar-ap.record.view"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# bom — Bill of materials (L3; requires item-master; optional routing, costing, eco-plm)
+
+**Entities** Bom{item_id(parent),code,revision,type[production|engineering|planning|subcontract],plant_id?,uom,base_qty,yield_pct,status[draft|pending|approved|obsolete],effective_from,effective_to,is_default,notes}; BomLine{line_no,component_item_id,qty_per,uom,scrap_pct,operation_ref,is_phantom,is_optional,qty_formula,substitute_group,issue_method[manual|backflush],supply_type[stock|purchase|subcontract]}; BomSubstituteGroup{items[],priority,ratio}; BomByProduct{item_id,qty,cost_alloc_pct,kind[by_product|co_product|scrap]}; BomRevisionLog.
+**Rules** no circular references (detect on save, deep); single approved default per item/plant/date window; approved revisions immutable (new revision instead, copy-forward); phantoms exploded through; qty formulas use item attributes (e.g. thickness×width×length×density) via safe expression evaluator; substitutes only from item-master alternates or explicit; component must be active item; scrap & yield applied in explosion.
+**Events out** bom.bom.approved|obsoleted|revised. **In** item-master.item.merged (remap), eco-plm.change.released (optional).
+**Service contract** BomService: findActive(item,date,plant), explode(item,qty,date,options{levels,phantom,scrap,substitutes}) → Requirement[], implode/whereUsed(item,date), compare(revA,revB), costRollupInputs(bom), validate(bom).
+**Permissions** bom.bom.view|create|update|approve|delete|import|export, bom.formula.manage.
+**Screens** BOM list, editor (tree/grid with inline qty/uom/scrap, substitutes drawer), multi-level tree viewer, where-used, revision compare (diff), formula tester, import/export, "BOM health" report (missing UoM, inactive components, cycles).
+**AI** autofill (draft BOM from description/reference product, proposal), anomaly (quantity outliers vs similar BOMs), summarize revision differences.
+**Iran** support Persian descriptions and Latin part numbers; steel/chemical yields via yield_pct and by-products.

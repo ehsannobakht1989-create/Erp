@@ -1,0 +1,45 @@
+{
+  "id": "dynamic-fields",
+  "status": "done",
+  "name": {
+    "fa": "فیلدهای پویا",
+    "en": "Dynamic Fields"
+  },
+  "version": "1.0.0",
+  "category": "platform",
+  "level": 0,
+  "requires": [],
+  "optional": [],
+  "provides": ["DynamicFieldContract"],
+  "consumes": [],
+  "emits": ["dynamic-fields.field.created"],
+  "listens": [],
+  "permissions": ["dynamic-fields.field.view", "dynamic-fields.field.manage", "dynamic-fields.ai.use"],
+  "menu": [
+    {
+      "id": "dynamic-fields",
+      "title": {"fa": "فیلدهای پویا", "en": "Dynamic Fields"},
+      "icon": "sliders",
+      "route": "/dynamic-fields",
+      "permission": "dynamic-fields.field.view"
+    }
+  ],
+  "entities": ["field", "value"],
+  "settings": [],
+  "industry_tags": ["all"],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": [
+      {
+        "id": "autofill",
+        "provider": "avalai",
+        "tools": ["dynamic-fields.list_fields"],
+        "proposals": ["dynamic-fields.propose_fields"],
+        "redact": [],
+        "max_tokens_per_call": 1500
+      }
+    ]
+  }
+}

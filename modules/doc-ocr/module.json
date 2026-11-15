@@ -1,0 +1,49 @@
+{
+  "id": "doc-ocr",
+  "status": "done",
+  "name": {
+    "fa": "نویسه‌خوان اسناد",
+    "en": "Document OCR"
+  },
+  "version": "1.0.0",
+  "category": "ai",
+  "level": 6,
+  "requires": [
+    "document-mgmt"
+  ],
+  "optional": [],
+  "provides": [
+    "DocOcrServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "doc-ocr.extraction.completed"
+  ],
+  "listens": [],
+  "permissions": [
+    "doc-ocr.record.view",
+    "doc-ocr.record.create",
+    "doc-ocr.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": true,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "doc-ocr",
+      "title": {
+        "fa": "نویسه‌خوان اسناد",
+        "en": "Document OCR"
+      },
+      "icon": "box",
+      "route": "/doc-ocr",
+      "permission": "doc-ocr.record.view"
+    }
+  ]
+}

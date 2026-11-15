@@ -1,0 +1,55 @@
+{
+  "id": "weighbridge",
+  "status": "done",
+  "name": {
+    "fa": "باسکول",
+    "en": "Weighbridge"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine"
+  ],
+  "optional": [
+    "inventory"
+  ],
+  "provides": [
+    "WeighbridgeServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "weighbridge.ticket.completed",
+    "weighbridge.ticket.voided"
+  ],
+  "listens": [],
+  "permissions": [
+    "weighbridge.record.view",
+    "weighbridge.record.create",
+    "weighbridge.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [
+    "ir"
+  ],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "weighbridge",
+      "title": {
+        "fa": "باسکول",
+        "en": "Weighbridge"
+      },
+      "icon": "box",
+      "route": "/weighbridge",
+      "permission": "weighbridge.record.view"
+    }
+  ]
+}

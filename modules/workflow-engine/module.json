@@ -1,0 +1,53 @@
+{
+  "id": "workflow-engine",
+  "status": "done",
+  "name": {
+    "fa": "موتور گردش کار",
+    "en": "Workflow Engine"
+  },
+  "version": "1.0.0",
+  "category": "platform",
+  "level": 0,
+  "requires": [],
+  "optional": ["notifications"],
+  "provides": ["WorkflowContract"],
+  "consumes": ["NotifierContract"],
+  "emits": ["workflow-engine.instance.started", "workflow-engine.instance.transitioned"],
+  "listens": [],
+  "permissions": ["workflow-engine.task.view", "workflow-engine.task.act", "workflow-engine.definition.manage", "workflow-engine.ai.use"],
+  "menu": [
+    {
+      "id": "workflow-engine",
+      "title": {"fa": "کارتابل و گردش کار", "en": "Workflow & Inbox"},
+      "icon": "git-branch",
+      "route": "/workflow-engine",
+      "permission": "workflow-engine.task.view"
+    }
+  ],
+  "entities": ["definition", "instance", "task"],
+  "settings": [],
+  "industry_tags": ["all"],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": [
+      {
+        "id": "summarize",
+        "provider": "avalai",
+        "tools": ["workflow-engine.instance_status"],
+        "proposals": [],
+        "redact": [],
+        "max_tokens_per_call": 1500
+      },
+      {
+        "id": "next_action",
+        "provider": "avalai",
+        "tools": ["workflow-engine.pending_tasks"],
+        "proposals": ["workflow-engine.propose_transition"],
+        "redact": [],
+        "max_tokens_per_call": 1500
+      }
+    ]
+  }
+}

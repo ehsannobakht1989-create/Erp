@@ -1,0 +1,49 @@
+{
+  "id": "tooling",
+  "status": "done",
+  "name": {
+    "fa": "ابزار و قالب",
+    "en": "Tooling"
+  },
+  "version": "1.0.0",
+  "category": "manufacturing",
+  "level": 4,
+  "requires": [
+    "item-master"
+  ],
+  "optional": [],
+  "provides": [
+    "ToolingServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "tooling.tool.checked_out"
+  ],
+  "listens": [],
+  "permissions": [
+    "tooling.record.view",
+    "tooling.record.create",
+    "tooling.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "tooling",
+      "title": {
+        "fa": "ابزار و قالب",
+        "en": "Tooling"
+      },
+      "icon": "settings",
+      "route": "/tooling",
+      "permission": "tooling.record.view"
+    }
+  ]
+}

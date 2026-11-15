@@ -1,0 +1,51 @@
+{
+  "id": "ncr-capa",
+  "status": "done",
+  "name": {
+    "fa": "عدم انطباق و اقدام اصلاحی",
+    "en": "NCR & CAPA"
+  },
+  "version": "1.0.0",
+  "category": "quality",
+  "level": 4,
+  "requires": [
+    "quality-inspection"
+  ],
+  "optional": [],
+  "provides": [
+    "NcrCapaServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "ncr-capa.ncr.opened",
+    "ncr-capa.capa.opened",
+    "ncr-capa.scar.sent"
+  ],
+  "listens": [],
+  "permissions": [
+    "ncr-capa.record.view",
+    "ncr-capa.record.create",
+    "ncr-capa.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "ncr-capa",
+      "title": {
+        "fa": "عدم انطباق و اقدام اصلاحی",
+        "en": "NCR & CAPA"
+      },
+      "icon": "activity",
+      "route": "/ncr-capa",
+      "permission": "ncr-capa.record.view"
+    }
+  ]
+}

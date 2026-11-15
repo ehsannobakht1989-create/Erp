@@ -1,0 +1,50 @@
+{
+  "id": "budgeting",
+  "status": "done",
+  "name": {
+    "fa": "بودجه‌بندی",
+    "en": "Budgeting"
+  },
+  "version": "1.0.0",
+  "category": "finance",
+  "level": 5,
+  "requires": [
+    "accounting-gl"
+  ],
+  "optional": [],
+  "provides": [
+    "BudgetingServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "budgeting.budget.approved",
+    "budgeting.check.exceeded"
+  ],
+  "listens": [],
+  "permissions": [
+    "budgeting.record.view",
+    "budgeting.record.create",
+    "budgeting.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "budgeting",
+      "title": {
+        "fa": "بودجه‌بندی",
+        "en": "Budgeting"
+      },
+      "icon": "box",
+      "route": "/budgeting",
+      "permission": "budgeting.record.view"
+    }
+  ]
+}

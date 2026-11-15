@@ -1,0 +1,50 @@
+{
+  "id": "lot-traceability",
+  "status": "done",
+  "name": {
+    "fa": "ردیابی بچ و لات",
+    "en": "Lot Traceability"
+  },
+  "version": "1.0.0",
+  "category": "quality",
+  "level": 4,
+  "requires": [
+    "inventory"
+  ],
+  "optional": [],
+  "provides": [
+    "LotTraceabilityServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "lot-traceability.recall.initiated",
+    "lot-traceability.quarantine.requested"
+  ],
+  "listens": [],
+  "permissions": [
+    "lot-traceability.record.view",
+    "lot-traceability.record.create",
+    "lot-traceability.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "lot-traceability",
+      "title": {
+        "fa": "ردیابی بچ و لات",
+        "en": "Lot Traceability"
+      },
+      "icon": "activity",
+      "route": "/lot-traceability",
+      "permission": "lot-traceability.record.view"
+    }
+  ]
+}

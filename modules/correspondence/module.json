@@ -1,0 +1,55 @@
+{
+  "id": "correspondence",
+  "status": "done",
+  "name": {
+    "fa": "دبیرخانه و مکاتبات",
+    "en": "Correspondence"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine",
+    "document-mgmt"
+  ],
+  "optional": [
+    "org-structure"
+  ],
+  "provides": [
+    "CorrespondenceServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "correspondence.letter.registered"
+  ],
+  "listens": [],
+  "permissions": [
+    "correspondence.record.view",
+    "correspondence.record.create",
+    "correspondence.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [
+    "ir"
+  ],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "correspondence",
+      "title": {
+        "fa": "دبیرخانه و مکاتبات",
+        "en": "Correspondence"
+      },
+      "icon": "box",
+      "route": "/correspondence",
+      "permission": "correspondence.record.view"
+    }
+  ]
+}

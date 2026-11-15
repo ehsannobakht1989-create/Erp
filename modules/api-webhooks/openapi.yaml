@@ -1,0 +1,15 @@
+openapi: 3.0.3
+info:
+  title: API & Webhooks
+  version: 1.0.0
+paths:
+  /api/api-webhooks/keys:
+    get:
+      summary: List API keys
+      responses:
+        '200': { description: API keys }
+  /api/api-webhooks/webhooks:
+    get:
+      summary: List webhooks
+      responses:
+        '200': { description: Webhooks list }

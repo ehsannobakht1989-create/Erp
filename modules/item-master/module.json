@@ -1,0 +1,94 @@
+{
+  "id": "item-master",
+  "status": "done",
+  "name": {
+    "fa": "اطلاعات پایه کالا",
+    "en": "Item Master"
+  },
+  "version": "1.0.0",
+  "category": "master-data",
+  "level": 1,
+  "requires": ["auth-rbac", "multi-company", "audit-log", "dynamic-fields", "workflow-engine"],
+  "optional": ["party-master", "inventory", "bom", "document-mgmt", "print-barcode-qr"],
+  "provides": ["ItemMasterService", "TextNormalizer"],
+  "consumes": ["NumberingService", "WorkflowContract", "DynamicFieldContract", "AuditContract"],
+  "emits": [
+    "item-master.item.created",
+    "item-master.item.updated",
+    "item-master.item.activated",
+    "item-master.item.put_on_hold",
+    "item-master.item.obsoleted",
+    "item-master.item.merged",
+    "item-master.item.category_changed"
+  ],
+  "listens": ["inventory.stock.first_posted"],
+  "permissions": [
+    "item-master.item.view",
+    "item-master.item.create",
+    "item-master.item.update",
+    "item-master.item.delete",
+    "item-master.item.approve",
+    "item-master.item.import",
+    "item-master.item.export",
+    "item-master.item.merge",
+    "item-master.category.manage",
+    "item-master.coding.manage",
+    "item-master.alternate.manage",
+    "item-master.ai.use"
+  ],
+  "menu": [
+    {
+      "id": "item-master",
+      "title": {"fa": "اطلاعات پایه کالا", "en": "Item Master"},
+      "icon": "package",
+      "route": "/item-master",
+      "permission": "item-master.item.view"
+    }
+  ],
+  "entities": ["item", "category", "uom_conversion", "barcode", "alternate", "party_ref", "coding_scheme"],
+  "workflows": ["item_activation"],
+  "settings": [
+    {"key": "allow_duplicate_name_override", "type": "bool", "default": true},
+    {"key": "auto_generate_code", "type": "bool", "default": true}
+  ],
+  "industry_tags": ["all"],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": [
+      {
+        "id": "autofill",
+        "provider": "avalai",
+        "tools": ["item-master.list_categories"],
+        "proposals": ["item-master.propose_item"],
+        "redact": [],
+        "max_tokens_per_call": 1500
+      },
+      {
+        "id": "assistant",
+        "provider": "avalai",
+        "tools": ["item-master.search", "item-master.get_attributes"],
+        "proposals": [],
+        "redact": [],
+        "max_tokens_per_call": 1500
+      },
+      {
+        "id": "anomaly",
+        "provider": "avalai",
+        "tools": ["item-master.find_similar"],
+        "proposals": ["item-master.propose_merge"],
+        "redact": [],
+        "max_tokens_per_call": 1500
+      },
+      {
+        "id": "summarize",
+        "provider": "avalai",
+        "tools": ["item-master.get_history"],
+        "proposals": [],
+        "redact": ["notes"],
+        "max_tokens_per_call": 1500
+      }
+    ]
+  }
+}

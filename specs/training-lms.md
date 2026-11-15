@@ -1,0 +1,9 @@
+# training-lms — Training management & light LMS (L2; requires hr-core; optional competency-appraisal, hse, document-mgmt, org-structure)
+
+**Entities** Course{code,title,type[classroom|online|on_the_job|external],duration,provider,cost,objectives,materials,validity_months,mandatory_for[positions|units|hse_permits]}; Session{course,date,trainer,location,capacity,status}; Enrollment{employee,session,status,attendance,score,passed,certificate_no}; Assessment (quiz: questions, options, scoring, attempts); LearningPath; TrainingNeed{employee,course,source[competency_gap|mandatory|manager],due}; Evaluation{session,reaction scores}; MicroLesson{title,content,quiz[]}.
+**Rules** mandatory training matrix by position drives needs and expiry (recertification); capacity & prerequisites checks; online content = links/files stored through document-mgmt (no video hosting); quiz engine with randomization; certificate print; compliance dashboard; cost per head; bulk enrollment.
+**Events out** training-lms.completion.recorded, training-lms.certificate.expiring. **In** hr-core.employee.hired|transferred (assign mandatory), competency-appraisal.gap.identified, hse.permit.requested (check training).
+**Service contract** TrainingService: isCompliant(employee,courseOrPermit), expiring(days), history(employee), compliance(unit).
+**Permissions** training-lms.course|session|enrollment|assessment.view|manage, training-lms.report.view, training-lms.learn (employee self-service).
+**Screens** catalog, session scheduler/calendar, enrollment & attendance sheet, learner portal (my courses/quizzes/certificates), compliance matrix, training needs, budget vs actual.
+**AI** autofill (micro-lessons and quiz from uploaded text, proposal), recommend courses from gaps, summarize evaluations. **Datasets** completions, compliance.

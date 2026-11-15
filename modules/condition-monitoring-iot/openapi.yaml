@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Condition Monitoring IoT API
+  version: 1.0.0
+paths:
+  /api/condition-monitoring-iot/records:
+    get:
+      summary: List records
+      responses:
+        '200': { description: OK }

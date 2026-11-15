@@ -1,0 +1,53 @@
+{
+  "id": "training-lms",
+  "status": "done",
+  "name": {
+    "fa": "آموزش",
+    "en": "Training & LMS"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine"
+  ],
+  "optional": [
+    "hr-core"
+  ],
+  "provides": [
+    "TrainingLmsServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "training-lms.completion.recorded",
+    "training-lms.certificate.expiring"
+  ],
+  "listens": [],
+  "permissions": [
+    "training-lms.record.view",
+    "training-lms.record.create",
+    "training-lms.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "training-lms",
+      "title": {
+        "fa": "آموزش",
+        "en": "Training & LMS"
+      },
+      "icon": "box",
+      "route": "/training-lms",
+      "permission": "training-lms.record.view"
+    }
+  ]
+}

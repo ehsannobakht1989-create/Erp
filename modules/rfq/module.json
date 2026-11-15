@@ -1,0 +1,52 @@
+{
+  "id": "rfq",
+  "status": "done",
+  "name": {
+    "fa": "استعلام بها",
+    "en": "Request for Quotation"
+  },
+  "version": "1.0.0",
+  "category": "supply",
+  "level": 2,
+  "requires": [
+    "purchase-request",
+    "party-master"
+  ],
+  "optional": [
+    "purchase-request"
+  ],
+  "provides": [
+    "RfqServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "rfq.rfq.sent"
+  ],
+  "listens": [],
+  "permissions": [
+    "rfq.record.view",
+    "rfq.record.create",
+    "rfq.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "rfq",
+      "title": {
+        "fa": "استعلام بها",
+        "en": "Request for Quotation"
+      },
+      "icon": "file",
+      "route": "/rfq",
+      "permission": "rfq.record.view"
+    }
+  ]
+}

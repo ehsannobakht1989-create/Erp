@@ -1,0 +1,52 @@
+{
+  "id": "mps",
+  "status": "done",
+  "name": {
+    "fa": "برنامه‌ریزی جامع تولید",
+    "en": "MPS"
+  },
+  "version": "1.0.0",
+  "category": "manufacturing",
+  "level": 4,
+  "requires": [
+    "bom",
+    "inventory",
+    "sales"
+  ],
+  "optional": [],
+  "provides": [
+    "MpsServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "mps.plan.approved",
+    "mps.atp.changed"
+  ],
+  "listens": [],
+  "permissions": [
+    "mps.record.view",
+    "mps.record.create",
+    "mps.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "mps",
+      "title": {
+        "fa": "برنامه‌ریزی جامع تولید",
+        "en": "MPS"
+      },
+      "icon": "settings",
+      "route": "/mps",
+      "permission": "mps.record.view"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "report-bi",
+  "status": "done",
+  "name": {
+    "fa": "گزارش‌ساز و هوش تجاری",
+    "en": "Report & BI"
+  },
+  "version": "1.0.0",
+  "category": "platform",
+  "level": 0,
+  "requires": [],
+  "optional": [],
+  "provides": [
+    "ReportBiServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "report-bi.report.published",
+    "report-bi.kpi.breached"
+  ],
+  "listens": [],
+  "permissions": [
+    "report-bi.record.view",
+    "report-bi.record.create",
+    "report-bi.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "report-bi",
+      "title": {
+        "fa": "گزارش‌ساز و هوش تجاری",
+        "en": "Report & BI"
+      },
+      "icon": "box",
+      "route": "/report-bi",
+      "permission": "report-bi.record.view"
+    }
+  ]
+}

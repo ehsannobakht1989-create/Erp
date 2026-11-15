@@ -1,0 +1,9 @@
+# supplier-evaluation — Supplier rating & qualification (L5; requires party-master; optional purchase-order, quality-inspection, ncr-capa, rfq)
+
+**Entities** EvaluationModel{criteria[{code,name,weight,source[auto|manual],formula}],scales,period}; Evaluation{supplier,period,scores[],total,grade[A|B|C|D],status,evaluator}; AutoMetrics{supplier,period,otif_pct,lead_time_variance,quality_ppm/reject_pct,ncr_count,price_competitiveness,responsiveness}; QualificationFile{supplier,categories,audit_score,certificates[{type,number,expiry}],status[candidate|qualified|conditional|disqualified]}; ApprovedSupplierList{item|category,supplier,rank,status}; Audit{date,auditor,checklist,findings}.
+**Rules** auto metrics from events/datasets (receipt vs promised date → OTIF; inspection results; NCR/SCAR counts; RFQ price rank); manual criteria entered by departments; cycle (monthly/quarterly/yearly) with workflow approval; grade thresholds configurable; disqualification/conditional status propagates to party-master via event and warns in RFQ/PO; certificate expiry alerts; ASL enforcement setting (warn|block) consumed by PO/RFQ via service.
+**Events out** supplier-evaluation.evaluation.approved, supplier-evaluation.status.changed. **In** purchase-order.po.received, quality-inspection.lot.decided, ncr-capa.scar.*, rfq.awarded.
+**Service contract** SupplierScoreService: score(supplier), grade(supplier), isApproved(supplier,item?), asl(item), expiringCerts(days).
+**Permissions** supplier-evaluation.model|evaluation|qualification|asl.view|manage|approve.
+**Screens** evaluation worksheet, scorecards with trend, ranking, qualification file, ASL manager, audit forms, expiring certificates.
+**AI** summarize supplier performance, anomaly (sudden drops), next_action (corrective suggestions). **Datasets** supplier_scores.

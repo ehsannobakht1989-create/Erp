@@ -1,0 +1,49 @@
+{
+  "id": "schedule-optimizer",
+  "status": "done",
+  "name": {
+    "fa": "بهینه‌ساز زمان‌بندی",
+    "en": "Schedule Optimizer"
+  },
+  "version": "1.0.0",
+  "category": "ai",
+  "level": 6,
+  "requires": [
+    "scheduling"
+  ],
+  "optional": [],
+  "provides": [
+    "ScheduleOptimizerServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "schedule-optimizer.solution.ready"
+  ],
+  "listens": [],
+  "permissions": [
+    "schedule-optimizer.record.view",
+    "schedule-optimizer.record.create",
+    "schedule-optimizer.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": true,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "schedule-optimizer",
+      "title": {
+        "fa": "بهینه‌ساز زمان‌بندی",
+        "en": "Schedule Optimizer"
+      },
+      "icon": "box",
+      "route": "/schedule-optimizer",
+      "permission": "schedule-optimizer.record.view"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Routing API
+  version: 1.0.0
+paths:
+  /api/routing/records:
+    get:
+      summary: List records
+      responses:
+        '200': { description: OK }

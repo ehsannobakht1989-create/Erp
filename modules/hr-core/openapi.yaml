@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: HR Core API
+  version: 1.0.0
+paths:
+  /api/hr-core/employees:
+    get:
+      summary: List employees
+      responses:
+        '200': { description: Employees list }

@@ -1,0 +1,14 @@
+openapi: 3.0.3
+info:
+  title: Party Master API
+  version: 1.0.0
+paths:
+  /api/party-master/parties:
+    get:
+      summary: List/search parties
+      responses:
+        '200': { description: Parties list }
+    post:
+      summary: Create party
+      responses:
+        '201': { description: Created }

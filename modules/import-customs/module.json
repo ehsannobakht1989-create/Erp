@@ -1,0 +1,56 @@
+{
+  "id": "import-customs",
+  "status": "done",
+  "name": {
+    "fa": "واردات و گمرک",
+    "en": "Import & Customs"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine"
+  ],
+  "optional": [
+    "purchase-order"
+  ],
+  "provides": [
+    "ImportCustomsServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "import-customs.file.cleared",
+    "import-customs.landed_cost.ready",
+    "import-customs.demurrage.alert"
+  ],
+  "listens": [],
+  "permissions": [
+    "import-customs.record.view",
+    "import-customs.record.create",
+    "import-customs.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [
+    "ir"
+  ],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "import-customs",
+      "title": {
+        "fa": "واردات و گمرک",
+        "en": "Import & Customs"
+      },
+      "icon": "box",
+      "route": "/import-customs",
+      "permission": "import-customs.record.view"
+    }
+  ]
+}

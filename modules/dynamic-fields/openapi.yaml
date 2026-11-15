@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Dynamic Fields API
+  version: 1.0.0
+paths:
+  /api/dynamic-fields/fields:
+    get:
+      summary: List custom fields for an entity
+      responses:
+        '200': { description: Fields list }

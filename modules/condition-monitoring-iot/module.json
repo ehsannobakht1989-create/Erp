@@ -1,0 +1,50 @@
+{
+  "id": "condition-monitoring-iot",
+  "status": "done",
+  "name": {
+    "fa": "پایش وضعیت و IoT",
+    "en": "Condition Monitoring IoT"
+  },
+  "version": "1.0.0",
+  "category": "maintenance",
+  "level": 5,
+  "requires": [
+    "asset-registry",
+    "mes"
+  ],
+  "optional": [],
+  "provides": [
+    "ConditionMonitoringIotServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "condition-monitoring-iot.alarm.raised"
+  ],
+  "listens": [],
+  "permissions": [
+    "condition-monitoring-iot.record.view",
+    "condition-monitoring-iot.record.create",
+    "condition-monitoring-iot.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "condition-monitoring-iot",
+      "title": {
+        "fa": "پایش وضعیت و IoT",
+        "en": "Condition Monitoring IoT"
+      },
+      "icon": "box",
+      "route": "/condition-monitoring-iot",
+      "permission": "condition-monitoring-iot.record.view"
+    }
+  ]
+}

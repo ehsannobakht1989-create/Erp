@@ -1,0 +1,52 @@
+{
+  "id": "tax-moadian",
+  "status": "done",
+  "name": {
+    "fa": "مالیات و سامانه مودیان",
+    "en": "Tax & Moadian"
+  },
+  "version": "1.0.0",
+  "category": "finance",
+  "level": 5,
+  "requires": [
+    "sales",
+    "accounting-gl"
+  ],
+  "optional": [],
+  "provides": [
+    "TaxMoadianServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "tax-moadian.invoice.queued"
+  ],
+  "listens": [],
+  "permissions": [
+    "tax-moadian.record.view",
+    "tax-moadian.record.create",
+    "tax-moadian.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [
+    "ir"
+  ],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "tax-moadian",
+      "title": {
+        "fa": "مالیات و سامانه مودیان",
+        "en": "Tax & Moadian"
+      },
+      "icon": "box",
+      "route": "/tax-moadian",
+      "permission": "tax-moadian.record.view"
+    }
+  ]
+}

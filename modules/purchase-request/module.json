@@ -1,0 +1,52 @@
+{
+  "id": "purchase-request",
+  "status": "done",
+  "name": {
+    "fa": "درخواست خرید",
+    "en": "Purchase Request"
+  },
+  "version": "1.0.0",
+  "category": "supply",
+  "level": 2,
+  "requires": [
+    "item-master",
+    "org-structure"
+  ],
+  "optional": [
+    "org-structure"
+  ],
+  "provides": [
+    "PurchaseRequestServiceInterface"
+  ],
+  "consumes": [],
+  "emits": [
+    "purchase-request.pr.submitted"
+  ],
+  "listens": [],
+  "permissions": [
+    "purchase-request.record.view",
+    "purchase-request.record.create",
+    "purchase-request.record.approve"
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  },
+  "menu": [
+    {
+      "id": "purchase-request",
+      "title": {
+        "fa": "درخواست خرید",
+        "en": "Purchase Request"
+      },
+      "icon": "file",
+      "route": "/purchase-request",
+      "permission": "purchase-request.record.view"
+    }
+  ]
+}
