@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Asset Registry API
+  version: 1.0.0
+paths:
+  /api/asset-registry/assets:
+    get:
+      summary: List assets
+      responses:
+        '200': { description: Assets list }
