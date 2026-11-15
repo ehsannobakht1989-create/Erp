@@ -1,0 +1,29 @@
+{
+  "id": "asset-registry",
+  "status": "stub",
+  "name": {
+    "fa": "ثبت دارایی‌ها و تجهیزات",
+    "en": "Asset Registry"
+  },
+  "version": "1.0.0",
+  "category": "maintenance",
+  "level": 2,
+  "requires": [],
+  "optional": [
+    "org-structure"
+  ],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

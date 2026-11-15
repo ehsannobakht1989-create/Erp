@@ -1,0 +1,30 @@
+{
+  "id": "fixed-assets",
+  "status": "stub",
+  "name": {
+    "fa": "دارایی‌های ثابت",
+    "en": "Fixed Assets"
+  },
+  "version": "1.0.0",
+  "category": "finance",
+  "level": 3,
+  "requires": [
+    "asset-registry",
+    "accounting-gl"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

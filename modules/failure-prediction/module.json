@@ -1,0 +1,30 @@
+{
+  "id": "failure-prediction",
+  "status": "stub",
+  "name": {
+    "fa": "پیش‌بینی خرابی",
+    "en": "Failure Prediction"
+  },
+  "version": "1.0.0",
+  "category": "ai",
+  "level": 6,
+  "requires": [
+    "cmms",
+    "asset-registry"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": true,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "anomaly-detection",
+  "status": "stub",
+  "name": {
+    "fa": "تشخیص ناهنجاری",
+    "en": "Anomaly Detection"
+  },
+  "version": "1.0.0",
+  "category": "ai",
+  "level": 6,
+  "requires": [
+    "accounting-gl",
+    "inventory"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": true,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

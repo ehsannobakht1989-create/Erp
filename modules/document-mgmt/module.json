@@ -1,0 +1,27 @@
+{
+  "id": "document-mgmt",
+  "status": "stub",
+  "name": {
+    "fa": "مدیریت اسناد",
+    "en": "Document Management"
+  },
+  "version": "1.0.0",
+  "category": "platform",
+  "level": 0,
+  "requires": [],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

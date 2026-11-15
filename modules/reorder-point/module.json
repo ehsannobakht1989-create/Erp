@@ -1,0 +1,31 @@
+{
+  "id": "reorder-point",
+  "status": "stub",
+  "name": {
+    "fa": "نقطه سفارش",
+    "en": "Reorder Point"
+  },
+  "version": "1.0.0",
+  "category": "supply",
+  "level": 4,
+  "requires": [
+    "inventory"
+  ],
+  "optional": [
+    "purchase-request"
+  ],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "training-lms",
+  "status": "stub",
+  "name": {
+    "fa": "آموزش",
+    "en": "Training & LMS"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine"
+  ],
+  "optional": [
+    "hr-core"
+  ],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

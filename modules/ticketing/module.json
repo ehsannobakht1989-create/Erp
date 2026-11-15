@@ -1,0 +1,29 @@
+{
+  "id": "ticketing",
+  "status": "stub",
+  "name": {
+    "fa": "تیکتینگ و پشتیبانی",
+    "en": "Ticketing"
+  },
+  "version": "1.0.0",
+  "category": "operations",
+  "level": 2,
+  "requires": [],
+  "optional": [
+    "party-master"
+  ],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

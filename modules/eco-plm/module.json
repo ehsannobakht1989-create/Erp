@@ -1,0 +1,30 @@
+{
+  "id": "eco-plm",
+  "status": "stub",
+  "name": {
+    "fa": "تغییرات مهندسی",
+    "en": "ECO / PLM"
+  },
+  "version": "1.0.0",
+  "category": "engineering",
+  "level": 5,
+  "requires": [
+    "bom",
+    "routing"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

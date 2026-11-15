@@ -1,0 +1,29 @@
+{
+  "id": "ncr-capa",
+  "status": "stub",
+  "name": {
+    "fa": "عدم انطباق و اقدام اصلاحی",
+    "en": "NCR & CAPA"
+  },
+  "version": "1.0.0",
+  "category": "quality",
+  "level": 4,
+  "requires": [
+    "quality-inspection"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

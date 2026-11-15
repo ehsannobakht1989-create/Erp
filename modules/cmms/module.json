@@ -1,0 +1,30 @@
+{
+  "id": "cmms",
+  "status": "stub",
+  "name": {
+    "fa": "نگهداری و تعمیرات",
+    "en": "CMMS"
+  },
+  "version": "1.0.0",
+  "category": "maintenance",
+  "level": 3,
+  "requires": [
+    "asset-registry",
+    "inventory"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

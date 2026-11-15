@@ -1,0 +1,31 @@
+{
+  "id": "mps",
+  "status": "stub",
+  "name": {
+    "fa": "برنامه‌ریزی جامع تولید",
+    "en": "MPS"
+  },
+  "version": "1.0.0",
+  "category": "manufacturing",
+  "level": 4,
+  "requires": [
+    "bom",
+    "inventory",
+    "sales"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

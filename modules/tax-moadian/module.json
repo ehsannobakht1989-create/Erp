@@ -1,0 +1,32 @@
+{
+  "id": "tax-moadian",
+  "status": "stub",
+  "name": {
+    "fa": "مالیات و سامانه مودیان",
+    "en": "Tax & Moadian"
+  },
+  "version": "1.0.0",
+  "category": "finance",
+  "level": 5,
+  "requires": [
+    "sales",
+    "accounting-gl"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [
+    "ir"
+  ],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

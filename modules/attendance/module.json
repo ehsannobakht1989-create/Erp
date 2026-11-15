@@ -1,0 +1,31 @@
+{
+  "id": "attendance",
+  "status": "stub",
+  "name": {
+    "fa": "حضور و غیاب",
+    "en": "Attendance"
+  },
+  "version": "1.0.0",
+  "category": "hr",
+  "level": 2,
+  "requires": [
+    "org-structure"
+  ],
+  "optional": [
+    "hr-core"
+  ],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

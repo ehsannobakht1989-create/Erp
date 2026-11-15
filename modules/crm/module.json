@@ -1,0 +1,31 @@
+{
+  "id": "crm",
+  "status": "stub",
+  "name": {
+    "fa": "مدیریت ارتباط با مشتری",
+    "en": "CRM"
+  },
+  "version": "1.0.0",
+  "category": "commercial",
+  "level": 2,
+  "requires": [
+    "party-master"
+  ],
+  "optional": [
+    "sales"
+  ],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

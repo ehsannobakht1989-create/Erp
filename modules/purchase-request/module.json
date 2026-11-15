@@ -1,0 +1,31 @@
+{
+  "id": "purchase-request",
+  "status": "stub",
+  "name": {
+    "fa": "درخواست خرید",
+    "en": "Purchase Request"
+  },
+  "version": "1.0.0",
+  "category": "supply",
+  "level": 2,
+  "requires": [
+    "item-master"
+  ],
+  "optional": [
+    "org-structure"
+  ],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

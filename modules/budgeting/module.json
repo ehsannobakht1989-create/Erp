@@ -1,0 +1,29 @@
+{
+  "id": "budgeting",
+  "status": "stub",
+  "name": {
+    "fa": "بودجه‌بندی",
+    "en": "Budgeting"
+  },
+  "version": "1.0.0",
+  "category": "finance",
+  "level": 5,
+  "requires": [
+    "accounting-gl"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "scrap-byproduct",
+  "status": "stub",
+  "name": {
+    "fa": "ضایعات و محصولات فرعی",
+    "en": "Scrap & Byproduct"
+  },
+  "version": "1.0.0",
+  "category": "manufacturing",
+  "level": 4,
+  "requires": [
+    "work-order",
+    "inventory"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

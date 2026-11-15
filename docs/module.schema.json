@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://erp.local/schemas/module.schema.json",
+  "title": "ERP Module Manifest",
+  "type": "object",
+  "required": ["id", "name", "version", "category", "level"],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["stub", "in_progress", "done"],
+      "default": "stub"
+    },
+    "name": {
+      "type": "object",
+      "required": ["fa", "en"],
+      "properties": {
+        "fa": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 }
+      }
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-([0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*))?(?:\\+([0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*))?$"
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "level": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 6
+    },
+    "requires": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+      "uniqueItems": true
+    },
+    "optional": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+      "uniqueItems": true
+    },
+    "provides": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "consumes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "emits": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*\\.[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*$"
+      },
+      "uniqueItems": true
+    },
+    "listens": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*\\.[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*$"
+      },
+      "uniqueItems": true
+    },
+    "permissions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*\\.[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*$"
+      },
+      "uniqueItems": true
+    },
+    "menu": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "route"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": {
+            "type": "object",
+            "required": ["fa"],
+            "properties": {
+              "fa": { "type": "string" },
+              "en": { "type": "string" }
+            }
+          },
+          "icon": { "type": "string" },
+          "route": { "type": "string" },
+          "permission": { "type": "string" }
+        }
+      }
+    },
+    "entities": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "workflows": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "settings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "type"],
+        "properties": {
+          "key": { "type": "string" },
+          "type": { "type": "string", "enum": ["bool", "int", "float", "string", "json"] },
+          "default": {}
+        }
+      }
+    },
+    "industry_tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "regional": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "python": {
+      "type": "boolean",
+      "default": false
+    },
+    "ai": {
+      "type": "object",
+      "properties": {
+        "enabled_default": { "type": "boolean", "default": false },
+        "capabilities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "provider"],
+            "properties": {
+              "id": {
+                "type": "string",
+                "enum": ["assistant", "summarize", "autofill", "anomaly", "forecast", "nl_report", "next_action", "ocr"]
+              },
+              "provider": {
+                "type": "string",
+                "enum": ["avalai", "python", "off"]
+              },
+              "tools": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "proposals": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "redact": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "max_tokens_per_call": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

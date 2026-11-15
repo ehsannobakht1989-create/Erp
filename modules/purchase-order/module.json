@@ -1,0 +1,34 @@
+{
+  "id": "purchase-order",
+  "status": "stub",
+  "name": {
+    "fa": "سفارش خرید",
+    "en": "Purchase Order"
+  },
+  "version": "1.0.0",
+  "category": "supply",
+  "level": 2,
+  "requires": [
+    "item-master",
+    "party-master",
+    "inventory"
+  ],
+  "optional": [
+    "rfq",
+    "accounting-gl"
+  ],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

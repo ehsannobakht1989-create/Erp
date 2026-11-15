@@ -1,0 +1,33 @@
+{
+  "id": "treasury",
+  "status": "stub",
+  "name": {
+    "fa": "خزانه‌داری",
+    "en": "Treasury"
+  },
+  "version": "1.0.0",
+  "category": "finance",
+  "level": 3,
+  "requires": [
+    "accounting-gl"
+  ],
+  "optional": [
+    "ar-ap"
+  ],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [
+    "ir"
+  ],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

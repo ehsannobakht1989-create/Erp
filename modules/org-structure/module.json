@@ -1,0 +1,27 @@
+{
+  "id": "org-structure",
+  "status": "stub",
+  "name": {
+    "fa": "ساختار سازمانی",
+    "en": "Organization Structure"
+  },
+  "version": "1.0.0",
+  "category": "master-data",
+  "level": 1,
+  "requires": [],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

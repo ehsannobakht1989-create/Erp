@@ -1,0 +1,32 @@
+{
+  "id": "rfq",
+  "status": "stub",
+  "name": {
+    "fa": "استعلام بها",
+    "en": "Request for Quotation"
+  },
+  "version": "1.0.0",
+  "category": "supply",
+  "level": 2,
+  "requires": [
+    "item-master",
+    "party-master"
+  ],
+  "optional": [
+    "purchase-request"
+  ],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

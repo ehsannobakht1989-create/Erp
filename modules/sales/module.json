@@ -1,0 +1,34 @@
+{
+  "id": "sales",
+  "status": "stub",
+  "name": {
+    "fa": "فروش",
+    "en": "Sales"
+  },
+  "version": "1.0.0",
+  "category": "commercial",
+  "level": 2,
+  "requires": [
+    "item-master",
+    "party-master",
+    "inventory"
+  ],
+  "optional": [
+    "pricing",
+    "accounting-gl"
+  ],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

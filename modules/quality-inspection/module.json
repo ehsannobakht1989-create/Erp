@@ -1,0 +1,31 @@
+{
+  "id": "quality-inspection",
+  "status": "stub",
+  "name": {
+    "fa": "کنترل کیفیت",
+    "en": "Quality Inspection"
+  },
+  "version": "1.0.0",
+  "category": "quality",
+  "level": 3,
+  "requires": [
+    "inventory"
+  ],
+  "optional": [
+    "item-master"
+  ],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

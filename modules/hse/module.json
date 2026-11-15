@@ -1,0 +1,30 @@
+{
+  "id": "hse",
+  "status": "stub",
+  "name": {
+    "fa": "ایمنی و بهداشت",
+    "en": "HSE"
+  },
+  "version": "1.0.0",
+  "category": "operations",
+  "level": 2,
+  "requires": [],
+  "optional": [
+    "hr-core",
+    "asset-registry"
+  ],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

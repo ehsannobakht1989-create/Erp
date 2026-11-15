@@ -1,0 +1,30 @@
+{
+  "id": "condition-monitoring-iot",
+  "status": "stub",
+  "name": {
+    "fa": "پایش وضعیت و IoT",
+    "en": "Condition Monitoring IoT"
+  },
+  "version": "1.0.0",
+  "category": "maintenance",
+  "level": 5,
+  "requires": [
+    "asset-registry",
+    "mes"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

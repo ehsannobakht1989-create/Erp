@@ -1,0 +1,33 @@
+{
+  "id": "payroll",
+  "status": "stub",
+  "name": {
+    "fa": "حقوق و دستمزد",
+    "en": "Payroll"
+  },
+  "version": "1.0.0",
+  "category": "hr",
+  "level": 3,
+  "requires": [
+    "hr-core",
+    "attendance",
+    "accounting-gl"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [
+    "ir"
+  ],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

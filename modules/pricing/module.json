@@ -1,0 +1,30 @@
+{
+  "id": "pricing",
+  "status": "stub",
+  "name": {
+    "fa": "قیمت‌گذاری",
+    "en": "Pricing"
+  },
+  "version": "1.0.0",
+  "category": "commercial",
+  "level": 2,
+  "requires": [
+    "item-master",
+    "party-master"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

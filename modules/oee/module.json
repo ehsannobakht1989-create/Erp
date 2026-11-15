@@ -1,0 +1,30 @@
+{
+  "id": "oee",
+  "status": "stub",
+  "name": {
+    "fa": "اثربخشی کلی تجهیزات",
+    "en": "OEE"
+  },
+  "version": "1.0.0",
+  "category": "manufacturing",
+  "level": 4,
+  "requires": [
+    "asset-registry",
+    "mes"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

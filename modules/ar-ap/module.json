@@ -1,0 +1,30 @@
+{
+  "id": "ar-ap",
+  "status": "stub",
+  "name": {
+    "fa": "حساب‌های دریافتنی و پرداختنی",
+    "en": "AR / AP"
+  },
+  "version": "1.0.0",
+  "category": "finance",
+  "level": 3,
+  "requires": [
+    "party-master",
+    "accounting-gl"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

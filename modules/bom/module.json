@@ -1,0 +1,29 @@
+{
+  "id": "bom",
+  "status": "stub",
+  "name": {
+    "fa": "ساختار محصول",
+    "en": "Bill of Materials"
+  },
+  "version": "1.0.0",
+  "category": "engineering",
+  "level": 3,
+  "requires": [
+    "item-master"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

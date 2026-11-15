@@ -1,0 +1,31 @@
+{
+  "id": "work-order",
+  "status": "stub",
+  "name": {
+    "fa": "دستور کار تولید",
+    "en": "Work Order"
+  },
+  "version": "1.0.0",
+  "category": "manufacturing",
+  "level": 4,
+  "requires": [
+    "bom",
+    "routing",
+    "inventory"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

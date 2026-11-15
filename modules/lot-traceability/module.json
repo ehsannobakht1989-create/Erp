@@ -1,0 +1,30 @@
+{
+  "id": "lot-traceability",
+  "status": "stub",
+  "name": {
+    "fa": "ردیابی بچ و لات",
+    "en": "Lot Traceability"
+  },
+  "version": "1.0.0",
+  "category": "quality",
+  "level": 4,
+  "requires": [
+    "inventory",
+    "work-order"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

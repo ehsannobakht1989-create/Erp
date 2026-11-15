@@ -1,0 +1,29 @@
+{
+  "id": "hr-core",
+  "status": "stub",
+  "name": {
+    "fa": "منابع انسانی",
+    "en": "HR Core"
+  },
+  "version": "1.0.0",
+  "category": "hr",
+  "level": 2,
+  "requires": [
+    "org-structure"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

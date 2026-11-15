@@ -1,0 +1,29 @@
+{
+  "id": "doc-ocr",
+  "status": "stub",
+  "name": {
+    "fa": "نویسه‌خوان اسناد",
+    "en": "Document OCR"
+  },
+  "version": "1.0.0",
+  "category": "ai",
+  "level": 6,
+  "requires": [
+    "document-mgmt"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": true,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

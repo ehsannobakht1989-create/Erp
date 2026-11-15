@@ -1,0 +1,27 @@
+{
+  "id": "item-master",
+  "status": "stub",
+  "name": {
+    "fa": "اطلاعات پایه کالا",
+    "en": "Item Master"
+  },
+  "version": "1.0.0",
+  "category": "master-data",
+  "level": 1,
+  "requires": [],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

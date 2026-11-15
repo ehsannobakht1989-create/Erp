@@ -1,0 +1,30 @@
+{
+  "id": "demand-forecast",
+  "status": "stub",
+  "name": {
+    "fa": "پیش‌بینی تقاضا",
+    "en": "Demand Forecast"
+  },
+  "version": "1.0.0",
+  "category": "ai",
+  "level": 6,
+  "requires": [
+    "sales",
+    "inventory"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": true,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

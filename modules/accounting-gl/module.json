@@ -1,0 +1,29 @@
+{
+  "id": "accounting-gl",
+  "status": "stub",
+  "name": {
+    "fa": "حسابداری کل",
+    "en": "Accounting GL"
+  },
+  "version": "1.0.0",
+  "category": "finance",
+  "level": 3,
+  "requires": [],
+  "optional": [
+    "multi-company"
+  ],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

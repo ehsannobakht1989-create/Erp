@@ -1,0 +1,33 @@
+{
+  "id": "costing",
+  "status": "stub",
+  "name": {
+    "fa": "بهای تمام‌شده",
+    "en": "Costing"
+  },
+  "version": "1.0.0",
+  "category": "finance",
+  "level": 5,
+  "requires": [
+    "work-order",
+    "inventory",
+    "payroll",
+    "fixed-assets",
+    "accounting-gl"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

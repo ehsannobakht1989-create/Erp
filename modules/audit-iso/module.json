@@ -1,0 +1,31 @@
+{
+  "id": "audit-iso",
+  "status": "stub",
+  "name": {
+    "fa": "ممیزی ایزو",
+    "en": "ISO Audit"
+  },
+  "version": "1.0.0",
+  "category": "support",
+  "level": 2,
+  "requires": [
+    "form-builder",
+    "workflow-engine",
+    "document-mgmt"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}

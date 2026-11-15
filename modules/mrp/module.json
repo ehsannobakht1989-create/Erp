@@ -1,0 +1,32 @@
+{
+  "id": "mrp",
+  "status": "stub",
+  "name": {
+    "fa": "برنامه‌ریزی نیازمندی مواد",
+    "en": "MRP"
+  },
+  "version": "1.0.0",
+  "category": "manufacturing",
+  "level": 4,
+  "requires": [
+    "bom",
+    "inventory",
+    "purchase-order",
+    "sales"
+  ],
+  "optional": [],
+  "provides": [],
+  "consumes": [],
+  "emits": [],
+  "listens": [],
+  "permissions": [],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [],
+  "python": false,
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
+}
