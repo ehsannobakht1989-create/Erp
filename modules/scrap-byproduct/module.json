@@ -1,6 +1,6 @@
 {
   "id": "scrap-byproduct",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "ضایعات و محصولات فرعی",
     "en": "Scrap & Byproduct"
@@ -9,8 +9,8 @@
   "category": "manufacturing",
   "level": 4,
   "requires": [
-    "work-order",
-    "inventory"
+    "inventory",
+    "work-order"
   ],
   "optional": [],
   "provides": [
@@ -21,7 +21,11 @@
     "scrap-byproduct.scrap.recorded"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "scrap-byproduct.record.view",
+    "scrap-byproduct.record.create",
+    "scrap-byproduct.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -30,5 +34,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "scrap-byproduct",
+      "title": {
+        "fa": "ضایعات و محصولات فرعی",
+        "en": "Scrap & Byproduct"
+      },
+      "icon": "settings",
+      "route": "/scrap-byproduct",
+      "permission": "scrap-byproduct.record.view"
+    }
+  ]
 }
