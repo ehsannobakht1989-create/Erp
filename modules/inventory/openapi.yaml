@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Inventory API
+  version: 1.0.0
+paths:
+  /api/inventory/balances:
+    get:
+      summary: Get stock balances
+      responses:
+        '200': { description: Balances }

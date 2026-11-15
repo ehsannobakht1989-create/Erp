@@ -1,35 +1,44 @@
 {
   "id": "inventory",
-  "status": "stub",
-  "name": {
-    "fa": "انبار",
-    "en": "Inventory"
-  },
+  "status": "done",
+  "name": { "fa": "انبار", "en": "Inventory" },
   "version": "1.0.0",
   "category": "supply",
   "level": 2,
-  "requires": [
-    "item-master"
-  ],
-  "optional": [
-    "accounting-gl"
-  ],
-  "provides": [
-    "InventoryServiceInterface"
-  ],
-  "consumes": [],
+  "requires": ["item-master", "org-structure"],
+  "optional": ["party-master", "quality-inspection", "accounting-gl"],
+  "provides": ["InventoryServiceInterface"],
+  "consumes": ["ItemMasterServiceInterface", "OrgStructureServiceInterface", "AuditContract"],
   "emits": [
-    "inventory.receipt.posted"
+    "inventory.receipt.posted",
+    "inventory.issue.posted",
+    "inventory.transfer.shipped",
+    "inventory.transfer.received",
+    "inventory.adjustment.posted",
+    "inventory.stock.first_posted"
   ],
   "listens": [],
-  "permissions": [],
-  "industry_tags": [
-    "all"
+  "permissions": [
+    "inventory.warehouse.manage",
+    "inventory.receipt.view",
+    "inventory.receipt.create",
+    "inventory.receipt.post",
+    "inventory.issue.post",
+    "inventory.balance.view"
   ],
+  "menu": [
+    {
+      "id": "inventory",
+      "title": {"fa": "انبار و موجودی", "en": "Inventory"},
+      "icon": "warehouse",
+      "route": "/inventory",
+      "permission": "inventory.balance.view"
+    }
+  ],
+  "entities": ["warehouse", "ledger", "balance", "reservation"],
+  "settings": [{"key": "allow_negative_stock", "type": "bool", "default": false}],
+  "industry_tags": ["all"],
   "regional": [],
   "python": false,
-  "ai": {
-    "enabled_default": false,
-    "capabilities": []
-  }
+  "ai": {"enabled_default": false, "capabilities": []}
 }
