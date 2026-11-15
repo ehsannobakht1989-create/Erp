@@ -38,4 +38,10 @@ final class HrCoreService implements HrCoreServiceInterface
         $e = $this->employee($companyId, $params);
         return is_array($e) && ($e['status'] ?? '') === 'active';
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['hr-core.employee.hired', 'hr-core.employee.transferred', 'hr-core.employee.terminated'];
+    }
 }

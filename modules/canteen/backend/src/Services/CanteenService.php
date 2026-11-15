@@ -21,4 +21,10 @@ final class CanteenService implements CanteenServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['canteen.period.charges_ready', 'canteen.meal.served'];
+    }
 }

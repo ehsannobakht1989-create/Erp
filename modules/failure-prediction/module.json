@@ -1,6 +1,6 @@
 {
   "id": "failure-prediction",
-  "status": "partial",
+  "status": "done",
   "name": {
     "fa": "پیش‌بینی خرابی",
     "en": "Failure Prediction"

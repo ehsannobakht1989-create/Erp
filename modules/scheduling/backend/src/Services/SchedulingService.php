@@ -36,4 +36,10 @@ final class SchedulingService implements SchedulingServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['scheduling.schedule.published', 'scheduling.conflict.detected'];
+    }
 }

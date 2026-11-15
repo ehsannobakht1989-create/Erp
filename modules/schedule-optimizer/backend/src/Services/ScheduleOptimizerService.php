@@ -31,4 +31,10 @@ final class ScheduleOptimizerService implements ScheduleOptimizerServiceInterfac
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['schedule-optimizer.solution.ready'];
+    }
 }

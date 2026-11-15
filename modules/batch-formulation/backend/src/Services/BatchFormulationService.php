@@ -31,4 +31,10 @@ final class BatchFormulationService implements BatchFormulationServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['batch-formulation.batch.started', 'batch-formulation.deviation.raised'];
+    }
 }

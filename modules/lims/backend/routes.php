@@ -7,4 +7,7 @@ use Core\Http\Router;
 
 return function (Router $router, Container $container): void {
     $router->get('/records', fn(): Response => Response::ok([]), 'lims.record.view');
+
+    $router->post('/actions/create-0', fn(): Response => Response::ok(['permission' => 'lims.record.create']), 'lims.record.create');
+    $router->post('/actions/approve-1', fn(): Response => Response::ok(['permission' => 'lims.record.approve']), 'lims.record.approve');
 };

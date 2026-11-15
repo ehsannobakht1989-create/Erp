@@ -26,4 +26,10 @@ final class CompetencyAppraisalService implements CompetencyAppraisalServiceInte
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['competency-appraisal.cycle.closed', 'competency-appraisal.gap.identified', 'competency-appraisal.score.finalized'];
+    }
 }

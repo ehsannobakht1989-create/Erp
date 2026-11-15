@@ -31,4 +31,10 @@ final class ForexLcService implements ForexLcServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['forex-lc.lc.status_changed', 'forex-lc.guarantee.expiring', 'forex-lc.fx.settled'];
+    }
 }

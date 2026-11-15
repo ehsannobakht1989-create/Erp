@@ -21,4 +21,10 @@ final class TicketingService implements TicketingServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['ticketing.ticket.created'];
+    }
 }

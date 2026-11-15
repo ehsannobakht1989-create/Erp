@@ -31,4 +31,10 @@ final class OeeService implements OeeServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['oee-downtime.snapshot.computed', 'oee-downtime.alert.raised'];
+    }
 }

@@ -26,4 +26,10 @@ final class ManagementConsolidationService implements ManagementConsolidationSer
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['management-consolidation.pack.published'];
+    }
 }

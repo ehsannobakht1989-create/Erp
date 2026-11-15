@@ -26,4 +26,10 @@ final class WeighbridgeService implements WeighbridgeServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['weighbridge.ticket.completed', 'weighbridge.ticket.voided'];
+    }
 }

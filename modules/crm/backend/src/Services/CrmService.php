@@ -26,4 +26,10 @@ final class CrmService implements CrmServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['crm.lead.created', 'crm.opportunity.won'];
+    }
 }

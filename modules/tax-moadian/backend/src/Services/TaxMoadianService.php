@@ -36,4 +36,10 @@ final class TaxMoadianService implements TaxMoadianServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['tax-moadian.invoice.queued'];
+    }
 }

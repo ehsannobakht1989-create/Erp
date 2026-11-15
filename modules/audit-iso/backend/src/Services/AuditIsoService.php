@@ -26,4 +26,10 @@ final class AuditIsoService implements AuditIsoServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['audit-iso.audit.completed', 'audit-iso.finding.raised'];
+    }
 }

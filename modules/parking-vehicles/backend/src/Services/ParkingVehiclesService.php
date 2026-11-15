@@ -26,4 +26,10 @@ final class ParkingVehiclesService implements ParkingVehiclesServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['parking-vehicles.document.expiring', 'parking-vehicles.trip.completed'];
+    }
 }

@@ -32,4 +32,10 @@ final class AssetRegistryService implements AssetRegistryServiceInterface
     public function spareParts(int $companyId, array $params = []): mixed { return []; }
     public function setStatus(int $companyId, array $params = []): mixed { return true; }
     public function lookup(int $companyId, array $params = []): mixed { return $this->tree($companyId, $params); }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['asset-registry.asset.created', 'asset-registry.asset.status_changed', 'asset-registry.meter.updated', 'asset-registry.asset.decommissioned'];
+    }
 }

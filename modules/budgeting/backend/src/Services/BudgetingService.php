@@ -31,4 +31,10 @@ final class BudgetingService implements BudgetingServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['budgeting.budget.approved', 'budgeting.check.exceeded'];
+    }
 }

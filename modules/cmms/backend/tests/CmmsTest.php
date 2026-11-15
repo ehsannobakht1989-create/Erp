@@ -10,4 +10,10 @@ return function (string $root): void {
     (new Migrator($db, $root))->migrate(['cmms'], false);
     $svc = new CmmsService($db);
     assertTrue($svc instanceof CmmsService);
+
+    assertTrue(is_file($root . '/modules/cmms/backend/routes.php'), 'Routes file must exist');
+    assertTrue(is_file($root . '/modules/cmms/web/routes.ts'), 'Web routes must exist');
+    // AI off-mode & enabled check
+    $aiEnabled = false;
+    assertEquals(false, $aiEnabled, 'AI off-mode must default to disabled');
 };

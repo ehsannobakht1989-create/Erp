@@ -36,4 +36,10 @@ final class DemandForecastService implements DemandForecastServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['demand-forecast.forecast.published', 'demand-forecast.forecast.adopted'];
+    }
 }

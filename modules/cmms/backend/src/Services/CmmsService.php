@@ -36,4 +36,10 @@ final class CmmsService implements CmmsServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['cmms.workorder.created'];
+    }
 }

@@ -26,4 +26,10 @@ final class WasteEnvironmentService implements WasteEnvironmentServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['waste-environment.exceedance.raised', 'waste-environment.license.expiring'];
+    }
 }

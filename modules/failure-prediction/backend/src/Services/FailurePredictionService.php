@@ -31,4 +31,10 @@ final class FailurePredictionService implements FailurePredictionServiceInterfac
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['failure-prediction.risk.high', 'failure-prediction.insight.created'];
+    }
 }

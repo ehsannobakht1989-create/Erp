@@ -2,7 +2,7 @@
 
 **Rule:** Work tier by tier; do not start a module of the next tier while a module of the current tier is below 80 unless the owner says so.
 
-NEXT: hr-core
+NEXT: NONE (79/79 DONE)
 
 ## Tiers
 

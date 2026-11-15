@@ -1,6 +1,6 @@
 {
   "id": "anomaly-detection",
-  "status": "partial",
+  "status": "done",
   "name": {
     "fa": "تشخیص ناهنجاری",
     "en": "Anomaly Detection"

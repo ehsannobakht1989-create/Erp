@@ -31,4 +31,10 @@ final class DocOcrService implements DocOcrServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['doc-ocr.extraction.completed'];
+    }
 }

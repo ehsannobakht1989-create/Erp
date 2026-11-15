@@ -36,4 +36,10 @@ final class LotTraceabilityService implements LotTraceabilityServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['lot-traceability.recall.initiated', 'lot-traceability.quarantine.requested'];
+    }
 }

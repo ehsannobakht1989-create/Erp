@@ -31,4 +31,10 @@ final class ImportCustomsService implements ImportCustomsServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['import-customs.file.cleared', 'import-customs.landed_cost.ready', 'import-customs.demurrage.alert'];
+    }
 }

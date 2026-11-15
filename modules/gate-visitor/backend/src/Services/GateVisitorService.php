@@ -26,4 +26,10 @@ final class GateVisitorService implements GateVisitorServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['gate-visitor.pass.entered', 'gate-visitor.vehicle.entered', 'gate-visitor.materialpass.used'];
+    }
 }

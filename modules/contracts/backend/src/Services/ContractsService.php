@@ -31,4 +31,10 @@ final class ContractsService implements ContractsServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['contracts.contract.activated', 'contracts.milestone.due'];
+    }
 }
