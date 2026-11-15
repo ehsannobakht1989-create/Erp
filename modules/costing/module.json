@@ -1,6 +1,6 @@
 {
   "id": "costing",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "بهای تمام‌شده",
     "en": "Costing"
@@ -11,8 +11,6 @@
   "requires": [
     "work-order",
     "inventory",
-    "payroll",
-    "fixed-assets",
     "accounting-gl"
   ],
   "optional": [],
@@ -27,7 +25,11 @@
     "costing.variance.recorded"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "costing.record.view",
+    "costing.record.create",
+    "costing.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -36,5 +38,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "costing",
+      "title": {
+        "fa": "بهای تمام‌شده",
+        "en": "Costing"
+      },
+      "icon": "activity",
+      "route": "/costing",
+      "permission": "costing.record.view"
+    }
+  ]
 }
