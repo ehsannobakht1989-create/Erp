@@ -36,4 +36,10 @@ final class PurchaseOrderService implements PurchaseOrderServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['purchase-order.po.approved'];
+    }
 }

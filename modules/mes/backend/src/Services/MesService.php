@@ -36,4 +36,10 @@ final class MesService implements MesServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['mes.operation.started', 'mes.production.reported', 'mes.downtime.started', 'mes.andon.raised'];
+    }
 }

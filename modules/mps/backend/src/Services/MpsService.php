@@ -36,4 +36,10 @@ final class MpsService implements MpsServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['mps.plan.approved', 'mps.atp.changed'];
+    }
 }

@@ -31,4 +31,10 @@ final class PurchaseRequestService implements PurchaseRequestServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['purchase-request.pr.submitted'];
+    }
 }

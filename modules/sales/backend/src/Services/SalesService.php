@@ -31,4 +31,10 @@ final class SalesService implements SalesServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['sales.order.confirmed', 'sales.delivery.requested', 'sales.invoice.issued', 'sales.return.posted'];
+    }
 }

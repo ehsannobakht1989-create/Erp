@@ -36,4 +36,10 @@ final class ArApService implements ArApServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['ar-ap.invoice.posted'];
+    }
 }

@@ -31,4 +31,10 @@ final class ShippingDistributionService implements ShippingDistributionServiceIn
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['shipping-distribution.shipment.dispatched', 'shipping-distribution.freight.cost_posted'];
+    }
 }

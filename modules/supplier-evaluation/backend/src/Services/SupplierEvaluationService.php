@@ -36,4 +36,10 @@ final class SupplierEvaluationService implements SupplierEvaluationServiceInterf
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['supplier-evaluation.evaluation.approved', 'supplier-evaluation.status.changed'];
+    }
 }

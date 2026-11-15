@@ -31,4 +31,10 @@ final class LimsService implements LimsServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['lims.sample.registered', 'lims.result.approved', 'lims.coa.issued'];
+    }
 }

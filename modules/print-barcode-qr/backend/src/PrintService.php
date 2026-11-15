@@ -32,4 +32,10 @@ final class PrintService implements PrintContract
         $escaped = htmlspecialchars($code, ENT_QUOTES, 'UTF-8');
         return "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"160\" height=\"40\"><text x=\"10\" y=\"25\">$escaped</text></svg>";
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['print-barcode-qr.document.printed'];
+    }
 }

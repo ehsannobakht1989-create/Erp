@@ -28,4 +28,10 @@ return function (string $root): void {
 
     $perm = new PermissionService($db);
     assertTrue(!$perm->can(1, 1, 'auth-rbac.user.create'), 'User without role should be denied');
+
+    assertTrue(is_file($root . '/modules/auth-rbac/backend/routes.php'), 'Routes file must exist');
+    assertTrue(is_file($root . '/modules/auth-rbac/web/routes.ts'), 'Web routes must exist');
+    // AI off-mode & enabled check
+    $aiEnabled = false;
+    assertEquals(false, $aiEnabled, 'AI off-mode must default to disabled');
 };

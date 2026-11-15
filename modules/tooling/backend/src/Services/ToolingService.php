@@ -31,4 +31,10 @@ final class ToolingService implements ToolingServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['tooling.tool.checked_out'];
+    }
 }

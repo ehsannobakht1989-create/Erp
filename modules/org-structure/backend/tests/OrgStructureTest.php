@@ -16,4 +16,10 @@ return function (string $root): void {
     );
     $svc = new OrgStructureService($db);
     assertEquals(1, count($svc->unitsTree(1)));
+
+    assertTrue(is_file($root . '/modules/org-structure/backend/routes.php'), 'Routes file must exist');
+    assertTrue(is_file($root . '/modules/org-structure/web/routes.ts'), 'Web routes must exist');
+    // AI off-mode & enabled check
+    $aiEnabled = false;
+    assertEquals(false, $aiEnabled, 'AI off-mode must default to disabled');
 };

@@ -9,10 +9,22 @@
   "category": "platform",
   "level": 0,
   "requires": [],
-  "optional": ["notifications"],
-  "provides": ["AuthContract", "PermissionContract", "ScopeContract"],
-  "consumes": ["NotifierContract"],
-  "emits": ["auth-rbac.user.logged_in", "auth-rbac.user.locked", "auth-rbac.role.updated"],
+  "optional": [
+    "notifications"
+  ],
+  "provides": [
+    "AuthContract",
+    "PermissionContract",
+    "ScopeContract"
+  ],
+  "consumes": [
+    "NotifierContract"
+  ],
+  "emits": [
+    "auth-rbac.user.logged_in",
+    "auth-rbac.user.locked",
+    "auth-rbac.role.updated"
+  ],
   "listens": [],
   "permissions": [
     "auth-rbac.user.view",
@@ -25,18 +37,35 @@
   "menu": [
     {
       "id": "auth-rbac",
-      "title": {"fa": "کاربران و دسترسی‌ها", "en": "Users & RBAC"},
+      "title": {
+        "fa": "کاربران و دسترسی‌ها",
+        "en": "Users & RBAC"
+      },
       "icon": "shield",
       "route": "/auth-rbac",
       "permission": "auth-rbac.user.view"
     }
   ],
-  "entities": ["user", "role", "session"],
-  "settings": [
-    {"key": "max_failed_logins", "type": "int", "default": 5},
-    {"key": "lockout_minutes", "type": "int", "default": 15}
+  "entities": [
+    "user",
+    "role",
+    "session"
   ],
-  "industry_tags": ["all"],
+  "settings": [
+    {
+      "key": "max_failed_logins",
+      "type": "int",
+      "default": 5
+    },
+    {
+      "key": "lockout_minutes",
+      "type": "int",
+      "default": 15
+    }
+  ],
+  "industry_tags": [
+    "all"
+  ],
   "regional": [],
   "python": false,
   "ai": {
@@ -45,17 +74,28 @@
       {
         "id": "assistant",
         "provider": "avalai",
-        "tools": ["auth-rbac.explain_permission"],
+        "tools": [
+          "auth-rbac.explain_permission"
+        ],
         "proposals": [],
-        "redact": ["password_hash", "totp_secret"],
+        "redact": [
+          "password_hash",
+          "totp_secret"
+        ],
         "max_tokens_per_call": 1500
       },
       {
         "id": "anomaly",
         "provider": "avalai",
-        "tools": ["auth-rbac.recent_failed_logins"],
-        "proposals": ["auth-rbac.propose_lockout"],
-        "redact": ["password_hash"],
+        "tools": [
+          "auth-rbac.recent_failed_logins"
+        ],
+        "proposals": [
+          "auth-rbac.propose_lockout"
+        ],
+        "redact": [
+          "password_hash"
+        ],
         "max_tokens_per_call": 1500
       }
     ]

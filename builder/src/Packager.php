@@ -51,6 +51,21 @@ final class Packager
 
         $zip->addFromString('config/modules.php', $modulesPhp);
         $zip->addFromString('install/install.sql', $installSql);
+        $nonDone = [];
+        foreach ($modules as $modId) {
+            $mPath = $this->root . "/modules/{$modId}/module.json";
+            if (is_file($mPath)) {
+                $mData = json_decode((string) file_get_contents($mPath), true) ?: [];
+                $st = (string) ($mData['status'] ?? 'stub');
+                if ($st !== 'done') {
+                    $nonDone[] = "- `{$modId}` (status: `{$st}`)";
+                }
+            }
+        }
+        if (!empty($nonDone)) {
+            $report .= "\n## WARNING: Non-Done Modules Included\n\n" . implode("\n", $nonDone) . "\n";
+        }
+
         $zip->addFromString('BUILD-REPORT.md', $report);
 
         $this->addDirToZip($zip, $this->root . '/core/src', 'core/src');

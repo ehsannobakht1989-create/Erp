@@ -10,9 +10,15 @@
   "level": 0,
   "requires": [],
   "optional": [],
-  "provides": ["CompanyContract", "NumberingService"],
+  "provides": [
+    "CompanyContract",
+    "NumberingService"
+  ],
   "consumes": [],
-  "emits": ["multi-company.company.created", "multi-company.fiscal_year.closed"],
+  "emits": [
+    "multi-company.company.created",
+    "multi-company.fiscal_year.closed"
+  ],
   "listens": [],
   "permissions": [
     "multi-company.company.view",
@@ -23,17 +29,33 @@
   "menu": [
     {
       "id": "multi-company",
-      "title": {"fa": "شرکت‌ها و تنظیمات", "en": "Companies & Settings"},
+      "title": {
+        "fa": "شرکت‌ها و تنظیمات",
+        "en": "Companies & Settings"
+      },
       "icon": "building",
       "route": "/multi-company",
       "permission": "multi-company.company.view"
     }
   ],
-  "entities": ["company", "branch", "fiscal_year", "currency", "uom", "sequence"],
-  "settings": [
-    {"key": "default_currency", "type": "string", "default": "IRR"}
+  "entities": [
+    "company",
+    "branch",
+    "fiscal_year",
+    "currency",
+    "uom",
+    "sequence"
   ],
-  "industry_tags": ["all"],
+  "settings": [
+    {
+      "key": "default_currency",
+      "type": "string",
+      "default": "IRR"
+    }
+  ],
+  "industry_tags": [
+    "all"
+  ],
   "regional": [],
   "python": false,
   "ai": {
@@ -42,8 +64,12 @@
       {
         "id": "autofill",
         "provider": "avalai",
-        "tools": ["multi-company.list_sequences"],
-        "proposals": ["multi-company.propose_sequence"],
+        "tools": [
+          "multi-company.list_sequences"
+        ],
+        "proposals": [
+          "multi-company.propose_sequence"
+        ],
         "redact": [],
         "max_tokens_per_call": 1000
       }

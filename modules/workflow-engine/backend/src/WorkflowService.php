@@ -56,4 +56,10 @@ final class WorkflowService implements WorkflowContract
 
         return $toState;
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['workflow-engine.instance.started', 'workflow-engine.instance.transitioned'];
+    }
 }

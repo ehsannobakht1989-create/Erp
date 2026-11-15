@@ -18,4 +18,7 @@ return function (Router $router, Container $container): void {
         );
         return Response::ok(['number' => $num]);
     }, 'multi-company.company.manage');
+
+    $router->post('/actions/manage-0', fn(): Response => Response::ok(['permission' => 'multi-company.settings.manage']), 'multi-company.settings.manage');
+    $router->post('/actions/use-1', fn(): Response => Response::ok(['permission' => 'multi-company.ai.use']), 'multi-company.ai.use');
 };

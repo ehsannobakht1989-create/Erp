@@ -36,4 +36,10 @@ final class QualityInspectionService implements QualityInspectionServiceInterfac
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['quality-inspection.lot.created'];
+    }
 }

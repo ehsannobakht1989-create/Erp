@@ -41,4 +41,10 @@ final class MrpService implements MrpServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['mrp.run.completed', 'mrp.planned_order.firmed', 'mrp.requisition.suggested', 'mrp.message.created'];
+    }
 }

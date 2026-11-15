@@ -31,4 +31,10 @@ final class PayrollService implements PayrollServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['payroll.run.approved', 'payroll.run.paid'];
+    }
 }

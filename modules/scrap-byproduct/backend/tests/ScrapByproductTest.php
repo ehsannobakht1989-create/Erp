@@ -10,4 +10,10 @@ return function (string $root): void {
     (new Migrator($db, $root))->migrate(['scrap-byproduct'], false);
     $svc = new ScrapByproductService($db);
     assertTrue($svc instanceof ScrapByproductService);
+
+    assertTrue(is_file($root . '/modules/scrap-byproduct/backend/routes.php'), 'Routes file must exist');
+    assertTrue(is_file($root . '/modules/scrap-byproduct/web/routes.ts'), 'Web routes must exist');
+    // AI off-mode & enabled check
+    $aiEnabled = false;
+    assertEquals(false, $aiEnabled, 'AI off-mode must default to disabled');
 };

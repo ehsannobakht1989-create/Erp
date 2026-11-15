@@ -26,4 +26,10 @@ final class ContractorMgmtService implements ContractorMgmtServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['contractor-mgmt.statement.approved', 'contractor-mgmt.contractor.suspended'];
+    }
 }

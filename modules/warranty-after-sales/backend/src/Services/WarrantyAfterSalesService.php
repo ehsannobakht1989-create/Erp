@@ -26,4 +26,10 @@ final class WarrantyAfterSalesService implements WarrantyAfterSalesServiceInterf
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['warranty-after-sales.claim.approved', 'warranty-after-sales.credit.requested'];
+    }
 }

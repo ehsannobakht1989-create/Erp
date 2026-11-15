@@ -31,4 +31,10 @@ final class FixedAssetsService implements FixedAssetsServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['fixed-assets.asset.capitalized'];
+    }
 }

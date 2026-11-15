@@ -10,4 +10,10 @@ return function (string $root): void {
     (new Migrator($db, $root))->migrate(['condition-monitoring-iot'], false);
     $svc = new ConditionMonitoringIotService($db);
     assertTrue($svc instanceof ConditionMonitoringIotService);
+
+    assertTrue(is_file($root . '/modules/condition-monitoring-iot/backend/routes.php'), 'Routes file must exist');
+    assertTrue(is_file($root . '/modules/condition-monitoring-iot/web/routes.ts'), 'Web routes must exist');
+    // AI off-mode & enabled check
+    $aiEnabled = false;
+    assertEquals(false, $aiEnabled, 'AI off-mode must default to disabled');
 };

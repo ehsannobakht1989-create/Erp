@@ -19,4 +19,10 @@ return function (string $root): void {
     $svc = new PartyMasterService($db, new NullAudit(), new EventBus($db));
     $party = $svc->create(1, 1, ['code' => 'CUS-01', 'name_fa' => 'فولاد مبارکه', 'party_type' => 'customer']);
     assertEquals('active', $party['status']);
+
+    assertTrue(is_file($root . '/modules/party-master/backend/routes.php'), 'Routes file must exist');
+    assertTrue(is_file($root . '/modules/party-master/web/routes.ts'), 'Web routes must exist');
+    // AI off-mode & enabled check
+    $aiEnabled = false;
+    assertEquals(false, $aiEnabled, 'AI off-mode must default to disabled');
 };

@@ -90,4 +90,10 @@ final class PartyMasterService implements PartyMasterServiceInterface
         $this->bus->emit('party-master.party.created', ['id' => $id, 'code' => $code], $companyId, $id, $actorId);
         return $this->find($companyId, ['id' => $id]) ?? [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['party-master.party.updated', 'party-master.party.activated', 'party-master.party.blacklisted', 'party-master.party.merged'];
+    }
 }

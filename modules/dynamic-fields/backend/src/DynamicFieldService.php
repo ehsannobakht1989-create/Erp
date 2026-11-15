@@ -44,4 +44,10 @@ final class DynamicFieldService implements DynamicFieldContract
             }
         }
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['dynamic-fields.field.created'];
+    }
 }

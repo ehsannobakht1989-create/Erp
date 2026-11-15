@@ -31,4 +31,10 @@ final class ProjectMgmtService implements ProjectMgmtServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['project-mgmt.project.created'];
+    }
 }

@@ -8,10 +8,23 @@
   "version": "1.0.0",
   "category": "master-data",
   "level": 1,
-  "requires": ["auth-rbac", "multi-company", "audit-log", "workflow-engine"],
-  "optional": ["item-master", "document-mgmt"],
-  "provides": ["PartyMasterServiceInterface"],
-  "consumes": ["AuditContract", "WorkflowContract"],
+  "requires": [
+    "auth-rbac",
+    "multi-company",
+    "audit-log",
+    "workflow-engine"
+  ],
+  "optional": [
+    "item-master",
+    "document-mgmt"
+  ],
+  "provides": [
+    "PartyMasterServiceInterface"
+  ],
+  "consumes": [
+    "AuditContract",
+    "WorkflowContract"
+  ],
   "emits": [
     "party-master.party.created",
     "party-master.party.updated",
@@ -36,19 +49,39 @@
   "menu": [
     {
       "id": "party-master",
-      "title": {"fa": "اشخاص و طرف‌حساب‌ها", "en": "Party Master"},
+      "title": {
+        "fa": "اشخاص و طرف‌حساب‌ها",
+        "en": "Party Master"
+      },
       "icon": "users",
       "route": "/party-master",
       "permission": "party-master.party.view"
     }
   ],
-  "entities": ["party", "address", "contact", "bank_account", "group", "payment_term"],
-  "workflows": ["supplier_activation"],
-  "settings": [
-    {"key": "direct_activate_customer", "type": "bool", "default": true}
+  "entities": [
+    "party",
+    "address",
+    "contact",
+    "bank_account",
+    "group",
+    "payment_term"
   ],
-  "industry_tags": ["all"],
-  "regional": ["ir"],
+  "workflows": [
+    "supplier_activation"
+  ],
+  "settings": [
+    {
+      "key": "direct_activate_customer",
+      "type": "bool",
+      "default": true
+    }
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [
+    "ir"
+  ],
   "python": false,
   "ai": {
     "enabled_default": false,
@@ -56,17 +89,29 @@
       {
         "id": "autofill",
         "provider": "avalai",
-        "tools": ["party-master.list_groups"],
-        "proposals": ["party-master.propose_party"],
-        "redact": ["bank_accounts", "credit_limit"],
+        "tools": [
+          "party-master.list_groups"
+        ],
+        "proposals": [
+          "party-master.propose_party"
+        ],
+        "redact": [
+          "bank_accounts",
+          "credit_limit"
+        ],
         "max_tokens_per_call": 1500
       },
       {
         "id": "summarize",
         "provider": "avalai",
-        "tools": ["party-master.get_history"],
+        "tools": [
+          "party-master.get_history"
+        ],
         "proposals": [],
-        "redact": ["bank_accounts", "credit_limit"],
+        "redact": [
+          "bank_accounts",
+          "credit_limit"
+        ],
         "max_tokens_per_call": 1500
       }
     ]

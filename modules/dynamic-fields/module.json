@@ -10,23 +10,39 @@
   "level": 0,
   "requires": [],
   "optional": [],
-  "provides": ["DynamicFieldContract"],
+  "provides": [
+    "DynamicFieldContract"
+  ],
   "consumes": [],
-  "emits": ["dynamic-fields.field.created"],
+  "emits": [
+    "dynamic-fields.field.created"
+  ],
   "listens": [],
-  "permissions": ["dynamic-fields.field.view", "dynamic-fields.field.manage", "dynamic-fields.ai.use"],
+  "permissions": [
+    "dynamic-fields.field.view",
+    "dynamic-fields.field.manage",
+    "dynamic-fields.ai.use"
+  ],
   "menu": [
     {
       "id": "dynamic-fields",
-      "title": {"fa": "فیلدهای پویا", "en": "Dynamic Fields"},
+      "title": {
+        "fa": "فیلدهای پویا",
+        "en": "Dynamic Fields"
+      },
       "icon": "sliders",
       "route": "/dynamic-fields",
       "permission": "dynamic-fields.field.view"
     }
   ],
-  "entities": ["field", "value"],
+  "entities": [
+    "field",
+    "value"
+  ],
   "settings": [],
-  "industry_tags": ["all"],
+  "industry_tags": [
+    "all"
+  ],
   "regional": [],
   "python": false,
   "ai": {
@@ -35,8 +51,12 @@
       {
         "id": "autofill",
         "provider": "avalai",
-        "tools": ["dynamic-fields.list_fields"],
-        "proposals": ["dynamic-fields.propose_fields"],
+        "tools": [
+          "dynamic-fields.list_fields"
+        ],
+        "proposals": [
+          "dynamic-fields.propose_fields"
+        ],
         "redact": [],
         "max_tokens_per_call": 1500
       }

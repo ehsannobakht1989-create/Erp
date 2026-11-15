@@ -61,4 +61,10 @@ final class WorkOrderService implements WorkOrderServiceInterface
     public function close(int $companyId, int $id): void
     {
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['work-order.wo.created', 'work-order.wo.released', 'work-order.wo.started', 'work-order.wo.completed', 'work-order.wo.closed', 'work-order.wo.cancelled', 'work-order.material.issued', 'work-order.material.returned', 'work-order.operation.completed', 'work-order.output.received', 'work-order.shortage.detected'];
+    }
 }

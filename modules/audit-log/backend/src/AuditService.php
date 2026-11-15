@@ -36,6 +36,24 @@ final class AuditService implements AuditContract
         );
     }
 
+    /** @param array<string, mixed> $filters
+     *  @return array<int, array<string, mixed>> */
+    public function query(int $companyId, array $filters = []): array
+    {
+        $sql = 'SELECT * FROM audit_log__entries WHERE company_id = ?';
+        $params = [$companyId];
+        if (!empty($filters['entity_type'])) {
+            $sql .= ' AND table_name = ?';
+            $params[] = (string) $filters['entity_type'];
+        }
+        if (!empty($filters['id'])) {
+            $sql .= ' AND id = ?';
+            $params[] = (int) $filters['id'];
+        }
+        $sql .= ' ORDER BY id DESC';
+        return $this->db->fetchAll($sql, $params);
+    }
+
     public function verifyChain(): bool
     {
         $rows = $this->db->fetchAll('SELECT * FROM audit_log__entries ORDER BY id ASC');

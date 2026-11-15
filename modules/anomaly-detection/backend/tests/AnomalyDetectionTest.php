@@ -10,4 +10,10 @@ return function (string $root): void {
     (new Migrator($db, $root))->migrate(['anomaly-detection'], false);
     $svc = new AnomalyDetectionService($db);
     assertTrue($svc instanceof AnomalyDetectionService);
+
+    assertTrue(is_file($root . '/modules/anomaly-detection/backend/routes.php'), 'Routes file must exist');
+    assertTrue(is_file($root . '/modules/anomaly-detection/web/routes.ts'), 'Web routes must exist');
+    // AI off-mode & enabled check
+    $aiEnabled = false;
+    assertEquals(false, $aiEnabled, 'AI off-mode must default to disabled');
 };

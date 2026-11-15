@@ -83,3 +83,26 @@ CREATE TABLE IF NOT EXISTS item_master__alternates (
     notes TEXT NULL,
     created_at VARCHAR(32) NOT NULL
 );
+
+
+CREATE TABLE IF NOT EXISTS item_master__party_refs (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    company_id INTEGER NOT NULL DEFAULT 1,
+    code VARCHAR(64) NOT NULL DEFAULT '',
+    name VARCHAR(255) NOT NULL DEFAULT '',
+    status VARCHAR(32) NOT NULL DEFAULT 'active',
+    payload TEXT NULL,
+    created_at VARCHAR(32) NOT NULL DEFAULT '',
+    updated_at VARCHAR(32) NOT NULL DEFAULT ''
+);
+
+CREATE TABLE IF NOT EXISTS item_master__coding_schemes (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    company_id INTEGER NOT NULL DEFAULT 1,
+    code VARCHAR(64) NOT NULL DEFAULT '',
+    name VARCHAR(255) NOT NULL DEFAULT '',
+    status VARCHAR(32) NOT NULL DEFAULT 'active',
+    payload TEXT NULL,
+    created_at VARCHAR(32) NOT NULL DEFAULT '',
+    updated_at VARCHAR(32) NOT NULL DEFAULT ''
+);

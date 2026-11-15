@@ -31,4 +31,10 @@ final class ReorderPointService implements ReorderPointServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['reorder-point.suggestion.created', 'reorder-point.policy.changed', 'reorder-point.class.updated'];
+    }
 }

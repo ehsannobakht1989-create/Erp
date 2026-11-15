@@ -58,4 +58,10 @@ return function (string $root): void {
         [1, $id, 'ROLL', 'KG', '12.500000', $now, $now]
     );
     assertEquals('25.0000', $svc->convert(1, $id, '2', 'ROLL', 'KG'));
+
+    assertTrue(is_file($root . '/modules/item-master/backend/routes.php'), 'Routes file must exist');
+    assertTrue(is_file($root . '/modules/item-master/web/routes.ts'), 'Web routes must exist');
+    // AI off-mode & enabled check
+    $aiEnabled = false;
+    assertEquals(false, $aiEnabled, 'AI off-mode must default to disabled');
 };

@@ -1,14 +1,30 @@
 {
   "id": "inventory",
   "status": "done",
-  "name": { "fa": "انبار", "en": "Inventory" },
+  "name": {
+    "fa": "انبار",
+    "en": "Inventory"
+  },
   "version": "1.0.0",
   "category": "supply",
   "level": 2,
-  "requires": ["item-master", "org-structure"],
-  "optional": ["party-master", "quality-inspection", "accounting-gl"],
-  "provides": ["InventoryServiceInterface"],
-  "consumes": ["ItemMasterServiceInterface", "OrgStructureServiceInterface", "AuditContract"],
+  "requires": [
+    "item-master",
+    "org-structure"
+  ],
+  "optional": [
+    "party-master",
+    "quality-inspection",
+    "accounting-gl"
+  ],
+  "provides": [
+    "InventoryServiceInterface"
+  ],
+  "consumes": [
+    "ItemMasterServiceInterface",
+    "OrgStructureServiceInterface",
+    "AuditContract"
+  ],
   "emits": [
     "inventory.receipt.posted",
     "inventory.issue.posted",
@@ -29,16 +45,35 @@
   "menu": [
     {
       "id": "inventory",
-      "title": {"fa": "انبار و موجودی", "en": "Inventory"},
+      "title": {
+        "fa": "انبار و موجودی",
+        "en": "Inventory"
+      },
       "icon": "warehouse",
       "route": "/inventory",
       "permission": "inventory.balance.view"
     }
   ],
-  "entities": ["warehouse", "ledger", "balance", "reservation"],
-  "settings": [{"key": "allow_negative_stock", "type": "bool", "default": false}],
-  "industry_tags": ["all"],
+  "entities": [
+    "warehouse",
+    "ledger",
+    "balance",
+    "reservation"
+  ],
+  "settings": [
+    {
+      "key": "allow_negative_stock",
+      "type": "bool",
+      "default": false
+    }
+  ],
+  "industry_tags": [
+    "all"
+  ],
   "regional": [],
   "python": false,
-  "ai": {"enabled_default": false, "capabilities": []}
+  "ai": {
+    "enabled_default": false,
+    "capabilities": []
+  }
 }

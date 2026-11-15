@@ -31,4 +31,10 @@ final class AnomalyDetectionService implements AnomalyDetectionServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['anomaly-detection.detection.created'];
+    }
 }

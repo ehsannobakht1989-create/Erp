@@ -46,4 +46,10 @@ final class CostingService implements CostingServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['costing.cost.updated', 'costing.wo.costed', 'costing.run.completed', 'costing.variance.recorded'];
+    }
 }

@@ -25,4 +25,10 @@ final class WebhookService
         );
         return $rawKey;
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['api-webhooks.webhook.dispatched'];
+    }
 }

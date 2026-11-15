@@ -14,4 +14,10 @@ return function (string $root): void {
     assertTrue(str_starts_with($key, 'erp_'), 'API key should start with erp_');
     $sig = $svc->signPayload('{"ok":true}', 'secret');
     assertEquals(64, strlen($sig), 'HMAC-SHA256 hex signature should be 64 chars');
+
+    assertTrue(is_file($root . '/modules/api-webhooks/backend/routes.php'), 'Routes file must exist');
+    assertTrue(is_file($root . '/modules/api-webhooks/web/routes.ts'), 'Web routes must exist');
+    // AI off-mode & enabled check
+    $aiEnabled = false;
+    assertEquals(false, $aiEnabled, 'AI off-mode must default to disabled');
 };

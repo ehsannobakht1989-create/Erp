@@ -19,3 +19,15 @@ CREATE TABLE IF NOT EXISTS bom__lines (
     qty_per DECIMAL(20,4) NOT NULL,
     scrap_pct DECIMAL(8,4) NOT NULL DEFAULT 0.0000
 );
+
+
+CREATE TABLE IF NOT EXISTS bom__bom_lines (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    company_id INTEGER NOT NULL DEFAULT 1,
+    code VARCHAR(64) NOT NULL DEFAULT '',
+    name VARCHAR(255) NOT NULL DEFAULT '',
+    status VARCHAR(32) NOT NULL DEFAULT 'active',
+    payload TEXT NULL,
+    created_at VARCHAR(32) NOT NULL DEFAULT '',
+    updated_at VARCHAR(32) NOT NULL DEFAULT ''
+);

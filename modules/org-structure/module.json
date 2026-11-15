@@ -8,10 +8,19 @@
   "version": "1.0.0",
   "category": "master-data",
   "level": 1,
-  "requires": ["auth-rbac", "multi-company"],
-  "optional": ["hr-core"],
-  "provides": ["OrgStructureServiceInterface"],
-  "consumes": ["AuditContract"],
+  "requires": [
+    "auth-rbac",
+    "multi-company"
+  ],
+  "optional": [
+    "hr-core"
+  ],
+  "provides": [
+    "OrgStructureServiceInterface"
+  ],
+  "consumes": [
+    "AuditContract"
+  ],
   "emits": [
     "org-structure.unit.changed",
     "org-structure.position.assigned",
@@ -30,18 +39,35 @@
   "menu": [
     {
       "id": "org-structure",
-      "title": {"fa": "ساختار سازمانی", "en": "Org Structure"},
+      "title": {
+        "fa": "ساختار سازمانی",
+        "en": "Org Structure"
+      },
       "icon": "sitemap",
       "route": "/org-structure",
       "permission": "org-structure.unit.view"
     }
   ],
-  "entities": ["unit", "position", "cost_center", "calendar", "shift"],
-  "settings": [
-    {"key": "week_start", "type": "string", "default": "Saturday"}
+  "entities": [
+    "unit",
+    "position",
+    "cost_center",
+    "calendar",
+    "shift"
   ],
-  "industry_tags": ["all"],
-  "regional": ["ir"],
+  "settings": [
+    {
+      "key": "week_start",
+      "type": "string",
+      "default": "Saturday"
+    }
+  ],
+  "industry_tags": [
+    "all"
+  ],
+  "regional": [
+    "ir"
+  ],
   "python": false,
   "ai": {
     "enabled_default": false,

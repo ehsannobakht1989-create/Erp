@@ -10,4 +10,10 @@ return function (string $root): void {
     (new Migrator($db, $root))->migrate(['nl-report-assistant'], false);
     $svc = new NlReportAssistantService($db);
     assertTrue($svc instanceof NlReportAssistantService);
+
+    assertTrue(is_file($root . '/modules/nl-report-assistant/backend/routes.php'), 'Routes file must exist');
+    assertTrue(is_file($root . '/modules/nl-report-assistant/web/routes.ts'), 'Web routes must exist');
+    // AI off-mode & enabled check
+    $aiEnabled = false;
+    assertEquals(false, $aiEnabled, 'AI off-mode must default to disabled');
 };

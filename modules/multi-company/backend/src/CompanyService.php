@@ -16,4 +16,10 @@ final class CompanyService implements CompanyContract
         }
         return isset($user['company_id']) ? (int) $user['company_id'] : 1;
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['multi-company.company.created', 'multi-company.fiscal_year.closed'];
+    }
 }

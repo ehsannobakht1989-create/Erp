@@ -10,25 +10,42 @@
   "level": 0,
   "requires": [],
   "optional": [],
-  "provides": ["AuditContract"],
+  "provides": [
+    "AuditContract"
+  ],
   "consumes": [],
   "emits": [],
   "listens": [],
-  "permissions": ["audit-log.entry.view", "audit-log.entry.export", "audit-log.ai.use"],
+  "permissions": [
+    "audit-log.entry.view",
+    "audit-log.entry.export",
+    "audit-log.ai.use"
+  ],
   "menu": [
     {
       "id": "audit-log",
-      "title": {"fa": "گزارش ممیزی", "en": "Audit Log"},
+      "title": {
+        "fa": "گزارش ممیزی",
+        "en": "Audit Log"
+      },
       "icon": "history",
       "route": "/audit-log",
       "permission": "audit-log.entry.view"
     }
   ],
-  "entities": ["entry"],
-  "settings": [
-    {"key": "retention_days", "type": "int", "default": 365}
+  "entities": [
+    "entry"
   ],
-  "industry_tags": ["all"],
+  "settings": [
+    {
+      "key": "retention_days",
+      "type": "int",
+      "default": 365
+    }
+  ],
+  "industry_tags": [
+    "all"
+  ],
   "regional": [],
   "python": false,
   "ai": {
@@ -37,7 +54,9 @@
       {
         "id": "summarize",
         "provider": "avalai",
-        "tools": ["audit-log.record_history"],
+        "tools": [
+          "audit-log.record_history"
+        ],
         "proposals": [],
         "redact": [],
         "max_tokens_per_call": 1500
@@ -45,7 +64,9 @@
       {
         "id": "anomaly",
         "provider": "avalai",
-        "tools": ["audit-log.bulk_edits"],
+        "tools": [
+          "audit-log.bulk_edits"
+        ],
         "proposals": [],
         "redact": [],
         "max_tokens_per_call": 1500

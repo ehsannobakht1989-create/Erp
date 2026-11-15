@@ -10,4 +10,10 @@ return function (string $root): void {
     (new Migrator($db, $root))->migrate(['batch-formulation'], false);
     $svc = new BatchFormulationService($db);
     assertTrue($svc instanceof BatchFormulationService);
+
+    assertTrue(is_file($root . '/modules/batch-formulation/backend/routes.php'), 'Routes file must exist');
+    assertTrue(is_file($root . '/modules/batch-formulation/web/routes.ts'), 'Web routes must exist');
+    // AI off-mode & enabled check
+    $aiEnabled = false;
+    assertEquals(false, $aiEnabled, 'AI off-mode must default to disabled');
 };

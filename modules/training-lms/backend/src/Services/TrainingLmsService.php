@@ -31,4 +31,10 @@ final class TrainingLmsService implements TrainingLmsServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['training-lms.completion.recorded', 'training-lms.certificate.expiring'];
+    }
 }

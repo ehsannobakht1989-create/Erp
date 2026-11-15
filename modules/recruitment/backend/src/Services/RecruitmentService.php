@@ -26,4 +26,10 @@ final class RecruitmentService implements RecruitmentServiceInterface
     {
         return [];
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['recruitment.application.hired', 'recruitment.requisition.filled'];
+    }
 }

@@ -34,4 +34,10 @@ final class FormBuilderService
         );
         return $this->db->lastInsertId();
     }
+
+    /** @return array<int, string> */
+    public function supportedEvents(): array
+    {
+        return ['form-builder.form.published', 'form-builder.submission.created'];
+    }
 }
