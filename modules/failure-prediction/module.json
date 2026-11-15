@@ -13,9 +13,14 @@
     "asset-registry"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "FailurePredictionServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "failure-prediction.risk.high",
+    "failure-prediction.insight.created"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

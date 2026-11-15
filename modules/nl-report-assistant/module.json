@@ -12,9 +12,13 @@
     "report-bi"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "NlReportAssistantServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "nl-report-assistant.question.saved"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

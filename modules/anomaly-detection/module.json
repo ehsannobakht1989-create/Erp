@@ -13,9 +13,13 @@
     "inventory"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "AnomalyDetectionServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "anomaly-detection.detection.created"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

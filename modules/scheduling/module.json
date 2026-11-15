@@ -14,9 +14,14 @@
     "asset-registry"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "SchedulingServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "scheduling.schedule.published",
+    "scheduling.conflict.detected"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

@@ -12,9 +12,13 @@
     "document-mgmt"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "DocOcrServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "doc-ocr.extraction.completed"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

@@ -13,9 +13,14 @@
     "inventory"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "BatchFormulationServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "batch-formulation.batch.started",
+    "batch-formulation.deviation.raised"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

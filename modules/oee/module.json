@@ -13,9 +13,14 @@
     "mes"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "OeeServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "oee-downtime.snapshot.computed",
+    "oee-downtime.alert.raised"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

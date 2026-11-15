@@ -1,0 +1,10 @@
+# doc-ocr — Document extraction (L6; python; requires document-mgmt; optional ar-ap, rfq, import-customs, contracts, lims, quality-inspection)
+
+**Entities** ExtractionJob{document_id,type[invoice|packing_list|bank_statement|quote|certificate|contract|generic_table|custom],lang[fa|en|mixed],status[queued|processing|needs_review|approved|failed],engine,confidence}; ExtractionResult{job,fields[{name,value,confidence,bbox,page}],tables[],raw_text}; Template{type,field_defs,validation_rules,vendor_hint}; ReviewTask{job,reviewer,status}.
+**Rules** pipeline: digital-PDF text extraction first; if scanned → image preprocessing (deskew/denoise) → OCR (Tesseract with Persian+English models; pluggable cloud OCR adapter interface, off by default) → layout/table detection → **field extraction**: rule/regex per template + optional LLM post-processing via AvalAI (JSON schema constrained, redaction applied) → validation (totals sum, tax id formats, date parse Jalali/Gregorian, currency) → low-confidence fields flagged → human review UI → on approval emits a PROPOSAL to the consumer module (e.g. supplier invoice draft in ar-ap, quote lines in rfq, LC terms in forex-lc) — never auto-posts; Persian digit/char normalization; keep original document immutable; reprocess with corrected template; throughput limits and queueing for shared hosting.
+**Python capability** `POST /v1/ocr` (multipart or document ref) → {pages[], text, tables[], fields[], diagnostics}.
+**Events out** doc-ocr.extraction.completed|approved{target_module,type,payload}. **In** document-mgmt.document.uploaded (opt-in rules by type/folder).
+**Service contract** OcrService: extract(documentId,type): jobId, result(jobId), approve(jobId,corrections), textOf(documentId) (used by document-mgmt search).
+**Permissions** doc-ocr.job.create|view|review, doc-ocr.template.manage.
+**Screens** upload & choose type, review screen (document viewer with highlighted fields next to editable form), templates manager, job queue, accuracy stats.
+**Eval** synthetic Persian invoice generator + sample scans; field-level accuracy metrics; regression tests for digit normalization.

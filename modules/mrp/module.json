@@ -15,9 +15,16 @@
     "sales"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "MrpServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "mrp.run.completed",
+    "mrp.planned_order.firmed",
+    "mrp.requisition.suggested",
+    "mrp.message.created"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

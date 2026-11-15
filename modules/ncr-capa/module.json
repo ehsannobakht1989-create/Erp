@@ -12,9 +12,15 @@
     "quality-inspection"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "NcrCapaServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "ncr-capa.ncr.opened",
+    "ncr-capa.capa.opened",
+    "ncr-capa.scar.sent"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

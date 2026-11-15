@@ -12,9 +12,15 @@
     "quality-inspection"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "LimsServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "lims.sample.registered",
+    "lims.result.approved",
+    "lims.coa.issued"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

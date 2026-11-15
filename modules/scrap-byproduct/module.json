@@ -13,9 +13,13 @@
     "inventory"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "ScrapByproductServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "scrap-byproduct.scrap.recorded"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

@@ -14,9 +14,15 @@
   "optional": [
     "purchase-request"
   ],
-  "provides": [],
+  "provides": [
+    "ReorderPointServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "reorder-point.suggestion.created",
+    "reorder-point.policy.changed",
+    "reorder-point.class.updated"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

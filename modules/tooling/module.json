@@ -13,9 +13,13 @@
     "inventory"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "ToolingServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "tooling.tool.checked_out"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

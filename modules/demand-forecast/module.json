@@ -13,9 +13,14 @@
     "inventory"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "DemandForecastServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "demand-forecast.forecast.published",
+    "demand-forecast.forecast.adopted"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

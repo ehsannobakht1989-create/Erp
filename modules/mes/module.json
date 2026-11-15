@@ -13,9 +13,16 @@
     "asset-registry"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "MesServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "mes.operation.started",
+    "mes.production.reported",
+    "mes.downtime.started",
+    "mes.andon.raised"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

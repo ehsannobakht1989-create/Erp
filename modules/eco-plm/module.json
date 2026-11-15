@@ -13,9 +13,13 @@
     "routing"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "EcoPlmServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "eco-plm.change.requested"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

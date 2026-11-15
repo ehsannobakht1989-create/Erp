@@ -12,9 +12,13 @@
     "scheduling"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "ScheduleOptimizerServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "schedule-optimizer.solution.ready"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

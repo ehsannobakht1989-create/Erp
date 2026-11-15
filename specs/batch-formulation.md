@@ -1,0 +1,10 @@
+# batch-formulation — Process batch & formula management (L4; requires item-master, inventory, work-order; optional lims, quality-inspection, bom)
+
+**Entities** Formula{code,item_id,version,status,batch_basis_qty,uom,yield_pct,effective_from/to,notes}; FormulaIngredient{item,qty|pct,uom,function[active|excipient|solvent|…],potency_adjust,loss_pct,add_order,tolerance}; ProcessStep{seq,instruction,parameters[{name,target,min,max,unit}],equipment_ref,duration,critical,sign_off_required}; BatchRecord{batch_no,wo_id,formula_version,scaled_qty,status,steps_log[],deviations[],signatures[]}; Deviation{step,description,severity,ncr_ref}; BatchGenealogy edges.
+**Rules** formula versioning and approval; scaling (by output qty or limiting ingredient); potency/assay correction adjusts active quantity and compensating filler; ingredient lots chosen FEFO and must be released (quality/lims status); electronic batch record captures parameters, requires signatures (user+timestamp+meaning) for critical steps; deviations beyond limits force documented reason and create NCR proposal; yield reconciliation at end (theoretical vs actual) with limits; by-products/co-products recorded to WO outputs; batch numbering policy via NumberingService; recall genealogy through lot-traceability.
+**Events out** batch-formulation.batch.started|completed|released|rejected, batch-formulation.deviation.raised. **In** work-order.wo.released, lims.result.approved, quality-inspection.lot.decided.
+**Service contract** FormulaService: activeFormula(item,date), scale(formula,qty,options), validateBatch(batchId), yield(batchId).
+**Permissions** batch-formulation.formula.view|manage|approve, batch-formulation.batch.execute|review|release.
+**Screens** formula editor with scaling simulator, batch record execution (step-by-step with parameter entry), review/release, yield report, genealogy view, print batch record (BMR).
+**AI** autofill (draft formula from reference/description, proposal), anomaly (yield drift, parameter outliers), summarize batch deviations.
+**Iran** chemical/food/pharma neutral; GMP-style signatures as optional setting; Persian BMR print.

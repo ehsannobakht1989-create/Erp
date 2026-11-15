@@ -16,9 +16,16 @@
     "accounting-gl"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "CostingServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "costing.cost.updated",
+    "costing.wo.costed",
+    "costing.run.completed",
+    "costing.variance.recorded"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

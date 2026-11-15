@@ -13,9 +13,14 @@
     "work-order"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "LotTraceabilityServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "lot-traceability.recall.initiated",
+    "lot-traceability.quarantine.requested"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [

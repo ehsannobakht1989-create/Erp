@@ -14,9 +14,14 @@
     "sales"
   ],
   "optional": [],
-  "provides": [],
+  "provides": [
+    "MpsServiceInterface"
+  ],
   "consumes": [],
-  "emits": [],
+  "emits": [
+    "mps.plan.approved",
+    "mps.atp.changed"
+  ],
   "listens": [],
   "permissions": [],
   "industry_tags": [
