@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Pricing API
+  version: 1.0.0
+paths:
+  /api/pricing/resolve:
+    post:
+      summary: Resolve price for item and party
+      responses:
+        '200': { description: Resolved price }
