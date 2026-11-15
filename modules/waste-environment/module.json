@@ -1,6 +1,6 @@
 {
   "id": "waste-environment",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "پسماند و محیط زیست",
     "en": "Waste & Environment"
@@ -24,7 +24,11 @@
     "waste-environment.license.expiring"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "waste-environment.record.view",
+    "waste-environment.record.create",
+    "waste-environment.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -33,5 +37,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "waste-environment",
+      "title": {
+        "fa": "پسماند و محیط زیست",
+        "en": "Waste & Environment"
+      },
+      "icon": "box",
+      "route": "/waste-environment",
+      "permission": "waste-environment.record.view"
+    }
+  ]
 }
