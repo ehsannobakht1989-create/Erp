@@ -1,6 +1,6 @@
 {
   "id": "weighbridge",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "باسکول",
     "en": "Weighbridge"
@@ -24,7 +24,11 @@
     "weighbridge.ticket.voided"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "weighbridge.record.view",
+    "weighbridge.record.create",
+    "weighbridge.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -35,5 +39,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "weighbridge",
+      "title": {
+        "fa": "باسکول",
+        "en": "Weighbridge"
+      },
+      "icon": "box",
+      "route": "/weighbridge",
+      "permission": "weighbridge.record.view"
+    }
+  ]
 }
