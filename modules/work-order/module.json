@@ -1,6 +1,6 @@
 {
   "id": "work-order",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "دستور کار تولید",
     "en": "Work Order"
@@ -14,8 +14,14 @@
     "inventory"
   ],
   "optional": [],
-  "provides": ["WorkOrderServiceInterface"],
-  "consumes": ["BomServiceInterface", "RoutingServiceInterface", "InventoryServiceInterface"],
+  "provides": [
+    "WorkOrderServiceInterface"
+  ],
+  "consumes": [
+    "BomServiceInterface",
+    "RoutingServiceInterface",
+    "InventoryServiceInterface"
+  ],
   "emits": [
     "work-order.wo.created",
     "work-order.wo.released",
@@ -37,17 +43,9 @@
     "eco-plm.change.released"
   ],
   "permissions": [
-    "work-order.wo.view",
-    "work-order.wo.create",
-    "work-order.wo.update",
-    "work-order.wo.release",
-    "work-order.wo.cancel",
-    "work-order.wo.close",
-    "work-order.wo.reopen",
-    "work-order.issue.post",
-    "work-order.receive.post",
-    "work-order.report.post",
-    "work-order.override.tolerance"
+    "work-order.record.view",
+    "work-order.record.create",
+    "work-order.record.approve"
   ],
   "industry_tags": [
     "all"
@@ -57,5 +55,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "work-order",
+      "title": {
+        "fa": "دستور کار تولید",
+        "en": "Work Order"
+      },
+      "icon": "settings",
+      "route": "/work-order",
+      "permission": "work-order.record.view"
+    }
+  ]
 }
