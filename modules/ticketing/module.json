@@ -1,6 +1,6 @@
 {
   "id": "ticketing",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "تیکتینگ و پشتیبانی",
     "en": "Ticketing"
@@ -20,7 +20,11 @@
     "ticketing.ticket.created"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "ticketing.record.view",
+    "ticketing.record.create",
+    "ticketing.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -29,5 +33,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "ticketing",
+      "title": {
+        "fa": "تیکتینگ و پشتیبانی",
+        "en": "Ticketing"
+      },
+      "icon": "box",
+      "route": "/ticketing",
+      "permission": "ticketing.record.view"
+    }
+  ]
 }
