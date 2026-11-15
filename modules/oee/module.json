@@ -1,6 +1,6 @@
 {
   "id": "oee",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "اثربخشی کلی تجهیزات",
     "en": "OEE"
@@ -9,8 +9,8 @@
   "category": "manufacturing",
   "level": 4,
   "requires": [
-    "asset-registry",
-    "mes"
+    "mes",
+    "org-structure"
   ],
   "optional": [],
   "provides": [
@@ -22,7 +22,11 @@
     "oee-downtime.alert.raised"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "oee.record.view",
+    "oee.record.create",
+    "oee.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -31,5 +35,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "oee",
+      "title": {
+        "fa": "اثربخشی کلی تجهیزات",
+        "en": "OEE"
+      },
+      "icon": "activity",
+      "route": "/oee",
+      "permission": "oee.record.view"
+    }
+  ]
 }
