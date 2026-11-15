@@ -1,6 +1,6 @@
 {
   "id": "eco-plm",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "تغییرات مهندسی",
     "en": "ECO / PLM"
@@ -21,7 +21,11 @@
     "eco-plm.change.requested"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "eco-plm.record.view",
+    "eco-plm.record.create",
+    "eco-plm.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -30,5 +34,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "eco-plm",
+      "title": {
+        "fa": "تغییرات مهندسی",
+        "en": "ECO / PLM"
+      },
+      "icon": "settings",
+      "route": "/eco-plm",
+      "permission": "eco-plm.record.view"
+    }
+  ]
 }

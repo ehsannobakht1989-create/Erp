@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: ECO / PLM API
+  version: 1.0.0
+paths:
+  /api/eco-plm/records:
+    get:
+      summary: List records
+      responses:
+        '200': { description: OK }
