@@ -71,7 +71,8 @@ final class Migrator
                 }
 
                 $this->db->transaction(function (Connection $conn) use ($sql, $module, $file, $checksum): void {
-                    foreach ($this->splitStatements($sql) as $stmt) {
+                    $normalized = $conn->driver() === 'sqlite' ? $this->normalizeForSqlite($sql) : $sql;
+                    foreach ($this->splitStatements($normalized) as $stmt) {
                         $conn->execute($stmt);
                     }
                     $conn->execute(
@@ -110,5 +111,25 @@ final class Migrator
     {
         $parts = array_filter(array_map('trim', explode(';', $sql)), fn(string $s): bool => $s !== '');
         return array_values($parts);
+    }
+
+    private function normalizeForSqlite(string $sql): string
+    {
+        $sql = (string) preg_replace('/\)\s*ENGINE\s*=\s*\w+[^;]*;/i', ');', $sql);
+        $sql = (string) preg_replace(
+            '/\b(?:BIG|TINY|SMALL|MEDIUM)?INT(?:EGER)?(?:\(\d+\))?(?:\s+UNSIGNED|\s+NOT\s+NULL)*\s+AUTO_INCREMENT\s+PRIMARY\s+KEY\b/i',
+            'INTEGER PRIMARY KEY AUTOINCREMENT',
+            $sql
+        );
+        $sql = (string) preg_replace(
+            '/\b(?:BIG|TINY|SMALL|MEDIUM)?INT(?:EGER)?(?:\(\d+\))?(?:\s+UNSIGNED|\s+NOT\s+NULL)*\s+PRIMARY\s+KEY\s+AUTO_INCREMENT\b/i',
+            'INTEGER PRIMARY KEY AUTOINCREMENT',
+            $sql
+        );
+        $sql = (string) preg_replace('/\bUNSIGNED\b/i', '', $sql);
+        $sql = (string) preg_replace('/\bON\s+UPDATE\s+CURRENT_TIMESTAMP(?:\(\d*\))?/i', '', $sql);
+        $sql = (string) preg_replace("/\bCOMMENT\s+'[^']*'/i", '', $sql);
+        $sql = (string) preg_replace('/,\s*(?:INDEX|KEY)\s+\w+\s*\([^)]+\)/i', '', $sql);
+        return $sql;
     }
 }
