@@ -1,6 +1,6 @@
 {
   "id": "rfq",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "استعلام بها",
     "en": "Request for Quotation"
@@ -9,7 +9,7 @@
   "category": "supply",
   "level": 2,
   "requires": [
-    "item-master",
+    "purchase-request",
     "party-master"
   ],
   "optional": [
@@ -23,7 +23,11 @@
     "rfq.rfq.sent"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "rfq.record.view",
+    "rfq.record.create",
+    "rfq.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -32,5 +36,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "rfq",
+      "title": {
+        "fa": "استعلام بها",
+        "en": "Request for Quotation"
+      },
+      "icon": "file",
+      "route": "/rfq",
+      "permission": "rfq.record.view"
+    }
+  ]
 }
