@@ -1,6 +1,6 @@
 {
   "id": "payroll",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "حقوق و دستمزد",
     "en": "Payroll"
@@ -23,7 +23,11 @@
     "payroll.run.paid"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "payroll.record.view",
+    "payroll.record.create",
+    "payroll.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -34,5 +38,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "payroll",
+      "title": {
+        "fa": "حقوق و دستمزد",
+        "en": "Payroll"
+      },
+      "icon": "file",
+      "route": "/payroll",
+      "permission": "payroll.record.view"
+    }
+  ]
 }
