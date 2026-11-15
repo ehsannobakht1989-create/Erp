@@ -1,6 +1,6 @@
 {
   "id": "energy-utilities",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "انرژی و تاسیسات",
     "en": "Energy & Utilities"
@@ -24,7 +24,11 @@
     "energy-utilities.target.breached"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "energy-utilities.record.view",
+    "energy-utilities.record.create",
+    "energy-utilities.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -33,5 +37,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "energy-utilities",
+      "title": {
+        "fa": "انرژی و تاسیسات",
+        "en": "Energy & Utilities"
+      },
+      "icon": "box",
+      "route": "/energy-utilities",
+      "permission": "energy-utilities.record.view"
+    }
+  ]
 }

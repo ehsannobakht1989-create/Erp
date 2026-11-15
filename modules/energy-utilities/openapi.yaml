@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Energy & Utilities API
+  version: 1.0.0
+paths:
+  /api/energy-utilities/records:
+    get:
+      summary: List records
+      responses:
+        '200': { description: OK }
