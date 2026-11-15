@@ -316,9 +316,17 @@ function glob_recursive(string $dir, string $pattern): array
     }
     $files = [];
     $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir, FilesystemIterator::SKIP_DOTS));
+    $patterns = str_starts_with($pattern, '*.{') && str_ends_with($pattern, '}')
+        ? array_map(fn(string $ext): string => '*.' . trim($ext), explode(',', substr($pattern, 3, -1)))
+        : [$pattern];
     foreach ($it as $file) {
-        if ($file->isFile() && fnmatch($pattern, $file->getFilename(), FNM_BRACE)) {
-            $files[] = $file->getPathname();
+        if ($file->isFile()) {
+            foreach ($patterns as $pat) {
+                if (fnmatch($pat, $file->getFilename())) {
+                    $files[] = $file->getPathname();
+                    break;
+                }
+            }
         }
     }
     sort($files);
