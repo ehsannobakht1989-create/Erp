@@ -185,8 +185,9 @@ final class QueryBuilder
         if (!$this->enforceTableGuard || $this->moduleScope === null) {
             return;
         }
-        $prefix = $this->moduleScope . '__';
-        if (!str_starts_with($table, $prefix)) {
+        $prefix = str_replace('-', '_', $this->moduleScope) . '__';
+        $kebabPrefix = $this->moduleScope . '__';
+        if (!str_starts_with($table, $prefix) && !str_starts_with($table, $kebabPrefix)) {
             throw new RuntimeException(
                 "Table-prefix violation: module '{$this->moduleScope}' cannot access table '$table' (must start with '$prefix')."
             );
