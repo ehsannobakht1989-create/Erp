@@ -1,6 +1,6 @@
 {
   "id": "ncr-capa",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "عدم انطباق و اقدام اصلاحی",
     "en": "NCR & CAPA"
@@ -22,7 +22,11 @@
     "ncr-capa.scar.sent"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "ncr-capa.record.view",
+    "ncr-capa.record.create",
+    "ncr-capa.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -31,5 +35,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "ncr-capa",
+      "title": {
+        "fa": "عدم انطباق و اقدام اصلاحی",
+        "en": "NCR & CAPA"
+      },
+      "icon": "activity",
+      "route": "/ncr-capa",
+      "permission": "ncr-capa.record.view"
+    }
+  ]
 }
