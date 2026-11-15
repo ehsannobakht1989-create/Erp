@@ -1,6 +1,6 @@
 {
   "id": "hse",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "ایمنی و بهداشت",
     "en": "HSE"
@@ -23,7 +23,11 @@
     "hse.action.overdue"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "hse.record.view",
+    "hse.record.create",
+    "hse.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -32,5 +36,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "hse",
+      "title": {
+        "fa": "ایمنی و بهداشت",
+        "en": "HSE"
+      },
+      "icon": "box",
+      "route": "/hse",
+      "permission": "hse.record.view"
+    }
+  ]
 }
