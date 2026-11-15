@@ -1,6 +1,6 @@
 {
   "id": "contractor-mgmt",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "مدیریت پیمانکاران",
     "en": "Contractor Management"
@@ -25,7 +25,11 @@
     "contractor-mgmt.contractor.suspended"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "contractor-mgmt.record.view",
+    "contractor-mgmt.record.create",
+    "contractor-mgmt.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -34,5 +38,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "contractor-mgmt",
+      "title": {
+        "fa": "مدیریت پیمانکاران",
+        "en": "Contractor Management"
+      },
+      "icon": "box",
+      "route": "/contractor-mgmt",
+      "permission": "contractor-mgmt.record.view"
+    }
+  ]
 }
