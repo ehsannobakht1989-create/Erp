@@ -1,6 +1,6 @@
 {
   "id": "mes",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "اجرای تولید",
     "en": "MES"
@@ -10,6 +10,7 @@
   "level": 4,
   "requires": [
     "work-order",
+    "routing",
     "asset-registry"
   ],
   "optional": [],
@@ -24,7 +25,11 @@
     "mes.andon.raised"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "mes.record.view",
+    "mes.record.create",
+    "mes.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -33,5 +38,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "mes",
+      "title": {
+        "fa": "اجرای تولید",
+        "en": "MES"
+      },
+      "icon": "activity",
+      "route": "/mes",
+      "permission": "mes.record.view"
+    }
+  ]
 }
