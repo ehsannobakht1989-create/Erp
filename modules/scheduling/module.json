@@ -1,6 +1,6 @@
 {
   "id": "scheduling",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "زمان‌بندی تولید",
     "en": "Scheduling"
@@ -11,7 +11,7 @@
   "requires": [
     "work-order",
     "routing",
-    "asset-registry"
+    "org-structure"
   ],
   "optional": [],
   "provides": [
@@ -23,7 +23,11 @@
     "scheduling.conflict.detected"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "scheduling.record.view",
+    "scheduling.record.create",
+    "scheduling.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -32,5 +36,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "scheduling",
+      "title": {
+        "fa": "زمان‌بندی تولید",
+        "en": "Scheduling"
+      },
+      "icon": "activity",
+      "route": "/scheduling",
+      "permission": "scheduling.record.view"
+    }
+  ]
 }
