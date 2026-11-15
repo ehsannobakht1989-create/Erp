@@ -1,6 +1,6 @@
 {
   "id": "routing",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "مسیر تولید",
     "en": "Routing"
@@ -22,7 +22,11 @@
     "routing.routing.approved"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "routing.record.view",
+    "routing.record.create",
+    "routing.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -31,5 +35,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "routing",
+      "title": {
+        "fa": "مسیر تولید",
+        "en": "Routing"
+      },
+      "icon": "file",
+      "route": "/routing",
+      "permission": "routing.record.view"
+    }
+  ]
 }
