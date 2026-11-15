@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Accounting GL API
+  version: 1.0.0
+paths:
+  /api/accounting-gl/journals:
+    get:
+      summary: List journals
+      responses:
+        '200': { description: Journals list }

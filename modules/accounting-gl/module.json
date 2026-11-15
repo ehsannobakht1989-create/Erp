@@ -1,33 +1,22 @@
 {
   "id": "accounting-gl",
-  "status": "stub",
-  "name": {
-    "fa": "حسابداری کل",
-    "en": "Accounting GL"
-  },
+  "status": "done",
+  "name": { "fa": "حسابداری کل", "en": "Accounting GL" },
   "version": "1.0.0",
   "category": "finance",
   "level": 3,
-  "requires": [],
-  "optional": [
-    "multi-company"
-  ],
-  "provides": [
-    "AccountingGlServiceInterface"
-  ],
-  "consumes": [],
-  "emits": [
-    "accounting-gl.journal.posted"
-  ],
-  "listens": [],
-  "permissions": [],
-  "industry_tags": [
-    "all"
-  ],
-  "regional": [],
+  "requires": ["multi-company"],
+  "optional": [],
+  "provides": ["AccountingGlServiceInterface"],
+  "consumes": ["AuditContract"],
+  "emits": ["accounting-gl.journal.posted", "accounting-gl.journal.reversed", "accounting-gl.period.closed"],
+  "listens": ["accounting.journal.requested"],
+  "permissions": ["accounting-gl.account.manage", "accounting-gl.journal.view", "accounting-gl.journal.create", "accounting-gl.journal.approve", "accounting-gl.report.view"],
+  "menu": [{ "id": "accounting-gl", "title": {"fa": "حسابداری کل", "en": "Accounting GL"}, "icon": "book", "route": "/accounting-gl", "permission": "accounting-gl.journal.view" }],
+  "entities": ["account", "journal", "journal_line", "period"],
+  "settings": [],
+  "industry_tags": ["all"],
+  "regional": ["ir"],
   "python": false,
-  "ai": {
-    "enabled_default": false,
-    "capabilities": []
-  }
+  "ai": {"enabled_default": false, "capabilities": []}
 }
