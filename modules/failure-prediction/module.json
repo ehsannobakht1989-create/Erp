@@ -1,6 +1,6 @@
 {
   "id": "failure-prediction",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "پیش‌بینی خرابی",
     "en": "Failure Prediction"
@@ -22,7 +22,11 @@
     "failure-prediction.insight.created"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "failure-prediction.record.view",
+    "failure-prediction.record.create",
+    "failure-prediction.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -31,5 +35,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "failure-prediction",
+      "title": {
+        "fa": "پیش‌بینی خرابی",
+        "en": "Failure Prediction"
+      },
+      "icon": "box",
+      "route": "/failure-prediction",
+      "permission": "failure-prediction.record.view"
+    }
+  ]
 }
