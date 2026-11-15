@@ -1,6 +1,6 @@
 {
   "id": "doc-ocr",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "نویسه‌خوان اسناد",
     "en": "Document OCR"
@@ -20,7 +20,11 @@
     "doc-ocr.extraction.completed"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "doc-ocr.record.view",
+    "doc-ocr.record.create",
+    "doc-ocr.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -29,5 +33,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "doc-ocr",
+      "title": {
+        "fa": "نویسه‌خوان اسناد",
+        "en": "Document OCR"
+      },
+      "icon": "box",
+      "route": "/doc-ocr",
+      "permission": "doc-ocr.record.view"
+    }
+  ]
 }

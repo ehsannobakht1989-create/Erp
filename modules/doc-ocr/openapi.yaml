@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Document OCR API
+  version: 1.0.0
+paths:
+  /api/doc-ocr/records:
+    get:
+      summary: List records
+      responses:
+        '200': { description: OK }
