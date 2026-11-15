@@ -14,11 +14,41 @@
     "inventory"
   ],
   "optional": [],
-  "provides": [],
-  "consumes": [],
-  "emits": [],
-  "listens": [],
-  "permissions": [],
+  "provides": ["WorkOrderServiceInterface"],
+  "consumes": ["BomServiceInterface", "RoutingServiceInterface", "InventoryServiceInterface"],
+  "emits": [
+    "work-order.wo.created",
+    "work-order.wo.released",
+    "work-order.wo.started",
+    "work-order.wo.completed",
+    "work-order.wo.closed",
+    "work-order.wo.cancelled",
+    "work-order.material.issued",
+    "work-order.material.returned",
+    "work-order.operation.completed",
+    "work-order.output.received",
+    "work-order.shortage.detected"
+  ],
+  "listens": [
+    "mrp.planned_order.firmed",
+    "sales.order.confirmed",
+    "mes.operation.reported",
+    "quality-inspection.lot.decided",
+    "eco-plm.change.released"
+  ],
+  "permissions": [
+    "work-order.wo.view",
+    "work-order.wo.create",
+    "work-order.wo.update",
+    "work-order.wo.release",
+    "work-order.wo.cancel",
+    "work-order.wo.close",
+    "work-order.wo.reopen",
+    "work-order.issue.post",
+    "work-order.receive.post",
+    "work-order.report.post",
+    "work-order.override.tolerance"
+  ],
   "industry_tags": [
     "all"
   ],
