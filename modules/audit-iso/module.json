@@ -1,6 +1,6 @@
 {
   "id": "audit-iso",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "ممیزی ایزو",
     "en": "ISO Audit"
@@ -23,7 +23,11 @@
     "audit-iso.finding.raised"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "audit-iso.record.view",
+    "audit-iso.record.create",
+    "audit-iso.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -32,5 +36,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "audit-iso",
+      "title": {
+        "fa": "ممیزی ایزو",
+        "en": "ISO Audit"
+      },
+      "icon": "box",
+      "route": "/audit-iso",
+      "permission": "audit-iso.record.view"
+    }
+  ]
 }
