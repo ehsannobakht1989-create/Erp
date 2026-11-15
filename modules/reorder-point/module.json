@@ -1,6 +1,6 @@
 {
   "id": "reorder-point",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "نقطه سفارش",
     "en": "Reorder Point"
@@ -24,7 +24,11 @@
     "reorder-point.class.updated"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "reorder-point.record.view",
+    "reorder-point.record.create",
+    "reorder-point.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -33,5 +37,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "reorder-point",
+      "title": {
+        "fa": "نقطه سفارش",
+        "en": "Reorder Point"
+      },
+      "icon": "settings",
+      "route": "/reorder-point",
+      "permission": "reorder-point.record.view"
+    }
+  ]
 }
