@@ -1,6 +1,6 @@
 {
   "id": "mrp",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "برنامه‌ریزی نیازمندی مواد",
     "en": "MRP"
@@ -10,9 +10,7 @@
   "level": 4,
   "requires": [
     "bom",
-    "inventory",
-    "purchase-order",
-    "sales"
+    "inventory"
   ],
   "optional": [],
   "provides": [
@@ -26,7 +24,11 @@
     "mrp.message.created"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "mrp.record.view",
+    "mrp.record.create",
+    "mrp.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -35,5 +37,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "mrp",
+      "title": {
+        "fa": "برنامه‌ریزی نیازمندی مواد",
+        "en": "MRP"
+      },
+      "icon": "settings",
+      "route": "/mrp",
+      "permission": "mrp.record.view"
+    }
+  ]
 }
