@@ -1,6 +1,6 @@
 {
   "id": "management-consolidation",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "تلفیق مدیریتی",
     "en": "Management Consolidation"
@@ -23,7 +23,11 @@
     "management-consolidation.pack.published"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "management-consolidation.record.view",
+    "management-consolidation.record.create",
+    "management-consolidation.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -32,5 +36,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "management-consolidation",
+      "title": {
+        "fa": "تلفیق مدیریتی",
+        "en": "Management Consolidation"
+      },
+      "icon": "box",
+      "route": "/management-consolidation",
+      "permission": "management-consolidation.record.view"
+    }
+  ]
 }
