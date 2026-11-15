@@ -1,6 +1,6 @@
 {
   "id": "project-mgmt",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "مدیریت پروژه",
     "en": "Project Management"
@@ -20,7 +20,11 @@
     "project-mgmt.project.created"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "project-mgmt.record.view",
+    "project-mgmt.record.create",
+    "project-mgmt.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -29,5 +33,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "project-mgmt",
+      "title": {
+        "fa": "مدیریت پروژه",
+        "en": "Project Management"
+      },
+      "icon": "box",
+      "route": "/project-mgmt",
+      "permission": "project-mgmt.record.view"
+    }
+  ]
 }
