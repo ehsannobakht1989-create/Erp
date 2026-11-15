@@ -1,6 +1,6 @@
 {
   "id": "mps",
-  "status": "stub",
+  "status": "done",
   "name": {
     "fa": "برنامه‌ریزی جامع تولید",
     "en": "MPS"
@@ -23,7 +23,11 @@
     "mps.atp.changed"
   ],
   "listens": [],
-  "permissions": [],
+  "permissions": [
+    "mps.record.view",
+    "mps.record.create",
+    "mps.record.approve"
+  ],
   "industry_tags": [
     "all"
   ],
@@ -32,5 +36,17 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "menu": [
+    {
+      "id": "mps",
+      "title": {
+        "fa": "برنامه‌ریزی جامع تولید",
+        "en": "MPS"
+      },
+      "icon": "settings",
+      "route": "/mps",
+      "permission": "mps.record.view"
+    }
+  ]
 }
