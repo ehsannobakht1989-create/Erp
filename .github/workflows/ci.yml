@@ -56,3 +56,22 @@ jobs:
         run: |
           php builder/bin/build.php --profile profiles/minimal.yaml
           ls -lh dist/minimal-1.0.0.zip
+
+  laravel-scaffold:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: dom, mbstring, pdo_sqlite, xmlwriter, zip
+          tools: composer:v2
+      - name: Validate and install locked dependencies
+        run: |
+          composer validate --no-check-publish
+          composer install --no-interaction --prefer-dist
+      - name: Test Laravel scaffold
+        run: |
+          php artisan --version
+          php tests/platform/laravel-smoke.php
+          vendor/bin/phpunit --fail-on-risky --fail-on-warning
