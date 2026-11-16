@@ -4,9 +4,11 @@ AI in this ERP is **strictly optional** and **disabled by default**. Every modul
 
 ## 1. Three-Level Optionality
 AI activation is controlled at three levels (all must permit it):
-1. **Factory Profile** (`profiles/*.yaml`): global `ai.enabled: false | true`
-2. **Module** (`module.json`): `ai.enabled_default: false | true` (overridable per company)
-3. **Capability** (`module.json` -> `ai.capabilities[]`): `provider: "avalai" | "python" | "off"`
+1. **Factory**: `ERP_AI_ENABLED=true` in `.env` (the builder derives it from the profile's `ai.enabled`); `AI_KILL_SWITCH=true` disables everything immediately.
+2. **Module** (per company): `core_ai_toggles` row with an empty capability, defaulting to manifest `ai.enabled_default` (false).
+3. **Capability** (per company): `core_ai_toggles` row for the capability, default off; a manifest `provider: "off"` can never be enabled.
+
+Implementation: `App\Support\Ai\AiGateway` (`AiGatewayContract::invoke`). Enabled calls also need a positive remaining monthly company budget (`core_ai_budgets`), redact global and capability fields (including tool results), expose only manifest-declared read-only tools registered by the module's `aiTools()` and run them with the caller's permissions, store only declared proposal types as pending `core_ai_proposals`, and record tokens and exact cost in `core_ai_usage` with audit entries. Python service calls are signed with `X-ERP-Signature: sha256=HMAC(AI_SERVICE_SECRET, timestamp\nrequest_id\nbody)` plus `X-ERP-Timestamp` and `X-ERP-Request-Id`.
 
 ## 2. Providers
 - **`avalai`**: OpenAI-compatible HTTP API. API key from `AVALAI_API_KEY` env var; base URL from config.

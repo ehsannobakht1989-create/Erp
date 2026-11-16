@@ -1,16 +1,60 @@
-# Deploying on cPanel Shared Hosting
+# راهنمای استقرار روی هاست اشتراکی cPanel
 
-1. **Upload**: Upload the built package (from `builder/`) or repository to your domain root, pointing the DocumentRoot to `public/`.
-2. **Environment**: Copy `.env.example` to `.env`, set `APP_ENV=production`, `DB_*` credentials, and generate `APP_KEY`:
-   ```bash
-   php bin/erp key:generate
-   ```
-3. **Permissions**: Ensure `storage/` (logs, cache, rate-limits) is writable (`chmod -R 775 storage/`).
-4. **Database**: Run core and enabled module migrations:
-   ```bash
-   php bin/erp migrate
-   ```
-5. **Cron Job (Outbox Worker)**: Add a cPanel cron job running every minute:
-   ```cron
-   * * * * * /usr/local/bin/php /home/USER/erp/bin/erp events:work >/dev/null 2>&1
-   ```
+این سامانه بدون Docker، Redis، SSH یا سرویس دائمی روی هاست cPanel اجرا می‌شود: صف و کش روی پایگاه داده و فایل هستند و همه کارهای زمان‌بندی‌شده با یک خط Cron اجرا می‌شوند.
+
+## ۱. پیش‌نیازها
+- PHP نسخه 8.2 یا بالاتر با افزونه‌های `pdo`، `pdo_mysql` (یا `pdo_sqlite`)، `mbstring`، `openssl`، `tokenizer`، `ctype`، `json`، `fileinfo` و `filter` (در cPanel: «Select PHP Version» یا «MultiPHP Manager»).
+- MySQL 5.7+ یا MariaDB 10.3+ با `utf8mb4` (یا SQLite برای نصب‌های کوچک).
+
+## ۲. تهیه بسته
+بسته هر کارخانه با سازنده ساخته می‌شود و پوشه `vendor/` را همراه دارد، پس روی هاست به Composer نیاز نیست:
+
+```
+composer install --no-dev -o
+php builder/bin/build.php --profile profiles/minimal.yaml
+```
+
+خروجی `dist/<slug>-1.0.0.zip` است. فایل `BUILD-REPORT.md` داخل بسته ماژول‌ها، وابستگی‌های افزوده‌شده و ماژول‌هایی را که هنوز از دروازه عمق عبور نکرده‌اند نشان می‌دهد. (سازنده کامل با `php artisan erp:build`، رابط انتخاب ماژول و بسته React در فاز ۳ ارائه می‌شود.)
+
+## ۳. بارگذاری
+1. بسته را با File Manager در پوشه‌ای خارج از `public_html` (مثلاً `/home/USER/erp`) بارگذاری و استخراج کنید.
+2. ریشه سند (Document Root) دامنه یا زیردامنه را روی `/home/USER/erp/public` تنظیم کنید. این روش توصیه‌شده است.
+3. اگر تغییر ریشه سند ممکن نیست، بسته را در `public_html` استخراج کنید؛ فایل `.htaccess` ریشه همه درخواست‌ها را به `public/` می‌فرستد. بعد از نصب مطمئن شوید آدرس `https://domain/.env` قابل دریافت نیست.
+4. پوشه‌های `storage/` و `bootstrap/cache/` باید برای PHP قابل نوشتن باشند (معمولاً 755 یا 775).
+
+## ۴. پایگاه داده
+در «MySQL Databases» یک پایگاه داده و یک کاربر بسازید و همه دسترسی‌ها را به آن کاربر بدهید.
+
+## ۵. نصب‌کننده تحت وب
+نشانی `https://domain/install` را باز کنید (پیش از نصب، صفحه اصلی و API پیام «سامانه هنوز نصب نشده است» با کد 503 می‌دهند). نصب‌کننده:
+- پیش‌نیازها را بررسی می‌کند،
+- اتصال پایگاه داده را می‌آزماید و فایل `.env` تولیدی (با کلید تصادفی و دسترسی 0600) را می‌نویسد،
+- مهاجرت‌ها را اجرا و مدیر ارشد را با گذرواژه درهم‌سازی‌شده می‌سازد،
+- داده اولیه ماژول‌های فعال را بارگذاری می‌کند و خود را قفل می‌کند (پس از آن `/install` پاسخ 404 می‌دهد و نصب دوباره روی پایگاه داده دارای کاربر پذیرفته نمی‌شود).
+
+## ۶. Cron (ضروری)
+در «Cron Jobs» یک خط با تناوب هر دقیقه اضافه کنید (مسیر PHP ممکن است `/opt/cpanel/ea-php82/root/usr/bin/php` باشد):
+
+```
+* * * * * cd /home/USER/erp && /usr/local/bin/php artisan schedule:run >> /dev/null 2>&1
+```
+
+این خط هر دقیقه صندوق رویدادها را پردازش می‌کند (`erp:events:drain`)، صف پایگاه داده را با `queue:work --stop-when-empty --max-time=50` خالی می‌کند و هر شب ساعت 02:30 رویدادهای پردازش‌شده قدیمی را پاک می‌کند. ماژول‌های غیرفعال هیچ کار زمان‌بندی‌شده‌ای اضافه نمی‌کنند.
+
+## ۷. هوش مصنوعی (اختیاری، پیش‌فرض خاموش)
+سامانه بدون هوش مصنوعی کامل کار می‌کند. برای فعال‌سازی، در `.env` مقدارهای `ERP_AI_ENABLED=true` و `AVALAI_API_KEY` را تنظیم کنید؛ سپس برای هر شرکت ماژول، قابلیت و بودجه ماهانه را فعال کنید. `AI_KILL_SWITCH=true` همه فراخوانی‌ها را فوراً متوقف می‌کند. خروجی هوش مصنوعی فقط «پیشنهاد» است و بدون تأیید کاربر داده‌ای تغییر نمی‌کند.
+
+## ۸. به‌روزرسانی
+1. از پایگاه داده و فایل‌های `.env` و `storage/` نسخه پشتیبان بگیرید.
+2. بسته جدید را روی پوشه فعلی استخراج کنید و `.env` و `storage/` را نگه دارید.
+3. مهاجرت‌ها را یک بار اجرا کنید: از «Terminal» در cPanel دستور `php artisan migrate --force` را بزنید، یا اگر Terminal ندارید یک Cron موقت یک‌باره با همین دستور بسازید و پس از اجرا حذفش کنید.
+4. در صورت نیاز در حین به‌روزرسانی از `php artisan down` و سپس `php artisan up` استفاده کنید.
+
+## ۹. فعال یا غیرفعال کردن ماژول‌ها
+`php artisan erp:modules:enable <id>` و `php artisan erp:modules:disable <id>` وضعیت را پس از بررسی وابستگی‌ها ذخیره می‌کنند؛ تغییر از درخواست بعدی اعمال می‌شود. فهرست و گراف وابستگی: `php artisan erp:modules:list` و `erp:modules:graph`.
+
+## ۱۰. عیب‌یابی
+- پیام 503 «سامانه هنوز نصب نشده است»: `/install` را باز کنید.
+- خطای 500: فایل `storage/logs/laravel.log` را ببینید؛ معمولاً دسترسی نوشتن `storage/` یا نسخه PHP مشکل دارد.
+- رویدادها پردازش نمی‌شوند: خط Cron و مسیر PHP را بررسی کنید.
+- هرگز `APP_DEBUG=true` را روی سرور عمومی فعال نکنید.

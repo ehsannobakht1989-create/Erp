@@ -6,84 +6,84 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
 
 | Module | Status | Suggested | Score | entity | event | contract | rule | perm | ui | ai | Anti-gaming | Tests | Pass |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|
-| accounting-gl | stub | stub | 1 | 0 | 0 | 0 | 0 | 10 | 0 | 0 | 1 | not_run | no |
-| anomaly-detection | stub | stub | 5.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 100 | 4 | not_run | no |
+| accounting-gl | stub | stub | 1 | 0 | 0 | 0 | 0 | 10 | 0 | 0 | 0 | not_run | no |
+| anomaly-detection | stub | stub | 5.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 100 | 0 | not_run | no |
 | api-webhooks | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
-| ar-ap | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 5 | not_run | no |
-| asset-registry | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 1 | not_run | no |
-| attendance | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 1.9 | 0 | 0 | 5 | not_run | no |
-| audit-iso | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.6 | 0 | 0 | 3 | not_run | no |
+| ar-ap | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | not_run | no |
+| asset-registry | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 0 | not_run | no |
+| attendance | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 1.9 | 0 | 0 | 0 | not_run | no |
+| audit-iso | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.6 | 0 | 0 | 0 | not_run | no |
 | audit-log | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
 | auth-rbac | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
-| batch-formulation | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 3 | not_run | no |
-| bom | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 6.3 | 0 | 0 | 3 | not_run | no |
-| budgeting | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 4 | not_run | no |
-| canteen | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 2 | not_run | no |
-| cmms | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2.1 | 0 | 0 | 5 | not_run | no |
-| competency-appraisal | stub | stub | 0.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 0 | 3 | not_run | no |
-| condition-monitoring-iot | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 4 | not_run | no |
-| contractor-mgmt | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2.2 | 0 | 0 | 3 | not_run | no |
-| contracts | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 4 | not_run | no |
-| correspondence | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 3 | not_run | no |
-| costing | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 4.5 | 0 | 0 | 7 | not_run | no |
-| crm | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2.4 | 0 | 0 | 3 | not_run | no |
-| demand-forecast | stub | stub | 5.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 100 | 5 | not_run | no |
-| doc-ocr | stub | stub | 5.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 100 | 4 | not_run | no |
+| batch-formulation | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 0 | not_run | no |
+| bom | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 6.3 | 0 | 0 | 0 | not_run | no |
+| budgeting | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 0 | not_run | no |
+| canteen | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 0 | not_run | no |
+| cmms | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2.1 | 0 | 0 | 0 | not_run | no |
+| competency-appraisal | stub | stub | 0.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 0 | 0 | not_run | no |
+| condition-monitoring-iot | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 0 | not_run | no |
+| contractor-mgmt | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2.2 | 0 | 0 | 0 | not_run | no |
+| contracts | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 0 | not_run | no |
+| correspondence | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 0 | not_run | no |
+| costing | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 4.5 | 0 | 0 | 0 | not_run | no |
+| crm | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2.4 | 0 | 0 | 0 | not_run | no |
+| demand-forecast | stub | stub | 5.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 100 | 0 | not_run | no |
+| doc-ocr | stub | stub | 5.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 100 | 0 | not_run | no |
 | document-mgmt | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
 | dynamic-fields | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
-| eco-plm | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 4.2 | 0 | 0 | 4 | not_run | no |
-| energy-utilities | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.8 | 0 | 0 | 4 | not_run | no |
-| failure-prediction | stub | stub | 5.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 100 | 4 | not_run | no |
-| fixed-assets | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 4.5 | 0 | 0 | 4 | not_run | no |
-| forex-lc | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.8 | 0 | 0 | 4 | not_run | no |
+| eco-plm | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 4.2 | 0 | 0 | 0 | not_run | no |
+| energy-utilities | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.8 | 0 | 0 | 0 | not_run | no |
+| failure-prediction | stub | stub | 5.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 100 | 0 | not_run | no |
+| fixed-assets | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 4.5 | 0 | 0 | 0 | not_run | no |
+| forex-lc | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.8 | 0 | 0 | 0 | not_run | no |
 | form-builder | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
-| gate-visitor | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 3.1 | 0 | 0 | 3 | not_run | no |
-| hr-core | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 3 | not_run | no |
-| hse | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 1.5 | 0 | 0 | 4 | not_run | no |
-| import-customs | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.6 | 0 | 0 | 4 | not_run | no |
-| inventory | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 1.7 | 0 | 0 | 4 | not_run | no |
+| gate-visitor | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 3.1 | 0 | 0 | 0 | not_run | no |
+| hr-core | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 0 | not_run | no |
+| hse | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 1.5 | 0 | 0 | 0 | not_run | no |
+| import-customs | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.6 | 0 | 0 | 0 | not_run | no |
+| inventory | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 1.7 | 0 | 0 | 0 | not_run | no |
 | item-master | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 4.2 | 0 | 0 | 0 | not_run | no |
-| lims | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.6 | 0 | 0 | 4 | not_run | no |
-| lot-traceability | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 5 | not_run | no |
-| management-consolidation | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 3 | not_run | no |
-| mes | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 5 | not_run | no |
-| mps | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 6.3 | 0 | 0 | 5 | not_run | no |
-| mrp | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 6 | not_run | no |
+| lims | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.6 | 0 | 0 | 0 | not_run | no |
+| lot-traceability | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 0 | not_run | no |
+| management-consolidation | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 0 | not_run | no |
+| mes | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 0 | not_run | no |
+| mps | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 6.3 | 0 | 0 | 0 | not_run | no |
+| mrp | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 0 | not_run | no |
 | multi-company | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
-| ncr-capa | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.6 | 0 | 0 | 4 | not_run | no |
-| nl-report-assistant | stub | stub | 5.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 100 | 3 | not_run | no |
+| ncr-capa | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.6 | 0 | 0 | 0 | not_run | no |
+| nl-report-assistant | stub | stub | 5.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 100 | 0 | not_run | no |
 | notifications | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
-| oee | stub | stub | 0.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 0 | 4 | not_run | no |
-| org-structure | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 4 | not_run | no |
-| parking-vehicles | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2.2 | 0 | 0 | 3 | not_run | no |
-| party-master | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 4.5 | 0 | 0 | 3 | not_run | no |
-| payroll | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 4.2 | 0 | 0 | 4 | not_run | no |
-| pricing | stub | stub | 0.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 0 | 2 | not_run | no |
+| oee | stub | stub | 0.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 0 | 0 | not_run | no |
+| org-structure | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 0 | not_run | no |
+| parking-vehicles | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2.2 | 0 | 0 | 0 | not_run | no |
+| party-master | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 4.5 | 0 | 0 | 0 | not_run | no |
+| payroll | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 4.2 | 0 | 0 | 0 | not_run | no |
+| pricing | stub | stub | 0.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 0 | 0 | not_run | no |
 | print-barcode-qr | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
-| project-mgmt | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.5 | 0 | 0 | 4 | not_run | no |
-| purchase-order | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 4.2 | 0 | 0 | 5 | not_run | no |
-| purchase-request | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 4 | not_run | no |
-| quality-inspection | stub | stub | 1.3 | 0 | 0 | 0 | 0 | 12.5 | 0 | 0 | 5 | not_run | no |
-| recruitment | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.5 | 0 | 0 | 3 | not_run | no |
-| reorder-point | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 4 | not_run | no |
-| report-bi | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 4.2 | 0 | 0 | 4 | not_run | no |
-| rfq | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 4 | not_run | no |
-| routing | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 5 | not_run | no |
-| sales | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 1.7 | 0 | 0 | 4 | not_run | no |
-| schedule-optimizer | stub | stub | 5.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 100 | 4 | not_run | no |
-| scheduling | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 6.3 | 0 | 0 | 5 | not_run | no |
-| scrap-byproduct | stub | stub | 0.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 0 | 4 | not_run | no |
-| shipping-distribution | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.8 | 0 | 0 | 4 | not_run | no |
-| supplier-evaluation | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 3.3 | 0 | 0 | 5 | not_run | no |
-| tax-moadian | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 5 | not_run | no |
-| ticketing | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.6 | 0 | 0 | 2 | not_run | no |
-| tooling | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 6.3 | 0 | 0 | 4 | not_run | no |
-| training-lms | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.8 | 0 | 0 | 4 | not_run | no |
-| treasury | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 5 | not_run | no |
-| warranty-after-sales | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.8 | 0 | 0 | 3 | not_run | no |
-| waste-environment | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.8 | 0 | 0 | 3 | not_run | no |
-| weighbridge | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 3 | not_run | no |
-| work-order | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.6 | 0 | 0 | 9 | not_run | no |
+| project-mgmt | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.5 | 0 | 0 | 0 | not_run | no |
+| purchase-order | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 4.2 | 0 | 0 | 0 | not_run | no |
+| purchase-request | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 0 | not_run | no |
+| quality-inspection | stub | stub | 1.3 | 0 | 0 | 0 | 0 | 12.5 | 0 | 0 | 0 | not_run | no |
+| recruitment | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.5 | 0 | 0 | 0 | not_run | no |
+| reorder-point | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 0 | not_run | no |
+| report-bi | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 4.2 | 0 | 0 | 0 | not_run | no |
+| rfq | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 0 | not_run | no |
+| routing | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 0 | not_run | no |
+| sales | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 1.7 | 0 | 0 | 0 | not_run | no |
+| schedule-optimizer | stub | stub | 5.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 100 | 0 | not_run | no |
+| scheduling | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 6.3 | 0 | 0 | 0 | not_run | no |
+| scrap-byproduct | stub | stub | 0.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 0 | 0 | not_run | no |
+| shipping-distribution | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.8 | 0 | 0 | 0 | not_run | no |
+| supplier-evaluation | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 3.3 | 0 | 0 | 0 | not_run | no |
+| tax-moadian | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 0 | not_run | no |
+| ticketing | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.6 | 0 | 0 | 0 | not_run | no |
+| tooling | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 6.3 | 0 | 0 | 0 | not_run | no |
+| training-lms | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.8 | 0 | 0 | 0 | not_run | no |
+| treasury | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | not_run | no |
+| warranty-after-sales | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.8 | 0 | 0 | 0 | not_run | no |
+| waste-environment | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.8 | 0 | 0 | 0 | not_run | no |
+| weighbridge | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 0 | not_run | no |
+| work-order | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.6 | 0 | 0 | 0 | not_run | no |
 | workflow-engine | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
 
 ## accounting-gl — stub, score 1, FAIL
@@ -105,12 +105,12 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in payroll.run.approved: no listeners() registration in Providers/ModuleServiceProvider.php
   - in fixed-assets.depreciation.posted: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/6):
-  - requestJournal: not declared in a src/Contracts interface
-  - post: not declared in a src/Contracts interface
-  - accountBalance: not declared in a src/Contracts interface
-  - trialBalance: not declared in a src/Contracts interface
-  - isPeriodOpen: not declared in a src/Contracts interface
-  - resolveAccount: not declared in a src/Contracts interface
+  - requestJournal: no implementation of AccountingGlServiceInterface
+  - post: no implementation of AccountingGlServiceInterface
+  - accountBalance: no implementation of AccountingGlServiceInterface
+  - trialBalance: no implementation of AccountingGlServiceInterface
+  - isPeriodOpen: no implementation of AccountingGlServiceInterface
+  - resolveAccount: no implementation of AccountingGlServiceInterface
 - rule_cov 0% (0/11):
   - rule 1 "balanced journals": no test named test_rule_*balanced*journals*
   - rule 2 "postable accounts only": no test named test_rule_*postable*accounts*
@@ -156,8 +156,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - nl_report: in spec but not declared in manifest ai.capabilities
   - nl_report: no test named *nl_report*off* with assertions
   - nl_report: no test named *nl_report*fake* with assertions
-- anti-gaming: 1 finding(s)
-  - backend/src/Services/AccountingGlService.php:65: resolveAccount only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## anomaly-detection — stub, score 5.8, FAIL
@@ -170,10 +169,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out anomaly-detection.detection.created: not emitted via DomainEvent in src/
   - out anomaly-detection.detection.confirmed: not emitted via DomainEvent in src/ and not in manifest emits
 - contract_cov 0% (0/4):
-  - runProfile: not declared in a src/Contracts interface
-  - detections: not declared in a src/Contracts interface
-  - feedback: not declared in a src/Contracts interface
-  - registerProfile: not declared in a src/Contracts interface
+  - runProfile: no implementation of AnomalyDetectionServiceInterface
+  - detections: no implementation of AnomalyDetectionServiceInterface
+  - feedback: no implementation of AnomalyDetectionServiceInterface
+  - registerProfile: no implementation of AnomalyDetectionServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "two engines: (a) deterministic rule/stat checks in PHP (always avai...": no test named test_rule_*engines*deterministic*
   - rule 2 "(b) Python ML/statistical detectors when enabled": no test named test_rule_*python*statistical*
@@ -204,11 +203,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - rule_set: detail page web/pages/RuleSetDetailPage.tsx missing
   - rule_set: no web/i18n/fa.json keys under "rule_set."
 - ai_cov 100% (0/0): complete
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/AnomalyDetectionService.php:15: runProfile only returns a trivial value
-  - backend/src/Services/AnomalyDetectionService.php:20: detections only returns a trivial value
-  - backend/src/Services/AnomalyDetectionService.php:25: feedback only returns a trivial value
-  - backend/src/Services/AnomalyDetectionService.php:30: registerProfile only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## api-webhooks — stub, score 0, FAIL
@@ -248,11 +243,11 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in treasury.payment.cheque.cleared: no listeners() registration in Providers/ModuleServiceProvider.php
   - in inventory.receipt.posted: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/5):
-  - balance: not declared in a src/Contracts interface
-  - openItems: not declared in a src/Contracts interface
-  - overdue: not declared in a src/Contracts interface
-  - creditExposure: not declared in a src/Contracts interface
-  - proposePayments: not declared in a src/Contracts interface
+  - balance: no implementation of ArApServiceInterface
+  - openItems: no implementation of ArApServiceInterface
+  - overdue: no implementation of ArApServiceInterface
+  - creditExposure: no implementation of ArApServiceInterface
+  - proposePayments: no implementation of ArApServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "3-way match supplier invoice vs PO vs receipts with tolerances (pri...": no test named test_rule_*match*supplier*
   - rule 2 "posting creates journal request (AP control, expense/inventory, VAT...": no test named test_rule_*posting*creates*
@@ -318,12 +313,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - next_action: in spec but not declared in manifest ai.capabilities
   - next_action: no test named *next_action*off* with assertions
   - next_action: no test named *next_action*fake* with assertions
-- anti-gaming: 5 finding(s)
-  - backend/src/Services/ArApService.php:15: balance only returns a trivial value
-  - backend/src/Services/ArApService.php:20: openItems only returns a trivial value
-  - backend/src/Services/ArApService.php:25: overdue only returns a trivial value
-  - backend/src/Services/ArApService.php:30: creditExposure only returns a trivial value
-  - backend/src/Services/ArApService.php:35: proposePayments only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## asset-registry — stub, score 0.7, FAIL
@@ -341,14 +331,14 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out asset-registry.asset.meter.decommissioned: not emitted via DomainEvent in src/ and not in manifest emits
   - in fixed-assets.asset.capitalized: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/8):
-  - find: not declared in a src/Contracts interface
-  - tree: not declared in a src/Contracts interface
-  - byQr: not declared in a src/Contracts interface
-  - currentMeter: not declared in a src/Contracts interface
-  - addReading: not declared in a src/Contracts interface
-  - spareParts: not declared in a src/Contracts interface
-  - setStatus: not declared in a src/Contracts interface
-  - lookup: not declared in a src/Contracts interface
+  - find: no implementation of AssetRegistryServiceInterface
+  - tree: no implementation of AssetRegistryServiceInterface
+  - byQr: no implementation of AssetRegistryServiceInterface
+  - currentMeter: no implementation of AssetRegistryServiceInterface
+  - addReading: no implementation of AssetRegistryServiceInterface
+  - spareParts: no implementation of AssetRegistryServiceInterface
+  - setStatus: no implementation of AssetRegistryServiceInterface
+  - lookup: no implementation of AssetRegistryServiceInterface
 - rule_cov 0% (0/5):
   - rule 1 "hierarchy no cycles": no test named test_rule_*hierarchy*cycles*
   - rule 2 "status transitions logged": no test named test_rule_*status*transitions*
@@ -386,8 +376,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - anomaly: in spec but not declared in manifest ai.capabilities
   - anomaly: no test named *anomaly*off* with assertions
   - anomaly: no test named *anomaly*fake* with assertions
-- anti-gaming: 1 finding(s)
-  - backend/src/Services/AssetRegistryService.php:32: spareParts only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## attendance — stub, score 0.2, FAIL
@@ -408,11 +397,11 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in hr-core.employee.terminated: no listeners() registration in Providers/ModuleServiceProvider.php
   - in org-structure.calendar.changed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/5):
-  - summary: not declared in a src/Contracts interface
-  - balance: not declared in a src/Contracts interface
-  - isOnLeave: not declared in a src/Contracts interface
-  - presentNow: not declared in a src/Contracts interface
-  - workedMinutes: not declared in a src/Contracts interface
+  - summary: no implementation of AttendanceServiceInterface
+  - balance: no implementation of AttendanceServiceInterface
+  - isOnLeave: no implementation of AttendanceServiceInterface
+  - presentNow: no implementation of AttendanceServiceInterface
+  - workedMinutes: no implementation of AttendanceServiceInterface
 - rule_cov 0% (0/7):
   - rule 1 "daily calculation engine configurable per company (grace minutes, r...": no test named test_rule_*daily*calculation*
   - rule 2 "overlapping leave blocked": no test named test_rule_*overlapping*leave*
@@ -487,12 +476,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 5 finding(s)
-  - backend/src/Services/AttendanceService.php:15: summary only returns a trivial value
-  - backend/src/Services/AttendanceService.php:20: balance only returns a trivial value
-  - backend/src/Services/AttendanceService.php:25: isOnLeave only returns a trivial value
-  - backend/src/Services/AttendanceService.php:30: presentNow only returns a trivial value
-  - backend/src/Services/AttendanceService.php:35: workedMinutes only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## audit-iso — stub, score 0.4, FAIL
@@ -510,9 +494,9 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in ncr-capa.capa.verified: no listeners() registration in Providers/ModuleServiceProvider.php
   - in report-bi.kpi.breached: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/3):
-  - programStatus: not declared in a src/Contracts interface
-  - openFindings: not declared in a src/Contracts interface
-  - upcomingAudits: not declared in a src/Contracts interface
+  - programStatus: no implementation of AuditIsoServiceInterface
+  - openFindings: no implementation of AuditIsoServiceInterface
+  - upcomingAudits: no implementation of AuditIsoServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "audit scheduling with auditor independence rule": no test named test_rule_*audit*scheduling*
   - rule 2 "checklist built from clauses": no test named test_rule_*checklist*built*
@@ -570,10 +554,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - anomaly: in spec but not declared in manifest ai.capabilities
   - anomaly: no test named *anomaly*off* with assertions
   - anomaly: no test named *anomaly*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/AuditIsoService.php:15: programStatus only returns a trivial value
-  - backend/src/Services/AuditIsoService.php:20: openFindings only returns a trivial value
-  - backend/src/Services/AuditIsoService.php:25: upcomingAudits only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## audit-log — stub, score 0, FAIL
@@ -632,9 +613,9 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in lims.result.approved: no listeners() registration in Providers/ModuleServiceProvider.php
   - in quality-inspection.lot.decided: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - activeFormula: not declared in a src/Contracts interface
-  - scale: not declared in a src/Contracts interface
-  - validateBatch: not declared in a src/Contracts interface
+  - activeFormula: no implementation of BatchFormulationServiceInterface
+  - scale: no implementation of BatchFormulationServiceInterface
+  - validateBatch: no implementation of BatchFormulationServiceInterface
   - yield: not declared in a src/Contracts interface
 - rule_cov 0% (0/10):
   - rule 1 "formula versioning and approval": no test named test_rule_*formula*versioning*
@@ -688,10 +669,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/BatchFormulationService.php:15: activeFormula only returns a trivial value
-  - backend/src/Services/BatchFormulationService.php:20: scale only returns a trivial value
-  - backend/src/Services/BatchFormulationService.php:25: validateBatch only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## bom — stub, score 0.6, FAIL
@@ -708,12 +686,12 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in item-master.item.merged: no listeners() registration in Providers/ModuleServiceProvider.php
   - in eco-plm.change.released: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/6):
-  - findActive: not declared in a src/Contracts interface
-  - explode: not declared in a src/Contracts interface
-  - whereUsed: not declared in a src/Contracts interface
-  - compare: not declared in a src/Contracts interface
-  - costRollupInputs: not declared in a src/Contracts interface
-  - validate: not declared in a src/Contracts interface
+  - findActive: no implementation of BomServiceInterface
+  - explode: no implementation of BomServiceInterface
+  - whereUsed: no implementation of BomServiceInterface
+  - compare: no implementation of BomServiceInterface
+  - costRollupInputs: no implementation of BomServiceInterface
+  - validate: no implementation of BomServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "no circular references (detect on save, deep)": no test named test_rule_*circular*references*
   - rule 2 "single approved default per item/plant/date window": no test named test_rule_*single*approved*
@@ -751,10 +729,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/BomService.php:46: whereUsed only returns a trivial value
-  - backend/src/Services/BomService.php:47: compare only returns a trivial value
-  - backend/src/Services/BomService.php:48: costRollupInputs only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## budgeting — stub, score 0.6, FAIL
@@ -774,10 +749,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in purchase-order.po.cancelled: no listeners() registration in Providers/ModuleServiceProvider.php
   - in accounting-gl.journal.posted: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - check: not declared in a src/Contracts interface
-  - commit: not declared in a src/Contracts interface
-  - release: not declared in a src/Contracts interface
-  - variance: not declared in a src/Contracts interface
+  - check: no implementation of BudgetingServiceInterface
+  - commit: no implementation of BudgetingServiceInterface
+  - release: no implementation of BudgetingServiceInterface
+  - variance: no implementation of BudgetingServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "approval by workflow per cost-center owner then finance": no test named test_rule_*approval*workflow*
   - rule 2 "budget check API: available = approved budget − actuals (Accounting...": no test named test_rule_*budget*check*
@@ -827,11 +802,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - nl_report: in spec but not declared in manifest ai.capabilities
   - nl_report: no test named *nl_report*off* with assertions
   - nl_report: no test named *nl_report*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/BudgetingService.php:15: check only returns a trivial value
-  - backend/src/Services/BudgetingService.php:20: commit only returns a trivial value
-  - backend/src/Services/BudgetingService.php:25: release only returns a trivial value
-  - backend/src/Services/BudgetingService.php:30: variance only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## canteen — stub, score 0.6, FAIL
@@ -850,8 +821,8 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in attendance.period.closed: no listeners() registration in Providers/ModuleServiceProvider.php
   - in hr-core.employee.terminated: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/2):
-  - entitled: not declared in a src/Contracts interface
-  - chargesFor: not declared in a src/Contracts interface
+  - entitled: no implementation of CanteenServiceInterface
+  - chargesFor: no implementation of CanteenServiceInterface
 - rule_cov 0% (0/7):
   - rule 1 "reservation cutoff times": no test named test_rule_*reservation*cutoff*
   - rule 2 "entitlement by attendance/shift optional (AttendanceService)": no test named test_rule_*entitlement*attendance*
@@ -906,9 +877,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - anomaly: in spec but not declared in manifest ai.capabilities
   - anomaly: no test named *anomaly*off* with assertions
   - anomaly: no test named *anomaly*fake* with assertions
-- anti-gaming: 2 finding(s)
-  - backend/src/Services/CanteenService.php:15: entitled only returns a trivial value
-  - backend/src/Services/CanteenService.php:20: chargesFor only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## cmms — stub, score 0.2, FAIL
@@ -933,11 +902,11 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in inventory.stock.*: no listeners() registration in Providers/ModuleServiceProvider.php
   - in hse.incident.reported: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/5):
-  - openOrders: not declared in a src/Contracts interface
-  - pmDue: not declared in a src/Contracts interface
-  - downtime: not declared in a src/Contracts interface
-  - mttrMtbf: not declared in a src/Contracts interface
-  - costByAsset: not declared in a src/Contracts interface
+  - openOrders: no implementation of CmmsServiceInterface
+  - pmDue: no implementation of CmmsServiceInterface
+  - downtime: no implementation of CmmsServiceInterface
+  - mttrMtbf: no implementation of CmmsServiceInterface
+  - costByAsset: no implementation of CmmsServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "PM generation job (cron via events:work) creates WOs ahead of due": no test named test_rule_*generation*cron*
   - rule 2 "meter-based triggers from asset-registry readings": no test named test_rule_*meter*based*
@@ -1016,12 +985,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - next_action: in spec but not declared in manifest ai.capabilities
   - next_action: no test named *next_action*off* with assertions
   - next_action: no test named *next_action*fake* with assertions
-- anti-gaming: 5 finding(s)
-  - backend/src/Services/CmmsService.php:15: openOrders only returns a trivial value
-  - backend/src/Services/CmmsService.php:20: pmDue only returns a trivial value
-  - backend/src/Services/CmmsService.php:25: downtime only returns a trivial value
-  - backend/src/Services/CmmsService.php:30: mttrMtbf only returns a trivial value
-  - backend/src/Services/CmmsService.php:35: costByAsset only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## competency-appraisal — stub, score 0.8, FAIL
@@ -1041,9 +1005,9 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in hr-core.employee.*: no listeners() registration in Providers/ModuleServiceProvider.php
   - in training-lms.completion.recorded: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/3):
-  - gaps: not declared in a src/Contracts interface
-  - latestScore: not declared in a src/Contracts interface
-  - competencyMatrix: not declared in a src/Contracts interface
+  - gaps: no implementation of CompetencyAppraisalServiceInterface
+  - latestScore: no implementation of CompetencyAppraisalServiceInterface
+  - competencyMatrix: no implementation of CompetencyAppraisalServiceInterface
 - rule_cov 0% (0/7):
   - rule 1 "weighted scoring": no test named test_rule_*weighted*scoring*
   - rule 2 "anonymity for peer feedback": no test named test_rule_*anonymity*peer*
@@ -1095,10 +1059,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - autofill: in spec but not declared in manifest ai.capabilities
   - autofill: no test named *autofill*off* with assertions
   - autofill: no test named *autofill*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/CompetencyAppraisalService.php:15: gaps only returns a trivial value
-  - backend/src/Services/CompetencyAppraisalService.php:20: latestScore only returns a trivial value
-  - backend/src/Services/CompetencyAppraisalService.php:25: competencyMatrix only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## condition-monitoring-iot — stub, score 0.5, FAIL
@@ -1116,10 +1077,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out condition-monitoring-iot.alarm.cleared: not emitted via DomainEvent in src/ and not in manifest emits
   - in asset-registry.asset.status_changed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - latest: not declared in a src/Contracts interface
-  - series: not declared in a src/Contracts interface
-  - activeAlarms: not declared in a src/Contracts interface
-  - health: not declared in a src/Contracts interface
+  - latest: no implementation of ConditionMonitoringIotServiceInterface
+  - series: no implementation of ConditionMonitoringIotServiceInterface
+  - activeAlarms: no implementation of ConditionMonitoringIotServiceInterface
+  - health: no implementation of ConditionMonitoringIotServiceInterface
 - rule_cov 0% (0/7):
   - rule 1 "ingestion via api-webhooks key-authenticated endpoint accepting bat...": no test named test_rule_*ingestion*webhooks*
   - rule 2 "writes optimized (batch insert, no per-row events)": no test named test_rule_*writes*optimized*
@@ -1175,11 +1136,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/ConditionMonitoringIotService.php:15: latest only returns a trivial value
-  - backend/src/Services/ConditionMonitoringIotService.php:20: series only returns a trivial value
-  - backend/src/Services/ConditionMonitoringIotService.php:25: activeAlarms only returns a trivial value
-  - backend/src/Services/ConditionMonitoringIotService.php:30: health only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## contractor-mgmt — stub, score 0.2, FAIL
@@ -1198,9 +1155,9 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in ar-ap.payment.allocated: no listeners() registration in Providers/ModuleServiceProvider.php
   - in hse.permit.*: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/3):
-  - isEligible: not declared in a src/Contracts interface
-  - balance: not declared in a src/Contracts interface
-  - retention: not declared in a src/Contracts interface
+  - isEligible: no implementation of ContractorMgmtServiceInterface
+  - balance: no implementation of ContractorMgmtServiceInterface
+  - retention: no implementation of ContractorMgmtServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "statement quantities cannot exceed WP quantities without change order": no test named test_rule_*statement*quantities*
   - rule 2 "approval chain (site manager → engineer → finance)": no test named test_rule_*approval*chain*
@@ -1266,10 +1223,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/ContractorMgmtService.php:15: isEligible only returns a trivial value
-  - backend/src/Services/ContractorMgmtService.php:20: balance only returns a trivial value
-  - backend/src/Services/ContractorMgmtService.php:25: retention only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## contracts — stub, score 0.5, FAIL
@@ -1288,10 +1242,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in ar-ap.invoice.posted: no listeners() registration in Providers/ModuleServiceProvider.php
   - in purchase-order.po.*: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - activeFor: not declared in a src/Contracts interface
-  - consumed: not declared in a src/Contracts interface
-  - expiring: not declared in a src/Contracts interface
-  - terms: not declared in a src/Contracts interface
+  - activeFor: no implementation of ContractsServiceInterface
+  - consumed: no implementation of ContractsServiceInterface
+  - expiring: no implementation of ContractsServiceInterface
+  - terms: no implementation of ContractsServiceInterface
 - rule_cov 0% (0/1):
   - rule 1 "generate contract text from template+variables (print template), ap...": no test named test_rule_*generate*contract*
 - perm_cov 5% (1/20):
@@ -1339,11 +1293,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - next_action: in spec but not declared in manifest ai.capabilities
   - next_action: no test named *next_action*off* with assertions
   - next_action: no test named *next_action*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/ContractsService.php:15: activeFor only returns a trivial value
-  - backend/src/Services/ContractsService.php:20: consumed only returns a trivial value
-  - backend/src/Services/ContractsService.php:25: expiring only returns a trivial value
-  - backend/src/Services/ContractsService.php:30: terms only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## correspondence — stub, score 0.5, FAIL
@@ -1358,9 +1308,9 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out correspondence.letter.referred: not emitted via DomainEvent in src/ and not in manifest emits
   - out correspondence.letter.overdue: not emitted via DomainEvent in src/ and not in manifest emits
 - contract_cov 0% (0/3):
-  - inbox: not declared in a src/Contracts interface
-  - byNumber: not declared in a src/Contracts interface
-  - overdue: not declared in a src/Contracts interface
+  - inbox: no implementation of CorrespondenceServiceInterface
+  - byNumber: no implementation of CorrespondenceServiceInterface
+  - overdue: no implementation of CorrespondenceServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "numbering via NumberingService with Jalali year reset": no test named test_rule_*numbering*service*
   - rule 2 "referral chain tracked": no test named test_rule_*referral*chain*
@@ -1402,10 +1352,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/CorrespondenceService.php:15: inbox only returns a trivial value
-  - backend/src/Services/CorrespondenceService.php:20: byNumber only returns a trivial value
-  - backend/src/Services/CorrespondenceService.php:25: overdue only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## costing — stub, score 0.5, FAIL
@@ -1441,13 +1388,13 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in fixed-assets.depreciation.posted: no listeners() registration in Providers/ModuleServiceProvider.php
   - in accounting-gl.period.closed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/7):
-  - itemCost: not declared in a src/Contracts interface
-  - woCost: not declared in a src/Contracts interface
-  - wipValue: not declared in a src/Contracts interface
-  - margin: not declared in a src/Contracts interface
-  - simulate: not declared in a src/Contracts interface
-  - valuationOf: not declared in a src/Contracts interface
-  - runPeriod: not declared in a src/Contracts interface
+  - itemCost: no implementation of CostingServiceInterface
+  - woCost: no implementation of CostingServiceInterface
+  - wipValue: no implementation of CostingServiceInterface
+  - margin: no implementation of CostingServiceInterface
+  - simulate: no implementation of CostingServiceInterface
+  - valuationOf: no implementation of CostingServiceInterface
+  - runPeriod: no implementation of CostingServiceInterface
 - rule_cov 0% (0/13):
   - rule 1 "standard roll-up: multi-level via BomService + RoutingService.costR...": no test named test_rule_*standard*roll*
   - rule 2 "simulation mode doesn't activate": no test named test_rule_*simulation*mode*
@@ -1525,14 +1472,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - forecast: in spec but not declared in manifest ai.capabilities
   - forecast: no test named *forecast*off* with assertions
   - forecast: no test named *forecast*fake* with assertions
-- anti-gaming: 7 finding(s)
-  - backend/src/Services/CostingService.php:15: itemCost only returns a trivial value
-  - backend/src/Services/CostingService.php:20: woCost only returns a trivial value
-  - backend/src/Services/CostingService.php:25: wipValue only returns a trivial value
-  - backend/src/Services/CostingService.php:30: margin only returns a trivial value
-  - backend/src/Services/CostingService.php:35: simulate only returns a trivial value
-  - backend/src/Services/CostingService.php:40: valuationOf only returns a trivial value
-  - backend/src/Services/CostingService.php:45: runPeriod only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## crm — stub, score 0.2, FAIL
@@ -1552,9 +1492,9 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in sales.quotation.order.*: no listeners() registration in Providers/ModuleServiceProvider.php
   - in ticketing.ticket.created: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/3):
-  - customer360: not declared in a src/Contracts interface
-  - openOpportunities: not declared in a src/Contracts interface
-  - pipeline: not declared in a src/Contracts interface
+  - customer360: no implementation of CrmServiceInterface
+  - openOpportunities: no implementation of CrmServiceInterface
+  - pipeline: no implementation of CrmServiceInterface
 - rule_cov 0% (0/1):
   - rule 1 "lead→party+contact+opportunity conversion (calls PartyService contr...": no test named test_rule_*lead*party*
 - perm_cov 2.4% (1/42):
@@ -1613,10 +1553,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - forecast: in spec but not declared in manifest ai.capabilities
   - forecast: no test named *forecast*off* with assertions
   - forecast: no test named *forecast*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/CrmService.php:15: customer360 only returns a trivial value
-  - backend/src/Services/CrmService.php:20: openOpportunities only returns a trivial value
-  - backend/src/Services/CrmService.php:25: pipeline only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## demand-forecast — stub, score 5.7, FAIL
@@ -1631,11 +1568,11 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out demand-forecast.forecast.adopted: not emitted via DomainEvent in src/
   - in sales.invoice.issued: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/5):
-  - run: not declared in a src/Contracts interface
-  - results: not declared in a src/Contracts interface
-  - latest: not declared in a src/Contracts interface
-  - adopt: not declared in a src/Contracts interface
-  - accuracy: not declared in a src/Contracts interface
+  - run: no implementation of DemandForecastServiceInterface
+  - results: no implementation of DemandForecastServiceInterface
+  - latest: no implementation of DemandForecastServiceInterface
+  - adopt: no implementation of DemandForecastServiceInterface
+  - accuracy: no implementation of DemandForecastServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "series classification (ADI/CV²) selects method families": no test named test_rule_*series*classification*
   - rule 2 "automatic backtesting (rolling origin) picks the best method per se...": no test named test_rule_*automatic*backtesting*
@@ -1671,12 +1608,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - adopted_forecast: detail page web/pages/AdoptedForecastDetailPage.tsx missing
   - adopted_forecast: no web/i18n/fa.json keys under "adopted_forecast."
 - ai_cov 100% (0/0): complete
-- anti-gaming: 5 finding(s)
-  - backend/src/Services/DemandForecastService.php:15: run only returns a trivial value
-  - backend/src/Services/DemandForecastService.php:20: results only returns a trivial value
-  - backend/src/Services/DemandForecastService.php:25: latest only returns a trivial value
-  - backend/src/Services/DemandForecastService.php:30: adopt only returns a trivial value
-  - backend/src/Services/DemandForecastService.php:35: accuracy only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## doc-ocr — stub, score 5.7, FAIL
@@ -1691,10 +1623,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out doc-ocr.extraction.approved: not emitted via DomainEvent in src/ and not in manifest emits
   - in document-mgmt.document.uploaded: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - extract: not declared in a src/Contracts interface
-  - result: not declared in a src/Contracts interface
-  - approve: not declared in a src/Contracts interface
-  - textOf: not declared in a src/Contracts interface
+  - extract: no implementation of DocOcrServiceInterface
+  - result: no implementation of DocOcrServiceInterface
+  - approve: no implementation of DocOcrServiceInterface
+  - textOf: no implementation of DocOcrServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "pipeline: digital-PDF text extraction first": no test named test_rule_*pipeline*digital*
   - rule 2 "if scanned → image preprocessing (deskew/denoise) → OCR (Tesseract ...": no test named test_rule_*scanned*image*
@@ -1728,11 +1660,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - review_task: detail page web/pages/ReviewTaskDetailPage.tsx missing
   - review_task: no web/i18n/fa.json keys under "review_task."
 - ai_cov 100% (0/0): complete
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/DocOcrService.php:15: extract only returns a trivial value
-  - backend/src/Services/DocOcrService.php:20: result only returns a trivial value
-  - backend/src/Services/DocOcrService.php:25: approve only returns a trivial value
-  - backend/src/Services/DocOcrService.php:30: textOf only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## document-mgmt — stub, score 0, FAIL
@@ -1790,10 +1718,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in routing.routing.approved: no listeners() registration in Providers/ModuleServiceProvider.php
   - in work-order.wo.created: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - pendingChanges: not declared in a src/Contracts interface
-  - effectiveRevision: not declared in a src/Contracts interface
-  - impact: not declared in a src/Contracts interface
-  - lifecycle: not declared in a src/Contracts interface
+  - pendingChanges: no implementation of EcoPlmServiceInterface
+  - effectiveRevision: no implementation of EcoPlmServiceInterface
+  - impact: no implementation of EcoPlmServiceInterface
+  - lifecycle: no implementation of EcoPlmServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "impact analysis uses BomService::whereUsed and routing/doc links": no test named test_rule_*impact*analysis*
   - rule 2 "approval workflow with parallel discipline reviewers (engineering, ...": no test named test_rule_*approval*workflow*
@@ -1850,11 +1778,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - next_action: in spec but not declared in manifest ai.capabilities
   - next_action: no test named *next_action*off* with assertions
   - next_action: no test named *next_action*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/EcoPlmService.php:15: pendingChanges only returns a trivial value
-  - backend/src/Services/EcoPlmService.php:20: effectiveRevision only returns a trivial value
-  - backend/src/Services/EcoPlmService.php:25: impact only returns a trivial value
-  - backend/src/Services/EcoPlmService.php:30: lifecycle only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## energy-utilities — stub, score 0.4, FAIL
@@ -1873,10 +1797,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in work-order.output.received: no listeners() registration in Providers/ModuleServiceProvider.php
   - in mes.production.reported: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - consumption: not declared in a src/Contracts interface
-  - cost: not declared in a src/Contracts interface
-  - sec: not declared in a src/Contracts interface
-  - allocation: not declared in a src/Contracts interface
+  - consumption: no implementation of EnergyUtilitiesServiceInterface
+  - cost: no implementation of EnergyUtilitiesServiceInterface
+  - sec: no implementation of EnergyUtilitiesServiceInterface
+  - allocation: no implementation of EnergyUtilitiesServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "consumption = reading deltas with rollover/replace handling": no test named test_rule_*consumption*reading*
   - rule 2 "submeter hierarchy reconciliation (sum of children vs parent)": no test named test_rule_*submeter*hierarchy*
@@ -1942,11 +1866,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/EnergyUtilitiesService.php:15: consumption only returns a trivial value
-  - backend/src/Services/EnergyUtilitiesService.php:20: cost only returns a trivial value
-  - backend/src/Services/EnergyUtilitiesService.php:25: sec only returns a trivial value
-  - backend/src/Services/EnergyUtilitiesService.php:30: allocation only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## failure-prediction — stub, score 5.8, FAIL
@@ -1963,10 +1883,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in condition-monitoring-iot.alarm.*: no listeners() registration in Providers/ModuleServiceProvider.php
   - in asset-registry.meter.updated: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - scores: not declared in a src/Contracts interface
-  - explain: not declared in a src/Contracts interface
-  - topRisks: not declared in a src/Contracts interface
-  - feedback: not declared in a src/Contracts interface
+  - scores: no implementation of FailurePredictionServiceInterface
+  - explain: no implementation of FailurePredictionServiceInterface
+  - topRisks: no implementation of FailurePredictionServiceInterface
+  - feedback: no implementation of FailurePredictionServiceInterface
 - rule_cov 0% (0/7):
   - rule 1 "features from cmms history (MTBF trend, failure codes, downtime), m...": no test named test_rule_*features*cmms*
   - rule 2 "cold start**: classes with little history use transparent baselines...": no test named test_rule_*cold*start*
@@ -2000,11 +1920,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - feature_snapshot: detail page web/pages/FeatureSnapshotDetailPage.tsx missing
   - feature_snapshot: no web/i18n/fa.json keys under "feature_snapshot."
 - ai_cov 100% (0/0): complete
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/FailurePredictionService.php:15: scores only returns a trivial value
-  - backend/src/Services/FailurePredictionService.php:20: explain only returns a trivial value
-  - backend/src/Services/FailurePredictionService.php:25: topRisks only returns a trivial value
-  - backend/src/Services/FailurePredictionService.php:30: feedback only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## fixed-assets — stub, score 0.5, FAIL
@@ -2021,10 +1937,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in ar-ap.invoice.posted: no listeners() registration in Providers/ModuleServiceProvider.php
   - in accounting-gl.period.closed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - bookValue: not declared in a src/Contracts interface
-  - schedule: not declared in a src/Contracts interface
-  - registerFromInvoiceLine: not declared in a src/Contracts interface
-  - runDepreciation: not declared in a src/Contracts interface
+  - bookValue: no implementation of FixedAssetsServiceInterface
+  - schedule: no implementation of FixedAssetsServiceInterface
+  - registerFromInvoiceLine: no implementation of FixedAssetsServiceInterface
+  - runDepreciation: no implementation of FixedAssetsServiceInterface
 - rule_cov 0% (0/5):
   - rule 1 "depreciation methods straight-line, declining balance, units-of-pro...": no test named test_rule_*depreciation*methods*
   - rule 2 "first/last-period conventions (monthly, daily)": no test named test_rule_*first*last*
@@ -2070,11 +1986,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - autofill: in spec but not declared in manifest ai.capabilities
   - autofill: no test named *autofill*off* with assertions
   - autofill: no test named *autofill*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/FixedAssetsService.php:15: bookValue only returns a trivial value
-  - backend/src/Services/FixedAssetsService.php:20: schedule only returns a trivial value
-  - backend/src/Services/FixedAssetsService.php:25: registerFromInvoiceLine only returns a trivial value
-  - backend/src/Services/FixedAssetsService.php:30: runDepreciation only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## forex-lc — stub, score 0.3, FAIL
@@ -2094,10 +2006,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in ar-ap.invoice.posted: no listeners() registration in Providers/ModuleServiceProvider.php
   - in treasury.payment.executed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - exposure: not declared in a src/Contracts interface
-  - lcFor: not declared in a src/Contracts interface
-  - guaranteesExpiring: not declared in a src/Contracts interface
-  - rateAt: not declared in a src/Contracts interface
+  - exposure: no implementation of ForexLcServiceInterface
+  - lcFor: no implementation of ForexLcServiceInterface
+  - guaranteesExpiring: no implementation of ForexLcServiceInterface
+  - rateAt: no implementation of ForexLcServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "LC utilization tracked against PO/shipments": no test named test_rule_*utilization*tracked*
   - rule 2 "amendment workflow": no test named test_rule_*amendment*workflow*
@@ -2157,11 +2069,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - anomaly: in spec but not declared in manifest ai.capabilities
   - anomaly: no test named *anomaly*off* with assertions
   - anomaly: no test named *anomaly*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/ForexLcService.php:15: exposure only returns a trivial value
-  - backend/src/Services/ForexLcService.php:20: lcFor only returns a trivial value
-  - backend/src/Services/ForexLcService.php:25: guaranteesExpiring only returns a trivial value
-  - backend/src/Services/ForexLcService.php:30: rateAt only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## form-builder — stub, score 0, FAIL
@@ -2201,9 +2109,9 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in weighbridge.ticket.completed: no listeners() registration in Providers/ModuleServiceProvider.php
   - in hse.permit.issued: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/3):
-  - onSite: not declared in a src/Contracts interface
-  - materialPass: not declared in a src/Contracts interface
-  - isBlacklisted: not declared in a src/Contracts interface
+  - onSite: no implementation of GateVisitorServiceInterface
+  - materialPass: no implementation of GateVisitorServiceInterface
+  - isBlacklisted: no implementation of GateVisitorServiceInterface
 - rule_cov 0% (0/7):
   - rule 1 "pre-registration by hosts": no test named test_rule_*registration*hosts*
   - rule 2 "check-in with badge and host notification": no test named test_rule_*check*badge*
@@ -2254,10 +2162,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - anomaly: in spec but not declared in manifest ai.capabilities
   - anomaly: no test named *anomaly*off* with assertions
   - anomaly: no test named *anomaly*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/GateVisitorService.php:15: onSite only returns a trivial value
-  - backend/src/Services/GateVisitorService.php:20: materialPass only returns a trivial value
-  - backend/src/Services/GateVisitorService.php:25: isBlacklisted only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## hr-core — stub, score 0.7, FAIL
@@ -2273,14 +2178,14 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out hr-core.employee.terminated: not emitted via DomainEvent in src/
   - out hr-core.employee.updated: not emitted via DomainEvent in src/ and not in manifest emits
 - contract_cov 0% (0/8):
-  - employee: not declared in a src/Contracts interface
-  - byUser: not declared in a src/Contracts interface
-  - byPersonnelNo: not declared in a src/Contracts interface
-  - lookup: not declared in a src/Contracts interface
-  - subordinates: not declared in a src/Contracts interface
-  - activeEmployees: not declared in a src/Contracts interface
-  - employmentAt: not declared in a src/Contracts interface
-  - isActive: not declared in a src/Contracts interface
+  - employee: no implementation of HrCoreServiceInterface
+  - byUser: no implementation of HrCoreServiceInterface
+  - byPersonnelNo: no implementation of HrCoreServiceInterface
+  - lookup: no implementation of HrCoreServiceInterface
+  - subordinates: no implementation of HrCoreServiceInterface
+  - activeEmployees: no implementation of HrCoreServiceInterface
+  - employmentAt: no implementation of HrCoreServiceInterface
+  - isActive: no implementation of HrCoreServiceInterface
 - rule_cov 0% (0/7):
   - rule 1 "national code checksum": no test named test_rule_*national*code*
   - rule 2 "unique personnel_no/national_code": no test named test_rule_*unique*personnel*
@@ -2317,10 +2222,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - autofill: in spec but not declared in manifest ai.capabilities
   - autofill: no test named *autofill*off* with assertions
   - autofill: no test named *autofill*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/HrCoreService.php:20: byUser only returns a trivial value
-  - backend/src/Services/HrCoreService.php:32: subordinates only returns a trivial value
-  - backend/src/Services/HrCoreService.php:34: employmentAt only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## hse — stub, score 0.2, FAIL
@@ -2341,10 +2243,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in training-lms.completion.recorded: no listeners() registration in Providers/ModuleServiceProvider.php
   - in attendance.period.closed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - openPermits: not declared in a src/Contracts interface
-  - incidentStats: not declared in a src/Contracts interface
-  - ppeValid: not declared in a src/Contracts interface
-  - overdueActions: not declared in a src/Contracts interface
+  - openPermits: no implementation of HseServiceInterface
+  - incidentStats: no implementation of HseServiceInterface
+  - ppeValid: no implementation of HseServiceInterface
+  - overdueActions: no implementation of HseServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "incident reporting mobile-quick": no test named test_rule_*incident*reporting*
   - rule 2 "investigation mandatory by severity": no test named test_rule_*investigation*mandatory*
@@ -2425,11 +2327,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - autofill: in spec but not declared in manifest ai.capabilities
   - autofill: no test named *autofill*off* with assertions
   - autofill: no test named *autofill*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/HseService.php:15: openPermits only returns a trivial value
-  - backend/src/Services/HseService.php:20: incidentStats only returns a trivial value
-  - backend/src/Services/HseService.php:25: ppeValid only returns a trivial value
-  - backend/src/Services/HseService.php:30: overdueActions only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## import-customs — stub, score 0.3, FAIL
@@ -2448,10 +2346,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in forex-lc.lc.status_changed: no listeners() registration in Providers/ModuleServiceProvider.php
   - in inventory.receipt.posted: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - fileForPo: not declared in a src/Contracts interface
-  - eta: not declared in a src/Contracts interface
-  - landedCost: not declared in a src/Contracts interface
-  - openFiles: not declared in a src/Contracts interface
+  - fileForPo: no implementation of ImportCustomsServiceInterface
+  - eta: no implementation of ImportCustomsServiceInterface
+  - landedCost: no implementation of ImportCustomsServiceInterface
+  - openFiles: no implementation of ImportCustomsServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "duty/tax rates and HS code lists are DATA tables maintained by the ...": no test named test_rule_*duty*rates*
   - rule 2 "demurrage/storage clocks with free-days config and alerts": no test named test_rule_*demurrage*storage*
@@ -2510,11 +2408,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - forecast: in spec but not declared in manifest ai.capabilities
   - forecast: no test named *forecast*off* with assertions
   - forecast: no test named *forecast*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/ImportCustomsService.php:15: fileForPo only returns a trivial value
-  - backend/src/Services/ImportCustomsService.php:20: eta only returns a trivial value
-  - backend/src/Services/ImportCustomsService.php:25: landedCost only returns a trivial value
-  - backend/src/Services/ImportCustomsService.php:30: openFiles only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## inventory — stub, score 0.2, FAIL
@@ -2542,16 +2436,16 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in quality-inspection.lot.decided: no listeners() registration in Providers/ModuleServiceProvider.php
   - in cmms.workorder.parts_requested: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/10):
-  - getBalance: not declared in a src/Contracts interface
-  - getAvailable: not declared in a src/Contracts interface
-  - hasStock: not declared in a src/Contracts interface
-  - reserve: not declared in a src/Contracts interface
-  - release: not declared in a src/Contracts interface
-  - postMovement: not declared in a src/Contracts interface
-  - suggestPicking: not declared in a src/Contracts interface
-  - getLot: not declared in a src/Contracts interface
-  - expiringLots: not declared in a src/Contracts interface
-  - valuationFeed: not declared in a src/Contracts interface
+  - getBalance: no implementation of InventoryServiceInterface
+  - getAvailable: no implementation of InventoryServiceInterface
+  - hasStock: no implementation of InventoryServiceInterface
+  - reserve: no implementation of InventoryServiceInterface
+  - release: no implementation of InventoryServiceInterface
+  - postMovement: no implementation of InventoryServiceInterface
+  - suggestPicking: no implementation of InventoryServiceInterface
+  - getLot: no implementation of InventoryServiceInterface
+  - expiringLots: no implementation of InventoryServiceInterface
+  - valuationFeed: no implementation of InventoryServiceInterface
 - rule_cov 0% (0/12):
   - rule 1 "posting is atomic & immutable (corrections via reversal docs)": no test named test_rule_*posting*atomic*
   - rule 2 "balance lock per (item,warehouse,location,lot) with SELECT…FOR UPDATE": no test named test_rule_*balance*lock*
@@ -2625,11 +2519,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - autofill: in spec but not declared in manifest ai.capabilities
   - autofill: no test named *autofill*off* with assertions
   - autofill: no test named *autofill*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/InventoryService.php:90: suggestPicking only returns a trivial value
-  - backend/src/Services/InventoryService.php:91: getLot only returns a trivial value
-  - backend/src/Services/InventoryService.php:92: expiringLots only returns a trivial value
-  - backend/src/Services/InventoryService.php:93: valuationFeed only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## item-master — stub, score 0.4, FAIL
@@ -2653,17 +2543,17 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in *.item.used: no listeners() registration in Providers/ModuleServiceProvider.php
   - in inventory.stock.first_posted: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/11):
-  - find: not declared in a src/Contracts interface
-  - findByCode: not declared in a src/Contracts interface
-  - search: not declared in a src/Contracts interface
-  - lookup: not declared in a src/Contracts interface
-  - isActive: not declared in a src/Contracts interface
+  - find: no implementation of ItemMasterServiceInterface
+  - findByCode: no implementation of ItemMasterServiceInterface
+  - search: no implementation of ItemMasterServiceInterface
+  - lookup: no implementation of ItemMasterServiceInterface
+  - isActive: no implementation of ItemMasterServiceInterface
   - getTracking: not declared in a src/Contracts interface
   - getUoms: not declared in a src/Contracts interface
-  - convert: not declared in a src/Contracts interface
+  - convert: no implementation of ItemMasterServiceInterface
   - getAttributes: not declared in a src/Contracts interface
   - getAlternates: not declared in a src/Contracts interface
-  - markUsed: not declared in a src/Contracts interface
+  - markUsed: no implementation of ItemMasterServiceInterface
 - rule_cov 0% (0/5):
   - rule 1 "کد کالا (`code`) پس از استفاده شدن کالا (`is_used = 1`) غیرقابل تغی...": no test named test_rule_*code*used*
   - rule 2 "پرچم‌های رهگیری (`is_batch_tracked`, `is_serial_tracked`) در صورت و...": no test named test_rule_*batch*tracked*
@@ -2745,10 +2635,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out lims.coa.issued: not emitted via DomainEvent in src/
   - in quality-inspection.lot.created: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - resultsForLot: not declared in a src/Contracts interface
-  - isLabReleased: not declared in a src/Contracts interface
-  - pendingTests: not declared in a src/Contracts interface
-  - tatStats: not declared in a src/Contracts interface
+  - resultsForLot: no implementation of LimsServiceInterface
+  - isLabReleased: no implementation of LimsServiceInterface
+  - pendingTests: no implementation of LimsServiceInterface
+  - tatStats: no implementation of LimsServiceInterface
 - rule_cov 0% (0/10):
   - rule 1 "sample creation from inspection lots (event) with auto test assignm...": no test named test_rule_*sample*creation*
   - rule 2 "results validated vs limits": no test named test_rule_*results*validated*
@@ -2822,11 +2712,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - forecast: in spec but not declared in manifest ai.capabilities
   - forecast: no test named *forecast*off* with assertions
   - forecast: no test named *forecast*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/LimsService.php:15: resultsForLot only returns a trivial value
-  - backend/src/Services/LimsService.php:20: isLabReleased only returns a trivial value
-  - backend/src/Services/LimsService.php:25: pendingTests only returns a trivial value
-  - backend/src/Services/LimsService.php:30: tatStats only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## lot-traceability — stub, score 0.7, FAIL
@@ -2849,11 +2735,11 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in sales.delivery.posted: no listeners() registration in Providers/ModuleServiceProvider.php
   - in batch-formulation.batch.*: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/5):
-  - backward: not declared in a src/Contracts interface
-  - forward: not declared in a src/Contracts interface
-  - recallScope: not declared in a src/Contracts interface
-  - affectedCustomers: not declared in a src/Contracts interface
-  - where: not declared in a src/Contracts interface
+  - backward: no implementation of LotTraceabilityServiceInterface
+  - forward: no implementation of LotTraceabilityServiceInterface
+  - recallScope: no implementation of LotTraceabilityServiceInterface
+  - affectedCustomers: no implementation of LotTraceabilityServiceInterface
+  - where: no implementation of LotTraceabilityServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "edges generated from events only (no polling): receipt posted (supp...": no test named test_rule_*edges*generated*
   - rule 2 "graph queries forward/backward with qty weighting and time bounds": no test named test_rule_*graph*queries*
@@ -2896,12 +2782,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 5 finding(s)
-  - backend/src/Services/LotTraceabilityService.php:15: backward only returns a trivial value
-  - backend/src/Services/LotTraceabilityService.php:20: forward only returns a trivial value
-  - backend/src/Services/LotTraceabilityService.php:25: recallScope only returns a trivial value
-  - backend/src/Services/LotTraceabilityService.php:30: affectedCustomers only returns a trivial value
-  - backend/src/Services/LotTraceabilityService.php:35: where only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## management-consolidation — stub, score 0.7, FAIL
@@ -2917,9 +2798,9 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in accounting-gl.period.closed: no listeners() registration in Providers/ModuleServiceProvider.php
   - in costing.run.completed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/3):
-  - pnl: not declared in a src/Contracts interface
-  - profitability: not declared in a src/Contracts interface
-  - pack: not declared in a src/Contracts interface
+  - pnl: no implementation of ManagementConsolidationServiceInterface
+  - profitability: no implementation of ManagementConsolidationServiceInterface
+  - pack: no implementation of ManagementConsolidationServiceInterface
 - rule_cov 0% (0/4):
   - rule 1 "built on datasets only: management P&L by cost center/plant, produc...": no test named test_rule_*built*datasets*
   - rule 2 "packs frozen at publish with snapshots": no test named test_rule_*packs*frozen*
@@ -2964,10 +2845,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - anomaly: in spec but not declared in manifest ai.capabilities
   - anomaly: no test named *anomaly*off* with assertions
   - anomaly: no test named *anomaly*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/ManagementConsolidationService.php:15: pnl only returns a trivial value
-  - backend/src/Services/ManagementConsolidationService.php:20: profitability only returns a trivial value
-  - backend/src/Services/ManagementConsolidationService.php:25: pack only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## mes — stub, score 0.6, FAIL
@@ -2995,11 +2873,11 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in quality-inspection.lot.decided: no listeners() registration in Providers/ModuleServiceProvider.php
   - in asset-registry.asset.status_changed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/5):
-  - runningOps: not declared in a src/Contracts interface
-  - oeeInputs: not declared in a src/Contracts interface
-  - downtime: not declared in a src/Contracts interface
-  - tagValue: not declared in a src/Contracts interface
-  - operatorStatus: not declared in a src/Contracts interface
+  - runningOps: no implementation of MesServiceInterface
+  - oeeInputs: no implementation of MesServiceInterface
+  - downtime: no implementation of MesServiceInterface
+  - tagValue: no implementation of MesServiceInterface
+  - operatorStatus: no implementation of MesServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "operator must be qualified for operation if skills enforced (hr-cor...": no test named test_rule_*operator*qualified*
   - rule 2 "one active run per operator/work-center rules (configurable parallel)": no test named test_rule_*active*operator*
@@ -3062,12 +2940,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 5 finding(s)
-  - backend/src/Services/MesService.php:15: runningOps only returns a trivial value
-  - backend/src/Services/MesService.php:20: oeeInputs only returns a trivial value
-  - backend/src/Services/MesService.php:25: downtime only returns a trivial value
-  - backend/src/Services/MesService.php:30: tagValue only returns a trivial value
-  - backend/src/Services/MesService.php:35: operatorStatus only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## mps — stub, score 0.6, FAIL
@@ -3087,11 +2960,11 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in demand-forecast.forecast.published: no listeners() registration in Providers/ModuleServiceProvider.php
   - in mrp.run.completed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/5):
-  - atp: not declared in a src/Contracts interface
-  - plan: not declared in a src/Contracts interface
-  - forecast: not declared in a src/Contracts interface
-  - releasePlan: not declared in a src/Contracts interface
-  - scenarioCompare: not declared in a src/Contracts interface
+  - atp: no implementation of MpsServiceInterface
+  - plan: no implementation of MpsServiceInterface
+  - forecast: no implementation of MpsServiceInterface
+  - releasePlan: no implementation of MpsServiceInterface
+  - scenarioCompare: no implementation of MpsServiceInterface
 - rule_cov 0% (0/7):
   - rule 1 "demand = max/blend of forecast and actual orders within demand fenc...": no test named test_rule_*demand*blend*
   - rule 2 "beyond planning fence suggestions free, inside fence frozen": no test named test_rule_*beyond*planning*
@@ -3140,12 +3013,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - nl_report: in spec but not declared in manifest ai.capabilities
   - nl_report: no test named *nl_report*off* with assertions
   - nl_report: no test named *nl_report*fake* with assertions
-- anti-gaming: 5 finding(s)
-  - backend/src/Services/MpsService.php:15: atp only returns a trivial value
-  - backend/src/Services/MpsService.php:20: plan only returns a trivial value
-  - backend/src/Services/MpsService.php:25: forecast only returns a trivial value
-  - backend/src/Services/MpsService.php:30: releasePlan only returns a trivial value
-  - backend/src/Services/MpsService.php:35: scenarioCompare only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## mrp — stub, score 0.7, FAIL
@@ -3166,12 +3034,12 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in mps.plan.released: no listeners() registration in Providers/ModuleServiceProvider.php
   - in reorder-point.policy.changed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/6):
-  - runStatus: not declared in a src/Contracts interface
-  - plannedOrders: not declared in a src/Contracts interface
-  - pegging: not declared in a src/Contracts interface
-  - firm: not declared in a src/Contracts interface
-  - requirements: not declared in a src/Contracts interface
-  - mrpParams: not declared in a src/Contracts interface
+  - runStatus: no implementation of MrpServiceInterface
+  - plannedOrders: no implementation of MrpServiceInterface
+  - pegging: no implementation of MrpServiceInterface
+  - firm: no implementation of MrpServiceInterface
+  - requirements: no implementation of MrpServiceInterface
+  - mrpParams: no implementation of MrpServiceInterface
 - rule_cov 0% (0/9):
   - rule 1 "low-level code computation": no test named test_rule_*level*code*
   - rule 2 "per level: gross requirement (independent demand from sales backlog...": no test named test_rule_*level*gross*
@@ -3220,13 +3088,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - nl_report: in spec but not declared in manifest ai.capabilities
   - nl_report: no test named *nl_report*off* with assertions
   - nl_report: no test named *nl_report*fake* with assertions
-- anti-gaming: 6 finding(s)
-  - backend/src/Services/MrpService.php:15: runStatus only returns a trivial value
-  - backend/src/Services/MrpService.php:20: plannedOrders only returns a trivial value
-  - backend/src/Services/MrpService.php:25: pegging only returns a trivial value
-  - backend/src/Services/MrpService.php:30: firm only returns a trivial value
-  - backend/src/Services/MrpService.php:35: requirements only returns a trivial value
-  - backend/src/Services/MrpService.php:40: mrpParams only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## multi-company — stub, score 0, FAIL
@@ -3267,10 +3129,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in quality-inspection.lot.decided: no listeners() registration in Providers/ModuleServiceProvider.php
   - in batch-formulation.deviation.raised: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - openNcrs: not declared in a src/Contracts interface
-  - defectStats: not declared in a src/Contracts interface
-  - supplierNcrCount: not declared in a src/Contracts interface
-  - capaDue: not declared in a src/Contracts interface
+  - openNcrs: no implementation of NcrCapaServiceInterface
+  - defectStats: no implementation of NcrCapaServiceInterface
+  - supplierNcrCount: no implementation of NcrCapaServiceInterface
+  - capaDue: no implementation of NcrCapaServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "NCR can be created from events (`quality-inspection.result.out_of_s...": no test named test_rule_*created*events*
   - rule 2 "disposition triggers stock actions through events (scrap, return, r...": no test named test_rule_*disposition*triggers*
@@ -3332,11 +3194,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - next_action: in spec but not declared in manifest ai.capabilities
   - next_action: no test named *next_action*off* with assertions
   - next_action: no test named *next_action*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/NcrCapaService.php:15: openNcrs only returns a trivial value
-  - backend/src/Services/NcrCapaService.php:20: defectStats only returns a trivial value
-  - backend/src/Services/NcrCapaService.php:25: supplierNcrCount only returns a trivial value
-  - backend/src/Services/NcrCapaService.php:30: capaDue only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## nl-report-assistant — stub, score 5.8, FAIL
@@ -3349,9 +3207,9 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
 - event_cov 0% (0/1):
   - out nl-report-assistant.question.saved: not emitted via DomainEvent in src/
 - contract_cov 0% (0/3):
-  - ask: not declared in a src/Contracts interface
-  - validateSpec: not declared in a src/Contracts interface
-  - save: not declared in a src/Contracts interface
+  - ask: no implementation of NlReportAssistantServiceInterface
+  - validateSpec: no implementation of NlReportAssistantServiceInterface
+  - save: no implementation of NlReportAssistantServiceInterface
 - rule_cov 0% (0/10):
   - rule 1 "LLM NEVER writes SQL: it must output a **QuerySpec JSON** validated...": no test named test_rule_*writes*output*
   - rule 2 "validation failures trigger one guided retry then a clarifying ques...": no test named test_rule_*validation*failures*
@@ -3388,10 +3246,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - feedback: detail page web/pages/FeedbackDetailPage.tsx missing
   - feedback: no web/i18n/fa.json keys under "feedback."
 - ai_cov 100% (0/0): complete
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/NlReportAssistantService.php:15: ask only returns a trivial value
-  - backend/src/Services/NlReportAssistantService.php:20: validateSpec only returns a trivial value
-  - backend/src/Services/NlReportAssistantService.php:25: save only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## notifications — stub, score 0, FAIL
@@ -3425,10 +3280,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in work-order.operation.completed: no listeners() registration in Providers/ModuleServiceProvider.php
   - in cmms.workorder.completed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - oee: not declared in a src/Contracts interface
-  - losses: not declared in a src/Contracts interface
-  - trend: not declared in a src/Contracts interface
-  - benchmark: not declared in a src/Contracts interface
+  - oee: no implementation of OeeServiceInterface
+  - losses: no implementation of OeeServiceInterface
+  - trend: no implementation of OeeServiceInterface
+  - benchmark: no implementation of OeeServiceInterface
 - rule_cov 0% (0/9):
   - rule 1 "planned time from calendar/shift minus planned downtime categories": no test named test_rule_*planned*time*
   - rule 2 "availability = run/planned": no test named test_rule_*availability*planned*
@@ -3475,11 +3330,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - nl_report: in spec but not declared in manifest ai.capabilities
   - nl_report: no test named *nl_report*off* with assertions
   - nl_report: no test named *nl_report*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/OeeService.php:15: oee only returns a trivial value
-  - backend/src/Services/OeeService.php:20: losses only returns a trivial value
-  - backend/src/Services/OeeService.php:25: trend only returns a trivial value
-  - backend/src/Services/OeeService.php:30: benchmark only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## org-structure — stub, score 0.5, FAIL
@@ -3499,16 +3350,16 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out org-structure.position.vacated: not emitted via DomainEvent in src/
   - in hr-core.employee.transferred: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/10):
-  - unitsTree: not declared in a src/Contracts interface
-  - unit: not declared in a src/Contracts interface
-  - managerOf: not declared in a src/Contracts interface
-  - approverChain: not declared in a src/Contracts interface
-  - costCenter: not declared in a src/Contracts interface
-  - costCenters: not declared in a src/Contracts interface
-  - isWorkday: not declared in a src/Contracts interface
-  - workingMinutes: not declared in a src/Contracts interface
-  - shift: not declared in a src/Contracts interface
-  - shiftsFor: not declared in a src/Contracts interface
+  - unitsTree: no implementation of OrgStructureServiceInterface
+  - unit: no implementation of OrgStructureServiceInterface
+  - managerOf: no implementation of OrgStructureServiceInterface
+  - approverChain: no implementation of OrgStructureServiceInterface
+  - costCenter: no implementation of OrgStructureServiceInterface
+  - costCenters: no implementation of OrgStructureServiceInterface
+  - isWorkday: no implementation of OrgStructureServiceInterface
+  - workingMinutes: no implementation of OrgStructureServiceInterface
+  - shift: no implementation of OrgStructureServiceInterface
+  - shiftsFor: no implementation of OrgStructureServiceInterface
 - rule_cov 0% (0/5):
   - rule 1 "no cycles in trees": no test named test_rule_*cycles*trees*
   - rule 2 "position assignment date overlaps only if not primary": no test named test_rule_*position*assignment*
@@ -3554,11 +3405,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - anomaly: in spec but not declared in manifest ai.capabilities
   - anomaly: no test named *anomaly*off* with assertions
   - anomaly: no test named *anomaly*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/OrgStructureService.php:26: managerOf only returns a trivial value
-  - backend/src/Services/OrgStructureService.php:27: approverChain only returns a trivial value
-  - backend/src/Services/OrgStructureService.php:47: shift only returns a trivial value
-  - backend/src/Services/OrgStructureService.php:48: shiftsFor only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## parking-vehicles — stub, score 0.2, FAIL
@@ -3578,9 +3425,9 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in gate-visitor.vehicle.exited: no listeners() registration in Providers/ModuleServiceProvider.php
   - in cmms.workorder.completed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/3):
-  - availability: not declared in a src/Contracts interface
-  - documentsExpiring: not declared in a src/Contracts interface
-  - costPerKm: not declared in a src/Contracts interface
+  - availability: no implementation of ParkingVehiclesServiceInterface
+  - documentsExpiring: no implementation of ParkingVehiclesServiceInterface
+  - costPerKm: no implementation of ParkingVehiclesServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "document expiry alerts": no test named test_rule_*document*expiry*
   - rule 2 "trip approval workflow": no test named test_rule_*trip*approval*
@@ -3648,10 +3495,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/ParkingVehiclesService.php:15: availability only returns a trivial value
-  - backend/src/Services/ParkingVehiclesService.php:20: documentsExpiring only returns a trivial value
-  - backend/src/Services/ParkingVehiclesService.php:25: costPerKm only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## party-master — stub, score 0.5, FAIL
@@ -3667,16 +3511,16 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out party-master.party.merged: not emitted via DomainEvent in src/
   - in *.party.used: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/10):
-  - find: not declared in a src/Contracts interface
-  - findByNationalId: not declared in a src/Contracts interface
-  - lookup: not declared in a src/Contracts interface
-  - isActive: not declared in a src/Contracts interface
-  - getAddresses: not declared in a src/Contracts interface
-  - getDefaultBank: not declared in a src/Contracts interface
-  - getCreditLimit: not declared in a src/Contracts interface
-  - getPaymentTerm: not declared in a src/Contracts interface
-  - validateIds: not declared in a src/Contracts interface
-  - markUsed: not declared in a src/Contracts interface
+  - find: no implementation of PartyMasterServiceInterface
+  - findByNationalId: no implementation of PartyMasterServiceInterface
+  - lookup: no implementation of PartyMasterServiceInterface
+  - isActive: no implementation of PartyMasterServiceInterface
+  - getAddresses: no implementation of PartyMasterServiceInterface
+  - getDefaultBank: no implementation of PartyMasterServiceInterface
+  - getCreditLimit: no implementation of PartyMasterServiceInterface
+  - getPaymentTerm: no implementation of PartyMasterServiceInterface
+  - validateIds: no implementation of PartyMasterServiceInterface
+  - markUsed: no implementation of PartyMasterServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "validate Iranian national id checksum (10d) and legal-entity id (11...": no test named test_rule_*validate*iranian*
   - rule 2 "unique national_id/economic_code per company (warn/override with re...": no test named test_rule_*unique*national*
@@ -3728,10 +3572,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: tools not registered in aiTools(): party-master.get_history
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/PartyMasterService.php:55: getAddresses only returns a trivial value
-  - backend/src/Services/PartyMasterService.php:56: getDefaultBank only returns a trivial value
-  - backend/src/Services/PartyMasterService.php:62: getPaymentTerm only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## payroll — stub, score 0.4, FAIL
@@ -3752,10 +3593,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in attendance.period.closed: no listeners() registration in Providers/ModuleServiceProvider.php
   - in hr-core.employee.terminated: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - payslip: not declared in a src/Contracts interface
-  - costByCostCenter: not declared in a src/Contracts interface
-  - headcountCost: not declared in a src/Contracts interface
-  - previewRun: not declared in a src/Contracts interface
+  - payslip: no implementation of PayrollServiceInterface
+  - costByCostCenter: no implementation of PayrollServiceInterface
+  - headcountCost: no implementation of PayrollServiceInterface
+  - previewRun: no implementation of PayrollServiceInterface
 - rule_cov 0% (0/9):
   - rule 1 "run reads attendance.period.closed summaries + employee salary effe...": no test named test_rule_*reads*attendance*
   - rule 2 "formulas via safe expression engine": no test named test_rule_*formulas*safe*
@@ -3819,11 +3660,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - anomaly: in spec but not declared in manifest ai.capabilities
   - anomaly: no test named *anomaly*off* with assertions
   - anomaly: no test named *anomaly*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/PayrollService.php:15: payslip only returns a trivial value
-  - backend/src/Services/PayrollService.php:20: costByCostCenter only returns a trivial value
-  - backend/src/Services/PayrollService.php:25: headcountCost only returns a trivial value
-  - backend/src/Services/PayrollService.php:30: previewRun only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## pricing — stub, score 0.8, FAIL
@@ -3839,10 +3676,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out pricing.price.changed: not emitted via DomainEvent in src/
   - in costing.cost.updated: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - resolve: not declared in a src/Contracts interface
-  - resolveBulk: not declared in a src/Contracts interface
-  - explain: not declared in a src/Contracts interface
-  - activeLists: not declared in a src/Contracts interface
+  - resolve: no implementation of PricingServiceInterface
+  - resolveBulk: no implementation of PricingServiceInterface
+  - explain: no implementation of PricingServiceInterface
+  - activeLists: no implementation of PricingServiceInterface
 - rule_cov 0% (0/7):
   - rule 1 "resolution order: party-specific > group > default list": no test named test_rule_*resolution*order*
   - rule 2 "tiers by min_qty": no test named test_rule_*tiers*
@@ -3881,9 +3718,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 2 finding(s)
-  - backend/src/Services/PricingService.php:34: resolveBulk only returns a trivial value
-  - backend/src/Services/PricingService.php:35: explain only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## print-barcode-qr — stub, score 0, FAIL
@@ -3923,10 +3758,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in sales.order.confirmed: no listeners() registration in Providers/ModuleServiceProvider.php
   - in hr-core.employee.*: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - project: not declared in a src/Contracts interface
-  - tasks: not declared in a src/Contracts interface
-  - progress: not declared in a src/Contracts interface
-  - evm: not declared in a src/Contracts interface
+  - project: no implementation of ProjectMgmtServiceInterface
+  - tasks: no implementation of ProjectMgmtServiceInterface
+  - progress: no implementation of ProjectMgmtServiceInterface
+  - evm: no implementation of ProjectMgmtServiceInterface
 - rule_cov 0% (0/1):
   - rule 1 "scheduling forward pass with calendars (OrgService), critical path ...": no test named test_rule_*scheduling*forward*
 - perm_cov 2.5% (1/40):
@@ -3988,11 +3823,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - next_action: in spec but not declared in manifest ai.capabilities
   - next_action: no test named *next_action*off* with assertions
   - next_action: no test named *next_action*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/ProjectMgmtService.php:15: project only returns a trivial value
-  - backend/src/Services/ProjectMgmtService.php:20: tasks only returns a trivial value
-  - backend/src/Services/ProjectMgmtService.php:25: progress only returns a trivial value
-  - backend/src/Services/ProjectMgmtService.php:30: evm only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## purchase-order — stub, score 0.4, FAIL
@@ -4014,11 +3845,11 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in ar-ap.invoice.posted: no listeners() registration in Providers/ModuleServiceProvider.php
   - in purchase-request.line.converted: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/5):
-  - find: not declared in a src/Contracts interface
-  - openLines: not declared in a src/Contracts interface
-  - expectedReceipts: not declared in a src/Contracts interface
-  - receivedSummary: not declared in a src/Contracts interface
-  - markInvoiced: not declared in a src/Contracts interface
+  - find: no implementation of PurchaseOrderServiceInterface
+  - openLines: no implementation of PurchaseOrderServiceInterface
+  - expectedReceipts: no implementation of PurchaseOrderServiceInterface
+  - receivedSummary: no implementation of PurchaseOrderServiceInterface
+  - markInvoiced: no implementation of PurchaseOrderServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "price defaults from rfq award/pricing(purchase)/last PO": no test named test_rule_*price*defaults*
   - rule 2 "tax from settings (VAT rate per company, exemptions per item category)": no test named test_rule_*settings*rate*
@@ -4072,12 +3903,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 5 finding(s)
-  - backend/src/Services/PurchaseOrderService.php:15: find only returns a trivial value
-  - backend/src/Services/PurchaseOrderService.php:20: openLines only returns a trivial value
-  - backend/src/Services/PurchaseOrderService.php:25: expectedReceipts only returns a trivial value
-  - backend/src/Services/PurchaseOrderService.php:30: receivedSummary only returns a trivial value
-  - backend/src/Services/PurchaseOrderService.php:35: markInvoiced only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## purchase-request — stub, score 0.5, FAIL
@@ -4094,10 +3920,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in reorder-point.suggestion.accepted: no listeners() registration in Providers/ModuleServiceProvider.php
   - in purchase-order.line.created: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - openLines: not declared in a src/Contracts interface
-  - markConverted: not declared in a src/Contracts interface
-  - release: not declared in a src/Contracts interface
-  - find: not declared in a src/Contracts interface
+  - openLines: no implementation of PurchaseRequestServiceInterface
+  - markConverted: no implementation of PurchaseRequestServiceInterface
+  - release: no implementation of PurchaseRequestServiceInterface
+  - find: no implementation of PurchaseRequestServiceInterface
 - rule_cov 0% (0/5):
   - rule 1 "free-text lines allowed only if setting on and require later item c...": no test named test_rule_*free*text*
   - rule 2 "budget check (BudgetService optional, warn\|block)": no test named test_rule_*budget*check*
@@ -4134,11 +3960,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/PurchaseRequestService.php:15: openLines only returns a trivial value
-  - backend/src/Services/PurchaseRequestService.php:20: markConverted only returns a trivial value
-  - backend/src/Services/PurchaseRequestService.php:25: release only returns a trivial value
-  - backend/src/Services/PurchaseRequestService.php:30: find only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## quality-inspection — stub, score 1.3, FAIL
@@ -4157,11 +3979,11 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out quality-inspection.certificate.issued: not emitted via DomainEvent in src/ and not in manifest emits
   - in inventory.receipt.posted: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/5):
-  - lotStatus: not declared in a src/Contracts interface
-  - isReleased: not declared in a src/Contracts interface
-  - supplierScore: not declared in a src/Contracts interface
-  - openLots: not declared in a src/Contracts interface
-  - spc: not declared in a src/Contracts interface
+  - lotStatus: no implementation of QualityInspectionServiceInterface
+  - isReleased: no implementation of QualityInspectionServiceInterface
+  - supplierScore: no implementation of QualityInspectionServiceInterface
+  - openLots: no implementation of QualityInspectionServiceInterface
+  - spc: no implementation of QualityInspectionServiceInterface
 - rule_cov 0% (0/7):
   - rule 1 "lots auto-created on triggers (inventory.receipt.posted→IQC, produc...": no test named test_rule_*lots*auto*
   - rule 2 "sample size from AQL table (configurable data table, include standa...": no test named test_rule_*sample*size*
@@ -4216,12 +4038,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - forecast: in spec but not declared in manifest ai.capabilities
   - forecast: no test named *forecast*off* with assertions
   - forecast: no test named *forecast*fake* with assertions
-- anti-gaming: 5 finding(s)
-  - backend/src/Services/QualityInspectionService.php:15: lotStatus only returns a trivial value
-  - backend/src/Services/QualityInspectionService.php:20: isReleased only returns a trivial value
-  - backend/src/Services/QualityInspectionService.php:25: supplierScore only returns a trivial value
-  - backend/src/Services/QualityInspectionService.php:30: openLots only returns a trivial value
-  - backend/src/Services/QualityInspectionService.php:35: spc only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## recruitment — stub, score 0.3, FAIL
@@ -4238,9 +4055,9 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out recruitment.requisition.filled: not emitted via DomainEvent in src/
   - in hr-core.employee.hired: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/3):
-  - pipeline: not declared in a src/Contracts interface
-  - sourceStats: not declared in a src/Contracts interface
-  - timeToHire: not declared in a src/Contracts interface
+  - pipeline: no implementation of RecruitmentServiceInterface
+  - sourceStats: no implementation of RecruitmentServiceInterface
+  - timeToHire: no implementation of RecruitmentServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "requisition approval vs headcount in org-structure": no test named test_rule_*requisition*approval*
   - rule 2 "duplicate candidate detection (national code/phone/email normalizat...": no test named test_rule_*duplicate*candidate*
@@ -4301,10 +4118,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/RecruitmentService.php:15: pipeline only returns a trivial value
-  - backend/src/Services/RecruitmentService.php:20: sourceStats only returns a trivial value
-  - backend/src/Services/RecruitmentService.php:25: timeToHire only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## reorder-point — stub, score 0.6, FAIL
@@ -4323,10 +4137,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in inventory.issue.posted: no listeners() registration in Providers/ModuleServiceProvider.php
   - in purchase-order.po.received: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - policy: not declared in a src/Contracts interface
-  - suggestions: not declared in a src/Contracts interface
-  - classOf: not declared in a src/Contracts interface
-  - compute: not declared in a src/Contracts interface
+  - policy: no implementation of ReorderPointServiceInterface
+  - suggestions: no implementation of ReorderPointServiceInterface
+  - classOf: no implementation of ReorderPointServiceInterface
+  - compute: no implementation of ReorderPointServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "stats from inventory valuation feed (issues only, excluding transfe...": no test named test_rule_*stats*inventory*
   - rule 2 "safety stock = z×σ formula options": no test named test_rule_*safety*stock*
@@ -4373,11 +4187,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - nl_report: in spec but not declared in manifest ai.capabilities
   - nl_report: no test named *nl_report*off* with assertions
   - nl_report: no test named *nl_report*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/ReorderPointService.php:15: policy only returns a trivial value
-  - backend/src/Services/ReorderPointService.php:20: suggestions only returns a trivial value
-  - backend/src/Services/ReorderPointService.php:25: classOf only returns a trivial value
-  - backend/src/Services/ReorderPointService.php:30: compute only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## report-bi — stub, score 0.4, FAIL
@@ -4392,10 +4202,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out report-bi.report.published: not emitted via DomainEvent in src/
   - out report-bi.kpi.breached: not emitted via DomainEvent in src/
 - contract_cov 0% (0/4):
-  - run: not declared in a src/Contracts interface
-  - datasets: not declared in a src/Contracts interface
-  - kpiValue: not declared in a src/Contracts interface
-  - runSchedule: not declared in a src/Contracts interface
+  - run: no implementation of ReportBiServiceInterface
+  - datasets: no implementation of ReportBiServiceInterface
+  - kpiValue: no implementation of ReportBiServiceInterface
+  - runSchedule: no implementation of ReportBiServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "data access only through DatasetProvider + user's permission and da...": no test named test_rule_*data*access*
   - rule 2 "row-level security preserved": no test named test_rule_*level*security*
@@ -4452,11 +4262,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - next_action: in spec but not declared in manifest ai.capabilities
   - next_action: no test named *next_action*off* with assertions
   - next_action: no test named *next_action*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/ReportBiService.php:15: run only returns a trivial value
-  - backend/src/Services/ReportBiService.php:20: datasets only returns a trivial value
-  - backend/src/Services/ReportBiService.php:25: kpiValue only returns a trivial value
-  - backend/src/Services/ReportBiService.php:30: runSchedule only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## rfq — stub, score 0.6, FAIL
@@ -4472,10 +4278,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out rfq.rfq.sent: not emitted via DomainEvent in src/
   - in purchase-request.pr.approved: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - create: not declared in a src/Contracts interface
-  - getAward: not declared in a src/Contracts interface
-  - bestPrice: not declared in a src/Contracts interface
-  - history: not declared in a src/Contracts interface
+  - create: no implementation of RfqServiceInterface
+  - getAward: no implementation of RfqServiceInterface
+  - bestPrice: no implementation of RfqServiceInterface
+  - history: no implementation of RfqServiceInterface
 - rule_cov 0% (0/7):
   - rule 1 "quotes accepted until deadline (override by permission)": no test named test_rule_*quotes*accepted*
   - rule 2 "comparison normalizes currency/UoM/payment terms (net-present-value...": no test named test_rule_*comparison*normalizes*
@@ -4529,11 +4335,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - anomaly: in spec but not declared in manifest ai.capabilities
   - anomaly: no test named *anomaly*off* with assertions
   - anomaly: no test named *anomaly*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/RfqService.php:15: create only returns a trivial value
-  - backend/src/Services/RfqService.php:20: getAward only returns a trivial value
-  - backend/src/Services/RfqService.php:25: bestPrice only returns a trivial value
-  - backend/src/Services/RfqService.php:30: history only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## routing — stub, score 0.6, FAIL
@@ -4547,11 +4349,11 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out routing.workcenter.updated: not emitted via DomainEvent in src/ and not in manifest emits
   - in asset-registry.asset.status_changed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/5):
-  - findActive: not declared in a src/Contracts interface
-  - workCenter: not declared in a src/Contracts interface
-  - capacity: not declared in a src/Contracts interface
-  - standardTime: not declared in a src/Contracts interface
-  - costRates: not declared in a src/Contracts interface
+  - findActive: no implementation of RoutingServiceInterface
+  - workCenter: no implementation of RoutingServiceInterface
+  - capacity: no implementation of RoutingServiceInterface
+  - standardTime: no implementation of RoutingServiceInterface
+  - costRates: no implementation of RoutingServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "unique op sequence": no test named test_rule_*unique*sequence*
   - rule 2 "approved routing immutable (new revision)": no test named test_rule_*approved*routing*
@@ -4589,12 +4391,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - anomaly: in spec but not declared in manifest ai.capabilities
   - anomaly: no test named *anomaly*off* with assertions
   - anomaly: no test named *anomaly*fake* with assertions
-- anti-gaming: 5 finding(s)
-  - backend/src/Services/RoutingService.php:15: findActive only returns a trivial value
-  - backend/src/Services/RoutingService.php:20: workCenter only returns a trivial value
-  - backend/src/Services/RoutingService.php:25: capacity only returns a trivial value
-  - backend/src/Services/RoutingService.php:30: standardTime only returns a trivial value
-  - backend/src/Services/RoutingService.php:35: costRates only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## sales — stub, score 0.2, FAIL
@@ -4618,10 +4415,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in tax-moadian.invoice.accepted: no listeners() registration in Providers/ModuleServiceProvider.php
   - in tax-moadian.invoice.rejected: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - openOrders: not declared in a src/Contracts interface
-  - backlog: not declared in a src/Contracts interface
-  - invoiceTotals: not declared in a src/Contracts interface
-  - find: not declared in a src/Contracts interface
+  - openOrders: no implementation of SalesServiceInterface
+  - backlog: no implementation of SalesServiceInterface
+  - invoiceTotals: no implementation of SalesServiceInterface
+  - find: no implementation of SalesServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "credit check on confirm (limit, overdue balance via ArApService opt...": no test named test_rule_*credit*check*
   - rule 2 "price via PricingService (manual override needs permission)": no test named test_rule_*price*pricing*
@@ -4699,11 +4496,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - next_action: in spec but not declared in manifest ai.capabilities
   - next_action: no test named *next_action*off* with assertions
   - next_action: no test named *next_action*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/SalesService.php:15: openOrders only returns a trivial value
-  - backend/src/Services/SalesService.php:20: backlog only returns a trivial value
-  - backend/src/Services/SalesService.php:25: invoiceTotals only returns a trivial value
-  - backend/src/Services/SalesService.php:30: find only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## schedule-optimizer — stub, score 5.8, FAIL
@@ -4715,10 +4508,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out schedule-optimizer.solution.ready: not emitted via DomainEvent in src/
   - in scheduling.schedule.draft_requested: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - run: not declared in a src/Contracts interface
-  - status: not declared in a src/Contracts interface
-  - solution: not declared in a src/Contracts interface
-  - compare: not declared in a src/Contracts interface
+  - run: no implementation of ScheduleOptimizerServiceInterface
+  - status: no implementation of ScheduleOptimizerServiceInterface
+  - solution: no implementation of ScheduleOptimizerServiceInterface
+  - compare: no implementation of ScheduleOptimizerServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "payload built by PHP from SchedulingService data (ops, durations, p...": no test named test_rule_*payload*built*
   - rule 2 "Python solves with OR-Tools CP-SAT (job-shop with optional interval...": no test named test_rule_*python*solves*
@@ -4743,11 +4536,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - solution: detail page web/pages/SolutionDetailPage.tsx missing
   - solution: no web/i18n/fa.json keys under "solution."
 - ai_cov 100% (0/0): complete
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/ScheduleOptimizerService.php:15: run only returns a trivial value
-  - backend/src/Services/ScheduleOptimizerService.php:20: status only returns a trivial value
-  - backend/src/Services/ScheduleOptimizerService.php:25: solution only returns a trivial value
-  - backend/src/Services/ScheduleOptimizerService.php:30: compare only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## scheduling — stub, score 0.6, FAIL
@@ -4768,11 +4557,11 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in cmms.workorder.planned: no listeners() registration in Providers/ModuleServiceProvider.php
   - in asset-registry.asset.status_changed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/5):
-  - dispatchList: not declared in a src/Contracts interface
-  - loadByWorkCenter: not declared in a src/Contracts interface
-  - promiseDate: not declared in a src/Contracts interface
-  - reschedule: not declared in a src/Contracts interface
-  - conflicts: not declared in a src/Contracts interface
+  - dispatchList: no implementation of SchedulingServiceInterface
+  - loadByWorkCenter: no implementation of SchedulingServiceInterface
+  - promiseDate: no implementation of SchedulingServiceInterface
+  - reschedule: no implementation of SchedulingServiceInterface
+  - conflicts: no implementation of SchedulingServiceInterface
 - rule_cov 0% (0/5):
   - rule 1 "forward/backward scheduling honoring work-center calendars/shifts (...": no test named test_rule_*forward*backward*
   - rule 2 "dispatch rules (EDD, SPT, critical ratio, custom)": no test named test_rule_*dispatch*critical*
@@ -4823,12 +4612,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 5 finding(s)
-  - backend/src/Services/SchedulingService.php:15: dispatchList only returns a trivial value
-  - backend/src/Services/SchedulingService.php:20: loadByWorkCenter only returns a trivial value
-  - backend/src/Services/SchedulingService.php:25: promiseDate only returns a trivial value
-  - backend/src/Services/SchedulingService.php:30: reschedule only returns a trivial value
-  - backend/src/Services/SchedulingService.php:35: conflicts only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## scrap-byproduct — stub, score 0.8, FAIL
@@ -4848,10 +4632,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in work-order.output.received: no listeners() registration in Providers/ModuleServiceProvider.php
   - in quality-inspection.lot.decided: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - rateByWorkCenter: not declared in a src/Contracts interface
-  - rateByItem: not declared in a src/Contracts interface
-  - expectedByProduct: not declared in a src/Contracts interface
-  - disposition: not declared in a src/Contracts interface
+  - rateByWorkCenter: no implementation of ScrapByproductServiceInterface
+  - rateByItem: no implementation of ScrapByproductServiceInterface
+  - expectedByProduct: no implementation of ScrapByproductServiceInterface
+  - disposition: no implementation of ScrapByproductServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "scrap records created from MES/WO reports and inventory adjustments...": no test named test_rule_*scrap*records*
   - rule 2 "disposition decides stock movement (to scrap warehouse, regrind/rec...": no test named test_rule_*disposition*decides*
@@ -4897,11 +4681,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/ScrapByproductService.php:15: rateByWorkCenter only returns a trivial value
-  - backend/src/Services/ScrapByproductService.php:20: rateByItem only returns a trivial value
-  - backend/src/Services/ScrapByproductService.php:25: expectedByProduct only returns a trivial value
-  - backend/src/Services/ScrapByproductService.php:30: disposition only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## shipping-distribution — stub, score 0.3, FAIL
@@ -4921,10 +4701,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in weighbridge.ticket.completed: no listeners() registration in Providers/ModuleServiceProvider.php
   - in gate-visitor.pass.exited: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - shipmentFor: not declared in a src/Contracts interface
-  - eta: not declared in a src/Contracts interface
-  - carrierCost: not declared in a src/Contracts interface
-  - otif: not declared in a src/Contracts interface
+  - shipmentFor: no implementation of ShippingDistributionServiceInterface
+  - eta: no implementation of ShippingDistributionServiceInterface
+  - carrierCost: no implementation of ShippingDistributionServiceInterface
+  - otif: no implementation of ShippingDistributionServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "load building respects weight/volume limits": no test named test_rule_*load*building*
   - rule 2 "shipment locks deliveries (sales.delivery) status transitions via e...": no test named test_rule_*shipment*locks*
@@ -4978,11 +4758,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - forecast: in spec but not declared in manifest ai.capabilities
   - forecast: no test named *forecast*off* with assertions
   - forecast: no test named *forecast*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/ShippingDistributionService.php:15: shipmentFor only returns a trivial value
-  - backend/src/Services/ShippingDistributionService.php:20: eta only returns a trivial value
-  - backend/src/Services/ShippingDistributionService.php:25: carrierCost only returns a trivial value
-  - backend/src/Services/ShippingDistributionService.php:30: otif only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## supplier-evaluation — stub, score 0.3, FAIL
@@ -5001,11 +4777,11 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in quality-inspection.lot.decided: no listeners() registration in Providers/ModuleServiceProvider.php
   - in ncr-capa.scar.*: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/5):
-  - score: not declared in a src/Contracts interface
-  - grade: not declared in a src/Contracts interface
-  - isApproved: not declared in a src/Contracts interface
-  - asl: not declared in a src/Contracts interface
-  - expiringCerts: not declared in a src/Contracts interface
+  - score: no implementation of SupplierEvaluationServiceInterface
+  - grade: no implementation of SupplierEvaluationServiceInterface
+  - isApproved: no implementation of SupplierEvaluationServiceInterface
+  - asl: no implementation of SupplierEvaluationServiceInterface
+  - expiringCerts: no implementation of SupplierEvaluationServiceInterface
 - rule_cov 0% (0/7):
   - rule 1 "auto metrics from events/datasets (receipt vs promised date → OTIF;...": no test named test_rule_*auto*metrics*
   - rule 2 "manual criteria entered by departments": no test named test_rule_*manual*criteria*
@@ -5065,12 +4841,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - next_action: in spec but not declared in manifest ai.capabilities
   - next_action: no test named *next_action*off* with assertions
   - next_action: no test named *next_action*fake* with assertions
-- anti-gaming: 5 finding(s)
-  - backend/src/Services/SupplierEvaluationService.php:15: score only returns a trivial value
-  - backend/src/Services/SupplierEvaluationService.php:20: grade only returns a trivial value
-  - backend/src/Services/SupplierEvaluationService.php:25: isApproved only returns a trivial value
-  - backend/src/Services/SupplierEvaluationService.php:30: asl only returns a trivial value
-  - backend/src/Services/SupplierEvaluationService.php:35: expiringCerts only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## tax-moadian — stub, score 0.6, FAIL
@@ -5087,11 +4858,11 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in sales.invoice.cancelled: no listeners() registration in Providers/ModuleServiceProvider.php
   - in sales.return.posted: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/5):
-  - statusOf: not declared in a src/Contracts interface
-  - submit: not declared in a src/Contracts interface
-  - inquire: not declared in a src/Contracts interface
-  - validate: not declared in a src/Contracts interface
-  - adapter: not declared in a src/Contracts interface
+  - statusOf: no implementation of TaxMoadianServiceInterface
+  - submit: no implementation of TaxMoadianServiceInterface
+  - inquire: no implementation of TaxMoadianServiceInterface
+  - validate: no implementation of TaxMoadianServiceInterface
+  - adapter: no implementation of TaxMoadianServiceInterface
 - rule_cov 0% (0/9):
   - rule 1 "status machine driven by adapter responses": no test named test_rule_*status*machine*
   - rule 2 "idempotent submission with retry/backoff via outbox": no test named test_rule_*idempotent*submission*
@@ -5132,12 +4903,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - anomaly: in spec but not declared in manifest ai.capabilities
   - anomaly: no test named *anomaly*off* with assertions
   - anomaly: no test named *anomaly*fake* with assertions
-- anti-gaming: 5 finding(s)
-  - backend/src/Services/TaxMoadianService.php:15: statusOf only returns a trivial value
-  - backend/src/Services/TaxMoadianService.php:20: submit only returns a trivial value
-  - backend/src/Services/TaxMoadianService.php:25: inquire only returns a trivial value
-  - backend/src/Services/TaxMoadianService.php:30: validate only returns a trivial value
-  - backend/src/Services/TaxMoadianService.php:35: adapter only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## ticketing — stub, score 0.3, FAIL
@@ -5155,8 +4921,8 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - out ticketing.ticket.sla_breached: not emitted via DomainEvent in src/ and not in manifest emits
   - in cmms.workorder.*: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/2):
-  - openFor: not declared in a src/Contracts interface
-  - slaStats: not declared in a src/Contracts interface
+  - openFor: no implementation of TicketingServiceInterface
+  - slaStats: no implementation of TicketingServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "SLA clocks with business-hours calendar and pausing": no test named test_rule_*clocks*business*
   - rule 2 "auto-assign (round-robin/least-loaded/skill) and escalation levels": no test named test_rule_*auto*assign*
@@ -5216,9 +4982,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - anomaly: in spec but not declared in manifest ai.capabilities
   - anomaly: no test named *anomaly*off* with assertions
   - anomaly: no test named *anomaly*fake* with assertions
-- anti-gaming: 2 finding(s)
-  - backend/src/Services/TicketingService.php:15: openFor only returns a trivial value
-  - backend/src/Services/TicketingService.php:20: slaStats only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## tooling — stub, score 0.6, FAIL
@@ -5238,10 +5002,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in cmms.workorder.completed: no listeners() registration in Providers/ModuleServiceProvider.php
   - in work-order.operation.completed: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - availability: not declared in a src/Contracts interface
-  - lifeLeft: not declared in a src/Contracts interface
-  - required: not declared in a src/Contracts interface
-  - amortizationPerUnit: not declared in a src/Contracts interface
+  - availability: no implementation of ToolingServiceInterface
+  - lifeLeft: no implementation of ToolingServiceInterface
+  - required: no implementation of ToolingServiceInterface
+  - amortizationPerUnit: no implementation of ToolingServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "check-out requires status available": no test named test_rule_*check*requires*
   - rule 2 "life accumulates from MES reports (qty good+scrap × cavities)": no test named test_rule_*life*accumulates*
@@ -5286,11 +5050,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - anomaly: in spec but not declared in manifest ai.capabilities
   - anomaly: no test named *anomaly*off* with assertions
   - anomaly: no test named *anomaly*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/ToolingService.php:15: availability only returns a trivial value
-  - backend/src/Services/ToolingService.php:20: lifeLeft only returns a trivial value
-  - backend/src/Services/ToolingService.php:25: required only returns a trivial value
-  - backend/src/Services/ToolingService.php:30: amortizationPerUnit only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## training-lms — stub, score 0.4, FAIL
@@ -5310,10 +5070,10 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in competency-appraisal.gap.identified: no listeners() registration in Providers/ModuleServiceProvider.php
   - in hse.permit.requested: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/4):
-  - isCompliant: not declared in a src/Contracts interface
-  - expiring: not declared in a src/Contracts interface
-  - history: not declared in a src/Contracts interface
-  - compliance: not declared in a src/Contracts interface
+  - isCompliant: no implementation of TrainingLmsServiceInterface
+  - expiring: no implementation of TrainingLmsServiceInterface
+  - history: no implementation of TrainingLmsServiceInterface
+  - compliance: no implementation of TrainingLmsServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "mandatory training matrix by position drives needs and expiry (rece...": no test named test_rule_*mandatory*training*
   - rule 2 "capacity & prerequisites checks": no test named test_rule_*capacity*prerequisites*
@@ -5369,11 +5129,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 4 finding(s)
-  - backend/src/Services/TrainingLmsService.php:15: isCompliant only returns a trivial value
-  - backend/src/Services/TrainingLmsService.php:20: expiring only returns a trivial value
-  - backend/src/Services/TrainingLmsService.php:25: history only returns a trivial value
-  - backend/src/Services/TrainingLmsService.php:30: compliance only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## treasury — stub, score 0.2, FAIL
@@ -5394,11 +5150,11 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in ar-ap.payment.requested: no listeners() registration in Providers/ModuleServiceProvider.php
   - in payroll.run.approved: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/5):
-  - bankBalance: not declared in a src/Contracts interface
-  - chequesDue: not declared in a src/Contracts interface
-  - createPayment: not declared in a src/Contracts interface
-  - cashPosition: not declared in a src/Contracts interface
-  - cashFlowForecast: not declared in a src/Contracts interface
+  - bankBalance: no implementation of TreasuryServiceInterface
+  - chequesDue: no implementation of TreasuryServiceInterface
+  - createPayment: no implementation of TreasuryServiceInterface
+  - cashPosition: no implementation of TreasuryServiceInterface
+  - cashFlowForecast: no implementation of TreasuryServiceInterface
 - rule_cov 0% (0/8):
   - rule 1 "sayad id format validation": no test named test_rule_*sayad*format*
   - rule 2 "due-date alerts": no test named test_rule_*date*alerts*
@@ -5476,12 +5232,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - ocr: in spec but not declared in manifest ai.capabilities
   - ocr: no test named *ocr*off* with assertions
   - ocr: no test named *ocr*fake* with assertions
-- anti-gaming: 5 finding(s)
-  - backend/src/Services/TreasuryService.php:15: bankBalance only returns a trivial value
-  - backend/src/Services/TreasuryService.php:20: chequesDue only returns a trivial value
-  - backend/src/Services/TreasuryService.php:25: createPayment only returns a trivial value
-  - backend/src/Services/TreasuryService.php:30: cashPosition only returns a trivial value
-  - backend/src/Services/TreasuryService.php:35: cashFlowForecast only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## warranty-after-sales — stub, score 0.3, FAIL
@@ -5498,9 +5249,9 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in sales.delivery.posted: no listeners() registration in Providers/ModuleServiceProvider.php
   - in sales.return.posted: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/3):
-  - isUnderWarranty: not declared in a src/Contracts interface
-  - claimsFor: not declared in a src/Contracts interface
-  - failureStats: not declared in a src/Contracts interface
+  - isUnderWarranty: no implementation of WarrantyAfterSalesServiceInterface
+  - claimsFor: no implementation of WarrantyAfterSalesServiceInterface
+  - failureStats: no implementation of WarrantyAfterSalesServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "registrations auto-created from `sales.delivery.posted` for items w...": no test named test_rule_*registrations*auto*
   - rule 2 "eligibility check at claim (dates, usage, exclusions)": no test named test_rule_*eligibility*check*
@@ -5554,10 +5305,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - next_action: in spec but not declared in manifest ai.capabilities
   - next_action: no test named *next_action*off* with assertions
   - next_action: no test named *next_action*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/WarrantyAfterSalesService.php:15: isUnderWarranty only returns a trivial value
-  - backend/src/Services/WarrantyAfterSalesService.php:20: claimsFor only returns a trivial value
-  - backend/src/Services/WarrantyAfterSalesService.php:25: failureStats only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## waste-environment — stub, score 0.4, FAIL
@@ -5576,9 +5324,9 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in scrap-byproduct.scrap.disposed: no listeners() registration in Providers/ModuleServiceProvider.php
   - in hse.incident.reported: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/3):
-  - stored: not declared in a src/Contracts interface
-  - contractorsValid: not declared in a src/Contracts interface
-  - exceedances: not declared in a src/Contracts interface
+  - stored: no implementation of WasteEnvironmentServiceInterface
+  - contractorsValid: no implementation of WasteEnvironmentServiceInterface
+  - exceedances: no implementation of WasteEnvironmentServiceInterface
 - rule_cov 0% (0/6):
   - rule 1 "contractor license validity & category check at manifest": no test named test_rule_*contractor*license*
   - rule 2 "storage limits/time alerts": no test named test_rule_*storage*limits*
@@ -5636,10 +5384,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/WasteEnvironmentService.php:15: stored only returns a trivial value
-  - backend/src/Services/WasteEnvironmentService.php:20: contractorsValid only returns a trivial value
-  - backend/src/Services/WasteEnvironmentService.php:25: exceedances only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## weighbridge — stub, score 0.5, FAIL
@@ -5656,9 +5401,9 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in sales.delivery.requested: no listeners() registration in Providers/ModuleServiceProvider.php
   - in gate-visitor.pass.entered: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/3):
-  - ticket: not declared in a src/Contracts interface
-  - netFor: not declared in a src/Contracts interface
-  - pendingTickets: not declared in a src/Contracts interface
+  - ticket: no implementation of WeighbridgeServiceInterface
+  - netFor: no implementation of WeighbridgeServiceInterface
+  - pendingTickets: no implementation of WeighbridgeServiceInterface
 - rule_cov 0% (0/11):
   - rule 1 "one-pass (stored tare) or two-pass modes": no test named test_rule_*pass*stored*
   - rule 2 "stable-weight capture from device agent": no test named test_rule_*stable*weight*
@@ -5703,10 +5448,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - anomaly: in spec but not declared in manifest ai.capabilities
   - anomaly: no test named *anomaly*off* with assertions
   - anomaly: no test named *anomaly*fake* with assertions
-- anti-gaming: 3 finding(s)
-  - backend/src/Services/WeighbridgeService.php:15: ticket only returns a trivial value
-  - backend/src/Services/WeighbridgeService.php:20: netFor only returns a trivial value
-  - backend/src/Services/WeighbridgeService.php:25: pendingTickets only returns a trivial value
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## work-order — stub, score 0.4, FAIL
@@ -5736,17 +5478,17 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - in quality-inspection.lot.decided: no listeners() registration in Providers/ModuleServiceProvider.php
   - in eco-plm.change.released: no listeners() registration in Providers/ModuleServiceProvider.php
 - contract_cov 0% (0/11):
-  - find: not declared in a src/Contracts interface
-  - open: not declared in a src/Contracts interface
-  - create: not declared in a src/Contracts interface
-  - release: not declared in a src/Contracts interface
-  - reportOperation: not declared in a src/Contracts interface
-  - issueMaterial: not declared in a src/Contracts interface
-  - receiveOutput: not declared in a src/Contracts interface
-  - shortages: not declared in a src/Contracts interface
-  - wipQty: not declared in a src/Contracts interface
-  - openSupply: not declared in a src/Contracts interface
-  - close: not declared in a src/Contracts interface
+  - find: no implementation of WorkOrderServiceInterface
+  - open: no implementation of WorkOrderServiceInterface
+  - create: no implementation of WorkOrderServiceInterface
+  - release: no implementation of WorkOrderServiceInterface
+  - reportOperation: no implementation of WorkOrderServiceInterface
+  - issueMaterial: no implementation of WorkOrderServiceInterface
+  - receiveOutput: no implementation of WorkOrderServiceInterface
+  - shortages: no implementation of WorkOrderServiceInterface
+  - wipQty: no implementation of WorkOrderServiceInterface
+  - openSupply: no implementation of WorkOrderServiceInterface
+  - close: no implementation of WorkOrderServiceInterface
 - rule_cov 0% (0/4):
   - rule 1 "BOM/routing snapshot at release; multi-level optional child order c...": no test named test_rule_*routing*snapshot*
   - rule 2 "Material issue via `InventoryService::postMovement` with idempotenc...": no test named test_rule_*material*issue*
@@ -5805,16 +5547,7 @@ A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming 
   - summarize: in spec but not declared in manifest ai.capabilities
   - summarize: no test named *summarize*off* with assertions
   - summarize: no test named *summarize*fake* with assertions
-- anti-gaming: 9 finding(s)
-  - backend/src/Services/WorkOrderService.php:15: find only returns a trivial value
-  - backend/src/Services/WorkOrderService.php:20: open only returns a trivial value
-  - backend/src/Services/WorkOrderService.php:25: create only returns a trivial value
-  - backend/src/Services/WorkOrderService.php:30: release empty body
-  - backend/src/Services/WorkOrderService.php:34: reportOperation empty body
-  - backend/src/Services/WorkOrderService.php:38: issueMaterial empty body
-  - backend/src/Services/WorkOrderService.php:42: receiveOutput empty body
-  - backend/src/Services/WorkOrderService.php:46: shortages only returns a trivial value
-  - backend/src/Services/WorkOrderService.php:61: close empty body
+- anti-gaming: clean
 - tests: not_run (static gate not passed)
 
 ## workflow-engine — stub, score 0, FAIL

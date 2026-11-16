@@ -7,8 +7,10 @@ namespace App\Support\Http;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Encryption\MissingAppKeyException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 use Throwable;
@@ -29,8 +31,16 @@ final class ApiExceptionRenderer
         503 => ['unavailable', 'سرویس موقتاً در دسترس نیست.'],
     ];
 
-    public static function render(Throwable $e, Request $request): ?JsonResponse
+    public static function render(Throwable $e, Request $request): JsonResponse|Response|null
     {
+        // Before the installer writes APP_KEY, sessions and encrypted cookies cannot work; answer without them.
+        if ($e instanceof MissingAppKeyException) {
+            $message = 'سامانه هنوز نصب نشده است؛ نشانی /install را باز کنید.';
+
+            return $request->is('api/*') || $request->expectsJson()
+                ? new JsonResponse(['ok' => false, 'data' => null, 'error' => ['code' => 'not_installed', 'message' => $message, 'details' => []], 'meta' => []], 503)
+                : new Response('<!doctype html><html lang="fa" dir="rtl"><meta charset="utf-8"><title>ERP</title><p>'.$message.' <a href="/install">نصب</a></p></html>', 503, ['Content-Type' => 'text/html; charset=UTF-8']);
+        }
         if (! $request->is('api/*') && ! $request->expectsJson()) {
             return null;
         }

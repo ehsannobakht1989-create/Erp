@@ -1,13 +1,11 @@
 <?php
+
 declare(strict_types=1);
 
-use Core\Autoloader;
-use Core\Module\ModuleScanner;
+use Builder\Resolver;
 
-$root = dirname(__DIR__, 2);
-require_once $root . '/core/src/Autoloader.php';
-(new Autoloader($root))->register();
+// Local builder UI only; never deploy this directory.
+require_once dirname(__DIR__).'/src/Resolver.php';
 
 header('Content-Type: application/json; charset=utf-8');
-$scanner = new ModuleScanner($root);
-echo json_encode(['modules' => array_values($scanner->scan())], JSON_UNESCAPED_UNICODE);
+echo json_encode(['modules' => array_values((new Resolver(dirname(__DIR__, 2)))->manifests())], JSON_UNESCAPED_UNICODE);

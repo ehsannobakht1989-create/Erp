@@ -9,4 +9,7 @@ parameters:
         - tests/platform
         - tests/Platform
         - tests/run-platform.php
+        - builder
+        - modules
+        - public/index.php
     tmpDir: .cache/phpstan

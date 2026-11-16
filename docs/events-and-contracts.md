@@ -26,10 +26,10 @@ Every event published to the core event bus uses this JSON/array envelope:
 - **Quality**: `quality-inspection.lot.rejected` -> `ncr-capa.ncr.opened`
 
 ## 3. Service Interfaces (`provides` / `consumes`)
-- Shared PHP interfaces live in `core/contracts/<ServiceName>.php` or are declared in the providing module's `provides` array.
+- Module service interfaces and DTOs live in the providing module's `src/Contracts/` (namespace `Modules\<Studly>\Contracts`), are listed in its `provides` array and are packaged for every build, even when the module is not selected. Platform contracts live in `app/Support/Contracts/`.
 - Consuming modules depend ONLY on the interface, never on concrete classes.
 - **Versioning**: Breaking interface changes require a new interface version (e.g. `InventoryServiceV2`) or a major module version bump.
-- **Absent Optional Modules**: When a module declares a dependency in `optional` (not `requires`), the core DI container MUST return a **Null-Object** implementation (or `null` safely handled by the caller) if that module is not installed. Optional event listeners are simply not registered and skipped silently.
+- **Absent Optional Modules**: When a module declares a dependency in `optional` (not `requires`), the Laravel container MUST return a **Null-Object** implementation (or `null` safely handled by the caller) if that module is not installed. Optional event listeners are simply not registered and skipped silently.
 
 ## 4. Generic Core Engines
 Modules MUST reuse core engines by declaration rather than re-implementing them:

@@ -1,5 +1,4 @@
 {
     "preset": "laravel",
-    "exclude": ["core", "modules", "builder", "public", "bootstrap/cache"],
-    "notPath": ["tools/test.php"]
+    "exclude": ["bootstrap/cache", "storage", "web"]
 }

@@ -1,42 +1,23 @@
-# Core Kernel API
+# Laravel platform API for modules
 
-Modules plug into `Core\Kernel` without editing any central file.
+Modules plug into the Laravel core without editing central files. The authoritative anatomy is `docs/MASTER-PLAN.md` §5; this page lists the hooks the core implements today.
 
-## 1. Routes (`modules/<id>/backend/routes.php`)
-Return a callable receiving `Core\Http\Router` and `Core\Container`. Routes are automatically prefixed with `/api/<id>`.
+## Provider (`modules/<id>/Providers/ModuleServiceProvider.php`)
+Extend `App\Support\Modules\ModuleServiceProvider` (namespace `Modules\<Studly>\Providers`). Loaded only when the module is enabled (`config/erp-modules.php`, overridden by `core_modules` via `php artisan erp:modules:enable|disable`), in dependency order. `boot()` automatically loads:
+- `database/migrations` (tables must use the `<id with _>__` prefix),
+- `lang/` (namespaced and JSON translations),
+- `routes/api.php`, mounted at `/api/<id>` with `api`, `auth:sanctum` and `company.context`; every route must also declare `can:<permission>` or boot fails.
 
-```php
-<?php
-declare(strict_types=1);
+Declarative hooks (override and return arrays; names must belong to the module):
+- `listeners()`: `['name' => ['event' => 'other.entity.verb', 'handler' => Handler::class]]` — durable async inbox subscriptions; the event must be in manifest `listens`; handlers implement `App\Support\Events\DomainEventHandler` and must be idempotent.
+- `datasets()`: `['<id>.dataset' => Provider::class]` — implement `App\Support\Datasets\DatasetProvider`; declared in manifest `datasets`.
+- `aiTools()`: `['<id>.tool' => ['permission' => '<id>.x.view', 'handler' => Tool::class]]` — read-only `App\Support\Ai\AiTool`, declared in a manifest AI capability.
 
-use Core\Container;
-use Core\Http\Request;
-use Core\Http\Response;
-use Core\Http\Router;
+## Platform services (`app/Support/Contracts`, bound in the container)
+Auth, company and permission resolution, data scope, audit, notifier, print and workflow are contracts whose defaults deny or report "unavailable" until the owning Phase 4 modules bind real implementations. Real core services: settings (`SettingsService`, manifest-declared keys only), numbering (`NumberingContract::next()` inside a transaction), domain events (`DomainEventBus::publish(DomainEvent::create(...))` after commit, inbox delivery), datasets (`DatasetContract::query()` with central company/permission/row-scope enforcement) and the AI gateway (`AiGatewayContract::invoke()`). Models use `App\Support\Tenancy\BelongsToCompany` and `App\Support\Audit\Auditable`.
 
-return function (Router $router, Container $container): void {
-    $router->get('/items', function (Request $req): Response {
-        return Response::ok(['items' => []]);
-    }, 'sample.item.view');
-};
-```
+## HTTP
+Responses use `App\Support\Http\ApiResponse` (`{ok, data, error{code,message,details}, meta}`); exceptions map to Persian messages. Core endpoints: `POST /api/core/auth/login`, `GET /api/core/auth/me`, `POST /api/core/auth/logout`, `GET /api/core/meta` (loaded modules, granted abilities, filtered menu).
 
-## 2. Event Listeners (`modules/<id>/backend/listeners.php`)
-```php
-<?php
-declare(strict_types=1);
-
-use Core\Container;
-use Core\Event\EventBus;
-
-return function (EventBus $bus, Container $container): void {
-    $bus->listen('purchasing.po.received', function (array $envelope): void {
-        // Handle event
-    });
-};
-```
-
-## 3. Services & Settings
-- Bind interfaces in `Container` via `provides`/`consumes`.
-- Read per-company settings via `Core\Support\SettingsService::get($companyId, $moduleId, $key)`.
-- Use `Core\Database\Repository` for automatic `company_id` scoping, table-prefix guard, and `AuditContract` logging.
+## Checks
+`php tools/architecture-check.php` (isolation, prefixes, audit bypasses, raw SQL, route permissions), `php tools/depth-check.php <id>` (depth gate), `php artisan erp:modules:validate` (manifests and cycles).

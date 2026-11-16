@@ -84,7 +84,8 @@ final class Inspector
             $tests = $this->runTests($id);
         }
         $pass = $staticPass && $tests['status'] === 'passed';
-        $implemented = array_filter($files, fn (string $file) => preg_match('#^(src|Providers|routes|database|tests)/.+\.php$#', $file) === 1) !== [];
+        // Contracts are declarations packaged for every module; they are not an implementation.
+        $implemented = array_filter($files, fn (string $file) => preg_match('#^(src|Providers|routes|database|tests)/.+\.php$#', $file) === 1 && ! str_starts_with($file, 'src/Contracts/')) !== [];
 
         return [
             'id' => $id,

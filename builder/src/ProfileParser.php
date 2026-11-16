@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Builder;
@@ -10,15 +11,16 @@ final class ProfileParser
     /** @return array<string, mixed> */
     public static function parseFile(string $path): array
     {
-        if (!is_file($path)) {
+        if (! is_file($path)) {
             throw new RuntimeException("Profile not found: $path");
         }
         $raw = (string) file_get_contents($path);
         if (str_ends_with($path, '.json')) {
             $data = json_decode($raw, true);
-            if (!is_array($data)) {
+            if (! is_array($data)) {
                 throw new RuntimeException("Invalid JSON profile: $path");
             }
+
             return $data;
         }
 
@@ -40,16 +42,19 @@ final class ProfileParser
                 $decoded = json_decode((string) $jsonLike, true);
                 if (is_array($decoded)) {
                     $data[$key] = $decoded;
+
                     continue;
                 }
                 if (str_starts_with($val, '[')) {
                     $inner = trim($val, '[]');
-                    $data[$key] = $inner === '' ? [] : array_map(fn($s) => trim($s, " \t\"'"), explode(',', $inner));
+                    $data[$key] = $inner === '' ? [] : array_map(fn ($s) => trim($s, " \t\"'"), explode(',', $inner));
+
                     continue;
                 }
             }
             $data[$key] = trim($val, "\"'");
         }
+
         return $data;
     }
 }

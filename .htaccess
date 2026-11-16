@@ -1,0 +1,9 @@
+# Fallback for hosts whose document root cannot point at public/ (preferred setup).
+# Everything is routed into public/; nothing in the project root is served directly.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+<IfModule !mod_rewrite.c>
+    Require all denied
+</IfModule>
