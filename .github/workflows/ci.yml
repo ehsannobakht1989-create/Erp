@@ -30,6 +30,9 @@ jobs:
           python3 -m unittest discover -s tools/tests -p "test_depth_cli.py"
           php tools/depth-check.php --all --gate
 
+      - name: Test module catalog
+        run: php tests/platform/module-catalog.php
+
       - name: Validate module manifests
         run: php tools/validate-manifests.php
 

@@ -12,3 +12,5 @@
 - Until the real depth gate and its test execution are implemented, CI rejects every `done` status using a temporary fail-closed status guard. It is explicitly not a scoring gate and must be replaced by the real one, not relaxed to allow unverified completions.
 
 - Depth diagnostics are being added incrementally: while any category or module-test execution is missing, scores are null, pass is always false, and `--gate` rejects every `done` declaration. Marker diagnostics scan source files, not documentation. The separate status guard remains until the full gate is trusted.
+
+- Module catalog selection is fail-closed: enabled modules must explicitly include all hard dependencies. The future builder can auto-select those dependencies; the runtime does not silently enable them. Optional dependencies do not auto-enable or constrain ordering and may be absent from a packaged factory.
