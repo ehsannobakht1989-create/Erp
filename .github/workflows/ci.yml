@@ -62,6 +62,10 @@ jobs:
         run: |
           composer validate --no-check-publish
           composer install --no-interaction --prefer-dist
+      - name: Dependency security audit (shipped PHP and shell production packages)
+        run: |
+          composer audit --locked
+          cd web/shell && npm audit --omit=dev --audit-level=high
       - name: Check Laravel and transition-tool formatting
         run: vendor/bin/pint --test
       - name: Static analysis of Laravel platform and its tests
