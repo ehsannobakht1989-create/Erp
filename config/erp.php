@@ -16,6 +16,10 @@ return [
             'python' => ['input_per_1k' => '0', 'output_per_1k' => '0'],
         ],
     ],
+    'install' => [
+        'env_path' => env('ERP_INSTALL_ENV_PATH', base_path('.env')),
+        'lock_path' => env('ERP_INSTALL_LOCK_PATH', storage_path('app/installed.lock')),
+    ],
     'events' => [
         'max_attempts' => (int) env('ERP_EVENTS_MAX_ATTEMPTS', 5),
         'base_delay_seconds' => (int) env('ERP_EVENTS_BASE_DELAY', 30),

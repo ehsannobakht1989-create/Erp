@@ -8,7 +8,7 @@ use Illuminate\Contracts\Console\Kernel;
 
 $app = require dirname(__DIR__, 2).'/bootstrap/app.php';
 $app->make(Kernel::class)->bootstrap();
-$public = ['api/core/auth/login', 'api/core/auth/me', 'api/core/auth/logout', 'sanctum/csrf-cookie', 'up'];
+$public = ['api/core/auth/login', 'api/core/auth/me', 'api/core/auth/logout', 'sanctum/csrf-cookie', 'up', 'install'];
 $checked = 0;
 foreach ($app['router']->getRoutes()->getRoutes() as $route) {
     $middleware = $route->gatherMiddleware();

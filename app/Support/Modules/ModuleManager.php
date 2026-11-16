@@ -45,6 +45,7 @@ final class ModuleManager
         }
         foreach ($providers as [$namespace, $path]) {
             $this->loader->addPsr4($namespace, [$path.'/src/', $path.'/']);
+            $this->loader->addPsr4($namespace.'Database\\Seeders\\', $path.'/database/seeders/');
             $class = $namespace.'Providers\\ModuleServiceProvider';
             if (! is_subclass_of($class, ModuleServiceProvider::class)) {
                 throw new RuntimeException("Module provider $class must extend ".ModuleServiceProvider::class);

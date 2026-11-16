@@ -36,6 +36,7 @@ final class AppServiceProvider extends ServiceProvider
     {
         $permissions->register($gate);
         Sanctum::usePersonalAccessTokenModel(PersonalAccessToken::class);
+        RateLimiter::for('core-install', fn (Request $request) => Limit::perMinute(10)->by((string) $request->ip()));
         RateLimiter::for('core-login', fn (Request $request) => Limit::perMinute(5)->by(mb_strtolower(trim((string) $request->input('email'))).'|'.$request->ip()));
     }
 
