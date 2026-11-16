@@ -1,11 +1,28 @@
+# Dependencies and generated artifacts
 node_modules/
 vendor/
 dist/
 build/
 *.zip
-.env
-storage/
-uploads/
 *.log
 __pycache__/
 .venv/
+.pytest_cache/
+.phpunit.cache/
+.env
+.env.*
+!.env.example
+uploads/
+
+# Laravel runtime data; keep directory markers tracked
+/storage/*
+!/storage/app/
+!/storage/framework/
+!/storage/logs/
+/storage/app/*
+!/storage/app/.gitignore
+/storage/framework/*
+!/storage/framework/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+/bootstrap/cache/*.php

@@ -1,42 +1,27 @@
 #!/usr/bin/env bash
 set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
 
-FILE_COUNT=$(git ls-files | wc -l | tr -d ' ')
-if [ "$FILE_COUNT" -eq 0 ]; then
-  TOTAL_BYTES=0
-else
-  TOTAL_BYTES=$(git ls-files -z | xargs -0 du -cb | tail -1 | awk '{print $1}')
-fi
-TOTAL_MB=$(awk "BEGIN {printf \"%.2f\", $TOTAL_BYTES / (1024 * 1024)}")
-
-echo "Tracked files: $FILE_COUNT (limit: 7000)"
-echo "Tracked size:  ${TOTAL_MB} MB (limit: 90.00 MB)"
-
-# Warn if any module exceeds 50 files
-if [ -d "modules" ]; then
-  for mod_dir in modules/*/; do
-    [ -d "$mod_dir" ] || continue
-    mod_files=$(find "$mod_dir" -type f | wc -l | tr -d ' ')
-    if [ "$mod_files" -gt 50 ]; then
-      echo "WARNING: $mod_dir has $mod_files files (target <= 50)"
-    fi
-  done
-fi
-
-FAILED=0
-if [ "$FILE_COUNT" -gt 7000 ]; then
-  echo "ERROR: Tracked file count ($FILE_COUNT) exceeds hard limit of 7000."
-  FAILED=1
-fi
-
-MAX_BYTES=$((90 * 1024 * 1024))
-if [ "$TOTAL_BYTES" -gt "$MAX_BYTES" ]; then
-  echo "ERROR: Tracked size (${TOTAL_MB} MB) exceeds hard limit of 90 MB."
-  FAILED=1
-fi
-
-if [ "$FAILED" -ne 0 ]; then
-  exit 1
-fi
-
-echo "Budget check passed."
+# Include untracked, non-ignored files as well as tracked files so the check
+# cannot pass simply because a large addition has not been staged yet.
+git ls-files -z --cached --others --exclude-standard | python3 -c '
+import os, sys
+paths = set(filter(None, sys.stdin.buffer.read().split(b"\0")))
+existing = [p for p in paths if os.path.isfile(p) or os.path.islink(p)]
+size = sum(os.lstat(p).st_size for p in existing)
+count = len(existing)
+print(f"Repository files (tracked + untracked, excluding ignored): {count} (fail at 7000)")
+print(f"Repository size: {size / 1048576:.2f} MiB (fail at 90 MiB)")
+modules = {}
+for path in existing:
+    parts = path.split(b"/")
+    if len(parts) > 2 and parts[0] == b"modules":
+        modules[parts[1]] = modules.get(parts[1], 0) + 1
+for name, n in sorted(modules.items()):
+    if n > 80:
+        print(f"WARNING: modules/{os.fsdecode(name)} has {n} files (target <= 80)")
+if count >= 7000 or size >= 90 * 1048576:
+    print("ERROR: repository budget exceeded")
+    sys.exit(1)
+print("Budget check passed.")
+'
