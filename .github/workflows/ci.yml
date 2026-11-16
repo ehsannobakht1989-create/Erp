@@ -86,6 +86,7 @@ jobs:
           php tests/platform/tenancy.php
           php tests/platform/tenancy-middleware.php
           php tests/platform/domain-events.php
+          php tests/platform/contracts.php
           php tests/platform/money.php
           php artisan erp:modules:list
           php artisan erp:modules:graph
