@@ -38,6 +38,9 @@ jobs:
       - name: Validate module manifests
         run: php tools/validate-manifests.php
 
+      - name: Check generated event catalog
+        run: php tools/event-catalog.php --check
+
       - name: PHP syntax lint
         run: |
           find . -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -r -n1 php -l
@@ -86,6 +89,7 @@ jobs:
           php tests/platform/tenancy.php
           php tests/platform/tenancy-middleware.php
           php tests/platform/domain-events.php
+          php tests/platform/event-catalog.php
           php tests/platform/contracts.php
           php tests/platform/audit.php
           php tests/platform/permissions.php
