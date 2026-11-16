@@ -72,6 +72,8 @@ jobs:
         run: |
           composer validate --no-check-publish
           composer install --no-interaction --prefer-dist
+      - name: Check Laravel and transition-tool formatting
+        run: vendor/bin/pint --test
       - name: Test Laravel scaffold
         run: |
           php artisan --version

@@ -28,6 +28,7 @@ final class Inspector
         foreach ($paths as $path) {
             $reports[] = $this->inspect(basename(dirname($path)));
         }
+
         return $reports;
     }
 
@@ -109,6 +110,7 @@ final class Inspector
             }
         }
         sort($violations, SORT_STRING);
+
         return $violations;
     }
 }

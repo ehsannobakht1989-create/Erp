@@ -25,7 +25,9 @@ $context = app(CompanyContext::class);
 $context->activate(1);
 $bus = app(DomainEventBus::class);
 $received = [];
-Event::listen(DomainEvent::class, function (DomainEvent $event) use (&$received): void { $received[] = $event; });
+Event::listen(DomainEvent::class, function (DomainEvent $event) use (&$received): void {
+    $received[] = $event;
+});
 $event = DomainEvent::create('inventory.receipt.posted', 1, 'receipt', '7', ['quantity' => '1.0000'], 5, 'correlation-1');
 $envelope = $event->toArray();
 eventCheck($envelope['company_id'] === 1 && $envelope['event_id'] !== '' && str_ends_with($envelope['occurred_at'], 'Z'), 'Envelope must include ID, tenant and UTC time');

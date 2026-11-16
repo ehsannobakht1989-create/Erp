@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-use App\Console\Commands\ModulesList;
-use App\Console\Commands\ModulesValidate;
-use App\Console\Commands\ModulesGraph;
-use App\Console\Commands\ModulesSetState;
 use App\Console\Commands\ModulesDisable;
+use App\Console\Commands\ModulesGraph;
+use App\Console\Commands\ModulesList;
+use App\Console\Commands\ModulesSetState;
+use App\Console\Commands\ModulesValidate;
 use App\Support\Tenancy\CompanyContextMiddleware;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Middleware;

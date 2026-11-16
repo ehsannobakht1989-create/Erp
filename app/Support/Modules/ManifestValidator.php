@@ -25,6 +25,7 @@ final class ManifestValidator
                 $manifest = json_decode($this->read($file), false, 512, JSON_THROW_ON_ERROR);
             } catch (JsonException $e) {
                 $errors[] = $id.': invalid JSON';
+
                 continue;
             }
             $issues = (new SchemaValidator)->validate($manifest, $schema);

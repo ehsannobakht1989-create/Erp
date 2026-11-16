@@ -74,7 +74,7 @@ final class ModuleCatalog
      * Return only enabled modules, dependencies first. Missing hard dependencies fail closed.
      * Optional dependencies do not imply activation or an ordering constraint.
      *
-     * @param list<string> $enabled
+     * @param  list<string>  $enabled
      * @return list<string>
      */
     public function ordered(array $enabled): array

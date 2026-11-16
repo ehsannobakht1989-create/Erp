@@ -21,6 +21,7 @@ function stateReject(callable $operation, string $message): void
         $operation();
     } catch (RuntimeException $e) {
         stateCheck(str_contains($e->getMessage(), $message), $e->getMessage());
+
         return;
     }
     throw new RuntimeException('Operation should have failed: '.$message);

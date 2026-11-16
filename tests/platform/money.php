@@ -19,6 +19,7 @@ function moneyReject(callable $operation, string $exception): void
         $operation();
     } catch (Throwable $e) {
         moneyCheck($e instanceof $exception, 'Wrong exception: '.get_class($e));
+
         return;
     }
     throw new RuntimeException('Invalid money operation accepted');

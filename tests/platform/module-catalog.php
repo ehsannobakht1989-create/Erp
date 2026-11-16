@@ -18,6 +18,7 @@ function expectFailure(callable $fn, string $message): void
         $fn();
     } catch (RuntimeException|InvalidArgumentException $e) {
         check(str_contains($e->getMessage(), $message), 'Unexpected error: '.$e->getMessage());
+
         return;
     }
     throw new LogicException('Expected failure: '.$message);

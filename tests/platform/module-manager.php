@@ -6,8 +6,8 @@ $loader = require dirname(__DIR__, 2).'/vendor/autoload.php';
 
 use App\Support\Modules\ModuleCatalog;
 use App\Support\Modules\ModuleManager;
-use Illuminate\Foundation\Application;
 use Illuminate\Contracts\Console\Kernel;
+use Illuminate\Foundation\Application;
 
 function verifyManager(bool $condition, string $message): void
 {

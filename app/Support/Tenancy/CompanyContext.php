@@ -10,7 +10,9 @@ use LogicException;
 final class CompanyContext
 {
     private ?int $companyId = null;
+
     private ?int $branchId = null;
+
     private ?int $fiscalYearId = null;
 
     public function activate(int $companyId, ?int $branchId = null, ?int $fiscalYearId = null): void

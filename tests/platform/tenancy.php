@@ -19,6 +19,7 @@ final class TenantTestRecord extends Model
     use SoftDeletes;
 
     protected $table = 'tenant_test_records';
+
     protected $guarded = [];
 }
 function tenantCheck(bool $condition, string $message): void
@@ -33,6 +34,7 @@ function tenantThrows(callable $callback, string $message): void
         $callback();
     } catch (LogicException $e) {
         tenantCheck(str_contains($e->getMessage(), $message), $e->getMessage());
+
         return;
     }
     throw new RuntimeException('Expected failure: '.$message);
@@ -57,7 +59,10 @@ tenantThrows(fn () => TenantTestRecord::create(['name' => 'foreign', 'company_id
 $ctx->activate(2);
 $second = TenantTestRecord::create(['name' => 'second']);
 tenantCheck(TenantTestRecord::count() === 1 && TenantTestRecord::first()->id === $second->id, 'Queries must be tenant-scoped');
-tenantThrows(function () use ($first): void { $first->name = 'changed'; $first->save(); }, 'Cross-company');
+tenantThrows(function () use ($first): void {
+    $first->name = 'changed';
+    $first->save();
+}, 'Cross-company');
 tenantThrows(fn () => $first->delete(), 'Cross-company');
 $second->company_id = 1;
 tenantThrows(fn () => $second->save(), 'Cross-company');

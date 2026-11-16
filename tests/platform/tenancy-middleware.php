@@ -9,6 +9,7 @@ use App\Support\Tenancy\CompanyContext;
 use App\Support\Tenancy\CompanyContextMiddleware;
 use App\Support\Tenancy\CompanySelection;
 use App\Support\Tenancy\DenyCompanyContextResolver;
+use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
@@ -20,10 +21,10 @@ function assertContext(bool $condition, string $message): void
     }
 }
 $app = require dirname(__DIR__, 2).'/bootstrap/app.php';
-$app->make(\Illuminate\Contracts\Console\Kernel::class)->bootstrap();
+$app->make(Kernel::class)->bootstrap();
 $ctx = app(CompanyContext::class);
 $request = Request::create('/');
-$deny = new CompanyContextMiddleware($ctx, new DenyCompanyContextResolver());
+$deny = new CompanyContextMiddleware($ctx, new DenyCompanyContextResolver);
 foreach ([false, true] as $authenticated) {
     $request->setUserResolver(fn () => $authenticated ? (object) ['id' => 1] : null);
     $ctx->activate(99);
@@ -40,7 +41,8 @@ foreach ([false, true] as $authenticated) {
         assertContext(str_contains($expected->getMessage(), 'required'), 'Wrong context error');
     }
 }
-$resolver = new class implements AuthorizedCompanyContextResolver {
+$resolver = new class implements AuthorizedCompanyContextResolver
+{
     public function resolve(Request $request): ?CompanySelection
     {
         return new CompanySelection(42, 8, 7);
@@ -49,6 +51,7 @@ $resolver = new class implements AuthorizedCompanyContextResolver {
 $middleware = new CompanyContextMiddleware($ctx, $resolver);
 $response = $middleware->handle($request, function () use ($ctx): Response {
     assertContext($ctx->companyId() === 42 && $ctx->branchId() === 8 && $ctx->fiscalYearId() === 7, 'Authorized selection was not activated');
+
     return new Response('ok');
 });
 assertContext($response->getStatusCode() === 200, 'Successful request failed');
