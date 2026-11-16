@@ -29,7 +29,8 @@ jobs:
           php tools/tests/depth-inspector.php
           php tools/tests/depth-php-analyzer.php
           python3 -m unittest discover -s tools/tests -p "test_depth_cli.py"
-          php tools/depth-check.php --all --gate
+          php tools/depth-check.php --all --gate --write-status
+          git diff --exit-code -- docs/depth-status.md
 
       - name: Test module catalog
         run: php tests/platform/module-catalog.php

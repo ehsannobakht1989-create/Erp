@@ -47,7 +47,7 @@ final class PhpAnalyzer
             $body = [];
             for ($j = $start + 1; $j < $count; $j++) {
                 $token = $tokens[$j];
-                if ($token === '{') {
+                if ($token === '{' || (is_array($token) && in_array($token[0], [T_CURLY_OPEN, T_DOLLAR_OPEN_CURLY_BRACES], true))) {
                     $depth++;
                 } elseif ($token === '}') {
                     $depth--;

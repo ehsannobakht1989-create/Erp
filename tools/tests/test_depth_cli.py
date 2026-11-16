@@ -17,6 +17,7 @@ class DepthCliTest(unittest.TestCase):
         self.root = Path(self.temp.name)
         shutil.copytree(SOURCE / 'tools' / 'depth', self.root / 'tools' / 'depth')
         shutil.copy(SOURCE / 'tools' / 'depth-check.php', self.root / 'tools')
+        (self.root / 'docs').mkdir()
         self.module = self.root / 'modules' / 'example'
         self.module.mkdir(parents=True)
         self.write_status('partial')
@@ -44,6 +45,12 @@ class DepthCliTest(unittest.TestCase):
         for args in ((), ('--gate',), ('../example',), ('--all', '--all'), ('missing',)):
             with self.subTest(args=args):
                 self.assertEqual(2, self.run_cli(*args).returncode)
+
+    def test_status_file_is_generated_only_for_all(self):
+        result = self.run_cli('--all', '--write-status', '--json')
+        self.assertEqual(0, result.returncode, result.stderr)
+        self.assertIn('example — partial / UNVERIFIED', (self.root / 'docs' / 'depth-status.md').read_text())
+        self.assertEqual(2, self.run_cli('example', '--write-status').returncode)
 
     def test_symlink_does_not_bypass_scan(self):
         (self.module / 'link.php').symlink_to('/nonexistent')

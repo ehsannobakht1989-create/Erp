@@ -18,11 +18,13 @@ class Example {
     public function useful($a) { if ($a) { return 0; } return 1; }
     public function nonempty() { return [1]; }
     public function closure() { return function ($x): string { return "ok"; }; }
+    public function interpolation($x) { echo "value {$x}"; return 1; }
+    public function afterInterpolation() { return null; }
 }
 PHP;
 $result = PhpAnalyzer::trivialFunctions($source);
 $names = array_column($result, 'name');
-if ($names !== ['emptyMethod', 'emptyArray', 'nullMethod', 'zero', 'unavailable']) {
+if ($names !== ['emptyMethod', 'emptyArray', 'nullMethod', 'zero', 'unavailable', 'afterInterpolation']) {
     throw new RuntimeException('Unexpected trivial method findings: '.json_encode($result));
 }
 if ($result[0]['line'] !== 4 || $result[4]['reason'] !== 'only throws') {
