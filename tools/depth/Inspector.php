@@ -58,7 +58,7 @@ final class Inspector
             'perm_cov' => 'permissions on API and UI routes',
             'ui_cov' => 'entity pages, routes and Persian translations',
             'ai_cov' => 'capability tools and off/fake-provider tests',
-            'anti_gaming' => 'trivial methods, empty tests, CRUD ratios and backend mocks',
+            'anti_gaming' => 'complete trivial-method detection, empty tests, CRUD ratios and backend mocks',
             'tests' => 'module test execution',
         ] as $category => $description) {
             $missing[] = "$category: assessment not yet implemented ($description)";
@@ -70,12 +70,12 @@ final class Inspector
             'score' => null,
             'pass' => false,
             'missing' => $missing,
-            'violations' => $this->bannedMarkers($directory),
+            'violations' => $this->scanCode($directory),
         ];
     }
 
     /** @return list<string> */
-    private function bannedMarkers(string $directory): array
+    private function scanCode(string $directory): array
     {
         $violations = [];
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($directory, FilesystemIterator::SKIP_DOTS));
@@ -90,6 +90,11 @@ final class Inspector
             $content = file_get_contents($file->getPathname());
             if ($content === false) {
                 throw new RuntimeException("Cannot read $relative");
+            }
+            if (strtolower($file->getExtension()) === 'php') {
+                foreach (PhpAnalyzer::trivialFunctions($content) as $function) {
+                    $violations[] = $relative.':'.$function['line'].': '.$function['name'].' '.$function['reason'];
+                }
             }
             $lines = preg_split('/\R/', $content);
             if ($lines === false) {

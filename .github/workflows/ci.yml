@@ -27,6 +27,7 @@ jobs:
       - name: Test incomplete depth diagnostics (fail closed)
         run: |
           php tools/tests/depth-inspector.php
+          php tools/tests/depth-php-analyzer.php
           python3 -m unittest discover -s tools/tests -p "test_depth_cli.py"
           php tools/depth-check.php --all --gate
 

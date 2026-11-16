@@ -3,6 +3,7 @@
 
 declare(strict_types=1);
 
+require_once __DIR__.'/depth/PhpAnalyzer.php';
 require_once __DIR__.'/depth/Inspector.php';
 
 use Erp\Depth\Inspector;
