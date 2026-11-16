@@ -195,6 +195,7 @@
               "bool",
               "int",
               "float",
+              "decimal",
               "string",
               "json"
             ]

@@ -7,13 +7,12 @@ namespace App\Support\Defaults;
 use App\Support\Contracts\AuditContract;
 use App\Support\Contracts\DatasetContract;
 use App\Support\Contracts\NotifierContract;
-use App\Support\Contracts\NumberingContract;
 use App\Support\Contracts\PrintContract;
 use App\Support\Contracts\WorkflowContract;
 use LogicException;
 
 /** Missing optional engines must never pretend a side effect succeeded. */
-final class UnavailablePlatform implements AuditContract, DatasetContract, NotifierContract, NumberingContract, PrintContract, WorkflowContract
+final class UnavailablePlatform implements AuditContract, DatasetContract, NotifierContract, PrintContract, WorkflowContract
 {
     public function record(int $companyId, ?int $actorId, string $module, string $table, string $action, int|string $recordId, ?array $before = null, ?array $after = null): void
     {
@@ -33,11 +32,6 @@ final class UnavailablePlatform implements AuditContract, DatasetContract, Notif
     public function transition(int $companyId, string $workflow, int|string $entityId, string $action, array $context = []): string
     {
         throw new LogicException('Workflow provider is unavailable.');
-    }
-
-    public function next(int $companyId, string $sequence, ?int $branchId = null, ?int $fiscalYearId = null): string
-    {
-        throw new LogicException('Numbering provider is unavailable.');
     }
 
     public function query(int $companyId, int $userId, string $dataset, array $query): array

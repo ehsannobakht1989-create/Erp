@@ -11,6 +11,7 @@ use App\Support\Modules\ManifestValidator;
 use App\Support\Modules\ModuleCatalog;
 use App\Support\Modules\ModuleManager;
 use App\Support\Modules\ModuleState;
+use App\Support\Settings\SettingsService;
 use App\Support\Tenancy\AuthorizedCompanyContextResolver;
 use App\Support\Tenancy\CompanyContext;
 use App\Support\Tenancy\DenyCompanyContextResolver;
@@ -50,6 +51,7 @@ final class AppServiceProvider extends ServiceProvider
             return new ModuleManager($app, $app->make(ModuleCatalog::class), $loader, base_path('modules'));
         });
         $this->app->singleton(PermissionRegistry::class, fn ($app) => new PermissionRegistry($app->make(ModuleCatalog::class), $app->make(ModuleState::class)->enabled()));
+        $this->app->bind(SettingsService::class, fn ($app) => new SettingsService($app->make(ModuleCatalog::class), $app->make(ModuleState::class)->enabled(), $app['db']->connection(), $app->make(CompanyContext::class)));
         $this->app->make(ModuleManager::class)->registerEnabled($this->app->make(ModuleState::class)->enabled());
     }
 }

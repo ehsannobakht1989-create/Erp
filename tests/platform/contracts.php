@@ -43,7 +43,12 @@ unavailable(fn () => app(Contracts\WorkflowContract::class)->transition(1, 'appr
 unavailable(fn () => app(Contracts\AuditContract::class)->record(1, 1, 'inventory', 'inventory_receipts', 'update', 1));
 unavailable(fn () => app(Contracts\NotifierContract::class)->notify(1, 1, 'email', 'receipt'));
 unavailable(fn () => app(Contracts\PrintContract::class)->render(1, 'receipt', []));
-unavailable(fn () => app(Contracts\NumberingContract::class)->next(1, 'receipt'));
+try {
+    app(Contracts\NumberingContract::class)->next(1, 'inventory.receipt');
+    throw new RuntimeException('Numbering without company context must fail');
+} catch (LogicException $e) {
+    contractCheck(stripos($e->getMessage(), 'company') !== false, 'Numbering must require active company context');
+}
 unavailable(fn () => app(Contracts\DatasetContract::class)->query(1, 1, 'inventory.stock', []));
 $app->instance(Contracts\PermissionContract::class, new class implements Contracts\PermissionContract
 {
