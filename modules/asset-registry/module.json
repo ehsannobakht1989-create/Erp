@@ -1,6 +1,6 @@
 {
   "id": "asset-registry",
-  "status": "done",
+  "status": "partial",
   "name": { "fa": "ثبت دارایی‌ها و تجهیزات", "en": "Asset Registry" },
   "version": "1.0.0",
   "category": "maintenance",

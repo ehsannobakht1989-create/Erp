@@ -1,6 +1,6 @@
 {
   "id": "work-order",
-  "status": "done",
+  "status": "partial",
   "name": {
     "fa": "دستور کار تولید",
     "en": "Work Order"

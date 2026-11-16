@@ -1,6 +1,6 @@
 {
   "id": "purchase-request",
-  "status": "done",
+  "status": "partial",
   "name": {
     "fa": "درخواست خرید",
     "en": "Purchase Request"

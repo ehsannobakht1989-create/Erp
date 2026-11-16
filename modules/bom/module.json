@@ -1,6 +1,6 @@
 {
   "id": "bom",
-  "status": "done",
+  "status": "partial",
   "name": { "fa": "ساختار محصول", "en": "Bill of Materials" },
   "version": "1.0.0",
   "category": "engineering",

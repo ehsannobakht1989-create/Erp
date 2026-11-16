@@ -1,6 +1,6 @@
 {
   "id": "accounting-gl",
-  "status": "done",
+  "status": "partial",
   "name": { "fa": "حسابداری کل", "en": "Accounting GL" },
   "version": "1.0.0",
   "category": "finance",

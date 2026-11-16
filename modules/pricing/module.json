@@ -1,6 +1,6 @@
 {
   "id": "pricing",
-  "status": "done",
+  "status": "partial",
   "name": { "fa": "قیمت‌گذاری", "en": "Pricing" },
   "version": "1.0.0",
   "category": "commercial",

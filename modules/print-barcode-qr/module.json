@@ -1,6 +1,6 @@
 {
   "id": "print-barcode-qr",
-  "status": "done",
+  "status": "partial",
   "name": {
     "fa": "چاپ و بارکد",
     "en": "Print & Barcode/QR"

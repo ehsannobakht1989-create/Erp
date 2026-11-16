@@ -19,6 +19,11 @@ jobs:
       - name: Check repository budget
         run: bash tools/budget.sh
 
+      - name: Prevent unverified completion claims
+        run: |
+          python3 -m unittest discover -s tools/tests -p "test_*.py"
+          python3 tools/status_guard.py
+
       - name: Validate module manifests
         run: php tools/validate-manifests.php
 

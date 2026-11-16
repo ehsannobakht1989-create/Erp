@@ -52,7 +52,7 @@ Every module under `modules/<id>/` MUST contain a `module.json` file conforming 
 
 ## Validation Rules
 - `id`: kebab-case (`^[a-z][a-z0-9-]*$`), must match the directory name `modules/<id>/`.
-- `status`: `"stub" | "in_progress" | "done"`.
+- `status`: `"stub" | "partial" | "done"`.
 - `version`: valid Semantic Versioning (`MAJOR.MINOR.PATCH`).
 - `level`: integer `0..6` matching `docs/dependency-map.md`.
 - `emits` / `listens`: `<module>.<entity>.<verb_past>` (e.g. `inventory.receipt.posted`).
