@@ -82,19 +82,7 @@ jobs:
       - name: Test Laravel scaffold
         run: |
           php artisan --version
-          php tests/platform/laravel-smoke.php
-          php tests/platform/module-manager.php
-          php tests/platform/module-resources.php
-          php tests/platform/module-state.php
-          php tests/platform/manifest-validation.php
-          php tests/platform/tenancy.php
-          php tests/platform/tenancy-middleware.php
-          php tests/platform/domain-events.php
-          php tests/platform/event-catalog.php
-          php tests/platform/contracts.php
-          php tests/platform/audit.php
-          php tests/platform/permissions.php
-          php tests/platform/money.php
+          php tests/run-platform.php
           php artisan erp:modules:list
           php artisan erp:modules:graph
           php artisan erp:modules:validate

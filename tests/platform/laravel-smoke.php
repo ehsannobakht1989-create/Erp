@@ -7,6 +7,9 @@ require dirname(__DIR__, 2).'/vendor/autoload.php';
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 
+$key = 'base64:'.base64_encode(random_bytes(32));
+putenv('APP_KEY='.$key);
+$_ENV['APP_KEY'] = $_SERVER['APP_KEY'] = $key;
 $app = require dirname(__DIR__, 2).'/bootstrap/app.php';
 $kernel = $app->make(Kernel::class);
 $request = Request::create('/up', 'GET');
