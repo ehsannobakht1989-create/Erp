@@ -84,6 +84,7 @@ jobs:
           php artisan --version
           php tests/platform/laravel-smoke.php
           php tests/platform/module-manager.php
+          php tests/platform/module-resources.php
           php tests/platform/module-state.php
           php tests/platform/manifest-validation.php
           php tests/platform/tenancy.php
