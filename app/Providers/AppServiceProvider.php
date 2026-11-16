@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
+use App\Support\Events\DomainEventBus;
 use App\Support\Modules\ModuleCatalog;
 use App\Support\Modules\ModuleManager;
 use App\Support\Tenancy\AuthorizedCompanyContextResolver;
@@ -16,6 +17,7 @@ final class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->singleton(CompanyContext::class);
+        $this->app->bind(DomainEventBus::class, fn ($app) => new DomainEventBus($app['db']->connection(), $app['events'], $app->make(CompanyContext::class)));
         $this->app->bind(AuthorizedCompanyContextResolver::class, DenyCompanyContextResolver::class);
         $this->app->singleton(ModuleCatalog::class, fn () => ModuleCatalog::scan(base_path('modules')));
         $this->app->singleton(ModuleManager::class, function ($app) {

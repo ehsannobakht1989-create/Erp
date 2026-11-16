@@ -77,5 +77,6 @@ jobs:
           php tests/platform/module-manager.php
           php tests/platform/tenancy.php
           php tests/platform/tenancy-middleware.php
+          php tests/platform/domain-events.php
           php artisan erp:modules:list
           vendor/bin/phpunit --fail-on-risky --fail-on-warning
