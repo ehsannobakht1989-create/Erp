@@ -10,3 +10,5 @@
 - Keep existing frontend/build dependencies during migration; any new Composer dependency outside the allowed list must be documented here before introduction. Framework and tooling transitive dependencies are not independent product-level package choices.
 
 - Until the real depth gate and its test execution are implemented, CI rejects every `done` status using a temporary fail-closed status guard. It is explicitly not a scoring gate and must be replaced by the real one, not relaxed to allow unverified completions.
+
+- Depth diagnostics are being added incrementally: while any category or module-test execution is missing, scores are null, pass is always false, and `--gate` rejects every `done` declaration. Marker diagnostics scan source files, not documentation. The separate status guard remains until the full gate is trusted.

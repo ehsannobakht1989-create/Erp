@@ -1,87 +1,965 @@
 # Module depth status
 
-The independent depth gate is not implemented; scores and precise coverage are **not yet available**. Every module has legacy implementation, hence `partial`, not a claim of usable functionality or a passing gate. The lists below are known baseline gaps, not a substitute for the future gate’s exact per-module findings.
+Generated from the incomplete depth diagnostics. **No scores are available and no module passes.** The implementation does not yet assess the seven required categories, most anti-gaming checks, or test execution; its output is not a completed depth gate.
 
-| Module | Status | Known missing / unverified |
-|---|---|---|
-| accounting-gl | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| anomaly-detection | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| api-webhooks | partial | module spec missing; depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| ar-ap | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| asset-registry | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| attendance | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| audit-iso | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| audit-log | partial | module spec missing; depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| auth-rbac | partial | module spec missing; depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| batch-formulation | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| bom | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| budgeting | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| canteen | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| cmms | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| competency-appraisal | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| condition-monitoring-iot | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| contractor-mgmt | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| contracts | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| correspondence | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| costing | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| crm | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| demand-forecast | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| doc-ocr | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| document-mgmt | partial | module spec missing; depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| dynamic-fields | partial | module spec missing; depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| eco-plm | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| energy-utilities | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| failure-prediction | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| fixed-assets | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| forex-lc | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| form-builder | partial | module spec missing; depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| gate-visitor | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| hr-core | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| hse | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| import-customs | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| inventory | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| item-master | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| lims | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| lot-traceability | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| management-consolidation | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| mes | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| mps | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| mrp | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| multi-company | partial | module spec missing; depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| ncr-capa | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| nl-report-assistant | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| notifications | partial | module spec missing; depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| oee | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| org-structure | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| parking-vehicles | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| party-master | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| payroll | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| pricing | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| print-barcode-qr | partial | module spec missing; depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| project-mgmt | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| purchase-order | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| purchase-request | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| quality-inspection | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| recruitment | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| reorder-point | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| report-bi | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| rfq | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| routing | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| sales | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| schedule-optimizer | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| scheduling | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| scrap-byproduct | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| shipping-distribution | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| supplier-evaluation | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| tax-moadian | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| ticketing | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| tooling | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| training-lms | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| treasury | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| warranty-after-sales | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| waste-environment | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| weighbridge | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| work-order | partial | depth-gate score and tests unverified; Laravel migration and integration not assessed |
-| workflow-engine | partial | module spec missing; depth-gate score and tests unverified; Laravel migration and integration not assessed |
+## accounting-gl — partial / UNVERIFIED
 
-NEXT: implement the independent gate and replace this inventory with its exact per-category findings.
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## anomaly-detection — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## api-webhooks — partial / UNVERIFIED
+
+- Specification missing: specs/api-webhooks.md
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## ar-ap — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## asset-registry — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## attendance — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## audit-iso — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## audit-log — partial / UNVERIFIED
+
+- Specification missing: specs/audit-log.md
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## auth-rbac — partial / UNVERIFIED
+
+- Specification missing: specs/auth-rbac.md
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## batch-formulation — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## bom — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## budgeting — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## canteen — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## cmms — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## competency-appraisal — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## condition-monitoring-iot — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## contractor-mgmt — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## contracts — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## correspondence — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## costing — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## crm — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## demand-forecast — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## doc-ocr — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## document-mgmt — partial / UNVERIFIED
+
+- Specification missing: specs/document-mgmt.md
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## dynamic-fields — partial / UNVERIFIED
+
+- Specification missing: specs/dynamic-fields.md
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+- modules/dynamic-fields/web/pages/DynamicFieldsPage.tsx:11: banned marker 'placeholder'
+
+## eco-plm — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## energy-utilities — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## failure-prediction — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## fixed-assets — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## forex-lc — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## form-builder — partial / UNVERIFIED
+
+- Specification missing: specs/form-builder.md
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## gate-visitor — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## hr-core — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## hse — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## import-customs — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## inventory — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## item-master — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+- modules/item-master/web/pages/ItemMasterPage.tsx:17: banned marker 'placeholder'
+
+## lims — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## lot-traceability — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## management-consolidation — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## mes — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## mps — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## mrp — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## multi-company — partial / UNVERIFIED
+
+- Specification missing: specs/multi-company.md
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## ncr-capa — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## nl-report-assistant — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## notifications — partial / UNVERIFIED
+
+- Specification missing: specs/notifications.md
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## oee — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## org-structure — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## parking-vehicles — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## party-master — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## payroll — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## pricing — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## print-barcode-qr — partial / UNVERIFIED
+
+- Specification missing: specs/print-barcode-qr.md
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## project-mgmt — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## purchase-order — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## purchase-request — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## quality-inspection — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## recruitment — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## reorder-point — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## report-bi — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## rfq — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## routing — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## sales — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## schedule-optimizer — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## scheduling — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## scrap-byproduct — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## shipping-distribution — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## supplier-evaluation — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## tax-moadian — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## ticketing — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## tooling — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## training-lms — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## treasury — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## warranty-after-sales — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## waste-environment — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## weighbridge — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## work-order — partial / UNVERIFIED
+
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+## workflow-engine — partial / UNVERIFIED
+
+- Specification missing: specs/workflow-engine.md
+- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
+- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
+- contract_cov: assessment not yet implemented (contract implementations)
+- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
+- perm_cov: assessment not yet implemented (permissions on API and UI routes)
+- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
+- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
+- anti_gaming: assessment not yet implemented (trivial methods, empty tests, CRUD ratios and backend mocks)
+- tests: assessment not yet implemented (module test execution)
+
+NEXT: implement all missing assessments and test execution, then generate exact category findings and scores.
