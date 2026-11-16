@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
+use App\Support\Auth\PermissionRegistry;
 use App\Support\Events\DomainEventBus;
 use App\Support\Modules\ManifestValidator;
 use App\Support\Modules\ModuleCatalog;
@@ -12,10 +13,16 @@ use App\Support\Modules\ModuleState;
 use App\Support\Tenancy\AuthorizedCompanyContextResolver;
 use App\Support\Tenancy\CompanyContext;
 use App\Support\Tenancy\DenyCompanyContextResolver;
+use Illuminate\Contracts\Auth\Access\Gate;
 use Illuminate\Support\ServiceProvider;
 
 final class AppServiceProvider extends ServiceProvider
 {
+    public function boot(PermissionRegistry $permissions, Gate $gate): void
+    {
+        $permissions->register($gate);
+    }
+
     public function register(): void
     {
         $this->app->singleton(CompanyContext::class);
@@ -35,6 +42,7 @@ final class AppServiceProvider extends ServiceProvider
 
             return new ModuleManager($app, $app->make(ModuleCatalog::class), $loader, base_path('modules'));
         });
+        $this->app->singleton(PermissionRegistry::class, fn ($app) => new PermissionRegistry($app->make(ModuleCatalog::class), $app->make(ModuleState::class)->enabled()));
         $this->app->make(ModuleManager::class)->registerEnabled($this->app->make(ModuleState::class)->enabled());
     }
 }
