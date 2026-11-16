@@ -4,15 +4,42 @@ declare(strict_types=1);
 
 namespace App\Support\Modules;
 
+use App\Support\Ai\AiTool;
+use App\Support\Ai\AiToolRegistry;
+use App\Support\Datasets\DatasetProvider;
+use App\Support\Datasets\DatasetRegistry;
+use App\Support\Events\DomainEventHandler;
+use App\Support\Events\EventSubscriptions;
 use Illuminate\Contracts\Foundation\CachesRoutes;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 use ReflectionClass;
 use RuntimeException;
 
-/** Override boot only when necessary, and call parent::boot to load owned resources. */
+/**
+ * Override boot only when necessary, and call parent::boot to load owned resources.
+ * Declarative hooks register listeners, datasets and AI tools under the module's own id.
+ */
 abstract class ModuleServiceProvider extends ServiceProvider
 {
+    /** @return array<string, array{event:string, handler:class-string<DomainEventHandler>}> listener name without module prefix */
+    protected function listeners(): array
+    {
+        return [];
+    }
+
+    /** @return array<string, class-string<DatasetProvider>> dataset id including module prefix */
+    protected function datasets(): array
+    {
+        return [];
+    }
+
+    /** @return array<string, array{permission:string, handler:class-string<AiTool>}> tool id including module prefix */
+    protected function aiTools(): array
+    {
+        return [];
+    }
+
     public function boot(): void
     {
         $file = (new ReflectionClass($this))->getFileName();
@@ -23,6 +50,17 @@ abstract class ModuleServiceProvider extends ServiceProvider
         $id = basename($path);
         if (! preg_match('/^[a-z][a-z0-9-]*$/D', $id) || ! is_file($path.'/module.json')) {
             throw new RuntimeException('Module provider must live in its module Providers directory.');
+        }
+        foreach ($this->listeners() as $name => $listener) {
+            $this->app->make(EventSubscriptions::class)->async($listener['event'], $id.'.'.$name, $listener['handler']);
+        }
+        foreach ($this->datasets() as $dataset => $provider) {
+            $this->assertOwned($id, $dataset);
+            $this->app->make(DatasetRegistry::class)->register($dataset, $provider);
+        }
+        foreach ($this->aiTools() as $tool => $definition) {
+            $this->assertOwned($id, $tool);
+            $this->app->make(AiToolRegistry::class)->register($tool, $definition['permission'], $definition['handler']);
         }
         if (is_dir($path.'/database/migrations')) {
             $this->loadMigrationsFrom($path.'/database/migrations');
@@ -47,6 +85,13 @@ abstract class ModuleServiceProvider extends ServiceProvider
                     throw new RuntimeException('Module '.$id.' route '.$route->uri().' requires explicit can: permission middleware.');
                 }
             }
+        }
+    }
+
+    private function assertOwned(string $id, string $name): void
+    {
+        if (! str_starts_with($name, $id.'.')) {
+            throw new RuntimeException('Module '.$id.' may only register its own '.$name);
         }
     }
 }

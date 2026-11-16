@@ -3,9 +3,10 @@
 declare(strict_types=1);
 
 use App\Http\Controllers\Core\AuthController;
+use App\Http\Controllers\Core\MetaController;
 use Illuminate\Support\Facades\Route;
 
-// Authentication endpoints are the only public/core API routes; module routes require can: abilities.
+// Login is the only public API route; me/logout/meta need only authentication. Module routes require can: abilities.
 Route::prefix('core/auth')->name('core.auth.')->group(function (): void {
     Route::post('login', [AuthController::class, 'login'])->middleware('throttle:core-login')->name('login');
     Route::middleware('auth:sanctum')->group(function (): void {
@@ -13,3 +14,5 @@ Route::prefix('core/auth')->name('core.auth.')->group(function (): void {
         Route::post('logout', [AuthController::class, 'logout'])->name('logout');
     });
 });
+
+Route::get('core/meta', MetaController::class)->middleware(['auth:sanctum', 'company.context'])->name('core.meta');
