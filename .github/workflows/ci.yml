@@ -38,6 +38,9 @@ jobs:
       - name: Validate module manifests
         run: php tools/validate-manifests.php
 
+      - name: Architecture rules
+        run: php tools/architecture-check.php
+
       - name: Check generated event catalog
         run: php tools/event-catalog.php --check
 

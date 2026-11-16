@@ -5,6 +5,7 @@ parameters:
     paths:
         - app
         - tools/depth
+        - tools/architecture
         - tests/platform
         - tests/Platform
     tmpDir: .cache/phpstan

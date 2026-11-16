@@ -149,7 +149,7 @@ final class DatasetRegistry implements DatasetContract
         match ($operator) {
             'in' => is_array($value) && $value !== [] && count($value) <= 500 && array_filter($value, $scalar) === $value ? $builder->whereIn($source, array_values($value)) : throw new InvalidArgumentException('in requires 1-500 scalar values.'),
             'between' => is_array($value) && count($value) === 2 && $scalar($value[0] ?? null) && $scalar($value[1] ?? null) ? $builder->whereBetween($source, [$value[0], $value[1]]) : throw new InvalidArgumentException('between requires two scalar values.'),
-            // Identifier comes from the validated code definition; the user value is bound with literal wildcards.
+            // arch-allow-raw: identifier comes from the validated code definition; the user value is bound with literal wildcards.
             'contains' => is_string($value) && mb_strlen($value) <= 200 ? $builder->whereRaw($builder->getGrammar()->wrap($source)." LIKE ? ESCAPE '!'", ['%'.strtr($value, ['!' => '!!', '%' => '!%', '_' => '!_']).'%']) : throw new InvalidArgumentException('contains requires text.'),
             default => $scalar($value) ? $builder->where($source, $operator === '!=' ? '<>' : $operator, $value) : throw new InvalidArgumentException('Comparison requires a scalar value.'),
         };

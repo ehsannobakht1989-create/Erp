@@ -27,7 +27,7 @@ trait Auditable
                 throw new LogicException('Cross-company audit is forbidden.');
             }
             $module = $model->auditModule();
-            if (! preg_match('/^[a-z][a-z0-9-]*$/D', $module) || ! str_starts_with($model->getTable(), str_replace('-', '_', $module).'_')) {
+            if (! preg_match('/^[a-z][a-z0-9-]*$/D', $module) || ! str_starts_with($model->getTable(), $module === 'core' ? 'core_' : str_replace('-', '_', $module).'__')) {
                 throw new LogicException('Audited table must use its owning module prefix.');
             }
         };

@@ -18,7 +18,7 @@ final class AuditedFixture extends Model
 {
     use Auditable, BelongsToCompany;
 
-    protected $table = 'fixture_records';
+    protected $table = 'fixture__records';
 
     protected $guarded = [];
 
@@ -39,7 +39,7 @@ $app = require dirname(__DIR__, 2).'/bootstrap/app.php';
 $app->make(Kernel::class)->bootstrap();
 config(['database.default' => 'sqlite', 'database.connections.sqlite.database' => ':memory:']);
 DB::purge('sqlite');
-Schema::create('fixture_records', function (Blueprint $table): void {
+Schema::create('fixture__records', function (Blueprint $table): void {
     $table->id();
     $table->unsignedBigInteger('company_id');
     $table->string('name');
@@ -76,7 +76,7 @@ DB::transaction(fn () => $record->update(['name' => 'changed']));
 DB::transaction(fn () => $record->delete());
 auditCheck(count($recorder->records) === 3, 'Create/update/delete must be audited automatically');
 [$created, $updated, $deleted] = $recorder->records;
-auditCheck($created['companyId'] === 1 && $created['module'] === 'fixture' && $created['table'] === 'fixture_records', 'Audit must include tenant/owner/table');
+auditCheck($created['companyId'] === 1 && $created['module'] === 'fixture' && $created['table'] === 'fixture__records', 'Audit must include tenant/owner/table');
 auditCheck(! str_contains(json_encode($recorder->records, JSON_THROW_ON_ERROR), 'do-not-log'), 'Hidden model fields must not leak into audit');
 auditCheck($created['before'] === null && $created['after']['name'] === 'original', 'Create snapshot is incorrect');
 auditCheck($updated['before']['name'] === 'original' && $updated['after']['name'] === 'changed', 'Update diff must preserve original and changed values');
