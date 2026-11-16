@@ -49,7 +49,13 @@ try {
 } catch (LogicException $e) {
     contractCheck(stripos($e->getMessage(), 'company') !== false, 'Numbering must require active company context');
 }
-unavailable(fn () => app(Contracts\DatasetContract::class)->query(1, 1, 'inventory.stock', []));
+try {
+    app(Contracts\DatasetContract::class)->query(1, 1, 'inventory.stock', []);
+    throw new RuntimeException('Dataset query without company context must fail');
+} catch (LogicException $e) {
+    contractCheck(stripos($e->getMessage(), 'company') !== false, 'Datasets must require active company context');
+}
+contractCheck(app(Contracts\DataScopeContract::class)->scopeFor(1, 1, 'inventory.stock.view')['level'] === 'none', 'Default data scope must expose no rows');
 $app->instance(Contracts\PermissionContract::class, new class implements Contracts\PermissionContract
 {
     public function can(int $userId, int $companyId, string $permission): bool
