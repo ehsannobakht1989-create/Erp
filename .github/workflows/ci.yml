@@ -75,5 +75,7 @@ jobs:
           php artisan --version
           php tests/platform/laravel-smoke.php
           php tests/platform/module-manager.php
+          php tests/platform/tenancy.php
+          php tests/platform/tenancy-middleware.php
           php artisan erp:modules:list
           vendor/bin/phpunit --fail-on-risky --fail-on-warning
