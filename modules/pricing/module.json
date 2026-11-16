@@ -1,6 +1,6 @@
 {
   "id": "pricing",
-  "status": "partial",
+  "status": "stub",
   "name": { "fa": "قیمت‌گذاری", "en": "Pricing" },
   "version": "1.0.0",
   "category": "commercial",

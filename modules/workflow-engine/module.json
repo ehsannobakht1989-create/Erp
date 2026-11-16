@@ -1,6 +1,6 @@
 {
   "id": "workflow-engine",
-  "status": "partial",
+  "status": "stub",
   "name": {
     "fa": "موتور گردش کار",
     "en": "Workflow Engine"

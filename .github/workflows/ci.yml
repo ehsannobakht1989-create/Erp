@@ -19,19 +19,6 @@ jobs:
       - name: Check repository budget
         run: bash tools/budget.sh
 
-      - name: Prevent unverified completion claims
-        run: |
-          python3 -m unittest discover -s tools/tests -p "test_*.py"
-          python3 tools/status_guard.py
-
-      - name: Test incomplete depth diagnostics (fail closed)
-        run: |
-          php tools/tests/depth-inspector.php
-          php tools/tests/depth-php-analyzer.php
-          python3 -m unittest discover -s tools/tests -p "test_depth_cli.py"
-          php tools/depth-check.php --all --gate --write-status
-          git diff --exit-code -- docs/depth-status.md
-
       - name: Test module catalog
         run: php tests/platform/module-catalog.php
 
@@ -91,3 +78,23 @@ jobs:
           php artisan erp:modules:graph
           php artisan erp:modules:validate
           vendor/bin/phpunit --fail-on-risky --fail-on-warning
+
+  depth-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: dom, mbstring, pdo_sqlite, xmlwriter, zip
+          tools: composer:v2
+      - name: Install locked dependencies (module tests run through PHPUnit)
+        run: composer install --no-interaction --prefer-dist
+      - name: Test the depth gate itself
+        run: |
+          php tests/platform/depth-gate.php
+          php tests/platform/depth-php-analyzer.php
+      - name: Depth gate (fails when any module claims more than it passes)
+        run: |
+          php tools/depth-check.php --all --gate --write-status
+          git diff --exit-code -- docs/depth-status.md

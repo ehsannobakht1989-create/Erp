@@ -1,6 +1,6 @@
 {
   "id": "hr-core",
-  "status": "partial",
+  "status": "stub",
   "name": { "fa": "منابع انسانی", "en": "HR Core" },
   "version": "1.0.0",
   "category": "hr",

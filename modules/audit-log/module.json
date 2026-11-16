@@ -1,6 +1,6 @@
 {
   "id": "audit-log",
-  "status": "partial",
+  "status": "stub",
   "name": {
     "fa": "گزارش ممیزی",
     "en": "Audit Log"

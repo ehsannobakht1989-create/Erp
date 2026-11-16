@@ -1,6 +1,6 @@
 {
   "id": "auth-rbac",
-  "status": "partial",
+  "status": "stub",
   "name": {
     "fa": "احراز هویت و دسترسی",
     "en": "Auth & RBAC"

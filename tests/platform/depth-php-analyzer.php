@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require dirname(__DIR__).'/depth/PhpAnalyzer.php';
+require dirname(__DIR__, 2).'/tools/depth/PhpAnalyzer.php';
 
 use Erp\Depth\PhpAnalyzer;
 

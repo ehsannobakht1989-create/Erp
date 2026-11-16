@@ -1,6 +1,6 @@
 {
   "id": "inventory",
-  "status": "partial",
+  "status": "stub",
   "name": { "fa": "انبار", "en": "Inventory" },
   "version": "1.0.0",
   "category": "supply",

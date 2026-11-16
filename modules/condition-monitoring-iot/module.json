@@ -1,6 +1,6 @@
 {
   "id": "condition-monitoring-iot",
-  "status": "partial",
+  "status": "stub",
   "name": {
     "fa": "پایش وضعیت و IoT",
     "en": "Condition Monitoring IoT"

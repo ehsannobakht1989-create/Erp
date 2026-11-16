@@ -1,1312 +1,5837 @@
 # Module depth status
 
-Generated from the incomplete depth diagnostics. **No scores are available and no module passes.** The implementation does not yet assess the seven required categories, most anti-gaming checks, or test execution; its output is not a completed depth gate.
-
-## accounting-gl — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/accounting-gl/backend/src/Services/AccountingGlService.php:14: __construct empty body
-- modules/accounting-gl/backend/src/Services/AccountingGlService.php:65: resolveAccount only returns a trivial value
-
-## anomaly-detection — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/anomaly-detection/backend/src/Services/AnomalyDetectionService.php:11: __construct empty body
-- modules/anomaly-detection/backend/src/Services/AnomalyDetectionService.php:15: runProfile only returns a trivial value
-- modules/anomaly-detection/backend/src/Services/AnomalyDetectionService.php:20: detections only returns a trivial value
-- modules/anomaly-detection/backend/src/Services/AnomalyDetectionService.php:25: feedback only returns a trivial value
-- modules/anomaly-detection/backend/src/Services/AnomalyDetectionService.php:30: registerProfile only returns a trivial value
-
-## api-webhooks — partial / UNVERIFIED
-
-- Specification missing: specs/api-webhooks.md
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/api-webhooks/backend/src/WebhookService.php:10: __construct empty body
-
-## ar-ap — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/ar-ap/backend/src/Services/ArApService.php:11: __construct empty body
-- modules/ar-ap/backend/src/Services/ArApService.php:15: balance only returns a trivial value
-- modules/ar-ap/backend/src/Services/ArApService.php:20: openItems only returns a trivial value
-- modules/ar-ap/backend/src/Services/ArApService.php:25: overdue only returns a trivial value
-- modules/ar-ap/backend/src/Services/ArApService.php:30: creditExposure only returns a trivial value
-- modules/ar-ap/backend/src/Services/ArApService.php:35: proposePayments only returns a trivial value
-
-## asset-registry — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/asset-registry/backend/src/Services/AssetRegistryService.php:11: __construct empty body
-- modules/asset-registry/backend/src/Services/AssetRegistryService.php:32: spareParts only returns a trivial value
-
-## attendance — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/attendance/backend/src/Services/AttendanceService.php:11: __construct empty body
-- modules/attendance/backend/src/Services/AttendanceService.php:15: summary only returns a trivial value
-- modules/attendance/backend/src/Services/AttendanceService.php:20: balance only returns a trivial value
-- modules/attendance/backend/src/Services/AttendanceService.php:25: isOnLeave only returns a trivial value
-- modules/attendance/backend/src/Services/AttendanceService.php:30: presentNow only returns a trivial value
-- modules/attendance/backend/src/Services/AttendanceService.php:35: workedMinutes only returns a trivial value
-
-## audit-iso — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/audit-iso/backend/src/Services/AuditIsoService.php:11: __construct empty body
-- modules/audit-iso/backend/src/Services/AuditIsoService.php:15: programStatus only returns a trivial value
-- modules/audit-iso/backend/src/Services/AuditIsoService.php:20: openFindings only returns a trivial value
-- modules/audit-iso/backend/src/Services/AuditIsoService.php:25: upcomingAudits only returns a trivial value
-
-## audit-log — partial / UNVERIFIED
-
-- Specification missing: specs/audit-log.md
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/audit-log/backend/src/AuditService.php:11: __construct empty body
-
-## auth-rbac — partial / UNVERIFIED
-
-- Specification missing: specs/auth-rbac.md
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/auth-rbac/backend/src/AuthService.php:14: __construct empty body
-- modules/auth-rbac/backend/src/PermissionService.php:11: __construct empty body
-
-## batch-formulation — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/batch-formulation/backend/src/Services/BatchFormulationService.php:11: __construct empty body
-- modules/batch-formulation/backend/src/Services/BatchFormulationService.php:15: activeFormula only returns a trivial value
-- modules/batch-formulation/backend/src/Services/BatchFormulationService.php:20: scale only returns a trivial value
-- modules/batch-formulation/backend/src/Services/BatchFormulationService.php:25: validateBatch only returns a trivial value
-
-## bom — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/bom/backend/src/Services/BomService.php:13: __construct empty body
-- modules/bom/backend/src/Services/BomService.php:46: whereUsed only returns a trivial value
-- modules/bom/backend/src/Services/BomService.php:47: compare only returns a trivial value
-- modules/bom/backend/src/Services/BomService.php:48: costRollupInputs only returns a trivial value
-
-## budgeting — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/budgeting/backend/src/Services/BudgetingService.php:11: __construct empty body
-- modules/budgeting/backend/src/Services/BudgetingService.php:15: check only returns a trivial value
-- modules/budgeting/backend/src/Services/BudgetingService.php:20: commit only returns a trivial value
-- modules/budgeting/backend/src/Services/BudgetingService.php:25: release only returns a trivial value
-- modules/budgeting/backend/src/Services/BudgetingService.php:30: variance only returns a trivial value
-
-## canteen — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/canteen/backend/src/Services/CanteenService.php:11: __construct empty body
-- modules/canteen/backend/src/Services/CanteenService.php:15: entitled only returns a trivial value
-- modules/canteen/backend/src/Services/CanteenService.php:20: chargesFor only returns a trivial value
-
-## cmms — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/cmms/backend/src/Services/CmmsService.php:11: __construct empty body
-- modules/cmms/backend/src/Services/CmmsService.php:15: openOrders only returns a trivial value
-- modules/cmms/backend/src/Services/CmmsService.php:20: pmDue only returns a trivial value
-- modules/cmms/backend/src/Services/CmmsService.php:25: downtime only returns a trivial value
-- modules/cmms/backend/src/Services/CmmsService.php:30: mttrMtbf only returns a trivial value
-- modules/cmms/backend/src/Services/CmmsService.php:35: costByAsset only returns a trivial value
-
-## competency-appraisal — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/competency-appraisal/backend/src/Services/CompetencyAppraisalService.php:11: __construct empty body
-- modules/competency-appraisal/backend/src/Services/CompetencyAppraisalService.php:15: gaps only returns a trivial value
-- modules/competency-appraisal/backend/src/Services/CompetencyAppraisalService.php:20: latestScore only returns a trivial value
-- modules/competency-appraisal/backend/src/Services/CompetencyAppraisalService.php:25: competencyMatrix only returns a trivial value
-
-## condition-monitoring-iot — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/condition-monitoring-iot/backend/src/Services/ConditionMonitoringIotService.php:11: __construct empty body
-- modules/condition-monitoring-iot/backend/src/Services/ConditionMonitoringIotService.php:15: latest only returns a trivial value
-- modules/condition-monitoring-iot/backend/src/Services/ConditionMonitoringIotService.php:20: series only returns a trivial value
-- modules/condition-monitoring-iot/backend/src/Services/ConditionMonitoringIotService.php:25: activeAlarms only returns a trivial value
-- modules/condition-monitoring-iot/backend/src/Services/ConditionMonitoringIotService.php:30: health only returns a trivial value
-
-## contractor-mgmt — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/contractor-mgmt/backend/src/Services/ContractorMgmtService.php:11: __construct empty body
-- modules/contractor-mgmt/backend/src/Services/ContractorMgmtService.php:15: isEligible only returns a trivial value
-- modules/contractor-mgmt/backend/src/Services/ContractorMgmtService.php:20: balance only returns a trivial value
-- modules/contractor-mgmt/backend/src/Services/ContractorMgmtService.php:25: retention only returns a trivial value
-
-## contracts — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/contracts/backend/src/Services/ContractsService.php:11: __construct empty body
-- modules/contracts/backend/src/Services/ContractsService.php:15: activeFor only returns a trivial value
-- modules/contracts/backend/src/Services/ContractsService.php:20: consumed only returns a trivial value
-- modules/contracts/backend/src/Services/ContractsService.php:25: expiring only returns a trivial value
-- modules/contracts/backend/src/Services/ContractsService.php:30: terms only returns a trivial value
-
-## correspondence — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/correspondence/backend/src/Services/CorrespondenceService.php:11: __construct empty body
-- modules/correspondence/backend/src/Services/CorrespondenceService.php:15: inbox only returns a trivial value
-- modules/correspondence/backend/src/Services/CorrespondenceService.php:20: byNumber only returns a trivial value
-- modules/correspondence/backend/src/Services/CorrespondenceService.php:25: overdue only returns a trivial value
-
-## costing — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/costing/backend/src/Services/CostingService.php:11: __construct empty body
-- modules/costing/backend/src/Services/CostingService.php:15: itemCost only returns a trivial value
-- modules/costing/backend/src/Services/CostingService.php:20: woCost only returns a trivial value
-- modules/costing/backend/src/Services/CostingService.php:25: wipValue only returns a trivial value
-- modules/costing/backend/src/Services/CostingService.php:30: margin only returns a trivial value
-- modules/costing/backend/src/Services/CostingService.php:35: simulate only returns a trivial value
-- modules/costing/backend/src/Services/CostingService.php:40: valuationOf only returns a trivial value
-- modules/costing/backend/src/Services/CostingService.php:45: runPeriod only returns a trivial value
-
-## crm — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/crm/backend/src/Services/CrmService.php:11: __construct empty body
-- modules/crm/backend/src/Services/CrmService.php:15: customer360 only returns a trivial value
-- modules/crm/backend/src/Services/CrmService.php:20: openOpportunities only returns a trivial value
-- modules/crm/backend/src/Services/CrmService.php:25: pipeline only returns a trivial value
-
-## demand-forecast — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/demand-forecast/backend/src/Services/DemandForecastService.php:11: __construct empty body
-- modules/demand-forecast/backend/src/Services/DemandForecastService.php:15: run only returns a trivial value
-- modules/demand-forecast/backend/src/Services/DemandForecastService.php:20: results only returns a trivial value
-- modules/demand-forecast/backend/src/Services/DemandForecastService.php:25: latest only returns a trivial value
-- modules/demand-forecast/backend/src/Services/DemandForecastService.php:30: adopt only returns a trivial value
-- modules/demand-forecast/backend/src/Services/DemandForecastService.php:35: accuracy only returns a trivial value
-
-## doc-ocr — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/doc-ocr/backend/src/Services/DocOcrService.php:11: __construct empty body
-- modules/doc-ocr/backend/src/Services/DocOcrService.php:15: extract only returns a trivial value
-- modules/doc-ocr/backend/src/Services/DocOcrService.php:20: result only returns a trivial value
-- modules/doc-ocr/backend/src/Services/DocOcrService.php:25: approve only returns a trivial value
-- modules/doc-ocr/backend/src/Services/DocOcrService.php:30: textOf only returns a trivial value
-
-## document-mgmt — partial / UNVERIFIED
-
-- Specification missing: specs/document-mgmt.md
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/document-mgmt/backend/src/DocumentService.php:10: __construct empty body
-
-## dynamic-fields — partial / UNVERIFIED
-
-- Specification missing: specs/dynamic-fields.md
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/dynamic-fields/backend/src/DynamicFieldService.php:11: __construct empty body
-- modules/dynamic-fields/web/pages/DynamicFieldsPage.tsx:11: banned marker 'placeholder'
-
-## eco-plm — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/eco-plm/backend/src/Services/EcoPlmService.php:11: __construct empty body
-- modules/eco-plm/backend/src/Services/EcoPlmService.php:15: pendingChanges only returns a trivial value
-- modules/eco-plm/backend/src/Services/EcoPlmService.php:20: effectiveRevision only returns a trivial value
-- modules/eco-plm/backend/src/Services/EcoPlmService.php:25: impact only returns a trivial value
-- modules/eco-plm/backend/src/Services/EcoPlmService.php:30: lifecycle only returns a trivial value
-
-## energy-utilities — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/energy-utilities/backend/src/Services/EnergyUtilitiesService.php:11: __construct empty body
-- modules/energy-utilities/backend/src/Services/EnergyUtilitiesService.php:15: consumption only returns a trivial value
-- modules/energy-utilities/backend/src/Services/EnergyUtilitiesService.php:20: cost only returns a trivial value
-- modules/energy-utilities/backend/src/Services/EnergyUtilitiesService.php:25: sec only returns a trivial value
-- modules/energy-utilities/backend/src/Services/EnergyUtilitiesService.php:30: allocation only returns a trivial value
-
-## failure-prediction — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/failure-prediction/backend/src/Services/FailurePredictionService.php:11: __construct empty body
-- modules/failure-prediction/backend/src/Services/FailurePredictionService.php:15: scores only returns a trivial value
-- modules/failure-prediction/backend/src/Services/FailurePredictionService.php:20: explain only returns a trivial value
-- modules/failure-prediction/backend/src/Services/FailurePredictionService.php:25: topRisks only returns a trivial value
-- modules/failure-prediction/backend/src/Services/FailurePredictionService.php:30: feedback only returns a trivial value
-
-## fixed-assets — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/fixed-assets/backend/src/Services/FixedAssetsService.php:11: __construct empty body
-- modules/fixed-assets/backend/src/Services/FixedAssetsService.php:15: bookValue only returns a trivial value
-- modules/fixed-assets/backend/src/Services/FixedAssetsService.php:20: schedule only returns a trivial value
-- modules/fixed-assets/backend/src/Services/FixedAssetsService.php:25: registerFromInvoiceLine only returns a trivial value
-- modules/fixed-assets/backend/src/Services/FixedAssetsService.php:30: runDepreciation only returns a trivial value
-
-## forex-lc — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/forex-lc/backend/src/Services/ForexLcService.php:11: __construct empty body
-- modules/forex-lc/backend/src/Services/ForexLcService.php:15: exposure only returns a trivial value
-- modules/forex-lc/backend/src/Services/ForexLcService.php:20: lcFor only returns a trivial value
-- modules/forex-lc/backend/src/Services/ForexLcService.php:25: guaranteesExpiring only returns a trivial value
-- modules/forex-lc/backend/src/Services/ForexLcService.php:30: rateAt only returns a trivial value
-
-## form-builder — partial / UNVERIFIED
-
-- Specification missing: specs/form-builder.md
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/form-builder/backend/src/FormBuilderService.php:10: __construct empty body
-
-## gate-visitor — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/gate-visitor/backend/src/Services/GateVisitorService.php:11: __construct empty body
-- modules/gate-visitor/backend/src/Services/GateVisitorService.php:15: onSite only returns a trivial value
-- modules/gate-visitor/backend/src/Services/GateVisitorService.php:20: materialPass only returns a trivial value
-- modules/gate-visitor/backend/src/Services/GateVisitorService.php:25: isBlacklisted only returns a trivial value
-
-## hr-core — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/hr-core/backend/src/Services/HrCoreService.php:11: __construct empty body
-- modules/hr-core/backend/src/Services/HrCoreService.php:20: byUser only returns a trivial value
-- modules/hr-core/backend/src/Services/HrCoreService.php:32: subordinates only returns a trivial value
-- modules/hr-core/backend/src/Services/HrCoreService.php:34: employmentAt only returns a trivial value
-
-## hse — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/hse/backend/src/Services/HseService.php:11: __construct empty body
-- modules/hse/backend/src/Services/HseService.php:15: openPermits only returns a trivial value
-- modules/hse/backend/src/Services/HseService.php:20: incidentStats only returns a trivial value
-- modules/hse/backend/src/Services/HseService.php:25: ppeValid only returns a trivial value
-- modules/hse/backend/src/Services/HseService.php:30: overdueActions only returns a trivial value
-
-## import-customs — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/import-customs/backend/src/Services/ImportCustomsService.php:11: __construct empty body
-- modules/import-customs/backend/src/Services/ImportCustomsService.php:15: fileForPo only returns a trivial value
-- modules/import-customs/backend/src/Services/ImportCustomsService.php:20: eta only returns a trivial value
-- modules/import-customs/backend/src/Services/ImportCustomsService.php:25: landedCost only returns a trivial value
-- modules/import-customs/backend/src/Services/ImportCustomsService.php:30: openFiles only returns a trivial value
-
-## inventory — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/inventory/backend/src/Services/InventoryService.php:14: __construct empty body
-- modules/inventory/backend/src/Services/InventoryService.php:90: suggestPicking only returns a trivial value
-- modules/inventory/backend/src/Services/InventoryService.php:91: getLot only returns a trivial value
-- modules/inventory/backend/src/Services/InventoryService.php:92: expiringLots only returns a trivial value
-- modules/inventory/backend/src/Services/InventoryService.php:93: valuationFeed only returns a trivial value
-
-## item-master — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/item-master/backend/src/Controllers/ItemController.php:12: __construct empty body
-- modules/item-master/web/pages/ItemMasterPage.tsx:17: banned marker 'placeholder'
-
-## lims — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/lims/backend/src/Services/LimsService.php:11: __construct empty body
-- modules/lims/backend/src/Services/LimsService.php:15: resultsForLot only returns a trivial value
-- modules/lims/backend/src/Services/LimsService.php:20: isLabReleased only returns a trivial value
-- modules/lims/backend/src/Services/LimsService.php:25: pendingTests only returns a trivial value
-- modules/lims/backend/src/Services/LimsService.php:30: tatStats only returns a trivial value
-
-## lot-traceability — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/lot-traceability/backend/src/Services/LotTraceabilityService.php:11: __construct empty body
-- modules/lot-traceability/backend/src/Services/LotTraceabilityService.php:15: backward only returns a trivial value
-- modules/lot-traceability/backend/src/Services/LotTraceabilityService.php:20: forward only returns a trivial value
-- modules/lot-traceability/backend/src/Services/LotTraceabilityService.php:25: recallScope only returns a trivial value
-- modules/lot-traceability/backend/src/Services/LotTraceabilityService.php:30: affectedCustomers only returns a trivial value
-- modules/lot-traceability/backend/src/Services/LotTraceabilityService.php:35: where only returns a trivial value
-
-## management-consolidation — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/management-consolidation/backend/src/Services/ManagementConsolidationService.php:11: __construct empty body
-- modules/management-consolidation/backend/src/Services/ManagementConsolidationService.php:15: pnl only returns a trivial value
-- modules/management-consolidation/backend/src/Services/ManagementConsolidationService.php:20: profitability only returns a trivial value
-- modules/management-consolidation/backend/src/Services/ManagementConsolidationService.php:25: pack only returns a trivial value
-
-## mes — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/mes/backend/src/Services/MesService.php:11: __construct empty body
-- modules/mes/backend/src/Services/MesService.php:15: runningOps only returns a trivial value
-- modules/mes/backend/src/Services/MesService.php:20: oeeInputs only returns a trivial value
-- modules/mes/backend/src/Services/MesService.php:25: downtime only returns a trivial value
-- modules/mes/backend/src/Services/MesService.php:30: tagValue only returns a trivial value
-- modules/mes/backend/src/Services/MesService.php:35: operatorStatus only returns a trivial value
-
-## mps — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/mps/backend/src/Services/MpsService.php:11: __construct empty body
-- modules/mps/backend/src/Services/MpsService.php:15: atp only returns a trivial value
-- modules/mps/backend/src/Services/MpsService.php:20: plan only returns a trivial value
-- modules/mps/backend/src/Services/MpsService.php:25: forecast only returns a trivial value
-- modules/mps/backend/src/Services/MpsService.php:30: releasePlan only returns a trivial value
-- modules/mps/backend/src/Services/MpsService.php:35: scenarioCompare only returns a trivial value
-
-## mrp — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/mrp/backend/src/Services/MrpService.php:11: __construct empty body
-- modules/mrp/backend/src/Services/MrpService.php:15: runStatus only returns a trivial value
-- modules/mrp/backend/src/Services/MrpService.php:20: plannedOrders only returns a trivial value
-- modules/mrp/backend/src/Services/MrpService.php:25: pegging only returns a trivial value
-- modules/mrp/backend/src/Services/MrpService.php:30: firm only returns a trivial value
-- modules/mrp/backend/src/Services/MrpService.php:35: requirements only returns a trivial value
-- modules/mrp/backend/src/Services/MrpService.php:40: mrpParams only returns a trivial value
-
-## multi-company — partial / UNVERIFIED
-
-- Specification missing: specs/multi-company.md
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/multi-company/backend/src/NumberingService.php:10: __construct empty body
-
-## ncr-capa — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/ncr-capa/backend/src/Services/NcrCapaService.php:11: __construct empty body
-- modules/ncr-capa/backend/src/Services/NcrCapaService.php:15: openNcrs only returns a trivial value
-- modules/ncr-capa/backend/src/Services/NcrCapaService.php:20: defectStats only returns a trivial value
-- modules/ncr-capa/backend/src/Services/NcrCapaService.php:25: supplierNcrCount only returns a trivial value
-- modules/ncr-capa/backend/src/Services/NcrCapaService.php:30: capaDue only returns a trivial value
-
-## nl-report-assistant — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/nl-report-assistant/backend/src/Services/NlReportAssistantService.php:11: __construct empty body
-- modules/nl-report-assistant/backend/src/Services/NlReportAssistantService.php:15: ask only returns a trivial value
-- modules/nl-report-assistant/backend/src/Services/NlReportAssistantService.php:20: validateSpec only returns a trivial value
-- modules/nl-report-assistant/backend/src/Services/NlReportAssistantService.php:25: save only returns a trivial value
-
-## notifications — partial / UNVERIFIED
-
-- Specification missing: specs/notifications.md
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/notifications/backend/src/NotificationService.php:11: __construct empty body
-
-## oee — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/oee/backend/src/Services/OeeService.php:11: __construct empty body
-- modules/oee/backend/src/Services/OeeService.php:15: oee only returns a trivial value
-- modules/oee/backend/src/Services/OeeService.php:20: losses only returns a trivial value
-- modules/oee/backend/src/Services/OeeService.php:25: trend only returns a trivial value
-- modules/oee/backend/src/Services/OeeService.php:30: benchmark only returns a trivial value
-
-## org-structure — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/org-structure/backend/src/Services/OrgStructureService.php:11: __construct empty body
-- modules/org-structure/backend/src/Services/OrgStructureService.php:26: managerOf only returns a trivial value
-- modules/org-structure/backend/src/Services/OrgStructureService.php:27: approverChain only returns a trivial value
-- modules/org-structure/backend/src/Services/OrgStructureService.php:47: shift only returns a trivial value
-- modules/org-structure/backend/src/Services/OrgStructureService.php:48: shiftsFor only returns a trivial value
-
-## parking-vehicles — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/parking-vehicles/backend/src/Services/ParkingVehiclesService.php:11: __construct empty body
-- modules/parking-vehicles/backend/src/Services/ParkingVehiclesService.php:15: availability only returns a trivial value
-- modules/parking-vehicles/backend/src/Services/ParkingVehiclesService.php:20: documentsExpiring only returns a trivial value
-- modules/parking-vehicles/backend/src/Services/ParkingVehiclesService.php:25: costPerKm only returns a trivial value
-
-## party-master — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/party-master/backend/src/Controllers/PartyController.php:12: __construct empty body
-- modules/party-master/backend/src/Services/PartyMasterService.php:55: getAddresses only returns a trivial value
-- modules/party-master/backend/src/Services/PartyMasterService.php:56: getDefaultBank only returns a trivial value
-- modules/party-master/backend/src/Services/PartyMasterService.php:62: getPaymentTerm only returns a trivial value
-
-## payroll — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/payroll/backend/src/Services/PayrollService.php:11: __construct empty body
-- modules/payroll/backend/src/Services/PayrollService.php:15: payslip only returns a trivial value
-- modules/payroll/backend/src/Services/PayrollService.php:20: costByCostCenter only returns a trivial value
-- modules/payroll/backend/src/Services/PayrollService.php:25: headcountCost only returns a trivial value
-- modules/payroll/backend/src/Services/PayrollService.php:30: previewRun only returns a trivial value
-
-## pricing — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/pricing/backend/src/Services/PricingService.php:11: __construct empty body
-- modules/pricing/backend/src/Services/PricingService.php:34: resolveBulk only returns a trivial value
-- modules/pricing/backend/src/Services/PricingService.php:35: explain only returns a trivial value
-
-## print-barcode-qr — partial / UNVERIFIED
-
-- Specification missing: specs/print-barcode-qr.md
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/print-barcode-qr/backend/src/PrintService.php:11: __construct empty body
-
-## project-mgmt — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/project-mgmt/backend/src/Services/ProjectMgmtService.php:11: __construct empty body
-- modules/project-mgmt/backend/src/Services/ProjectMgmtService.php:15: project only returns a trivial value
-- modules/project-mgmt/backend/src/Services/ProjectMgmtService.php:20: tasks only returns a trivial value
-- modules/project-mgmt/backend/src/Services/ProjectMgmtService.php:25: progress only returns a trivial value
-- modules/project-mgmt/backend/src/Services/ProjectMgmtService.php:30: evm only returns a trivial value
-
-## purchase-order — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/purchase-order/backend/src/Services/PurchaseOrderService.php:11: __construct empty body
-- modules/purchase-order/backend/src/Services/PurchaseOrderService.php:15: find only returns a trivial value
-- modules/purchase-order/backend/src/Services/PurchaseOrderService.php:20: openLines only returns a trivial value
-- modules/purchase-order/backend/src/Services/PurchaseOrderService.php:25: expectedReceipts only returns a trivial value
-- modules/purchase-order/backend/src/Services/PurchaseOrderService.php:30: receivedSummary only returns a trivial value
-- modules/purchase-order/backend/src/Services/PurchaseOrderService.php:35: markInvoiced only returns a trivial value
-
-## purchase-request — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/purchase-request/backend/src/Services/PurchaseRequestService.php:11: __construct empty body
-- modules/purchase-request/backend/src/Services/PurchaseRequestService.php:15: openLines only returns a trivial value
-- modules/purchase-request/backend/src/Services/PurchaseRequestService.php:20: markConverted only returns a trivial value
-- modules/purchase-request/backend/src/Services/PurchaseRequestService.php:25: release only returns a trivial value
-- modules/purchase-request/backend/src/Services/PurchaseRequestService.php:30: find only returns a trivial value
-
-## quality-inspection — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/quality-inspection/backend/src/Services/QualityInspectionService.php:11: __construct empty body
-- modules/quality-inspection/backend/src/Services/QualityInspectionService.php:15: lotStatus only returns a trivial value
-- modules/quality-inspection/backend/src/Services/QualityInspectionService.php:20: isReleased only returns a trivial value
-- modules/quality-inspection/backend/src/Services/QualityInspectionService.php:25: supplierScore only returns a trivial value
-- modules/quality-inspection/backend/src/Services/QualityInspectionService.php:30: openLots only returns a trivial value
-- modules/quality-inspection/backend/src/Services/QualityInspectionService.php:35: spc only returns a trivial value
-
-## recruitment — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/recruitment/backend/src/Services/RecruitmentService.php:11: __construct empty body
-- modules/recruitment/backend/src/Services/RecruitmentService.php:15: pipeline only returns a trivial value
-- modules/recruitment/backend/src/Services/RecruitmentService.php:20: sourceStats only returns a trivial value
-- modules/recruitment/backend/src/Services/RecruitmentService.php:25: timeToHire only returns a trivial value
-
-## reorder-point — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/reorder-point/backend/src/Services/ReorderPointService.php:11: __construct empty body
-- modules/reorder-point/backend/src/Services/ReorderPointService.php:15: policy only returns a trivial value
-- modules/reorder-point/backend/src/Services/ReorderPointService.php:20: suggestions only returns a trivial value
-- modules/reorder-point/backend/src/Services/ReorderPointService.php:25: classOf only returns a trivial value
-- modules/reorder-point/backend/src/Services/ReorderPointService.php:30: compute only returns a trivial value
-
-## report-bi — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/report-bi/backend/src/Services/ReportBiService.php:11: __construct empty body
-- modules/report-bi/backend/src/Services/ReportBiService.php:15: run only returns a trivial value
-- modules/report-bi/backend/src/Services/ReportBiService.php:20: datasets only returns a trivial value
-- modules/report-bi/backend/src/Services/ReportBiService.php:25: kpiValue only returns a trivial value
-- modules/report-bi/backend/src/Services/ReportBiService.php:30: runSchedule only returns a trivial value
-
-## rfq — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/rfq/backend/src/Services/RfqService.php:11: __construct empty body
-- modules/rfq/backend/src/Services/RfqService.php:15: create only returns a trivial value
-- modules/rfq/backend/src/Services/RfqService.php:20: getAward only returns a trivial value
-- modules/rfq/backend/src/Services/RfqService.php:25: bestPrice only returns a trivial value
-- modules/rfq/backend/src/Services/RfqService.php:30: history only returns a trivial value
-
-## routing — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/routing/backend/src/Services/RoutingService.php:11: __construct empty body
-- modules/routing/backend/src/Services/RoutingService.php:15: findActive only returns a trivial value
-- modules/routing/backend/src/Services/RoutingService.php:20: workCenter only returns a trivial value
-- modules/routing/backend/src/Services/RoutingService.php:25: capacity only returns a trivial value
-- modules/routing/backend/src/Services/RoutingService.php:30: standardTime only returns a trivial value
-- modules/routing/backend/src/Services/RoutingService.php:35: costRates only returns a trivial value
-
-## sales — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/sales/backend/src/Services/SalesService.php:11: __construct empty body
-- modules/sales/backend/src/Services/SalesService.php:15: openOrders only returns a trivial value
-- modules/sales/backend/src/Services/SalesService.php:20: backlog only returns a trivial value
-- modules/sales/backend/src/Services/SalesService.php:25: invoiceTotals only returns a trivial value
-- modules/sales/backend/src/Services/SalesService.php:30: find only returns a trivial value
-
-## schedule-optimizer — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/schedule-optimizer/backend/src/Services/ScheduleOptimizerService.php:11: __construct empty body
-- modules/schedule-optimizer/backend/src/Services/ScheduleOptimizerService.php:15: run only returns a trivial value
-- modules/schedule-optimizer/backend/src/Services/ScheduleOptimizerService.php:20: status only returns a trivial value
-- modules/schedule-optimizer/backend/src/Services/ScheduleOptimizerService.php:25: solution only returns a trivial value
-- modules/schedule-optimizer/backend/src/Services/ScheduleOptimizerService.php:30: compare only returns a trivial value
-
-## scheduling — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/scheduling/backend/src/Services/SchedulingService.php:11: __construct empty body
-- modules/scheduling/backend/src/Services/SchedulingService.php:15: dispatchList only returns a trivial value
-- modules/scheduling/backend/src/Services/SchedulingService.php:20: loadByWorkCenter only returns a trivial value
-- modules/scheduling/backend/src/Services/SchedulingService.php:25: promiseDate only returns a trivial value
-- modules/scheduling/backend/src/Services/SchedulingService.php:30: reschedule only returns a trivial value
-- modules/scheduling/backend/src/Services/SchedulingService.php:35: conflicts only returns a trivial value
-
-## scrap-byproduct — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/scrap-byproduct/backend/src/Services/ScrapByproductService.php:11: __construct empty body
-- modules/scrap-byproduct/backend/src/Services/ScrapByproductService.php:15: rateByWorkCenter only returns a trivial value
-- modules/scrap-byproduct/backend/src/Services/ScrapByproductService.php:20: rateByItem only returns a trivial value
-- modules/scrap-byproduct/backend/src/Services/ScrapByproductService.php:25: expectedByProduct only returns a trivial value
-- modules/scrap-byproduct/backend/src/Services/ScrapByproductService.php:30: disposition only returns a trivial value
-
-## shipping-distribution — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/shipping-distribution/backend/src/Services/ShippingDistributionService.php:11: __construct empty body
-- modules/shipping-distribution/backend/src/Services/ShippingDistributionService.php:15: shipmentFor only returns a trivial value
-- modules/shipping-distribution/backend/src/Services/ShippingDistributionService.php:20: eta only returns a trivial value
-- modules/shipping-distribution/backend/src/Services/ShippingDistributionService.php:25: carrierCost only returns a trivial value
-- modules/shipping-distribution/backend/src/Services/ShippingDistributionService.php:30: otif only returns a trivial value
-
-## supplier-evaluation — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/supplier-evaluation/backend/src/Services/SupplierEvaluationService.php:11: __construct empty body
-- modules/supplier-evaluation/backend/src/Services/SupplierEvaluationService.php:15: score only returns a trivial value
-- modules/supplier-evaluation/backend/src/Services/SupplierEvaluationService.php:20: grade only returns a trivial value
-- modules/supplier-evaluation/backend/src/Services/SupplierEvaluationService.php:25: isApproved only returns a trivial value
-- modules/supplier-evaluation/backend/src/Services/SupplierEvaluationService.php:30: asl only returns a trivial value
-- modules/supplier-evaluation/backend/src/Services/SupplierEvaluationService.php:35: expiringCerts only returns a trivial value
-
-## tax-moadian — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/tax-moadian/backend/src/Services/TaxMoadianService.php:11: __construct empty body
-- modules/tax-moadian/backend/src/Services/TaxMoadianService.php:15: statusOf only returns a trivial value
-- modules/tax-moadian/backend/src/Services/TaxMoadianService.php:20: submit only returns a trivial value
-- modules/tax-moadian/backend/src/Services/TaxMoadianService.php:25: inquire only returns a trivial value
-- modules/tax-moadian/backend/src/Services/TaxMoadianService.php:30: validate only returns a trivial value
-- modules/tax-moadian/backend/src/Services/TaxMoadianService.php:35: adapter only returns a trivial value
-
-## ticketing — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/ticketing/backend/src/Services/TicketingService.php:11: __construct empty body
-- modules/ticketing/backend/src/Services/TicketingService.php:15: openFor only returns a trivial value
-- modules/ticketing/backend/src/Services/TicketingService.php:20: slaStats only returns a trivial value
-
-## tooling — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/tooling/backend/src/Services/ToolingService.php:11: __construct empty body
-- modules/tooling/backend/src/Services/ToolingService.php:15: availability only returns a trivial value
-- modules/tooling/backend/src/Services/ToolingService.php:20: lifeLeft only returns a trivial value
-- modules/tooling/backend/src/Services/ToolingService.php:25: required only returns a trivial value
-- modules/tooling/backend/src/Services/ToolingService.php:30: amortizationPerUnit only returns a trivial value
-
-## training-lms — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/training-lms/backend/src/Services/TrainingLmsService.php:11: __construct empty body
-- modules/training-lms/backend/src/Services/TrainingLmsService.php:15: isCompliant only returns a trivial value
-- modules/training-lms/backend/src/Services/TrainingLmsService.php:20: expiring only returns a trivial value
-- modules/training-lms/backend/src/Services/TrainingLmsService.php:25: history only returns a trivial value
-- modules/training-lms/backend/src/Services/TrainingLmsService.php:30: compliance only returns a trivial value
-
-## treasury — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/treasury/backend/src/Services/TreasuryService.php:11: __construct empty body
-- modules/treasury/backend/src/Services/TreasuryService.php:15: bankBalance only returns a trivial value
-- modules/treasury/backend/src/Services/TreasuryService.php:20: chequesDue only returns a trivial value
-- modules/treasury/backend/src/Services/TreasuryService.php:25: createPayment only returns a trivial value
-- modules/treasury/backend/src/Services/TreasuryService.php:30: cashPosition only returns a trivial value
-- modules/treasury/backend/src/Services/TreasuryService.php:35: cashFlowForecast only returns a trivial value
-
-## warranty-after-sales — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/warranty-after-sales/backend/src/Services/WarrantyAfterSalesService.php:11: __construct empty body
-- modules/warranty-after-sales/backend/src/Services/WarrantyAfterSalesService.php:15: isUnderWarranty only returns a trivial value
-- modules/warranty-after-sales/backend/src/Services/WarrantyAfterSalesService.php:20: claimsFor only returns a trivial value
-- modules/warranty-after-sales/backend/src/Services/WarrantyAfterSalesService.php:25: failureStats only returns a trivial value
-
-## waste-environment — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/waste-environment/backend/src/Services/WasteEnvironmentService.php:11: __construct empty body
-- modules/waste-environment/backend/src/Services/WasteEnvironmentService.php:15: stored only returns a trivial value
-- modules/waste-environment/backend/src/Services/WasteEnvironmentService.php:20: contractorsValid only returns a trivial value
-- modules/waste-environment/backend/src/Services/WasteEnvironmentService.php:25: exceedances only returns a trivial value
-
-## weighbridge — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/weighbridge/backend/src/Services/WeighbridgeService.php:11: __construct empty body
-- modules/weighbridge/backend/src/Services/WeighbridgeService.php:15: ticket only returns a trivial value
-- modules/weighbridge/backend/src/Services/WeighbridgeService.php:20: netFor only returns a trivial value
-- modules/weighbridge/backend/src/Services/WeighbridgeService.php:25: pendingTickets only returns a trivial value
-
-## work-order — partial / UNVERIFIED
-
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/work-order/backend/src/Services/WorkOrderService.php:11: __construct empty body
-- modules/work-order/backend/src/Services/WorkOrderService.php:15: find only returns a trivial value
-- modules/work-order/backend/src/Services/WorkOrderService.php:20: open only returns a trivial value
-- modules/work-order/backend/src/Services/WorkOrderService.php:25: create only returns a trivial value
-- modules/work-order/backend/src/Services/WorkOrderService.php:30: release empty body
-- modules/work-order/backend/src/Services/WorkOrderService.php:34: reportOperation empty body
-- modules/work-order/backend/src/Services/WorkOrderService.php:38: issueMaterial empty body
-- modules/work-order/backend/src/Services/WorkOrderService.php:42: receiveOutput empty body
-- modules/work-order/backend/src/Services/WorkOrderService.php:46: shortages only returns a trivial value
-- modules/work-order/backend/src/Services/WorkOrderService.php:61: close empty body
-
-## workflow-engine — partial / UNVERIFIED
-
-- Specification missing: specs/workflow-engine.md
-- entity_cov: assessment not yet implemented (specification entities and fields versus migrations)
-- event_cov: assessment not yet implemented (emitted events and registered idempotent handlers)
-- contract_cov: assessment not yet implemented (contract implementations)
-- rule_cov: assessment not yet implemented (named tests and assertions for each rule)
-- perm_cov: assessment not yet implemented (permissions on API and UI routes)
-- ui_cov: assessment not yet implemented (entity pages, routes and Persian translations)
-- ai_cov: assessment not yet implemented (capability tools and off/fake-provider tests)
-- anti_gaming: assessment not yet implemented (complete trivial-method detection, empty tests, CRUD ratios and backend mocks)
-- tests: assessment not yet implemented (module test execution)
-- modules/workflow-engine/backend/src/WorkflowService.php:11: __construct empty body
-
-NEXT: implement all missing assessments and test execution, then generate exact category findings and scores.
+Generated by `php tools/depth-check.php --all --gate --write-status`; do not edit by hand. CI regenerates it and fails on drift.
+
+A module passes only with score ≥ 80, every category ≥ 60 %, no anti-gaming findings and passing module tests (executed by `--gate` once the static checks pass). Weights: entity 20, event 15, contract 20, rule 20, perm 10, ui 10, ai 5. Coverage is measured by static heuristics described in `docs/decisions.md`.
+
+| Module | Status | Suggested | Score | entity | event | contract | rule | perm | ui | ai | Anti-gaming | Tests | Pass |
+|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|
+| accounting-gl | stub | stub | 1 | 0 | 0 | 0 | 0 | 10 | 0 | 0 | 1 | not_run | no |
+| anomaly-detection | stub | stub | 5.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 100 | 4 | not_run | no |
+| api-webhooks | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
+| ar-ap | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 5 | not_run | no |
+| asset-registry | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 1 | not_run | no |
+| attendance | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 1.9 | 0 | 0 | 5 | not_run | no |
+| audit-iso | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.6 | 0 | 0 | 3 | not_run | no |
+| audit-log | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
+| auth-rbac | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
+| batch-formulation | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 3 | not_run | no |
+| bom | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 6.3 | 0 | 0 | 3 | not_run | no |
+| budgeting | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 4 | not_run | no |
+| canteen | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 2 | not_run | no |
+| cmms | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2.1 | 0 | 0 | 5 | not_run | no |
+| competency-appraisal | stub | stub | 0.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 0 | 3 | not_run | no |
+| condition-monitoring-iot | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 4 | not_run | no |
+| contractor-mgmt | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2.2 | 0 | 0 | 3 | not_run | no |
+| contracts | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 4 | not_run | no |
+| correspondence | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 3 | not_run | no |
+| costing | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 4.5 | 0 | 0 | 7 | not_run | no |
+| crm | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2.4 | 0 | 0 | 3 | not_run | no |
+| demand-forecast | stub | stub | 5.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 100 | 5 | not_run | no |
+| doc-ocr | stub | stub | 5.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 100 | 4 | not_run | no |
+| document-mgmt | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
+| dynamic-fields | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
+| eco-plm | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 4.2 | 0 | 0 | 4 | not_run | no |
+| energy-utilities | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.8 | 0 | 0 | 4 | not_run | no |
+| failure-prediction | stub | stub | 5.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 100 | 4 | not_run | no |
+| fixed-assets | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 4.5 | 0 | 0 | 4 | not_run | no |
+| forex-lc | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.8 | 0 | 0 | 4 | not_run | no |
+| form-builder | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
+| gate-visitor | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 3.1 | 0 | 0 | 3 | not_run | no |
+| hr-core | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 3 | not_run | no |
+| hse | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 1.5 | 0 | 0 | 4 | not_run | no |
+| import-customs | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.6 | 0 | 0 | 4 | not_run | no |
+| inventory | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 1.7 | 0 | 0 | 4 | not_run | no |
+| item-master | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 4.2 | 0 | 0 | 0 | not_run | no |
+| lims | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.6 | 0 | 0 | 4 | not_run | no |
+| lot-traceability | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 5 | not_run | no |
+| management-consolidation | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 3 | not_run | no |
+| mes | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 5 | not_run | no |
+| mps | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 6.3 | 0 | 0 | 5 | not_run | no |
+| mrp | stub | stub | 0.7 | 0 | 0 | 0 | 0 | 7.1 | 0 | 0 | 6 | not_run | no |
+| multi-company | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
+| ncr-capa | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.6 | 0 | 0 | 4 | not_run | no |
+| nl-report-assistant | stub | stub | 5.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 100 | 3 | not_run | no |
+| notifications | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
+| oee | stub | stub | 0.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 0 | 4 | not_run | no |
+| org-structure | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 4 | not_run | no |
+| parking-vehicles | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2.2 | 0 | 0 | 3 | not_run | no |
+| party-master | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 4.5 | 0 | 0 | 3 | not_run | no |
+| payroll | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 4.2 | 0 | 0 | 4 | not_run | no |
+| pricing | stub | stub | 0.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 0 | 2 | not_run | no |
+| print-barcode-qr | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
+| project-mgmt | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.5 | 0 | 0 | 4 | not_run | no |
+| purchase-order | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 4.2 | 0 | 0 | 5 | not_run | no |
+| purchase-request | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 4 | not_run | no |
+| quality-inspection | stub | stub | 1.3 | 0 | 0 | 0 | 0 | 12.5 | 0 | 0 | 5 | not_run | no |
+| recruitment | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.5 | 0 | 0 | 3 | not_run | no |
+| reorder-point | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 4 | not_run | no |
+| report-bi | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 4.2 | 0 | 0 | 4 | not_run | no |
+| rfq | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 4 | not_run | no |
+| routing | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 5 | not_run | no |
+| sales | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 1.7 | 0 | 0 | 4 | not_run | no |
+| schedule-optimizer | stub | stub | 5.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 100 | 4 | not_run | no |
+| scheduling | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 6.3 | 0 | 0 | 5 | not_run | no |
+| scrap-byproduct | stub | stub | 0.8 | 0 | 0 | 0 | 0 | 8.3 | 0 | 0 | 4 | not_run | no |
+| shipping-distribution | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.8 | 0 | 0 | 4 | not_run | no |
+| supplier-evaluation | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 3.3 | 0 | 0 | 5 | not_run | no |
+| tax-moadian | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 5.6 | 0 | 0 | 5 | not_run | no |
+| ticketing | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.6 | 0 | 0 | 2 | not_run | no |
+| tooling | stub | stub | 0.6 | 0 | 0 | 0 | 0 | 6.3 | 0 | 0 | 4 | not_run | no |
+| training-lms | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.8 | 0 | 0 | 4 | not_run | no |
+| treasury | stub | stub | 0.2 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 5 | not_run | no |
+| warranty-after-sales | stub | stub | 0.3 | 0 | 0 | 0 | 0 | 2.8 | 0 | 0 | 3 | not_run | no |
+| waste-environment | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.8 | 0 | 0 | 3 | not_run | no |
+| weighbridge | stub | stub | 0.5 | 0 | 0 | 0 | 0 | 5 | 0 | 0 | 3 | not_run | no |
+| work-order | stub | stub | 0.4 | 0 | 0 | 0 | 0 | 3.6 | 0 | 0 | 9 | not_run | no |
+| workflow-engine | stub | stub | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | not_run | no |
+
+## accounting-gl — stub, score 1, FAIL
+
+- entity_cov 0% (0/27):
+  - Period: table missing (expected accounting_gl__periods, 1 fields)
+  - Journal: table missing (expected accounting_gl__journals, 8 fields)
+  - JournalLine: table missing (expected accounting_gl__journal_lines, 8 fields)
+  - PostingRule: table missing (expected accounting_gl__posting_rules, 6 fields)
+- event_cov 0% (0/10):
+  - out accounting-gl.journal.posted: not emitted via DomainEvent in src/
+  - out accounting-gl.journal.reversed: not emitted via DomainEvent in src/
+  - out accounting-gl.period.closed: not emitted via DomainEvent in src/
+  - out accounting-gl.period.locked: not emitted via DomainEvent in src/ and not in manifest emits
+  - in inventory.receipt.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in inventory.issue.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in sales.invoice.issued: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in treasury.*.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in payroll.run.approved: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in fixed-assets.depreciation.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/6):
+  - requestJournal: not declared in a src/Contracts interface
+  - post: not declared in a src/Contracts interface
+  - accountBalance: not declared in a src/Contracts interface
+  - trialBalance: not declared in a src/Contracts interface
+  - isPeriodOpen: not declared in a src/Contracts interface
+  - resolveAccount: not declared in a src/Contracts interface
+- rule_cov 0% (0/11):
+  - rule 1 "balanced journals": no test named test_rule_*balanced*journals*
+  - rule 2 "postable accounts only": no test named test_rule_*postable*accounts*
+  - rule 3 "dimension requirements enforced": no test named test_rule_*dimension*requirements*
+  - rule 4 "period/lock checks": no test named test_rule_*period*lock*
+  - rule 5 "temporary docs editable, permanent require approval/number finaliza...": no test named test_rule_*temporary*docs*
+  - rule 6 "reversal creates mirror doc": no test named test_rule_*reversal*creates*
+  - rule 7 "auto-journals created from JournalRequest through PostingRules (ide...": no test named test_rule_*auto*journals*
+  - rule 8 "failures go to a fix queue with reason": no test named test_rule_*failures*queue*
+  - rule 9 "opening balances import": no test named test_rule_*opening*balances*
+  - rule 10 "year-end closing (profit/loss transfer, carry-forward) as wizard wi...": no test named test_rule_*year*closing*
+  - rule 11 "multi-currency revaluation at period end": no test named test_rule_*multi*currency*
+- perm_cov 10% (1/10):
+  - accounting-gl.account.manage: not enforced by an API route or authorization check and not used by a UI route or page
+  - accounting-gl.journal.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - accounting-gl.journal.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - accounting-gl.journal.view: not enforced by an API route or authorization check
+  - accounting-gl.report.view: not enforced by an API route or authorization check and not used by a UI route or page
+- ui_cov 0% (0/16):
+  - account: list page web/pages/AccountListPage.tsx missing
+  - account: form page web/pages/AccountFormPage.tsx missing
+  - account: detail page web/pages/AccountDetailPage.tsx missing
+  - account: no web/i18n/fa.json keys under "account."
+  - journal: list page web/pages/JournalListPage.tsx missing
+  - journal: form page web/pages/JournalFormPage.tsx missing
+  - journal: detail page web/pages/JournalDetailPage.tsx missing
+  - journal: no web/i18n/fa.json keys under "journal."
+  - journal_line: list page web/pages/JournalLineListPage.tsx missing
+  - journal_line: form page web/pages/JournalLineFormPage.tsx missing
+  - journal_line: detail page web/pages/JournalLineDetailPage.tsx missing
+  - journal_line: no web/i18n/fa.json keys under "journal_line."
+  - period: list page web/pages/PeriodListPage.tsx missing
+  - period: form page web/pages/PeriodFormPage.tsx missing
+  - period: detail page web/pages/PeriodDetailPage.tsx missing
+  - period: no web/i18n/fa.json keys under "period."
+- ai_cov 0% (0/9):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - nl_report: in spec but not declared in manifest ai.capabilities
+  - nl_report: no test named *nl_report*off* with assertions
+  - nl_report: no test named *nl_report*fake* with assertions
+- anti-gaming: 1 finding(s)
+  - backend/src/Services/AccountingGlService.php:65: resolveAccount only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## anomaly-detection — stub, score 5.8, FAIL
+
+- entity_cov 0% (0/23):
+  - DetectorProfile: table missing (expected anomaly_detection__detector_profiles, 10 fields)
+  - Detection: table missing (expected anomaly_detection__detections, 10 fields)
+  - RuleSet: table missing (expected anomaly_detection__rule_sets, 0 fields)
+- event_cov 0% (0/2):
+  - out anomaly-detection.detection.created: not emitted via DomainEvent in src/
+  - out anomaly-detection.detection.confirmed: not emitted via DomainEvent in src/ and not in manifest emits
+- contract_cov 0% (0/4):
+  - runProfile: not declared in a src/Contracts interface
+  - detections: not declared in a src/Contracts interface
+  - feedback: not declared in a src/Contracts interface
+  - registerProfile: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "two engines: (a) deterministic rule/stat checks in PHP (always avai...": no test named test_rule_*engines*deterministic*
+  - rule 2 "(b) Python ML/statistical detectors when enabled": no test named test_rule_*python*statistical*
+  - rule 3 "severity from score bands": no test named test_rule_*severity*score*
+  - rule 4 "suppression windows & dedup": no test named test_rule_*suppression*windows*
+  - rule 5 "feedback labels (confirm/dismiss) tune sensitivity per profile (sim...": no test named test_rule_*feedback*labels*
+  - rule 6 "each detection must carry a human-readable explanation (expected vs...": no test named test_rule_*detection*carry*
+  - rule 7 "notifications by severity": no test named test_rule_*notifications*severity*
+  - rule 8 "modules register their profiles through manifest `ai.capabilities[i...": no test named test_rule_*modules*register*
+- perm_cov 8.3% (1/12):
+  - anomaly-detection.detection.review: in spec but not declared in manifest permissions
+  - anomaly-detection.detection.view: in spec but not declared in manifest permissions
+  - anomaly-detection.profile.manage: in spec but not declared in manifest permissions
+  - anomaly-detection.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - anomaly-detection.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - anomaly-detection.record.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/12):
+  - detector_profile: list page web/pages/DetectorProfileListPage.tsx missing
+  - detector_profile: form page web/pages/DetectorProfileFormPage.tsx missing
+  - detector_profile: detail page web/pages/DetectorProfileDetailPage.tsx missing
+  - detector_profile: no web/i18n/fa.json keys under "detector_profile."
+  - detection: list page web/pages/DetectionListPage.tsx missing
+  - detection: form page web/pages/DetectionFormPage.tsx missing
+  - detection: detail page web/pages/DetectionDetailPage.tsx missing
+  - detection: no web/i18n/fa.json keys under "detection."
+  - rule_set: list page web/pages/RuleSetListPage.tsx missing
+  - rule_set: form page web/pages/RuleSetFormPage.tsx missing
+  - rule_set: detail page web/pages/RuleSetDetailPage.tsx missing
+  - rule_set: no web/i18n/fa.json keys under "rule_set."
+- ai_cov 100% (0/0): complete
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/AnomalyDetectionService.php:15: runProfile only returns a trivial value
+  - backend/src/Services/AnomalyDetectionService.php:20: detections only returns a trivial value
+  - backend/src/Services/AnomalyDetectionService.php:25: feedback only returns a trivial value
+  - backend/src/Services/AnomalyDetectionService.php:30: registerProfile only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## api-webhooks — stub, score 0, FAIL
+
+- entity_cov 0% (0/0):
+  - specification missing: specs/api-webhooks.md
+- event_cov 0% (0/0):
+  - specification missing: specs/api-webhooks.md
+- contract_cov 0% (0/0):
+  - specification missing: specs/api-webhooks.md
+- rule_cov 0% (0/0):
+  - specification missing: specs/api-webhooks.md
+- perm_cov 0% (0/0):
+  - specification missing: specs/api-webhooks.md
+- ui_cov 0% (0/0):
+  - specification missing: specs/api-webhooks.md
+- ai_cov 0% (0/0):
+  - specification missing: specs/api-webhooks.md
+- anti-gaming: clean
+- tests: not_run (static gate not passed)
+
+## ar-ap — stub, score 0.2, FAIL
+
+- entity_cov 0% (0/23):
+  - SupplierInvoice: table missing (expected ar_ap__supplier_invoices, 9 fields)
+  - Receipt: table missing (expected ar_ap__receipts, 5 fields)
+  - Allocation: table missing (expected ar_ap__allocations, 3 fields)
+  - PaymentProposal: table missing (expected ar_ap__payment_proposals, 2 fields)
+- event_cov 0% (0/9):
+  - out ar-ap.invoice.posted: not emitted via DomainEvent in src/
+  - out ar-ap.payment.allocated: not emitted via DomainEvent in src/ and not in manifest emits
+  - out ar-ap.payment.requested: not emitted via DomainEvent in src/ and not in manifest emits
+  - out ar-ap.invoice.overdue: not emitted via DomainEvent in src/ and not in manifest emits
+  - in sales.invoice.issued: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in purchase-order.po.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in treasury.payment.executed.cleared: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in treasury.payment.cheque.cleared: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in inventory.receipt.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/5):
+  - balance: not declared in a src/Contracts interface
+  - openItems: not declared in a src/Contracts interface
+  - overdue: not declared in a src/Contracts interface
+  - creditExposure: not declared in a src/Contracts interface
+  - proposePayments: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "3-way match supplier invoice vs PO vs receipts with tolerances (pri...": no test named test_rule_*match*supplier*
+  - rule 2 "posting creates journal request (AP control, expense/inventory, VAT...": no test named test_rule_*posting*creates*
+  - rule 3 "allocation FIFO/manual": no test named test_rule_*allocation*fifo*
+  - rule 4 "aging buckets configurable": no test named test_rule_*aging*buckets*
+  - rule 5 "party balance = sum of open items": no test named test_rule_*party*balance*
+  - rule 6 "foreign currency gain/loss on settlement": no test named test_rule_*foreign*currency*
+  - rule 7 "advance application": no test named test_rule_*advance*application*
+  - rule 8 "duplicate supplier invoice number check per supplier": no test named test_rule_*duplicate*supplier*
+- perm_cov 2% (1/50):
+  - ar-ap.advance.approve: in spec but not declared in manifest permissions
+  - ar-ap.advance.cancel: in spec but not declared in manifest permissions
+  - ar-ap.advance.create: in spec but not declared in manifest permissions
+  - ar-ap.advance.post: in spec but not declared in manifest permissions
+  - ar-ap.advance.view: in spec but not declared in manifest permissions
+  - ar-ap.invoice.approve: in spec but not declared in manifest permissions
+  - ar-ap.invoice.cancel: in spec but not declared in manifest permissions
+  - ar-ap.invoice.create: in spec but not declared in manifest permissions
+  - ar-ap.invoice.post: in spec but not declared in manifest permissions
+  - ar-ap.invoice.view: in spec but not declared in manifest permissions
+  - ar-ap.note.approve: in spec but not declared in manifest permissions
+  - ar-ap.note.cancel: in spec but not declared in manifest permissions
+  - ar-ap.note.create: in spec but not declared in manifest permissions
+  - ar-ap.note.post: in spec but not declared in manifest permissions
+  - ar-ap.note.view: in spec but not declared in manifest permissions
+  - ar-ap.payment.approve: in spec but not declared in manifest permissions
+  - ar-ap.payment.cancel: in spec but not declared in manifest permissions
+  - ar-ap.payment.create: in spec but not declared in manifest permissions
+  - ar-ap.payment.post: in spec but not declared in manifest permissions
+  - ar-ap.payment.view: in spec but not declared in manifest permissions
+  - ar-ap.proposal.manage: in spec but not declared in manifest permissions
+  - ar-ap.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - ar-ap.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - ar-ap.record.view: not enforced by an API route or authorization check
+  - ar-ap.report.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/16):
+  - supplier_invoice: list page web/pages/SupplierInvoiceListPage.tsx missing
+  - supplier_invoice: form page web/pages/SupplierInvoiceFormPage.tsx missing
+  - supplier_invoice: detail page web/pages/SupplierInvoiceDetailPage.tsx missing
+  - supplier_invoice: no web/i18n/fa.json keys under "supplier_invoice."
+  - receipt: list page web/pages/ReceiptListPage.tsx missing
+  - receipt: form page web/pages/ReceiptFormPage.tsx missing
+  - receipt: detail page web/pages/ReceiptDetailPage.tsx missing
+  - receipt: no web/i18n/fa.json keys under "receipt."
+  - allocation: list page web/pages/AllocationListPage.tsx missing
+  - allocation: form page web/pages/AllocationFormPage.tsx missing
+  - allocation: detail page web/pages/AllocationDetailPage.tsx missing
+  - allocation: no web/i18n/fa.json keys under "allocation."
+  - payment_proposal: list page web/pages/PaymentProposalListPage.tsx missing
+  - payment_proposal: form page web/pages/PaymentProposalFormPage.tsx missing
+  - payment_proposal: detail page web/pages/PaymentProposalDetailPage.tsx missing
+  - payment_proposal: no web/i18n/fa.json keys under "payment_proposal."
+- ai_cov 0% (0/12):
+  - ocr: in spec but not declared in manifest ai.capabilities
+  - ocr: no test named *ocr*off* with assertions
+  - ocr: no test named *ocr*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+- anti-gaming: 5 finding(s)
+  - backend/src/Services/ArApService.php:15: balance only returns a trivial value
+  - backend/src/Services/ArApService.php:20: openItems only returns a trivial value
+  - backend/src/Services/ArApService.php:25: overdue only returns a trivial value
+  - backend/src/Services/ArApService.php:30: creditExposure only returns a trivial value
+  - backend/src/Services/ArApService.php:35: proposePayments only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## asset-registry — stub, score 0.7, FAIL
+
+- entity_cov 0% (0/26):
+  - Asset: table missing (expected asset_registry__assets, 15 fields)
+  - Meter: table missing (expected asset_registry__meters, 4 fields)
+  - SpareBom: table missing (expected asset_registry__spare_boms, 4 fields)
+- event_cov 0% (0/7):
+  - out asset-registry.asset.created.updated: not emitted via DomainEvent in src/ and not in manifest emits
+  - out asset-registry.asset.created.decommissioned: not emitted via DomainEvent in src/ and not in manifest emits
+  - out asset-registry.asset.status_changed.updated: not emitted via DomainEvent in src/ and not in manifest emits
+  - out asset-registry.asset.status_changed.decommissioned: not emitted via DomainEvent in src/ and not in manifest emits
+  - out asset-registry.asset.meter.updated: not emitted via DomainEvent in src/ and not in manifest emits
+  - out asset-registry.asset.meter.decommissioned: not emitted via DomainEvent in src/ and not in manifest emits
+  - in fixed-assets.asset.capitalized: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/8):
+  - find: not declared in a src/Contracts interface
+  - tree: not declared in a src/Contracts interface
+  - byQr: not declared in a src/Contracts interface
+  - currentMeter: not declared in a src/Contracts interface
+  - addReading: not declared in a src/Contracts interface
+  - spareParts: not declared in a src/Contracts interface
+  - setStatus: not declared in a src/Contracts interface
+  - lookup: not declared in a src/Contracts interface
+- rule_cov 0% (0/5):
+  - rule 1 "hierarchy no cycles": no test named test_rule_*hierarchy*cycles*
+  - rule 2 "status transitions logged": no test named test_rule_*status*transitions*
+  - rule 3 "meter readings monotonic (allow reset with reason)": no test named test_rule_*meter*readings*
+  - rule 4 "decommission needs approval": no test named test_rule_*decommission*needs*
+  - rule 5 "warranty alerts via notifications": no test named test_rule_*warranty*alerts*
+- perm_cov 7.1% (1/14):
+  - asset-registry.asset.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - asset-registry.asset.delete: in spec but not declared in manifest permissions
+  - asset-registry.asset.status: in spec but not declared in manifest permissions
+  - asset-registry.asset.update: not enforced by an API route or authorization check and not used by a UI route or page
+  - asset-registry.asset.view: not enforced by an API route or authorization check
+  - asset-registry.class.manage: in spec but not declared in manifest permissions
+  - asset-registry.meter.record: not enforced by an API route or authorization check and not used by a UI route or page
+- ui_cov 0% (0/12):
+  - asset: list page web/pages/AssetListPage.tsx missing
+  - asset: form page web/pages/AssetFormPage.tsx missing
+  - asset: detail page web/pages/AssetDetailPage.tsx missing
+  - asset: no web/i18n/fa.json keys under "asset."
+  - meter: list page web/pages/MeterListPage.tsx missing
+  - meter: form page web/pages/MeterFormPage.tsx missing
+  - meter: detail page web/pages/MeterDetailPage.tsx missing
+  - meter: no web/i18n/fa.json keys under "meter."
+  - meter_reading: list page web/pages/MeterReadingListPage.tsx missing
+  - meter_reading: form page web/pages/MeterReadingFormPage.tsx missing
+  - meter_reading: detail page web/pages/MeterReadingDetailPage.tsx missing
+  - meter_reading: no web/i18n/fa.json keys under "meter_reading."
+- ai_cov 0% (0/9):
+  - assistant: in spec but not declared in manifest ai.capabilities
+  - assistant: no test named *assistant*off* with assertions
+  - assistant: no test named *assistant*fake* with assertions
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+- anti-gaming: 1 finding(s)
+  - backend/src/Services/AssetRegistryService.php:32: spareParts only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## attendance — stub, score 0.2, FAIL
+
+- entity_cov 0% (0/42):
+  - ShiftAssignment: table missing (expected attendance__shift_assignments, 4 fields)
+  - TimeLog: table missing (expected attendance__time_logs, 5 fields)
+  - DailyRecord: table missing (expected attendance__daily_records, 10 fields)
+  - LeaveType: table missing (expected attendance__leave_types, 5 fields)
+  - LeaveRequest: table missing (expected attendance__leave_requests, 5 fields)
+  - TimesheetPeriod: table missing (expected attendance__timesheet_periods, 3 fields)
+  - Device: table missing (expected attendance__devices, 3 fields)
+- event_cov 0% (0/6):
+  - out attendance.period.closed: not emitted via DomainEvent in src/
+  - out attendance.leave.approved: not emitted via DomainEvent in src/ and not in manifest emits
+  - out attendance.overtime.approved: not emitted via DomainEvent in src/ and not in manifest emits
+  - in hr-core.employee.hired: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in hr-core.employee.terminated: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in org-structure.calendar.changed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/5):
+  - summary: not declared in a src/Contracts interface
+  - balance: not declared in a src/Contracts interface
+  - isOnLeave: not declared in a src/Contracts interface
+  - presentNow: not declared in a src/Contracts interface
+  - workedMinutes: not declared in a src/Contracts interface
+- rule_cov 0% (0/7):
+  - rule 1 "daily calculation engine configurable per company (grace minutes, r...": no test named test_rule_*daily*calculation*
+  - rule 2 "overlapping leave blocked": no test named test_rule_*overlapping*leave*
+  - rule 3 "balance accrual rules (monthly, yearly, carry-over limits)": no test named test_rule_*balance*accrual*
+  - rule 4 "approvals via workflow (manager→HR)": no test named test_rule_*approvals*workflow*
+  - rule 5 "period close locks edits and emits summarized data": no test named test_rule_*period*close*
+  - rule 6 "device ingestion endpoint authenticated by api-webhooks key with id...": no test named test_rule_*device*ingestion*
+  - rule 7 "duplicate punches merged within window": no test named test_rule_*duplicate*punches*
+- perm_cov 1.9% (1/52):
+  - attendance.device.manage: in spec but not declared in manifest permissions
+  - attendance.leave.approve: in spec but not declared in manifest permissions
+  - attendance.leave.close: in spec but not declared in manifest permissions
+  - attendance.leave.create: in spec but not declared in manifest permissions
+  - attendance.leave.view: in spec but not declared in manifest permissions
+  - attendance.log.approve: in spec but not declared in manifest permissions
+  - attendance.log.close: in spec but not declared in manifest permissions
+  - attendance.log.create: in spec but not declared in manifest permissions
+  - attendance.log.view: in spec but not declared in manifest permissions
+  - attendance.mission.approve: in spec but not declared in manifest permissions
+  - attendance.mission.close: in spec but not declared in manifest permissions
+  - attendance.mission.create: in spec but not declared in manifest permissions
+  - attendance.mission.view: in spec but not declared in manifest permissions
+  - attendance.overtime.approve: in spec but not declared in manifest permissions
+  - attendance.overtime.close: in spec but not declared in manifest permissions
+  - attendance.overtime.create: in spec but not declared in manifest permissions
+  - attendance.overtime.view: in spec but not declared in manifest permissions
+  - attendance.period.approve: in spec but not declared in manifest permissions
+  - attendance.period.close: in spec but not declared in manifest permissions
+  - attendance.period.create: in spec but not declared in manifest permissions
+  - attendance.period.view: in spec but not declared in manifest permissions
+  - attendance.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - attendance.record.close: in spec but not declared in manifest permissions
+  - attendance.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - attendance.record.view: not enforced by an API route or authorization check
+  - attendance.rule.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/28):
+  - shift_assignment: list page web/pages/ShiftAssignmentListPage.tsx missing
+  - shift_assignment: form page web/pages/ShiftAssignmentFormPage.tsx missing
+  - shift_assignment: detail page web/pages/ShiftAssignmentDetailPage.tsx missing
+  - shift_assignment: no web/i18n/fa.json keys under "shift_assignment."
+  - time_log: list page web/pages/TimeLogListPage.tsx missing
+  - time_log: form page web/pages/TimeLogFormPage.tsx missing
+  - time_log: detail page web/pages/TimeLogDetailPage.tsx missing
+  - time_log: no web/i18n/fa.json keys under "time_log."
+  - daily_record: list page web/pages/DailyRecordListPage.tsx missing
+  - daily_record: form page web/pages/DailyRecordFormPage.tsx missing
+  - daily_record: detail page web/pages/DailyRecordDetailPage.tsx missing
+  - daily_record: no web/i18n/fa.json keys under "daily_record."
+  - leave_type: list page web/pages/LeaveTypeListPage.tsx missing
+  - leave_type: form page web/pages/LeaveTypeFormPage.tsx missing
+  - leave_type: detail page web/pages/LeaveTypeDetailPage.tsx missing
+  - leave_type: no web/i18n/fa.json keys under "leave_type."
+  - leave_request: list page web/pages/LeaveRequestListPage.tsx missing
+  - leave_request: form page web/pages/LeaveRequestFormPage.tsx missing
+  - leave_request: detail page web/pages/LeaveRequestDetailPage.tsx missing
+  - leave_request: no web/i18n/fa.json keys under "leave_request."
+  - timesheet_period: list page web/pages/TimesheetPeriodListPage.tsx missing
+  - timesheet_period: form page web/pages/TimesheetPeriodFormPage.tsx missing
+  - timesheet_period: detail page web/pages/TimesheetPeriodDetailPage.tsx missing
+  - timesheet_period: no web/i18n/fa.json keys under "timesheet_period."
+  - device: list page web/pages/DeviceListPage.tsx missing
+  - device: form page web/pages/DeviceFormPage.tsx missing
+  - device: detail page web/pages/DeviceDetailPage.tsx missing
+  - device: no web/i18n/fa.json keys under "device."
+- ai_cov 0% (0/9):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 5 finding(s)
+  - backend/src/Services/AttendanceService.php:15: summary only returns a trivial value
+  - backend/src/Services/AttendanceService.php:20: balance only returns a trivial value
+  - backend/src/Services/AttendanceService.php:25: isOnLeave only returns a trivial value
+  - backend/src/Services/AttendanceService.php:30: presentNow only returns a trivial value
+  - backend/src/Services/AttendanceService.php:35: workedMinutes only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## audit-iso — stub, score 0.4, FAIL
+
+- entity_cov 0% (0/32):
+  - Standard: table missing (expected audit_iso__standards, 3 fields)
+  - AuditProgram: table missing (expected audit_iso__audit_programs, 2 fields)
+  - Audit: table missing (expected audit_iso__audits, 6 fields)
+  - Finding: table missing (expected audit_iso__findings, 6 fields)
+  - ManagementReview: table missing (expected audit_iso__management_reviews, 5 fields)
+  - Objective: table missing (expected audit_iso__objectives, 4 fields)
+- event_cov 0% (0/4):
+  - out audit-iso.audit.completed: not emitted via DomainEvent in src/
+  - out audit-iso.finding.raised: not emitted via DomainEvent in src/
+  - in ncr-capa.capa.verified: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in report-bi.kpi.breached: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/3):
+  - programStatus: not declared in a src/Contracts interface
+  - openFindings: not declared in a src/Contracts interface
+  - upcomingAudits: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "audit scheduling with auditor independence rule": no test named test_rule_*audit*scheduling*
+  - rule 2 "checklist built from clauses": no test named test_rule_*checklist*built*
+  - rule 3 "findings create NCR/CAPA via events": no test named test_rule_*findings*create*
+  - rule 4 "management review pulls KPIs from report-bi datasets": no test named test_rule_*management*review*
+  - rule 5 "document review dates alerts": no test named test_rule_*document*review*
+  - rule 6 "objectives progress auto-updated from KPI": no test named test_rule_*objectives*progress*
+- perm_cov 3.6% (1/28):
+  - audit-iso.audit.manage: in spec but not declared in manifest permissions
+  - audit-iso.audit.view: in spec but not declared in manifest permissions
+  - audit-iso.finding.manage: in spec but not declared in manifest permissions
+  - audit-iso.finding.view: in spec but not declared in manifest permissions
+  - audit-iso.objective.manage: in spec but not declared in manifest permissions
+  - audit-iso.objective.view: in spec but not declared in manifest permissions
+  - audit-iso.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - audit-iso.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - audit-iso.record.view: not enforced by an API route or authorization check
+  - audit-iso.review.manage: in spec but not declared in manifest permissions
+  - audit-iso.review.view: in spec but not declared in manifest permissions
+  - audit-iso.risk.manage: in spec but not declared in manifest permissions
+  - audit-iso.risk.view: in spec but not declared in manifest permissions
+  - audit-iso.standard.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/24):
+  - standard: list page web/pages/StandardListPage.tsx missing
+  - standard: form page web/pages/StandardFormPage.tsx missing
+  - standard: detail page web/pages/StandardDetailPage.tsx missing
+  - standard: no web/i18n/fa.json keys under "standard."
+  - audit_program: list page web/pages/AuditProgramListPage.tsx missing
+  - audit_program: form page web/pages/AuditProgramFormPage.tsx missing
+  - audit_program: detail page web/pages/AuditProgramDetailPage.tsx missing
+  - audit_program: no web/i18n/fa.json keys under "audit_program."
+  - audit: list page web/pages/AuditListPage.tsx missing
+  - audit: form page web/pages/AuditFormPage.tsx missing
+  - audit: detail page web/pages/AuditDetailPage.tsx missing
+  - audit: no web/i18n/fa.json keys under "audit."
+  - finding: list page web/pages/FindingListPage.tsx missing
+  - finding: form page web/pages/FindingFormPage.tsx missing
+  - finding: detail page web/pages/FindingDetailPage.tsx missing
+  - finding: no web/i18n/fa.json keys under "finding."
+  - management_review: list page web/pages/ManagementReviewListPage.tsx missing
+  - management_review: form page web/pages/ManagementReviewFormPage.tsx missing
+  - management_review: detail page web/pages/ManagementReviewDetailPage.tsx missing
+  - management_review: no web/i18n/fa.json keys under "management_review."
+  - objective: list page web/pages/ObjectiveListPage.tsx missing
+  - objective: form page web/pages/ObjectiveFormPage.tsx missing
+  - objective: detail page web/pages/ObjectiveDetailPage.tsx missing
+  - objective: no web/i18n/fa.json keys under "objective."
+- ai_cov 0% (0/9):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/AuditIsoService.php:15: programStatus only returns a trivial value
+  - backend/src/Services/AuditIsoService.php:20: openFindings only returns a trivial value
+  - backend/src/Services/AuditIsoService.php:25: upcomingAudits only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## audit-log — stub, score 0, FAIL
+
+- entity_cov 0% (0/0):
+  - specification missing: specs/audit-log.md
+- event_cov 0% (0/0):
+  - specification missing: specs/audit-log.md
+- contract_cov 0% (0/0):
+  - specification missing: specs/audit-log.md
+- rule_cov 0% (0/0):
+  - specification missing: specs/audit-log.md
+- perm_cov 0% (0/0):
+  - specification missing: specs/audit-log.md
+- ui_cov 0% (0/0):
+  - specification missing: specs/audit-log.md
+- ai_cov 0% (0/0):
+  - specification missing: specs/audit-log.md
+- anti-gaming: clean
+- tests: not_run (static gate not passed)
+
+## auth-rbac — stub, score 0, FAIL
+
+- entity_cov 0% (0/0):
+  - specification missing: specs/auth-rbac.md
+- event_cov 0% (0/0):
+  - specification missing: specs/auth-rbac.md
+- contract_cov 0% (0/0):
+  - specification missing: specs/auth-rbac.md
+- rule_cov 0% (0/0):
+  - specification missing: specs/auth-rbac.md
+- perm_cov 0% (0/0):
+  - specification missing: specs/auth-rbac.md
+- ui_cov 0% (0/0):
+  - specification missing: specs/auth-rbac.md
+- ai_cov 0% (0/0):
+  - specification missing: specs/auth-rbac.md
+- anti-gaming: clean
+- tests: not_run (static gate not passed)
+
+## batch-formulation — stub, score 0.6, FAIL
+
+- entity_cov 0% (0/41):
+  - Formula: table missing (expected batch_formulation__formulas, 10 fields)
+  - FormulaIngredient: table missing (expected batch_formulation__formula_ingredients, 7 fields)
+  - ProcessStep: table missing (expected batch_formulation__process_steps, 7 fields)
+  - BatchRecord: table missing (expected batch_formulation__batch_records, 8 fields)
+  - Deviation: table missing (expected batch_formulation__deviations, 4 fields)
+- event_cov 0% (0/8):
+  - out batch-formulation.batch.started: not emitted via DomainEvent in src/
+  - out batch-formulation.batch.completed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out batch-formulation.batch.released: not emitted via DomainEvent in src/ and not in manifest emits
+  - out batch-formulation.batch.rejected: not emitted via DomainEvent in src/ and not in manifest emits
+  - out batch-formulation.deviation.raised: not emitted via DomainEvent in src/
+  - in work-order.wo.released: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in lims.result.approved: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in quality-inspection.lot.decided: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - activeFormula: not declared in a src/Contracts interface
+  - scale: not declared in a src/Contracts interface
+  - validateBatch: not declared in a src/Contracts interface
+  - yield: not declared in a src/Contracts interface
+- rule_cov 0% (0/10):
+  - rule 1 "formula versioning and approval": no test named test_rule_*formula*versioning*
+  - rule 2 "scaling (by output qty or limiting ingredient)": no test named test_rule_*scaling*output*
+  - rule 3 "potency/assay correction adjusts active quantity and compensating f...": no test named test_rule_*potency*assay*
+  - rule 4 "ingredient lots chosen FEFO and must be released (quality/lims status)": no test named test_rule_*ingredient*lots*
+  - rule 5 "electronic batch record captures parameters, requires signatures (u...": no test named test_rule_*electronic*batch*
+  - rule 6 "deviations beyond limits force documented reason and create NCR pro...": no test named test_rule_*deviations*beyond*
+  - rule 7 "yield reconciliation at end (theoretical vs actual) with limits": no test named test_rule_*yield*reconciliation*
+  - rule 8 "by-products/co-products recorded to WO outputs": no test named test_rule_*products*recorded*
+  - rule 9 "batch numbering policy via NumberingService": no test named test_rule_*batch*numbering*
+  - rule 10 "recall genealogy through lot-traceability": no test named test_rule_*recall*genealogy*
+- perm_cov 5.6% (1/18):
+  - batch-formulation.batch.execute: in spec but not declared in manifest permissions
+  - batch-formulation.batch.release: in spec but not declared in manifest permissions
+  - batch-formulation.batch.review: in spec but not declared in manifest permissions
+  - batch-formulation.formula.approve: in spec but not declared in manifest permissions
+  - batch-formulation.formula.manage: in spec but not declared in manifest permissions
+  - batch-formulation.formula.view: in spec but not declared in manifest permissions
+  - batch-formulation.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - batch-formulation.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - batch-formulation.record.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/20):
+  - formula: list page web/pages/FormulaListPage.tsx missing
+  - formula: form page web/pages/FormulaFormPage.tsx missing
+  - formula: detail page web/pages/FormulaDetailPage.tsx missing
+  - formula: no web/i18n/fa.json keys under "formula."
+  - formula_ingredient: list page web/pages/FormulaIngredientListPage.tsx missing
+  - formula_ingredient: form page web/pages/FormulaIngredientFormPage.tsx missing
+  - formula_ingredient: detail page web/pages/FormulaIngredientDetailPage.tsx missing
+  - formula_ingredient: no web/i18n/fa.json keys under "formula_ingredient."
+  - process_step: list page web/pages/ProcessStepListPage.tsx missing
+  - process_step: form page web/pages/ProcessStepFormPage.tsx missing
+  - process_step: detail page web/pages/ProcessStepDetailPage.tsx missing
+  - process_step: no web/i18n/fa.json keys under "process_step."
+  - batch_record: list page web/pages/BatchRecordListPage.tsx missing
+  - batch_record: form page web/pages/BatchRecordFormPage.tsx missing
+  - batch_record: detail page web/pages/BatchRecordDetailPage.tsx missing
+  - batch_record: no web/i18n/fa.json keys under "batch_record."
+  - deviation: list page web/pages/DeviationListPage.tsx missing
+  - deviation: form page web/pages/DeviationFormPage.tsx missing
+  - deviation: detail page web/pages/DeviationDetailPage.tsx missing
+  - deviation: no web/i18n/fa.json keys under "deviation."
+- ai_cov 0% (0/9):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/BatchFormulationService.php:15: activeFormula only returns a trivial value
+  - backend/src/Services/BatchFormulationService.php:20: scale only returns a trivial value
+  - backend/src/Services/BatchFormulationService.php:25: validateBatch only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## bom — stub, score 0.6, FAIL
+
+- entity_cov 0% (0/36):
+  - Bom: table missing (expected bom__boms, 13 fields)
+  - BomLine: table missing (expected bom__bom_lines, 12 fields)
+  - BomSubstituteGroup: table missing (expected bom__bom_substitute_groups, 3 fields)
+  - BomByProduct: table missing (expected bom__bom_by_products, 4 fields)
+- event_cov 0% (0/5):
+  - out bom.bom.approved: not emitted via DomainEvent in src/
+  - out bom.bom.obsoleted: not emitted via DomainEvent in src/
+  - out bom.bom.revised: not emitted via DomainEvent in src/
+  - in item-master.item.merged: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in eco-plm.change.released: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/6):
+  - findActive: not declared in a src/Contracts interface
+  - explode: not declared in a src/Contracts interface
+  - whereUsed: not declared in a src/Contracts interface
+  - compare: not declared in a src/Contracts interface
+  - costRollupInputs: not declared in a src/Contracts interface
+  - validate: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "no circular references (detect on save, deep)": no test named test_rule_*circular*references*
+  - rule 2 "single approved default per item/plant/date window": no test named test_rule_*single*approved*
+  - rule 3 "approved revisions immutable (new revision instead, copy-forward)": no test named test_rule_*approved*revisions*
+  - rule 4 "phantoms exploded through": no test named test_rule_*phantoms*exploded*
+  - rule 5 "qty formulas use item attributes (e.g. thickness×width×length×densi...": no test named test_rule_*formulas*item*
+  - rule 6 "substitutes only from item-master alternates or explicit": no test named test_rule_*substitutes*item*
+  - rule 7 "component must be active item": no test named test_rule_*component*active*
+  - rule 8 "scrap & yield applied in explosion": no test named test_rule_*scrap*yield*
+- perm_cov 6.3% (1/16):
+  - bom.bom.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - bom.bom.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - bom.bom.delete: not enforced by an API route or authorization check and not used by a UI route or page
+  - bom.bom.export: in spec but not declared in manifest permissions
+  - bom.bom.import: in spec but not declared in manifest permissions
+  - bom.bom.update: not enforced by an API route or authorization check and not used by a UI route or page
+  - bom.bom.view: not enforced by an API route or authorization check
+  - bom.formula.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/8):
+  - bom: list page web/pages/BomListPage.tsx missing
+  - bom: form page web/pages/BomFormPage.tsx missing
+  - bom: detail page web/pages/BomDetailPage.tsx missing
+  - bom: no web/i18n/fa.json keys under "bom."
+  - bom_line: list page web/pages/BomLineListPage.tsx missing
+  - bom_line: form page web/pages/BomLineFormPage.tsx missing
+  - bom_line: detail page web/pages/BomLineDetailPage.tsx missing
+  - bom_line: no web/i18n/fa.json keys under "bom_line."
+- ai_cov 0% (0/9):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/BomService.php:46: whereUsed only returns a trivial value
+  - backend/src/Services/BomService.php:47: compare only returns a trivial value
+  - backend/src/Services/BomService.php:48: costRollupInputs only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## budgeting — stub, score 0.6, FAIL
+
+- entity_cov 0% (0/21):
+  - BudgetVersion: table missing (expected budgeting__budget_versions, 4 fields)
+  - BudgetLine: table missing (expected budgeting__budget_lines, 3 fields)
+  - Transfer: table missing (expected budgeting__transfers, 5 fields)
+  - Encumbrance: table missing (expected budgeting__encumbrances, 5 fields)
+- event_cov 0% (0/8):
+  - out budgeting.budget.approved: not emitted via DomainEvent in src/
+  - out budgeting.check.exceeded: not emitted via DomainEvent in src/
+  - in purchase-request.pr.approved: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in purchase-request.pr.cancelled: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in purchase-order.po.approved: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in purchase-order.po.closed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in purchase-order.po.cancelled: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in accounting-gl.journal.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - check: not declared in a src/Contracts interface
+  - commit: not declared in a src/Contracts interface
+  - release: not declared in a src/Contracts interface
+  - variance: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "approval by workflow per cost-center owner then finance": no test named test_rule_*approval*workflow*
+  - rule 2 "budget check API: available = approved budget − actuals (Accounting...": no test named test_rule_*budget*check*
+  - rule 3 "setting warn\|block\|ignore per account group/cost center": no test named test_rule_*setting*warn*
+  - rule 4 "encumbrance auto-created/released from PR/PO events": no test named test_rule_*encumbrance*auto*
+  - rule 5 "transfers need approval within policy": no test named test_rule_*transfers*need*
+  - rule 6 "import/export": no test named test_rule_*import*export*
+  - rule 7 "versions comparison": no test named test_rule_*versions*comparison*
+  - rule 8 "period locking": no test named test_rule_*period*locking*
+- perm_cov 5.6% (1/18):
+  - budgeting.budget.approve: in spec but not declared in manifest permissions
+  - budgeting.budget.edit: in spec but not declared in manifest permissions
+  - budgeting.budget.view: in spec but not declared in manifest permissions
+  - budgeting.check.override: in spec but not declared in manifest permissions
+  - budgeting.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - budgeting.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - budgeting.record.view: not enforced by an API route or authorization check
+  - budgeting.transfer.approve: in spec but not declared in manifest permissions
+  - budgeting.transfer.request: in spec but not declared in manifest permissions
+- ui_cov 0% (0/16):
+  - budget_version: list page web/pages/BudgetVersionListPage.tsx missing
+  - budget_version: form page web/pages/BudgetVersionFormPage.tsx missing
+  - budget_version: detail page web/pages/BudgetVersionDetailPage.tsx missing
+  - budget_version: no web/i18n/fa.json keys under "budget_version."
+  - budget_line: list page web/pages/BudgetLineListPage.tsx missing
+  - budget_line: form page web/pages/BudgetLineFormPage.tsx missing
+  - budget_line: detail page web/pages/BudgetLineDetailPage.tsx missing
+  - budget_line: no web/i18n/fa.json keys under "budget_line."
+  - transfer: list page web/pages/TransferListPage.tsx missing
+  - transfer: form page web/pages/TransferFormPage.tsx missing
+  - transfer: detail page web/pages/TransferDetailPage.tsx missing
+  - transfer: no web/i18n/fa.json keys under "transfer."
+  - encumbrance: list page web/pages/EncumbranceListPage.tsx missing
+  - encumbrance: form page web/pages/EncumbranceFormPage.tsx missing
+  - encumbrance: detail page web/pages/EncumbranceDetailPage.tsx missing
+  - encumbrance: no web/i18n/fa.json keys under "encumbrance."
+- ai_cov 0% (0/12):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - nl_report: in spec but not declared in manifest ai.capabilities
+  - nl_report: no test named *nl_report*off* with assertions
+  - nl_report: no test named *nl_report*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/BudgetingService.php:15: check only returns a trivial value
+  - backend/src/Services/BudgetingService.php:20: commit only returns a trivial value
+  - backend/src/Services/BudgetingService.php:25: release only returns a trivial value
+  - backend/src/Services/BudgetingService.php:30: variance only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## canteen — stub, score 0.6, FAIL
+
+- entity_cov 0% (0/31):
+  - MealType: table missing (expected canteen__meal_types, 5 fields)
+  - Menu: table missing (expected canteen__menus, 4 fields)
+  - Reservation: table missing (expected canteen__reservations, 3 fields)
+  - Entitlement: table missing (expected canteen__entitlements, 2 fields)
+  - Coupon: table missing (expected canteen__coupons, 5 fields)
+  - ServingLog: table missing (expected canteen__serving_logs, 2 fields)
+  - Charge: table missing (expected canteen__charges, 3 fields)
+- event_cov 0% (0/4):
+  - out canteen.period.charges_ready: not emitted via DomainEvent in src/
+  - out canteen.meal.served: not emitted via DomainEvent in src/
+  - in attendance.period.closed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in hr-core.employee.terminated: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/2):
+  - entitled: not declared in a src/Contracts interface
+  - chargesFor: not declared in a src/Contracts interface
+- rule_cov 0% (0/7):
+  - rule 1 "reservation cutoff times": no test named test_rule_*reservation*cutoff*
+  - rule 2 "entitlement by attendance/shift optional (AttendanceService)": no test named test_rule_*entitlement*attendance*
+  - rule 3 "QR/ID scan at kiosk marks served (idempotent)": no test named test_rule_*scan*kiosk*
+  - rule 4 "employee-share deductions exported as an aggregated event for payro...": no test named test_rule_*employee*share*
+  - rule 5 "capacity limits": no test named test_rule_*capacity*limits*
+  - rule 6 "waste tracking (reserved vs served)": no test named test_rule_*waste*tracking*
+  - rule 7 "cost per meal report": no test named test_rule_*cost*meal*
+- perm_cov 5.6% (1/18):
+  - canteen.charge.approve: in spec but not declared in manifest permissions
+  - canteen.menu.manage: in spec but not declared in manifest permissions
+  - canteen.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - canteen.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - canteen.record.view: not enforced by an API route or authorization check
+  - canteen.report.view: in spec but not declared in manifest permissions
+  - canteen.reservation.create: in spec but not declared in manifest permissions
+  - canteen.reservation.view: in spec but not declared in manifest permissions
+  - canteen.serving.scan: in spec but not declared in manifest permissions
+- ui_cov 0% (0/28):
+  - meal_type: list page web/pages/MealTypeListPage.tsx missing
+  - meal_type: form page web/pages/MealTypeFormPage.tsx missing
+  - meal_type: detail page web/pages/MealTypeDetailPage.tsx missing
+  - meal_type: no web/i18n/fa.json keys under "meal_type."
+  - menu: list page web/pages/MenuListPage.tsx missing
+  - menu: form page web/pages/MenuFormPage.tsx missing
+  - menu: detail page web/pages/MenuDetailPage.tsx missing
+  - menu: no web/i18n/fa.json keys under "menu."
+  - reservation: list page web/pages/ReservationListPage.tsx missing
+  - reservation: form page web/pages/ReservationFormPage.tsx missing
+  - reservation: detail page web/pages/ReservationDetailPage.tsx missing
+  - reservation: no web/i18n/fa.json keys under "reservation."
+  - entitlement: list page web/pages/EntitlementListPage.tsx missing
+  - entitlement: form page web/pages/EntitlementFormPage.tsx missing
+  - entitlement: detail page web/pages/EntitlementDetailPage.tsx missing
+  - entitlement: no web/i18n/fa.json keys under "entitlement."
+  - coupon: list page web/pages/CouponListPage.tsx missing
+  - coupon: form page web/pages/CouponFormPage.tsx missing
+  - coupon: detail page web/pages/CouponDetailPage.tsx missing
+  - coupon: no web/i18n/fa.json keys under "coupon."
+  - serving_log: list page web/pages/ServingLogListPage.tsx missing
+  - serving_log: form page web/pages/ServingLogFormPage.tsx missing
+  - serving_log: detail page web/pages/ServingLogDetailPage.tsx missing
+  - serving_log: no web/i18n/fa.json keys under "serving_log."
+  - charge: list page web/pages/ChargeListPage.tsx missing
+  - charge: form page web/pages/ChargeFormPage.tsx missing
+  - charge: detail page web/pages/ChargeDetailPage.tsx missing
+  - charge: no web/i18n/fa.json keys under "charge."
+- ai_cov 0% (0/6):
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+- anti-gaming: 2 finding(s)
+  - backend/src/Services/CanteenService.php:15: entitled only returns a trivial value
+  - backend/src/Services/CanteenService.php:20: chargesFor only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## cmms — stub, score 0.2, FAIL
+
+- entity_cov 0% (0/44):
+  - WorkRequest: table missing (expected cmms__work_requests, 5 fields)
+  - WorkOrder: table missing (expected cmms__work_orders, 16 fields)
+  - WOTask: table missing (expected cmms__wo_tasks, 4 fields)
+  - WOPartUse: table missing (expected cmms__wo_part_uses, 4 fields)
+  - WOLabor: table missing (expected cmms__wo_labors, 3 fields)
+  - PMPlan: table missing (expected cmms__pm_plans, 6 fields)
+- event_cov 0% (0/11):
+  - out cmms.workorder.created: not emitted via DomainEvent in src/
+  - out cmms.workorder.released: not emitted via DomainEvent in src/ and not in manifest emits
+  - out cmms.workorder.completed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out cmms.workorder.closed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out cmms.equipment.down: not emitted via DomainEvent in src/ and not in manifest emits
+  - out cmms.equipment.restored: not emitted via DomainEvent in src/ and not in manifest emits
+  - out cmms.parts.requested: not emitted via DomainEvent in src/ and not in manifest emits
+  - out cmms.parts.shortage: not emitted via DomainEvent in src/ and not in manifest emits
+  - in asset-registry.meter.updated: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in inventory.stock.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in hse.incident.reported: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/5):
+  - openOrders: not declared in a src/Contracts interface
+  - pmDue: not declared in a src/Contracts interface
+  - downtime: not declared in a src/Contracts interface
+  - mttrMtbf: not declared in a src/Contracts interface
+  - costByAsset: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "PM generation job (cron via events:work) creates WOs ahead of due": no test named test_rule_*generation*cron*
+  - rule 2 "meter-based triggers from asset-registry readings": no test named test_rule_*meter*based*
+  - rule 3 "priority/SLA clocks via workflow": no test named test_rule_*priority*clocks*
+  - rule 4 "parts: reserve/issue via InventoryService (optional) — if absent, r...": no test named test_rule_*parts*reserve*
+  - rule 5 "completing WO requires failure/cause codes for corrective": no test named test_rule_*completing*requires*
+  - rule 6 "closing computes cost (labor+parts+external) and emits cost event": no test named test_rule_*closing*computes*
+  - rule 7 "asset status auto-down/up with WO state (setting)": no test named test_rule_*asset*status*
+  - rule 8 "backlog & overdue flags": no test named test_rule_*backlog*overdue*
+- perm_cov 2.1% (1/48):
+  - cmms.failurecode.approve: in spec but not declared in manifest permissions
+  - cmms.failurecode.close: in spec but not declared in manifest permissions
+  - cmms.failurecode.create: in spec but not declared in manifest permissions
+  - cmms.failurecode.update: in spec but not declared in manifest permissions
+  - cmms.failurecode.view: in spec but not declared in manifest permissions
+  - cmms.pm.approve: in spec but not declared in manifest permissions
+  - cmms.pm.close: in spec but not declared in manifest permissions
+  - cmms.pm.create: in spec but not declared in manifest permissions
+  - cmms.pm.update: in spec but not declared in manifest permissions
+  - cmms.pm.view: in spec but not declared in manifest permissions
+  - cmms.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - cmms.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - cmms.record.view: not enforced by an API route or authorization check
+  - cmms.report.view: in spec but not declared in manifest permissions
+  - cmms.request.approve: in spec but not declared in manifest permissions
+  - cmms.request.close: in spec but not declared in manifest permissions
+  - cmms.request.create: in spec but not declared in manifest permissions
+  - cmms.request.update: in spec but not declared in manifest permissions
+  - cmms.request.view: in spec but not declared in manifest permissions
+  - cmms.workorder.approve: in spec but not declared in manifest permissions
+  - cmms.workorder.close: in spec but not declared in manifest permissions
+  - cmms.workorder.create: in spec but not declared in manifest permissions
+  - cmms.workorder.update: in spec but not declared in manifest permissions
+  - cmms.workorder.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/24):
+  - work_request: list page web/pages/WorkRequestListPage.tsx missing
+  - work_request: form page web/pages/WorkRequestFormPage.tsx missing
+  - work_request: detail page web/pages/WorkRequestDetailPage.tsx missing
+  - work_request: no web/i18n/fa.json keys under "work_request."
+  - work_order: list page web/pages/WorkOrderListPage.tsx missing
+  - work_order: form page web/pages/WorkOrderFormPage.tsx missing
+  - work_order: detail page web/pages/WorkOrderDetailPage.tsx missing
+  - work_order: no web/i18n/fa.json keys under "work_order."
+  - wo_task: list page web/pages/WoTaskListPage.tsx missing
+  - wo_task: form page web/pages/WoTaskFormPage.tsx missing
+  - wo_task: detail page web/pages/WoTaskDetailPage.tsx missing
+  - wo_task: no web/i18n/fa.json keys under "wo_task."
+  - wo_part_use: list page web/pages/WoPartUseListPage.tsx missing
+  - wo_part_use: form page web/pages/WoPartUseFormPage.tsx missing
+  - wo_part_use: detail page web/pages/WoPartUseDetailPage.tsx missing
+  - wo_part_use: no web/i18n/fa.json keys under "wo_part_use."
+  - wo_labor: list page web/pages/WoLaborListPage.tsx missing
+  - wo_labor: form page web/pages/WoLaborFormPage.tsx missing
+  - wo_labor: detail page web/pages/WoLaborDetailPage.tsx missing
+  - wo_labor: no web/i18n/fa.json keys under "wo_labor."
+  - pm_plan: list page web/pages/PmPlanListPage.tsx missing
+  - pm_plan: form page web/pages/PmPlanFormPage.tsx missing
+  - pm_plan: detail page web/pages/PmPlanDetailPage.tsx missing
+  - pm_plan: no web/i18n/fa.json keys under "pm_plan."
+- ai_cov 0% (0/18):
+  - assistant: in spec but not declared in manifest ai.capabilities
+  - assistant: no test named *assistant*off* with assertions
+  - assistant: no test named *assistant*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+- anti-gaming: 5 finding(s)
+  - backend/src/Services/CmmsService.php:15: openOrders only returns a trivial value
+  - backend/src/Services/CmmsService.php:20: pmDue only returns a trivial value
+  - backend/src/Services/CmmsService.php:25: downtime only returns a trivial value
+  - backend/src/Services/CmmsService.php:30: mttrMtbf only returns a trivial value
+  - backend/src/Services/CmmsService.php:35: costByAsset only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## competency-appraisal — stub, score 0.8, FAIL
+
+- entity_cov 0% (0/38):
+  - Competency: table missing (expected competency_appraisal__competencies, 4 fields)
+  - JobCompetencyProfile: table missing (expected competency_appraisal__job_competency_profiles, 3 fields)
+  - Assessment: table missing (expected competency_appraisal__assessments, 6 fields)
+  - Cycle: table missing (expected competency_appraisal__cycles, 5 fields)
+  - KPI: table missing (expected competency_appraisal__kpis, 7 fields)
+  - DevelopmentPlan: table missing (expected competency_appraisal__development_plans, 3 fields)
+  - Succession: table missing (expected competency_appraisal__successions, 3 fields)
+- event_cov 0% (0/5):
+  - out competency-appraisal.cycle.closed: not emitted via DomainEvent in src/
+  - out competency-appraisal.gap.identified: not emitted via DomainEvent in src/
+  - out competency-appraisal.score.finalized: not emitted via DomainEvent in src/
+  - in hr-core.employee.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in training-lms.completion.recorded: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/3):
+  - gaps: not declared in a src/Contracts interface
+  - latestScore: not declared in a src/Contracts interface
+  - competencyMatrix: not declared in a src/Contracts interface
+- rule_cov 0% (0/7):
+  - rule 1 "weighted scoring": no test named test_rule_*weighted*scoring*
+  - rule 2 "anonymity for peer feedback": no test named test_rule_*anonymity*peer*
+  - rule 3 "calibration before finalizing": no test named test_rule_*calibration*finalizing*
+  - rule 4 "gaps computed vs required levels generate training needs (event)": no test named test_rule_*gaps*computed*
+  - rule 5 "results visibility by role": no test named test_rule_*results*visibility*
+  - rule 6 "payroll bonus inputs exposed ONLY as an approved aggregate event (n...": no test named test_rule_*payroll*bonus*
+  - rule 7 "immutable after finalize": no test named test_rule_*immutable*finalize*
+- perm_cov 8.3% (1/12):
+  - competency-appraisal.assessment.calibrate: in spec but not declared in manifest permissions
+  - competency-appraisal.assessment.submit: in spec but not declared in manifest permissions
+  - competency-appraisal.model.manage: in spec but not declared in manifest permissions
+  - competency-appraisal.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - competency-appraisal.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - competency-appraisal.record.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/28):
+  - competency: list page web/pages/CompetencyListPage.tsx missing
+  - competency: form page web/pages/CompetencyFormPage.tsx missing
+  - competency: detail page web/pages/CompetencyDetailPage.tsx missing
+  - competency: no web/i18n/fa.json keys under "competency."
+  - job_competency_profile: list page web/pages/JobCompetencyProfileListPage.tsx missing
+  - job_competency_profile: form page web/pages/JobCompetencyProfileFormPage.tsx missing
+  - job_competency_profile: detail page web/pages/JobCompetencyProfileDetailPage.tsx missing
+  - job_competency_profile: no web/i18n/fa.json keys under "job_competency_profile."
+  - assessment: list page web/pages/AssessmentListPage.tsx missing
+  - assessment: form page web/pages/AssessmentFormPage.tsx missing
+  - assessment: detail page web/pages/AssessmentDetailPage.tsx missing
+  - assessment: no web/i18n/fa.json keys under "assessment."
+  - cycle: list page web/pages/CycleListPage.tsx missing
+  - cycle: form page web/pages/CycleFormPage.tsx missing
+  - cycle: detail page web/pages/CycleDetailPage.tsx missing
+  - cycle: no web/i18n/fa.json keys under "cycle."
+  - kpi: list page web/pages/KpiListPage.tsx missing
+  - kpi: form page web/pages/KpiFormPage.tsx missing
+  - kpi: detail page web/pages/KpiDetailPage.tsx missing
+  - kpi: no web/i18n/fa.json keys under "kpi."
+  - development_plan: list page web/pages/DevelopmentPlanListPage.tsx missing
+  - development_plan: form page web/pages/DevelopmentPlanFormPage.tsx missing
+  - development_plan: detail page web/pages/DevelopmentPlanDetailPage.tsx missing
+  - development_plan: no web/i18n/fa.json keys under "development_plan."
+  - succession: list page web/pages/SuccessionListPage.tsx missing
+  - succession: form page web/pages/SuccessionFormPage.tsx missing
+  - succession: detail page web/pages/SuccessionDetailPage.tsx missing
+  - succession: no web/i18n/fa.json keys under "succession."
+- ai_cov 0% (0/6):
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/CompetencyAppraisalService.php:15: gaps only returns a trivial value
+  - backend/src/Services/CompetencyAppraisalService.php:20: latestScore only returns a trivial value
+  - backend/src/Services/CompetencyAppraisalService.php:25: competencyMatrix only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## condition-monitoring-iot — stub, score 0.5, FAIL
+
+- entity_cov 0% (0/39):
+  - Sensor: table missing (expected condition_monitoring_iot__sensors, 9 fields)
+  - Reading: table missing (expected condition_monitoring_iot__readings, 3 fields)
+  - Rollup: table missing (expected condition_monitoring_iot__rollups, 6 fields)
+  - AlarmRule: table missing (expected condition_monitoring_iot__alarm_rules, 4 fields)
+  - Alarm: table missing (expected condition_monitoring_iot__alarms, 5 fields)
+  - Baseline: table missing (expected condition_monitoring_iot__baselines, 2 fields)
+  - GatewayDevice: table missing (expected condition_monitoring_iot__gateway_devices, 3 fields)
+- event_cov 0% (0/3):
+  - out condition-monitoring-iot.alarm.raised: not emitted via DomainEvent in src/
+  - out condition-monitoring-iot.alarm.cleared: not emitted via DomainEvent in src/ and not in manifest emits
+  - in asset-registry.asset.status_changed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - latest: not declared in a src/Contracts interface
+  - series: not declared in a src/Contracts interface
+  - activeAlarms: not declared in a src/Contracts interface
+  - health: not declared in a src/Contracts interface
+- rule_cov 0% (0/7):
+  - rule 1 "ingestion via api-webhooks key-authenticated endpoint accepting bat...": no test named test_rule_*ingestion*webhooks*
+  - rule 2 "writes optimized (batch insert, no per-row events)": no test named test_rule_*writes*optimized*
+  - rule 3 "rollups computed by scheduled jobs": no test named test_rule_*rollups*computed*
+  - rule 4 "alarm evaluation on ingest or scheduled": no test named test_rule_*alarm*evaluation*
+  - rule 5 "alarm → notification + optional CMMS work request (setting) with dedup": no test named test_rule_*alarm*notification*
+  - rule 6 "raw data retention/purge job to protect shared-hosting DB size (bud...": no test named test_rule_*data*retention*
+  - rule 7 "local gateway agent protocol documented (Modbus/OPC-UA/MQTT bridges...": no test named test_rule_*local*gateway*
+- perm_cov 5% (1/20):
+  - condition-monitoring-iot.alarm.ack: in spec but not declared in manifest permissions
+  - condition-monitoring-iot.alarm.view: in spec but not declared in manifest permissions
+  - condition-monitoring-iot.data.view: in spec but not declared in manifest permissions
+  - condition-monitoring-iot.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - condition-monitoring-iot.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - condition-monitoring-iot.record.view: not enforced by an API route or authorization check
+  - condition-monitoring-iot.rule.manage: in spec but not declared in manifest permissions
+  - condition-monitoring-iot.rule.view: in spec but not declared in manifest permissions
+  - condition-monitoring-iot.sensor.manage: in spec but not declared in manifest permissions
+  - condition-monitoring-iot.sensor.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/28):
+  - sensor: list page web/pages/SensorListPage.tsx missing
+  - sensor: form page web/pages/SensorFormPage.tsx missing
+  - sensor: detail page web/pages/SensorDetailPage.tsx missing
+  - sensor: no web/i18n/fa.json keys under "sensor."
+  - reading: list page web/pages/ReadingListPage.tsx missing
+  - reading: form page web/pages/ReadingFormPage.tsx missing
+  - reading: detail page web/pages/ReadingDetailPage.tsx missing
+  - reading: no web/i18n/fa.json keys under "reading."
+  - rollup: list page web/pages/RollupListPage.tsx missing
+  - rollup: form page web/pages/RollupFormPage.tsx missing
+  - rollup: detail page web/pages/RollupDetailPage.tsx missing
+  - rollup: no web/i18n/fa.json keys under "rollup."
+  - alarm_rule: list page web/pages/AlarmRuleListPage.tsx missing
+  - alarm_rule: form page web/pages/AlarmRuleFormPage.tsx missing
+  - alarm_rule: detail page web/pages/AlarmRuleDetailPage.tsx missing
+  - alarm_rule: no web/i18n/fa.json keys under "alarm_rule."
+  - alarm: list page web/pages/AlarmListPage.tsx missing
+  - alarm: form page web/pages/AlarmFormPage.tsx missing
+  - alarm: detail page web/pages/AlarmDetailPage.tsx missing
+  - alarm: no web/i18n/fa.json keys under "alarm."
+  - baseline: list page web/pages/BaselineListPage.tsx missing
+  - baseline: form page web/pages/BaselineFormPage.tsx missing
+  - baseline: detail page web/pages/BaselineDetailPage.tsx missing
+  - baseline: no web/i18n/fa.json keys under "baseline."
+  - gateway_device: list page web/pages/GatewayDeviceListPage.tsx missing
+  - gateway_device: form page web/pages/GatewayDeviceFormPage.tsx missing
+  - gateway_device: detail page web/pages/GatewayDeviceDetailPage.tsx missing
+  - gateway_device: no web/i18n/fa.json keys under "gateway_device."
+- ai_cov 0% (0/6):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/ConditionMonitoringIotService.php:15: latest only returns a trivial value
+  - backend/src/Services/ConditionMonitoringIotService.php:20: series only returns a trivial value
+  - backend/src/Services/ConditionMonitoringIotService.php:25: activeAlarms only returns a trivial value
+  - backend/src/Services/ConditionMonitoringIotService.php:30: health only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## contractor-mgmt — stub, score 0.2, FAIL
+
+- entity_cov 0% (0/36):
+  - Contractor: table missing (expected contractor_mgmt__contractors, 6 fields)
+  - WorkPackage: table missing (expected contractor_mgmt__work_packages, 7 fields)
+  - ProgressStatement: table missing (expected contractor_mgmt__progress_statements, 7 fields)
+  - Advance: table missing (expected contractor_mgmt__advances, 3 fields)
+  - ContractorWorker: table missing (expected contractor_mgmt__contractor_workers, 4 fields)
+  - PerformanceEvaluation: table missing (expected contractor_mgmt__performance_evaluations, 3 fields)
+- event_cov 0% (0/5):
+  - out contractor-mgmt.statement.approved: not emitted via DomainEvent in src/
+  - out contractor-mgmt.contractor.suspended: not emitted via DomainEvent in src/
+  - in contracts.contract.activated: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in ar-ap.payment.allocated: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in hse.permit.*: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/3):
+  - isEligible: not declared in a src/Contracts interface
+  - balance: not declared in a src/Contracts interface
+  - retention: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "statement quantities cannot exceed WP quantities without change order": no test named test_rule_*statement*quantities*
+  - rule 2 "approval chain (site manager → engineer → finance)": no test named test_rule_*approval*chain*
+  - rule 3 "automatic deductions per contract terms": no test named test_rule_*automatic*deductions*
+  - rule 4 "retention release rules": no test named test_rule_*retention*release*
+  - rule 5 "advance recovery proportional": no test named test_rule_*advance*recovery*
+  - rule 6 "payment request → ar-ap event": no test named test_rule_*payment*request*
+  - rule 7 "entry to site requires validity of insurance/HSE docs (consumed by ...": no test named test_rule_*entry*site*
+  - rule 8 "change orders & variations log": no test named test_rule_*change*orders*
+- perm_cov 2.2% (1/46):
+  - contractor-mgmt.advance.approve: in spec but not declared in manifest permissions
+  - contractor-mgmt.advance.create: in spec but not declared in manifest permissions
+  - contractor-mgmt.advance.update: in spec but not declared in manifest permissions
+  - contractor-mgmt.advance.view: in spec but not declared in manifest permissions
+  - contractor-mgmt.contractor.approve: in spec but not declared in manifest permissions
+  - contractor-mgmt.contractor.create: in spec but not declared in manifest permissions
+  - contractor-mgmt.contractor.update: in spec but not declared in manifest permissions
+  - contractor-mgmt.contractor.view: in spec but not declared in manifest permissions
+  - contractor-mgmt.evaluation.approve: in spec but not declared in manifest permissions
+  - contractor-mgmt.evaluation.create: in spec but not declared in manifest permissions
+  - contractor-mgmt.evaluation.update: in spec but not declared in manifest permissions
+  - contractor-mgmt.evaluation.view: in spec but not declared in manifest permissions
+  - contractor-mgmt.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - contractor-mgmt.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - contractor-mgmt.record.view: not enforced by an API route or authorization check
+  - contractor-mgmt.statement.approve: in spec but not declared in manifest permissions
+  - contractor-mgmt.statement.create: in spec but not declared in manifest permissions
+  - contractor-mgmt.statement.update: in spec but not declared in manifest permissions
+  - contractor-mgmt.statement.view: in spec but not declared in manifest permissions
+  - contractor-mgmt.wp.approve: in spec but not declared in manifest permissions
+  - contractor-mgmt.wp.create: in spec but not declared in manifest permissions
+  - contractor-mgmt.wp.update: in spec but not declared in manifest permissions
+  - contractor-mgmt.wp.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/24):
+  - contractor: list page web/pages/ContractorListPage.tsx missing
+  - contractor: form page web/pages/ContractorFormPage.tsx missing
+  - contractor: detail page web/pages/ContractorDetailPage.tsx missing
+  - contractor: no web/i18n/fa.json keys under "contractor."
+  - work_package: list page web/pages/WorkPackageListPage.tsx missing
+  - work_package: form page web/pages/WorkPackageFormPage.tsx missing
+  - work_package: detail page web/pages/WorkPackageDetailPage.tsx missing
+  - work_package: no web/i18n/fa.json keys under "work_package."
+  - progress_statement: list page web/pages/ProgressStatementListPage.tsx missing
+  - progress_statement: form page web/pages/ProgressStatementFormPage.tsx missing
+  - progress_statement: detail page web/pages/ProgressStatementDetailPage.tsx missing
+  - progress_statement: no web/i18n/fa.json keys under "progress_statement."
+  - advance: list page web/pages/AdvanceListPage.tsx missing
+  - advance: form page web/pages/AdvanceFormPage.tsx missing
+  - advance: detail page web/pages/AdvanceDetailPage.tsx missing
+  - advance: no web/i18n/fa.json keys under "advance."
+  - contractor_worker: list page web/pages/ContractorWorkerListPage.tsx missing
+  - contractor_worker: form page web/pages/ContractorWorkerFormPage.tsx missing
+  - contractor_worker: detail page web/pages/ContractorWorkerDetailPage.tsx missing
+  - contractor_worker: no web/i18n/fa.json keys under "contractor_worker."
+  - performance_evaluation: list page web/pages/PerformanceEvaluationListPage.tsx missing
+  - performance_evaluation: form page web/pages/PerformanceEvaluationFormPage.tsx missing
+  - performance_evaluation: detail page web/pages/PerformanceEvaluationDetailPage.tsx missing
+  - performance_evaluation: no web/i18n/fa.json keys under "performance_evaluation."
+- ai_cov 0% (0/6):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/ContractorMgmtService.php:15: isEligible only returns a trivial value
+  - backend/src/Services/ContractorMgmtService.php:20: balance only returns a trivial value
+  - backend/src/Services/ContractorMgmtService.php:25: retention only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## contracts — stub, score 0.5, FAIL
+
+- entity_cov 0% (0/29):
+  - Contract: table missing (expected contracts__contracts, 13 fields)
+  - ClauseLibrary: table missing (expected contracts__clause_libraries, 3 fields)
+  - PaymentSchedule: table missing (expected contracts__payment_schedules, 4 fields)
+  - Obligation: table missing (expected contracts__obligations, 4 fields)
+  - LinkedRef: table missing (expected contracts__linked_refs, 0 fields)
+- event_cov 0% (0/6):
+  - out contracts.contract.activated: not emitted via DomainEvent in src/
+  - out contracts.contract.expiring: not emitted via DomainEvent in src/ and not in manifest emits
+  - out contracts.contract.terminated: not emitted via DomainEvent in src/ and not in manifest emits
+  - out contracts.milestone.due: not emitted via DomainEvent in src/
+  - in ar-ap.invoice.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in purchase-order.po.*: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - activeFor: not declared in a src/Contracts interface
+  - consumed: not declared in a src/Contracts interface
+  - expiring: not declared in a src/Contracts interface
+  - terms: not declared in a src/Contracts interface
+- rule_cov 0% (0/1):
+  - rule 1 "generate contract text from template+variables (print template), ap...": no test named test_rule_*generate*contract*
+- perm_cov 5% (1/20):
+  - contracts.clause.manage: in spec but not declared in manifest permissions
+  - contracts.contract.approve: in spec but not declared in manifest permissions
+  - contracts.contract.create: in spec but not declared in manifest permissions
+  - contracts.contract.terminate: in spec but not declared in manifest permissions
+  - contracts.contract.update: in spec but not declared in manifest permissions
+  - contracts.contract.view: in spec but not declared in manifest permissions
+  - contracts.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - contracts.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - contracts.record.view: not enforced by an API route or authorization check
+  - contracts.template.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/20):
+  - contract: list page web/pages/ContractListPage.tsx missing
+  - contract: form page web/pages/ContractFormPage.tsx missing
+  - contract: detail page web/pages/ContractDetailPage.tsx missing
+  - contract: no web/i18n/fa.json keys under "contract."
+  - clause_library: list page web/pages/ClauseLibraryListPage.tsx missing
+  - clause_library: form page web/pages/ClauseLibraryFormPage.tsx missing
+  - clause_library: detail page web/pages/ClauseLibraryDetailPage.tsx missing
+  - clause_library: no web/i18n/fa.json keys under "clause_library."
+  - payment_schedule: list page web/pages/PaymentScheduleListPage.tsx missing
+  - payment_schedule: form page web/pages/PaymentScheduleFormPage.tsx missing
+  - payment_schedule: detail page web/pages/PaymentScheduleDetailPage.tsx missing
+  - payment_schedule: no web/i18n/fa.json keys under "payment_schedule."
+  - obligation: list page web/pages/ObligationListPage.tsx missing
+  - obligation: form page web/pages/ObligationFormPage.tsx missing
+  - obligation: detail page web/pages/ObligationDetailPage.tsx missing
+  - obligation: no web/i18n/fa.json keys under "obligation."
+  - linked_ref: list page web/pages/LinkedRefListPage.tsx missing
+  - linked_ref: form page web/pages/LinkedRefFormPage.tsx missing
+  - linked_ref: detail page web/pages/LinkedRefDetailPage.tsx missing
+  - linked_ref: no web/i18n/fa.json keys under "linked_ref."
+- ai_cov 0% (0/12):
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - ocr: in spec but not declared in manifest ai.capabilities
+  - ocr: no test named *ocr*off* with assertions
+  - ocr: no test named *ocr*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/ContractsService.php:15: activeFor only returns a trivial value
+  - backend/src/Services/ContractsService.php:20: consumed only returns a trivial value
+  - backend/src/Services/ContractsService.php:25: expiring only returns a trivial value
+  - backend/src/Services/ContractsService.php:30: terms only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## correspondence — stub, score 0.5, FAIL
+
+- entity_cov 0% (0/26):
+  - Letter: table missing (expected correspondence__letters, 10 fields)
+  - Referral: table missing (expected correspondence__referrals, 7 fields)
+  - Template: table missing (expected correspondence__templates, 2 fields)
+  - FollowUp: table missing (expected correspondence__follow_ups, 3 fields)
+- event_cov 0% (0/3):
+  - out correspondence.letter.registered: not emitted via DomainEvent in src/
+  - out correspondence.letter.referred: not emitted via DomainEvent in src/ and not in manifest emits
+  - out correspondence.letter.overdue: not emitted via DomainEvent in src/ and not in manifest emits
+- contract_cov 0% (0/3):
+  - inbox: not declared in a src/Contracts interface
+  - byNumber: not declared in a src/Contracts interface
+  - overdue: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "numbering via NumberingService with Jalali year reset": no test named test_rule_*numbering*service*
+  - rule 2 "referral chain tracked": no test named test_rule_*referral*chain*
+  - rule 3 "confidentiality by role/unit": no test named test_rule_*confidentiality*role*
+  - rule 4 "reply creates linked outgoing": no test named test_rule_*reply*creates*
+  - rule 5 "full-text search on subject/body/tags (and extracted text via docum...": no test named test_rule_*full*text*
+  - rule 6 "approval stamp workflow for outgoing letters": no test named test_rule_*approval*stamp*
+  - rule 7 "print with letterhead via print templates": no test named test_rule_*print*letterhead*
+  - rule 8 "deadlines alerts": no test named test_rule_*deadlines*alerts*
+- perm_cov 5% (1/20):
+  - correspondence.confidential.view: in spec but not declared in manifest permissions
+  - correspondence.letter.approve: in spec but not declared in manifest permissions
+  - correspondence.letter.archive: in spec but not declared in manifest permissions
+  - correspondence.letter.create: in spec but not declared in manifest permissions
+  - correspondence.letter.refer: in spec but not declared in manifest permissions
+  - correspondence.letter.view: in spec but not declared in manifest permissions
+  - correspondence.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - correspondence.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - correspondence.record.view: not enforced by an API route or authorization check
+  - correspondence.template.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/16):
+  - letter: list page web/pages/LetterListPage.tsx missing
+  - letter: form page web/pages/LetterFormPage.tsx missing
+  - letter: detail page web/pages/LetterDetailPage.tsx missing
+  - letter: no web/i18n/fa.json keys under "letter."
+  - referral: list page web/pages/ReferralListPage.tsx missing
+  - referral: form page web/pages/ReferralFormPage.tsx missing
+  - referral: detail page web/pages/ReferralDetailPage.tsx missing
+  - referral: no web/i18n/fa.json keys under "referral."
+  - template: list page web/pages/TemplateListPage.tsx missing
+  - template: form page web/pages/TemplateFormPage.tsx missing
+  - template: detail page web/pages/TemplateDetailPage.tsx missing
+  - template: no web/i18n/fa.json keys under "template."
+  - follow_up: list page web/pages/FollowUpListPage.tsx missing
+  - follow_up: form page web/pages/FollowUpFormPage.tsx missing
+  - follow_up: detail page web/pages/FollowUpDetailPage.tsx missing
+  - follow_up: no web/i18n/fa.json keys under "follow_up."
+- ai_cov 0% (0/3):
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/CorrespondenceService.php:15: inbox only returns a trivial value
+  - backend/src/Services/CorrespondenceService.php:20: byNumber only returns a trivial value
+  - backend/src/Services/CorrespondenceService.php:25: overdue only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## costing — stub, score 0.5, FAIL
+
+- entity_cov 0% (0/46):
+  - CostElement: table missing (expected costing__cost_elements, 2 fields)
+  - CostRate: table missing (expected costing__cost_rates, 3 fields)
+  - StandardCost: table missing (expected costing__standard_costs, 6 fields)
+  - ActualCost: table missing (expected costing__actual_costs, 4 fields)
+  - OverheadPool: table missing (expected costing__overhead_pools, 5 fields)
+  - WipSnapshot: table missing (expected costing__wip_snapshots, 6 fields)
+  - VarianceRecord: table missing (expected costing__variance_records, 2 fields)
+  - ValuationMethod: table missing (expected costing__valuation_methods, 1 fields)
+  - LandedCostAllocation: table missing (expected costing__landed_cost_allocations, 3 fields)
+  - CostRun: table missing (expected costing__cost_runs, 4 fields)
+- event_cov 0% (0/18):
+  - out costing.cost.updated: not emitted via DomainEvent in src/
+  - out costing.wo.costed: not emitted via DomainEvent in src/
+  - out costing.run.completed: not emitted via DomainEvent in src/
+  - out costing.variance.recorded: not emitted via DomainEvent in src/
+  - in work-order.wo.closed.issued.received: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in work-order.wo.closed.output.received: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in work-order.wo.material.issued.received: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in work-order.wo.material.output.received: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in inventory.receipt.posted.posted.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in inventory.receipt.posted.adjustment.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in inventory.receipt.issue.posted.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in inventory.receipt.issue.adjustment.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in mes.production.reported: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in purchase-order.po.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in ar-ap.invoice.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in payroll.run.approved: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in fixed-assets.depreciation.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in accounting-gl.period.closed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/7):
+  - itemCost: not declared in a src/Contracts interface
+  - woCost: not declared in a src/Contracts interface
+  - wipValue: not declared in a src/Contracts interface
+  - margin: not declared in a src/Contracts interface
+  - simulate: not declared in a src/Contracts interface
+  - valuationOf: not declared in a src/Contracts interface
+  - runPeriod: not declared in a src/Contracts interface
+- rule_cov 0% (0/13):
+  - rule 1 "standard roll-up: multi-level via BomService + RoutingService.costR...": no test named test_rule_*standard*roll*
+  - rule 2 "simulation mode doesn't activate": no test named test_rule_*simulation*mode*
+  - rule 3 "activation by approval": no test named test_rule_*activation*approval*
+  - rule 4 "actual WO cost = issued material at inventory valuation + labor/mac...": no test named test_rule_*actual*cost*
+  - rule 5 "by-product allocation per BOM %": no test named test_rule_*product*allocation*
+  - rule 6 "WIP at period end = costs accumulated − completed": no test named test_rule_*period*costs*
+  - rule 7 "variances on close": no test named test_rule_*variances*close*
+  - rule 8 "landed cost allocation of PO charges (freight, customs, insurance, ...": no test named test_rule_*landed*cost*
+  - rule 9 "COGS on issue for sales from valuation": no test named test_rule_*cogs*issue*
+  - rule 10 "period cost run is idempotent & restartable": no test named test_rule_*period*cost*
+  - rule 11 "ALL posting via JournalRequest (WIP, FG, COGS, variances, overhead ...": no test named test_rule_*posting*journal*
+  - rule 12 "period lock respected": no test named test_rule_*period*lock*
+  - rule 13 "recalc of moving average on backdated receipts handled with control...": no test named test_rule_*recalc*moving*
+- perm_cov 4.5% (1/22):
+  - costing.rate.manage: in spec but not declared in manifest permissions
+  - costing.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - costing.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - costing.record.view: not enforced by an API route or authorization check
+  - costing.report.view: in spec but not declared in manifest permissions
+  - costing.run.approve: in spec but not declared in manifest permissions
+  - costing.run.execute: in spec but not declared in manifest permissions
+  - costing.standard.approve: in spec but not declared in manifest permissions
+  - costing.standard.manage: in spec but not declared in manifest permissions
+  - costing.standard.view: in spec but not declared in manifest permissions
+  - costing.valuation.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/40):
+  - cost_element: list page web/pages/CostElementListPage.tsx missing
+  - cost_element: form page web/pages/CostElementFormPage.tsx missing
+  - cost_element: detail page web/pages/CostElementDetailPage.tsx missing
+  - cost_element: no web/i18n/fa.json keys under "cost_element."
+  - cost_rate: list page web/pages/CostRateListPage.tsx missing
+  - cost_rate: form page web/pages/CostRateFormPage.tsx missing
+  - cost_rate: detail page web/pages/CostRateDetailPage.tsx missing
+  - cost_rate: no web/i18n/fa.json keys under "cost_rate."
+  - standard_cost: list page web/pages/StandardCostListPage.tsx missing
+  - standard_cost: form page web/pages/StandardCostFormPage.tsx missing
+  - standard_cost: detail page web/pages/StandardCostDetailPage.tsx missing
+  - standard_cost: no web/i18n/fa.json keys under "standard_cost."
+  - actual_cost: list page web/pages/ActualCostListPage.tsx missing
+  - actual_cost: form page web/pages/ActualCostFormPage.tsx missing
+  - actual_cost: detail page web/pages/ActualCostDetailPage.tsx missing
+  - actual_cost: no web/i18n/fa.json keys under "actual_cost."
+  - overhead_pool: list page web/pages/OverheadPoolListPage.tsx missing
+  - overhead_pool: form page web/pages/OverheadPoolFormPage.tsx missing
+  - overhead_pool: detail page web/pages/OverheadPoolDetailPage.tsx missing
+  - overhead_pool: no web/i18n/fa.json keys under "overhead_pool."
+  - wip_snapshot: list page web/pages/WipSnapshotListPage.tsx missing
+  - wip_snapshot: form page web/pages/WipSnapshotFormPage.tsx missing
+  - wip_snapshot: detail page web/pages/WipSnapshotDetailPage.tsx missing
+  - wip_snapshot: no web/i18n/fa.json keys under "wip_snapshot."
+  - variance_record: list page web/pages/VarianceRecordListPage.tsx missing
+  - variance_record: form page web/pages/VarianceRecordFormPage.tsx missing
+  - variance_record: detail page web/pages/VarianceRecordDetailPage.tsx missing
+  - variance_record: no web/i18n/fa.json keys under "variance_record."
+  - valuation_method: list page web/pages/ValuationMethodListPage.tsx missing
+  - valuation_method: form page web/pages/ValuationMethodFormPage.tsx missing
+  - valuation_method: detail page web/pages/ValuationMethodDetailPage.tsx missing
+  - valuation_method: no web/i18n/fa.json keys under "valuation_method."
+  - landed_cost_allocation: list page web/pages/LandedCostAllocationListPage.tsx missing
+  - landed_cost_allocation: form page web/pages/LandedCostAllocationFormPage.tsx missing
+  - landed_cost_allocation: detail page web/pages/LandedCostAllocationDetailPage.tsx missing
+  - landed_cost_allocation: no web/i18n/fa.json keys under "landed_cost_allocation."
+  - cost_run: list page web/pages/CostRunListPage.tsx missing
+  - cost_run: form page web/pages/CostRunFormPage.tsx missing
+  - cost_run: detail page web/pages/CostRunDetailPage.tsx missing
+  - cost_run: no web/i18n/fa.json keys under "cost_run."
+- ai_cov 0% (0/9):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - nl_report: in spec but not declared in manifest ai.capabilities
+  - nl_report: no test named *nl_report*off* with assertions
+  - nl_report: no test named *nl_report*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+- anti-gaming: 7 finding(s)
+  - backend/src/Services/CostingService.php:15: itemCost only returns a trivial value
+  - backend/src/Services/CostingService.php:20: woCost only returns a trivial value
+  - backend/src/Services/CostingService.php:25: wipValue only returns a trivial value
+  - backend/src/Services/CostingService.php:30: margin only returns a trivial value
+  - backend/src/Services/CostingService.php:35: simulate only returns a trivial value
+  - backend/src/Services/CostingService.php:40: valuationOf only returns a trivial value
+  - backend/src/Services/CostingService.php:45: runPeriod only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## crm — stub, score 0.2, FAIL
+
+- entity_cov 0% (0/34):
+  - Lead: table missing (expected crm__leads, 7 fields)
+  - Opportunity: table missing (expected crm__opportunities, 8 fields)
+  - Activity: table missing (expected crm__activities, 7 fields)
+  - Campaign: table missing (expected crm__campaigns, 4 fields)
+  - Target: table missing (expected crm__targets, 3 fields)
+- event_cov 0% (0/7):
+  - out crm.lead.created: not emitted via DomainEvent in src/
+  - out crm.lead.converted: not emitted via DomainEvent in src/ and not in manifest emits
+  - out crm.opportunity.won: not emitted via DomainEvent in src/
+  - out crm.opportunity.lost: not emitted via DomainEvent in src/ and not in manifest emits
+  - in sales.quotation.*.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in sales.quotation.order.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in ticketing.ticket.created: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/3):
+  - customer360: not declared in a src/Contracts interface
+  - openOpportunities: not declared in a src/Contracts interface
+  - pipeline: not declared in a src/Contracts interface
+- rule_cov 0% (0/1):
+  - rule 1 "lead→party+contact+opportunity conversion (calls PartyService contr...": no test named test_rule_*lead*party*
+- perm_cov 2.4% (1/42):
+  - crm.activity.create: in spec but not declared in manifest permissions
+  - crm.activity.delete: in spec but not declared in manifest permissions
+  - crm.activity.update: in spec but not declared in manifest permissions
+  - crm.activity.view: in spec but not declared in manifest permissions
+  - crm.campaign.create: in spec but not declared in manifest permissions
+  - crm.campaign.delete: in spec but not declared in manifest permissions
+  - crm.campaign.update: in spec but not declared in manifest permissions
+  - crm.campaign.view: in spec but not declared in manifest permissions
+  - crm.lead.create: in spec but not declared in manifest permissions
+  - crm.lead.delete: in spec but not declared in manifest permissions
+  - crm.lead.update: in spec but not declared in manifest permissions
+  - crm.lead.view: in spec but not declared in manifest permissions
+  - crm.opportunity.create: in spec but not declared in manifest permissions
+  - crm.opportunity.delete: in spec but not declared in manifest permissions
+  - crm.opportunity.update: in spec but not declared in manifest permissions
+  - crm.opportunity.view: in spec but not declared in manifest permissions
+  - crm.pipeline.manage: in spec but not declared in manifest permissions
+  - crm.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - crm.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - crm.record.view: not enforced by an API route or authorization check
+  - crm.target.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/20):
+  - lead: list page web/pages/LeadListPage.tsx missing
+  - lead: form page web/pages/LeadFormPage.tsx missing
+  - lead: detail page web/pages/LeadDetailPage.tsx missing
+  - lead: no web/i18n/fa.json keys under "lead."
+  - opportunity: list page web/pages/OpportunityListPage.tsx missing
+  - opportunity: form page web/pages/OpportunityFormPage.tsx missing
+  - opportunity: detail page web/pages/OpportunityDetailPage.tsx missing
+  - opportunity: no web/i18n/fa.json keys under "opportunity."
+  - activity: list page web/pages/ActivityListPage.tsx missing
+  - activity: form page web/pages/ActivityFormPage.tsx missing
+  - activity: detail page web/pages/ActivityDetailPage.tsx missing
+  - activity: no web/i18n/fa.json keys under "activity."
+  - campaign: list page web/pages/CampaignListPage.tsx missing
+  - campaign: form page web/pages/CampaignFormPage.tsx missing
+  - campaign: detail page web/pages/CampaignDetailPage.tsx missing
+  - campaign: no web/i18n/fa.json keys under "campaign."
+  - target: list page web/pages/TargetListPage.tsx missing
+  - target: form page web/pages/TargetFormPage.tsx missing
+  - target: detail page web/pages/TargetDetailPage.tsx missing
+  - target: no web/i18n/fa.json keys under "target."
+- ai_cov 0% (0/12):
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/CrmService.php:15: customer360 only returns a trivial value
+  - backend/src/Services/CrmService.php:20: openOpportunities only returns a trivial value
+  - backend/src/Services/CrmService.php:25: pipeline only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## demand-forecast — stub, score 5.7, FAIL
+
+- entity_cov 0% (0/29):
+  - ForecastJob: table missing (expected demand_forecast__forecast_jobs, 7 fields)
+  - ForecastResult: table missing (expected demand_forecast__forecast_results, 9 fields)
+  - SeriesProfile: table missing (expected demand_forecast__series_profiles, 5 fields)
+  - AdoptedForecast: table missing (expected demand_forecast__adopted_forecasts, 4 fields)
+- event_cov 0% (0/3):
+  - out demand-forecast.forecast.published: not emitted via DomainEvent in src/
+  - out demand-forecast.forecast.adopted: not emitted via DomainEvent in src/
+  - in sales.invoice.issued: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/5):
+  - run: not declared in a src/Contracts interface
+  - results: not declared in a src/Contracts interface
+  - latest: not declared in a src/Contracts interface
+  - adopt: not declared in a src/Contracts interface
+  - accuracy: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "series classification (ADI/CV²) selects method families": no test named test_rule_*series*classification*
+  - rule 2 "automatic backtesting (rolling origin) picks the best method per se...": no test named test_rule_*automatic*backtesting*
+  - rule 3 "outlier handling (winsorize/flag, never silently delete)": no test named test_rule_*outlier*handling*
+  - rule 4 "hierarchical reconciliation optional (item→category)": no test named test_rule_*hierarchical*reconciliation*
+  - rule 5 "calendar effects (Jalali months, Nowruz/Ramadan windows as configur...": no test named test_rule_*calendar*effects*
+  - rule 6 "results are PROPOSALS: planner adopts into MPS forecast / reorder s...": no test named test_rule_*results*proposals*
+  - rule 7 "minimum history thresholds with explicit "insufficient data" results": no test named test_rule_*minimum*history*
+  - rule 8 "hard caps on series count per job (chunked)": no test named test_rule_*hard*caps*
+- perm_cov 7.1% (1/14):
+  - demand-forecast.job.run: in spec but not declared in manifest permissions
+  - demand-forecast.job.view: in spec but not declared in manifest permissions
+  - demand-forecast.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - demand-forecast.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - demand-forecast.record.view: not enforced by an API route or authorization check
+  - demand-forecast.result.adopt: in spec but not declared in manifest permissions
+  - demand-forecast.settings.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/16):
+  - forecast_job: list page web/pages/ForecastJobListPage.tsx missing
+  - forecast_job: form page web/pages/ForecastJobFormPage.tsx missing
+  - forecast_job: detail page web/pages/ForecastJobDetailPage.tsx missing
+  - forecast_job: no web/i18n/fa.json keys under "forecast_job."
+  - forecast_result: list page web/pages/ForecastResultListPage.tsx missing
+  - forecast_result: form page web/pages/ForecastResultFormPage.tsx missing
+  - forecast_result: detail page web/pages/ForecastResultDetailPage.tsx missing
+  - forecast_result: no web/i18n/fa.json keys under "forecast_result."
+  - series_profile: list page web/pages/SeriesProfileListPage.tsx missing
+  - series_profile: form page web/pages/SeriesProfileFormPage.tsx missing
+  - series_profile: detail page web/pages/SeriesProfileDetailPage.tsx missing
+  - series_profile: no web/i18n/fa.json keys under "series_profile."
+  - adopted_forecast: list page web/pages/AdoptedForecastListPage.tsx missing
+  - adopted_forecast: form page web/pages/AdoptedForecastFormPage.tsx missing
+  - adopted_forecast: detail page web/pages/AdoptedForecastDetailPage.tsx missing
+  - adopted_forecast: no web/i18n/fa.json keys under "adopted_forecast."
+- ai_cov 100% (0/0): complete
+- anti-gaming: 5 finding(s)
+  - backend/src/Services/DemandForecastService.php:15: run only returns a trivial value
+  - backend/src/Services/DemandForecastService.php:20: results only returns a trivial value
+  - backend/src/Services/DemandForecastService.php:25: latest only returns a trivial value
+  - backend/src/Services/DemandForecastService.php:30: adopt only returns a trivial value
+  - backend/src/Services/DemandForecastService.php:35: accuracy only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## doc-ocr — stub, score 5.7, FAIL
+
+- entity_cov 0% (0/21):
+  - ExtractionJob: table missing (expected doc_ocr__extraction_jobs, 6 fields)
+  - ExtractionResult: table missing (expected doc_ocr__extraction_results, 4 fields)
+  - Template: table missing (expected doc_ocr__templates, 4 fields)
+  - ReviewTask: table missing (expected doc_ocr__review_tasks, 3 fields)
+- event_cov 0% (0/3):
+  - out doc-ocr.extraction.completed: not emitted via DomainEvent in src/
+  - out doc-ocr.extraction.approved: not emitted via DomainEvent in src/ and not in manifest emits
+  - in document-mgmt.document.uploaded: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - extract: not declared in a src/Contracts interface
+  - result: not declared in a src/Contracts interface
+  - approve: not declared in a src/Contracts interface
+  - textOf: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "pipeline: digital-PDF text extraction first": no test named test_rule_*pipeline*digital*
+  - rule 2 "if scanned → image preprocessing (deskew/denoise) → OCR (Tesseract ...": no test named test_rule_*scanned*image*
+  - rule 3 "Persian digit/char normalization": no test named test_rule_*persian*digit*
+  - rule 4 "keep original document immutable": no test named test_rule_*keep*original*
+  - rule 5 "reprocess with corrected template": no test named test_rule_*reprocess*corrected*
+  - rule 6 "throughput limits and queueing for shared hosting": no test named test_rule_*throughput*limits*
+- perm_cov 7.1% (1/14):
+  - doc-ocr.job.create: in spec but not declared in manifest permissions
+  - doc-ocr.job.review: in spec but not declared in manifest permissions
+  - doc-ocr.job.view: in spec but not declared in manifest permissions
+  - doc-ocr.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - doc-ocr.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - doc-ocr.record.view: not enforced by an API route or authorization check
+  - doc-ocr.template.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/16):
+  - extraction_job: list page web/pages/ExtractionJobListPage.tsx missing
+  - extraction_job: form page web/pages/ExtractionJobFormPage.tsx missing
+  - extraction_job: detail page web/pages/ExtractionJobDetailPage.tsx missing
+  - extraction_job: no web/i18n/fa.json keys under "extraction_job."
+  - extraction_result: list page web/pages/ExtractionResultListPage.tsx missing
+  - extraction_result: form page web/pages/ExtractionResultFormPage.tsx missing
+  - extraction_result: detail page web/pages/ExtractionResultDetailPage.tsx missing
+  - extraction_result: no web/i18n/fa.json keys under "extraction_result."
+  - template: list page web/pages/TemplateListPage.tsx missing
+  - template: form page web/pages/TemplateFormPage.tsx missing
+  - template: detail page web/pages/TemplateDetailPage.tsx missing
+  - template: no web/i18n/fa.json keys under "template."
+  - review_task: list page web/pages/ReviewTaskListPage.tsx missing
+  - review_task: form page web/pages/ReviewTaskFormPage.tsx missing
+  - review_task: detail page web/pages/ReviewTaskDetailPage.tsx missing
+  - review_task: no web/i18n/fa.json keys under "review_task."
+- ai_cov 100% (0/0): complete
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/DocOcrService.php:15: extract only returns a trivial value
+  - backend/src/Services/DocOcrService.php:20: result only returns a trivial value
+  - backend/src/Services/DocOcrService.php:25: approve only returns a trivial value
+  - backend/src/Services/DocOcrService.php:30: textOf only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## document-mgmt — stub, score 0, FAIL
+
+- entity_cov 0% (0/0):
+  - specification missing: specs/document-mgmt.md
+- event_cov 0% (0/0):
+  - specification missing: specs/document-mgmt.md
+- contract_cov 0% (0/0):
+  - specification missing: specs/document-mgmt.md
+- rule_cov 0% (0/0):
+  - specification missing: specs/document-mgmt.md
+- perm_cov 0% (0/0):
+  - specification missing: specs/document-mgmt.md
+- ui_cov 0% (0/0):
+  - specification missing: specs/document-mgmt.md
+- ai_cov 0% (0/0):
+  - specification missing: specs/document-mgmt.md
+- anti-gaming: clean
+- tests: not_run (static gate not passed)
+
+## dynamic-fields — stub, score 0, FAIL
+
+- entity_cov 0% (0/0):
+  - specification missing: specs/dynamic-fields.md
+- event_cov 0% (0/0):
+  - specification missing: specs/dynamic-fields.md
+- contract_cov 0% (0/0):
+  - specification missing: specs/dynamic-fields.md
+- rule_cov 0% (0/0):
+  - specification missing: specs/dynamic-fields.md
+- perm_cov 0% (0/0):
+  - specification missing: specs/dynamic-fields.md
+- ui_cov 0% (0/0):
+  - specification missing: specs/dynamic-fields.md
+- ai_cov 0% (0/0):
+  - specification missing: specs/dynamic-fields.md
+- anti-gaming: clean
+- tests: not_run (static gate not passed)
+
+## eco-plm — stub, score 0.4, FAIL
+
+- entity_cov 0% (0/29):
+  - ChangeRequest: table missing (expected eco_plm__change_requests, 5 fields)
+  - ChangeOrder: table missing (expected eco_plm__change_orders, 9 fields)
+  - ChangeTask: table missing (expected eco_plm__change_tasks, 4 fields)
+  - ReviewerSignoff: table missing (expected eco_plm__reviewer_signoffs, 4 fields)
+  - ItemLifecycle: table missing (expected eco_plm__item_lifecycles, 2 fields)
+- event_cov 0% (0/7):
+  - out eco-plm.change.requested: not emitted via DomainEvent in src/
+  - out eco-plm.change.approved: not emitted via DomainEvent in src/ and not in manifest emits
+  - out eco-plm.change.released: not emitted via DomainEvent in src/ and not in manifest emits
+  - out eco-plm.change.closed: not emitted via DomainEvent in src/ and not in manifest emits
+  - in bom.bom.approved: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in routing.routing.approved: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in work-order.wo.created: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - pendingChanges: not declared in a src/Contracts interface
+  - effectiveRevision: not declared in a src/Contracts interface
+  - impact: not declared in a src/Contracts interface
+  - lifecycle: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "impact analysis uses BomService::whereUsed and routing/doc links": no test named test_rule_*impact*analysis*
+  - rule 2 "approval workflow with parallel discipline reviewers (engineering, ...": no test named test_rule_*approval*workflow*
+  - rule 3 "release creates NEW BOM/routing revisions (via their services/event...": no test named test_rule_*release*creates*
+  - rule 4 "open work orders handled per policy (apply, ignore, require decision)": no test named test_rule_*open*work*
+  - rule 5 "stock/WIP disposition tasks generated": no test named test_rule_*stock*disposition*
+  - rule 6 "deviation/waiver has expiry": no test named test_rule_*deviation*waiver*
+  - rule 7 "audit trail immutable": no test named test_rule_*audit*trail*
+  - rule 8 "ECO closes when all tasks done": no test named test_rule_*closes*tasks*
+- perm_cov 4.2% (1/24):
+  - eco-plm.eco.approve: in spec but not declared in manifest permissions
+  - eco-plm.eco.cancel: in spec but not declared in manifest permissions
+  - eco-plm.eco.create: in spec but not declared in manifest permissions
+  - eco-plm.eco.release: in spec but not declared in manifest permissions
+  - eco-plm.eco.view: in spec but not declared in manifest permissions
+  - eco-plm.ecr.approve: in spec but not declared in manifest permissions
+  - eco-plm.ecr.create: in spec but not declared in manifest permissions
+  - eco-plm.ecr.view: in spec but not declared in manifest permissions
+  - eco-plm.lifecycle.manage: in spec but not declared in manifest permissions
+  - eco-plm.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - eco-plm.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - eco-plm.record.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/20):
+  - change_request: list page web/pages/ChangeRequestListPage.tsx missing
+  - change_request: form page web/pages/ChangeRequestFormPage.tsx missing
+  - change_request: detail page web/pages/ChangeRequestDetailPage.tsx missing
+  - change_request: no web/i18n/fa.json keys under "change_request."
+  - change_order: list page web/pages/ChangeOrderListPage.tsx missing
+  - change_order: form page web/pages/ChangeOrderFormPage.tsx missing
+  - change_order: detail page web/pages/ChangeOrderDetailPage.tsx missing
+  - change_order: no web/i18n/fa.json keys under "change_order."
+  - change_task: list page web/pages/ChangeTaskListPage.tsx missing
+  - change_task: form page web/pages/ChangeTaskFormPage.tsx missing
+  - change_task: detail page web/pages/ChangeTaskDetailPage.tsx missing
+  - change_task: no web/i18n/fa.json keys under "change_task."
+  - reviewer_signoff: list page web/pages/ReviewerSignoffListPage.tsx missing
+  - reviewer_signoff: form page web/pages/ReviewerSignoffFormPage.tsx missing
+  - reviewer_signoff: detail page web/pages/ReviewerSignoffDetailPage.tsx missing
+  - reviewer_signoff: no web/i18n/fa.json keys under "reviewer_signoff."
+  - item_lifecycle: list page web/pages/ItemLifecycleListPage.tsx missing
+  - item_lifecycle: form page web/pages/ItemLifecycleFormPage.tsx missing
+  - item_lifecycle: detail page web/pages/ItemLifecycleDetailPage.tsx missing
+  - item_lifecycle: no web/i18n/fa.json keys under "item_lifecycle."
+- ai_cov 0% (0/12):
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/EcoPlmService.php:15: pendingChanges only returns a trivial value
+  - backend/src/Services/EcoPlmService.php:20: effectiveRevision only returns a trivial value
+  - backend/src/Services/EcoPlmService.php:25: impact only returns a trivial value
+  - backend/src/Services/EcoPlmService.php:30: lifecycle only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## energy-utilities — stub, score 0.4, FAIL
+
+- entity_cov 0% (0/37):
+  - Meter: table missing (expected energy_utilities__meters, 6 fields)
+  - MeterReading: table missing (expected energy_utilities__meter_readings, 4 fields)
+  - Tariff: table missing (expected energy_utilities__tariffs, 6 fields)
+  - UtilityBill: table missing (expected energy_utilities__utility_bills, 7 fields)
+  - AllocationRule: table missing (expected energy_utilities__allocation_rules, 0 fields)
+  - EnergyTarget: table missing (expected energy_utilities__energy_targets, 4 fields)
+  - EmissionFactor: table missing (expected energy_utilities__emission_factors, 3 fields)
+- event_cov 0% (0/4):
+  - out energy-utilities.period.allocated: not emitted via DomainEvent in src/
+  - out energy-utilities.target.breached: not emitted via DomainEvent in src/
+  - in work-order.output.received: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in mes.production.reported: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - consumption: not declared in a src/Contracts interface
+  - cost: not declared in a src/Contracts interface
+  - sec: not declared in a src/Contracts interface
+  - allocation: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "consumption = reading deltas with rollover/replace handling": no test named test_rule_*consumption*reading*
+  - rule 2 "submeter hierarchy reconciliation (sum of children vs parent)": no test named test_rule_*submeter*hierarchy*
+  - rule 3 "tariff cost estimation by TOU": no test named test_rule_*tariff*cost*
+  - rule 4 "bill vs metered variance alert": no test named test_rule_*bill*metered*
+  - rule 5 "allocation to cost centers/work centers by rules and to production ...": no test named test_rule_*allocation*cost*
+  - rule 6 "overhead pool feed to costing as event aggregated per period": no test named test_rule_*overhead*pool*
+  - rule 7 "targets and alerts": no test named test_rule_*targets*alerts*
+  - rule 8 "carbon estimate via factors (data, user-maintained)": no test named test_rule_*carbon*estimate*
+- perm_cov 3.8% (1/26):
+  - energy-utilities.bill.manage: in spec but not declared in manifest permissions
+  - energy-utilities.bill.view: in spec but not declared in manifest permissions
+  - energy-utilities.meter.manage: in spec but not declared in manifest permissions
+  - energy-utilities.meter.view: in spec but not declared in manifest permissions
+  - energy-utilities.reading.manage: in spec but not declared in manifest permissions
+  - energy-utilities.reading.view: in spec but not declared in manifest permissions
+  - energy-utilities.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - energy-utilities.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - energy-utilities.record.view: not enforced by an API route or authorization check
+  - energy-utilities.target.manage: in spec but not declared in manifest permissions
+  - energy-utilities.target.view: in spec but not declared in manifest permissions
+  - energy-utilities.tariff.manage: in spec but not declared in manifest permissions
+  - energy-utilities.tariff.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/28):
+  - meter: list page web/pages/MeterListPage.tsx missing
+  - meter: form page web/pages/MeterFormPage.tsx missing
+  - meter: detail page web/pages/MeterDetailPage.tsx missing
+  - meter: no web/i18n/fa.json keys under "meter."
+  - meter_reading: list page web/pages/MeterReadingListPage.tsx missing
+  - meter_reading: form page web/pages/MeterReadingFormPage.tsx missing
+  - meter_reading: detail page web/pages/MeterReadingDetailPage.tsx missing
+  - meter_reading: no web/i18n/fa.json keys under "meter_reading."
+  - tariff: list page web/pages/TariffListPage.tsx missing
+  - tariff: form page web/pages/TariffFormPage.tsx missing
+  - tariff: detail page web/pages/TariffDetailPage.tsx missing
+  - tariff: no web/i18n/fa.json keys under "tariff."
+  - utility_bill: list page web/pages/UtilityBillListPage.tsx missing
+  - utility_bill: form page web/pages/UtilityBillFormPage.tsx missing
+  - utility_bill: detail page web/pages/UtilityBillDetailPage.tsx missing
+  - utility_bill: no web/i18n/fa.json keys under "utility_bill."
+  - allocation_rule: list page web/pages/AllocationRuleListPage.tsx missing
+  - allocation_rule: form page web/pages/AllocationRuleFormPage.tsx missing
+  - allocation_rule: detail page web/pages/AllocationRuleDetailPage.tsx missing
+  - allocation_rule: no web/i18n/fa.json keys under "allocation_rule."
+  - energy_target: list page web/pages/EnergyTargetListPage.tsx missing
+  - energy_target: form page web/pages/EnergyTargetFormPage.tsx missing
+  - energy_target: detail page web/pages/EnergyTargetDetailPage.tsx missing
+  - energy_target: no web/i18n/fa.json keys under "energy_target."
+  - emission_factor: list page web/pages/EmissionFactorListPage.tsx missing
+  - emission_factor: form page web/pages/EmissionFactorFormPage.tsx missing
+  - emission_factor: detail page web/pages/EmissionFactorDetailPage.tsx missing
+  - emission_factor: no web/i18n/fa.json keys under "emission_factor."
+- ai_cov 0% (0/12):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/EnergyUtilitiesService.php:15: consumption only returns a trivial value
+  - backend/src/Services/EnergyUtilitiesService.php:20: cost only returns a trivial value
+  - backend/src/Services/EnergyUtilitiesService.php:25: sec only returns a trivial value
+  - backend/src/Services/EnergyUtilitiesService.php:30: allocation only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## failure-prediction — stub, score 5.8, FAIL
+
+- entity_cov 0% (0/23):
+  - HealthModel: table missing (expected failure_prediction__health_models, 5 fields)
+  - RiskScore: table missing (expected failure_prediction__risk_scores, 6 fields)
+  - Insight: table missing (expected failure_prediction__insights, 5 fields)
+  - FeatureSnapshot: table missing (expected failure_prediction__feature_snapshots, 3 fields)
+- event_cov 0% (0/5):
+  - out failure-prediction.risk.high: not emitted via DomainEvent in src/
+  - out failure-prediction.insight.created: not emitted via DomainEvent in src/
+  - in cmms.workorder.closed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in condition-monitoring-iot.alarm.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in asset-registry.meter.updated: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - scores: not declared in a src/Contracts interface
+  - explain: not declared in a src/Contracts interface
+  - topRisks: not declared in a src/Contracts interface
+  - feedback: not declared in a src/Contracts interface
+- rule_cov 0% (0/7):
+  - rule 1 "features from cmms history (MTBF trend, failure codes, downtime), m...": no test named test_rule_*features*cmms*
+  - rule 2 "cold start**: classes with little history use transparent baselines...": no test named test_rule_*cold*start*
+  - rule 3 "survival analysis for classes with failure counts": no test named test_rule_*survival*analysis*
+  - rule 4 "risk explanations (top drivers) mandatory": no test named test_rule_*risk*explanations*
+  - rule 5 "thresholds produce PROPOSED cmms work requests/PM adjustments (neve...": no test named test_rule_*thresholds*produce*
+  - rule 6 "feedback loop: accepted/dismissed + actual outcomes retrain/evaluate": no test named test_rule_*feedback*loop*
+  - rule 7 "model quality shown (precision/recall on backtest), disabled below ...": no test named test_rule_*model*quality*
+- perm_cov 8.3% (1/12):
+  - failure-prediction.insight.act: in spec but not declared in manifest permissions
+  - failure-prediction.model.manage: in spec but not declared in manifest permissions
+  - failure-prediction.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - failure-prediction.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - failure-prediction.record.view: not enforced by an API route or authorization check
+  - failure-prediction.score.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/16):
+  - health_model: list page web/pages/HealthModelListPage.tsx missing
+  - health_model: form page web/pages/HealthModelFormPage.tsx missing
+  - health_model: detail page web/pages/HealthModelDetailPage.tsx missing
+  - health_model: no web/i18n/fa.json keys under "health_model."
+  - risk_score: list page web/pages/RiskScoreListPage.tsx missing
+  - risk_score: form page web/pages/RiskScoreFormPage.tsx missing
+  - risk_score: detail page web/pages/RiskScoreDetailPage.tsx missing
+  - risk_score: no web/i18n/fa.json keys under "risk_score."
+  - insight: list page web/pages/InsightListPage.tsx missing
+  - insight: form page web/pages/InsightFormPage.tsx missing
+  - insight: detail page web/pages/InsightDetailPage.tsx missing
+  - insight: no web/i18n/fa.json keys under "insight."
+  - feature_snapshot: list page web/pages/FeatureSnapshotListPage.tsx missing
+  - feature_snapshot: form page web/pages/FeatureSnapshotFormPage.tsx missing
+  - feature_snapshot: detail page web/pages/FeatureSnapshotDetailPage.tsx missing
+  - feature_snapshot: no web/i18n/fa.json keys under "feature_snapshot."
+- ai_cov 100% (0/0): complete
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/FailurePredictionService.php:15: scores only returns a trivial value
+  - backend/src/Services/FailurePredictionService.php:20: explain only returns a trivial value
+  - backend/src/Services/FailurePredictionService.php:25: topRisks only returns a trivial value
+  - backend/src/Services/FailurePredictionService.php:30: feedback only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## fixed-assets — stub, score 0.5, FAIL
+
+- entity_cov 0% (0/29):
+  - FixedAsset: table missing (expected fixed_assets__fixed_assets, 15 fields)
+  - AssetCategory: table missing (expected fixed_assets__asset_categories, 3 fields)
+  - DepreciationRun: table missing (expected fixed_assets__depreciation_runs, 3 fields)
+  - Disposal: table missing (expected fixed_assets__disposals, 4 fields)
+- event_cov 0% (0/5):
+  - out fixed-assets.asset.capitalized: not emitted via DomainEvent in src/
+  - out fixed-assets.asset.disposed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out fixed-assets.depreciation.posted: not emitted via DomainEvent in src/ and not in manifest emits
+  - in ar-ap.invoice.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in accounting-gl.period.closed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - bookValue: not declared in a src/Contracts interface
+  - schedule: not declared in a src/Contracts interface
+  - registerFromInvoiceLine: not declared in a src/Contracts interface
+  - runDepreciation: not declared in a src/Contracts interface
+- rule_cov 0% (0/5):
+  - rule 1 "depreciation methods straight-line, declining balance, units-of-pro...": no test named test_rule_*depreciation*methods*
+  - rule 2 "first/last-period conventions (monthly, daily)": no test named test_rule_*first*last*
+  - rule 3 "no depreciation after disposal date": no test named test_rule_*depreciation*disposal*
+  - rule 4 "run is idempotent per period and posts via journal request": no test named test_rule_*idempotent*period*
+  - rule 5 "capitalization from PO/invoice lines flagged "asset" (event), addit...": no test named test_rule_*capitalization*invoice*
+- perm_cov 4.5% (1/22):
+  - fixed-assets.asset.create: in spec but not declared in manifest permissions
+  - fixed-assets.asset.dispose: in spec but not declared in manifest permissions
+  - fixed-assets.asset.revalue: in spec but not declared in manifest permissions
+  - fixed-assets.asset.update: in spec but not declared in manifest permissions
+  - fixed-assets.asset.view: in spec but not declared in manifest permissions
+  - fixed-assets.category.manage: in spec but not declared in manifest permissions
+  - fixed-assets.depreciation.approve: in spec but not declared in manifest permissions
+  - fixed-assets.depreciation.run: in spec but not declared in manifest permissions
+  - fixed-assets.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - fixed-assets.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - fixed-assets.record.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/16):
+  - fixed_asset: list page web/pages/FixedAssetListPage.tsx missing
+  - fixed_asset: form page web/pages/FixedAssetFormPage.tsx missing
+  - fixed_asset: detail page web/pages/FixedAssetDetailPage.tsx missing
+  - fixed_asset: no web/i18n/fa.json keys under "fixed_asset."
+  - asset_category: list page web/pages/AssetCategoryListPage.tsx missing
+  - asset_category: form page web/pages/AssetCategoryFormPage.tsx missing
+  - asset_category: detail page web/pages/AssetCategoryDetailPage.tsx missing
+  - asset_category: no web/i18n/fa.json keys under "asset_category."
+  - depreciation_run: list page web/pages/DepreciationRunListPage.tsx missing
+  - depreciation_run: form page web/pages/DepreciationRunFormPage.tsx missing
+  - depreciation_run: detail page web/pages/DepreciationRunDetailPage.tsx missing
+  - depreciation_run: no web/i18n/fa.json keys under "depreciation_run."
+  - disposal: list page web/pages/DisposalListPage.tsx missing
+  - disposal: form page web/pages/DisposalFormPage.tsx missing
+  - disposal: detail page web/pages/DisposalDetailPage.tsx missing
+  - disposal: no web/i18n/fa.json keys under "disposal."
+- ai_cov 0% (0/9):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/FixedAssetsService.php:15: bookValue only returns a trivial value
+  - backend/src/Services/FixedAssetsService.php:20: schedule only returns a trivial value
+  - backend/src/Services/FixedAssetsService.php:25: registerFromInvoiceLine only returns a trivial value
+  - backend/src/Services/FixedAssetsService.php:30: runDepreciation only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## forex-lc — stub, score 0.3, FAIL
+
+- entity_cov 0% (0/41):
+  - ForexAccount: table missing (expected forex_lc__forex_accounts, 3 fields)
+  - FxDeal: table missing (expected forex_lc__fx_deals, 9 fields)
+  - LetterOfCredit: table missing (expected forex_lc__letter_of_credits, 15 fields)
+  - LCDocumentSet: table missing (expected forex_lc__lc_document_sets, 2 fields)
+  - BankGuarantee: table missing (expected forex_lc__bank_guarantees, 7 fields)
+- event_cov 0% (0/7):
+  - out forex-lc.lc.status_changed: not emitted via DomainEvent in src/
+  - out forex-lc.guarantee.expiring: not emitted via DomainEvent in src/
+  - out forex-lc.fx.settled: not emitted via DomainEvent in src/
+  - in purchase-order.po.approved: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in import-customs.file.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in ar-ap.invoice.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in treasury.payment.executed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - exposure: not declared in a src/Contracts interface
+  - lcFor: not declared in a src/Contracts interface
+  - guaranteesExpiring: not declared in a src/Contracts interface
+  - rateAt: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "LC utilization tracked against PO/shipments": no test named test_rule_*utilization*tracked*
+  - rule 2 "amendment workflow": no test named test_rule_*amendment*workflow*
+  - rule 3 "discrepancy handling": no test named test_rule_*discrepancy*handling*
+  - rule 4 "expiry/latest shipment alerts": no test named test_rule_*expiry*latest*
+  - rule 5 "guarantee expiry alerts": no test named test_rule_*guarantee*expiry*
+  - rule 6 "settlement creates treasury payment orders and journal requests wit...": no test named test_rule_*settlement*creates*
+  - rule 7 "exposure report (open LC + unpaid foreign invoices) by currency/mat...": no test named test_rule_*exposure*report*
+  - rule 8 "periodic revaluation inputs to accounting-gl": no test named test_rule_*periodic*revaluation*
+- perm_cov 2.8% (1/36):
+  - forex-lc.fx.approve: in spec but not declared in manifest permissions
+  - forex-lc.fx.create: in spec but not declared in manifest permissions
+  - forex-lc.fx.settle: in spec but not declared in manifest permissions
+  - forex-lc.fx.update: in spec but not declared in manifest permissions
+  - forex-lc.fx.view: in spec but not declared in manifest permissions
+  - forex-lc.guarantee.approve: in spec but not declared in manifest permissions
+  - forex-lc.guarantee.create: in spec but not declared in manifest permissions
+  - forex-lc.guarantee.settle: in spec but not declared in manifest permissions
+  - forex-lc.guarantee.update: in spec but not declared in manifest permissions
+  - forex-lc.guarantee.view: in spec but not declared in manifest permissions
+  - forex-lc.lc.approve: in spec but not declared in manifest permissions
+  - forex-lc.lc.create: in spec but not declared in manifest permissions
+  - forex-lc.lc.settle: in spec but not declared in manifest permissions
+  - forex-lc.lc.update: in spec but not declared in manifest permissions
+  - forex-lc.lc.view: in spec but not declared in manifest permissions
+  - forex-lc.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - forex-lc.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - forex-lc.record.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/20):
+  - forex_account: list page web/pages/ForexAccountListPage.tsx missing
+  - forex_account: form page web/pages/ForexAccountFormPage.tsx missing
+  - forex_account: detail page web/pages/ForexAccountDetailPage.tsx missing
+  - forex_account: no web/i18n/fa.json keys under "forex_account."
+  - fx_deal: list page web/pages/FxDealListPage.tsx missing
+  - fx_deal: form page web/pages/FxDealFormPage.tsx missing
+  - fx_deal: detail page web/pages/FxDealDetailPage.tsx missing
+  - fx_deal: no web/i18n/fa.json keys under "fx_deal."
+  - letter_of_credit: list page web/pages/LetterOfCreditListPage.tsx missing
+  - letter_of_credit: form page web/pages/LetterOfCreditFormPage.tsx missing
+  - letter_of_credit: detail page web/pages/LetterOfCreditDetailPage.tsx missing
+  - letter_of_credit: no web/i18n/fa.json keys under "letter_of_credit."
+  - lc_document_set: list page web/pages/LcDocumentSetListPage.tsx missing
+  - lc_document_set: form page web/pages/LcDocumentSetFormPage.tsx missing
+  - lc_document_set: detail page web/pages/LcDocumentSetDetailPage.tsx missing
+  - lc_document_set: no web/i18n/fa.json keys under "lc_document_set."
+  - bank_guarantee: list page web/pages/BankGuaranteeListPage.tsx missing
+  - bank_guarantee: form page web/pages/BankGuaranteeFormPage.tsx missing
+  - bank_guarantee: detail page web/pages/BankGuaranteeDetailPage.tsx missing
+  - bank_guarantee: no web/i18n/fa.json keys under "bank_guarantee."
+- ai_cov 0% (0/9):
+  - ocr: in spec but not declared in manifest ai.capabilities
+  - ocr: no test named *ocr*off* with assertions
+  - ocr: no test named *ocr*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/ForexLcService.php:15: exposure only returns a trivial value
+  - backend/src/Services/ForexLcService.php:20: lcFor only returns a trivial value
+  - backend/src/Services/ForexLcService.php:25: guaranteesExpiring only returns a trivial value
+  - backend/src/Services/ForexLcService.php:30: rateAt only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## form-builder — stub, score 0, FAIL
+
+- entity_cov 0% (0/0):
+  - specification missing: specs/form-builder.md
+- event_cov 0% (0/0):
+  - specification missing: specs/form-builder.md
+- contract_cov 0% (0/0):
+  - specification missing: specs/form-builder.md
+- rule_cov 0% (0/0):
+  - specification missing: specs/form-builder.md
+- perm_cov 0% (0/0):
+  - specification missing: specs/form-builder.md
+- ui_cov 0% (0/0):
+  - specification missing: specs/form-builder.md
+- ai_cov 0% (0/0):
+  - specification missing: specs/form-builder.md
+- anti-gaming: clean
+- tests: not_run (static gate not passed)
+
+## gate-visitor — stub, score 0.3, FAIL
+
+- entity_cov 0% (0/34):
+  - Visitor: table missing (expected gate_visitor__visitors, 10 fields)
+  - VehicleEntry: table missing (expected gate_visitor__vehicle_entries, 7 fields)
+  - MaterialPass: table missing (expected gate_visitor__material_passes, 7 fields)
+  - Blacklist: table missing (expected gate_visitor__blacklists, 1 fields)
+  - ContractorEntry: table missing (expected gate_visitor__contractor_entries, 4 fields)
+- event_cov 0% (0/8):
+  - out gate-visitor.pass.entered: not emitted via DomainEvent in src/
+  - out gate-visitor.pass.exited: not emitted via DomainEvent in src/ and not in manifest emits
+  - out gate-visitor.vehicle.entered: not emitted via DomainEvent in src/
+  - out gate-visitor.vehicle.exited: not emitted via DomainEvent in src/ and not in manifest emits
+  - out gate-visitor.materialpass.used: not emitted via DomainEvent in src/
+  - in sales.delivery.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in weighbridge.ticket.completed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in hse.permit.issued: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/3):
+  - onSite: not declared in a src/Contracts interface
+  - materialPass: not declared in a src/Contracts interface
+  - isBlacklisted: not declared in a src/Contracts interface
+- rule_cov 0% (0/7):
+  - rule 1 "pre-registration by hosts": no test named test_rule_*registration*hosts*
+  - rule 2 "check-in with badge and host notification": no test named test_rule_*check*badge*
+  - rule 3 "blacklist block": no test named test_rule_*blacklist*block*
+  - rule 4 "contractor entry checks document/training validity via contractor-m...": no test named test_rule_*contractor*entry*
+  - rule 5 "material-out pass requires approval and matching document (delivery...": no test named test_rule_*material*pass*
+  - rule 6 "on-site list for emergency (visitors + vehicles + contractors + emp...": no test named test_rule_*site*list*
+  - rule 7 "data retention/masking for visitor id numbers": no test named test_rule_*data*retention*
+- perm_cov 3.1% (1/32):
+  - gate-visitor.blacklist.manage: in spec but not declared in manifest permissions
+  - gate-visitor.materialpass.approve: in spec but not declared in manifest permissions
+  - gate-visitor.materialpass.create: in spec but not declared in manifest permissions
+  - gate-visitor.materialpass.scan: in spec but not declared in manifest permissions
+  - gate-visitor.materialpass.view: in spec but not declared in manifest permissions
+  - gate-visitor.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - gate-visitor.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - gate-visitor.record.view: not enforced by an API route or authorization check
+  - gate-visitor.vehicle.approve: in spec but not declared in manifest permissions
+  - gate-visitor.vehicle.create: in spec but not declared in manifest permissions
+  - gate-visitor.vehicle.scan: in spec but not declared in manifest permissions
+  - gate-visitor.vehicle.view: in spec but not declared in manifest permissions
+  - gate-visitor.visitor.approve: in spec but not declared in manifest permissions
+  - gate-visitor.visitor.create: in spec but not declared in manifest permissions
+  - gate-visitor.visitor.scan: in spec but not declared in manifest permissions
+  - gate-visitor.visitor.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/20):
+  - visitor: list page web/pages/VisitorListPage.tsx missing
+  - visitor: form page web/pages/VisitorFormPage.tsx missing
+  - visitor: detail page web/pages/VisitorDetailPage.tsx missing
+  - visitor: no web/i18n/fa.json keys under "visitor."
+  - vehicle_entry: list page web/pages/VehicleEntryListPage.tsx missing
+  - vehicle_entry: form page web/pages/VehicleEntryFormPage.tsx missing
+  - vehicle_entry: detail page web/pages/VehicleEntryDetailPage.tsx missing
+  - vehicle_entry: no web/i18n/fa.json keys under "vehicle_entry."
+  - material_pass: list page web/pages/MaterialPassListPage.tsx missing
+  - material_pass: form page web/pages/MaterialPassFormPage.tsx missing
+  - material_pass: detail page web/pages/MaterialPassDetailPage.tsx missing
+  - material_pass: no web/i18n/fa.json keys under "material_pass."
+  - blacklist: list page web/pages/BlacklistListPage.tsx missing
+  - blacklist: form page web/pages/BlacklistFormPage.tsx missing
+  - blacklist: detail page web/pages/BlacklistDetailPage.tsx missing
+  - blacklist: no web/i18n/fa.json keys under "blacklist."
+  - contractor_entry: list page web/pages/ContractorEntryListPage.tsx missing
+  - contractor_entry: form page web/pages/ContractorEntryFormPage.tsx missing
+  - contractor_entry: detail page web/pages/ContractorEntryDetailPage.tsx missing
+  - contractor_entry: no web/i18n/fa.json keys under "contractor_entry."
+- ai_cov 0% (0/3):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/GateVisitorService.php:15: onSite only returns a trivial value
+  - backend/src/Services/GateVisitorService.php:20: materialPass only returns a trivial value
+  - backend/src/Services/GateVisitorService.php:25: isBlacklisted only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## hr-core — stub, score 0.7, FAIL
+
+- entity_cov 0% (0/36):
+  - Employee: table missing (expected hr_core__employees, 16 fields)
+  - Employment: table missing (expected hr_core__employments, 13 fields)
+  - EmploymentEvent: table missing (expected hr_core__employment_events, 4 fields)
+- event_cov 0% (0/5):
+  - out hr-core.employee.hired: not emitted via DomainEvent in src/
+  - out hr-core.employee.transferred: not emitted via DomainEvent in src/
+  - out hr-core.employee.promoted: not emitted via DomainEvent in src/ and not in manifest emits
+  - out hr-core.employee.terminated: not emitted via DomainEvent in src/
+  - out hr-core.employee.updated: not emitted via DomainEvent in src/ and not in manifest emits
+- contract_cov 0% (0/8):
+  - employee: not declared in a src/Contracts interface
+  - byUser: not declared in a src/Contracts interface
+  - byPersonnelNo: not declared in a src/Contracts interface
+  - lookup: not declared in a src/Contracts interface
+  - subordinates: not declared in a src/Contracts interface
+  - activeEmployees: not declared in a src/Contracts interface
+  - employmentAt: not declared in a src/Contracts interface
+  - isActive: not declared in a src/Contracts interface
+- rule_cov 0% (0/7):
+  - rule 1 "national code checksum": no test named test_rule_*national*code*
+  - rule 2 "unique personnel_no/national_code": no test named test_rule_*unique*personnel*
+  - rule 3 "changes are effective-dated (history table, no overwrite)": no test named test_rule_*changes*effective*
+  - rule 4 "salary data NOT stored here (payroll owns) — hr only stores grade": no test named test_rule_*salary*data*
+  - rule 5 "termination requires reason & clearance checklist (workflow: manage...": no test named test_rule_*termination*requires*
+  - rule 6 "sensitive fields visible by permission": no test named test_rule_*sensitive*fields*
+  - rule 7 "manager chain from org-structure": no test named test_rule_*manager*chain*
+- perm_cov 7.1% (1/14):
+  - hr-core.employee.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - hr-core.employee.export: in spec but not declared in manifest permissions
+  - hr-core.employee.terminate: not enforced by an API route or authorization check and not used by a UI route or page
+  - hr-core.employee.update: not enforced by an API route or authorization check and not used by a UI route or page
+  - hr-core.employee.view: not enforced by an API route or authorization check
+  - hr-core.event.manage: in spec but not declared in manifest permissions
+  - hr-core.sensitive.view: not enforced by an API route or authorization check and not used by a UI route or page
+- ui_cov 0% (0/12):
+  - employee: list page web/pages/EmployeeListPage.tsx missing
+  - employee: form page web/pages/EmployeeFormPage.tsx missing
+  - employee: detail page web/pages/EmployeeDetailPage.tsx missing
+  - employee: no web/i18n/fa.json keys under "employee."
+  - employment: list page web/pages/EmploymentListPage.tsx missing
+  - employment: form page web/pages/EmploymentFormPage.tsx missing
+  - employment: detail page web/pages/EmploymentDetailPage.tsx missing
+  - employment: no web/i18n/fa.json keys under "employment."
+  - employment_event: list page web/pages/EmploymentEventListPage.tsx missing
+  - employment_event: form page web/pages/EmploymentEventFormPage.tsx missing
+  - employment_event: detail page web/pages/EmploymentEventDetailPage.tsx missing
+  - employment_event: no web/i18n/fa.json keys under "employment_event."
+- ai_cov 0% (0/6):
+  - assistant: in spec but not declared in manifest ai.capabilities
+  - assistant: no test named *assistant*off* with assertions
+  - assistant: no test named *assistant*fake* with assertions
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/HrCoreService.php:20: byUser only returns a trivial value
+  - backend/src/Services/HrCoreService.php:32: subordinates only returns a trivial value
+  - backend/src/Services/HrCoreService.php:34: employmentAt only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## hse — stub, score 0.2, FAIL
+
+- entity_cov 0% (0/40):
+  - Incident: table missing (expected hse__incidents, 9 fields)
+  - Investigation: table missing (expected hse__investigations, 4 fields)
+  - RiskAssessment: table missing (expected hse__risk_assessments, 3 fields)
+  - Inspection: table missing (expected hse__inspections, 5 fields)
+  - PermitToWork: table missing (expected hse__permit_to_works, 9 fields)
+  - PPEIssue: table missing (expected hse__ppe_issues, 4 fields)
+- event_cov 0% (0/7):
+  - out hse.incident.reported: not emitted via DomainEvent in src/
+  - out hse.incident.closed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out hse.permit.issued: not emitted via DomainEvent in src/
+  - out hse.permit.closed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out hse.action.overdue: not emitted via DomainEvent in src/
+  - in training-lms.completion.recorded: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in attendance.period.closed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - openPermits: not declared in a src/Contracts interface
+  - incidentStats: not declared in a src/Contracts interface
+  - ppeValid: not declared in a src/Contracts interface
+  - overdueActions: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "incident reporting mobile-quick": no test named test_rule_*incident*reporting*
+  - rule 2 "investigation mandatory by severity": no test named test_rule_*investigation*mandatory*
+  - rule 3 "actions tracked to closure with notifications": no test named test_rule_*actions*tracked*
+  - rule 4 "permit workflow with multi-approver, simultaneous-operations confli...": no test named test_rule_*permit*workflow*
+  - rule 5 "PPE expiry alerts": no test named test_rule_*expiry*alerts*
+  - rule 6 "occupational health: only store "fit/not-fit/due date" flags if ena...": no test named test_rule_*occupational*health*
+- perm_cov 1.5% (1/68):
+  - hse.incident.approve: in spec but not declared in manifest permissions
+  - hse.incident.close: in spec but not declared in manifest permissions
+  - hse.incident.create: in spec but not declared in manifest permissions
+  - hse.incident.update: in spec but not declared in manifest permissions
+  - hse.incident.view: in spec but not declared in manifest permissions
+  - hse.inspection.approve: in spec but not declared in manifest permissions
+  - hse.inspection.close: in spec but not declared in manifest permissions
+  - hse.inspection.create: in spec but not declared in manifest permissions
+  - hse.inspection.update: in spec but not declared in manifest permissions
+  - hse.inspection.view: in spec but not declared in manifest permissions
+  - hse.investigation.approve: in spec but not declared in manifest permissions
+  - hse.investigation.close: in spec but not declared in manifest permissions
+  - hse.investigation.create: in spec but not declared in manifest permissions
+  - hse.investigation.update: in spec but not declared in manifest permissions
+  - hse.investigation.view: in spec but not declared in manifest permissions
+  - hse.kpi.view: in spec but not declared in manifest permissions
+  - hse.permit.approve: in spec but not declared in manifest permissions
+  - hse.permit.close: in spec but not declared in manifest permissions
+  - hse.permit.create: in spec but not declared in manifest permissions
+  - hse.permit.update: in spec but not declared in manifest permissions
+  - hse.permit.view: in spec but not declared in manifest permissions
+  - hse.ppe.approve: in spec but not declared in manifest permissions
+  - hse.ppe.close: in spec but not declared in manifest permissions
+  - hse.ppe.create: in spec but not declared in manifest permissions
+  - hse.ppe.update: in spec but not declared in manifest permissions
+  - hse.ppe.view: in spec but not declared in manifest permissions
+  - hse.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - hse.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - hse.record.view: not enforced by an API route or authorization check
+  - hse.risk.approve: in spec but not declared in manifest permissions
+  - hse.risk.close: in spec but not declared in manifest permissions
+  - hse.risk.create: in spec but not declared in manifest permissions
+  - hse.risk.update: in spec but not declared in manifest permissions
+  - hse.risk.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/24):
+  - incident: list page web/pages/IncidentListPage.tsx missing
+  - incident: form page web/pages/IncidentFormPage.tsx missing
+  - incident: detail page web/pages/IncidentDetailPage.tsx missing
+  - incident: no web/i18n/fa.json keys under "incident."
+  - investigation: list page web/pages/InvestigationListPage.tsx missing
+  - investigation: form page web/pages/InvestigationFormPage.tsx missing
+  - investigation: detail page web/pages/InvestigationDetailPage.tsx missing
+  - investigation: no web/i18n/fa.json keys under "investigation."
+  - risk_assessment: list page web/pages/RiskAssessmentListPage.tsx missing
+  - risk_assessment: form page web/pages/RiskAssessmentFormPage.tsx missing
+  - risk_assessment: detail page web/pages/RiskAssessmentDetailPage.tsx missing
+  - risk_assessment: no web/i18n/fa.json keys under "risk_assessment."
+  - inspection: list page web/pages/InspectionListPage.tsx missing
+  - inspection: form page web/pages/InspectionFormPage.tsx missing
+  - inspection: detail page web/pages/InspectionDetailPage.tsx missing
+  - inspection: no web/i18n/fa.json keys under "inspection."
+  - permit_to_work: list page web/pages/PermitToWorkListPage.tsx missing
+  - permit_to_work: form page web/pages/PermitToWorkFormPage.tsx missing
+  - permit_to_work: detail page web/pages/PermitToWorkDetailPage.tsx missing
+  - permit_to_work: no web/i18n/fa.json keys under "permit_to_work."
+  - ppe_issue: list page web/pages/PpeIssueListPage.tsx missing
+  - ppe_issue: form page web/pages/PpeIssueFormPage.tsx missing
+  - ppe_issue: detail page web/pages/PpeIssueDetailPage.tsx missing
+  - ppe_issue: no web/i18n/fa.json keys under "ppe_issue."
+- ai_cov 0% (0/12):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/HseService.php:15: openPermits only returns a trivial value
+  - backend/src/Services/HseService.php:20: incidentStats only returns a trivial value
+  - backend/src/Services/HseService.php:25: ppeValid only returns a trivial value
+  - backend/src/Services/HseService.php:30: overdueActions only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## import-customs — stub, score 0.3, FAIL
+
+- entity_cov 0% (0/32):
+  - ImportFile: table missing (expected import_customs__import_files, 8 fields)
+  - Shipment: table missing (expected import_customs__shipments, 8 fields)
+  - CustomsDeclaration: table missing (expected import_customs__customs_declarations, 6 fields)
+  - ClearanceCost: table missing (expected import_customs__clearance_costs, 5 fields)
+  - LandedCostPack: table missing (expected import_customs__landed_cost_packs, 0 fields)
+- event_cov 0% (0/6):
+  - out import-customs.file.cleared: not emitted via DomainEvent in src/
+  - out import-customs.landed_cost.ready: not emitted via DomainEvent in src/
+  - out import-customs.demurrage.alert: not emitted via DomainEvent in src/
+  - in purchase-order.po.approved: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in forex-lc.lc.status_changed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in inventory.receipt.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - fileForPo: not declared in a src/Contracts interface
+  - eta: not declared in a src/Contracts interface
+  - landedCost: not declared in a src/Contracts interface
+  - openFiles: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "duty/tax rates and HS code lists are DATA tables maintained by the ...": no test named test_rule_*duty*rates*
+  - rule 2 "demurrage/storage clocks with free-days config and alerts": no test named test_rule_*demurrage*storage*
+  - rule 3 "documents checklist per file with completeness gate before clearance": no test named test_rule_*documents*checklist*
+  - rule 4 "costs roll to a LandedCostPack sent to purchase-order charges / cos...": no test named test_rule_*costs*roll*
+  - rule 5 "goods receipt coordination with inventory (partial shipments)": no test named test_rule_*goods*receipt*
+  - rule 6 "multi-PO per file and multi-file per PO": no test named test_rule_*multi*file*
+- perm_cov 2.6% (1/38):
+  - import-customs.cost.close: in spec but not declared in manifest permissions
+  - import-customs.cost.create: in spec but not declared in manifest permissions
+  - import-customs.cost.update: in spec but not declared in manifest permissions
+  - import-customs.cost.view: in spec but not declared in manifest permissions
+  - import-customs.declaration.close: in spec but not declared in manifest permissions
+  - import-customs.declaration.create: in spec but not declared in manifest permissions
+  - import-customs.declaration.update: in spec but not declared in manifest permissions
+  - import-customs.declaration.view: in spec but not declared in manifest permissions
+  - import-customs.file.close: in spec but not declared in manifest permissions
+  - import-customs.file.create: in spec but not declared in manifest permissions
+  - import-customs.file.update: in spec but not declared in manifest permissions
+  - import-customs.file.view: in spec but not declared in manifest permissions
+  - import-customs.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - import-customs.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - import-customs.record.view: not enforced by an API route or authorization check
+  - import-customs.shipment.close: in spec but not declared in manifest permissions
+  - import-customs.shipment.create: in spec but not declared in manifest permissions
+  - import-customs.shipment.update: in spec but not declared in manifest permissions
+  - import-customs.shipment.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/20):
+  - import_file: list page web/pages/ImportFileListPage.tsx missing
+  - import_file: form page web/pages/ImportFileFormPage.tsx missing
+  - import_file: detail page web/pages/ImportFileDetailPage.tsx missing
+  - import_file: no web/i18n/fa.json keys under "import_file."
+  - shipment: list page web/pages/ShipmentListPage.tsx missing
+  - shipment: form page web/pages/ShipmentFormPage.tsx missing
+  - shipment: detail page web/pages/ShipmentDetailPage.tsx missing
+  - shipment: no web/i18n/fa.json keys under "shipment."
+  - customs_declaration: list page web/pages/CustomsDeclarationListPage.tsx missing
+  - customs_declaration: form page web/pages/CustomsDeclarationFormPage.tsx missing
+  - customs_declaration: detail page web/pages/CustomsDeclarationDetailPage.tsx missing
+  - customs_declaration: no web/i18n/fa.json keys under "customs_declaration."
+  - clearance_cost: list page web/pages/ClearanceCostListPage.tsx missing
+  - clearance_cost: form page web/pages/ClearanceCostFormPage.tsx missing
+  - clearance_cost: detail page web/pages/ClearanceCostDetailPage.tsx missing
+  - clearance_cost: no web/i18n/fa.json keys under "clearance_cost."
+  - landed_cost_pack: list page web/pages/LandedCostPackListPage.tsx missing
+  - landed_cost_pack: form page web/pages/LandedCostPackFormPage.tsx missing
+  - landed_cost_pack: detail page web/pages/LandedCostPackDetailPage.tsx missing
+  - landed_cost_pack: no web/i18n/fa.json keys under "landed_cost_pack."
+- ai_cov 0% (0/9):
+  - ocr: in spec but not declared in manifest ai.capabilities
+  - ocr: no test named *ocr*off* with assertions
+  - ocr: no test named *ocr*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/ImportCustomsService.php:15: fileForPo only returns a trivial value
+  - backend/src/Services/ImportCustomsService.php:20: eta only returns a trivial value
+  - backend/src/Services/ImportCustomsService.php:25: landedCost only returns a trivial value
+  - backend/src/Services/ImportCustomsService.php:30: openFiles only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## inventory — stub, score 0.2, FAIL
+
+- entity_cov 0% (0/63):
+  - Warehouse: table missing (expected inventory__warehouses, 5 fields)
+  - Location: table missing (expected inventory__locations, 7 fields)
+  - StockLedger: table missing (expected inventory__stock_ledgers, 18 fields)
+  - Lot: table missing (expected inventory__lots, 7 fields)
+  - Serial: table missing (expected inventory__serials, 5 fields)
+  - StockBalance: table missing (expected inventory__stock_balances, 7 fields)
+  - Reservation: table missing (expected inventory__reservations, 7 fields)
+- event_cov 0% (0/13):
+  - out inventory.receipt.posted: not emitted via DomainEvent in src/
+  - out inventory.issue.posted: not emitted via DomainEvent in src/
+  - out inventory.transfer.shipped: not emitted via DomainEvent in src/
+  - out inventory.transfer.received: not emitted via DomainEvent in src/
+  - out inventory.adjustment.posted: not emitted via DomainEvent in src/
+  - out inventory.stock.first_posted: not emitted via DomainEvent in src/
+  - out inventory.stock.below_min: not emitted via DomainEvent in src/ and not in manifest emits
+  - out inventory.reservation.created: not emitted via DomainEvent in src/ and not in manifest emits
+  - out inventory.reservation.released: not emitted via DomainEvent in src/ and not in manifest emits
+  - in purchase-order.po.approved: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in sales.delivery.requested: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in quality-inspection.lot.decided: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in cmms.workorder.parts_requested: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/10):
+  - getBalance: not declared in a src/Contracts interface
+  - getAvailable: not declared in a src/Contracts interface
+  - hasStock: not declared in a src/Contracts interface
+  - reserve: not declared in a src/Contracts interface
+  - release: not declared in a src/Contracts interface
+  - postMovement: not declared in a src/Contracts interface
+  - suggestPicking: not declared in a src/Contracts interface
+  - getLot: not declared in a src/Contracts interface
+  - expiringLots: not declared in a src/Contracts interface
+  - valuationFeed: not declared in a src/Contracts interface
+- rule_cov 0% (0/12):
+  - rule 1 "posting is atomic & immutable (corrections via reversal docs)": no test named test_rule_*posting*atomic*
+  - rule 2 "balance lock per (item,warehouse,location,lot) with SELECT…FOR UPDATE": no test named test_rule_*balance*lock*
+  - rule 3 "negative stock controlled by setting per warehouse": no test named test_rule_*negative*stock*
+  - rule 4 "lot/serial required per item tracking flags from item-master": no test named test_rule_*serial*item*
+  - rule 5 "expiry: FEFO suggestion, block expired issue unless override": no test named test_rule_*expiry*fefo*
+  - rule 6 "UoM conversion via ItemMasterService": no test named test_rule_*conversion*item*
+  - rule 7 "backdated posting allowed only within open period and by permission": no test named test_rule_*backdated*posting*
+  - rule 8 "reservations reduce available": no test named test_rule_*reservations*reduce*
+  - rule 9 "quarantine bucket excluded from available": no test named test_rule_*quarantine*bucket*
+  - rule 10 "transfer in-transit stock owned by neither warehouse": no test named test_rule_*transfer*transit*
+  - rule 11 "stock count freezes movements for counted scope": no test named test_rule_*stock*count*
+  - rule 12 "period lock via accounting period event (optional)": no test named test_rule_*period*lock*
+- perm_cov 1.7% (1/58):
+  - inventory.adjustment.approve: in spec but not declared in manifest permissions
+  - inventory.adjustment.create: in spec but not declared in manifest permissions
+  - inventory.adjustment.post: in spec but not declared in manifest permissions
+  - inventory.adjustment.reverse: in spec but not declared in manifest permissions
+  - inventory.adjustment.view: in spec but not declared in manifest permissions
+  - inventory.backdate: in spec but not declared in manifest permissions
+  - inventory.balance.view: not enforced by an API route or authorization check
+  - inventory.count.approve: in spec but not declared in manifest permissions
+  - inventory.count.create: in spec but not declared in manifest permissions
+  - inventory.count.post: in spec but not declared in manifest permissions
+  - inventory.count.reverse: in spec but not declared in manifest permissions
+  - inventory.count.view: in spec but not declared in manifest permissions
+  - inventory.issue.approve: in spec but not declared in manifest permissions
+  - inventory.issue.create: in spec but not declared in manifest permissions
+  - inventory.issue.post: not enforced by an API route or authorization check and not used by a UI route or page
+  - inventory.issue.reverse: in spec but not declared in manifest permissions
+  - inventory.issue.view: in spec but not declared in manifest permissions
+  - inventory.receipt.approve: in spec but not declared in manifest permissions
+  - inventory.receipt.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - inventory.receipt.post: not enforced by an API route or authorization check and not used by a UI route or page
+  - inventory.receipt.reverse: in spec but not declared in manifest permissions
+  - inventory.receipt.view: not enforced by an API route or authorization check and not used by a UI route or page
+  - inventory.reservation.manage: in spec but not declared in manifest permissions
+  - inventory.transfer.approve: in spec but not declared in manifest permissions
+  - inventory.transfer.create: in spec but not declared in manifest permissions
+  - inventory.transfer.post: in spec but not declared in manifest permissions
+  - inventory.transfer.reverse: in spec but not declared in manifest permissions
+  - inventory.transfer.view: in spec but not declared in manifest permissions
+  - inventory.warehouse.manage: not enforced by an API route or authorization check and not used by a UI route or page
+- ui_cov 0% (0/16):
+  - warehouse: list page web/pages/WarehouseListPage.tsx missing
+  - warehouse: form page web/pages/WarehouseFormPage.tsx missing
+  - warehouse: detail page web/pages/WarehouseDetailPage.tsx missing
+  - warehouse: no web/i18n/fa.json keys under "warehouse."
+  - ledger: list page web/pages/LedgerListPage.tsx missing
+  - ledger: form page web/pages/LedgerFormPage.tsx missing
+  - ledger: detail page web/pages/LedgerDetailPage.tsx missing
+  - ledger: no web/i18n/fa.json keys under "ledger."
+  - balance: list page web/pages/BalanceListPage.tsx missing
+  - balance: form page web/pages/BalanceFormPage.tsx missing
+  - balance: detail page web/pages/BalanceDetailPage.tsx missing
+  - balance: no web/i18n/fa.json keys under "balance."
+  - reservation: list page web/pages/ReservationListPage.tsx missing
+  - reservation: form page web/pages/ReservationFormPage.tsx missing
+  - reservation: detail page web/pages/ReservationDetailPage.tsx missing
+  - reservation: no web/i18n/fa.json keys under "reservation."
+- ai_cov 0% (0/12):
+  - assistant: in spec but not declared in manifest ai.capabilities
+  - assistant: no test named *assistant*off* with assertions
+  - assistant: no test named *assistant*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/InventoryService.php:90: suggestPicking only returns a trivial value
+  - backend/src/Services/InventoryService.php:91: getLot only returns a trivial value
+  - backend/src/Services/InventoryService.php:92: expiringLots only returns a trivial value
+  - backend/src/Services/InventoryService.php:93: valuationFeed only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## item-master — stub, score 0.4, FAIL
+
+- entity_cov 0% (0/77):
+  - Item: table missing (expected item_master__items, 44 fields)
+  - ItemCategory: table missing (expected item_master__categories, 6 fields)
+  - UoMConversion: table missing (expected item_master__uom_conversions, 4 fields)
+  - ItemBarcode: table missing (expected item_master__barcodes, 4 fields)
+  - ItemAlternate: table missing (expected item_master__alternates, 4 fields)
+  - ItemPartyRef: table missing (expected item_master__party_refs, 4 fields)
+  - ItemCodingScheme: table missing (expected item_master__coding_schemes, 4 fields)
+- event_cov 0% (0/9):
+  - out item-master.item.created: not emitted via DomainEvent in src/
+  - out item-master.item.updated: not emitted via DomainEvent in src/
+  - out item-master.item.activated: not emitted via DomainEvent in src/
+  - out item-master.item.put_on_hold: not emitted via DomainEvent in src/
+  - out item-master.item.obsoleted: not emitted via DomainEvent in src/
+  - out item-master.item.merged: not emitted via DomainEvent in src/
+  - out item-master.item.category_changed: not emitted via DomainEvent in src/
+  - in *.item.used: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in inventory.stock.first_posted: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/11):
+  - find: not declared in a src/Contracts interface
+  - findByCode: not declared in a src/Contracts interface
+  - search: not declared in a src/Contracts interface
+  - lookup: not declared in a src/Contracts interface
+  - isActive: not declared in a src/Contracts interface
+  - getTracking: not declared in a src/Contracts interface
+  - getUoms: not declared in a src/Contracts interface
+  - convert: not declared in a src/Contracts interface
+  - getAttributes: not declared in a src/Contracts interface
+  - getAlternates: not declared in a src/Contracts interface
+  - markUsed: not declared in a src/Contracts interface
+- rule_cov 0% (0/5):
+  - rule 1 "کد کالا (`code`) پس از استفاده شدن کالا (`is_used = 1`) غیرقابل تغی...": no test named test_rule_*code*used*
+  - rule 2 "پرچم‌های رهگیری (`is_batch_tracked`, `is_serial_tracked`) در صورت و...": no test named test_rule_*batch*tracked*
+  - rule 3 "جلوگیری از تکرار: بررسی تشابه با نرمال‌سازی فارسی (`TextNormalizer`...": no test named test_rule_*text*normalizer*
+  - rule 4 "فعال‌سازی نیازمند دسته‌بندی، واحد پایه، نوع کالا و نام فارسی است و ...": no test named test_rule_*item*activation*
+  - rule 5 "حذف نرم فقط برای کالاهای `draft` استفاده‌نشده مجاز است؛ در غیر این ...": no test named test_rule_*draft*obsolete*
+- perm_cov 4.2% (1/24):
+  - item-master.ai.use: not enforced by an API route or authorization check and not used by a UI route or page
+  - item-master.alternate.manage: not enforced by an API route or authorization check and not used by a UI route or page
+  - item-master.category.manage: not enforced by an API route or authorization check and not used by a UI route or page
+  - item-master.coding.manage: not enforced by an API route or authorization check and not used by a UI route or page
+  - item-master.item.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - item-master.item.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - item-master.item.delete: not enforced by an API route or authorization check and not used by a UI route or page
+  - item-master.item.export: not enforced by an API route or authorization check and not used by a UI route or page
+  - item-master.item.import: not enforced by an API route or authorization check and not used by a UI route or page
+  - item-master.item.merge: not enforced by an API route or authorization check and not used by a UI route or page
+  - item-master.item.update: not enforced by an API route or authorization check and not used by a UI route or page
+  - item-master.item.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/28):
+  - item: list page web/pages/ItemListPage.tsx missing
+  - item: form page web/pages/ItemFormPage.tsx missing
+  - item: detail page web/pages/ItemDetailPage.tsx missing
+  - item: no web/i18n/fa.json keys under "item."
+  - category: list page web/pages/CategoryListPage.tsx missing
+  - category: form page web/pages/CategoryFormPage.tsx missing
+  - category: detail page web/pages/CategoryDetailPage.tsx missing
+  - category: no web/i18n/fa.json keys under "category."
+  - uom_conversion: list page web/pages/UomConversionListPage.tsx missing
+  - uom_conversion: form page web/pages/UomConversionFormPage.tsx missing
+  - uom_conversion: detail page web/pages/UomConversionDetailPage.tsx missing
+  - uom_conversion: no web/i18n/fa.json keys under "uom_conversion."
+  - barcode: list page web/pages/BarcodeListPage.tsx missing
+  - barcode: form page web/pages/BarcodeFormPage.tsx missing
+  - barcode: detail page web/pages/BarcodeDetailPage.tsx missing
+  - barcode: no web/i18n/fa.json keys under "barcode."
+  - alternate: list page web/pages/AlternateListPage.tsx missing
+  - alternate: form page web/pages/AlternateFormPage.tsx missing
+  - alternate: detail page web/pages/AlternateDetailPage.tsx missing
+  - alternate: no web/i18n/fa.json keys under "alternate."
+  - party_ref: list page web/pages/PartyRefListPage.tsx missing
+  - party_ref: form page web/pages/PartyRefFormPage.tsx missing
+  - party_ref: detail page web/pages/PartyRefDetailPage.tsx missing
+  - party_ref: no web/i18n/fa.json keys under "party_ref."
+  - coding_scheme: list page web/pages/CodingSchemeListPage.tsx missing
+  - coding_scheme: form page web/pages/CodingSchemeFormPage.tsx missing
+  - coding_scheme: detail page web/pages/CodingSchemeDetailPage.tsx missing
+  - coding_scheme: no web/i18n/fa.json keys under "coding_scheme."
+- ai_cov 0% (0/12):
+  - autofill: tools not registered in aiTools(): item-master.list_categories
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - assistant: tools not registered in aiTools(): item-master.search, item-master.get_attributes
+  - assistant: no test named *assistant*off* with assertions
+  - assistant: no test named *assistant*fake* with assertions
+  - anomaly: tools not registered in aiTools(): item-master.find_similar
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - summarize: tools not registered in aiTools(): item-master.get_history
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: clean
+- tests: not_run (static gate not passed)
+
+## lims — stub, score 0.3, FAIL
+
+- entity_cov 0% (0/47):
+  - Sample: table missing (expected lims__samples, 11 fields)
+  - TestMethod: table missing (expected lims__test_methods, 7 fields)
+  - Specification: table missing (expected lims__specifications, 2 fields)
+  - TestAssignment: table missing (expected lims__test_assignments, 5 fields)
+  - Result: table missing (expected lims__results, 6 fields)
+  - OosInvestigation: table missing (expected lims__oos_investigations, 4 fields)
+  - Standard: table missing (expected lims__standards, 5 fields)
+- event_cov 0% (0/5):
+  - out lims.sample.registered: not emitted via DomainEvent in src/
+  - out lims.result.approved: not emitted via DomainEvent in src/
+  - out lims.result.oos: not emitted via DomainEvent in src/ and not in manifest emits
+  - out lims.coa.issued: not emitted via DomainEvent in src/
+  - in quality-inspection.lot.created: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - resultsForLot: not declared in a src/Contracts interface
+  - isLabReleased: not declared in a src/Contracts interface
+  - pendingTests: not declared in a src/Contracts interface
+  - tatStats: not declared in a src/Contracts interface
+- rule_cov 0% (0/10):
+  - rule 1 "sample creation from inspection lots (event) with auto test assignm...": no test named test_rule_*sample*creation*
+  - rule 2 "results validated vs limits": no test named test_rule_*results*validated*
+  - rule 3 "formula calculations versioned and traceable": no test named test_rule_*formula*calculations*
+  - rule 4 "instrument must be in-calibration (CalibrationService::isValid) whe...": no test named test_rule_*instrument*calibration*
+  - rule 5 "reagent/standard must be non-expired": no test named test_rule_*reagent*standard*
+  - rule 6 "OOS flow mandatory when result fails (blocks approval until investi...": no test named test_rule_*flow*mandatory*
+  - rule 7 "two-person review for approvals (setting)": no test named test_rule_*person*review*
+  - rule 8 "COA generation from approved results": no test named test_rule_*generation*approved*
+  - rule 9 "retention sample tracking": no test named test_rule_*retention*sample*
+  - rule 10 "turnaround time KPIs": no test named test_rule_*turnaround*time*
+- perm_cov 2.6% (1/38):
+  - lims.method.manage: in spec but not declared in manifest permissions
+  - lims.oos.manage: in spec but not declared in manifest permissions
+  - lims.reagent.manage: in spec but not declared in manifest permissions
+  - lims.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - lims.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - lims.record.view: not enforced by an API route or authorization check
+  - lims.result.approve: in spec but not declared in manifest permissions
+  - lims.result.enter: in spec but not declared in manifest permissions
+  - lims.result.review: in spec but not declared in manifest permissions
+  - lims.result.view: in spec but not declared in manifest permissions
+  - lims.sample.approve: in spec but not declared in manifest permissions
+  - lims.sample.enter: in spec but not declared in manifest permissions
+  - lims.sample.review: in spec but not declared in manifest permissions
+  - lims.sample.view: in spec but not declared in manifest permissions
+  - lims.spec.manage: in spec but not declared in manifest permissions
+  - lims.test.approve: in spec but not declared in manifest permissions
+  - lims.test.enter: in spec but not declared in manifest permissions
+  - lims.test.review: in spec but not declared in manifest permissions
+  - lims.test.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/28):
+  - sample: list page web/pages/SampleListPage.tsx missing
+  - sample: form page web/pages/SampleFormPage.tsx missing
+  - sample: detail page web/pages/SampleDetailPage.tsx missing
+  - sample: no web/i18n/fa.json keys under "sample."
+  - test_method: list page web/pages/TestMethodListPage.tsx missing
+  - test_method: form page web/pages/TestMethodFormPage.tsx missing
+  - test_method: detail page web/pages/TestMethodDetailPage.tsx missing
+  - test_method: no web/i18n/fa.json keys under "test_method."
+  - specification: list page web/pages/SpecificationListPage.tsx missing
+  - specification: form page web/pages/SpecificationFormPage.tsx missing
+  - specification: detail page web/pages/SpecificationDetailPage.tsx missing
+  - specification: no web/i18n/fa.json keys under "specification."
+  - test_assignment: list page web/pages/TestAssignmentListPage.tsx missing
+  - test_assignment: form page web/pages/TestAssignmentFormPage.tsx missing
+  - test_assignment: detail page web/pages/TestAssignmentDetailPage.tsx missing
+  - test_assignment: no web/i18n/fa.json keys under "test_assignment."
+  - result: list page web/pages/ResultListPage.tsx missing
+  - result: form page web/pages/ResultFormPage.tsx missing
+  - result: detail page web/pages/ResultDetailPage.tsx missing
+  - result: no web/i18n/fa.json keys under "result."
+  - oos_investigation: list page web/pages/OosInvestigationListPage.tsx missing
+  - oos_investigation: form page web/pages/OosInvestigationFormPage.tsx missing
+  - oos_investigation: detail page web/pages/OosInvestigationDetailPage.tsx missing
+  - oos_investigation: no web/i18n/fa.json keys under "oos_investigation."
+  - standard: list page web/pages/StandardListPage.tsx missing
+  - standard: form page web/pages/StandardFormPage.tsx missing
+  - standard: detail page web/pages/StandardDetailPage.tsx missing
+  - standard: no web/i18n/fa.json keys under "standard."
+- ai_cov 0% (0/12):
+  - ocr: in spec but not declared in manifest ai.capabilities
+  - ocr: no test named *ocr*off* with assertions
+  - ocr: no test named *ocr*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/LimsService.php:15: resultsForLot only returns a trivial value
+  - backend/src/Services/LimsService.php:20: isLabReleased only returns a trivial value
+  - backend/src/Services/LimsService.php:25: pendingTests only returns a trivial value
+  - backend/src/Services/LimsService.php:30: tatStats only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## lot-traceability — stub, score 0.7, FAIL
+
+- entity_cov 0% (0/21):
+  - TraceNode: table missing (expected lot_traceability__trace_nodes, 2 fields)
+  - TraceEdge: table missing (expected lot_traceability__trace_edges, 5 fields)
+  - Recall: table missing (expected lot_traceability__recalls, 6 fields)
+  - RecallAction: table missing (expected lot_traceability__recall_actions, 4 fields)
+- event_cov 0% (0/11):
+  - out lot-traceability.recall.initiated: not emitted via DomainEvent in src/
+  - out lot-traceability.recall.closed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out lot-traceability.quarantine.requested: not emitted via DomainEvent in src/
+  - in inventory.receipt.posted.posted.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in inventory.receipt.posted.transfer.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in inventory.receipt.issue.posted.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in inventory.receipt.issue.transfer.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in work-order.material.issued.received: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in work-order.material.output.received: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in sales.delivery.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in batch-formulation.batch.*: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/5):
+  - backward: not declared in a src/Contracts interface
+  - forward: not declared in a src/Contracts interface
+  - recallScope: not declared in a src/Contracts interface
+  - affectedCustomers: not declared in a src/Contracts interface
+  - where: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "edges generated from events only (no polling): receipt posted (supp...": no test named test_rule_*edges*generated*
+  - rule 2 "graph queries forward/backward with qty weighting and time bounds": no test named test_rule_*graph*queries*
+  - rule 3 "recall scope computed from graph, affected on-hand lots auto-quaran...": no test named test_rule_*recall*scope*
+  - rule 4 "shipped-to customer list with documents": no test named test_rule_*shipped*customer*
+  - rule 5 "mock recall exercise mode": no test named test_rule_*mock*recall*
+  - rule 6 "target time KPI for trace report": no test named test_rule_*target*time*
+- perm_cov 7.1% (1/14):
+  - lot-traceability.recall.execute: in spec but not declared in manifest permissions
+  - lot-traceability.recall.manage: in spec but not declared in manifest permissions
+  - lot-traceability.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - lot-traceability.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - lot-traceability.record.view: not enforced by an API route or authorization check
+  - lot-traceability.report: in spec but not declared in manifest permissions
+  - lot-traceability.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/16):
+  - trace_node: list page web/pages/TraceNodeListPage.tsx missing
+  - trace_node: form page web/pages/TraceNodeFormPage.tsx missing
+  - trace_node: detail page web/pages/TraceNodeDetailPage.tsx missing
+  - trace_node: no web/i18n/fa.json keys under "trace_node."
+  - trace_edge: list page web/pages/TraceEdgeListPage.tsx missing
+  - trace_edge: form page web/pages/TraceEdgeFormPage.tsx missing
+  - trace_edge: detail page web/pages/TraceEdgeDetailPage.tsx missing
+  - trace_edge: no web/i18n/fa.json keys under "trace_edge."
+  - recall: list page web/pages/RecallListPage.tsx missing
+  - recall: form page web/pages/RecallFormPage.tsx missing
+  - recall: detail page web/pages/RecallDetailPage.tsx missing
+  - recall: no web/i18n/fa.json keys under "recall."
+  - recall_action: list page web/pages/RecallActionListPage.tsx missing
+  - recall_action: form page web/pages/RecallActionFormPage.tsx missing
+  - recall_action: detail page web/pages/RecallActionDetailPage.tsx missing
+  - recall_action: no web/i18n/fa.json keys under "recall_action."
+- ai_cov 0% (0/9):
+  - assistant: in spec but not declared in manifest ai.capabilities
+  - assistant: no test named *assistant*off* with assertions
+  - assistant: no test named *assistant*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 5 finding(s)
+  - backend/src/Services/LotTraceabilityService.php:15: backward only returns a trivial value
+  - backend/src/Services/LotTraceabilityService.php:20: forward only returns a trivial value
+  - backend/src/Services/LotTraceabilityService.php:25: recallScope only returns a trivial value
+  - backend/src/Services/LotTraceabilityService.php:30: affectedCustomers only returns a trivial value
+  - backend/src/Services/LotTraceabilityService.php:35: where only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## management-consolidation — stub, score 0.7, FAIL
+
+- entity_cov 0% (0/20):
+  - ReportPack: table missing (expected management_consolidation__report_packs, 4 fields)
+  - Scorecard: table missing (expected management_consolidation__scorecards, 3 fields)
+  - ConsolidationSet: table missing (expected management_consolidation__consolidation_sets, 3 fields)
+  - Commentary: table missing (expected management_consolidation__commentaries, 3 fields)
+  - ProfitabilityView: table missing (expected management_consolidation__profitability_views, 2 fields)
+- event_cov 0% (0/3):
+  - out management-consolidation.pack.published: not emitted via DomainEvent in src/
+  - in accounting-gl.period.closed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in costing.run.completed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/3):
+  - pnl: not declared in a src/Contracts interface
+  - profitability: not declared in a src/Contracts interface
+  - pack: not declared in a src/Contracts interface
+- rule_cov 0% (0/4):
+  - rule 1 "built on datasets only: management P&L by cost center/plant, produc...": no test named test_rule_*built*datasets*
+  - rule 2 "packs frozen at publish with snapshots": no test named test_rule_*packs*frozen*
+  - rule 3 "commentary workflow": no test named test_rule_*commentary*workflow*
+  - rule 4 "board-pack print/PDF via print templates": no test named test_rule_*board*pack*
+- perm_cov 7.1% (1/14):
+  - management-consolidation.pack.create: in spec but not declared in manifest permissions
+  - management-consolidation.pack.publish: in spec but not declared in manifest permissions
+  - management-consolidation.pack.view: in spec but not declared in manifest permissions
+  - management-consolidation.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - management-consolidation.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - management-consolidation.record.view: not enforced by an API route or authorization check
+  - management-consolidation.rule.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/20):
+  - report_pack: list page web/pages/ReportPackListPage.tsx missing
+  - report_pack: form page web/pages/ReportPackFormPage.tsx missing
+  - report_pack: detail page web/pages/ReportPackDetailPage.tsx missing
+  - report_pack: no web/i18n/fa.json keys under "report_pack."
+  - scorecard: list page web/pages/ScorecardListPage.tsx missing
+  - scorecard: form page web/pages/ScorecardFormPage.tsx missing
+  - scorecard: detail page web/pages/ScorecardDetailPage.tsx missing
+  - scorecard: no web/i18n/fa.json keys under "scorecard."
+  - consolidation_set: list page web/pages/ConsolidationSetListPage.tsx missing
+  - consolidation_set: form page web/pages/ConsolidationSetFormPage.tsx missing
+  - consolidation_set: detail page web/pages/ConsolidationSetDetailPage.tsx missing
+  - consolidation_set: no web/i18n/fa.json keys under "consolidation_set."
+  - commentary: list page web/pages/CommentaryListPage.tsx missing
+  - commentary: form page web/pages/CommentaryFormPage.tsx missing
+  - commentary: detail page web/pages/CommentaryDetailPage.tsx missing
+  - commentary: no web/i18n/fa.json keys under "commentary."
+  - profitability_view: list page web/pages/ProfitabilityViewListPage.tsx missing
+  - profitability_view: form page web/pages/ProfitabilityViewFormPage.tsx missing
+  - profitability_view: detail page web/pages/ProfitabilityViewDetailPage.tsx missing
+  - profitability_view: no web/i18n/fa.json keys under "profitability_view."
+- ai_cov 0% (0/9):
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - nl_report: in spec but not declared in manifest ai.capabilities
+  - nl_report: no test named *nl_report*off* with assertions
+  - nl_report: no test named *nl_report*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/ManagementConsolidationService.php:15: pnl only returns a trivial value
+  - backend/src/Services/ManagementConsolidationService.php:20: profitability only returns a trivial value
+  - backend/src/Services/ManagementConsolidationService.php:25: pack only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## mes — stub, score 0.6, FAIL
+
+- entity_cov 0% (0/47):
+  - Terminal: table missing (expected mes__terminals, 4 fields)
+  - OpRun: table missing (expected mes__op_runs, 6 fields)
+  - Report: table missing (expected mes__reports, 9 fields)
+  - ConsumptionScan: table missing (expected mes__consumption_scans, 4 fields)
+  - DowntimeEvent: table missing (expected mes__downtime_events, 6 fields)
+  - ReasonCode: table missing (expected mes__reason_codes, 2 fields)
+  - MachineTag: table missing (expected mes__machine_tags, 5 fields)
+  - Andon: table missing (expected mes__andons, 3 fields)
+- event_cov 0% (0/12):
+  - out mes.operation.started: not emitted via DomainEvent in src/
+  - out mes.operation.paused: not emitted via DomainEvent in src/ and not in manifest emits
+  - out mes.operation.completed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out mes.production.reported: not emitted via DomainEvent in src/
+  - out mes.downtime.started: not emitted via DomainEvent in src/
+  - out mes.downtime.ended: not emitted via DomainEvent in src/ and not in manifest emits
+  - out mes.andon.raised: not emitted via DomainEvent in src/
+  - out mes.andon.closed: not emitted via DomainEvent in src/ and not in manifest emits
+  - in scheduling.schedule.published: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in work-order.wo.released: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in quality-inspection.lot.decided: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in asset-registry.asset.status_changed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/5):
+  - runningOps: not declared in a src/Contracts interface
+  - oeeInputs: not declared in a src/Contracts interface
+  - downtime: not declared in a src/Contracts interface
+  - tagValue: not declared in a src/Contracts interface
+  - operatorStatus: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "operator must be qualified for operation if skills enforced (hr-cor...": no test named test_rule_*operator*qualified*
+  - rule 2 "one active run per operator/work-center rules (configurable parallel)": no test named test_rule_*active*operator*
+  - rule 3 "quantity reports idempotent and forward to WorkOrderService::report...": no test named test_rule_*quantity*reports*
+  - rule 4 "backflush/scan consumption validates lot against traceability needs...": no test named test_rule_*backflush*scan*
+  - rule 5 "machine data ingestion via api-webhooks endpoint with tag mapping a...": no test named test_rule_*machine*data*
+  - rule 6 "andon triggers notifications and optional CMMS work request": no test named test_rule_*andon*triggers*
+  - rule 7 "in-process inspection prompt triggers quality-inspection IPQC lot p...": no test named test_rule_*process*inspection*
+  - rule 8 "offline-tolerant client queue (setting) with conflict-safe replays": no test named test_rule_*offline*tolerant*
+- perm_cov 5.6% (1/18):
+  - mes.andon.manage: in spec but not declared in manifest permissions
+  - mes.dashboard.view: in spec but not declared in manifest permissions
+  - mes.reasoncode.manage: in spec but not declared in manifest permissions
+  - mes.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - mes.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - mes.record.view: not enforced by an API route or authorization check
+  - mes.report.correct: in spec but not declared in manifest permissions
+  - mes.tag.manage: in spec but not declared in manifest permissions
+  - mes.terminal.use: in spec but not declared in manifest permissions
+- ui_cov 0% (0/32):
+  - terminal: list page web/pages/TerminalListPage.tsx missing
+  - terminal: form page web/pages/TerminalFormPage.tsx missing
+  - terminal: detail page web/pages/TerminalDetailPage.tsx missing
+  - terminal: no web/i18n/fa.json keys under "terminal."
+  - op_run: list page web/pages/OpRunListPage.tsx missing
+  - op_run: form page web/pages/OpRunFormPage.tsx missing
+  - op_run: detail page web/pages/OpRunDetailPage.tsx missing
+  - op_run: no web/i18n/fa.json keys under "op_run."
+  - report: list page web/pages/ReportListPage.tsx missing
+  - report: form page web/pages/ReportFormPage.tsx missing
+  - report: detail page web/pages/ReportDetailPage.tsx missing
+  - report: no web/i18n/fa.json keys under "report."
+  - consumption_scan: list page web/pages/ConsumptionScanListPage.tsx missing
+  - consumption_scan: form page web/pages/ConsumptionScanFormPage.tsx missing
+  - consumption_scan: detail page web/pages/ConsumptionScanDetailPage.tsx missing
+  - consumption_scan: no web/i18n/fa.json keys under "consumption_scan."
+  - downtime_event: list page web/pages/DowntimeEventListPage.tsx missing
+  - downtime_event: form page web/pages/DowntimeEventFormPage.tsx missing
+  - downtime_event: detail page web/pages/DowntimeEventDetailPage.tsx missing
+  - downtime_event: no web/i18n/fa.json keys under "downtime_event."
+  - reason_code: list page web/pages/ReasonCodeListPage.tsx missing
+  - reason_code: form page web/pages/ReasonCodeFormPage.tsx missing
+  - reason_code: detail page web/pages/ReasonCodeDetailPage.tsx missing
+  - reason_code: no web/i18n/fa.json keys under "reason_code."
+  - machine_tag: list page web/pages/MachineTagListPage.tsx missing
+  - machine_tag: form page web/pages/MachineTagFormPage.tsx missing
+  - machine_tag: detail page web/pages/MachineTagDetailPage.tsx missing
+  - machine_tag: no web/i18n/fa.json keys under "machine_tag."
+  - andon: list page web/pages/AndonListPage.tsx missing
+  - andon: form page web/pages/AndonFormPage.tsx missing
+  - andon: detail page web/pages/AndonDetailPage.tsx missing
+  - andon: no web/i18n/fa.json keys under "andon."
+- ai_cov 0% (0/9):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - assistant: in spec but not declared in manifest ai.capabilities
+  - assistant: no test named *assistant*off* with assertions
+  - assistant: no test named *assistant*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 5 finding(s)
+  - backend/src/Services/MesService.php:15: runningOps only returns a trivial value
+  - backend/src/Services/MesService.php:20: oeeInputs only returns a trivial value
+  - backend/src/Services/MesService.php:25: downtime only returns a trivial value
+  - backend/src/Services/MesService.php:30: tagValue only returns a trivial value
+  - backend/src/Services/MesService.php:35: operatorStatus only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## mps — stub, score 0.6, FAIL
+
+- entity_cov 0% (0/33):
+  - MpsPlan: table missing (expected mps__mps_plans, 6 fields)
+  - MpsItem: table missing (expected mps__mps_items, 5 fields)
+  - MpsLine: table missing (expected mps__mps_lines, 7 fields)
+  - ForecastEntry: table missing (expected mps__forecast_entries, 5 fields)
+  - RoughCutCheck: table missing (expected mps__rough_cut_checks, 5 fields)
+- event_cov 0% (0/7):
+  - out mps.plan.approved: not emitted via DomainEvent in src/
+  - out mps.plan.released: not emitted via DomainEvent in src/ and not in manifest emits
+  - out mps.atp.changed: not emitted via DomainEvent in src/
+  - in sales.order.confirmed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in sales.order.cancelled: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in demand-forecast.forecast.published: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in mrp.run.completed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/5):
+  - atp: not declared in a src/Contracts interface
+  - plan: not declared in a src/Contracts interface
+  - forecast: not declared in a src/Contracts interface
+  - releasePlan: not declared in a src/Contracts interface
+  - scenarioCompare: not declared in a src/Contracts interface
+- rule_cov 0% (0/7):
+  - rule 1 "demand = max/blend of forecast and actual orders within demand fenc...": no test named test_rule_*demand*blend*
+  - rule 2 "beyond planning fence suggestions free, inside fence frozen": no test named test_rule_*beyond*planning*
+  - rule 3 "ATP computed cumulatively": no test named test_rule_*computed*cumulatively*
+  - rule 4 "rough-cut capacity via RoutingService standard times": no test named test_rule_*rough*capacity*
+  - rule 5 "scenarios as copies with diffs": no test named test_rule_*scenarios*copies*
+  - rule 6 "release creates MRP independent demand + firmed planned orders": no test named test_rule_*release*creates*
+  - rule 7 "approvals via workflow": no test named test_rule_*approvals*workflow*
+- perm_cov 6.3% (1/16):
+  - mps.forecast.edit: in spec but not declared in manifest permissions
+  - mps.plan.approve: in spec but not declared in manifest permissions
+  - mps.plan.edit: in spec but not declared in manifest permissions
+  - mps.plan.release: in spec but not declared in manifest permissions
+  - mps.plan.view: in spec but not declared in manifest permissions
+  - mps.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - mps.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - mps.record.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/20):
+  - mps_plan: list page web/pages/MpsPlanListPage.tsx missing
+  - mps_plan: form page web/pages/MpsPlanFormPage.tsx missing
+  - mps_plan: detail page web/pages/MpsPlanDetailPage.tsx missing
+  - mps_plan: no web/i18n/fa.json keys under "mps_plan."
+  - mps_item: list page web/pages/MpsItemListPage.tsx missing
+  - mps_item: form page web/pages/MpsItemFormPage.tsx missing
+  - mps_item: detail page web/pages/MpsItemDetailPage.tsx missing
+  - mps_item: no web/i18n/fa.json keys under "mps_item."
+  - mps_line: list page web/pages/MpsLineListPage.tsx missing
+  - mps_line: form page web/pages/MpsLineFormPage.tsx missing
+  - mps_line: detail page web/pages/MpsLineDetailPage.tsx missing
+  - mps_line: no web/i18n/fa.json keys under "mps_line."
+  - forecast_entry: list page web/pages/ForecastEntryListPage.tsx missing
+  - forecast_entry: form page web/pages/ForecastEntryFormPage.tsx missing
+  - forecast_entry: detail page web/pages/ForecastEntryDetailPage.tsx missing
+  - forecast_entry: no web/i18n/fa.json keys under "forecast_entry."
+  - rough_cut_check: list page web/pages/RoughCutCheckListPage.tsx missing
+  - rough_cut_check: form page web/pages/RoughCutCheckFormPage.tsx missing
+  - rough_cut_check: detail page web/pages/RoughCutCheckDetailPage.tsx missing
+  - rough_cut_check: no web/i18n/fa.json keys under "rough_cut_check."
+- ai_cov 0% (0/9):
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - nl_report: in spec but not declared in manifest ai.capabilities
+  - nl_report: no test named *nl_report*off* with assertions
+  - nl_report: no test named *nl_report*fake* with assertions
+- anti-gaming: 5 finding(s)
+  - backend/src/Services/MpsService.php:15: atp only returns a trivial value
+  - backend/src/Services/MpsService.php:20: plan only returns a trivial value
+  - backend/src/Services/MpsService.php:25: forecast only returns a trivial value
+  - backend/src/Services/MpsService.php:30: releasePlan only returns a trivial value
+  - backend/src/Services/MpsService.php:35: scenarioCompare only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## mrp — stub, score 0.7, FAIL
+
+- entity_cov 0% (0/22):
+  - MrpRun: table missing (expected mrp__mrp_runs, 7 fields)
+  - PlannedOrder: table missing (expected mrp__planned_orders, 7 fields)
+  - MrpMessage: table missing (expected mrp__mrp_messages, 4 fields)
+  - Pegging: table missing (expected mrp__peggings, 0 fields)
+- event_cov 0% (0/9):
+  - out mrp.run.completed: not emitted via DomainEvent in src/
+  - out mrp.planned_order.firmed: not emitted via DomainEvent in src/
+  - out mrp.requisition.suggested: not emitted via DomainEvent in src/
+  - out mrp.message.created: not emitted via DomainEvent in src/
+  - in purchase-order.po.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in work-order.wo.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in sales.order.*: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in mps.plan.released: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in reorder-point.policy.changed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/6):
+  - runStatus: not declared in a src/Contracts interface
+  - plannedOrders: not declared in a src/Contracts interface
+  - pegging: not declared in a src/Contracts interface
+  - firm: not declared in a src/Contracts interface
+  - requirements: not declared in a src/Contracts interface
+  - mrpParams: not declared in a src/Contracts interface
+- rule_cov 0% (0/9):
+  - rule 1 "low-level code computation": no test named test_rule_*level*code*
+  - rule 2 "per level: gross requirement (independent demand from sales backlog...": no test named test_rule_*level*gross*
+  - rule 3 "substitutes optional": no test named test_rule_*substitutes*
+  - rule 4 "respect firmed orders & time fences": no test named test_rule_*respect*firmed*
+  - rule 5 "pegging maintained": no test named test_rule_*pegging*maintained*
+  - rule 6 "runs are chunked by level/item batches with resume tokens (queued v...": no test named test_rule_*runs*chunked*
+  - rule 7 "optional Python accelerator for very large item counts (setting)": no test named test_rule_*python*accelerator*
+  - rule 8 "simulation runs don't write planned orders": no test named test_rule_*simulation*runs*
+  - rule 9 "exceptions: past-due, no-BOM, no-lead-time, over-capacity (if routi...": no test named test_rule_*exceptions*past*
+- perm_cov 7.1% (1/14):
+  - mrp.message.act: in spec but not declared in manifest permissions
+  - mrp.param.manage: in spec but not declared in manifest permissions
+  - mrp.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - mrp.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - mrp.record.view: not enforced by an API route or authorization check
+  - mrp.run.execute: in spec but not declared in manifest permissions
+  - mrp.run.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/16):
+  - mrp_run: list page web/pages/MrpRunListPage.tsx missing
+  - mrp_run: form page web/pages/MrpRunFormPage.tsx missing
+  - mrp_run: detail page web/pages/MrpRunDetailPage.tsx missing
+  - mrp_run: no web/i18n/fa.json keys under "mrp_run."
+  - planned_order: list page web/pages/PlannedOrderListPage.tsx missing
+  - planned_order: form page web/pages/PlannedOrderFormPage.tsx missing
+  - planned_order: detail page web/pages/PlannedOrderDetailPage.tsx missing
+  - planned_order: no web/i18n/fa.json keys under "planned_order."
+  - mrp_message: list page web/pages/MrpMessageListPage.tsx missing
+  - mrp_message: form page web/pages/MrpMessageFormPage.tsx missing
+  - mrp_message: detail page web/pages/MrpMessageDetailPage.tsx missing
+  - mrp_message: no web/i18n/fa.json keys under "mrp_message."
+  - pegging: list page web/pages/PeggingListPage.tsx missing
+  - pegging: form page web/pages/PeggingFormPage.tsx missing
+  - pegging: detail page web/pages/PeggingDetailPage.tsx missing
+  - pegging: no web/i18n/fa.json keys under "pegging."
+- ai_cov 0% (0/12):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - nl_report: in spec but not declared in manifest ai.capabilities
+  - nl_report: no test named *nl_report*off* with assertions
+  - nl_report: no test named *nl_report*fake* with assertions
+- anti-gaming: 6 finding(s)
+  - backend/src/Services/MrpService.php:15: runStatus only returns a trivial value
+  - backend/src/Services/MrpService.php:20: plannedOrders only returns a trivial value
+  - backend/src/Services/MrpService.php:25: pegging only returns a trivial value
+  - backend/src/Services/MrpService.php:30: firm only returns a trivial value
+  - backend/src/Services/MrpService.php:35: requirements only returns a trivial value
+  - backend/src/Services/MrpService.php:40: mrpParams only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## multi-company — stub, score 0, FAIL
+
+- entity_cov 0% (0/0):
+  - specification missing: specs/multi-company.md
+- event_cov 0% (0/0):
+  - specification missing: specs/multi-company.md
+- contract_cov 0% (0/0):
+  - specification missing: specs/multi-company.md
+- rule_cov 0% (0/0):
+  - specification missing: specs/multi-company.md
+- perm_cov 0% (0/0):
+  - specification missing: specs/multi-company.md
+- ui_cov 0% (0/0):
+  - specification missing: specs/multi-company.md
+- ai_cov 0% (0/0):
+  - specification missing: specs/multi-company.md
+- anti-gaming: clean
+- tests: not_run (static gate not passed)
+
+## ncr-capa — stub, score 0.3, FAIL
+
+- entity_cov 0% (0/32):
+  - NCR: table missing (expected ncr_capa__ncrs, 12 fields)
+  - Disposition: table missing (expected ncr_capa__dispositions, 3 fields)
+  - RootCause: table missing (expected ncr_capa__root_causes, 3 fields)
+  - CAPA: table missing (expected ncr_capa__capas, 4 fields)
+  - SCAR: table missing (expected ncr_capa__scars, 5 fields)
+- event_cov 0% (0/9):
+  - out ncr-capa.ncr.opened: not emitted via DomainEvent in src/
+  - out ncr-capa.ncr.dispositioned: not emitted via DomainEvent in src/ and not in manifest emits
+  - out ncr-capa.ncr.closed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out ncr-capa.capa.opened: not emitted via DomainEvent in src/
+  - out ncr-capa.capa.verified: not emitted via DomainEvent in src/ and not in manifest emits
+  - out ncr-capa.scar.sent: not emitted via DomainEvent in src/
+  - in quality-inspection.result.out_of_spec: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in quality-inspection.lot.decided: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in batch-formulation.deviation.raised: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - openNcrs: not declared in a src/Contracts interface
+  - defectStats: not declared in a src/Contracts interface
+  - supplierNcrCount: not declared in a src/Contracts interface
+  - capaDue: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "NCR can be created from events (`quality-inspection.result.out_of_s...": no test named test_rule_*created*events*
+  - rule 2 "disposition triggers stock actions through events (scrap, return, r...": no test named test_rule_*disposition*triggers*
+  - rule 3 "recurring defects detection by (item/supplier/defect) frequency thr...": no test named test_rule_*recurring*defects*
+  - rule 4 "effectiveness check scheduled automatically": no test named test_rule_*effectiveness*check*
+  - rule 5 "closure needs evidence attachments": no test named test_rule_*closure*needs*
+  - rule 6 "costs summed to COPQ": no test named test_rule_*costs*summed*
+- perm_cov 2.6% (1/38):
+  - ncr-capa.capa.approve: in spec but not declared in manifest permissions
+  - ncr-capa.capa.close: in spec but not declared in manifest permissions
+  - ncr-capa.capa.create: in spec but not declared in manifest permissions
+  - ncr-capa.capa.update: in spec but not declared in manifest permissions
+  - ncr-capa.capa.view: in spec but not declared in manifest permissions
+  - ncr-capa.defectcode.manage: in spec but not declared in manifest permissions
+  - ncr-capa.ncr.approve: in spec but not declared in manifest permissions
+  - ncr-capa.ncr.close: in spec but not declared in manifest permissions
+  - ncr-capa.ncr.create: in spec but not declared in manifest permissions
+  - ncr-capa.ncr.update: in spec but not declared in manifest permissions
+  - ncr-capa.ncr.view: in spec but not declared in manifest permissions
+  - ncr-capa.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - ncr-capa.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - ncr-capa.record.view: not enforced by an API route or authorization check
+  - ncr-capa.scar.approve: in spec but not declared in manifest permissions
+  - ncr-capa.scar.close: in spec but not declared in manifest permissions
+  - ncr-capa.scar.create: in spec but not declared in manifest permissions
+  - ncr-capa.scar.update: in spec but not declared in manifest permissions
+  - ncr-capa.scar.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/20):
+  - ncr: list page web/pages/NcrListPage.tsx missing
+  - ncr: form page web/pages/NcrFormPage.tsx missing
+  - ncr: detail page web/pages/NcrDetailPage.tsx missing
+  - ncr: no web/i18n/fa.json keys under "ncr."
+  - disposition: list page web/pages/DispositionListPage.tsx missing
+  - disposition: form page web/pages/DispositionFormPage.tsx missing
+  - disposition: detail page web/pages/DispositionDetailPage.tsx missing
+  - disposition: no web/i18n/fa.json keys under "disposition."
+  - root_cause: list page web/pages/RootCauseListPage.tsx missing
+  - root_cause: form page web/pages/RootCauseFormPage.tsx missing
+  - root_cause: detail page web/pages/RootCauseDetailPage.tsx missing
+  - root_cause: no web/i18n/fa.json keys under "root_cause."
+  - capa: list page web/pages/CapaListPage.tsx missing
+  - capa: form page web/pages/CapaFormPage.tsx missing
+  - capa: detail page web/pages/CapaDetailPage.tsx missing
+  - capa: no web/i18n/fa.json keys under "capa."
+  - scar: list page web/pages/ScarListPage.tsx missing
+  - scar: form page web/pages/ScarFormPage.tsx missing
+  - scar: detail page web/pages/ScarDetailPage.tsx missing
+  - scar: no web/i18n/fa.json keys under "scar."
+- ai_cov 0% (0/12):
+  - assistant: in spec but not declared in manifest ai.capabilities
+  - assistant: no test named *assistant*off* with assertions
+  - assistant: no test named *assistant*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/NcrCapaService.php:15: openNcrs only returns a trivial value
+  - backend/src/Services/NcrCapaService.php:20: defectStats only returns a trivial value
+  - backend/src/Services/NcrCapaService.php:25: supplierNcrCount only returns a trivial value
+  - backend/src/Services/NcrCapaService.php:30: capaDue only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## nl-report-assistant — stub, score 5.8, FAIL
+
+- entity_cov 0% (0/23):
+  - Conversation: table missing (expected nl_report_assistant__conversations, 4 fields)
+  - QuerySpec: table missing (expected nl_report_assistant__query_specs, 8 fields)
+  - SavedQuestion: table missing (expected nl_report_assistant__saved_questions, 4 fields)
+  - Feedback: table missing (expected nl_report_assistant__feedbacks, 3 fields)
+- event_cov 0% (0/1):
+  - out nl-report-assistant.question.saved: not emitted via DomainEvent in src/
+- contract_cov 0% (0/3):
+  - ask: not declared in a src/Contracts interface
+  - validateSpec: not declared in a src/Contracts interface
+  - save: not declared in a src/Contracts interface
+- rule_cov 0% (0/10):
+  - rule 1 "LLM NEVER writes SQL: it must output a **QuerySpec JSON** validated...": no test named test_rule_*writes*output*
+  - rule 2 "validation failures trigger one guided retry then a clarifying ques...": no test named test_rule_*validation*failures*
+  - rule 3 "execution through ReportService with the user's permissions & row-l...": no test named test_rule_*execution*through*
+  - rule 4 "answers show the spec/filters used ("how was this computed"), row c...": no test named test_rule_*answers*show*
+  - rule 5 "ambiguity handling (ask which period/measure)": no test named test_rule_*ambiguity*handling*
+  - rule 6 "Persian date phrases ("ماه گذشته", "سه‌ماهه دوم امسال") resolved wi...": no test named test_rule_*persian*date*
+  - rule 7 "cost/token budgets and redaction rules from AI Gateway apply": no test named test_rule_*cost*token*
+  - rule 8 "conversation memory limited to the session": no test named test_rule_*conversation*memory*
+  - rule 9 "save answer as report/dashboard widget": no test named test_rule_*save*answer*
+  - rule 10 "tool-calling mode for module assistants uses only manifest-declared...": no test named test_rule_*tool*calling*
+- perm_cov 8.3% (1/12):
+  - nl-report-assistant.admin: in spec but not declared in manifest permissions
+  - nl-report-assistant.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - nl-report-assistant.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - nl-report-assistant.record.view: not enforced by an API route or authorization check
+  - nl-report-assistant.save: in spec but not declared in manifest permissions
+  - nl-report-assistant.use: in spec but not declared in manifest permissions
+- ui_cov 0% (0/16):
+  - conversation: list page web/pages/ConversationListPage.tsx missing
+  - conversation: form page web/pages/ConversationFormPage.tsx missing
+  - conversation: detail page web/pages/ConversationDetailPage.tsx missing
+  - conversation: no web/i18n/fa.json keys under "conversation."
+  - query_spec: list page web/pages/QuerySpecListPage.tsx missing
+  - query_spec: form page web/pages/QuerySpecFormPage.tsx missing
+  - query_spec: detail page web/pages/QuerySpecDetailPage.tsx missing
+  - query_spec: no web/i18n/fa.json keys under "query_spec."
+  - saved_question: list page web/pages/SavedQuestionListPage.tsx missing
+  - saved_question: form page web/pages/SavedQuestionFormPage.tsx missing
+  - saved_question: detail page web/pages/SavedQuestionDetailPage.tsx missing
+  - saved_question: no web/i18n/fa.json keys under "saved_question."
+  - feedback: list page web/pages/FeedbackListPage.tsx missing
+  - feedback: form page web/pages/FeedbackFormPage.tsx missing
+  - feedback: detail page web/pages/FeedbackDetailPage.tsx missing
+  - feedback: no web/i18n/fa.json keys under "feedback."
+- ai_cov 100% (0/0): complete
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/NlReportAssistantService.php:15: ask only returns a trivial value
+  - backend/src/Services/NlReportAssistantService.php:20: validateSpec only returns a trivial value
+  - backend/src/Services/NlReportAssistantService.php:25: save only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## notifications — stub, score 0, FAIL
+
+- entity_cov 0% (0/0):
+  - specification missing: specs/notifications.md
+- event_cov 0% (0/0):
+  - specification missing: specs/notifications.md
+- contract_cov 0% (0/0):
+  - specification missing: specs/notifications.md
+- rule_cov 0% (0/0):
+  - specification missing: specs/notifications.md
+- perm_cov 0% (0/0):
+  - specification missing: specs/notifications.md
+- ui_cov 0% (0/0):
+  - specification missing: specs/notifications.md
+- ai_cov 0% (0/0):
+  - specification missing: specs/notifications.md
+- anti-gaming: clean
+- tests: not_run (static gate not passed)
+
+## oee — stub, score 0.8, FAIL
+
+- entity_cov 0% (0/20):
+  - OeeSnapshot: table missing (expected oee__oee_snapshots, 11 fields)
+  - Target: table missing (expected oee__targets, 3 fields)
+  - Alert: table missing (expected oee__alerts, 3 fields)
+- event_cov 0% (0/4):
+  - out oee.snapshot.computed: not emitted via DomainEvent in src/
+  - out oee.alert.raised: not emitted via DomainEvent in src/
+  - in work-order.operation.completed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in cmms.workorder.completed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - oee: not declared in a src/Contracts interface
+  - losses: not declared in a src/Contracts interface
+  - trend: not declared in a src/Contracts interface
+  - benchmark: not declared in a src/Contracts interface
+- rule_cov 0% (0/9):
+  - rule 1 "planned time from calendar/shift minus planned downtime categories": no test named test_rule_*planned*time*
+  - rule 2 "availability = run/planned": no test named test_rule_*availability*planned*
+  - rule 3 "performance = ideal_cycle×total/run (ideal cycle from routing, over...": no test named test_rule_*performance*ideal*
+  - rule 4 "quality = good/total": no test named test_rule_*quality*good*
+  - rule 5 "shift/day/week/month/plant rollups": no test named test_rule_*shift*week*
+  - rule 6 "micro-stop threshold setting": no test named test_rule_*micro*stop*
+  - rule 7 "recalc on corrections": no test named test_rule_*recalc*corrections*
+  - rule 8 "alerts to notifications": no test named test_rule_*alerts*notifications*
+  - rule 9 "breakdown starting auto-creates cmms.workrequest (setting)": no test named test_rule_*breakdown*starting*
+- perm_cov 8.3% (1/12):
+  - oee.downtime.view: in spec but not declared in manifest permissions
+  - oee.lossmap.manage: in spec but not declared in manifest permissions
+  - oee.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - oee.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - oee.record.view: not enforced by an API route or authorization check
+  - oee.target.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/12):
+  - oee_snapshot: list page web/pages/OeeSnapshotListPage.tsx missing
+  - oee_snapshot: form page web/pages/OeeSnapshotFormPage.tsx missing
+  - oee_snapshot: detail page web/pages/OeeSnapshotDetailPage.tsx missing
+  - oee_snapshot: no web/i18n/fa.json keys under "oee_snapshot."
+  - target: list page web/pages/TargetListPage.tsx missing
+  - target: form page web/pages/TargetFormPage.tsx missing
+  - target: detail page web/pages/TargetDetailPage.tsx missing
+  - target: no web/i18n/fa.json keys under "target."
+  - alert: list page web/pages/AlertListPage.tsx missing
+  - alert: form page web/pages/AlertFormPage.tsx missing
+  - alert: detail page web/pages/AlertDetailPage.tsx missing
+  - alert: no web/i18n/fa.json keys under "alert."
+- ai_cov 0% (0/15):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+  - nl_report: in spec but not declared in manifest ai.capabilities
+  - nl_report: no test named *nl_report*off* with assertions
+  - nl_report: no test named *nl_report*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/OeeService.php:15: oee only returns a trivial value
+  - backend/src/Services/OeeService.php:20: losses only returns a trivial value
+  - backend/src/Services/OeeService.php:25: trend only returns a trivial value
+  - backend/src/Services/OeeService.php:30: benchmark only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## org-structure — stub, score 0.5, FAIL
+
+- entity_cov 0% (0/44):
+  - OrgUnit: table missing (expected org_structure__org_units, 5 fields)
+  - Position: table missing (expected org_structure__positions, 5 fields)
+  - PositionAssignment: table missing (expected org_structure__position_assignments, 5 fields)
+  - CostCenter: table missing (expected org_structure__cost_centers, 5 fields)
+  - WorkCalendar: table missing (expected org_structure__work_calendars, 4 fields)
+  - Holiday: table missing (expected org_structure__holidays, 3 fields)
+  - Shift: table missing (expected org_structure__shifts, 6 fields)
+  - Location: table missing (expected org_structure__locations, 3 fields)
+- event_cov 0% (0/4):
+  - out org-structure.unit.changed: not emitted via DomainEvent in src/
+  - out org-structure.position.assigned: not emitted via DomainEvent in src/
+  - out org-structure.position.vacated: not emitted via DomainEvent in src/
+  - in hr-core.employee.transferred: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/10):
+  - unitsTree: not declared in a src/Contracts interface
+  - unit: not declared in a src/Contracts interface
+  - managerOf: not declared in a src/Contracts interface
+  - approverChain: not declared in a src/Contracts interface
+  - costCenter: not declared in a src/Contracts interface
+  - costCenters: not declared in a src/Contracts interface
+  - isWorkday: not declared in a src/Contracts interface
+  - workingMinutes: not declared in a src/Contracts interface
+  - shift: not declared in a src/Contracts interface
+  - shiftsFor: not declared in a src/Contracts interface
+- rule_cov 0% (0/5):
+  - rule 1 "no cycles in trees": no test named test_rule_*cycles*trees*
+  - rule 2 "position assignment date overlaps only if not primary": no test named test_rule_*position*assignment*
+  - rule 3 "calendar must have weekly pattern": no test named test_rule_*calendar*weekly*
+  - rule 4 "Iranian official holidays seeded per Jalali year via importable CSV...": no test named test_rule_*iranian*official*
+  - rule 5 "shift crossing midnight handled in minute math": no test named test_rule_*shift*crossing*
+- perm_cov 5% (1/20):
+  - org-structure.calendar.manage: not enforced by an API route or authorization check and not used by a UI route or page
+  - org-structure.calendar.view: in spec but not declared in manifest permissions
+  - org-structure.cost_center.manage: not enforced by an API route or authorization check and not used by a UI route or page
+  - org-structure.cost_center.view: not enforced by an API route or authorization check and not used by a UI route or page
+  - org-structure.position.manage: in spec but not declared in manifest permissions
+  - org-structure.position.view: in spec but not declared in manifest permissions
+  - org-structure.shift.manage: in spec but not declared in manifest permissions
+  - org-structure.shift.view: in spec but not declared in manifest permissions
+  - org-structure.unit.manage: not enforced by an API route or authorization check and not used by a UI route or page
+  - org-structure.unit.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/20):
+  - unit: list page web/pages/UnitListPage.tsx missing
+  - unit: form page web/pages/UnitFormPage.tsx missing
+  - unit: detail page web/pages/UnitDetailPage.tsx missing
+  - unit: no web/i18n/fa.json keys under "unit."
+  - position: list page web/pages/PositionListPage.tsx missing
+  - position: form page web/pages/PositionFormPage.tsx missing
+  - position: detail page web/pages/PositionDetailPage.tsx missing
+  - position: no web/i18n/fa.json keys under "position."
+  - cost_center: list page web/pages/CostCenterListPage.tsx missing
+  - cost_center: form page web/pages/CostCenterFormPage.tsx missing
+  - cost_center: detail page web/pages/CostCenterDetailPage.tsx missing
+  - cost_center: no web/i18n/fa.json keys under "cost_center."
+  - calendar: list page web/pages/CalendarListPage.tsx missing
+  - calendar: form page web/pages/CalendarFormPage.tsx missing
+  - calendar: detail page web/pages/CalendarDetailPage.tsx missing
+  - calendar: no web/i18n/fa.json keys under "calendar."
+  - shift: list page web/pages/ShiftListPage.tsx missing
+  - shift: form page web/pages/ShiftFormPage.tsx missing
+  - shift: detail page web/pages/ShiftDetailPage.tsx missing
+  - shift: no web/i18n/fa.json keys under "shift."
+- ai_cov 0% (0/6):
+  - assistant: in spec but not declared in manifest ai.capabilities
+  - assistant: no test named *assistant*off* with assertions
+  - assistant: no test named *assistant*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/OrgStructureService.php:26: managerOf only returns a trivial value
+  - backend/src/Services/OrgStructureService.php:27: approverChain only returns a trivial value
+  - backend/src/Services/OrgStructureService.php:47: shift only returns a trivial value
+  - backend/src/Services/OrgStructureService.php:48: shiftsFor only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## parking-vehicles — stub, score 0.2, FAIL
+
+- entity_cov 0% (0/50):
+  - Vehicle: table missing (expected parking_vehicles__vehicles, 11 fields)
+  - VehicleDocument: table missing (expected parking_vehicles__vehicle_documents, 3 fields)
+  - Trip: table missing (expected parking_vehicles__trips, 11 fields)
+  - FuelLog: table missing (expected parking_vehicles__fuel_logs, 6 fields)
+  - VehicleRequest: table missing (expected parking_vehicles__vehicle_requests, 5 fields)
+  - ParkingSlot: table missing (expected parking_vehicles__parking_slots, 4 fields)
+  - ParkingPermit: table missing (expected parking_vehicles__parking_permits, 3 fields)
+- event_cov 0% (0/5):
+  - out parking-vehicles.document.expiring: not emitted via DomainEvent in src/
+  - out parking-vehicles.trip.completed: not emitted via DomainEvent in src/
+  - in gate-visitor.vehicle.entered: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in gate-visitor.vehicle.exited: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in cmms.workorder.completed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/3):
+  - availability: not declared in a src/Contracts interface
+  - documentsExpiring: not declared in a src/Contracts interface
+  - costPerKm: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "document expiry alerts": no test named test_rule_*document*expiry*
+  - rule 2 "trip approval workflow": no test named test_rule_*trip*approval*
+  - rule 3 "odometer monotonic": no test named test_rule_*odometer*monotonic*
+  - rule 4 "fuel consumption per 100 km analytics": no test named test_rule_*fuel*consumption*
+  - rule 5 "request→dispatch assignment with availability by calendar": no test named test_rule_*request*dispatch*
+  - rule 6 "permits conflict checks": no test named test_rule_*permits*conflict*
+- perm_cov 2.2% (1/46):
+  - parking-vehicles.fuel.approve: in spec but not declared in manifest permissions
+  - parking-vehicles.fuel.create: in spec but not declared in manifest permissions
+  - parking-vehicles.fuel.update: in spec but not declared in manifest permissions
+  - parking-vehicles.fuel.view: in spec but not declared in manifest permissions
+  - parking-vehicles.parking.approve: in spec but not declared in manifest permissions
+  - parking-vehicles.parking.create: in spec but not declared in manifest permissions
+  - parking-vehicles.parking.update: in spec but not declared in manifest permissions
+  - parking-vehicles.parking.view: in spec but not declared in manifest permissions
+  - parking-vehicles.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - parking-vehicles.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - parking-vehicles.record.view: not enforced by an API route or authorization check
+  - parking-vehicles.request.approve: in spec but not declared in manifest permissions
+  - parking-vehicles.request.create: in spec but not declared in manifest permissions
+  - parking-vehicles.request.update: in spec but not declared in manifest permissions
+  - parking-vehicles.request.view: in spec but not declared in manifest permissions
+  - parking-vehicles.trip.approve: in spec but not declared in manifest permissions
+  - parking-vehicles.trip.create: in spec but not declared in manifest permissions
+  - parking-vehicles.trip.update: in spec but not declared in manifest permissions
+  - parking-vehicles.trip.view: in spec but not declared in manifest permissions
+  - parking-vehicles.vehicle.approve: in spec but not declared in manifest permissions
+  - parking-vehicles.vehicle.create: in spec but not declared in manifest permissions
+  - parking-vehicles.vehicle.update: in spec but not declared in manifest permissions
+  - parking-vehicles.vehicle.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/28):
+  - vehicle: list page web/pages/VehicleListPage.tsx missing
+  - vehicle: form page web/pages/VehicleFormPage.tsx missing
+  - vehicle: detail page web/pages/VehicleDetailPage.tsx missing
+  - vehicle: no web/i18n/fa.json keys under "vehicle."
+  - vehicle_document: list page web/pages/VehicleDocumentListPage.tsx missing
+  - vehicle_document: form page web/pages/VehicleDocumentFormPage.tsx missing
+  - vehicle_document: detail page web/pages/VehicleDocumentDetailPage.tsx missing
+  - vehicle_document: no web/i18n/fa.json keys under "vehicle_document."
+  - trip: list page web/pages/TripListPage.tsx missing
+  - trip: form page web/pages/TripFormPage.tsx missing
+  - trip: detail page web/pages/TripDetailPage.tsx missing
+  - trip: no web/i18n/fa.json keys under "trip."
+  - fuel_log: list page web/pages/FuelLogListPage.tsx missing
+  - fuel_log: form page web/pages/FuelLogFormPage.tsx missing
+  - fuel_log: detail page web/pages/FuelLogDetailPage.tsx missing
+  - fuel_log: no web/i18n/fa.json keys under "fuel_log."
+  - vehicle_request: list page web/pages/VehicleRequestListPage.tsx missing
+  - vehicle_request: form page web/pages/VehicleRequestFormPage.tsx missing
+  - vehicle_request: detail page web/pages/VehicleRequestDetailPage.tsx missing
+  - vehicle_request: no web/i18n/fa.json keys under "vehicle_request."
+  - parking_slot: list page web/pages/ParkingSlotListPage.tsx missing
+  - parking_slot: form page web/pages/ParkingSlotFormPage.tsx missing
+  - parking_slot: detail page web/pages/ParkingSlotDetailPage.tsx missing
+  - parking_slot: no web/i18n/fa.json keys under "parking_slot."
+  - parking_permit: list page web/pages/ParkingPermitListPage.tsx missing
+  - parking_permit: form page web/pages/ParkingPermitFormPage.tsx missing
+  - parking_permit: detail page web/pages/ParkingPermitDetailPage.tsx missing
+  - parking_permit: no web/i18n/fa.json keys under "parking_permit."
+- ai_cov 0% (0/6):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/ParkingVehiclesService.php:15: availability only returns a trivial value
+  - backend/src/Services/ParkingVehiclesService.php:20: documentsExpiring only returns a trivial value
+  - backend/src/Services/ParkingVehiclesService.php:25: costPerKm only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## party-master — stub, score 0.5, FAIL
+
+- entity_cov 0% (0/27):
+  - Party: table missing (expected party_master__parties, 21 fields)
+  - PaymentTerm: table missing (expected party_master__payment_terms, 4 fields)
+- event_cov 0% (0/6):
+  - out party-master.party.created: not emitted via DomainEvent in src/
+  - out party-master.party.updated: not emitted via DomainEvent in src/
+  - out party-master.party.activated: not emitted via DomainEvent in src/
+  - out party-master.party.blacklisted: not emitted via DomainEvent in src/
+  - out party-master.party.merged: not emitted via DomainEvent in src/
+  - in *.party.used: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/10):
+  - find: not declared in a src/Contracts interface
+  - findByNationalId: not declared in a src/Contracts interface
+  - lookup: not declared in a src/Contracts interface
+  - isActive: not declared in a src/Contracts interface
+  - getAddresses: not declared in a src/Contracts interface
+  - getDefaultBank: not declared in a src/Contracts interface
+  - getCreditLimit: not declared in a src/Contracts interface
+  - getPaymentTerm: not declared in a src/Contracts interface
+  - validateIds: not declared in a src/Contracts interface
+  - markUsed: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "validate Iranian national id checksum (10d) and legal-entity id (11...": no test named test_rule_*validate*iranian*
+  - rule 2 "unique national_id/economic_code per company (warn/override with re...": no test named test_rule_*unique*national*
+  - rule 3 "normalized-name duplicate detection (reuse item-master TextNormaliz...": no test named test_rule_*normalized*name*
+  - rule 4 "credit limit non-negative": no test named test_rule_*credit*limit*
+  - rule 5 "cannot delete used parties": no test named test_rule_*cannot*delete*
+  - rule 6 "one default address/bank": no test named test_rule_*address*bank*
+- perm_cov 4.5% (1/22):
+  - party-master.ai.use: not enforced by an API route or authorization check and not used by a UI route or page
+  - party-master.group.manage: not enforced by an API route or authorization check and not used by a UI route or page
+  - party-master.party.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - party-master.party.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - party-master.party.delete: not enforced by an API route or authorization check and not used by a UI route or page
+  - party-master.party.export: not enforced by an API route or authorization check and not used by a UI route or page
+  - party-master.party.import: not enforced by an API route or authorization check and not used by a UI route or page
+  - party-master.party.merge: not enforced by an API route or authorization check and not used by a UI route or page
+  - party-master.party.update: not enforced by an API route or authorization check and not used by a UI route or page
+  - party-master.party.view: not enforced by an API route or authorization check
+  - party-master.payment_term.manage: not enforced by an API route or authorization check and not used by a UI route or page
+- ui_cov 0% (0/24):
+  - party: list page web/pages/PartyListPage.tsx missing
+  - party: form page web/pages/PartyFormPage.tsx missing
+  - party: detail page web/pages/PartyDetailPage.tsx missing
+  - party: no web/i18n/fa.json keys under "party."
+  - address: list page web/pages/AddressListPage.tsx missing
+  - address: form page web/pages/AddressFormPage.tsx missing
+  - address: detail page web/pages/AddressDetailPage.tsx missing
+  - address: no web/i18n/fa.json keys under "address."
+  - contact: list page web/pages/ContactListPage.tsx missing
+  - contact: form page web/pages/ContactFormPage.tsx missing
+  - contact: detail page web/pages/ContactDetailPage.tsx missing
+  - contact: no web/i18n/fa.json keys under "contact."
+  - bank_account: list page web/pages/BankAccountListPage.tsx missing
+  - bank_account: form page web/pages/BankAccountFormPage.tsx missing
+  - bank_account: detail page web/pages/BankAccountDetailPage.tsx missing
+  - bank_account: no web/i18n/fa.json keys under "bank_account."
+  - group: list page web/pages/GroupListPage.tsx missing
+  - group: form page web/pages/GroupFormPage.tsx missing
+  - group: detail page web/pages/GroupDetailPage.tsx missing
+  - group: no web/i18n/fa.json keys under "group."
+  - payment_term: list page web/pages/PaymentTermListPage.tsx missing
+  - payment_term: form page web/pages/PaymentTermFormPage.tsx missing
+  - payment_term: detail page web/pages/PaymentTermDetailPage.tsx missing
+  - payment_term: no web/i18n/fa.json keys under "payment_term."
+- ai_cov 0% (0/6):
+  - autofill: tools not registered in aiTools(): party-master.list_groups
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - summarize: tools not registered in aiTools(): party-master.get_history
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/PartyMasterService.php:55: getAddresses only returns a trivial value
+  - backend/src/Services/PartyMasterService.php:56: getDefaultBank only returns a trivial value
+  - backend/src/Services/PartyMasterService.php:62: getPaymentTerm only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## payroll — stub, score 0.4, FAIL
+
+- entity_cov 0% (0/35):
+  - SalaryStructure: table missing (expected payroll__salary_structures, 1 fields)
+  - PayComponent: table missing (expected payroll__pay_components, 7 fields)
+  - EmployeeSalary: table missing (expected payroll__employee_salaries, 4 fields)
+  - PayrollRun: table missing (expected payroll__payroll_runs, 3 fields)
+  - TaxTable: table missing (expected payroll__tax_tables, 2 fields)
+  - InsuranceRule: table missing (expected payroll__insurance_rules, 5 fields)
+  - Loan: table missing (expected payroll__loans, 4 fields)
+  - OneOffPayment: table missing (expected payroll__one_off_payments, 1 fields)
+- event_cov 0% (0/5):
+  - out payroll.run.approved: not emitted via DomainEvent in src/
+  - out payroll.run.paid: not emitted via DomainEvent in src/
+  - out payroll.payslip.published: not emitted via DomainEvent in src/ and not in manifest emits
+  - in attendance.period.closed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in hr-core.employee.terminated: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - payslip: not declared in a src/Contracts interface
+  - costByCostCenter: not declared in a src/Contracts interface
+  - headcountCost: not declared in a src/Contracts interface
+  - previewRun: not declared in a src/Contracts interface
+- rule_cov 0% (0/9):
+  - rule 1 "run reads attendance.period.closed summaries + employee salary effe...": no test named test_rule_*reads*attendance*
+  - rule 2 "formulas via safe expression engine": no test named test_rule_*formulas*safe*
+  - rule 3 "tax & insurance computed from versioned tables (admin-maintained da...": no test named test_rule_*insurance*computed*
+  - rule 4 "loan installments auto-deducted with schedule update": no test named test_rule_*loan*installments*
+  - rule 5 "negative net blocked/flagged": no test named test_rule_*negative*blocked*
+  - rule 6 "retro adjustments in later runs": no test named test_rule_*retro*adjustments*
+  - rule 7 "lock period after approval": no test named test_rule_*lock*period*
+  - rule 8 "payslip immutable snapshot": no test named test_rule_*payslip*immutable*
+  - rule 9 "changes after approval via adjustment run": no test named test_rule_*changes*approval*
+- perm_cov 4.2% (1/24):
+  - payroll.component.manage: in spec but not declared in manifest permissions
+  - payroll.loan.manage: in spec but not declared in manifest permissions
+  - payroll.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - payroll.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - payroll.record.view: not enforced by an API route or authorization check
+  - payroll.run.approve: in spec but not declared in manifest permissions
+  - payroll.run.calculate: in spec but not declared in manifest permissions
+  - payroll.run.lock: in spec but not declared in manifest permissions
+  - payroll.run.pay: in spec but not declared in manifest permissions
+  - payroll.run.view: in spec but not declared in manifest permissions
+  - payroll.structure.manage: in spec but not declared in manifest permissions
+  - payroll.table.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/32):
+  - salary_structure: list page web/pages/SalaryStructureListPage.tsx missing
+  - salary_structure: form page web/pages/SalaryStructureFormPage.tsx missing
+  - salary_structure: detail page web/pages/SalaryStructureDetailPage.tsx missing
+  - salary_structure: no web/i18n/fa.json keys under "salary_structure."
+  - pay_component: list page web/pages/PayComponentListPage.tsx missing
+  - pay_component: form page web/pages/PayComponentFormPage.tsx missing
+  - pay_component: detail page web/pages/PayComponentDetailPage.tsx missing
+  - pay_component: no web/i18n/fa.json keys under "pay_component."
+  - employee_salary: list page web/pages/EmployeeSalaryListPage.tsx missing
+  - employee_salary: form page web/pages/EmployeeSalaryFormPage.tsx missing
+  - employee_salary: detail page web/pages/EmployeeSalaryDetailPage.tsx missing
+  - employee_salary: no web/i18n/fa.json keys under "employee_salary."
+  - payroll_run: list page web/pages/PayrollRunListPage.tsx missing
+  - payroll_run: form page web/pages/PayrollRunFormPage.tsx missing
+  - payroll_run: detail page web/pages/PayrollRunDetailPage.tsx missing
+  - payroll_run: no web/i18n/fa.json keys under "payroll_run."
+  - tax_table: list page web/pages/TaxTableListPage.tsx missing
+  - tax_table: form page web/pages/TaxTableFormPage.tsx missing
+  - tax_table: detail page web/pages/TaxTableDetailPage.tsx missing
+  - tax_table: no web/i18n/fa.json keys under "tax_table."
+  - insurance_rule: list page web/pages/InsuranceRuleListPage.tsx missing
+  - insurance_rule: form page web/pages/InsuranceRuleFormPage.tsx missing
+  - insurance_rule: detail page web/pages/InsuranceRuleDetailPage.tsx missing
+  - insurance_rule: no web/i18n/fa.json keys under "insurance_rule."
+  - loan: list page web/pages/LoanListPage.tsx missing
+  - loan: form page web/pages/LoanFormPage.tsx missing
+  - loan: detail page web/pages/LoanDetailPage.tsx missing
+  - loan: no web/i18n/fa.json keys under "loan."
+  - one_off_payment: list page web/pages/OneOffPaymentListPage.tsx missing
+  - one_off_payment: form page web/pages/OneOffPaymentFormPage.tsx missing
+  - one_off_payment: detail page web/pages/OneOffPaymentDetailPage.tsx missing
+  - one_off_payment: no web/i18n/fa.json keys under "one_off_payment."
+- ai_cov 0% (0/6):
+  - assistant: in spec but not declared in manifest ai.capabilities
+  - assistant: no test named *assistant*off* with assertions
+  - assistant: no test named *assistant*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/PayrollService.php:15: payslip only returns a trivial value
+  - backend/src/Services/PayrollService.php:20: costByCostCenter only returns a trivial value
+  - backend/src/Services/PayrollService.php:25: headcountCost only returns a trivial value
+  - backend/src/Services/PayrollService.php:30: previewRun only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## pricing — stub, score 0.8, FAIL
+
+- entity_cov 0% (0/34):
+  - PriceList: table missing (expected pricing__price_lists, 9 fields)
+  - PriceListLine: table missing (expected pricing__price_list_lines, 6 fields)
+  - DiscountRule: table missing (expected pricing__discount_rules, 7 fields)
+  - Campaign: table missing (expected pricing__campaigns, 4 fields)
+  - PriceChangeBatch: table missing (expected pricing__price_change_batches, 3 fields)
+- event_cov 0% (0/3):
+  - out pricing.pricelist.activated: not emitted via DomainEvent in src/
+  - out pricing.price.changed: not emitted via DomainEvent in src/
+  - in costing.cost.updated: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - resolve: not declared in a src/Contracts interface
+  - resolveBulk: not declared in a src/Contracts interface
+  - explain: not declared in a src/Contracts interface
+  - activeLists: not declared in a src/Contracts interface
+- rule_cov 0% (0/7):
+  - rule 1 "resolution order: party-specific > group > default list": no test named test_rule_*resolution*order*
+  - rule 2 "tiers by min_qty": no test named test_rule_*tiers*
+  - rule 3 "validity windows no overlap per (list,item,uom,min_qty)": no test named test_rule_*validity*windows*
+  - rule 4 "deterministic priority + stackable flag": no test named test_rule_*deterministic*priority*
+  - rule 5 "margin guard against cost if CostingService available (setting: war...": no test named test_rule_*margin*guard*
+  - rule 6 "price changes via approval workflow": no test named test_rule_*price*changes*
+  - rule 7 "history kept": no test named test_rule_*history*kept*
+- perm_cov 8.3% (1/12):
+  - pricing.campaign.manage: in spec but not declared in manifest permissions
+  - pricing.list.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - pricing.list.manage: not enforced by an API route or authorization check and not used by a UI route or page
+  - pricing.list.view: not enforced by an API route or authorization check
+  - pricing.price.override: not enforced by an API route or authorization check and not used by a UI route or page
+  - pricing.rule.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/12):
+  - price_list: list page web/pages/PriceListListPage.tsx missing
+  - price_list: form page web/pages/PriceListFormPage.tsx missing
+  - price_list: detail page web/pages/PriceListDetailPage.tsx missing
+  - price_list: no web/i18n/fa.json keys under "price_list."
+  - price_list_line: list page web/pages/PriceListLineListPage.tsx missing
+  - price_list_line: form page web/pages/PriceListLineFormPage.tsx missing
+  - price_list_line: detail page web/pages/PriceListLineDetailPage.tsx missing
+  - price_list_line: no web/i18n/fa.json keys under "price_list_line."
+  - discount_rule: list page web/pages/DiscountRuleListPage.tsx missing
+  - discount_rule: form page web/pages/DiscountRuleFormPage.tsx missing
+  - discount_rule: detail page web/pages/DiscountRuleDetailPage.tsx missing
+  - discount_rule: no web/i18n/fa.json keys under "discount_rule."
+- ai_cov 0% (0/9):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 2 finding(s)
+  - backend/src/Services/PricingService.php:34: resolveBulk only returns a trivial value
+  - backend/src/Services/PricingService.php:35: explain only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## print-barcode-qr — stub, score 0, FAIL
+
+- entity_cov 0% (0/0):
+  - specification missing: specs/print-barcode-qr.md
+- event_cov 0% (0/0):
+  - specification missing: specs/print-barcode-qr.md
+- contract_cov 0% (0/0):
+  - specification missing: specs/print-barcode-qr.md
+- rule_cov 0% (0/0):
+  - specification missing: specs/print-barcode-qr.md
+- perm_cov 0% (0/0):
+  - specification missing: specs/print-barcode-qr.md
+- ui_cov 0% (0/0):
+  - specification missing: specs/print-barcode-qr.md
+- ai_cov 0% (0/0):
+  - specification missing: specs/print-barcode-qr.md
+- anti-gaming: clean
+- tests: not_run (static gate not passed)
+
+## project-mgmt — stub, score 0.3, FAIL
+
+- entity_cov 0% (0/42):
+  - Project: table missing (expected project_mgmt__projects, 11 fields)
+  - Task: table missing (expected project_mgmt__tasks, 9 fields)
+  - Dependency: table missing (expected project_mgmt__dependencies, 4 fields)
+  - Resource: table missing (expected project_mgmt__resources, 2 fields)
+  - Timesheet: table missing (expected project_mgmt__timesheets, 5 fields)
+  - Risk: table missing (expected project_mgmt__risks, 5 fields)
+- event_cov 0% (0/7):
+  - out project-mgmt.project.created: not emitted via DomainEvent in src/
+  - out project-mgmt.project.closed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out project-mgmt.task.completed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out project-mgmt.task.overdue: not emitted via DomainEvent in src/ and not in manifest emits
+  - out project-mgmt.milestone.reached: not emitted via DomainEvent in src/ and not in manifest emits
+  - in sales.order.confirmed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in hr-core.employee.*: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - project: not declared in a src/Contracts interface
+  - tasks: not declared in a src/Contracts interface
+  - progress: not declared in a src/Contracts interface
+  - evm: not declared in a src/Contracts interface
+- rule_cov 0% (0/1):
+  - rule 1 "scheduling forward pass with calendars (OrgService), critical path ...": no test named test_rule_*scheduling*forward*
+- perm_cov 2.5% (1/40):
+  - project-mgmt.baseline.manage: in spec but not declared in manifest permissions
+  - project-mgmt.project.approve: in spec but not declared in manifest permissions
+  - project-mgmt.project.create: in spec but not declared in manifest permissions
+  - project-mgmt.project.update: in spec but not declared in manifest permissions
+  - project-mgmt.project.view: in spec but not declared in manifest permissions
+  - project-mgmt.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - project-mgmt.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - project-mgmt.record.view: not enforced by an API route or authorization check
+  - project-mgmt.risk.approve: in spec but not declared in manifest permissions
+  - project-mgmt.risk.create: in spec but not declared in manifest permissions
+  - project-mgmt.risk.update: in spec but not declared in manifest permissions
+  - project-mgmt.risk.view: in spec but not declared in manifest permissions
+  - project-mgmt.task.approve: in spec but not declared in manifest permissions
+  - project-mgmt.task.create: in spec but not declared in manifest permissions
+  - project-mgmt.task.update: in spec but not declared in manifest permissions
+  - project-mgmt.task.view: in spec but not declared in manifest permissions
+  - project-mgmt.timesheet.approve: in spec but not declared in manifest permissions
+  - project-mgmt.timesheet.create: in spec but not declared in manifest permissions
+  - project-mgmt.timesheet.update: in spec but not declared in manifest permissions
+  - project-mgmt.timesheet.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/24):
+  - project: list page web/pages/ProjectListPage.tsx missing
+  - project: form page web/pages/ProjectFormPage.tsx missing
+  - project: detail page web/pages/ProjectDetailPage.tsx missing
+  - project: no web/i18n/fa.json keys under "project."
+  - task: list page web/pages/TaskListPage.tsx missing
+  - task: form page web/pages/TaskFormPage.tsx missing
+  - task: detail page web/pages/TaskDetailPage.tsx missing
+  - task: no web/i18n/fa.json keys under "task."
+  - dependency: list page web/pages/DependencyListPage.tsx missing
+  - dependency: form page web/pages/DependencyFormPage.tsx missing
+  - dependency: detail page web/pages/DependencyDetailPage.tsx missing
+  - dependency: no web/i18n/fa.json keys under "dependency."
+  - resource: list page web/pages/ResourceListPage.tsx missing
+  - resource: form page web/pages/ResourceFormPage.tsx missing
+  - resource: detail page web/pages/ResourceDetailPage.tsx missing
+  - resource: no web/i18n/fa.json keys under "resource."
+  - timesheet: list page web/pages/TimesheetListPage.tsx missing
+  - timesheet: form page web/pages/TimesheetFormPage.tsx missing
+  - timesheet: detail page web/pages/TimesheetDetailPage.tsx missing
+  - timesheet: no web/i18n/fa.json keys under "timesheet."
+  - risk: list page web/pages/RiskListPage.tsx missing
+  - risk: form page web/pages/RiskFormPage.tsx missing
+  - risk: detail page web/pages/RiskDetailPage.tsx missing
+  - risk: no web/i18n/fa.json keys under "risk."
+- ai_cov 0% (0/12):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/ProjectMgmtService.php:15: project only returns a trivial value
+  - backend/src/Services/ProjectMgmtService.php:20: tasks only returns a trivial value
+  - backend/src/Services/ProjectMgmtService.php:25: progress only returns a trivial value
+  - backend/src/Services/ProjectMgmtService.php:30: evm only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## purchase-order — stub, score 0.4, FAIL
+
+- entity_cov 0% (0/42):
+  - PO: table missing (expected purchase_order__pos, 12 fields)
+  - POLine: table missing (expected purchase_order__po_lines, 14 fields)
+  - POSchedule: table missing (expected purchase_order__po_schedules, 3 fields)
+  - POCharge: table missing (expected purchase_order__po_charges, 3 fields)
+  - BlanketOrder: table missing (expected purchase_order__blanket_orders, 5 fields)
+- event_cov 0% (0/9):
+  - out purchase-order.po.approved: not emitted via DomainEvent in src/
+  - out purchase-order.po.sent: not emitted via DomainEvent in src/ and not in manifest emits
+  - out purchase-order.po.revised: not emitted via DomainEvent in src/ and not in manifest emits
+  - out purchase-order.po.cancelled: not emitted via DomainEvent in src/ and not in manifest emits
+  - out purchase-order.po.closed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out purchase-order.line.created: not emitted via DomainEvent in src/ and not in manifest emits
+  - in inventory.receipt.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in ar-ap.invoice.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in purchase-request.line.converted: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/5):
+  - find: not declared in a src/Contracts interface
+  - openLines: not declared in a src/Contracts interface
+  - expectedReceipts: not declared in a src/Contracts interface
+  - receivedSummary: not declared in a src/Contracts interface
+  - markInvoiced: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "price defaults from rfq award/pricing(purchase)/last PO": no test named test_rule_*price*defaults*
+  - rule 2 "tax from settings (VAT rate per company, exemptions per item category)": no test named test_rule_*settings*rate*
+  - rule 3 "receipt qty tolerance": no test named test_rule_*receipt*tolerance*
+  - rule 4 "closing with open qty requires reason": no test named test_rule_*closing*open*
+  - rule 5 "blanket releases decrement": no test named test_rule_*blanket*releases*
+  - rule 6 "supplier must be active & not blacklisted": no test named test_rule_*supplier*active*
+  - rule 7 "currency rate from multi-company": no test named test_rule_*currency*rate*
+  - rule 8 "landed-cost charges exposed to costing": no test named test_rule_*landed*cost*
+- perm_cov 4.2% (1/24):
+  - purchase-order.blanket.manage: in spec but not declared in manifest permissions
+  - purchase-order.po.approve: in spec but not declared in manifest permissions
+  - purchase-order.po.cancel: in spec but not declared in manifest permissions
+  - purchase-order.po.close: in spec but not declared in manifest permissions
+  - purchase-order.po.create: in spec but not declared in manifest permissions
+  - purchase-order.po.revise: in spec but not declared in manifest permissions
+  - purchase-order.po.send: in spec but not declared in manifest permissions
+  - purchase-order.po.update: in spec but not declared in manifest permissions
+  - purchase-order.po.view: in spec but not declared in manifest permissions
+  - purchase-order.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - purchase-order.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - purchase-order.record.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/20):
+  - po: list page web/pages/PoListPage.tsx missing
+  - po: form page web/pages/PoFormPage.tsx missing
+  - po: detail page web/pages/PoDetailPage.tsx missing
+  - po: no web/i18n/fa.json keys under "po."
+  - po_line: list page web/pages/PoLineListPage.tsx missing
+  - po_line: form page web/pages/PoLineFormPage.tsx missing
+  - po_line: detail page web/pages/PoLineDetailPage.tsx missing
+  - po_line: no web/i18n/fa.json keys under "po_line."
+  - po_schedule: list page web/pages/PoScheduleListPage.tsx missing
+  - po_schedule: form page web/pages/PoScheduleFormPage.tsx missing
+  - po_schedule: detail page web/pages/PoScheduleDetailPage.tsx missing
+  - po_schedule: no web/i18n/fa.json keys under "po_schedule."
+  - po_charge: list page web/pages/PoChargeListPage.tsx missing
+  - po_charge: form page web/pages/PoChargeFormPage.tsx missing
+  - po_charge: detail page web/pages/PoChargeDetailPage.tsx missing
+  - po_charge: no web/i18n/fa.json keys under "po_charge."
+  - blanket_order: list page web/pages/BlanketOrderListPage.tsx missing
+  - blanket_order: form page web/pages/BlanketOrderFormPage.tsx missing
+  - blanket_order: detail page web/pages/BlanketOrderDetailPage.tsx missing
+  - blanket_order: no web/i18n/fa.json keys under "blanket_order."
+- ai_cov 0% (0/9):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 5 finding(s)
+  - backend/src/Services/PurchaseOrderService.php:15: find only returns a trivial value
+  - backend/src/Services/PurchaseOrderService.php:20: openLines only returns a trivial value
+  - backend/src/Services/PurchaseOrderService.php:25: expectedReceipts only returns a trivial value
+  - backend/src/Services/PurchaseOrderService.php:30: receivedSummary only returns a trivial value
+  - backend/src/Services/PurchaseOrderService.php:35: markInvoiced only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## purchase-request — stub, score 0.5, FAIL
+
+- entity_cov 0% (0/20):
+  - PR: table missing (expected purchase_request__prs, 10 fields)
+  - PRLine: table missing (expected purchase_request__pr_lines, 8 fields)
+- event_cov 0% (0/7):
+  - out purchase-request.pr.submitted: not emitted via DomainEvent in src/
+  - out purchase-request.pr.approved: not emitted via DomainEvent in src/ and not in manifest emits
+  - out purchase-request.pr.rejected: not emitted via DomainEvent in src/ and not in manifest emits
+  - out purchase-request.line.converted: not emitted via DomainEvent in src/ and not in manifest emits
+  - in mrp.requisition.suggested: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in reorder-point.suggestion.accepted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in purchase-order.line.created: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - openLines: not declared in a src/Contracts interface
+  - markConverted: not declared in a src/Contracts interface
+  - release: not declared in a src/Contracts interface
+  - find: not declared in a src/Contracts interface
+- rule_cov 0% (0/5):
+  - rule 1 "free-text lines allowed only if setting on and require later item c...": no test named test_rule_*free*text*
+  - rule 2 "budget check (BudgetService optional, warn\|block)": no test named test_rule_*budget*check*
+  - rule 3 "stock-on-hand shown at entry (InventoryService optional)": no test named test_rule_*stock*hand*
+  - rule 4 "consolidation of approved lines across PRs": no test named test_rule_*consolidation*approved*
+  - rule 5 "auto-created PRs from events (mrp.requisition.suggested, reorder-po...": no test named test_rule_*auto*created*
+- perm_cov 5% (1/20):
+  - purchase-request.pr.approve: in spec but not declared in manifest permissions
+  - purchase-request.pr.cancel: in spec but not declared in manifest permissions
+  - purchase-request.pr.consolidate: in spec but not declared in manifest permissions
+  - purchase-request.pr.create: in spec but not declared in manifest permissions
+  - purchase-request.pr.submit: in spec but not declared in manifest permissions
+  - purchase-request.pr.update: in spec but not declared in manifest permissions
+  - purchase-request.pr.view: in spec but not declared in manifest permissions
+  - purchase-request.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - purchase-request.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - purchase-request.record.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/8):
+  - pr: list page web/pages/PrListPage.tsx missing
+  - pr: form page web/pages/PrFormPage.tsx missing
+  - pr: detail page web/pages/PrDetailPage.tsx missing
+  - pr: no web/i18n/fa.json keys under "pr."
+  - pr_line: list page web/pages/PrLineListPage.tsx missing
+  - pr_line: form page web/pages/PrLineFormPage.tsx missing
+  - pr_line: detail page web/pages/PrLineDetailPage.tsx missing
+  - pr_line: no web/i18n/fa.json keys under "pr_line."
+- ai_cov 0% (0/9):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/PurchaseRequestService.php:15: openLines only returns a trivial value
+  - backend/src/Services/PurchaseRequestService.php:20: markConverted only returns a trivial value
+  - backend/src/Services/PurchaseRequestService.php:25: release only returns a trivial value
+  - backend/src/Services/PurchaseRequestService.php:30: find only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## quality-inspection — stub, score 1.3, FAIL
+
+- entity_cov 0% (0/40):
+  - InspectionPlan: table missing (expected quality_inspection__inspection_plans, 5 fields)
+  - Characteristic: table missing (expected quality_inspection__characteristics, 9 fields)
+  - InspectionLot: table missing (expected quality_inspection__inspection_lots, 8 fields)
+  - Result: table missing (expected quality_inspection__results, 6 fields)
+  - UsageDecision: table missing (expected quality_inspection__usage_decisions, 2 fields)
+  - Certificate: table missing (expected quality_inspection__certificates, 4 fields)
+- event_cov 0% (0/5):
+  - out quality-inspection.lot.created: not emitted via DomainEvent in src/
+  - out quality-inspection.lot.decided: not emitted via DomainEvent in src/ and not in manifest emits
+  - out quality-inspection.result.out_of_spec: not emitted via DomainEvent in src/ and not in manifest emits
+  - out quality-inspection.certificate.issued: not emitted via DomainEvent in src/ and not in manifest emits
+  - in inventory.receipt.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/5):
+  - lotStatus: not declared in a src/Contracts interface
+  - isReleased: not declared in a src/Contracts interface
+  - supplierScore: not declared in a src/Contracts interface
+  - openLots: not declared in a src/Contracts interface
+  - spc: not declared in a src/Contracts interface
+- rule_cov 0% (0/7):
+  - rule 1 "lots auto-created on triggers (inventory.receipt.posted→IQC, produc...": no test named test_rule_*lots*auto*
+  - rule 2 "sample size from AQL table (configurable data table, include standa...": no test named test_rule_*sample*size*
+  - rule 3 "quantitative results auto-judge vs limits": no test named test_rule_*quantitative*results*
+  - rule 4 "decision gate emits stock bucket change (accept→available, reject→b...": no test named test_rule_*decision*gate*
+  - rule 5 "skip-lot rules by supplier score": no test named test_rule_*skip*supplier*
+  - rule 6 "results immutable after decision (amend by reopening with reason)": no test named test_rule_*results*immutable*
+  - rule 7 "certificates printable": no test named test_rule_*certificates*printable*
+- perm_cov 12.5% (1/8):
+  - quality-inspection.plan.manage: in spec but not declared in manifest permissions
+  - quality-inspection.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - quality-inspection.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - quality-inspection.record.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/24):
+  - inspection_plan: list page web/pages/InspectionPlanListPage.tsx missing
+  - inspection_plan: form page web/pages/InspectionPlanFormPage.tsx missing
+  - inspection_plan: detail page web/pages/InspectionPlanDetailPage.tsx missing
+  - inspection_plan: no web/i18n/fa.json keys under "inspection_plan."
+  - characteristic: list page web/pages/CharacteristicListPage.tsx missing
+  - characteristic: form page web/pages/CharacteristicFormPage.tsx missing
+  - characteristic: detail page web/pages/CharacteristicDetailPage.tsx missing
+  - characteristic: no web/i18n/fa.json keys under "characteristic."
+  - inspection_lot: list page web/pages/InspectionLotListPage.tsx missing
+  - inspection_lot: form page web/pages/InspectionLotFormPage.tsx missing
+  - inspection_lot: detail page web/pages/InspectionLotDetailPage.tsx missing
+  - inspection_lot: no web/i18n/fa.json keys under "inspection_lot."
+  - result: list page web/pages/ResultListPage.tsx missing
+  - result: form page web/pages/ResultFormPage.tsx missing
+  - result: detail page web/pages/ResultDetailPage.tsx missing
+  - result: no web/i18n/fa.json keys under "result."
+  - usage_decision: list page web/pages/UsageDecisionListPage.tsx missing
+  - usage_decision: form page web/pages/UsageDecisionFormPage.tsx missing
+  - usage_decision: detail page web/pages/UsageDecisionDetailPage.tsx missing
+  - usage_decision: no web/i18n/fa.json keys under "usage_decision."
+  - certificate: list page web/pages/CertificateListPage.tsx missing
+  - certificate: form page web/pages/CertificateFormPage.tsx missing
+  - certificate: detail page web/pages/CertificateDetailPage.tsx missing
+  - certificate: no web/i18n/fa.json keys under "certificate."
+- ai_cov 0% (0/15):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - ocr: in spec but not declared in manifest ai.capabilities
+  - ocr: no test named *ocr*off* with assertions
+  - ocr: no test named *ocr*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+- anti-gaming: 5 finding(s)
+  - backend/src/Services/QualityInspectionService.php:15: lotStatus only returns a trivial value
+  - backend/src/Services/QualityInspectionService.php:20: isReleased only returns a trivial value
+  - backend/src/Services/QualityInspectionService.php:25: supplierScore only returns a trivial value
+  - backend/src/Services/QualityInspectionService.php:30: openLots only returns a trivial value
+  - backend/src/Services/QualityInspectionService.php:35: spc only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## recruitment — stub, score 0.3, FAIL
+
+- entity_cov 0% (0/34):
+  - JobRequisition: table missing (expected recruitment__job_requisitions, 5 fields)
+  - JobPosting: table missing (expected recruitment__job_postings, 4 fields)
+  - Candidate: table missing (expected recruitment__candidates, 8 fields)
+  - Application: table missing (expected recruitment__applications, 5 fields)
+  - Interview: table missing (expected recruitment__interviews, 4 fields)
+  - Offer: table missing (expected recruitment__offers, 2 fields)
+- event_cov 0% (0/3):
+  - out recruitment.application.hired: not emitted via DomainEvent in src/
+  - out recruitment.requisition.filled: not emitted via DomainEvent in src/
+  - in hr-core.employee.hired: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/3):
+  - pipeline: not declared in a src/Contracts interface
+  - sourceStats: not declared in a src/Contracts interface
+  - timeToHire: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "requisition approval vs headcount in org-structure": no test named test_rule_*requisition*approval*
+  - rule 2 "duplicate candidate detection (national code/phone/email normalizat...": no test named test_rule_*duplicate*candidate*
+  - rule 3 "stage transitions with required scorecards": no test named test_rule_*stage*transitions*
+  - rule 4 "GDPR-like retention setting for rejected candidates": no test named test_rule_*gdpr*like*
+  - rule 5 "hire → creates hr-core employee draft via event/service": no test named test_rule_*hire*creates*
+  - rule 6 "blacklist/talent-pool flags": no test named test_rule_*blacklist*talent*
+- perm_cov 2.5% (1/40):
+  - recruitment.candidate.approve: in spec but not declared in manifest permissions
+  - recruitment.candidate.create: in spec but not declared in manifest permissions
+  - recruitment.candidate.sensitive.view: in spec but not declared in manifest permissions
+  - recruitment.candidate.update: in spec but not declared in manifest permissions
+  - recruitment.candidate.view: in spec but not declared in manifest permissions
+  - recruitment.interview.approve: in spec but not declared in manifest permissions
+  - recruitment.interview.create: in spec but not declared in manifest permissions
+  - recruitment.interview.update: in spec but not declared in manifest permissions
+  - recruitment.interview.view: in spec but not declared in manifest permissions
+  - recruitment.offer.approve: in spec but not declared in manifest permissions
+  - recruitment.offer.create: in spec but not declared in manifest permissions
+  - recruitment.offer.update: in spec but not declared in manifest permissions
+  - recruitment.offer.view: in spec but not declared in manifest permissions
+  - recruitment.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - recruitment.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - recruitment.record.view: not enforced by an API route or authorization check
+  - recruitment.requisition.approve: in spec but not declared in manifest permissions
+  - recruitment.requisition.create: in spec but not declared in manifest permissions
+  - recruitment.requisition.update: in spec but not declared in manifest permissions
+  - recruitment.requisition.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/24):
+  - job_requisition: list page web/pages/JobRequisitionListPage.tsx missing
+  - job_requisition: form page web/pages/JobRequisitionFormPage.tsx missing
+  - job_requisition: detail page web/pages/JobRequisitionDetailPage.tsx missing
+  - job_requisition: no web/i18n/fa.json keys under "job_requisition."
+  - job_posting: list page web/pages/JobPostingListPage.tsx missing
+  - job_posting: form page web/pages/JobPostingFormPage.tsx missing
+  - job_posting: detail page web/pages/JobPostingDetailPage.tsx missing
+  - job_posting: no web/i18n/fa.json keys under "job_posting."
+  - candidate: list page web/pages/CandidateListPage.tsx missing
+  - candidate: form page web/pages/CandidateFormPage.tsx missing
+  - candidate: detail page web/pages/CandidateDetailPage.tsx missing
+  - candidate: no web/i18n/fa.json keys under "candidate."
+  - application: list page web/pages/ApplicationListPage.tsx missing
+  - application: form page web/pages/ApplicationFormPage.tsx missing
+  - application: detail page web/pages/ApplicationDetailPage.tsx missing
+  - application: no web/i18n/fa.json keys under "application."
+  - interview: list page web/pages/InterviewListPage.tsx missing
+  - interview: form page web/pages/InterviewFormPage.tsx missing
+  - interview: detail page web/pages/InterviewDetailPage.tsx missing
+  - interview: no web/i18n/fa.json keys under "interview."
+  - offer: list page web/pages/OfferListPage.tsx missing
+  - offer: form page web/pages/OfferFormPage.tsx missing
+  - offer: detail page web/pages/OfferDetailPage.tsx missing
+  - offer: no web/i18n/fa.json keys under "offer."
+- ai_cov 0% (0/6):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/RecruitmentService.php:15: pipeline only returns a trivial value
+  - backend/src/Services/RecruitmentService.php:20: sourceStats only returns a trivial value
+  - backend/src/Services/RecruitmentService.php:25: timeToHire only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## reorder-point — stub, score 0.6, FAIL
+
+- entity_cov 0% (0/32):
+  - StockPolicy: table missing (expected reorder_point__stock_policies, 13 fields)
+  - ConsumptionStat: table missing (expected reorder_point__consumption_stats, 5 fields)
+  - Suggestion: table missing (expected reorder_point__suggestions, 6 fields)
+  - AbcXyzClass: table missing (expected reorder_point__abc_xyz_classes, 4 fields)
+- event_cov 0% (0/7):
+  - out reorder-point.suggestion.created: not emitted via DomainEvent in src/
+  - out reorder-point.suggestion.accepted: not emitted via DomainEvent in src/ and not in manifest emits
+  - out reorder-point.policy.changed: not emitted via DomainEvent in src/
+  - out reorder-point.class.updated: not emitted via DomainEvent in src/
+  - in inventory.stock.below_min: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in inventory.issue.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in purchase-order.po.received: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - policy: not declared in a src/Contracts interface
+  - suggestions: not declared in a src/Contracts interface
+  - classOf: not declared in a src/Contracts interface
+  - compute: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "stats from inventory valuation feed (issues only, excluding transfe...": no test named test_rule_*stats*inventory*
+  - rule 2 "safety stock = z×σ formula options": no test named test_rule_*safety*stock*
+  - rule 3 "ROP = demand during lead time + safety": no test named test_rule_*demand*during*
+  - rule 4 "suggestions created on schedule or when `inventory.stock.below_min`": no test named test_rule_*suggestions*created*
+  - rule 5 "accepted suggestion → purchase-request draft (source=reorder) or tr...": no test named test_rule_*accepted*suggestion*
+  - rule 6 "ABC by annual consumption value, XYZ by variability": no test named test_rule_*annual*consumption*
+  - rule 7 "slow/dead stock by days-since-last-movement thresholds": no test named test_rule_*slow*dead*
+  - rule 8 "policies approved by workflow when changed in bulk": no test named test_rule_*policies*approved*
+- perm_cov 5.6% (1/18):
+  - reorder-point.policy.manage: in spec but not declared in manifest permissions
+  - reorder-point.policy.view: in spec but not declared in manifest permissions
+  - reorder-point.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - reorder-point.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - reorder-point.record.view: not enforced by an API route or authorization check
+  - reorder-point.stats.view: in spec but not declared in manifest permissions
+  - reorder-point.suggestion.accept: in spec but not declared in manifest permissions
+  - reorder-point.suggestion.reject: in spec but not declared in manifest permissions
+  - reorder-point.suggestion.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/16):
+  - stock_policy: list page web/pages/StockPolicyListPage.tsx missing
+  - stock_policy: form page web/pages/StockPolicyFormPage.tsx missing
+  - stock_policy: detail page web/pages/StockPolicyDetailPage.tsx missing
+  - stock_policy: no web/i18n/fa.json keys under "stock_policy."
+  - consumption_stat: list page web/pages/ConsumptionStatListPage.tsx missing
+  - consumption_stat: form page web/pages/ConsumptionStatFormPage.tsx missing
+  - consumption_stat: detail page web/pages/ConsumptionStatDetailPage.tsx missing
+  - consumption_stat: no web/i18n/fa.json keys under "consumption_stat."
+  - suggestion: list page web/pages/SuggestionListPage.tsx missing
+  - suggestion: form page web/pages/SuggestionFormPage.tsx missing
+  - suggestion: detail page web/pages/SuggestionDetailPage.tsx missing
+  - suggestion: no web/i18n/fa.json keys under "suggestion."
+  - abc_xyz_class: list page web/pages/AbcXyzClassListPage.tsx missing
+  - abc_xyz_class: form page web/pages/AbcXyzClassFormPage.tsx missing
+  - abc_xyz_class: detail page web/pages/AbcXyzClassDetailPage.tsx missing
+  - abc_xyz_class: no web/i18n/fa.json keys under "abc_xyz_class."
+- ai_cov 0% (0/9):
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - nl_report: in spec but not declared in manifest ai.capabilities
+  - nl_report: no test named *nl_report*off* with assertions
+  - nl_report: no test named *nl_report*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/ReorderPointService.php:15: policy only returns a trivial value
+  - backend/src/Services/ReorderPointService.php:20: suggestions only returns a trivial value
+  - backend/src/Services/ReorderPointService.php:25: classOf only returns a trivial value
+  - backend/src/Services/ReorderPointService.php:30: compute only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## report-bi — stub, score 0.4, FAIL
+
+- entity_cov 0% (0/31):
+  - Report: table missing (expected report_bi__reports, 11 fields)
+  - Dashboard: table missing (expected report_bi__dashboards, 5 fields)
+  - Kpi: table missing (expected report_bi__kpis, 7 fields)
+  - Schedule: table missing (expected report_bi__schedules, 3 fields)
+  - AnalyticsFeed: table missing (expected report_bi__analytics_feeds, 0 fields)
+- event_cov 0% (0/2):
+  - out report-bi.report.published: not emitted via DomainEvent in src/
+  - out report-bi.kpi.breached: not emitted via DomainEvent in src/
+- contract_cov 0% (0/4):
+  - run: not declared in a src/Contracts interface
+  - datasets: not declared in a src/Contracts interface
+  - kpiValue: not declared in a src/Contracts interface
+  - runSchedule: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "data access only through DatasetProvider + user's permission and da...": no test named test_rule_*data*access*
+  - rule 2 "row-level security preserved": no test named test_rule_*level*security*
+  - rule 3 "cross-dataset joins by shared dimensions executed in-engine with li...": no test named test_rule_*cross*dataset*
+  - rule 4 "sensitive fields hidden unless permission": no test named test_rule_*sensitive*fields*
+  - rule 5 "heavy reports served from snapshots/queued runs (chunked for shared...": no test named test_rule_*heavy*reports*
+  - rule 6 "formulas via safe expression engine": no test named test_rule_*formulas*safe*
+  - rule 7 "export respects column permissions": no test named test_rule_*export*respects*
+  - rule 8 "schedules via outbox/cron": no test named test_rule_*schedules*outbox*
+- perm_cov 4.2% (1/24):
+  - report-bi.dashboard.create: in spec but not declared in manifest permissions
+  - report-bi.dashboard.share: in spec but not declared in manifest permissions
+  - report-bi.dashboard.view: in spec but not declared in manifest permissions
+  - report-bi.dataset.view: in spec but not declared in manifest permissions
+  - report-bi.kpi.manage: in spec but not declared in manifest permissions
+  - report-bi.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - report-bi.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - report-bi.record.view: not enforced by an API route or authorization check
+  - report-bi.report.create: in spec but not declared in manifest permissions
+  - report-bi.report.publish: in spec but not declared in manifest permissions
+  - report-bi.report.view: in spec but not declared in manifest permissions
+  - report-bi.schedule.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/20):
+  - report: list page web/pages/ReportListPage.tsx missing
+  - report: form page web/pages/ReportFormPage.tsx missing
+  - report: detail page web/pages/ReportDetailPage.tsx missing
+  - report: no web/i18n/fa.json keys under "report."
+  - dashboard: list page web/pages/DashboardListPage.tsx missing
+  - dashboard: form page web/pages/DashboardFormPage.tsx missing
+  - dashboard: detail page web/pages/DashboardDetailPage.tsx missing
+  - dashboard: no web/i18n/fa.json keys under "dashboard."
+  - kpi: list page web/pages/KpiListPage.tsx missing
+  - kpi: form page web/pages/KpiFormPage.tsx missing
+  - kpi: detail page web/pages/KpiDetailPage.tsx missing
+  - kpi: no web/i18n/fa.json keys under "kpi."
+  - schedule: list page web/pages/ScheduleListPage.tsx missing
+  - schedule: form page web/pages/ScheduleFormPage.tsx missing
+  - schedule: detail page web/pages/ScheduleDetailPage.tsx missing
+  - schedule: no web/i18n/fa.json keys under "schedule."
+  - analytics_feed: list page web/pages/AnalyticsFeedListPage.tsx missing
+  - analytics_feed: form page web/pages/AnalyticsFeedFormPage.tsx missing
+  - analytics_feed: detail page web/pages/AnalyticsFeedDetailPage.tsx missing
+  - analytics_feed: no web/i18n/fa.json keys under "analytics_feed."
+- ai_cov 0% (0/12):
+  - nl_report: in spec but not declared in manifest ai.capabilities
+  - nl_report: no test named *nl_report*off* with assertions
+  - nl_report: no test named *nl_report*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/ReportBiService.php:15: run only returns a trivial value
+  - backend/src/Services/ReportBiService.php:20: datasets only returns a trivial value
+  - backend/src/Services/ReportBiService.php:25: kpiValue only returns a trivial value
+  - backend/src/Services/ReportBiService.php:30: runSchedule only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## rfq — stub, score 0.6, FAIL
+
+- entity_cov 0% (0/39):
+  - RFQ: table missing (expected rfq__rfqs, 6 fields)
+  - RFQInvitation: table missing (expected rfq__rfq_invitations, 4 fields)
+  - Quote: table missing (expected rfq__quotes, 9 fields)
+  - QuoteLine: table missing (expected rfq__quote_lines, 6 fields)
+  - EvaluationCriteria: table missing (expected rfq__evaluation_criterias, 5 fields)
+  - Award: table missing (expected rfq__awards, 3 fields)
+- event_cov 0% (0/2):
+  - out rfq.rfq.sent: not emitted via DomainEvent in src/
+  - in purchase-request.pr.approved: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - create: not declared in a src/Contracts interface
+  - getAward: not declared in a src/Contracts interface
+  - bestPrice: not declared in a src/Contracts interface
+  - history: not declared in a src/Contracts interface
+- rule_cov 0% (0/7):
+  - rule 1 "quotes accepted until deadline (override by permission)": no test named test_rule_*quotes*accepted*
+  - rule 2 "comparison normalizes currency/UoM/payment terms (net-present-value...": no test named test_rule_*comparison*normalizes*
+  - rule 3 "weighted scoring using supplier rating from supplier-evaluation if ...": no test named test_rule_*weighted*scoring*
+  - rule 4 "awarding requires approval by amount": no test named test_rule_*awarding*requires*
+  - rule 5 "awarded lines can split between suppliers": no test named test_rule_*awarded*lines*
+  - rule 6 "revision rounds supported": no test named test_rule_*revision*rounds*
+  - rule 7 "losing suppliers notified (notifications)": no test named test_rule_*losing*suppliers*
+- perm_cov 5.6% (1/18):
+  - rfq.quote.enter: in spec but not declared in manifest permissions
+  - rfq.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - rfq.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - rfq.record.view: not enforced by an API route or authorization check
+  - rfq.rfq.award: in spec but not declared in manifest permissions
+  - rfq.rfq.create: in spec but not declared in manifest permissions
+  - rfq.rfq.evaluate: in spec but not declared in manifest permissions
+  - rfq.rfq.send: in spec but not declared in manifest permissions
+  - rfq.rfq.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/24):
+  - rfq: list page web/pages/RfqListPage.tsx missing
+  - rfq: form page web/pages/RfqFormPage.tsx missing
+  - rfq: detail page web/pages/RfqDetailPage.tsx missing
+  - rfq: no web/i18n/fa.json keys under "rfq."
+  - rfq_invitation: list page web/pages/RfqInvitationListPage.tsx missing
+  - rfq_invitation: form page web/pages/RfqInvitationFormPage.tsx missing
+  - rfq_invitation: detail page web/pages/RfqInvitationDetailPage.tsx missing
+  - rfq_invitation: no web/i18n/fa.json keys under "rfq_invitation."
+  - quote: list page web/pages/QuoteListPage.tsx missing
+  - quote: form page web/pages/QuoteFormPage.tsx missing
+  - quote: detail page web/pages/QuoteDetailPage.tsx missing
+  - quote: no web/i18n/fa.json keys under "quote."
+  - quote_line: list page web/pages/QuoteLineListPage.tsx missing
+  - quote_line: form page web/pages/QuoteLineFormPage.tsx missing
+  - quote_line: detail page web/pages/QuoteLineDetailPage.tsx missing
+  - quote_line: no web/i18n/fa.json keys under "quote_line."
+  - evaluation_criteria: list page web/pages/EvaluationCriteriaListPage.tsx missing
+  - evaluation_criteria: form page web/pages/EvaluationCriteriaFormPage.tsx missing
+  - evaluation_criteria: detail page web/pages/EvaluationCriteriaDetailPage.tsx missing
+  - evaluation_criteria: no web/i18n/fa.json keys under "evaluation_criteria."
+  - award: list page web/pages/AwardListPage.tsx missing
+  - award: form page web/pages/AwardFormPage.tsx missing
+  - award: detail page web/pages/AwardDetailPage.tsx missing
+  - award: no web/i18n/fa.json keys under "award."
+- ai_cov 0% (0/9):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - ocr: in spec but not declared in manifest ai.capabilities
+  - ocr: no test named *ocr*off* with assertions
+  - ocr: no test named *ocr*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/RfqService.php:15: create only returns a trivial value
+  - backend/src/Services/RfqService.php:20: getAward only returns a trivial value
+  - backend/src/Services/RfqService.php:25: bestPrice only returns a trivial value
+  - backend/src/Services/RfqService.php:30: history only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## routing — stub, score 0.6, FAIL
+
+- entity_cov 0% (0/37):
+  - WorkCenter: table missing (expected routing__work_centers, 12 fields)
+  - Routing: table missing (expected routing__routings, 8 fields)
+  - Operation: table missing (expected routing__operations, 14 fields)
+- event_cov 0% (0/3):
+  - out routing.routing.approved: not emitted via DomainEvent in src/
+  - out routing.workcenter.updated: not emitted via DomainEvent in src/ and not in manifest emits
+  - in asset-registry.asset.status_changed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/5):
+  - findActive: not declared in a src/Contracts interface
+  - workCenter: not declared in a src/Contracts interface
+  - capacity: not declared in a src/Contracts interface
+  - standardTime: not declared in a src/Contracts interface
+  - costRates: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "unique op sequence": no test named test_rule_*unique*sequence*
+  - rule 2 "approved routing immutable (new revision)": no test named test_rule_*approved*routing*
+  - rule 3 "times in minutes, converted by calendar": no test named test_rule_*times*minutes*
+  - rule 4 "alternate work centers with priority & efficiency factor": no test named test_rule_*alternate*work*
+  - rule 5 "subcontract ops expose purchase service hook": no test named test_rule_*subcontract*expose*
+  - rule 6 "capacity = calendar working minutes × efficiency": no test named test_rule_*capacity*calendar*
+- perm_cov 5.6% (1/18):
+  - routing.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - routing.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - routing.record.view: not enforced by an API route or authorization check
+  - routing.routing.approve: in spec but not declared in manifest permissions
+  - routing.routing.manage: in spec but not declared in manifest permissions
+  - routing.routing.view: in spec but not declared in manifest permissions
+  - routing.workcenter.approve: in spec but not declared in manifest permissions
+  - routing.workcenter.manage: in spec but not declared in manifest permissions
+  - routing.workcenter.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/12):
+  - work_center: list page web/pages/WorkCenterListPage.tsx missing
+  - work_center: form page web/pages/WorkCenterFormPage.tsx missing
+  - work_center: detail page web/pages/WorkCenterDetailPage.tsx missing
+  - work_center: no web/i18n/fa.json keys under "work_center."
+  - routing: list page web/pages/RoutingListPage.tsx missing
+  - routing: form page web/pages/RoutingFormPage.tsx missing
+  - routing: detail page web/pages/RoutingDetailPage.tsx missing
+  - routing: no web/i18n/fa.json keys under "routing."
+  - operation: list page web/pages/OperationListPage.tsx missing
+  - operation: form page web/pages/OperationFormPage.tsx missing
+  - operation: detail page web/pages/OperationDetailPage.tsx missing
+  - operation: no web/i18n/fa.json keys under "operation."
+- ai_cov 0% (0/6):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+- anti-gaming: 5 finding(s)
+  - backend/src/Services/RoutingService.php:15: findActive only returns a trivial value
+  - backend/src/Services/RoutingService.php:20: workCenter only returns a trivial value
+  - backend/src/Services/RoutingService.php:25: capacity only returns a trivial value
+  - backend/src/Services/RoutingService.php:30: standardTime only returns a trivial value
+  - backend/src/Services/RoutingService.php:35: costRates only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## sales — stub, score 0.2, FAIL
+
+- entity_cov 0% (0/37):
+  - Quotation: table missing (expected sales__quotations, 1 fields)
+  - SalesOrder: table missing (expected sales__sales_orders, 8 fields)
+  - SOLine: table missing (expected sales__so_lines, 11 fields)
+  - Delivery: table missing (expected sales__deliveries, 5 fields)
+  - SalesInvoice: table missing (expected sales__sales_invoices, 7 fields)
+- event_cov 0% (0/11):
+  - out sales.order.confirmed: not emitted via DomainEvent in src/
+  - out sales.order.cancelled: not emitted via DomainEvent in src/ and not in manifest emits
+  - out sales.delivery.requested: not emitted via DomainEvent in src/
+  - out sales.delivery.posted: not emitted via DomainEvent in src/ and not in manifest emits
+  - out sales.invoice.issued: not emitted via DomainEvent in src/
+  - out sales.invoice.cancelled: not emitted via DomainEvent in src/ and not in manifest emits
+  - out sales.return.posted: not emitted via DomainEvent in src/
+  - in inventory.issue.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in ar-ap.payment.allocated: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in tax-moadian.invoice.accepted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in tax-moadian.invoice.rejected: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - openOrders: not declared in a src/Contracts interface
+  - backlog: not declared in a src/Contracts interface
+  - invoiceTotals: not declared in a src/Contracts interface
+  - find: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "credit check on confirm (limit, overdue balance via ArApService opt...": no test named test_rule_*credit*check*
+  - rule 2 "price via PricingService (manual override needs permission)": no test named test_rule_*price*pricing*
+  - rule 3 "stock availability & reservation on confirm (setting)": no test named test_rule_*stock*availability*
+  - rule 4 "partial deliveries/invoicing": no test named test_rule_*partial*deliveries*
+  - rule 5 "invoice cannot exceed delivered (setting)": no test named test_rule_*invoice*cannot*
+  - rule 6 "numbering sequences per fiscal year": no test named test_rule_*numbering*sequences*
+  - rule 7 "cancel only if no downstream docs": no test named test_rule_*cancel*downstream*
+  - rule 8 "return requires reference and reason, restocks to quarantine by def...": no test named test_rule_*return*requires*
+- perm_cov 1.7% (1/60):
+  - sales.credit.override: in spec but not declared in manifest permissions
+  - sales.delivery.approve: in spec but not declared in manifest permissions
+  - sales.delivery.cancel: in spec but not declared in manifest permissions
+  - sales.delivery.create: in spec but not declared in manifest permissions
+  - sales.delivery.update: in spec but not declared in manifest permissions
+  - sales.delivery.view: in spec but not declared in manifest permissions
+  - sales.invoice.approve: in spec but not declared in manifest permissions
+  - sales.invoice.cancel: in spec but not declared in manifest permissions
+  - sales.invoice.create: in spec but not declared in manifest permissions
+  - sales.invoice.update: in spec but not declared in manifest permissions
+  - sales.invoice.view: in spec but not declared in manifest permissions
+  - sales.order.approve: in spec but not declared in manifest permissions
+  - sales.order.cancel: in spec but not declared in manifest permissions
+  - sales.order.create: in spec but not declared in manifest permissions
+  - sales.order.update: in spec but not declared in manifest permissions
+  - sales.order.view: in spec but not declared in manifest permissions
+  - sales.price.override: in spec but not declared in manifest permissions
+  - sales.quotation.approve: in spec but not declared in manifest permissions
+  - sales.quotation.cancel: in spec but not declared in manifest permissions
+  - sales.quotation.create: in spec but not declared in manifest permissions
+  - sales.quotation.update: in spec but not declared in manifest permissions
+  - sales.quotation.view: in spec but not declared in manifest permissions
+  - sales.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - sales.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - sales.record.view: not enforced by an API route or authorization check
+  - sales.return.approve: in spec but not declared in manifest permissions
+  - sales.return.cancel: in spec but not declared in manifest permissions
+  - sales.return.create: in spec but not declared in manifest permissions
+  - sales.return.update: in spec but not declared in manifest permissions
+  - sales.return.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/20):
+  - quotation: list page web/pages/QuotationListPage.tsx missing
+  - quotation: form page web/pages/QuotationFormPage.tsx missing
+  - quotation: detail page web/pages/QuotationDetailPage.tsx missing
+  - quotation: no web/i18n/fa.json keys under "quotation."
+  - sales_order: list page web/pages/SalesOrderListPage.tsx missing
+  - sales_order: form page web/pages/SalesOrderFormPage.tsx missing
+  - sales_order: detail page web/pages/SalesOrderDetailPage.tsx missing
+  - sales_order: no web/i18n/fa.json keys under "sales_order."
+  - so_line: list page web/pages/SoLineListPage.tsx missing
+  - so_line: form page web/pages/SoLineFormPage.tsx missing
+  - so_line: detail page web/pages/SoLineDetailPage.tsx missing
+  - so_line: no web/i18n/fa.json keys under "so_line."
+  - delivery: list page web/pages/DeliveryListPage.tsx missing
+  - delivery: form page web/pages/DeliveryFormPage.tsx missing
+  - delivery: detail page web/pages/DeliveryDetailPage.tsx missing
+  - delivery: no web/i18n/fa.json keys under "delivery."
+  - sales_invoice: list page web/pages/SalesInvoiceListPage.tsx missing
+  - sales_invoice: form page web/pages/SalesInvoiceFormPage.tsx missing
+  - sales_invoice: detail page web/pages/SalesInvoiceDetailPage.tsx missing
+  - sales_invoice: no web/i18n/fa.json keys under "sales_invoice."
+- ai_cov 0% (0/15):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - nl_report: in spec but not declared in manifest ai.capabilities
+  - nl_report: no test named *nl_report*off* with assertions
+  - nl_report: no test named *nl_report*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/SalesService.php:15: openOrders only returns a trivial value
+  - backend/src/Services/SalesService.php:20: backlog only returns a trivial value
+  - backend/src/Services/SalesService.php:25: invoiceTotals only returns a trivial value
+  - backend/src/Services/SalesService.php:30: find only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## schedule-optimizer — stub, score 5.8, FAIL
+
+- entity_cov 0% (0/12):
+  - OptimizationRun: table missing (expected schedule_optimizer__optimization_runs, 5 fields)
+  - Solution: table missing (expected schedule_optimizer__solutions, 5 fields)
+- event_cov 0% (0/2):
+  - out schedule-optimizer.solution.ready: not emitted via DomainEvent in src/
+  - in scheduling.schedule.draft_requested: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - run: not declared in a src/Contracts interface
+  - status: not declared in a src/Contracts interface
+  - solution: not declared in a src/Contracts interface
+  - compare: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "payload built by PHP from SchedulingService data (ops, durations, p...": no test named test_rule_*payload*built*
+  - rule 2 "Python solves with OR-Tools CP-SAT (job-shop with optional interval...": no test named test_rule_*python*solves*
+  - rule 3 "results are PROPOSED schedule versions in `scheduling` (never overw...": no test named test_rule_*results*proposed*
+  - rule 4 "infeasibility explanations (which constraints conflict) returned": no test named test_rule_*infeasibility*explanations*
+  - rule 5 "problem size guards with decomposition by work-center groups/time w...": no test named test_rule_*problem*size*
+  - rule 6 "deterministic with seed": no test named test_rule_*deterministic*seed*
+- perm_cov 8.3% (1/12):
+  - schedule-optimizer.apply: in spec but not declared in manifest permissions
+  - schedule-optimizer.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - schedule-optimizer.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - schedule-optimizer.record.view: not enforced by an API route or authorization check
+  - schedule-optimizer.run: in spec but not declared in manifest permissions
+  - schedule-optimizer.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/8):
+  - optimization_run: list page web/pages/OptimizationRunListPage.tsx missing
+  - optimization_run: form page web/pages/OptimizationRunFormPage.tsx missing
+  - optimization_run: detail page web/pages/OptimizationRunDetailPage.tsx missing
+  - optimization_run: no web/i18n/fa.json keys under "optimization_run."
+  - solution: list page web/pages/SolutionListPage.tsx missing
+  - solution: form page web/pages/SolutionFormPage.tsx missing
+  - solution: detail page web/pages/SolutionDetailPage.tsx missing
+  - solution: no web/i18n/fa.json keys under "solution."
+- ai_cov 100% (0/0): complete
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/ScheduleOptimizerService.php:15: run only returns a trivial value
+  - backend/src/Services/ScheduleOptimizerService.php:20: status only returns a trivial value
+  - backend/src/Services/ScheduleOptimizerService.php:25: solution only returns a trivial value
+  - backend/src/Services/ScheduleOptimizerService.php:30: compare only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## scheduling — stub, score 0.6, FAIL
+
+- entity_cov 0% (0/30):
+  - ScheduleVersion: table missing (expected scheduling__schedule_versions, 5 fields)
+  - ScheduledOp: table missing (expected scheduling__scheduled_ops, 7 fields)
+  - SetupMatrix: table missing (expected scheduling__setup_matrixes, 4 fields)
+  - PriorityRule: table missing (expected scheduling__priority_rules, 2 fields)
+  - Constraint: table missing (expected scheduling__constraints, 3 fields)
+  - Conflict: table missing (expected scheduling__conflicts, 3 fields)
+- event_cov 0% (0/7):
+  - out scheduling.schedule.published: not emitted via DomainEvent in src/
+  - out scheduling.conflict.detected: not emitted via DomainEvent in src/
+  - in work-order.wo.released: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in work-order.wo.cancelled: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in mes.operation.reported: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in cmms.workorder.planned: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in asset-registry.asset.status_changed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/5):
+  - dispatchList: not declared in a src/Contracts interface
+  - loadByWorkCenter: not declared in a src/Contracts interface
+  - promiseDate: not declared in a src/Contracts interface
+  - reschedule: not declared in a src/Contracts interface
+  - conflicts: not declared in a src/Contracts interface
+- rule_cov 0% (0/5):
+  - rule 1 "forward/backward scheduling honoring work-center calendars/shifts (...": no test named test_rule_*forward*backward*
+  - rule 2 "dispatch rules (EDD, SPT, critical ratio, custom)": no test named test_rule_*dispatch*critical*
+  - rule 3 "manual drag-lock operations": no test named test_rule_*manual*drag*
+  - rule 4 "optimizer: built-in heuristic in PHP, optional Python OR-Tools (sch...": no test named test_rule_*optimizer*built*
+  - rule 5 "publishing updates WO planned dates and MES dispatch": no test named test_rule_*publishing*updates*
+- perm_cov 6.3% (1/16):
+  - scheduling.constraint.manage: in spec but not declared in manifest permissions
+  - scheduling.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - scheduling.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - scheduling.record.view: not enforced by an API route or authorization check
+  - scheduling.rule.manage: in spec but not declared in manifest permissions
+  - scheduling.schedule.edit: in spec but not declared in manifest permissions
+  - scheduling.schedule.publish: in spec but not declared in manifest permissions
+  - scheduling.schedule.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/24):
+  - schedule_version: list page web/pages/ScheduleVersionListPage.tsx missing
+  - schedule_version: form page web/pages/ScheduleVersionFormPage.tsx missing
+  - schedule_version: detail page web/pages/ScheduleVersionDetailPage.tsx missing
+  - schedule_version: no web/i18n/fa.json keys under "schedule_version."
+  - scheduled_op: list page web/pages/ScheduledOpListPage.tsx missing
+  - scheduled_op: form page web/pages/ScheduledOpFormPage.tsx missing
+  - scheduled_op: detail page web/pages/ScheduledOpDetailPage.tsx missing
+  - scheduled_op: no web/i18n/fa.json keys under "scheduled_op."
+  - setup_matrix: list page web/pages/SetupMatrixListPage.tsx missing
+  - setup_matrix: form page web/pages/SetupMatrixFormPage.tsx missing
+  - setup_matrix: detail page web/pages/SetupMatrixDetailPage.tsx missing
+  - setup_matrix: no web/i18n/fa.json keys under "setup_matrix."
+  - priority_rule: list page web/pages/PriorityRuleListPage.tsx missing
+  - priority_rule: form page web/pages/PriorityRuleFormPage.tsx missing
+  - priority_rule: detail page web/pages/PriorityRuleDetailPage.tsx missing
+  - priority_rule: no web/i18n/fa.json keys under "priority_rule."
+  - constraint: list page web/pages/ConstraintListPage.tsx missing
+  - constraint: form page web/pages/ConstraintFormPage.tsx missing
+  - constraint: detail page web/pages/ConstraintDetailPage.tsx missing
+  - constraint: no web/i18n/fa.json keys under "constraint."
+  - conflict: list page web/pages/ConflictListPage.tsx missing
+  - conflict: form page web/pages/ConflictFormPage.tsx missing
+  - conflict: detail page web/pages/ConflictDetailPage.tsx missing
+  - conflict: no web/i18n/fa.json keys under "conflict."
+- ai_cov 0% (0/9):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 5 finding(s)
+  - backend/src/Services/SchedulingService.php:15: dispatchList only returns a trivial value
+  - backend/src/Services/SchedulingService.php:20: loadByWorkCenter only returns a trivial value
+  - backend/src/Services/SchedulingService.php:25: promiseDate only returns a trivial value
+  - backend/src/Services/SchedulingService.php:30: reschedule only returns a trivial value
+  - backend/src/Services/SchedulingService.php:35: conflicts only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## scrap-byproduct — stub, score 0.8, FAIL
+
+- entity_cov 0% (0/27):
+  - ScrapRecord: table missing (expected scrap_byproduct__scrap_records, 11 fields)
+  - ByProductRule: table missing (expected scrap_byproduct__by_product_rules, 4 fields)
+  - RecycleLoop: table missing (expected scrap_byproduct__recycle_loops, 2 fields)
+  - ScrapSale: table missing (expected scrap_byproduct__scrap_sales, 4 fields)
+  - ScrapTarget: table missing (expected scrap_byproduct__scrap_targets, 1 fields)
+- event_cov 0% (0/7):
+  - out scrap-byproduct.scrap.recorded: not emitted via DomainEvent in src/
+  - out scrap-byproduct.scrap.disposed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out scrap-byproduct.scrap.recycled: not emitted via DomainEvent in src/ and not in manifest emits
+  - out scrap-byproduct.byproduct.received: not emitted via DomainEvent in src/ and not in manifest emits
+  - in mes.production.reported: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in work-order.output.received: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in quality-inspection.lot.decided: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - rateByWorkCenter: not declared in a src/Contracts interface
+  - rateByItem: not declared in a src/Contracts interface
+  - expectedByProduct: not declared in a src/Contracts interface
+  - disposition: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "scrap records created from MES/WO reports and inventory adjustments...": no test named test_rule_*scrap*records*
+  - rule 2 "disposition decides stock movement (to scrap warehouse, regrind/rec...": no test named test_rule_*disposition*decides*
+  - rule 3 "recycle loops preserve lot link": no test named test_rule_*recycle*loops*
+  - rule 4 "valuation hints sent to costing (material cost carried vs net reali...": no test named test_rule_*valuation*hints*
+  - rule 5 "thresholds trigger alerts": no test named test_rule_*thresholds*trigger*
+  - rule 6 "metal-scrap yard weighing integrates with weighbridge when enabled": no test named test_rule_*metal*scrap*
+- perm_cov 8.3% (1/12):
+  - scrap-byproduct.reason.manage: in spec but not declared in manifest permissions
+  - scrap-byproduct.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - scrap-byproduct.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - scrap-byproduct.record.dispose: in spec but not declared in manifest permissions
+  - scrap-byproduct.record.view: not enforced by an API route or authorization check
+  - scrap-byproduct.rule.manage: in spec but not declared in manifest permissions
+- ui_cov 0% (0/20):
+  - scrap_record: list page web/pages/ScrapRecordListPage.tsx missing
+  - scrap_record: form page web/pages/ScrapRecordFormPage.tsx missing
+  - scrap_record: detail page web/pages/ScrapRecordDetailPage.tsx missing
+  - scrap_record: no web/i18n/fa.json keys under "scrap_record."
+  - by_product_rule: list page web/pages/ByProductRuleListPage.tsx missing
+  - by_product_rule: form page web/pages/ByProductRuleFormPage.tsx missing
+  - by_product_rule: detail page web/pages/ByProductRuleDetailPage.tsx missing
+  - by_product_rule: no web/i18n/fa.json keys under "by_product_rule."
+  - recycle_loop: list page web/pages/RecycleLoopListPage.tsx missing
+  - recycle_loop: form page web/pages/RecycleLoopFormPage.tsx missing
+  - recycle_loop: detail page web/pages/RecycleLoopDetailPage.tsx missing
+  - recycle_loop: no web/i18n/fa.json keys under "recycle_loop."
+  - scrap_sale: list page web/pages/ScrapSaleListPage.tsx missing
+  - scrap_sale: form page web/pages/ScrapSaleFormPage.tsx missing
+  - scrap_sale: detail page web/pages/ScrapSaleDetailPage.tsx missing
+  - scrap_sale: no web/i18n/fa.json keys under "scrap_sale."
+  - scrap_target: list page web/pages/ScrapTargetListPage.tsx missing
+  - scrap_target: form page web/pages/ScrapTargetFormPage.tsx missing
+  - scrap_target: detail page web/pages/ScrapTargetDetailPage.tsx missing
+  - scrap_target: no web/i18n/fa.json keys under "scrap_target."
+- ai_cov 0% (0/9):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/ScrapByproductService.php:15: rateByWorkCenter only returns a trivial value
+  - backend/src/Services/ScrapByproductService.php:20: rateByItem only returns a trivial value
+  - backend/src/Services/ScrapByproductService.php:25: expectedByProduct only returns a trivial value
+  - backend/src/Services/ScrapByproductService.php:30: disposition only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## shipping-distribution — stub, score 0.3, FAIL
+
+- entity_cov 0% (0/26):
+  - Carrier: table missing (expected shipping_distribution__carriers, 3 fields)
+  - Vehicle: table missing (expected shipping_distribution__vehicles, 4 fields)
+  - Shipment: table missing (expected shipping_distribution__shipments, 10 fields)
+  - ShipmentStop: table missing (expected shipping_distribution__shipment_stops, 5 fields)
+- event_cov 0% (0/8):
+  - out shipping-distribution.shipment.dispatched: not emitted via DomainEvent in src/
+  - out shipping-distribution.shipment.delivered: not emitted via DomainEvent in src/ and not in manifest emits
+  - out shipping-distribution.shipment.failed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out shipping-distribution.freight.cost_posted: not emitted via DomainEvent in src/
+  - in sales.delivery.requested: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in sales.delivery.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in weighbridge.ticket.completed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in gate-visitor.pass.exited: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - shipmentFor: not declared in a src/Contracts interface
+  - eta: not declared in a src/Contracts interface
+  - carrierCost: not declared in a src/Contracts interface
+  - otif: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "load building respects weight/volume limits": no test named test_rule_*load*building*
+  - rule 2 "shipment locks deliveries (sales.delivery) status transitions via e...": no test named test_rule_*shipment*locks*
+  - rule 3 "freight cost allocation to deliveries/customers (setting)": no test named test_rule_*freight*cost*
+  - rule 4 "proof of delivery capture mobile": no test named test_rule_*proof*delivery*
+  - rule 5 "delivery performance (OTIF) metrics": no test named test_rule_*delivery*performance*
+  - rule 6 "optional route optimization via python (OR-Tools) as proposal": no test named test_rule_*route*optimization*
+- perm_cov 2.8% (1/36):
+  - shipping-distribution.carrier.close: in spec but not declared in manifest permissions
+  - shipping-distribution.carrier.create: in spec but not declared in manifest permissions
+  - shipping-distribution.carrier.dispatch: in spec but not declared in manifest permissions
+  - shipping-distribution.carrier.update: in spec but not declared in manifest permissions
+  - shipping-distribution.carrier.view: in spec but not declared in manifest permissions
+  - shipping-distribution.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - shipping-distribution.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - shipping-distribution.record.view: not enforced by an API route or authorization check
+  - shipping-distribution.shipment.close: in spec but not declared in manifest permissions
+  - shipping-distribution.shipment.create: in spec but not declared in manifest permissions
+  - shipping-distribution.shipment.dispatch: in spec but not declared in manifest permissions
+  - shipping-distribution.shipment.update: in spec but not declared in manifest permissions
+  - shipping-distribution.shipment.view: in spec but not declared in manifest permissions
+  - shipping-distribution.waybill.close: in spec but not declared in manifest permissions
+  - shipping-distribution.waybill.create: in spec but not declared in manifest permissions
+  - shipping-distribution.waybill.dispatch: in spec but not declared in manifest permissions
+  - shipping-distribution.waybill.update: in spec but not declared in manifest permissions
+  - shipping-distribution.waybill.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/16):
+  - carrier: list page web/pages/CarrierListPage.tsx missing
+  - carrier: form page web/pages/CarrierFormPage.tsx missing
+  - carrier: detail page web/pages/CarrierDetailPage.tsx missing
+  - carrier: no web/i18n/fa.json keys under "carrier."
+  - vehicle: list page web/pages/VehicleListPage.tsx missing
+  - vehicle: form page web/pages/VehicleFormPage.tsx missing
+  - vehicle: detail page web/pages/VehicleDetailPage.tsx missing
+  - vehicle: no web/i18n/fa.json keys under "vehicle."
+  - shipment: list page web/pages/ShipmentListPage.tsx missing
+  - shipment: form page web/pages/ShipmentFormPage.tsx missing
+  - shipment: detail page web/pages/ShipmentDetailPage.tsx missing
+  - shipment: no web/i18n/fa.json keys under "shipment."
+  - shipment_stop: list page web/pages/ShipmentStopListPage.tsx missing
+  - shipment_stop: form page web/pages/ShipmentStopFormPage.tsx missing
+  - shipment_stop: detail page web/pages/ShipmentStopDetailPage.tsx missing
+  - shipment_stop: no web/i18n/fa.json keys under "shipment_stop."
+- ai_cov 0% (0/9):
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/ShippingDistributionService.php:15: shipmentFor only returns a trivial value
+  - backend/src/Services/ShippingDistributionService.php:20: eta only returns a trivial value
+  - backend/src/Services/ShippingDistributionService.php:25: carrierCost only returns a trivial value
+  - backend/src/Services/ShippingDistributionService.php:30: otif only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## supplier-evaluation — stub, score 0.3, FAIL
+
+- entity_cov 0% (0/37):
+  - EvaluationModel: table missing (expected supplier_evaluation__evaluation_models, 3 fields)
+  - Evaluation: table missing (expected supplier_evaluation__evaluations, 7 fields)
+  - AutoMetrics: table missing (expected supplier_evaluation__auto_metricses, 9 fields)
+  - QualificationFile: table missing (expected supplier_evaluation__qualification_files, 5 fields)
+  - ApprovedSupplierList: table missing (expected supplier_evaluation__approved_supplier_lists, 3 fields)
+  - Audit: table missing (expected supplier_evaluation__audits, 4 fields)
+- event_cov 0% (0/5):
+  - out supplier-evaluation.evaluation.approved: not emitted via DomainEvent in src/
+  - out supplier-evaluation.status.changed: not emitted via DomainEvent in src/
+  - in purchase-order.po.received: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in quality-inspection.lot.decided: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in ncr-capa.scar.*: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/5):
+  - score: not declared in a src/Contracts interface
+  - grade: not declared in a src/Contracts interface
+  - isApproved: not declared in a src/Contracts interface
+  - asl: not declared in a src/Contracts interface
+  - expiringCerts: not declared in a src/Contracts interface
+- rule_cov 0% (0/7):
+  - rule 1 "auto metrics from events/datasets (receipt vs promised date → OTIF;...": no test named test_rule_*auto*metrics*
+  - rule 2 "manual criteria entered by departments": no test named test_rule_*manual*criteria*
+  - rule 3 "cycle (monthly/quarterly/yearly) with workflow approval": no test named test_rule_*cycle*monthly*
+  - rule 4 "grade thresholds configurable": no test named test_rule_*grade*thresholds*
+  - rule 5 "disqualification/conditional status propagates to party-master via ...": no test named test_rule_*disqualification*conditional*
+  - rule 6 "certificate expiry alerts": no test named test_rule_*certificate*expiry*
+  - rule 7 "ASL enforcement setting (warn\|block) consumed by PO/RFQ via service": no test named test_rule_*enforcement*setting*
+- perm_cov 3.3% (1/30):
+  - supplier-evaluation.asl.approve: in spec but not declared in manifest permissions
+  - supplier-evaluation.asl.manage: in spec but not declared in manifest permissions
+  - supplier-evaluation.asl.view: in spec but not declared in manifest permissions
+  - supplier-evaluation.evaluation.approve: in spec but not declared in manifest permissions
+  - supplier-evaluation.evaluation.manage: in spec but not declared in manifest permissions
+  - supplier-evaluation.evaluation.view: in spec but not declared in manifest permissions
+  - supplier-evaluation.model.approve: in spec but not declared in manifest permissions
+  - supplier-evaluation.model.manage: in spec but not declared in manifest permissions
+  - supplier-evaluation.model.view: in spec but not declared in manifest permissions
+  - supplier-evaluation.qualification.approve: in spec but not declared in manifest permissions
+  - supplier-evaluation.qualification.manage: in spec but not declared in manifest permissions
+  - supplier-evaluation.qualification.view: in spec but not declared in manifest permissions
+  - supplier-evaluation.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - supplier-evaluation.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - supplier-evaluation.record.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/24):
+  - evaluation_model: list page web/pages/EvaluationModelListPage.tsx missing
+  - evaluation_model: form page web/pages/EvaluationModelFormPage.tsx missing
+  - evaluation_model: detail page web/pages/EvaluationModelDetailPage.tsx missing
+  - evaluation_model: no web/i18n/fa.json keys under "evaluation_model."
+  - evaluation: list page web/pages/EvaluationListPage.tsx missing
+  - evaluation: form page web/pages/EvaluationFormPage.tsx missing
+  - evaluation: detail page web/pages/EvaluationDetailPage.tsx missing
+  - evaluation: no web/i18n/fa.json keys under "evaluation."
+  - auto_metrics: list page web/pages/AutoMetricsListPage.tsx missing
+  - auto_metrics: form page web/pages/AutoMetricsFormPage.tsx missing
+  - auto_metrics: detail page web/pages/AutoMetricsDetailPage.tsx missing
+  - auto_metrics: no web/i18n/fa.json keys under "auto_metrics."
+  - qualification_file: list page web/pages/QualificationFileListPage.tsx missing
+  - qualification_file: form page web/pages/QualificationFileFormPage.tsx missing
+  - qualification_file: detail page web/pages/QualificationFileDetailPage.tsx missing
+  - qualification_file: no web/i18n/fa.json keys under "qualification_file."
+  - approved_supplier_list: list page web/pages/ApprovedSupplierListListPage.tsx missing
+  - approved_supplier_list: form page web/pages/ApprovedSupplierListFormPage.tsx missing
+  - approved_supplier_list: detail page web/pages/ApprovedSupplierListDetailPage.tsx missing
+  - approved_supplier_list: no web/i18n/fa.json keys under "approved_supplier_list."
+  - audit: list page web/pages/AuditListPage.tsx missing
+  - audit: form page web/pages/AuditFormPage.tsx missing
+  - audit: detail page web/pages/AuditDetailPage.tsx missing
+  - audit: no web/i18n/fa.json keys under "audit."
+- ai_cov 0% (0/9):
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+- anti-gaming: 5 finding(s)
+  - backend/src/Services/SupplierEvaluationService.php:15: score only returns a trivial value
+  - backend/src/Services/SupplierEvaluationService.php:20: grade only returns a trivial value
+  - backend/src/Services/SupplierEvaluationService.php:25: isApproved only returns a trivial value
+  - backend/src/Services/SupplierEvaluationService.php:30: asl only returns a trivial value
+  - backend/src/Services/SupplierEvaluationService.php:35: expiringCerts only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## tax-moadian — stub, score 0.6, FAIL
+
+- entity_cov 0% (0/20):
+  - TaxProfile: table missing (expected tax_moadian__tax_profiles, 5 fields)
+  - ItemTaxMap: table missing (expected tax_moadian__item_tax_maps, 4 fields)
+  - TaxInvoice: table missing (expected tax_moadian__tax_invoices, 8 fields)
+- event_cov 0% (0/6):
+  - out tax-moadian.invoice.queued: not emitted via DomainEvent in src/
+  - out tax-moadian.invoice.accepted: not emitted via DomainEvent in src/ and not in manifest emits
+  - out tax-moadian.invoice.rejected: not emitted via DomainEvent in src/ and not in manifest emits
+  - in sales.invoice.issued: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in sales.invoice.cancelled: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in sales.return.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/5):
+  - statusOf: not declared in a src/Contracts interface
+  - submit: not declared in a src/Contracts interface
+  - inquire: not declared in a src/Contracts interface
+  - validate: not declared in a src/Contracts interface
+  - adapter: not declared in a src/Contracts interface
+- rule_cov 0% (0/9):
+  - rule 1 "status machine driven by adapter responses": no test named test_rule_*status*machine*
+  - rule 2 "idempotent submission with retry/backoff via outbox": no test named test_rule_*idempotent*submission*
+  - rule 3 "validation of mandatory fields before send using schema from offici...": no test named test_rule_*validation*mandatory*
+  - rule 4 "corrections/cancel/return invoices reference the original": no test named test_rule_*corrections*cancel*
+  - rule 5 "no editing of accepted invoices (only issue correction/return)": no test named test_rule_*editing*accepted*
+  - rule 6 "batch send and inquiry job": no test named test_rule_*batch*send*
+  - rule 7 "audit of every request/response (without secrets)": no test named test_rule_*audit*every*
+  - rule 8 "alerts for rejected invoices": no test named test_rule_*alerts*rejected*
+  - rule 9 "key/certificate storage via a pluggable secret store (env/file outs...": no test named test_rule_*certificate*storage*
+- perm_cov 5.6% (1/18):
+  - tax-moadian.invoice.correct: in spec but not declared in manifest permissions
+  - tax-moadian.invoice.retry: in spec but not declared in manifest permissions
+  - tax-moadian.invoice.submit: in spec but not declared in manifest permissions
+  - tax-moadian.invoice.view: in spec but not declared in manifest permissions
+  - tax-moadian.itemmap.manage: in spec but not declared in manifest permissions
+  - tax-moadian.profile.manage: in spec but not declared in manifest permissions
+  - tax-moadian.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - tax-moadian.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - tax-moadian.record.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/12):
+  - tax_profile: list page web/pages/TaxProfileListPage.tsx missing
+  - tax_profile: form page web/pages/TaxProfileFormPage.tsx missing
+  - tax_profile: detail page web/pages/TaxProfileDetailPage.tsx missing
+  - tax_profile: no web/i18n/fa.json keys under "tax_profile."
+  - item_tax_map: list page web/pages/ItemTaxMapListPage.tsx missing
+  - item_tax_map: form page web/pages/ItemTaxMapFormPage.tsx missing
+  - item_tax_map: detail page web/pages/ItemTaxMapDetailPage.tsx missing
+  - item_tax_map: no web/i18n/fa.json keys under "item_tax_map."
+  - tax_invoice: list page web/pages/TaxInvoiceListPage.tsx missing
+  - tax_invoice: form page web/pages/TaxInvoiceFormPage.tsx missing
+  - tax_invoice: detail page web/pages/TaxInvoiceDetailPage.tsx missing
+  - tax_invoice: no web/i18n/fa.json keys under "tax_invoice."
+- ai_cov 0% (0/6):
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+- anti-gaming: 5 finding(s)
+  - backend/src/Services/TaxMoadianService.php:15: statusOf only returns a trivial value
+  - backend/src/Services/TaxMoadianService.php:20: submit only returns a trivial value
+  - backend/src/Services/TaxMoadianService.php:25: inquire only returns a trivial value
+  - backend/src/Services/TaxMoadianService.php:30: validate only returns a trivial value
+  - backend/src/Services/TaxMoadianService.php:35: adapter only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## ticketing — stub, score 0.3, FAIL
+
+- entity_cov 0% (0/35):
+  - Queue: table missing (expected ticketing__queues, 4 fields)
+  - Ticket: table missing (expected ticketing__tickets, 13 fields)
+  - Comment: table missing (expected ticketing__comments, 1 fields)
+  - SlaPolicy: table missing (expected ticketing__sla_policies, 4 fields)
+  - KbArticle: table missing (expected ticketing__kb_articles, 4 fields)
+  - Csat: table missing (expected ticketing__csats, 3 fields)
+- event_cov 0% (0/4):
+  - out ticketing.ticket.created: not emitted via DomainEvent in src/
+  - out ticketing.ticket.resolved: not emitted via DomainEvent in src/ and not in manifest emits
+  - out ticketing.ticket.sla_breached: not emitted via DomainEvent in src/ and not in manifest emits
+  - in cmms.workorder.*: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/2):
+  - openFor: not declared in a src/Contracts interface
+  - slaStats: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "SLA clocks with business-hours calendar and pausing": no test named test_rule_*clocks*business*
+  - rule 2 "auto-assign (round-robin/least-loaded/skill) and escalation levels": no test named test_rule_*auto*assign*
+  - rule 3 "merge/split": no test named test_rule_*merge*split*
+  - rule 4 "e-mail-to-ticket adapter interface (mock)": no test named test_rule_*mail*ticket*
+  - rule 5 "reply templates": no test named test_rule_*reply*templates*
+  - rule 6 "KB suggestions by text similarity": no test named test_rule_*suggestions*text*
+- perm_cov 2.6% (1/38):
+  - ticketing.kb.assign: in spec but not declared in manifest permissions
+  - ticketing.kb.close: in spec but not declared in manifest permissions
+  - ticketing.kb.create: in spec but not declared in manifest permissions
+  - ticketing.kb.update: in spec but not declared in manifest permissions
+  - ticketing.kb.view: in spec but not declared in manifest permissions
+  - ticketing.queue.assign: in spec but not declared in manifest permissions
+  - ticketing.queue.close: in spec but not declared in manifest permissions
+  - ticketing.queue.create: in spec but not declared in manifest permissions
+  - ticketing.queue.update: in spec but not declared in manifest permissions
+  - ticketing.queue.view: in spec but not declared in manifest permissions
+  - ticketing.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - ticketing.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - ticketing.record.view: not enforced by an API route or authorization check
+  - ticketing.sla.manage: in spec but not declared in manifest permissions
+  - ticketing.ticket.assign: in spec but not declared in manifest permissions
+  - ticketing.ticket.close: in spec but not declared in manifest permissions
+  - ticketing.ticket.create: in spec but not declared in manifest permissions
+  - ticketing.ticket.update: in spec but not declared in manifest permissions
+  - ticketing.ticket.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/24):
+  - queue: list page web/pages/QueueListPage.tsx missing
+  - queue: form page web/pages/QueueFormPage.tsx missing
+  - queue: detail page web/pages/QueueDetailPage.tsx missing
+  - queue: no web/i18n/fa.json keys under "queue."
+  - ticket: list page web/pages/TicketListPage.tsx missing
+  - ticket: form page web/pages/TicketFormPage.tsx missing
+  - ticket: detail page web/pages/TicketDetailPage.tsx missing
+  - ticket: no web/i18n/fa.json keys under "ticket."
+  - comment: list page web/pages/CommentListPage.tsx missing
+  - comment: form page web/pages/CommentFormPage.tsx missing
+  - comment: detail page web/pages/CommentDetailPage.tsx missing
+  - comment: no web/i18n/fa.json keys under "comment."
+  - sla_policy: list page web/pages/SlaPolicyListPage.tsx missing
+  - sla_policy: form page web/pages/SlaPolicyFormPage.tsx missing
+  - sla_policy: detail page web/pages/SlaPolicyDetailPage.tsx missing
+  - sla_policy: no web/i18n/fa.json keys under "sla_policy."
+  - kb_article: list page web/pages/KbArticleListPage.tsx missing
+  - kb_article: form page web/pages/KbArticleFormPage.tsx missing
+  - kb_article: detail page web/pages/KbArticleDetailPage.tsx missing
+  - kb_article: no web/i18n/fa.json keys under "kb_article."
+  - csat: list page web/pages/CsatListPage.tsx missing
+  - csat: form page web/pages/CsatFormPage.tsx missing
+  - csat: detail page web/pages/CsatDetailPage.tsx missing
+  - csat: no web/i18n/fa.json keys under "csat."
+- ai_cov 0% (0/6):
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+- anti-gaming: 2 finding(s)
+  - backend/src/Services/TicketingService.php:15: openFor only returns a trivial value
+  - backend/src/Services/TicketingService.php:20: slaStats only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## tooling — stub, score 0.6, FAIL
+
+- entity_cov 0% (0/32):
+  - Tool: table missing (expected tooling__tools, 14 fields)
+  - ToolAssignment: table missing (expected tooling__tool_assignments, 4 fields)
+  - ToolUsageLog: table missing (expected tooling__tool_usage_logs, 3 fields)
+  - ToolMaintenance: table missing (expected tooling__tool_maintenances, 2 fields)
+  - ToolMovement: table missing (expected tooling__tool_movements, 4 fields)
+- event_cov 0% (0/7):
+  - out tooling.tool.checked_out: not emitted via DomainEvent in src/
+  - out tooling.tool.returned: not emitted via DomainEvent in src/ and not in manifest emits
+  - out tooling.tool.life_warning: not emitted via DomainEvent in src/ and not in manifest emits
+  - out tooling.tool.life_exhausted: not emitted via DomainEvent in src/ and not in manifest emits
+  - in mes.production.reported: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in cmms.workorder.completed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in work-order.operation.completed: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - availability: not declared in a src/Contracts interface
+  - lifeLeft: not declared in a src/Contracts interface
+  - required: not declared in a src/Contracts interface
+  - amortizationPerUnit: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "check-out requires status available": no test named test_rule_*check*requires*
+  - rule 2 "life accumulates from MES reports (qty good+scrap × cavities)": no test named test_rule_*life*accumulates*
+  - rule 3 "warning/limit alerts block or warn per setting": no test named test_rule_*warning*limit*
+  - rule 4 "end-of-life triggers maintenance proposal/cmms WO": no test named test_rule_*life*triggers*
+  - rule 5 "compatibility enforced between tool, item, work center": no test named test_rule_*compatibility*enforced*
+  - rule 6 "cost-per-piece amortization feed for costing": no test named test_rule_*cost*piece*
+- perm_cov 6.3% (1/16):
+  - tooling.checkout: in spec but not declared in manifest permissions
+  - tooling.maintenance.manage: in spec but not declared in manifest permissions
+  - tooling.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - tooling.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - tooling.record.view: not enforced by an API route or authorization check
+  - tooling.return: in spec but not declared in manifest permissions
+  - tooling.tool.manage: in spec but not declared in manifest permissions
+  - tooling.tool.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/20):
+  - tool: list page web/pages/ToolListPage.tsx missing
+  - tool: form page web/pages/ToolFormPage.tsx missing
+  - tool: detail page web/pages/ToolDetailPage.tsx missing
+  - tool: no web/i18n/fa.json keys under "tool."
+  - tool_assignment: list page web/pages/ToolAssignmentListPage.tsx missing
+  - tool_assignment: form page web/pages/ToolAssignmentFormPage.tsx missing
+  - tool_assignment: detail page web/pages/ToolAssignmentDetailPage.tsx missing
+  - tool_assignment: no web/i18n/fa.json keys under "tool_assignment."
+  - tool_usage_log: list page web/pages/ToolUsageLogListPage.tsx missing
+  - tool_usage_log: form page web/pages/ToolUsageLogFormPage.tsx missing
+  - tool_usage_log: detail page web/pages/ToolUsageLogDetailPage.tsx missing
+  - tool_usage_log: no web/i18n/fa.json keys under "tool_usage_log."
+  - tool_maintenance: list page web/pages/ToolMaintenanceListPage.tsx missing
+  - tool_maintenance: form page web/pages/ToolMaintenanceFormPage.tsx missing
+  - tool_maintenance: detail page web/pages/ToolMaintenanceDetailPage.tsx missing
+  - tool_maintenance: no web/i18n/fa.json keys under "tool_maintenance."
+  - tool_movement: list page web/pages/ToolMovementListPage.tsx missing
+  - tool_movement: form page web/pages/ToolMovementFormPage.tsx missing
+  - tool_movement: detail page web/pages/ToolMovementDetailPage.tsx missing
+  - tool_movement: no web/i18n/fa.json keys under "tool_movement."
+- ai_cov 0% (0/6):
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/ToolingService.php:15: availability only returns a trivial value
+  - backend/src/Services/ToolingService.php:20: lifeLeft only returns a trivial value
+  - backend/src/Services/ToolingService.php:25: required only returns a trivial value
+  - backend/src/Services/ToolingService.php:30: amortizationPerUnit only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## training-lms — stub, score 0.4, FAIL
+
+- entity_cov 0% (0/37):
+  - Course: table missing (expected training_lms__courses, 10 fields)
+  - Session: table missing (expected training_lms__sessions, 6 fields)
+  - Enrollment: table missing (expected training_lms__enrollments, 7 fields)
+  - TrainingNeed: table missing (expected training_lms__training_needs, 4 fields)
+  - Evaluation: table missing (expected training_lms__evaluations, 1 fields)
+  - MicroLesson: table missing (expected training_lms__micro_lessons, 3 fields)
+- event_cov 0% (0/6):
+  - out training-lms.completion.recorded: not emitted via DomainEvent in src/
+  - out training-lms.certificate.expiring: not emitted via DomainEvent in src/
+  - in hr-core.employee.hired: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in hr-core.employee.transferred: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in competency-appraisal.gap.identified: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in hse.permit.requested: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/4):
+  - isCompliant: not declared in a src/Contracts interface
+  - expiring: not declared in a src/Contracts interface
+  - history: not declared in a src/Contracts interface
+  - compliance: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "mandatory training matrix by position drives needs and expiry (rece...": no test named test_rule_*mandatory*training*
+  - rule 2 "capacity & prerequisites checks": no test named test_rule_*capacity*prerequisites*
+  - rule 3 "online content = links/files stored through document-mgmt (no video...": no test named test_rule_*online*content*
+  - rule 4 "quiz engine with randomization": no test named test_rule_*quiz*engine*
+  - rule 5 "certificate print": no test named test_rule_*certificate*print*
+  - rule 6 "compliance dashboard": no test named test_rule_*compliance*dashboard*
+  - rule 7 "cost per head": no test named test_rule_*cost*head*
+  - rule 8 "bulk enrollment": no test named test_rule_*bulk*enrollment*
+- perm_cov 3.8% (1/26):
+  - training-lms.assessment.manage: in spec but not declared in manifest permissions
+  - training-lms.assessment.view: in spec but not declared in manifest permissions
+  - training-lms.course.manage: in spec but not declared in manifest permissions
+  - training-lms.course.view: in spec but not declared in manifest permissions
+  - training-lms.enrollment.manage: in spec but not declared in manifest permissions
+  - training-lms.enrollment.view: in spec but not declared in manifest permissions
+  - training-lms.learn: in spec but not declared in manifest permissions
+  - training-lms.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - training-lms.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - training-lms.record.view: not enforced by an API route or authorization check
+  - training-lms.report.view: in spec but not declared in manifest permissions
+  - training-lms.session.manage: in spec but not declared in manifest permissions
+  - training-lms.session.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/24):
+  - course: list page web/pages/CourseListPage.tsx missing
+  - course: form page web/pages/CourseFormPage.tsx missing
+  - course: detail page web/pages/CourseDetailPage.tsx missing
+  - course: no web/i18n/fa.json keys under "course."
+  - session: list page web/pages/SessionListPage.tsx missing
+  - session: form page web/pages/SessionFormPage.tsx missing
+  - session: detail page web/pages/SessionDetailPage.tsx missing
+  - session: no web/i18n/fa.json keys under "session."
+  - enrollment: list page web/pages/EnrollmentListPage.tsx missing
+  - enrollment: form page web/pages/EnrollmentFormPage.tsx missing
+  - enrollment: detail page web/pages/EnrollmentDetailPage.tsx missing
+  - enrollment: no web/i18n/fa.json keys under "enrollment."
+  - training_need: list page web/pages/TrainingNeedListPage.tsx missing
+  - training_need: form page web/pages/TrainingNeedFormPage.tsx missing
+  - training_need: detail page web/pages/TrainingNeedDetailPage.tsx missing
+  - training_need: no web/i18n/fa.json keys under "training_need."
+  - evaluation: list page web/pages/EvaluationListPage.tsx missing
+  - evaluation: form page web/pages/EvaluationFormPage.tsx missing
+  - evaluation: detail page web/pages/EvaluationDetailPage.tsx missing
+  - evaluation: no web/i18n/fa.json keys under "evaluation."
+  - micro_lesson: list page web/pages/MicroLessonListPage.tsx missing
+  - micro_lesson: form page web/pages/MicroLessonFormPage.tsx missing
+  - micro_lesson: detail page web/pages/MicroLessonDetailPage.tsx missing
+  - micro_lesson: no web/i18n/fa.json keys under "micro_lesson."
+- ai_cov 0% (0/6):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 4 finding(s)
+  - backend/src/Services/TrainingLmsService.php:15: isCompliant only returns a trivial value
+  - backend/src/Services/TrainingLmsService.php:20: expiring only returns a trivial value
+  - backend/src/Services/TrainingLmsService.php:25: history only returns a trivial value
+  - backend/src/Services/TrainingLmsService.php:30: compliance only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## treasury — stub, score 0.2, FAIL
+
+- entity_cov 0% (0/47):
+  - BankAccount: table missing (expected treasury__bank_accounts, 7 fields)
+  - CashBox: table missing (expected treasury__cash_boxes, 3 fields)
+  - PettyCash: table missing (expected treasury__petty_cashes, 3 fields)
+  - Cheque: table missing (expected treasury__cheques, 12 fields)
+  - ChequeBook: table missing (expected treasury__cheque_books, 5 fields)
+  - BankTransaction: table missing (expected treasury__bank_transactions, 5 fields)
+  - PaymentOrder: table missing (expected treasury__payment_orders, 5 fields)
+- event_cov 0% (0/6):
+  - out treasury.cheque.status_changed: not emitted via DomainEvent in src/
+  - out treasury.payment.executed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out treasury.cashbox.closed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out treasury.reconciliation.completed: not emitted via DomainEvent in src/ and not in manifest emits
+  - in ar-ap.payment.requested: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in payroll.run.approved: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/5):
+  - bankBalance: not declared in a src/Contracts interface
+  - chequesDue: not declared in a src/Contracts interface
+  - createPayment: not declared in a src/Contracts interface
+  - cashPosition: not declared in a src/Contracts interface
+  - cashFlowForecast: not declared in a src/Contracts interface
+- rule_cov 0% (0/8):
+  - rule 1 "sayad id format validation": no test named test_rule_*sayad*format*
+  - rule 2 "due-date alerts": no test named test_rule_*date*alerts*
+  - rule 3 "cheque amount/party consistency": no test named test_rule_*cheque*amount*
+  - rule 4 "double-spend guard (endorse once)": no test named test_rule_*double*spend*
+  - rule 5 "petty cash settlement needs approval & documents": no test named test_rule_*petty*cash*
+  - rule 6 "bank reconciliation matches imported statement lines to transaction...": no test named test_rule_*bank*reconciliation*
+  - rule 7 "payment orders follow approval limits": no test named test_rule_*payment*orders*
+  - rule 8 "balance checks per setting": no test named test_rule_*balance*checks*
+- perm_cov 2% (1/50):
+  - treasury.bank.approve: in spec but not declared in manifest permissions
+  - treasury.bank.manage: in spec but not declared in manifest permissions
+  - treasury.bank.view: in spec but not declared in manifest permissions
+  - treasury.cash.approve: in spec but not declared in manifest permissions
+  - treasury.cash.manage: in spec but not declared in manifest permissions
+  - treasury.cash.view: in spec but not declared in manifest permissions
+  - treasury.cheque.approve: in spec but not declared in manifest permissions
+  - treasury.cheque.manage: in spec but not declared in manifest permissions
+  - treasury.cheque.view: in spec but not declared in manifest permissions
+  - treasury.chequebook.manage: in spec but not declared in manifest permissions
+  - treasury.note.approve: in spec but not declared in manifest permissions
+  - treasury.note.manage: in spec but not declared in manifest permissions
+  - treasury.note.view: in spec but not declared in manifest permissions
+  - treasury.order.approve: in spec but not declared in manifest permissions
+  - treasury.order.manage: in spec but not declared in manifest permissions
+  - treasury.order.view: in spec but not declared in manifest permissions
+  - treasury.petty.approve: in spec but not declared in manifest permissions
+  - treasury.petty.manage: in spec but not declared in manifest permissions
+  - treasury.petty.view: in spec but not declared in manifest permissions
+  - treasury.reconcile.approve: in spec but not declared in manifest permissions
+  - treasury.reconcile.manage: in spec but not declared in manifest permissions
+  - treasury.reconcile.view: in spec but not declared in manifest permissions
+  - treasury.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - treasury.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - treasury.record.view: not enforced by an API route or authorization check
+- ui_cov 0% (0/28):
+  - bank_account: list page web/pages/BankAccountListPage.tsx missing
+  - bank_account: form page web/pages/BankAccountFormPage.tsx missing
+  - bank_account: detail page web/pages/BankAccountDetailPage.tsx missing
+  - bank_account: no web/i18n/fa.json keys under "bank_account."
+  - cash_box: list page web/pages/CashBoxListPage.tsx missing
+  - cash_box: form page web/pages/CashBoxFormPage.tsx missing
+  - cash_box: detail page web/pages/CashBoxDetailPage.tsx missing
+  - cash_box: no web/i18n/fa.json keys under "cash_box."
+  - petty_cash: list page web/pages/PettyCashListPage.tsx missing
+  - petty_cash: form page web/pages/PettyCashFormPage.tsx missing
+  - petty_cash: detail page web/pages/PettyCashDetailPage.tsx missing
+  - petty_cash: no web/i18n/fa.json keys under "petty_cash."
+  - cheque: list page web/pages/ChequeListPage.tsx missing
+  - cheque: form page web/pages/ChequeFormPage.tsx missing
+  - cheque: detail page web/pages/ChequeDetailPage.tsx missing
+  - cheque: no web/i18n/fa.json keys under "cheque."
+  - cheque_book: list page web/pages/ChequeBookListPage.tsx missing
+  - cheque_book: form page web/pages/ChequeBookFormPage.tsx missing
+  - cheque_book: detail page web/pages/ChequeBookDetailPage.tsx missing
+  - cheque_book: no web/i18n/fa.json keys under "cheque_book."
+  - bank_transaction: list page web/pages/BankTransactionListPage.tsx missing
+  - bank_transaction: form page web/pages/BankTransactionFormPage.tsx missing
+  - bank_transaction: detail page web/pages/BankTransactionDetailPage.tsx missing
+  - bank_transaction: no web/i18n/fa.json keys under "bank_transaction."
+  - payment_order: list page web/pages/PaymentOrderListPage.tsx missing
+  - payment_order: form page web/pages/PaymentOrderFormPage.tsx missing
+  - payment_order: detail page web/pages/PaymentOrderDetailPage.tsx missing
+  - payment_order: no web/i18n/fa.json keys under "payment_order."
+- ai_cov 0% (0/12):
+  - forecast: in spec but not declared in manifest ai.capabilities
+  - forecast: no test named *forecast*off* with assertions
+  - forecast: no test named *forecast*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - nl_report: in spec but not declared in manifest ai.capabilities
+  - nl_report: no test named *nl_report*off* with assertions
+  - nl_report: no test named *nl_report*fake* with assertions
+  - ocr: in spec but not declared in manifest ai.capabilities
+  - ocr: no test named *ocr*off* with assertions
+  - ocr: no test named *ocr*fake* with assertions
+- anti-gaming: 5 finding(s)
+  - backend/src/Services/TreasuryService.php:15: bankBalance only returns a trivial value
+  - backend/src/Services/TreasuryService.php:20: chequesDue only returns a trivial value
+  - backend/src/Services/TreasuryService.php:25: createPayment only returns a trivial value
+  - backend/src/Services/TreasuryService.php:30: cashPosition only returns a trivial value
+  - backend/src/Services/TreasuryService.php:35: cashFlowForecast only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## warranty-after-sales — stub, score 0.3, FAIL
+
+- entity_cov 0% (0/27):
+  - WarrantyTerm: table missing (expected warranty_after_sales__warranty_terms, 3 fields)
+  - WarrantyRegistration: table missing (expected warranty_after_sales__warranty_registrations, 6 fields)
+  - Claim: table missing (expected warranty_after_sales__claims, 10 fields)
+  - ServiceVisit: table missing (expected warranty_after_sales__service_visits, 4 fields)
+- event_cov 0% (0/5):
+  - out warranty-after-sales.claim.approved: not emitted via DomainEvent in src/
+  - out warranty-after-sales.claim.closed: not emitted via DomainEvent in src/ and not in manifest emits
+  - out warranty-after-sales.credit.requested: not emitted via DomainEvent in src/
+  - in sales.delivery.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in sales.return.posted: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/3):
+  - isUnderWarranty: not declared in a src/Contracts interface
+  - claimsFor: not declared in a src/Contracts interface
+  - failureStats: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "registrations auto-created from `sales.delivery.posted` for items w...": no test named test_rule_*registrations*auto*
+  - rule 2 "eligibility check at claim (dates, usage, exclusions)": no test named test_rule_*eligibility*check*
+  - rule 3 "decisions: repair (parts via InventoryService issue), replace (sale...": no test named test_rule_*decisions*repair*
+  - rule 4 "failure analysis creates NCR/CAPA proposal": no test named test_rule_*failure*analysis*
+  - rule 5 "cost reports per product": no test named test_rule_*cost*reports*
+  - rule 6 "spare-parts sales link": no test named test_rule_*spare*parts*
+- perm_cov 2.8% (1/36):
+  - warranty-after-sales.claim.approve: in spec but not declared in manifest permissions
+  - warranty-after-sales.claim.close: in spec but not declared in manifest permissions
+  - warranty-after-sales.claim.create: in spec but not declared in manifest permissions
+  - warranty-after-sales.claim.update: in spec but not declared in manifest permissions
+  - warranty-after-sales.claim.view: in spec but not declared in manifest permissions
+  - warranty-after-sales.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - warranty-after-sales.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - warranty-after-sales.record.view: not enforced by an API route or authorization check
+  - warranty-after-sales.registration.approve: in spec but not declared in manifest permissions
+  - warranty-after-sales.registration.close: in spec but not declared in manifest permissions
+  - warranty-after-sales.registration.create: in spec but not declared in manifest permissions
+  - warranty-after-sales.registration.update: in spec but not declared in manifest permissions
+  - warranty-after-sales.registration.view: in spec but not declared in manifest permissions
+  - warranty-after-sales.term.approve: in spec but not declared in manifest permissions
+  - warranty-after-sales.term.close: in spec but not declared in manifest permissions
+  - warranty-after-sales.term.create: in spec but not declared in manifest permissions
+  - warranty-after-sales.term.update: in spec but not declared in manifest permissions
+  - warranty-after-sales.term.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/16):
+  - warranty_term: list page web/pages/WarrantyTermListPage.tsx missing
+  - warranty_term: form page web/pages/WarrantyTermFormPage.tsx missing
+  - warranty_term: detail page web/pages/WarrantyTermDetailPage.tsx missing
+  - warranty_term: no web/i18n/fa.json keys under "warranty_term."
+  - warranty_registration: list page web/pages/WarrantyRegistrationListPage.tsx missing
+  - warranty_registration: form page web/pages/WarrantyRegistrationFormPage.tsx missing
+  - warranty_registration: detail page web/pages/WarrantyRegistrationDetailPage.tsx missing
+  - warranty_registration: no web/i18n/fa.json keys under "warranty_registration."
+  - claim: list page web/pages/ClaimListPage.tsx missing
+  - claim: form page web/pages/ClaimFormPage.tsx missing
+  - claim: detail page web/pages/ClaimDetailPage.tsx missing
+  - claim: no web/i18n/fa.json keys under "claim."
+  - service_visit: list page web/pages/ServiceVisitListPage.tsx missing
+  - service_visit: form page web/pages/ServiceVisitFormPage.tsx missing
+  - service_visit: detail page web/pages/ServiceVisitDetailPage.tsx missing
+  - service_visit: no web/i18n/fa.json keys under "service_visit."
+- ai_cov 0% (0/9):
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/WarrantyAfterSalesService.php:15: isUnderWarranty only returns a trivial value
+  - backend/src/Services/WarrantyAfterSalesService.php:20: claimsFor only returns a trivial value
+  - backend/src/Services/WarrantyAfterSalesService.php:25: failureStats only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## waste-environment — stub, score 0.4, FAIL
+
+- entity_cov 0% (0/47):
+  - WasteStream: table missing (expected waste_environment__waste_streams, 6 fields)
+  - WasteRecord: table missing (expected waste_environment__waste_records, 8 fields)
+  - Manifest: table missing (expected waste_environment__manifests, 6 fields)
+  - DisposalContractor: table missing (expected waste_environment__disposal_contractors, 4 fields)
+  - EnvMeasurement: table missing (expected waste_environment__env_measurements, 7 fields)
+  - License: table missing (expected waste_environment__licenses, 5 fields)
+  - ComplianceTask: table missing (expected waste_environment__compliance_tasks, 4 fields)
+- event_cov 0% (0/4):
+  - out waste-environment.exceedance.raised: not emitted via DomainEvent in src/
+  - out waste-environment.license.expiring: not emitted via DomainEvent in src/
+  - in scrap-byproduct.scrap.disposed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in hse.incident.reported: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/3):
+  - stored: not declared in a src/Contracts interface
+  - contractorsValid: not declared in a src/Contracts interface
+  - exceedances: not declared in a src/Contracts interface
+- rule_cov 0% (0/6):
+  - rule 1 "contractor license validity & category check at manifest": no test named test_rule_*contractor*license*
+  - rule 2 "storage limits/time alerts": no test named test_rule_*storage*limits*
+  - rule 3 "measurement vs limit evaluation with exceedance alerts": no test named test_rule_*measurement*limit*
+  - rule 4 "compliance calendar with recurring tasks": no test named test_rule_*compliance*calendar*
+  - rule 5 "yearly waste/emission summary reports": no test named test_rule_*yearly*waste*
+  - rule 6 "link scrap-byproduct dispositions as waste records": no test named test_rule_*link*scrap*
+- perm_cov 3.8% (1/26):
+  - waste-environment.license.manage: in spec but not declared in manifest permissions
+  - waste-environment.license.view: in spec but not declared in manifest permissions
+  - waste-environment.manifest.manage: in spec but not declared in manifest permissions
+  - waste-environment.manifest.view: in spec but not declared in manifest permissions
+  - waste-environment.measurement.manage: in spec but not declared in manifest permissions
+  - waste-environment.measurement.view: in spec but not declared in manifest permissions
+  - waste-environment.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - waste-environment.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - waste-environment.record.view: not enforced by an API route or authorization check
+  - waste-environment.task.manage: in spec but not declared in manifest permissions
+  - waste-environment.task.view: in spec but not declared in manifest permissions
+  - waste-environment.waste.manage: in spec but not declared in manifest permissions
+  - waste-environment.waste.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/28):
+  - waste_stream: list page web/pages/WasteStreamListPage.tsx missing
+  - waste_stream: form page web/pages/WasteStreamFormPage.tsx missing
+  - waste_stream: detail page web/pages/WasteStreamDetailPage.tsx missing
+  - waste_stream: no web/i18n/fa.json keys under "waste_stream."
+  - waste_record: list page web/pages/WasteRecordListPage.tsx missing
+  - waste_record: form page web/pages/WasteRecordFormPage.tsx missing
+  - waste_record: detail page web/pages/WasteRecordDetailPage.tsx missing
+  - waste_record: no web/i18n/fa.json keys under "waste_record."
+  - manifest: list page web/pages/ManifestListPage.tsx missing
+  - manifest: form page web/pages/ManifestFormPage.tsx missing
+  - manifest: detail page web/pages/ManifestDetailPage.tsx missing
+  - manifest: no web/i18n/fa.json keys under "manifest."
+  - disposal_contractor: list page web/pages/DisposalContractorListPage.tsx missing
+  - disposal_contractor: form page web/pages/DisposalContractorFormPage.tsx missing
+  - disposal_contractor: detail page web/pages/DisposalContractorDetailPage.tsx missing
+  - disposal_contractor: no web/i18n/fa.json keys under "disposal_contractor."
+  - env_measurement: list page web/pages/EnvMeasurementListPage.tsx missing
+  - env_measurement: form page web/pages/EnvMeasurementFormPage.tsx missing
+  - env_measurement: detail page web/pages/EnvMeasurementDetailPage.tsx missing
+  - env_measurement: no web/i18n/fa.json keys under "env_measurement."
+  - license: list page web/pages/LicenseListPage.tsx missing
+  - license: form page web/pages/LicenseFormPage.tsx missing
+  - license: detail page web/pages/LicenseDetailPage.tsx missing
+  - license: no web/i18n/fa.json keys under "license."
+  - compliance_task: list page web/pages/ComplianceTaskListPage.tsx missing
+  - compliance_task: form page web/pages/ComplianceTaskFormPage.tsx missing
+  - compliance_task: detail page web/pages/ComplianceTaskDetailPage.tsx missing
+  - compliance_task: no web/i18n/fa.json keys under "compliance_task."
+- ai_cov 0% (0/6):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/WasteEnvironmentService.php:15: stored only returns a trivial value
+  - backend/src/Services/WasteEnvironmentService.php:20: contractorsValid only returns a trivial value
+  - backend/src/Services/WasteEnvironmentService.php:25: exceedances only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## weighbridge — stub, score 0.5, FAIL
+
+- entity_cov 0% (0/31):
+  - Scale: table missing (expected weighbridge__scales, 5 fields)
+  - WeighTicket: table missing (expected weighbridge__weigh_tickets, 16 fields)
+  - VehicleTare: table missing (expected weighbridge__vehicle_tares, 3 fields)
+  - Override: table missing (expected weighbridge__overrides, 3 fields)
+- event_cov 0% (0/5):
+  - out weighbridge.ticket.completed: not emitted via DomainEvent in src/
+  - out weighbridge.ticket.voided: not emitted via DomainEvent in src/
+  - in purchase-order.po.approved: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in sales.delivery.requested: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in gate-visitor.pass.entered: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/3):
+  - ticket: not declared in a src/Contracts interface
+  - netFor: not declared in a src/Contracts interface
+  - pendingTickets: not declared in a src/Contracts interface
+- rule_cov 0% (0/11):
+  - rule 1 "one-pass (stored tare) or two-pass modes": no test named test_rule_*pass*stored*
+  - rule 2 "stable-weight capture from device agent": no test named test_rule_*stable*weight*
+  - rule 3 "net vs document qty tolerance check (setting) with warning/block": no test named test_rule_*document*tolerance*
+  - rule 4 "manual weight entry only with permission + reason + approval + audi...": no test named test_rule_*manual*weight*
+  - rule 5 "void with reason": no test named test_rule_*void*reason*
+  - rule 6 "tickets immutable after complete (corrections via new ticket)": no test named test_rule_*tickets*immutable*
+  - rule 7 "receipt/delivery documents updated through events not direct writes": no test named test_rule_*receipt*delivery*
+  - rule 8 "daily reconciliation report": no test named test_rule_*daily*reconciliation*
+  - rule 9 "duplicate-plate-in-open-ticket guard. **Local agent:** `modules/wei...": no test named test_rule_*duplicate*plate*
+  - rule 10 "documented in README": no test named test_rule_*documented*readme*
+  - rule 11 "optional, not required for manual mode": no test named test_rule_*manual*mode*
+- perm_cov 5% (1/20):
+  - weighbridge.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - weighbridge.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - weighbridge.record.view: not enforced by an API route or authorization check
+  - weighbridge.scale.manage: in spec but not declared in manifest permissions
+  - weighbridge.tare.manage: in spec but not declared in manifest permissions
+  - weighbridge.ticket.complete: in spec but not declared in manifest permissions
+  - weighbridge.ticket.create: in spec but not declared in manifest permissions
+  - weighbridge.ticket.override: in spec but not declared in manifest permissions
+  - weighbridge.ticket.view: in spec but not declared in manifest permissions
+  - weighbridge.ticket.void: in spec but not declared in manifest permissions
+- ui_cov 0% (0/16):
+  - scale: list page web/pages/ScaleListPage.tsx missing
+  - scale: form page web/pages/ScaleFormPage.tsx missing
+  - scale: detail page web/pages/ScaleDetailPage.tsx missing
+  - scale: no web/i18n/fa.json keys under "scale."
+  - weigh_ticket: list page web/pages/WeighTicketListPage.tsx missing
+  - weigh_ticket: form page web/pages/WeighTicketFormPage.tsx missing
+  - weigh_ticket: detail page web/pages/WeighTicketDetailPage.tsx missing
+  - weigh_ticket: no web/i18n/fa.json keys under "weigh_ticket."
+  - vehicle_tare: list page web/pages/VehicleTareListPage.tsx missing
+  - vehicle_tare: form page web/pages/VehicleTareFormPage.tsx missing
+  - vehicle_tare: detail page web/pages/VehicleTareDetailPage.tsx missing
+  - vehicle_tare: no web/i18n/fa.json keys under "vehicle_tare."
+  - override: list page web/pages/OverrideListPage.tsx missing
+  - override: form page web/pages/OverrideFormPage.tsx missing
+  - override: detail page web/pages/OverrideDetailPage.tsx missing
+  - override: no web/i18n/fa.json keys under "override."
+- ai_cov 0% (0/3):
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+- anti-gaming: 3 finding(s)
+  - backend/src/Services/WeighbridgeService.php:15: ticket only returns a trivial value
+  - backend/src/Services/WeighbridgeService.php:20: netFor only returns a trivial value
+  - backend/src/Services/WeighbridgeService.php:25: pendingTickets only returns a trivial value
+- tests: not_run (static gate not passed)
+
+## work-order — stub, score 0.4, FAIL
+
+- entity_cov 0% (0/52):
+  - WorkOrder: table missing (expected work_order__work_orders, 21 fields)
+  - WOComponent: table missing (expected work_order__wo_components, 9 fields)
+  - WOOperation: table missing (expected work_order__wo_operations, 11 fields)
+  - WOReceipt: table missing (expected work_order__wo_receipts, 5 fields)
+  - WOShortage: table missing (expected work_order__wo_shortages, 0 fields)
+  - WOEvent: table missing (expected work_order__wo_events, 0 fields)
+- event_cov 0% (0/16):
+  - out work-order.wo.created: not emitted via DomainEvent in src/
+  - out work-order.wo.released: not emitted via DomainEvent in src/
+  - out work-order.wo.started: not emitted via DomainEvent in src/
+  - out work-order.wo.completed: not emitted via DomainEvent in src/
+  - out work-order.wo.closed: not emitted via DomainEvent in src/
+  - out work-order.wo.cancelled: not emitted via DomainEvent in src/
+  - out work-order.material.issued: not emitted via DomainEvent in src/
+  - out work-order.material.returned: not emitted via DomainEvent in src/
+  - out work-order.operation.completed: not emitted via DomainEvent in src/
+  - out work-order.output.received: not emitted via DomainEvent in src/
+  - out work-order.shortage.detected: not emitted via DomainEvent in src/
+  - in mrp.planned_order.firmed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in sales.order.confirmed: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in mes.operation.reported: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in quality-inspection.lot.decided: no listeners() registration in Providers/ModuleServiceProvider.php
+  - in eco-plm.change.released: no listeners() registration in Providers/ModuleServiceProvider.php
+- contract_cov 0% (0/11):
+  - find: not declared in a src/Contracts interface
+  - open: not declared in a src/Contracts interface
+  - create: not declared in a src/Contracts interface
+  - release: not declared in a src/Contracts interface
+  - reportOperation: not declared in a src/Contracts interface
+  - issueMaterial: not declared in a src/Contracts interface
+  - receiveOutput: not declared in a src/Contracts interface
+  - shortages: not declared in a src/Contracts interface
+  - wipQty: not declared in a src/Contracts interface
+  - openSupply: not declared in a src/Contracts interface
+  - close: not declared in a src/Contracts interface
+- rule_cov 0% (0/4):
+  - rule 1 "BOM/routing snapshot at release; multi-level optional child order c...": no test named test_rule_*routing*snapshot*
+  - rule 2 "Material issue via `InventoryService::postMovement` with idempotenc...": no test named test_rule_*material*issue*
+  - rule 3 "Over-production tolerance %, under-completion close with reason; re...": no test named test_rule_*production*tolerance*
+  - rule 4 "Lot/serial capture for tracked components & outputs (feeds `lot-tra...": no test named test_rule_*serial*capture*
+- perm_cov 3.6% (1/28):
+  - work-order.issue.post: in spec but not declared in manifest permissions
+  - work-order.override.tolerance: in spec but not declared in manifest permissions
+  - work-order.receive.post: in spec but not declared in manifest permissions
+  - work-order.record.approve: not enforced by an API route or authorization check and not used by a UI route or page
+  - work-order.record.create: not enforced by an API route or authorization check and not used by a UI route or page
+  - work-order.record.view: not enforced by an API route or authorization check
+  - work-order.report.post: in spec but not declared in manifest permissions
+  - work-order.wo.cancel: in spec but not declared in manifest permissions
+  - work-order.wo.close: in spec but not declared in manifest permissions
+  - work-order.wo.create: in spec but not declared in manifest permissions
+  - work-order.wo.release: in spec but not declared in manifest permissions
+  - work-order.wo.reopen: in spec but not declared in manifest permissions
+  - work-order.wo.update: in spec but not declared in manifest permissions
+  - work-order.wo.view: in spec but not declared in manifest permissions
+- ui_cov 0% (0/24):
+  - work_order: list page web/pages/WorkOrderListPage.tsx missing
+  - work_order: form page web/pages/WorkOrderFormPage.tsx missing
+  - work_order: detail page web/pages/WorkOrderDetailPage.tsx missing
+  - work_order: no web/i18n/fa.json keys under "work_order."
+  - wo_component: list page web/pages/WoComponentListPage.tsx missing
+  - wo_component: form page web/pages/WoComponentFormPage.tsx missing
+  - wo_component: detail page web/pages/WoComponentDetailPage.tsx missing
+  - wo_component: no web/i18n/fa.json keys under "wo_component."
+  - wo_operation: list page web/pages/WoOperationListPage.tsx missing
+  - wo_operation: form page web/pages/WoOperationFormPage.tsx missing
+  - wo_operation: detail page web/pages/WoOperationDetailPage.tsx missing
+  - wo_operation: no web/i18n/fa.json keys under "wo_operation."
+  - wo_receipt: list page web/pages/WoReceiptListPage.tsx missing
+  - wo_receipt: form page web/pages/WoReceiptFormPage.tsx missing
+  - wo_receipt: detail page web/pages/WoReceiptDetailPage.tsx missing
+  - wo_receipt: no web/i18n/fa.json keys under "wo_receipt."
+  - wo_shortage: list page web/pages/WoShortageListPage.tsx missing
+  - wo_shortage: form page web/pages/WoShortageFormPage.tsx missing
+  - wo_shortage: detail page web/pages/WoShortageDetailPage.tsx missing
+  - wo_shortage: no web/i18n/fa.json keys under "wo_shortage."
+  - wo_event: list page web/pages/WoEventListPage.tsx missing
+  - wo_event: form page web/pages/WoEventFormPage.tsx missing
+  - wo_event: detail page web/pages/WoEventDetailPage.tsx missing
+  - wo_event: no web/i18n/fa.json keys under "wo_event."
+- ai_cov 0% (0/12):
+  - autofill: in spec but not declared in manifest ai.capabilities
+  - autofill: no test named *autofill*off* with assertions
+  - autofill: no test named *autofill*fake* with assertions
+  - anomaly: in spec but not declared in manifest ai.capabilities
+  - anomaly: no test named *anomaly*off* with assertions
+  - anomaly: no test named *anomaly*fake* with assertions
+  - next_action: in spec but not declared in manifest ai.capabilities
+  - next_action: no test named *next_action*off* with assertions
+  - next_action: no test named *next_action*fake* with assertions
+  - summarize: in spec but not declared in manifest ai.capabilities
+  - summarize: no test named *summarize*off* with assertions
+  - summarize: no test named *summarize*fake* with assertions
+- anti-gaming: 9 finding(s)
+  - backend/src/Services/WorkOrderService.php:15: find only returns a trivial value
+  - backend/src/Services/WorkOrderService.php:20: open only returns a trivial value
+  - backend/src/Services/WorkOrderService.php:25: create only returns a trivial value
+  - backend/src/Services/WorkOrderService.php:30: release empty body
+  - backend/src/Services/WorkOrderService.php:34: reportOperation empty body
+  - backend/src/Services/WorkOrderService.php:38: issueMaterial empty body
+  - backend/src/Services/WorkOrderService.php:42: receiveOutput empty body
+  - backend/src/Services/WorkOrderService.php:46: shortages only returns a trivial value
+  - backend/src/Services/WorkOrderService.php:61: close empty body
+- tests: not_run (static gate not passed)
+
+## workflow-engine — stub, score 0, FAIL
+
+- entity_cov 0% (0/0):
+  - specification missing: specs/workflow-engine.md
+- event_cov 0% (0/0):
+  - specification missing: specs/workflow-engine.md
+- contract_cov 0% (0/0):
+  - specification missing: specs/workflow-engine.md
+- rule_cov 0% (0/0):
+  - specification missing: specs/workflow-engine.md
+- perm_cov 0% (0/0):
+  - specification missing: specs/workflow-engine.md
+- ui_cov 0% (0/0):
+  - specification missing: specs/workflow-engine.md
+- ai_cov 0% (0/0):
+  - specification missing: specs/workflow-engine.md
+- anti-gaming: clean
+- tests: not_run (static gate not passed)
