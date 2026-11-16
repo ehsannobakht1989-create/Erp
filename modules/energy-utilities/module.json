@@ -49,5 +49,9 @@
       "route": "/energy-utilities",
       "permission": "energy-utilities.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

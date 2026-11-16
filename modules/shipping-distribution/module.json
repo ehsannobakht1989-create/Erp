@@ -50,5 +50,9 @@
       "route": "/shipping-distribution",
       "permission": "shipping-distribution.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

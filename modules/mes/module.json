@@ -50,5 +50,9 @@
       "route": "/mes",
       "permission": "mes.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

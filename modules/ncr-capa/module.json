@@ -47,5 +47,9 @@
       "route": "/ncr-capa",
       "permission": "ncr-capa.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

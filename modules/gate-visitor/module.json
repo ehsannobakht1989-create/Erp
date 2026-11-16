@@ -48,5 +48,9 @@
       "route": "/gate-visitor",
       "permission": "gate-visitor.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

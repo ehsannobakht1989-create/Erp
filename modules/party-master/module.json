@@ -30,7 +30,7 @@
     "party-master.party.import",
     "party-master.party.export",
     "party-master.group.manage",
-    "party-master.payment-term.manage",
+    "party-master.payment_term.manage",
     "party-master.ai.use"
   ],
   "menu": [
@@ -70,5 +70,6 @@
         "max_tokens_per_call": 1500
       }
     ]
-  }
+  },
+  "datasets": []
 }

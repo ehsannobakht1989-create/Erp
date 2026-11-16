@@ -45,5 +45,9 @@
       "route": "/project-mgmt",
       "permission": "project-mgmt.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

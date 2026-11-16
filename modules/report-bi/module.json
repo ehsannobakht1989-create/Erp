@@ -44,5 +44,9 @@
       "route": "/report-bi",
       "permission": "report-bi.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

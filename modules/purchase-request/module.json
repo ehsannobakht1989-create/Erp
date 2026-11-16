@@ -48,5 +48,9 @@
       "route": "/purchase-request",
       "permission": "purchase-request.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

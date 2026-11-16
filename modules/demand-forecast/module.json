@@ -47,5 +47,9 @@
       "route": "/demand-forecast",
       "permission": "demand-forecast.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

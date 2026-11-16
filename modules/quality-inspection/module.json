@@ -47,5 +47,9 @@
       "route": "/quality-inspection",
       "permission": "quality-inspection.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

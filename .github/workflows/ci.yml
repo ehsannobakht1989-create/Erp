@@ -78,10 +78,12 @@ jobs:
           php tests/platform/laravel-smoke.php
           php tests/platform/module-manager.php
           php tests/platform/module-state.php
+          php tests/platform/manifest-validation.php
           php tests/platform/tenancy.php
           php tests/platform/tenancy-middleware.php
           php tests/platform/domain-events.php
           php tests/platform/money.php
           php artisan erp:modules:list
           php artisan erp:modules:graph
+          php artisan erp:modules:validate
           vendor/bin/phpunit --fail-on-risky --fail-on-warning

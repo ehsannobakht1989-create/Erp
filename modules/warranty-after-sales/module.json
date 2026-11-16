@@ -50,5 +50,9 @@
       "route": "/warranty-after-sales",
       "permission": "warranty-after-sales.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

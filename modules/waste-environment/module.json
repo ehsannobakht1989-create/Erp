@@ -49,5 +49,9 @@
       "route": "/waste-environment",
       "permission": "waste-environment.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

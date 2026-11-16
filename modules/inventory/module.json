@@ -40,5 +40,7 @@
   "industry_tags": ["all"],
   "regional": [],
   "python": false,
-  "ai": {"enabled_default": false, "capabilities": []}
+  "ai": {"enabled_default": false, "capabilities": []},
+  "workflows": [],
+  "datasets": []
 }

@@ -48,5 +48,9 @@
       "route": "/batch-formulation",
       "permission": "batch-formulation.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

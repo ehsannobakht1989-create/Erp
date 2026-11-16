@@ -50,5 +50,9 @@
       "route": "/payroll",
       "permission": "payroll.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

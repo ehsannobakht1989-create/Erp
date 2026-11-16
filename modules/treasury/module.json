@@ -50,5 +50,9 @@
       "route": "/treasury",
       "permission": "treasury.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

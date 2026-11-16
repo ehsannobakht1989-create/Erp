@@ -48,5 +48,9 @@
       "route": "/hse",
       "permission": "hse.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

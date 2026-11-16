@@ -50,5 +50,9 @@
       "route": "/costing",
       "permission": "costing.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

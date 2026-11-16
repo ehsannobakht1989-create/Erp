@@ -52,5 +52,9 @@
       "route": "/import-customs",
       "permission": "import-customs.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

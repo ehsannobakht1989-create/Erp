@@ -45,5 +45,9 @@
       "route": "/schedule-optimizer",
       "permission": "schedule-optimizer.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

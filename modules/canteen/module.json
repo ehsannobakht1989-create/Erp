@@ -49,5 +49,9 @@
       "route": "/canteen",
       "permission": "canteen.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

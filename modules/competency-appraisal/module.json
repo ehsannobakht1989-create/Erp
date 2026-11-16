@@ -50,5 +50,9 @@
       "route": "/competency-appraisal",
       "permission": "competency-appraisal.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

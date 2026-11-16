@@ -48,5 +48,9 @@
       "route": "/audit-iso",
       "permission": "audit-iso.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

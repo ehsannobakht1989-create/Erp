@@ -45,5 +45,9 @@
       "route": "/ticketing",
       "permission": "ticketing.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

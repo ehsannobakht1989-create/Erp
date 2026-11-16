@@ -49,5 +49,9 @@
       "route": "/parking-vehicles",
       "permission": "parking-vehicles.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

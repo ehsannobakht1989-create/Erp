@@ -53,5 +53,9 @@
       "route": "/sales",
       "permission": "sales.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

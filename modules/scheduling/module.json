@@ -48,5 +48,9 @@
       "route": "/scheduling",
       "permission": "scheduling.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

@@ -18,8 +18,8 @@
   ],
   "consumes": [],
   "emits": [
-    "oee-downtime.snapshot.computed",
-    "oee-downtime.alert.raised"
+    "oee.snapshot.computed",
+    "oee.alert.raised"
   ],
   "listens": [],
   "permissions": [
@@ -47,5 +47,9 @@
       "route": "/oee",
       "permission": "oee.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

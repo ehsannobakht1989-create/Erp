@@ -23,8 +23,8 @@
   "permissions": [
     "org-structure.unit.view",
     "org-structure.unit.manage",
-    "org-structure.cost-center.view",
-    "org-structure.cost-center.manage",
+    "org-structure.cost_center.view",
+    "org-structure.cost_center.manage",
     "org-structure.calendar.manage"
   ],
   "menu": [
@@ -46,5 +46,7 @@
   "ai": {
     "enabled_default": false,
     "capabilities": []
-  }
+  },
+  "workflows": [],
+  "datasets": []
 }

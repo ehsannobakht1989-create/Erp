@@ -48,5 +48,9 @@
       "route": "/crm",
       "permission": "crm.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

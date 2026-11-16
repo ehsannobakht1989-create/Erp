@@ -46,5 +46,9 @@
       "route": "/ar-ap",
       "permission": "ar-ap.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

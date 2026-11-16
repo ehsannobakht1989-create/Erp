@@ -49,5 +49,9 @@
       "route": "/recruitment",
       "permission": "recruitment.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

@@ -49,5 +49,9 @@
       "route": "/training-lms",
       "permission": "training-lms.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

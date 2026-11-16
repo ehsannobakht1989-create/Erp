@@ -11,12 +11,14 @@
   "consumes": ["ItemMasterServiceInterface", "PartyMasterServiceInterface"],
   "emits": ["pricing.pricelist.activated", "pricing.price.changed"],
   "listens": [],
-  "permissions": ["pricing.list.view", "pricing.list.manage", "pricing.list.approve", "pricing.override"],
+  "permissions": ["pricing.list.view", "pricing.list.manage", "pricing.list.approve", "pricing.price.override"],
   "menu": [{ "id": "pricing", "title": {"fa": "لیست‌های قیمت", "en": "Pricing"}, "icon": "tag", "route": "/pricing", "permission": "pricing.list.view" }],
   "entities": ["price_list", "price_list_line", "discount_rule"],
   "settings": [],
   "industry_tags": ["all"],
   "regional": [],
   "python": false,
-  "ai": {"enabled_default": false, "capabilities": []}
+  "ai": {"enabled_default": false, "capabilities": []},
+  "workflows": [],
+  "datasets": []
 }

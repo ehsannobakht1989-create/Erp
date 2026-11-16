@@ -48,5 +48,9 @@
       "route": "/management-consolidation",
       "permission": "management-consolidation.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

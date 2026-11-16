@@ -48,5 +48,9 @@
       "route": "/rfq",
       "permission": "rfq.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

@@ -47,5 +47,9 @@
       "route": "/lims",
       "permission": "lims.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

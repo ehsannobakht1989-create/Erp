@@ -48,5 +48,9 @@
       "route": "/mps",
       "permission": "mps.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

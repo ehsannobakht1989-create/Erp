@@ -50,5 +50,9 @@
       "route": "/contracts",
       "permission": "contracts.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

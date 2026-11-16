@@ -112,8 +112,8 @@
 | `ncr-capa.ncr.opened` | `ncr-capa` | - |
 | `ncr-capa.scar.sent` | `ncr-capa` | - |
 | `nl-report-assistant.question.saved` | `nl-report-assistant` | - |
-| `oee-downtime.alert.raised` | `oee` | - |
-| `oee-downtime.snapshot.computed` | `oee` | - |
+| `oee.alert.raised` | `oee` | - |
+| `oee.snapshot.computed` | `oee` | - |
 | `reorder-point.class.updated` | `reorder-point` | - |
 | `reorder-point.policy.changed` | `reorder-point` | - |
 | `reorder-point.suggestion.created` | `reorder-point` | - |

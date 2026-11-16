@@ -50,5 +50,9 @@
       "route": "/supplier-evaluation",
       "permission": "supplier-evaluation.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

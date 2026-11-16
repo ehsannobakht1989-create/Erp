@@ -46,5 +46,9 @@
       "route": "/budgeting",
       "permission": "budgeting.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

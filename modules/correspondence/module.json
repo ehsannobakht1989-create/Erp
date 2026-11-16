@@ -51,5 +51,9 @@
       "route": "/correspondence",
       "permission": "correspondence.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

@@ -46,5 +46,9 @@
       "route": "/scrap-byproduct",
       "permission": "scrap-byproduct.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

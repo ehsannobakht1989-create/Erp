@@ -47,5 +47,9 @@
       "route": "/routing",
       "permission": "routing.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

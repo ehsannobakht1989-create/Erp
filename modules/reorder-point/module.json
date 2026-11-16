@@ -49,5 +49,9 @@
       "route": "/reorder-point",
       "permission": "reorder-point.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

@@ -49,5 +49,9 @@
       "route": "/mrp",
       "permission": "mrp.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

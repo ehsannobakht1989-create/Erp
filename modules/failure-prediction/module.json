@@ -47,5 +47,9 @@
       "route": "/failure-prediction",
       "permission": "failure-prediction.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

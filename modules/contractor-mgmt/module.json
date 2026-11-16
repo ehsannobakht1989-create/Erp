@@ -50,5 +50,9 @@
       "route": "/contractor-mgmt",
       "permission": "contractor-mgmt.record.view"
     }
-  ]
+  ],
+  "entities": [],
+  "workflows": [],
+  "settings": [],
+  "datasets": []
 }

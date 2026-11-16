@@ -3,7 +3,30 @@
   "$id": "https://erp.local/schemas/module.schema.json",
   "title": "ERP Module Manifest",
   "type": "object",
-  "required": ["id", "name", "version", "category", "level"],
+  "required": [
+    "id",
+    "name",
+    "version",
+    "category",
+    "level",
+    "status",
+    "requires",
+    "optional",
+    "provides",
+    "consumes",
+    "emits",
+    "listens",
+    "permissions",
+    "menu",
+    "entities",
+    "workflows",
+    "settings",
+    "datasets",
+    "regional",
+    "industry_tags",
+    "python",
+    "ai"
+  ],
   "additionalProperties": true,
   "properties": {
     "id": {
@@ -12,15 +35,28 @@
     },
     "status": {
       "type": "string",
-      "enum": ["stub", "partial", "done"],
+      "enum": [
+        "stub",
+        "partial",
+        "done"
+      ],
       "default": "stub"
     },
     "name": {
       "type": "object",
-      "required": ["fa", "en"],
+      "required": [
+        "fa",
+        "en"
+      ],
       "properties": {
-        "fa": { "type": "string", "minLength": 1 },
-        "en": { "type": "string", "minLength": 1 }
+        "fa": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
       }
     },
     "version": {
@@ -38,22 +74,32 @@
     },
     "requires": {
       "type": "array",
-      "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
       "uniqueItems": true
     },
     "optional": {
       "type": "array",
-      "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
       "uniqueItems": true
     },
     "provides": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "uniqueItems": true
     },
     "consumes": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "uniqueItems": true
     },
     "emits": {
@@ -84,50 +130,90 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "title", "route"],
+        "required": [
+          "id",
+          "title",
+          "route"
+        ],
         "properties": {
-          "id": { "type": "string" },
+          "id": {
+            "type": "string"
+          },
           "title": {
             "type": "object",
-            "required": ["fa"],
+            "required": [
+              "fa"
+            ],
             "properties": {
-              "fa": { "type": "string" },
-              "en": { "type": "string" }
+              "fa": {
+                "type": "string"
+              },
+              "en": {
+                "type": "string"
+              }
             }
           },
-          "icon": { "type": "string" },
-          "route": { "type": "string" },
-          "permission": { "type": "string" }
+          "icon": {
+            "type": "string"
+          },
+          "route": {
+            "type": "string"
+          },
+          "permission": {
+            "type": "string"
+          }
         }
       }
     },
     "entities": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     },
     "workflows": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     },
     "settings": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["key", "type"],
+        "required": [
+          "key",
+          "type"
+        ],
         "properties": {
-          "key": { "type": "string" },
-          "type": { "type": "string", "enum": ["bool", "int", "float", "string", "json"] },
+          "key": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "bool",
+              "int",
+              "float",
+              "string",
+              "json"
+            ]
+          },
           "default": {}
         }
       }
     },
     "industry_tags": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     },
     "regional": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     },
     "python": {
       "type": "boolean",
@@ -136,32 +222,57 @@
     "ai": {
       "type": "object",
       "properties": {
-        "enabled_default": { "type": "boolean", "default": false },
+        "enabled_default": {
+          "type": "boolean",
+          "default": false
+        },
         "capabilities": {
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["id", "provider"],
+            "required": [
+              "id",
+              "provider"
+            ],
             "properties": {
               "id": {
                 "type": "string",
-                "enum": ["assistant", "summarize", "autofill", "anomaly", "forecast", "nl_report", "next_action", "ocr"]
+                "enum": [
+                  "assistant",
+                  "summarize",
+                  "autofill",
+                  "anomaly",
+                  "forecast",
+                  "nl_report",
+                  "next_action",
+                  "ocr"
+                ]
               },
               "provider": {
                 "type": "string",
-                "enum": ["avalai", "python", "off"]
+                "enum": [
+                  "avalai",
+                  "python",
+                  "off"
+                ]
               },
               "tools": {
                 "type": "array",
-                "items": { "type": "string" }
+                "items": {
+                  "type": "string"
+                }
               },
               "proposals": {
                 "type": "array",
-                "items": { "type": "string" }
+                "items": {
+                  "type": "string"
+                }
               },
               "redact": {
                 "type": "array",
-                "items": { "type": "string" }
+                "items": {
+                  "type": "string"
+                }
               },
               "max_tokens_per_call": {
                 "type": "integer",
@@ -170,7 +281,19 @@
             }
           }
         }
-      }
+      },
+      "required": [
+        "enabled_default",
+        "capabilities"
+      ]
+    },
+    "datasets": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
     }
   }
 }
