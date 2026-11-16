@@ -27,6 +27,5 @@ final class PlatformDefaultsProvider extends ServiceProvider
         $this->app->singleton(DatasetRegistry::class, fn ($app) => new DatasetRegistry($app->make(ModuleCatalog::class), $app->make(CompanyContext::class)));
         $this->app->alias(DatasetRegistry::class, Contracts\DatasetContract::class);
         $this->app->bind(Contracts\DynamicFieldContract::class, Defaults\EmptyDynamicFields::class);
-        $this->app->bind(Contracts\AiGatewayContract::class, Defaults\DisabledAiGateway::class);
     }
 }

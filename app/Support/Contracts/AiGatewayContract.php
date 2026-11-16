@@ -8,7 +8,7 @@ interface AiGatewayContract
 {
     /**
      * @param  array<string, mixed>  $input
-     * @return array{ok: bool, status: string, output: mixed, proposal_id?: int, error?: string}
+     * @return array{ok: bool, status: string, output: mixed, proposal_ids?: list<int>, error?: string}
      */
     public function invoke(
         int $companyId,

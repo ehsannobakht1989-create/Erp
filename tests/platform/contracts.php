@@ -5,6 +5,7 @@ declare(strict_types=1);
 require dirname(__DIR__, 2).'/vendor/autoload.php';
 
 use App\Support\Contracts;
+use App\Support\Tenancy\CompanyContext;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Http\Request;
 
@@ -36,9 +37,11 @@ contractCheck(app(Contracts\AuthContract::class)->user() === null, 'Default user
 contractCheck(! app(Contracts\PermissionContract::class)->can(1, 1, 'inventory.receipt.post'), 'Default permission must deny');
 contractCheck(app(Contracts\CompanyContract::class)->resolveCompanyId(Request::create('/?company_id=1'), ['id' => 1]) === null, 'Default company resolver must deny selection');
 contractCheck(app(Contracts\DynamicFieldContract::class)->fieldsFor(1, 'item') === [], 'Absent field provider must supply no fields');
+app(CompanyContext::class)->activate(1);
 $ai = app(Contracts\AiGatewayContract::class)->invoke(1, 1, 'inventory', 'assistant', ['secret' => 'sensitive']);
 contractCheck($ai['status'] === 'disabled' && $ai['ok'] === false && $ai['output'] === null, 'AI must be cleanly disabled');
 contractCheck(! str_contains(json_encode($ai, JSON_THROW_ON_ERROR), 'sensitive'), 'Off result must not echo input');
+app(CompanyContext::class)->clear();
 unavailable(fn () => app(Contracts\WorkflowContract::class)->transition(1, 'approval', 1, 'approve'));
 unavailable(fn () => app(Contracts\AuditContract::class)->record(1, 1, 'inventory', 'inventory_receipts', 'update', 1));
 unavailable(fn () => app(Contracts\NotifierContract::class)->notify(1, 1, 'email', 'receipt'));

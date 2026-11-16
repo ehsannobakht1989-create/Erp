@@ -5,7 +5,12 @@ declare(strict_types=1);
 namespace App\Providers;
 
 use App\Models\PersonalAccessToken;
+use App\Support\Ai\AiGateway;
+use App\Support\Ai\AiToolRegistry;
+use App\Support\Ai\AvalAiProvider;
+use App\Support\Ai\PythonServiceProvider;
 use App\Support\Auth\PermissionRegistry;
+use App\Support\Contracts\AiGatewayContract;
 use App\Support\Events\DomainEventBus;
 use App\Support\Events\EventSubscriptions;
 use App\Support\Events\InboxProcessor;
@@ -19,6 +24,7 @@ use App\Support\Tenancy\CompanyContext;
 use App\Support\Tenancy\DenyCompanyContextResolver;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Contracts\Auth\Access\Gate;
+use Illuminate\Http\Client\Factory as HttpFactory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\ServiceProvider;
@@ -56,6 +62,16 @@ final class AppServiceProvider extends ServiceProvider
         });
         $this->app->singleton(PermissionRegistry::class, fn ($app) => new PermissionRegistry($app->make(ModuleCatalog::class), $app->make(ModuleState::class)->enabled()));
         $this->app->bind(SettingsService::class, fn ($app) => new SettingsService($app->make(ModuleCatalog::class), $app->make(ModuleState::class)->enabled(), $app['db']->connection(), $app->make(CompanyContext::class)));
+        $this->app->singleton(AiToolRegistry::class, fn ($app) => new AiToolRegistry($app->make(ModuleCatalog::class)));
+        $this->app->bind(AiGatewayContract::class, function ($app) {
+            $config = (array) config('erp.ai');
+            $http = $app->make(HttpFactory::class);
+
+            return new AiGateway($app->make(ModuleCatalog::class), $app->make(ModuleState::class)->enabled(), $app['db']->connection(), $app->make(CompanyContext::class), $app->make(AiToolRegistry::class), [
+                'avalai' => new AvalAiProvider($http, (string) $config['avalai']['base_url'], (string) $config['avalai']['api_key'], (string) $config['avalai']['model'], (int) $config['avalai']['timeout']),
+                'python' => new PythonServiceProvider($http, (string) $config['python']['url'], (string) $config['python']['secret'], (int) $config['python']['timeout']),
+            ], $config);
+        });
         $this->app->make(ModuleManager::class)->registerEnabled($this->app->make(ModuleState::class)->enabled());
     }
 }
