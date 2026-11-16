@@ -2,7 +2,7 @@
 
 Read `docs/MASTER-PLAN.md`, `docs/progress.md`, and `docs/decisions.md` before starting; continue from `NEXT:`. The master plan takes precedence over historical documentation.
 
-- Follow phases in order. Keep existing assets while adapting them; do not remove the legacy kernel until Laravel replaces it.
+- Follow phases in order. Keep existing assets (specs, UI, AI service, builder, manifests) while adapting them; the legacy PHP kernel was removed in Phase 1 (last present in `5b67c50`).
 - In phases 4–8 work on one module at a time, spec first, in the prescribed vertical slices. Outside planning/progress and documented core change requests, touch only that module. Commit after each slice. Run its tests and depth check each time.
 - Never mark a module `done` without a passing depth gate and tests. Do not weaken checks, remove tests, or add filler. Record gaps honestly.
 - Modules communicate only through events and contracts, never other modules' implementation or tables. Enforce tenant isolation, permission guards, audit and documented events on mutations. Use decimal money and UTC dates; Persian UI is RTL and displays Jalali dates.
