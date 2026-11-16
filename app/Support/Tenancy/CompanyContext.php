@@ -44,4 +44,16 @@ final class CompanyContext
     {
         $this->companyId = $this->branchId = $this->fiscalYearId = null;
     }
+
+    /** @return array{0:int,1:?int,2:?int}|null */
+    public function snapshot(): ?array
+    {
+        return $this->companyId === null ? null : [$this->companyId, $this->branchId, $this->fiscalYearId];
+    }
+
+    /** @param array{0:int,1:?int,2:?int}|null $snapshot */
+    public function restore(?array $snapshot): void
+    {
+        $snapshot === null ? $this->clear() : $this->activate(...$snapshot);
+    }
 }

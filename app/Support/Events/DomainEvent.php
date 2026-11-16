@@ -41,6 +41,21 @@ final readonly class DomainEvent
         );
     }
 
+    /** @param array<string, mixed> $data */
+    public static function fromArray(array $data): self
+    {
+        foreach (['event_id', 'event', 'version', 'company_id', 'entity_type', 'entity_id', 'payload', 'occurred_at', 'actor_id', 'correlation_id'] as $field) {
+            if (! array_key_exists($field, $data)) {
+                throw new InvalidArgumentException('Event envelope field missing: '.$field);
+            }
+        }
+        if (! is_array($data['payload']) || ! is_int($data['version']) || ! is_int($data['company_id']) || ($data['actor_id'] !== null && ! is_int($data['actor_id']))) {
+            throw new InvalidArgumentException('Invalid stored event envelope.');
+        }
+
+        return new self((string) $data['event_id'], (string) $data['event'], $data['version'], $data['company_id'], (string) $data['entity_type'], (string) $data['entity_id'], $data['payload'], new DateTimeImmutable((string) $data['occurred_at']), $data['actor_id'], (string) $data['correlation_id']);
+    }
+
     /** @return array<string, mixed> */
     public function toArray(): array
     {

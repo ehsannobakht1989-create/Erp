@@ -7,6 +7,8 @@ namespace App\Providers;
 use App\Models\PersonalAccessToken;
 use App\Support\Auth\PermissionRegistry;
 use App\Support\Events\DomainEventBus;
+use App\Support\Events\EventSubscriptions;
+use App\Support\Events\InboxProcessor;
 use App\Support\Modules\ManifestValidator;
 use App\Support\Modules\ModuleCatalog;
 use App\Support\Modules\ModuleManager;
@@ -34,7 +36,9 @@ final class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->singleton(CompanyContext::class);
-        $this->app->bind(DomainEventBus::class, fn ($app) => new DomainEventBus($app['db']->connection(), $app['events'], $app->make(CompanyContext::class)));
+        $this->app->singleton(EventSubscriptions::class, fn ($app) => new EventSubscriptions($app->make(ModuleCatalog::class)));
+        $this->app->bind(DomainEventBus::class, fn ($app) => new DomainEventBus($app['db']->connection(), $app['events'], $app->make(CompanyContext::class), $app->make(EventSubscriptions::class)));
+        $this->app->bind(InboxProcessor::class, fn ($app) => new InboxProcessor($app['db']->connection(), $app->make(EventSubscriptions::class), $app->make(CompanyContext::class), (int) config('erp.events.max_attempts', 5), (int) config('erp.events.base_delay_seconds', 30), (int) config('erp.events.stale_after_seconds', 900)));
         $this->app->bind(AuthorizedCompanyContextResolver::class, DenyCompanyContextResolver::class);
         $this->app->singleton(ModuleCatalog::class, function () {
             $errors = (new ManifestValidator)->validate(base_path('modules'), base_path('docs/module.schema.json'));
