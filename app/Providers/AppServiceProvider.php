@@ -55,20 +55,20 @@ final class AppServiceProvider extends ServiceProvider
 
             return ModuleCatalog::scan(base_path('modules'));
         });
-        $this->app->singleton(ModuleState::class, fn ($app) => new ModuleState($app->make(ModuleCatalog::class), $app['db']->connection(), config('erp-modules.enabled', []), base_path('modules')));
+        $this->app->singleton(ModuleState::class, fn ($app) => new ModuleState($app->make(ModuleCatalog::class), $app['db'], config('erp-modules.enabled', []), base_path('modules')));
         $this->app->singleton(ModuleManager::class, function ($app) {
             $loader = require base_path('vendor/autoload.php');
 
             return new ModuleManager($app, $app->make(ModuleCatalog::class), $loader, base_path('modules'));
         });
-        $this->app->singleton(PermissionRegistry::class, fn ($app) => new PermissionRegistry($app->make(ModuleCatalog::class), $app->make(ModuleState::class)->enabled()));
-        $this->app->bind(SettingsService::class, fn ($app) => new SettingsService($app->make(ModuleCatalog::class), $app->make(ModuleState::class)->enabled(), $app['db']->connection(), $app->make(CompanyContext::class)));
+        $this->app->singleton(PermissionRegistry::class, fn ($app) => new PermissionRegistry($app->make(ModuleCatalog::class), $app->make(ModuleManager::class)->enabled()));
+        $this->app->bind(SettingsService::class, fn ($app) => new SettingsService($app->make(ModuleCatalog::class), $app->make(ModuleManager::class)->enabled(), $app['db']->connection(), $app->make(CompanyContext::class)));
         $this->app->singleton(AiToolRegistry::class, fn ($app) => new AiToolRegistry($app->make(ModuleCatalog::class)));
         $this->app->bind(AiGatewayContract::class, function ($app) {
             $config = (array) config('erp.ai');
             $http = $app->make(HttpFactory::class);
 
-            return new AiGateway($app->make(ModuleCatalog::class), $app->make(ModuleState::class)->enabled(), $app['db']->connection(), $app->make(CompanyContext::class), $app->make(AiToolRegistry::class), [
+            return new AiGateway($app->make(ModuleCatalog::class), $app->make(ModuleManager::class)->enabled(), $app['db']->connection(), $app->make(CompanyContext::class), $app->make(AiToolRegistry::class), [
                 'avalai' => new AvalAiProvider($http, (string) $config['avalai']['base_url'], (string) $config['avalai']['api_key'], (string) $config['avalai']['model'], (int) $config['avalai']['timeout']),
                 'python' => new PythonServiceProvider($http, (string) $config['python']['url'], (string) $config['python']['secret'], (int) $config['python']['timeout']),
             ], $config);

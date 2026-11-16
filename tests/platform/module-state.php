@@ -41,7 +41,7 @@ try {
         }
     }
     $catalog = ModuleCatalog::scan($path);
-    $state = new ModuleState($catalog, DB::connection(), [], $path);
+    $state = new ModuleState($catalog, app('db'), [], $path);
     stateCheck($state->enabled() === [], 'Before install defaults should work');
     stateReject(fn () => $state->set('base', true), 'migrations');
     $migration = require dirname(__DIR__, 2).'/database/migrations/2026_11_16_000001_create_core_module_state.php';
@@ -56,7 +56,7 @@ try {
     stateReject(fn () => $state->set('base', false), 'requires disabled');
     stateCheck($state->enabled() === ['base', 'feature'], 'Rejected disable must roll back');
     $state->set('feature', false);
-    $configured = new ModuleState($catalog, DB::connection(), ['base', 'feature'], $path);
+    $configured = new ModuleState($catalog, app('db'), ['base', 'feature'], $path);
     stateCheck($configured->enabled() === ['base'], 'Database false must override config true');
     $state->set('base', false);
     stateCheck($state->enabled() === [], 'Disable must persist');

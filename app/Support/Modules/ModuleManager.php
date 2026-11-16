@@ -13,12 +13,30 @@ final class ModuleManager
 {
     private bool $registered = false;
 
+    /** @var list<string> */
+    private array $enabled = [];
+
     public function __construct(
         private readonly Application $app,
         private readonly ModuleCatalog $catalog,
         private readonly ClassLoader $loader,
         private readonly string $modulesPath,
     ) {}
+
+    /**
+     * Modules whose providers were registered at boot; runtime services use this set so a
+     * later database override cannot expose a module whose code is not loaded in this process.
+     *
+     * @return list<string>
+     */
+    public function enabled(): array
+    {
+        if (! $this->registered) {
+            throw new RuntimeException('Module providers have not been registered yet.');
+        }
+
+        return $this->enabled;
+    }
 
     /** @param list<string> $enabled */
     public function registerEnabled(array $enabled): void
@@ -55,5 +73,6 @@ final class ModuleManager
             $this->app->register($namespace.'Providers\\ModuleServiceProvider');
         }
         $this->registered = true;
+        $this->enabled = $ordered;
     }
 }

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Support\Install;
 
 use App\Models\User;
-use App\Support\Modules\ModuleState;
+use App\Support\Modules\ModuleManager;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
@@ -81,7 +81,7 @@ final class Installer
         $admin = User::query()->create(['name' => $input['admin_name'], 'email' => $input['admin_email'], 'password' => $input['admin_password'], 'is_active' => true]);
         config(['erp.install.admin_user_id' => (int) $admin->getKey()]);
         $seeded = [];
-        foreach (app(ModuleState::class)->enabled() as $id) {
+        foreach (app(ModuleManager::class)->enabled() as $id) {
             $class = 'Modules\\'.str_replace(' ', '', ucwords(str_replace('-', ' ', $id))).'\\Database\\Seeders\\ModuleSeeder';
             if (class_exists($class)) {
                 Artisan::call('db:seed', ['--class' => $class, '--force' => true]);

@@ -86,6 +86,7 @@ jobs:
         run: |
           php artisan --version
           php tests/run-platform.php
+          php tests/run-platform.php --env=phpunit
           php artisan erp:modules:list
           php artisan erp:modules:graph
           php artisan erp:modules:validate

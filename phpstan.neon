@@ -8,4 +8,5 @@ parameters:
         - tools/architecture
         - tests/platform
         - tests/Platform
+        - tests/run-platform.php
     tmpDir: .cache/phpstan
