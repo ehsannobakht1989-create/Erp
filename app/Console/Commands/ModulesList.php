@@ -5,17 +5,18 @@ declare(strict_types=1);
 namespace App\Console\Commands;
 
 use App\Support\Modules\ModuleCatalog;
+use App\Support\Modules\ModuleState;
 use Illuminate\Console\Command;
 
 final class ModulesList extends Command
 {
     protected $signature = 'erp:modules:list';
 
-    protected $description = 'List available modules and whether they are enabled by config';
+    protected $description = 'List available modules and whether they are enabled by configuration and database overrides';
 
-    public function handle(ModuleCatalog $catalog): int
+    public function handle(ModuleCatalog $catalog, ModuleState $state): int
     {
-        $enabled = config('erp-modules.enabled', []);
+        $enabled = $state->enabled();
         $catalog->ordered($enabled);
         $rows = [];
         foreach ($catalog->manifests() as $id => $manifest) {

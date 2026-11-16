@@ -7,6 +7,7 @@ namespace App\Providers;
 use App\Support\Events\DomainEventBus;
 use App\Support\Modules\ModuleCatalog;
 use App\Support\Modules\ModuleManager;
+use App\Support\Modules\ModuleState;
 use App\Support\Tenancy\AuthorizedCompanyContextResolver;
 use App\Support\Tenancy\CompanyContext;
 use App\Support\Tenancy\DenyCompanyContextResolver;
@@ -20,11 +21,12 @@ final class AppServiceProvider extends ServiceProvider
         $this->app->bind(DomainEventBus::class, fn ($app) => new DomainEventBus($app['db']->connection(), $app['events'], $app->make(CompanyContext::class)));
         $this->app->bind(AuthorizedCompanyContextResolver::class, DenyCompanyContextResolver::class);
         $this->app->singleton(ModuleCatalog::class, fn () => ModuleCatalog::scan(base_path('modules')));
+        $this->app->singleton(ModuleState::class, fn ($app) => new ModuleState($app->make(ModuleCatalog::class), $app['db']->connection(), config('erp-modules.enabled', []), base_path('modules')));
         $this->app->singleton(ModuleManager::class, function ($app) {
             $loader = require base_path('vendor/autoload.php');
 
             return new ModuleManager($app, $app->make(ModuleCatalog::class), $loader, base_path('modules'));
         });
-        $this->app->make(ModuleManager::class)->registerEnabled(config('erp-modules.enabled', []));
+        $this->app->make(ModuleManager::class)->registerEnabled($this->app->make(ModuleState::class)->enabled());
     }
 }
