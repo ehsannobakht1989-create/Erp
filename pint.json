@@ -1,18 +1,5 @@
 {
     "preset": "laravel",
-    "paths": [
-        "app",
-        "bootstrap/app.php",
-        "bootstrap/providers.php",
-        "config",
-        "database",
-        "routes",
-        "tests/Platform",
-        "tests/platform",
-        "tools/depth",
-        "tools/depth-check.php",
-        "tools/validate-manifests.php",
-        "tools/tests/depth-inspector.php",
-        "tools/tests/depth-php-analyzer.php"
-    ]
+    "exclude": ["core", "modules", "builder", "public", "bootstrap/cache"],
+    "notPath": ["tools/test.php"]
 }
