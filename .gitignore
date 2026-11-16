@@ -33,3 +33,6 @@ uploads/
 !/storage/logs/.gitignore
 /bootstrap/cache/*
 !/bootstrap/cache/.gitignore
+
+# Static-analysis caches
+.cache/
