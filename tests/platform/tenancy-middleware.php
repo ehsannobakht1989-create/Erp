@@ -43,7 +43,7 @@ foreach ([false, true] as $authenticated) {
 }
 $resolver = new class implements AuthorizedCompanyContextResolver
 {
-    public function resolve(Request $request): ?CompanySelection
+    public function resolve(Request $request): CompanySelection
     {
         return new CompanySelection(42, 8, 7);
     }

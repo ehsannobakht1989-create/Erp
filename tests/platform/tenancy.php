@@ -13,6 +13,11 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
+/**
+ * @property int $id
+ * @property int $company_id
+ * @property string $name
+ */
 final class TenantTestRecord extends Model
 {
     use BelongsToCompany;
@@ -51,14 +56,14 @@ Schema::create('tenant_test_records', function (Blueprint $table): void {
     $table->softDeletes();
 });
 $ctx = app(CompanyContext::class);
-tenantThrows(fn () => TenantTestRecord::count(), 'context is required');
+tenantThrows(fn () => TenantTestRecord::query()->count(), 'context is required');
 $ctx->activate(1, 2, 3);
-$first = TenantTestRecord::create(['name' => 'first']);
+$first = TenantTestRecord::query()->create(['name' => 'first']);
 tenantCheck((int) $first->company_id === 1, 'Context must set company_id');
-tenantThrows(fn () => TenantTestRecord::create(['name' => 'foreign', 'company_id' => 2]), 'Cross-company');
+tenantThrows(fn () => TenantTestRecord::query()->create(['name' => 'foreign', 'company_id' => 2]), 'Cross-company');
 $ctx->activate(2);
-$second = TenantTestRecord::create(['name' => 'second']);
-tenantCheck(TenantTestRecord::count() === 1 && TenantTestRecord::first()->id === $second->id, 'Queries must be tenant-scoped');
+$second = TenantTestRecord::query()->create(['name' => 'second']);
+tenantCheck(TenantTestRecord::query()->count() === 1 && TenantTestRecord::query()->first()->id === $second->id, 'Queries must be tenant-scoped');
 tenantThrows(function () use ($first): void {
     $first->name = 'changed';
     $first->save();
@@ -68,9 +73,9 @@ $second->company_id = 1;
 tenantThrows(fn () => $second->save(), 'Cross-company');
 $ctx->activate(1);
 $first->delete();
-tenantCheck(TenantTestRecord::count() === 0, 'Soft delete must work within tenant');
+tenantCheck(TenantTestRecord::query()->count() === 0, 'Soft delete must work within tenant');
 $ctx->activate(2);
 tenantThrows(fn () => $first->restore(), 'Cross-company');
 $ctx->clear();
-tenantThrows(fn () => TenantTestRecord::count(), 'context is required');
+tenantThrows(fn () => TenantTestRecord::query()->count(), 'context is required');
 echo "Tenancy isolation tests passed.\n";

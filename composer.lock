@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "589e200a3d1725a3459f8072aaa58fec",
+    "content-hash": "9aafc2346033d9b048bb4888d6b4c8c2",
     "packages": [
         {
             "name": "brick/math",
@@ -730,7 +730,7 @@
                     "homepage": "https://github.com/Nyholm"
                 },
                 {
-                    "name": "Márk Sági-Kazár",
+                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
                     "email": "mark.sagikazar@gmail.com",
                     "homepage": "https://github.com/sagikazarmark"
                 },
@@ -929,7 +929,7 @@
                     "homepage": "https://github.com/Nyholm"
                 },
                 {
-                    "name": "Márk Sági-Kazár",
+                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
                     "email": "mark.sagikazar@gmail.com",
                     "homepage": "https://github.com/sagikazarmark"
                 },
@@ -939,7 +939,7 @@
                     "homepage": "https://github.com/Tobion"
                 },
                 {
-                    "name": "Márk Sági-Kazár",
+                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
                     "email": "mark.sagikazar@gmail.com",
                     "homepage": "https://sagikazarmark.hu"
                 }
@@ -2287,7 +2287,7 @@
                     "homepage": "https://davidgrudl.com"
                 }
             ],
-            "description": "📐 Nette Schema: validates and normalizes data such as configuration or API input against a schema described in a few readable lines of PHP, with precise error messages.",
+            "description": "\ud83d\udcd0 Nette Schema: validates and normalizes data such as configuration or API input against a schema described in a few readable lines of PHP, with precise error messages.",
             "homepage": "https://doc.nette.org/schema",
             "keywords": [
                 "configuration",
@@ -2370,7 +2370,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🛠  Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+            "description": "\ud83d\udee0  Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
             "homepage": "https://nette.org",
             "keywords": [
                 "array",
@@ -3378,7 +3378,7 @@
                     "email": "fabien@symfony.com"
                 },
                 {
-                    "name": "Jean-François Simon",
+                    "name": "Jean-Fran\u00e7ois Simon",
                     "email": "jeanfrancois.simon@sensiolabs.com"
                 },
                 {
@@ -4959,7 +4959,7 @@
                     "email": "nyamsprod@gmail.com"
                 },
                 {
-                    "name": "Tim Düsterhus",
+                    "name": "Tim D\u00fcsterhus",
                     "email": "tim@tideways-gmbh.com"
                 },
                 {
@@ -5044,7 +5044,7 @@
             ],
             "authors": [
                 {
-                    "name": "Grégoire Pineau",
+                    "name": "Gr\u00e9goire Pineau",
                     "email": "lyrixx@lyrixx.info"
                 },
                 {
@@ -5629,7 +5629,7 @@
             ],
             "authors": [
                 {
-                    "name": "Grégoire Pineau",
+                    "name": "Gr\u00e9goire Pineau",
                     "email": "lyrixx@lyrixx.info"
                 },
                 {
@@ -6277,6 +6277,63 @@
                 "source": "https://github.com/phar-io/version/tree/3.2.1"
             },
             "time": "2022-02-21T01:04:05+00:00"
+        },
+        {
+            "name": "phpstan/phpstan",
+            "version": "2.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan.git",
+                "reference": "00cedebb76cc82c1592414fa4f616cefdccda16f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://codeload.github.com/phpstan/phpstan/legacy.zip/00cedebb76cc82c1592414fa4f616cefdccda16f",
+                "reference": "00cedebb76cc82c1592414fa4f616cefdccda16f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan-shim": "*"
+            },
+            "bin": [
+                "phpstan",
+                "phpstan.phar"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ond\u0159ej Mirtes"
+                },
+                {
+                    "name": "Markus Staab"
+                },
+                {
+                    "name": "Vincent Langlet"
+                }
+            ],
+            "description": "PHPStan - PHP Static Analysis Tool",
+            "keywords": [
+                "dev",
+                "static analysis"
+            ],
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan/issues",
+                "forum": "https://github.com/phpstan/phpstan/discussions",
+                "source": "https://github.com/phpstan/phpstan-src",
+                "docs": "https://phpstan.org/user-guide/getting-started",
+                "security": "https://github.com/phpstan/phpstan/security/policy"
+            }
         },
         {
             "name": "phpunit/php-code-coverage",

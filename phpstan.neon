@@ -1,0 +1,8 @@
+parameters:
+    level: 5
+    paths:
+        - app
+        - tools/depth
+        - tests/platform
+        - tests/Platform
+    tmpDir: .cache/phpstan

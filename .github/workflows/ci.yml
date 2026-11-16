@@ -74,6 +74,8 @@ jobs:
           composer install --no-interaction --prefer-dist
       - name: Check Laravel and transition-tool formatting
         run: vendor/bin/pint --test
+      - name: Static analysis of Laravel platform and its tests
+        run: vendor/bin/phpstan analyse --no-progress --memory-limit=512M
       - name: Test Laravel scaffold
         run: |
           php artisan --version
